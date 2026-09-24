@@ -1,0 +1,14 @@
+{
+  "source": "qso_party_rule_2026.html",
+  "inside": [],
+  "outside": [],
+  "id": "qso_party",
+  "year": 2026,
+  "municipal_source_versions": {
+    "jcc": "2019-05-01",
+    "jcg": "2018-10-01",
+    "ward": "2024-01-01",
+    "history": "2024-01-01"
+  },
+  "sha256": "3de3f3d83d6c667b09cf778307a52d5719fd0d5e62e2c85197240d367e44f9bc"
+}

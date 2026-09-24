@@ -1,0 +1,593 @@
+{
+  "id": "all_chiba_numbers",
+  "year": 2026,
+  "organizer": "JARL千葉県支部",
+  "source": "http://jarl-chiba.info/2026test/2026info.pdf",
+  "sha256": "740ab32635b7a258ec4fc258f5c540992d9766d600b30deb88e0f51e3d0e8ab7",
+  "municipal_source_versions": {
+    "jcc": "2019-05-01",
+    "jcg": "2018-10-01",
+    "ward": "2024-01-01",
+    "history": "2024-01-01"
+  },
+  "inside": [
+    {
+      "code": "1202",
+      "label": "Choshi               銚子",
+      "kind": "city",
+      "source": "jcc-list.txt",
+      "contest_usable": true
+    },
+    {
+      "code": "1203",
+      "label": "Ichikawa             市川",
+      "kind": "city",
+      "source": "jcc-list.txt",
+      "contest_usable": true
+    },
+    {
+      "code": "1204",
+      "label": "Funabashi            船橋",
+      "kind": "city",
+      "source": "jcc-list.txt",
+      "contest_usable": true
+    },
+    {
+      "code": "1205",
+      "label": "Tateyama             館山",
+      "kind": "city",
+      "source": "jcc-list.txt",
+      "contest_usable": true
+    },
+    {
+      "code": "1206",
+      "label": "Kisarazu             木更津",
+      "kind": "city",
+      "source": "jcc-list.txt",
+      "contest_usable": true
+    },
+    {
+      "code": "1207",
+      "label": "Matsudo              松戸",
+      "kind": "city",
+      "source": "jcc-list.txt",
+      "contest_usable": true
+    },
+    {
+      "code": "1208",
+      "label": "Noda                 野田",
+      "kind": "city",
+      "source": "jcc-list.txt",
+      "contest_usable": true
+    },
+    {
+      "code": "1210",
+      "label": "Mobara               茂原",
+      "kind": "city",
+      "source": "jcc-list.txt",
+      "contest_usable": true
+    },
+    {
+      "code": "1211",
+      "label": "Narita               成田",
+      "kind": "city",
+      "source": "jcc-list.txt",
+      "contest_usable": true
+    },
+    {
+      "code": "1212",
+      "label": "Sakura               佐倉",
+      "kind": "city",
+      "source": "jcc-list.txt",
+      "contest_usable": true
+    },
+    {
+      "code": "1213",
+      "label": "Togane               東金",
+      "kind": "city",
+      "source": "jcc-list.txt",
+      "contest_usable": true
+    },
+    {
+      "code": "1215",
+      "label": "Asahi                旭",
+      "kind": "city",
+      "source": "jcc-list.txt",
+      "contest_usable": true
+    },
+    {
+      "code": "1216",
+      "label": "Narashino            習志野",
+      "kind": "city",
+      "source": "jcc-list.txt",
+      "contest_usable": true
+    },
+    {
+      "code": "1217",
+      "label": "Kashiwa              柏",
+      "kind": "city",
+      "source": "jcc-list.txt",
+      "contest_usable": true
+    },
+    {
+      "code": "1218",
+      "label": "Katsuura             勝浦",
+      "kind": "city",
+      "source": "jcc-list.txt",
+      "contest_usable": true
+    },
+    {
+      "code": "1219",
+      "label": "Ichihara             市原",
+      "kind": "city",
+      "source": "jcc-list.txt",
+      "contest_usable": true
+    },
+    {
+      "code": "1220",
+      "label": "Nagareyama           流山",
+      "kind": "city",
+      "source": "jcc-list.txt",
+      "contest_usable": true
+    },
+    {
+      "code": "1221",
+      "label": "Yachiyo              八千代",
+      "kind": "city",
+      "source": "jcc-list.txt",
+      "contest_usable": true
+    },
+    {
+      "code": "1222",
+      "label": "Abiko                我孫子",
+      "kind": "city",
+      "source": "jcc-list.txt",
+      "contest_usable": true
+    },
+    {
+      "code": "1223",
+      "label": "Kamogawa             鴨川",
+      "kind": "city",
+      "source": "jcc-list.txt",
+      "contest_usable": true
+    },
+    {
+      "code": "1224",
+      "label": "Kimitsu              君津",
+      "kind": "city",
+      "source": "jcc-list.txt",
+      "contest_usable": true
+    },
+    {
+      "code": "1225",
+      "label": "Kamagaya             鎌ケ谷",
+      "kind": "city",
+      "source": "jcc-list.txt",
+      "contest_usable": true
+    },
+    {
+      "code": "1226",
+      "label": "Futtu                富津",
+      "kind": "city",
+      "source": "jcc-list.txt",
+      "contest_usable": true
+    },
+    {
+      "code": "1227",
+      "label": "Urayasu              浦安",
+      "kind": "city",
+      "source": "jcc-list.txt",
+      "contest_usable": true
+    },
+    {
+      "code": "1228",
+      "label": "Yotsukaido           四街道",
+      "kind": "city",
+      "source": "jcc-list.txt",
+      "contest_usable": true
+    },
+    {
+      "code": "1229",
+      "label": "Sodegaura            袖ケ浦",
+      "kind": "city",
+      "source": "jcc-list.txt",
+      "contest_usable": true
+    },
+    {
+      "code": "1230",
+      "label": "Yachimata            八街",
+      "kind": "city",
+      "source": "jcc-list.txt",
+      "contest_usable": true
+    },
+    {
+      "code": "1231",
+      "label": "Inzai                印西",
+      "kind": "city",
+      "source": "jcc-list.txt",
+      "contest_usable": true
+    },
+    {
+      "code": "1232",
+      "label": "Shiroi               白井",
+      "kind": "city",
+      "source": "jcc-list.txt",
+      "contest_usable": true
+    },
+    {
+      "code": "1233",
+      "label": "Tomisato             富里",
+      "kind": "city",
+      "source": "jcc-list.txt",
+      "contest_usable": true
+    },
+    {
+      "code": "1234",
+      "label": "Minamiboso           南房総",
+      "kind": "city",
+      "source": "jcc-list.txt",
+      "contest_usable": true
+    },
+    {
+      "code": "1235",
+      "label": "Sosa                 匝瑳",
+      "kind": "city",
+      "source": "jcc-list.txt",
+      "contest_usable": true
+    },
+    {
+      "code": "1236",
+      "label": "Katori               香取",
+      "kind": "city",
+      "source": "jcc-list.txt",
+      "contest_usable": true
+    },
+    {
+      "code": "1237",
+      "label": "Sanmu                山武",
+      "kind": "city",
+      "source": "jcc-list.txt",
+      "contest_usable": true
+    },
+    {
+      "code": "1238",
+      "label": "Isumi                いすみ",
+      "kind": "city",
+      "source": "jcc-list.txt",
+      "contest_usable": true
+    },
+    {
+      "code": "1239",
+      "label": "Oamishirasato        大網白里",
+      "kind": "city",
+      "source": "jcc-list.txt",
+      "contest_usable": true
+    },
+    {
+      "code": "12001",
+      "label": "Awa                 安房",
+      "kind": "county",
+      "source": "jcg-list.txt",
+      "contest_usable": true
+    },
+    {
+      "code": "12002",
+      "label": "Isumi               夷隅",
+      "kind": "county",
+      "source": "jcg-list.txt",
+      "contest_usable": true
+    },
+    {
+      "code": "12004",
+      "label": "Inba                印旛",
+      "kind": "county",
+      "source": "jcg-list.txt",
+      "contest_usable": true
+    },
+    {
+      "code": "12006",
+      "label": "Katori              香取",
+      "kind": "county",
+      "source": "jcg-list.txt",
+      "contest_usable": true
+    },
+    {
+      "code": "12008",
+      "label": "Sanbu               山武",
+      "kind": "county",
+      "source": "jcg-list.txt",
+      "contest_usable": true
+    },
+    {
+      "code": "12011",
+      "label": "Chosei              長生",
+      "kind": "county",
+      "source": "jcg-list.txt",
+      "contest_usable": true
+    },
+    {
+      "code": "120101",
+      "label": "Chuo            中央",
+      "kind": "ward",
+      "source": "ku-list.txt",
+      "contest_usable": true
+    },
+    {
+      "code": "120102",
+      "label": "Hanamigawa      花見川",
+      "kind": "ward",
+      "source": "ku-list.txt",
+      "contest_usable": true
+    },
+    {
+      "code": "120103",
+      "label": "Inage           稲毛",
+      "kind": "ward",
+      "source": "ku-list.txt",
+      "contest_usable": true
+    },
+    {
+      "code": "120104",
+      "label": "Wakaba          若葉",
+      "kind": "ward",
+      "source": "ku-list.txt",
+      "contest_usable": true
+    },
+    {
+      "code": "120105",
+      "label": "Midori          緑",
+      "kind": "ward",
+      "source": "ku-list.txt",
+      "contest_usable": true
+    },
+    {
+      "code": "120106",
+      "label": "Mihama          美浜",
+      "kind": "ward",
+      "source": "ku-list.txt",
+      "contest_usable": true
+    }
+  ],
+  "outside": [
+    {
+      "code": "101",
+      "name": "宗谷"
+    },
+    {
+      "code": "102",
+      "name": "留萌"
+    },
+    {
+      "code": "103",
+      "name": "上川"
+    },
+    {
+      "code": "104",
+      "name": "オホーツク"
+    },
+    {
+      "code": "105",
+      "name": "空知"
+    },
+    {
+      "code": "106",
+      "name": "石狩"
+    },
+    {
+      "code": "107",
+      "name": "根室"
+    },
+    {
+      "code": "108",
+      "name": "後志"
+    },
+    {
+      "code": "109",
+      "name": "十勝"
+    },
+    {
+      "code": "110",
+      "name": "釧路"
+    },
+    {
+      "code": "111",
+      "name": "日高"
+    },
+    {
+      "code": "112",
+      "name": "胆振"
+    },
+    {
+      "code": "113",
+      "name": "桧山"
+    },
+    {
+      "code": "114",
+      "name": "渡島"
+    },
+    {
+      "code": "02",
+      "name": "青森"
+    },
+    {
+      "code": "03",
+      "name": "岩手"
+    },
+    {
+      "code": "04",
+      "name": "秋田"
+    },
+    {
+      "code": "05",
+      "name": "山形"
+    },
+    {
+      "code": "06",
+      "name": "宮城"
+    },
+    {
+      "code": "07",
+      "name": "福島"
+    },
+    {
+      "code": "08",
+      "name": "新潟"
+    },
+    {
+      "code": "09",
+      "name": "長野"
+    },
+    {
+      "code": "10",
+      "name": "東京"
+    },
+    {
+      "code": "11",
+      "name": "神奈川"
+    },
+    {
+      "code": "13",
+      "name": "埼玉"
+    },
+    {
+      "code": "14",
+      "name": "茨城"
+    },
+    {
+      "code": "15",
+      "name": "栃木"
+    },
+    {
+      "code": "16",
+      "name": "群馬"
+    },
+    {
+      "code": "17",
+      "name": "山梨"
+    },
+    {
+      "code": "18",
+      "name": "静岡"
+    },
+    {
+      "code": "19",
+      "name": "岐阜"
+    },
+    {
+      "code": "20",
+      "name": "愛知"
+    },
+    {
+      "code": "21",
+      "name": "三重"
+    },
+    {
+      "code": "22",
+      "name": "京都"
+    },
+    {
+      "code": "23",
+      "name": "滋賀"
+    },
+    {
+      "code": "24",
+      "name": "奈良"
+    },
+    {
+      "code": "25",
+      "name": "大阪"
+    },
+    {
+      "code": "26",
+      "name": "和歌山"
+    },
+    {
+      "code": "27",
+      "name": "兵庫"
+    },
+    {
+      "code": "28",
+      "name": "富山"
+    },
+    {
+      "code": "29",
+      "name": "福井"
+    },
+    {
+      "code": "30",
+      "name": "石川"
+    },
+    {
+      "code": "31",
+      "name": "岡山"
+    },
+    {
+      "code": "32",
+      "name": "島根"
+    },
+    {
+      "code": "33",
+      "name": "山口"
+    },
+    {
+      "code": "34",
+      "name": "鳥取"
+    },
+    {
+      "code": "35",
+      "name": "広島"
+    },
+    {
+      "code": "36",
+      "name": "香川"
+    },
+    {
+      "code": "37",
+      "name": "徳島"
+    },
+    {
+      "code": "38",
+      "name": "愛媛"
+    },
+    {
+      "code": "39",
+      "name": "高知"
+    },
+    {
+      "code": "40",
+      "name": "福岡"
+    },
+    {
+      "code": "41",
+      "name": "佐賀"
+    },
+    {
+      "code": "42",
+      "name": "長崎"
+    },
+    {
+      "code": "43",
+      "name": "熊本"
+    },
+    {
+      "code": "44",
+      "name": "大分"
+    },
+    {
+      "code": "45",
+      "name": "宮崎"
+    },
+    {
+      "code": "46",
+      "name": "鹿児島"
+    },
+    {
+      "code": "47",
+      "name": "沖縄"
+    },
+    {
+      "code": "48",
+      "name": "小笠原"
+    }
+  ]
+}

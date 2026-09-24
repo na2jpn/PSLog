@@ -1,0 +1,15 @@
+{
+  "source_compileall": "passed",
+  "source_tests": {
+    "status": "passed",
+    "count": 586
+  },
+  "extracted_tests": {
+    "status": "passed",
+    "count": 586
+  },
+  "manifest_algorithm": "SHA-256",
+  "project_file_count": 897,
+  "windows_exe": "not built; requires 64-bit Windows 10/11",
+  "windows_next": "Run build-windows.ps1, then WINDOWS_CHECKLIST.txt"
+}

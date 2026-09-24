@@ -1,0 +1,140 @@
+{
+  "schema": 8,
+  "project": "PSLog",
+  "version": "1.10",
+  "status": "FINAL_CANONICAL_SOURCE",
+  "canonical_filename": "PSLog_1.10_CANONICAL_SOURCE.zip",
+  "finalized_at": "2026-09-24",
+  "next_development_line": "Ver1.10 series (first normal patch expected 1.101; next canonical number follows user instruction, normally 1.11)",
+  "source_of_final_canonicalization": {
+    "baseline": {
+      "filename": "PSLog_1.07_CANONICAL_SOURCE.zip",
+      "sha256": "f93b70ffad0c587f4c19a87b88a6155e7f1405e2e40090b5190e5c427956cbc2",
+      "note": "Ver1.07 canonical baseline."
+    },
+    "applied_artifacts": [
+      {
+        "filename": "PSLog_1.071_PATCH01.zip",
+        "sha256": "137d80f0de8c8fca353de67d6fd705c16771a21a1ca9213986836c92e9403771",
+        "note": "Submission/UI adjustments."
+      },
+      {
+        "filename": "PSLog_1.072_PATCH02.zip",
+        "sha256": "aec6737fb4cc80f0050c91421001a84f0d568ff688e92078787d7fe035b02363",
+        "note": "JCC/JCG and QSL batch parsing extensions."
+      },
+      {
+        "filename": "PSLog_1.073_PATCH03.zip",
+        "sha256": "cc77a4432a8ddbe1140277477589f354d6ea13ee73b9cc2d5b6b2d9330fe9738",
+        "note": "JCG county-level QTH support and test repair."
+      },
+      {
+        "filename": "PSLog_1.074_PATCH04.zip",
+        "sha256": "1627f83736caaf9da7dd92228c0701f57f9dd834467acd410b471817a5ba7814",
+        "note": "QSL quick processing, award check, logbook routing groundwork."
+      },
+      {
+        "filename": "PSLog_1.074_PATCH04_FIX1.zip",
+        "sha256": "b48d2ff32c9a58946acf607b9fd95cd18e2dd761c9ea6885ebdf52b5d9935cef",
+        "note": "Async/loading/lazy rendering for award check."
+      },
+      {
+        "filename": "PSLog_1.074_PATCH04_FIX2.zip",
+        "sha256": "87badaf999b40cd88de8f008c88c46fae7c6ff56fb0e11220f7a100d77f3ecd8",
+        "note": "Qt6 tree API correction."
+      },
+      {
+        "filename": "PSLog_1.075_PATCH05.zip",
+        "sha256": "258babf19151d2c66cec07d280d53fbdcece31c23974af16230b95a66261c0fe",
+        "note": "CFM remaining counts and callsign emphasis."
+      },
+      {
+        "filename": "PSLog_1.075_PATCH05_FIX1.zip",
+        "sha256": "7f671de402df21ebb0b87befcf2aebe89a3363fcbc6be1b6a02e635fe716a47e",
+        "note": "GUI test class-name correction."
+      },
+      {
+        "filename": "PSLog_1.075_PATCH05_FIX2.zip",
+        "sha256": "6c07fefebb17bbe4639c4bf8cffaaa295dfd71972bb82aaac6775f64d66fa1e4",
+        "note": "GUI test first-start dialog avoidance."
+      },
+      {
+        "filename": "PSLog_1.076_PATCH06.zip",
+        "sha256": "8787618b7196d4109307856d469c5b1dd43b766b143e250d892d19004d808ff5",
+        "note": "EASY tab foundation, JCG gun formatting, post-save clear."
+      },
+      {
+        "filename": "PSLog_1.077_PATCH07.zip",
+        "sha256": "6cf7c40819c992dc5e54f36158fe64e95f436202b8359b7b87aaef3c87fc5e48",
+        "note": "Dedicated EASY two-page UI and About refresh."
+      },
+      {
+        "filename": "PSLog_1.078_PATCH08.zip",
+        "sha256": "9f61c329efd55348e965401f8511b7e5e22590ea9f438d468aeb19c577a7d1d0",
+        "note": "EASY band-unit label and green group-box border."
+      }
+    ],
+    "canonical_release_adjustments": [
+      "Release VERSION changed from development label 1.078 to canonical 1.10 by explicit user instruction.",
+      "Windows release package name changed from PSLog_1.078_Windows_* to PSLog_1.10_Windows_*.",
+      "No new business/UI feature was added after the accepted 1.078 state; canonicalization updates version metadata, tests, documentation, and history organization.",
+      "Ver1.071–1.078 PATCH/FIX README/manifest artifacts moved from source root to docs/history/ver1.07-patches/.",
+      "Current entry, build, validation, baseline, continuation, save-location, user-guide, and checklist documents refreshed for Ver1.10.",
+      "Updater version-order regression explicitly verifies 1.10 > 1.078 and 1.101 > 1.10."
+    ],
+    "rule": "Future development must start from this Ver1.10 canonical ZIP only. Do not reconstruct by replaying Ver1.07-series PATCH/FIX artifacts."
+  },
+  "canonicalization": {
+    "removed_generated": [
+      "build/",
+      "dist/",
+      "release/",
+      "__pycache__/",
+      "**/__pycache__/",
+      "*.pyc",
+      "*.pyo"
+    ],
+    "moved_history": [
+      "Ver1.071–1.078 PATCH/FIX READMEs and manifests -> docs/history/ver1.07-patches/",
+      "Ver1.07 base SOURCE_MANIFEST snapshot -> docs/history/ver1.07-patches/SOURCE_MANIFEST_BASE_1.07.json"
+    ],
+    "updated_entry_docs": [
+      "README.md",
+      "START_HERE.md",
+      "HANDOFF.md",
+      "NEXT_CHAT_PROMPT.md",
+      "CHANGELOG.md",
+      "docs/INDEX.md",
+      "docs/IMPLEMENTATION_STATUS.md",
+      "docs/specs/development/PSLOG_1.10_BASELINE.md",
+      "docs/specs/development/PSLOG_1.10_NEXT_CHAT_PLAN.md",
+      "docs/specs/development/VALIDATION.md",
+      "WINDOWS_BUILD.md",
+      "WINDOWS_CHECKLIST.txt",
+      "SAVE_LOCATION.md",
+      "USER_GUIDE.txt"
+    ]
+  },
+  "release_highlights": [
+    "Registered rule catalog remains 87 rules: 86 contests + 1 QSO Party.",
+    "QSL/JCC-JCG batch handling and QSL quick-processing support include QRZ.R and CARD.R.",
+    "JCG code-only location can resolve to county (gun) level without guessing a municipality.",
+    "JCC/JCG award-check view supports async loading, prefecture folding, per-band worked/QSL status, and remaining CFM counts.",
+    "Amateur log discovery is centralized; logbook_flr is reserved/protected for future free-radio support and excluded from amateur aggregation.",
+    "EASY tabs are limited to two and use a dedicated two-page large-text workflow over the same PSLog master storage.",
+    "About screen documents PS = Pipe Separate."
+  ],
+  "verification": {
+    "user_windows_confirmation": "2026-09-24: user reported the 1.075 FIX2 full test passed, later confirmed 1.076 startup, and accepted the 1.078 state before requesting Ver1.10 canonicalization.",
+    "canonicalization_compileall": "OK",
+    "targeted_regression": "84 tests run; 75 passed; 9 GUI tests skipped because PySide6 is not installed; 0 FAIL, 0 ERROR.",
+    "updater_version_regression": "5 tests OK; includes 1.10 > 1.078, 1.101 > 1.10, and 1.078 < 1.10.",
+    "full_discovery_linux": "494 tests run; 69 errors are PySide6-not-installed GUI import/runtime errors; 9 skipped; 0 FAIL assertions.",
+    "note": "Final Windows build/GUI confirmation for the version-label-only 1.10 canonicalization remains a Windows-side check; functional baseline is the user-accepted 1.078 state."
+  },
+  "source_tree": {
+    "files_excluding_manifest": 1147,
+    "sha256_excluding_manifest": "0b01cd755cea64a5dff8131ab20f0f3d31d169f0fcb76233dac82fea3d1f3c22",
+    "hash_method": "SHA-256 over sorted UTF-8 relative path, NUL, per-file SHA-256 hex, newline; SOURCE_MANIFEST.json excluded."
+  }
+}

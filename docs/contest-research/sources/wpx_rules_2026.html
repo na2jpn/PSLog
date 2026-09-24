@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>CQ WPX - Rules</title>
+<meta name="Description" content="Rules for the CQ WPX Contest">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Preload critical CSS and JS -->
+<link rel="preload" href="/design/cq-w3.css" as="style">
+<link rel="preload" href="/design/fontawesome6/css/fontawesome.min.css" as="style">
+<link rel="preload" href="/design/jquery/3.7.1/jquery.min.js" as="script">
+<link rel="preload" href="/design/doubletaptogo.min.js" as="script">
+
+<!-- Stylesheets -->
+<link rel="stylesheet" href="/design/cq-w3.css">
+<link rel="stylesheet" href="/design/fontawesome6/css/fontawesome.min.css">
+<link rel="stylesheet" href="/design/fontawesome6/css/solid.css">
+
+<!-- Icons and Manifest -->
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+<!-- Theme Colors -->
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+<!-- Scripts -->
+<script src="/design/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Override default css class style for proper sizing of the translations menu
+	on mobile screens less than 640px wide	
+ -->
+    <style>
+        @media only screen and (max-width: 400px) {
+            /* For mobile phones: */
+            [class*="w3-bar-block w3-card-2 w3-right"] {
+                min-width: 45%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="w3-container maxwidth1366">
+	<div class='w3-right w3-hide-small w3-small toptext'>
+		Other Contests: 
+		<a href="https://cqww.com" class="w3-button w3-white w3-border w3-border-gray w3-round w3-padding-small">CQ WW</a>
+		<a href="https://cqwpx.com/" class="w3-button w3-white w3-border w3-border-gray w3-round w3-padding-small">CQ WPX</a>
+		<a href="https://cqwwrtty.com" class="w3-button w3-white w3-border w3-border-gray w3-round w3-padding-small">CQ WW RTTY</a>
+		<a href="https://cqwpxrtty.com" class="w3-button w3-white w3-border w3-border-gray w3-round w3-padding-small">CQ WPX RTTY</a>
+		<a href="https://cq160.com" class="w3-button w3-white w3-border w3-border-gray w3-round w3-padding-small">CQ 160</a>
+		<a href="https://cqww-vhf.com" class="w3-button w3-white w3-border w3-border-gray w3-round w3-padding-small">CQ VHF</a>
+		<a href="https://ww-digi.com" class="w3-button w3-white w3-border w3-border-gray w3-round w3-padding-small">WW DIGI</a>
+	</div>
+</div>
+<div class='w3-row'>
+
+	<div class="w3-cell w3-cell-middle">
+		<a href="/index.htm">
+		<img alt="CQ Logo" src="/images/CQ-logo.png" style="margin: 8px; height: 104px; height: 6.15vw; min-height: 41px; width: 100px; width: 6vw; min-width: 40px;" >
+		</a>
+	</div>
+	<div class="w3-cell w3-cell-middle">
+		<p style="margin: 8px;" class="contestname">CQ World Wide WPX Contest</p>
+	</div>
+</div>
+
+<nav id="nav">
+	<a href="#nav" title="Show navigation">Show navigation</a>
+	<a href="#" title="Hide navigation">Hide navigation</a>
+	<ul>
+		<li><a href="/index.htm"><i class="fa-solid fa-house"></i> Home</a></li>
+		<li><a href="/rules.htm" aria-haspopup="true">Rules  <i class="fa-solid fa-caret-down"></i></a>
+		<ul>
+			<li><a href="/rules/">Rules</a></li>
+			<li><a href="/rules_faq.htm">Rules FAQ</a></li>
+			<li><a href="/rules/rules_archive.htm">Rules Archive</a></li>
+		</ul>
+		</li>
+		<li><a href="/plaques/">Plaques</a></li>
+		<li><a href="/results/" aria-haspopup="true">Results <i class="fa-solid fa-caret-down"></i></a> 
+		<ul>
+			<li><a href="/results/">Results Articles</a></li>
+			<li><a href="/scoresph.htm"><i class="fa-solid fa-rectangle-list"></i> Final Scores SSB</a></li>
+			<li><a href="/scorescw.htm"><i class="fa-solid fa-rectangle-list"></i> Final Scores CW</a></li>
+			<li><a href="/overlayscores.htm">Overlay Scores</a></li>
+			<li><a href="/clubscores.htm">Club Scores</a></li>
+			<li><a href="/soapboxph.htm">Soapbox Comments SSB</a></li>
+			<li><a href="/soapboxcw.htm">Soapbox Comments CW</a></li>
+			<li><a href="/raw.htm?mode=ph">Raw Scores SSB</a></li>
+			<li><a href="/raw.htm?mode=cw">Raw Scores CW</a></li>
+			<li><a href="/publiclcr/">Public Log Checking Reports</a></li>
+			<li><a href="/maps/">Entry Maps</a></li>
+			<li><a href="/stats.htm">Entry Statistics</a></li>
+		</ul>
+		</li>
+		<li><a href="/records.htm" aria-haspopup="true">Records <i class="fa-solid fa-caret-down"></i></a>
+		<ul>
+			<li><a href="/records.htm"><i class="fa-solid fa-book-atlas"></i> By Region</a></li>
+
+			<li><a href="/records_overlay.htm">Overlay Categories</a></li>
+			<li><a href="/records_prefix.htm">Prefix Records</a></li>
+			<li><a href="/recordsthisyear.htm"><i class="fa-solid fa-star"></i> New Records</a></li>
+			<li><a href="/overlayrecordsthisyear.htm"><i class="fa-solid fa-star"></i> New Overlay Records</a></li>
+			<li><a href="/legacyrecords.htm">Legacy Single Op By Region</a></li>
+			<li><a href="/winners.htm">Winners by Year</a></li>
+			<li><a href="/rates/"><i class="fa-solid fa-arrow-up-right-dots"></i> Highest QSO Rates</a></li>
+		</ul>
+		</li>
+		<li><a href="/logs.htm" aria-haspopup="true">Logs  <i class="fa-solid fa-caret-down"></i></a>
+		<ul>
+			<li><a href="/logs.htm">Submitting Your Log</a></li>
+			<li><a href="/logcheck/"><i class="fa-solid fa-arrow-up-from-bracket"></i> Cabrillo Log Upload</a></li>
+			<li><a href="/adif/"><i class="fa-solid fa-wand-magic-sparkles"></i> ADIF Log Converter</a></li>
+			<li><a href="/cabrillo.htm">Cabrillo File Format</a></li>
+			<li><a href="/logs_received_ssb.htm">Logs Received - SSB</a></li>
+			<li><a href="/logs_received_cw.htm">Logs Received - CW</a></li>
+			<li><a href="/publiclogs/">Public Logs</a></li>
+		</ul>
+		</li>
+		<li><a href="/resources.htm" aria-haspopup="true">Resources  <i class="fa-solid fa-caret-down"></i></a>
+		<ul>
+			<li><a href="/resources.htm">Resources</a></li>
+			<li><a href="/clubnames.htm">Club Names</a></li>
+			<li><a href="/locations.htm">Location Names</a></li>
+			<li><a href="/publiclcr/">Public Log Checking Reports</a></li>
+			<li><a href="/api_reference.htm">REST API Reference</a></li>
+		</ul>
+		</li>
+		<li><a href="/contact/" aria-haspopup="true">Contact Us  <i class="fa-solid fa-caret-down"></i></a>
+		<ul>
+			<li><a href="/contact/"><i class="fa-solid fa-arrows-to-circle"></i> Contact Form</a></li>
+			<li><a href="/organization.htm"><i class="fa-solid fa-people-group"></i> Organization</a></li>
+		</ul>
+		</li>
+		<li><a href="/blog/" aria-haspopup="true">Blog  <i class="fa-solid fa-caret-down"></i></a>
+			<ul>
+				<li><a href="/blog/"><i class="fa-solid fa-blog"></i> Blog</a></li>
+				<li><a href="/blog/archive/">Archive</a></li>
+			</ul>
+		</li>
+	</ul>
+</nav>
+
+<script src="/design/doubletaptogo.min.js" async></script>
+
+<script>
+	$( function()
+	{
+		$( '#nav li:has(ul)' ).doubleTapToGo();
+	});
+</script>
+
+<div class="w3-container" style="max-width: 1400px;">
+	<div class="w3-left-align w3-border-bottom w3-text-red"><h1>Rules</h1></div>
+
+	<!-- Sidebar -->
+			<!-- Sidebar -->
+	
+	<div class="w3-bar-block w3-card-2 w3-right" style='max-width: 20%;'>
+		<h3 class="w3-bar-item">Translations</h3>
+		<a class="w3-bar-item w3-button w3-border-bottom" href="/rules.htm" >English</a>
+
+		<a class="w3-bar-item w3-button w3-border-bottom" href="/rules/2026_cqwpx_rules_bg.pdf" target="_blank">
+		<span lang="bg">Български</span> [Bulgarian]</a>
+
+		<a class="w3-bar-item w3-button w3-border-bottom" href="/rules/2026_cqwpx_rules_cn.pdf" target="_blank">
+		<span lang="zh-cn">&#20013;&#25991;</span> [Chinese]</a>
+
+		<a class="w3-bar-item w3-button w3-border-bottom" href="/rules/2026_cqwpx_rules_cs.pdf" target="_blank">
+		<span lang="cs">Čeština</span> [Czech]</a>
+
+		<a class="w3-bar-item w3-button w3-border-bottom" href="/rules/2026_cqwpx_rules_nl.pdf" target="_blank">
+		Nederlandse [Dutch]</a>
+
+		<a class="w3-bar-item w3-button w3-border-bottom" href="/rules/2026_cqwpx_rules_es.pdf" target="_blank">
+		Espa&ntilde;ol [Spanish]</a>
+
+
+		<a class="w3-bar-item w3-button w3-border-bottom" href="/rules/2026_cqwpx_rules_fi.pdf" target="_blank">
+		Suomeksi [Finnish]</a>
+
+		<a class="w3-bar-item w3-button w3-border-bottom" href="/rules/2026_cqwpx_rules_fr.pdf" target="_blank">
+		<span lang="fr">Fran&ccedil;ais</span> [French]</a>
+
+		<a class="w3-bar-item w3-button w3-border-bottom" href="/rules/2026_cqwpx_rules_de.pdf" target="_blank">
+		Deutsch [German]</a>
+
+		<a class="w3-bar-item w3-button w3-border-bottom" href="/rules/2026_cqwpx_rules_el.pdf" target="_blank">
+		<span lang="el">Έλληνες</span> [Greek]</a>
+
+		<a class="w3-bar-item w3-button w3-border-bottom" href="/rules/2026_cqwpx_rules_jp.pdf" target="_blank">
+		<span lang="ja">&#26085;&#26412;&#35486;</span> [Japanese]</a>
+
+		<a class="w3-bar-item w3-button w3-border-bottom" href="/rules/2026_cqwpx_rules_ro.pdf" target="_blank">
+		<span lang="ro">Română</span> [Romanian]</a>
+
+		<a class="w3-bar-item w3-button w3-border-bottom" href="/rules/2026_cqwpx_rules_ru" target="_blank">
+		<span lang="ru">&#1056;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;</span> 
+		[Russian]</a>
+
+		<a class="w3-bar-item w3-button w3-border-bottom" href="/rules/2026_cqwpx_rules_sl.pdf" target="_blank">
+		<span lang="sl">Slovenščina</span> [Slovenian]</a>
+
+		<a class="w3-bar-item w3-button w3-border-bottom" href="/rules/2026_cqwpx_rules_tr.pdf" target="_blank">
+		Turk [Turkish]</a>
+
+	</div>
+
+
+	<!-- Page Content -->
+	<div style="margin-right: 20%">
+	<p><a href="/rules/2026_cqwpx_rules.pdf">Current Rules (pdf)</a></p>
+		<h2>2026 CQ World-Wide WPX Contest</h2>
+		<p>SSB: March 28-29, 2025 CW: May 30-31, 2026</p>
+		<p>Starts: 0000 UTC Saturday Ends: 2359 UTC Sunday</p>
+
+		<h3>I. OBJECTIVE:</h3> 
+		<p>For amateurs worldwide to contact as many amateurs and prefixes as possible 
+		during the contest period.</p>
+
+		<h3>II. PERIOD OF OPERATION:</h3> 
+		<p>48 hours. Single Operator stations may operate 36 of the 48 hours &#8211; 
+		<b>off times must be a minimum of 60 minutes during which no QSO is logged.</b> 
+		Multi-operator stations may operate the full 48 hours.</p>
+		<h3>III. BANDS:</h3> 
+		<p>Only the 1.8, 3.5, 7, 14, 21, and 28 MHz bands may be used. <b>Observance of 
+		established band plans is strongly encouraged.</b></p>
+
+		<h3>IV. EXCHANGE:</h3> 
+		<p>RS(T) report plus a progressive contact serial number starting with 001 for 
+		the first contact. Note: Multi-Two, Multi-Unlimited, and Multi-Distributed 
+		entrants use separate serial number sequences on each band.</p>
+
+		<h3>V. SCORING:</h3>
+		<p><b>A. Score:</b> The final score is the result of the total QSO points 
+		multiplied by the number of different prefixes worked.</p>
+		<p><b>B. QSO Points:</b> A station may be worked once on each band for QSO 
+		point credit:</p>
+		<p><b>1.</b> Contacts between stations on different continents are worth 
+		three (3) points on 28, 21, and 14 MHz and six (6) points on 7, 3.5, and 
+		1.8 MHz.</p>
+		<p><b>2.</b> Contacts between stations on the same continent, but different 
+		countries, are worth one (1) point on 28, 21, and 14 MHz and two (2) points 
+		on 7, 3.5, and 1.8 MHz. Exception: For North American stations only&#8212;contacts 
+		between stations within the North American boundaries (both stations must 
+		be located in North America) are worth two (2) points on 28, 21, and 14 
+		MHz and four (4) points on 7, 3.5, and 1.8 MHz.</p>
+		<p><b>3.</b> Contacts between stations in the same country are worth 1 point 
+		regardless of band.</p>
+		<p><b>C. Prefix Multipliers:</b> The prefix multiplier is the number of 
+		valid prefixes worked. Each PREFIX is counted only once regardless of the 
+		band or number of times the same prefix is worked.</p>
+		<p><b>1.</b> A PREFIX is the letter/numeral combination which forms the first part 
+		of the amateur call. Examples: N8, W8, WD8, HG1, HG19, KC2, OE2, OE25, LY1000, etc. 
+		Any difference in the numbering, lettering, or order of same shall count as a 
+		separate prefix. In cases of portable operation, the portable designator will 
+		then become the prefix. The portable prefix must be an authorized prefix of the 
+		country/call area of operation. Portable designators without numbers will be 
+		assigned a zero (&#0216;) after the second letter of the portable designator to form 
+		the prefix. Example: PA/N8BJQ would become PAØ. All calls without numbers will 
+		be assigned a zero (&#0216;) after the first two letters to form the prefix. Example: 
+		XEFTJW would count as XE&#0216;. Maritime mobile, mobile, /A, /E, /J, /P, or other 
+		license class identifiers do not count as prefixes.</p>
+		<p><b>2.</b> Special event, commemorative, and other unique prefix stations 
+		are encouraged to participate. Prefixes must be issued or permitted by the licensing 
+		authority of the country of operation.</p>
+
+		<h3>VI. ENTRY CATEGORIES:</h3>
+		<p>Use of QSO alerting assistance is permitted in all categories with the exception 
+		of the Single Operator Classic Overlay.</p>
+		<p><b>A. Single Operator Categories:</b>One person (the operator) performs 
+		all operating and logging functions. There is no limit on band changes. 
+		Only one transmitted signal is permitted at any time. </p>
+		<p><b>1. Single Operator High Power (All Band or Single Band):</b>Total 
+		output power must not exceed <b>1500 watts.</b> </p>
+		<p><b>2. Single Operator Low Power (All Band or Single Band):</b>Total 
+		output power must not exceed <b>100 watts.</b> </p>
+		<p><b>3. Single Operator QRP (All Band or Single Band): </b>Total 
+		output power must not exceed <b>5 watts. </b></p>
+		<p><b>B. Single Operator Overlay Categories: </b>Any Single Operator entrant 
+		who meets the requirements may ALSO enter one of the categories shown below 
+		by adding the appropriate CATEGORY-OVERLAY line in the Cabrillo log file 
+		header. Overlay category entries will be listed separately in the results, 
+		scored as All Bands, and grouped by High Power and Low Power (includes QRP).</p>
+		<p style="margin-left: 25px;"><b>1. Tribander/Single Element (TB-WIRES):
+		</b>During the contest an entrant shall use only one (1) tribander (any 
+		type, with a single feed line from the transmitter to the antenna) for 10, 
+		15, and 20 meters and single-element antennas on 40, 80, and 160 meters. Separate 
+		receiving antennas are not permitted in this category.</p>
+		<p style="margin-left: 25px;"><b>2. Rookie (ROOKIE): </b>To enter this category 
+		the operator must have been licensed as a radio amateur three (3) years 
+		or less on the date of the contest. The date the operator was first licensed <b>must</b> be 
+		indicated in the SOAPBOX field. Previous Rookie winners are not eligible for plaques 
+		in this category. </p>
+		<p style="margin-left: 25px;"><b>3. Classic Operator (CLASSIC): </b>The entrant will 
+		use only one radio and may operate up to 24 of the 48 hours – off times are a 
+		minimum of 60 minutes during which no QSO is logged. If the log shows more than 
+		24 hours of operation, only the first 24 hours will be counted for the overlay score. 
+		Use of QSO alerting assistance of any kind is prohibited (see rule IX.B) for the 
+		duration of contest. Receiving while transmitting is also prohibited.</p>
+		<p style="margin-left: 25px;"><b>4. Youth (YOUTH): </b>The operator was 25 years old or younger at the 
+		start of the contest. Indicate the birth date in the SOAPBOX field.</p>
+		<p><b>C. Multi-Operator Categories (All Band only): </b>More than one person 
+		can contribute to the final score during the official contest period. Select 
+		category based on number of transmitted signals or number of locations</p>
+		<p><b>1. Single-Transmitter (MULTI-ONE): </b>Only one transmitted signal 
+		is permitted at any time. A maximum of ten (10) band changes may be made 
+		in any clock hour (00 through 59 minutes). For example, a change from 20 
+		meters to 40 meters and then back to 20 meters counts as two band changes. 
+		Use a single serial number sequence for the entire log. </p>
+		<p style="margin-left: 25px;"><b>a. High Power.</b> Total output power of 
+		each transmitted signal must not exceed <b>1500 watts</b>. </p>
+		<p style="margin-left: 25px;"><b>b. Low Power.</b> Total output power of 
+		each transmitted signal must not exceed <b>100 watts</b>.</p>
+		<p><b>2. Two-Transmitter (MULTI-TWO): </b>A maximum of two transmitted signals 
+		is permitted at any time on two different bands. Both transmitters may work 
+		any station. A station may only be worked once per band regardless of which 
+		transmitter is used. <b>The log must indicate which transmitter made each 
+		QSO</b> (column 81 of CABRILLO QSO template for CQ contests). Each transmitter 
+		may make a maximum of eight (8) band changes in any clock hour (00 through 
+		59 minutes). Use a separate serial number sequence for each band. Total 
+		output power of each transmitted signal must not exceed <b>1500 watts.</b>
+		</p>
+		<p><b>3. Multi-Transmitter (MULTI-UNLIMITED): </b>A maximum of six transmitted 
+		signals, one per band, at any one time. Six bands may be activated simultaneously. 
+		Use a separate serial number sequence for each band. Total output power 
+		of each transmitted signal must not exceed <b>1500 watts.</b> </p>
+		<p><b>4. Multi-Transmitter Distributed (MULTI-DISTRIBUTED): </b>A maximum of six 
+		transmitted signals, one per band at any one time, from stations in different 
+		locations.  All equipment (transmitters, receivers, amplifiers, antennas, etc.) 
+		must be located in same DXCC entity and CQ Zone, including remotely controlled 
+		equipment.  Six bands may be activated simultaneously.  Use a separate serial 
+		number sequence for each band. Total output power of each transmitted signal 
+		must not exceed <b>1500 watts</b>.  The Cabrillo log header must include the following 
+		lines: CATEGORY-OPERATOR: MULTI-OP, CATEGORY-STATION: DISTRIBUTED.  Rules 
+		X.E and X.F do not apply to this category.</p>
+		<p><b>D. Checklog: </b>Entry submitted to assist with the log checking. The entry will 
+		not have a score in the results and the log will not be made public. </p>
+
+		<h3>VII. AWARDS: </h3>
+		<p>A single-band log will be eligible for a single-band 
+		award only.</p>
+		<p><b>A. Plaques </b>are awarded to recognize top performance in a number 
+		of categories. View the current list of plaques and sponsors at 
+		&lt;<a href="https://www.cqwpx.com/plaques/">www.cqwpx.com/plaques/</a>&gt;. </p>
+		<p>Only one plaque will be awarded per entry. A station winning a World 
+		plaque will not be considered for a sub-area award. That award will be given 
+		to the runner-up for that area if the number of entries justifies the award.
+		</p>
+		<p><b>B. Certificates: </b>Electronic certificates will be made available 
+		for download for everyone that submits an on-time entry. </p>
+
+		<h3>VIII. CLUB COMPETITION: </h3>
+		<p>The club score is the total aggregate score from logs submitted by members. 
+		There are two separate club competition categories.</p>
+		<p><b>A. USA Clubs: </b>Participation is limited to club members residing within 
+		a 250 mile radius circle from the center of club area.</p>
+		<p><b>B. DX Clubs: </b>Participation is limited to club members residing within 
+		EITHER the DXCC country where the club is located OR within a 400 km radius circle 
+		from the center of the club.</p>
+		<p><b>C. General Club Rules:</b></p>
+		<ol>
+			<li>National organizations (e.g., JARL, REF or DARC) are not eligible 
+			for the club competition. </li>
+			<li>Single-operator entries may only contribute to one club. Multi-operator 
+			scores may be allocated to multiple clubs as a percentage of the number 
+			of club members participating in the operation. The log entry must spell 
+			out the full club name (and club allocations if multi-op).</li>
+			<li>A minimum of four logs must be received for a club to be listed 
+			in the results. Checklog entries are not counted for the club score.</li>
+			<li>The word “reside” shall be defined as: To dwell permanently or 
+			continuously or to occupy a place as a person's fixed, 
+			permanent, and principal home for legal purposes.</li>
+			<li>Eligible club members may contribute their DXpedition scores to 
+			their organization’s club entry.</li>
+		</ol>
+
+		<h3>IX. DEFINITIONS OF TERMS: </h3>
+		<p><b>A. Station location: </b>The area in which all the transmitters, receivers, 
+		amplifiers and antennas are located. All transmitters, receivers and amplifiers must 
+		be within a single 500-meter diameter circle. Antennas must be physically connected 
+		by RF transmission lines to the transmitters, receivers and amplifiers.</p>
+		<p><b>B. QSO finding assistance: </b>The use of any technology or other 
+		source that provides call sign or multiplier identification of a signal 
+		to the operator. This includes, but is not limited to, use of a CW decoder, 
+		DX cluster, DX spotting web sites (e.g., DX Summit), local or remote call 
+		sign and frequency decoding technology (e.g., CW Skimmer or Reverse Beacon 
+		Network), or operating arrangements involving other individuals.</p>
+
+		<h3>X. GENERAL RULES FOR ALL ENTRANTS: </h3>
+		<p><b>A.</b> Entrants must operate within the limits of their chosen category 
+		when performing any activity that could affect their submitted score.
+		</p>
+		<p><b>B.</b> A different callsign must be used for each entry. Only the 
+		entrant&#8217;s callsign may be used to aid the entrant&#8217;s score.
+		</p>
+		<p><b>C.</b> Do not exceed the total output power limitation of the chosen 
+		category on any band. Total output power on any band at any time is measured 
+		at the final output of the active amplifier(s). </p>
+		<p><b>D.</b> Self-spotting or asking to be spotted is not permitted. </p>
+		<p><b>E.</b> All operation must take place from one station location. Remote 
+		operation is permitted if the physical location of all transmitters, receivers, 
+		and antennas are at one station location. A remotely operated station must 
+		obey all station license, operator license, and category limitations. The 
+		call sign used must be one issued or permitted by the Regulatory Authority 
+		of the station location. </p>
+		<p><b>F.</b> Remote receivers outside the station location are not permitted.
+		</p>
+		<p><b>G.</b> Only one signal on a band is allowed at any time.</p>
+		<p><b>H.</b> Alternating CQs 
+		on two or more frequencies on a band is not permitted. </p>
+		<p><b>I. </b>All requests for contacts, responses to calls, and copying 
+		of call signs and contest exchanges must be accomplished during the contest 
+		period using the mode and frequencies of the contest. </p>
+		<p><b>J. </b>Correction of logged call signs and exchanges after the contest 
+		by using any database, recordings, email or other methods of confirming 
+		QSOs is not allowed. </p>
+		<p><b>K.</b> Call signs logged must be the same as those exchanged over 
+		the air by the entrants during the QSO.</p>
+		<p><b>L.</b> For ITU Region 1 stations: transmitting on the 40m band, above 
+		7200 KHz during the SSB (phone) contest weekend is not permitted.</p>
+		<p><b>M.</b> For ITU Region 1 stations: transmitting below 1810 KHz during the 
+		contest weekends is not permitted.</p>
+		<p><b>N.</b> A human operator must initiate the following actions at all times: 1) 
+		changing receive or transmit frequencies, 2) calling a QSO partner, 3) logging a 
+		QSO. Autonomous systems or robots that emulate these actions are prohibited.</p>
+
+		<h3>XI. LOG INSTRUCTIONS:</h3>
+		<p>Electronic submission of logs is <b>required</b>for all entrants. </p>
+		<p><b>A. The log MUST show the following for each contact: </b>correct date 
+		and time in UTC, frequency (or band), call sign of the station worked, exchange 
+		sent, and exchange received. A log without all required information may 
+		be reclassified to Checklog. Contacts should be logged immediately as they 
+		are completed. Stations competing for World, Continent, and USA awards must 
+		provide accurate frequencies for all contacts in the log. </p>
+		<p><b>B. Single band entrants are required to include all contacts </b> made 
+		during the contest period, even if on other bands. Only contacts made on 
+		the band specified in the Cabrillo header will be considered 
+		for scoring purposes. Logs with contacts only on one band will be classified 
+		as single band entries. </p>
+		<p><b>C. The CABRILLO file format is the standard for logs. </b> See www.cqwpx.com/cabrillo.htm 
+		for detailed instructions on filling out the CABRILLO file header. Failure 
+		to fill out the header correctly may result in the entry being placed in 
+		the wrong category or reclassified as a Checklog. Note: U.S. stations must 
+		indicate the station location in the CABRILLO header (e.g., LOCATION: OH).
+		</p>
+		<p><b>D. Web upload is the only method of log submission.</b> 
+		 Web upload of logs is available at &lt;<a href="https://www.cqwpx.com/logcheck/">www.cqwpx.com/logcheck/
+		</a>&gt;. All logs received will be confirmed via e-mail. A listing of 
+		logs received can be found at &lt;<a href="https://www.cqwpx.com">www.cqwpx.com.</a>&gt; </p>
+		<p><b>E. Instructions for NON-CABRILLO electronic logs: </b> If you are not 
+		able to submit a CABRILLO format log, please contact the Contest Director 
+		for assistance with submitting another format. </p>
+		<p><b>F. Entry Confirmation: </b> All logs received will be confirmed via 
+		e-mail. A listing of logs received can be found at &lt;<a href="https://www.cqwpx.com">www.cqwpx.com.</a>&gt;. </p>
+		<p><b>G. Log withdrawal: </b>An entrant may withdraw the submitted log for 
+		any reason within 30 days of the log deadline. Contact the Contest Director 
+		for instructions. </p>
+
+		<h3>XII. LOG DEADLINE: </h3>
+		<p><b>A. </b>All entries must be submitted WITHIN 48 HOURS after the end of the 
+		contest: SSB logs no later than 2359 UTC 31 March 2026, 
+		CW logs no later than 2359 UTC 2 June 2026. Resubmitting an entry after the 
+		deadline will result in it being considered as a late log. </p>
+		<p><b>B. </b>An extension may be requested by e-mail to &lt;
+		<a href="mailto:director@cqwpx.com">director@cqwpx.com </a>&gt;. The request 
+		must state a legitimate reason and must be received before the log deadline. 
+		Extensions are granted only upon confirmation by the Contest Director.</p>
+		<p><b>C. </b>Logs submitted after the deadline may be listed in 
+		the results but are not eligible for awards. </p>
+
+		<h3>XIII. JUDGING:</h3>
+		<p>The CQ WPX Contest Committee is responsible for checking 
+		and adjudicating the contest entries. Entrants are expected to follow the 
+		rules and best amateur radio practices. Violation of the rules of the contest 
+		or unsportsmanlike conduct may lead to disciplinary action by the Committee.
+		</p>
+		<p><b>A. Unsportsmanlike Conduct:</b> Examples of unsportsmanlike conduct include, 
+		but are not limited to: </p>
+		<ol>
+			<li>ARRANGING or CONFIRMING any contacts during the contest by use of 
+			ANY non-amateur radio means such as telephones, Internet, instant messaging, 
+			chat rooms, VoIP, social media or web sites.</li>
+			<li>Transmissions by the entrant on frequencies outside of license limitations.</li>
+			<li>Changing times in the log to meet band change or off time rules.</li>
+			<li>Taking credit for excessive unverifiable QSOs or unverifiable multipliers.</li>
+			<li>Signals with excessive bandwidth (e.g., splatter, clicks) or harmonics 
+			on other bands.</li>
+			<li>Running stations making more than 3 contacts without sending their 
+			callsign. </li>
+		</ol>
+		<p><b>B. Disciplinary Actions:</b> In the event of a violation, the entrant is 
+		subject to disqualification at the discretion of the Committee. </p>
+		<ol>
+			<li>DISQUALIFICATION: Entry will be listed at the end of the published 
+			results and is not eligible for an award.</li>
+			<li>Notification of Committee actions will be sent by email to the address 
+			provided with the log submission. The entrant has five days to appeal 
+			the decision to the Contest Director. After that time the decision is 
+			final.</li>
+			<li>An entrant may withdraw the submitted log for any reason within 
+			30 days of the log deadline. Contact the Contest Director for instructions.</li>
+			<li>The Committee reserves the right to change the category of any entry 
+			based on its examination of the log or other information. </li>
+		</ol>
+		<p><b>C. Log Checking:</b> All logs are checked using custom software and human 
+		judgment. </p>
+		<ol>
+		<li>Duplicate contacts are removed with no additional penalty.</li>
+		<li>Contacts with an incorrectly received exchange are removed with no 
+		additional penalty.</li>
+		<li>Call sign errors or call signs not found in the other log are removed 
+		and receive a penalty of two times the QSO point value for that contact.</li>
+		<li>Contacts that do not meet the band change rules for multi-operator 
+		entries are removed with no additional penalty.</li>
+		</ol>
+		<p><b>D. Station Information:</b> Entrants must agree to supply the following information 
+		upon request of the Contest Committee: </p>
+		<ol>
+		<li>Details and photographs of their station equipment, antennas, amplifiers, 
+		switching systems, etc.</li>
+		</ol>
+		<h3>XIV. DECLARATION:</h3>
+		<p>By submitting a CQ WPX Contest log, and in consideration of the efforts 
+		of the CQ WPX Contest Committee to review and evaluate that log, an entrant 
+		unconditionally and irrevocably agrees that he/she has: 1) read and understood 
+		the rules of the contest and agrees to be bound by them, 2) operated according 
+		to all rules and regulations that pertain to amateur radio for the station 
+		location, 3) agreed the log entry may be made open to the public, and 4) 
+		accepted that the issuing of disqualifications and other decisions of the 
+		Committee are official and final. If an entrant is unwilling or unable to 
+		agree to all of the foregoing, the entrant should not submit the entry or 
+		submit the entry as a Checklog only.</p>
+		<p>Questions pertaining to the CQ WPX Contest may be emailed to the CQ WPX 
+		Contest Director &lt;<a href="mailto:director@cqwpx.com">director@cqwpx.com </a>&gt;.</p>
+</div>
+</div>
+<p>&nbsp;</p>
+<div class="w3-bar w3-deep-purple w3-padding w3-small w3-section" style="max-width: 1400px;">
+Copyright &copy; 
+2000-2026 
+<a href="https://wwrof.org" target="blank">World Wide Radio Operators Foundation, Inc.</a>. All Rights Reserved.
+</div>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-J2GTCJFFRC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-J2GTCJFFRC');
+</script>
+</body>
+</html>

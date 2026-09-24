@@ -1,0 +1,1896 @@
+{
+  "schema": 2,
+  "id": "all_hyogo",
+  "name": "オール兵庫コンテスト",
+  "year": 2026,
+  "url": "https://www.jarl.com/hyogo/contest/contest2026/2026-ALL-HG_rule.pdf",
+  "organizer": "JARL兵庫県支部",
+  "sort_name": "オール兵庫コンテスト",
+  "points": {
+    "cw": 1,
+    "phone": 1,
+    "digital": 0
+  },
+  "conditions": [],
+  "duplicate": {
+    "enabled": true,
+    "by_mode": false
+  },
+  "multi1": {
+    "kind": "off",
+    "start": 0,
+    "length": 2,
+    "per_band": true
+  },
+  "multi2": {
+    "kind": "off",
+    "value": 1,
+    "condition": {
+      "all": []
+    }
+  },
+  "formula": "total",
+  "scoring": {
+    "eligible": {
+      "all": []
+    },
+    "multipliers": [
+      {
+        "id": "region",
+        "source": "area",
+        "kind": "whole",
+        "start": 0,
+        "length": 2,
+        "per_band": true,
+        "when": {
+          "all": []
+        }
+      }
+    ],
+    "bonus": 0
+  },
+  "event": {
+    "timezone": "JST",
+    "windows": [
+      {
+        "start": "2026-01-04 09:00",
+        "end": "2026-01-04 21:00",
+        "bands": [
+          "1.9",
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28",
+          "50",
+          "144",
+          "430",
+          "1200"
+        ]
+      }
+    ],
+    "categories": [
+      {
+        "id": "I-CS-ALL",
+        "name": "I CS ALL",
+        "bands": [
+          "1.9",
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28",
+          "50",
+          "144",
+          "430",
+          "1200"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 10,
+        "min_calls": 1,
+        "required_flags": [
+          "実周波数表を確認。SOはゲストなし・同時1波、MOは実運用者2人以上・同帯1波。部門内場所不変、クロスバンド・レピータなし。ゲストOPとして運用した本人の個人提出なし"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "own_region",
+            "submission_number"
+          ]
+        }
+      },
+      {
+        "id": "I-CS-VU",
+        "name": "I CS VU",
+        "bands": [
+          "50",
+          "144",
+          "430",
+          "1200"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 4,
+        "min_calls": 1,
+        "required_flags": [
+          "実周波数表を確認。SOはゲストなし・同時1波、MOは実運用者2人以上・同帯1波。部門内場所不変、クロスバンド・レピータなし。ゲストOPとして運用した本人の個人提出なし"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "own_region",
+            "submission_number"
+          ]
+        }
+      },
+      {
+        "id": "I-CS-1_9",
+        "name": "I CS 1.9",
+        "bands": [
+          "1.9"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "実周波数表を確認。SOはゲストなし・同時1波、MOは実運用者2人以上・同帯1波。部門内場所不変、クロスバンド・レピータなし。ゲストOPとして運用した本人の個人提出なし"
+        ],
+        "submission_code": "I-CS-1.9",
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "own_region",
+            "submission_number"
+          ]
+        }
+      },
+      {
+        "id": "I-CS-3_5",
+        "name": "I CS 3.5",
+        "bands": [
+          "3.5"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "実周波数表を確認。SOはゲストなし・同時1波、MOは実運用者2人以上・同帯1波。部門内場所不変、クロスバンド・レピータなし。ゲストOPとして運用した本人の個人提出なし"
+        ],
+        "submission_code": "I-CS-3.5",
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "own_region",
+            "submission_number"
+          ]
+        }
+      },
+      {
+        "id": "I-CS-7",
+        "name": "I CS 7",
+        "bands": [
+          "7"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "実周波数表を確認。SOはゲストなし・同時1波、MOは実運用者2人以上・同帯1波。部門内場所不変、クロスバンド・レピータなし。ゲストOPとして運用した本人の個人提出なし"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "own_region",
+            "submission_number"
+          ]
+        }
+      },
+      {
+        "id": "I-CS-14",
+        "name": "I CS 14",
+        "bands": [
+          "14"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "実周波数表を確認。SOはゲストなし・同時1波、MOは実運用者2人以上・同帯1波。部門内場所不変、クロスバンド・レピータなし。ゲストOPとして運用した本人の個人提出なし"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "own_region",
+            "submission_number"
+          ]
+        }
+      },
+      {
+        "id": "I-CS-21",
+        "name": "I CS 21",
+        "bands": [
+          "21"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "実周波数表を確認。SOはゲストなし・同時1波、MOは実運用者2人以上・同帯1波。部門内場所不変、クロスバンド・レピータなし。ゲストOPとして運用した本人の個人提出なし"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "own_region",
+            "submission_number"
+          ]
+        }
+      },
+      {
+        "id": "I-CS-28",
+        "name": "I CS 28",
+        "bands": [
+          "28"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "実周波数表を確認。SOはゲストなし・同時1波、MOは実運用者2人以上・同帯1波。部門内場所不変、クロスバンド・レピータなし。ゲストOPとして運用した本人の個人提出なし"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "own_region",
+            "submission_number"
+          ]
+        }
+      },
+      {
+        "id": "I-CS-50",
+        "name": "I CS 50",
+        "bands": [
+          "50"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "実周波数表を確認。SOはゲストなし・同時1波、MOは実運用者2人以上・同帯1波。部門内場所不変、クロスバンド・レピータなし。ゲストOPとして運用した本人の個人提出なし"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "own_region",
+            "submission_number"
+          ]
+        }
+      },
+      {
+        "id": "I-CS-144",
+        "name": "I CS 144",
+        "bands": [
+          "144"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "実周波数表を確認。SOはゲストなし・同時1波、MOは実運用者2人以上・同帯1波。部門内場所不変、クロスバンド・レピータなし。ゲストOPとして運用した本人の個人提出なし"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "own_region",
+            "submission_number"
+          ]
+        }
+      },
+      {
+        "id": "I-CS-430",
+        "name": "I CS 430",
+        "bands": [
+          "430"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "実周波数表を確認。SOはゲストなし・同時1波、MOは実運用者2人以上・同帯1波。部門内場所不変、クロスバンド・レピータなし。ゲストOPとして運用した本人の個人提出なし"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "own_region",
+            "submission_number"
+          ]
+        }
+      },
+      {
+        "id": "I-CS-1200",
+        "name": "I CS 1200",
+        "bands": [
+          "1200"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "実周波数表を確認。SOはゲストなし・同時1波、MOは実運用者2人以上・同帯1波。部門内場所不変、クロスバンド・レピータなし。ゲストOPとして運用した本人の個人提出なし"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "own_region",
+            "submission_number"
+          ]
+        }
+      },
+      {
+        "id": "I-CM-ALL",
+        "name": "I MO CS",
+        "bands": [
+          "1.9",
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28",
+          "50",
+          "144",
+          "430",
+          "1200"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 10,
+        "min_calls": 1,
+        "required_flags": [
+          "実周波数表を確認。SOはゲストなし・同時1波、MOは実運用者2人以上・同帯1波。部門内場所不変、クロスバンド・レピータなし。ゲストOPとして運用した本人の個人提出なし"
+        ],
+        "operator": "MO",
+        "operators_in_comments": true,
+        "regional": {
+          "min_operators": 2,
+          "required_declarations": [
+            "own_region",
+            "submission_number"
+          ]
+        }
+      },
+      {
+        "id": "I-MS-ALL",
+        "name": "I MS ALL",
+        "bands": [
+          "1.9",
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28",
+          "50",
+          "144",
+          "430",
+          "1200"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 10,
+        "min_calls": 1,
+        "required_flags": [
+          "実周波数表を確認。SOはゲストなし・同時1波、MOは実運用者2人以上・同帯1波。部門内場所不変、クロスバンド・レピータなし。ゲストOPとして運用した本人の個人提出なし"
+        ],
+        "operator": "SO",
+        "required_mode_families": [
+          "phone"
+        ],
+        "regional": {
+          "required_declarations": [
+            "own_region",
+            "submission_number"
+          ]
+        }
+      },
+      {
+        "id": "I-MS-VU",
+        "name": "I MS VU",
+        "bands": [
+          "50",
+          "144",
+          "430",
+          "1200"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 4,
+        "min_calls": 1,
+        "required_flags": [
+          "実周波数表を確認。SOはゲストなし・同時1波、MOは実運用者2人以上・同帯1波。部門内場所不変、クロスバンド・レピータなし。ゲストOPとして運用した本人の個人提出なし"
+        ],
+        "operator": "SO",
+        "required_mode_families": [
+          "phone"
+        ],
+        "regional": {
+          "required_declarations": [
+            "own_region",
+            "submission_number"
+          ]
+        }
+      },
+      {
+        "id": "I-MS-1_9",
+        "name": "I MS 1.9",
+        "bands": [
+          "1.9"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "実周波数表を確認。SOはゲストなし・同時1波、MOは実運用者2人以上・同帯1波。部門内場所不変、クロスバンド・レピータなし。ゲストOPとして運用した本人の個人提出なし"
+        ],
+        "submission_code": "I-MS-1.9",
+        "operator": "SO",
+        "required_mode_families": [
+          "phone"
+        ],
+        "regional": {
+          "required_declarations": [
+            "own_region",
+            "submission_number"
+          ]
+        }
+      },
+      {
+        "id": "I-MS-3_5",
+        "name": "I MS 3.5",
+        "bands": [
+          "3.5"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "実周波数表を確認。SOはゲストなし・同時1波、MOは実運用者2人以上・同帯1波。部門内場所不変、クロスバンド・レピータなし。ゲストOPとして運用した本人の個人提出なし"
+        ],
+        "submission_code": "I-MS-3.5",
+        "operator": "SO",
+        "required_mode_families": [
+          "phone"
+        ],
+        "regional": {
+          "required_declarations": [
+            "own_region",
+            "submission_number"
+          ]
+        }
+      },
+      {
+        "id": "I-MS-7",
+        "name": "I MS 7",
+        "bands": [
+          "7"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "実周波数表を確認。SOはゲストなし・同時1波、MOは実運用者2人以上・同帯1波。部門内場所不変、クロスバンド・レピータなし。ゲストOPとして運用した本人の個人提出なし"
+        ],
+        "operator": "SO",
+        "required_mode_families": [
+          "phone"
+        ],
+        "regional": {
+          "required_declarations": [
+            "own_region",
+            "submission_number"
+          ]
+        }
+      },
+      {
+        "id": "I-MS-14",
+        "name": "I MS 14",
+        "bands": [
+          "14"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "実周波数表を確認。SOはゲストなし・同時1波、MOは実運用者2人以上・同帯1波。部門内場所不変、クロスバンド・レピータなし。ゲストOPとして運用した本人の個人提出なし"
+        ],
+        "operator": "SO",
+        "required_mode_families": [
+          "phone"
+        ],
+        "regional": {
+          "required_declarations": [
+            "own_region",
+            "submission_number"
+          ]
+        }
+      },
+      {
+        "id": "I-MS-21",
+        "name": "I MS 21",
+        "bands": [
+          "21"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "実周波数表を確認。SOはゲストなし・同時1波、MOは実運用者2人以上・同帯1波。部門内場所不変、クロスバンド・レピータなし。ゲストOPとして運用した本人の個人提出なし"
+        ],
+        "operator": "SO",
+        "required_mode_families": [
+          "phone"
+        ],
+        "regional": {
+          "required_declarations": [
+            "own_region",
+            "submission_number"
+          ]
+        }
+      },
+      {
+        "id": "I-MS-28",
+        "name": "I MS 28",
+        "bands": [
+          "28"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "実周波数表を確認。SOはゲストなし・同時1波、MOは実運用者2人以上・同帯1波。部門内場所不変、クロスバンド・レピータなし。ゲストOPとして運用した本人の個人提出なし"
+        ],
+        "operator": "SO",
+        "required_mode_families": [
+          "phone"
+        ],
+        "regional": {
+          "required_declarations": [
+            "own_region",
+            "submission_number"
+          ]
+        }
+      },
+      {
+        "id": "I-MS-50",
+        "name": "I MS 50",
+        "bands": [
+          "50"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "実周波数表を確認。SOはゲストなし・同時1波、MOは実運用者2人以上・同帯1波。部門内場所不変、クロスバンド・レピータなし。ゲストOPとして運用した本人の個人提出なし"
+        ],
+        "operator": "SO",
+        "required_mode_families": [
+          "phone"
+        ],
+        "regional": {
+          "required_declarations": [
+            "own_region",
+            "submission_number"
+          ]
+        }
+      },
+      {
+        "id": "I-MS-144",
+        "name": "I MS 144",
+        "bands": [
+          "144"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "実周波数表を確認。SOはゲストなし・同時1波、MOは実運用者2人以上・同帯1波。部門内場所不変、クロスバンド・レピータなし。ゲストOPとして運用した本人の個人提出なし"
+        ],
+        "operator": "SO",
+        "required_mode_families": [
+          "phone"
+        ],
+        "regional": {
+          "required_declarations": [
+            "own_region",
+            "submission_number"
+          ]
+        }
+      },
+      {
+        "id": "I-MS-430",
+        "name": "I MS 430",
+        "bands": [
+          "430"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "実周波数表を確認。SOはゲストなし・同時1波、MOは実運用者2人以上・同帯1波。部門内場所不変、クロスバンド・レピータなし。ゲストOPとして運用した本人の個人提出なし"
+        ],
+        "operator": "SO",
+        "required_mode_families": [
+          "phone"
+        ],
+        "regional": {
+          "required_declarations": [
+            "own_region",
+            "submission_number"
+          ]
+        }
+      },
+      {
+        "id": "I-MS-1200",
+        "name": "I MS 1200",
+        "bands": [
+          "1200"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "実周波数表を確認。SOはゲストなし・同時1波、MOは実運用者2人以上・同帯1波。部門内場所不変、クロスバンド・レピータなし。ゲストOPとして運用した本人の個人提出なし"
+        ],
+        "operator": "SO",
+        "required_mode_families": [
+          "phone"
+        ],
+        "regional": {
+          "required_declarations": [
+            "own_region",
+            "submission_number"
+          ]
+        }
+      },
+      {
+        "id": "I-MS-QRP",
+        "name": "I MS QRP",
+        "bands": [
+          "1.9",
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28",
+          "50",
+          "144",
+          "430",
+          "1200"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": 5,
+        "min_bands": 1,
+        "max_bands": 10,
+        "min_calls": 1,
+        "required_flags": [
+          "実周波数表を確認。SOはゲストなし・同時1波、MOは実運用者2人以上・同帯1波。部門内場所不変、クロスバンド・レピータなし。ゲストOPとして運用した本人の個人提出なし"
+        ],
+        "operator": "SO",
+        "required_mode_families": [
+          "phone"
+        ],
+        "regional": {
+          "required_declarations": [
+            "own_region",
+            "submission_number"
+          ]
+        }
+      },
+      {
+        "id": "I-MM-ALL",
+        "name": "I MO MS",
+        "bands": [
+          "1.9",
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28",
+          "50",
+          "144",
+          "430",
+          "1200"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 10,
+        "min_calls": 1,
+        "required_flags": [
+          "実周波数表を確認。SOはゲストなし・同時1波、MOは実運用者2人以上・同帯1波。部門内場所不変、クロスバンド・レピータなし。ゲストOPとして運用した本人の個人提出なし"
+        ],
+        "operator": "MO",
+        "operators_in_comments": true,
+        "regional": {
+          "min_operators": 2,
+          "required_declarations": [
+            "own_region",
+            "submission_number"
+          ]
+        },
+        "required_mode_families": [
+          "phone"
+        ]
+      },
+      {
+        "id": "O-CS-HF",
+        "name": "O CS HF",
+        "bands": [
+          "1.9",
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 6,
+        "min_calls": 1,
+        "required_flags": [
+          "実周波数表を確認。SOはゲストなし・同時1波、MOは実運用者2人以上・同帯1波。部門内場所不変、クロスバンド・レピータなし。ゲストOPとして運用した本人の個人提出なし"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "own_region",
+            "submission_number"
+          ]
+        }
+      },
+      {
+        "id": "O-CS-VU",
+        "name": "O CS VU",
+        "bands": [
+          "50",
+          "144",
+          "430",
+          "1200"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 4,
+        "min_calls": 1,
+        "required_flags": [
+          "実周波数表を確認。SOはゲストなし・同時1波、MOは実運用者2人以上・同帯1波。部門内場所不変、クロスバンド・レピータなし。ゲストOPとして運用した本人の個人提出なし"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "own_region",
+            "submission_number"
+          ]
+        }
+      },
+      {
+        "id": "O-CS-1_9",
+        "name": "O CS 1.9",
+        "bands": [
+          "1.9"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "実周波数表を確認。SOはゲストなし・同時1波、MOは実運用者2人以上・同帯1波。部門内場所不変、クロスバンド・レピータなし。ゲストOPとして運用した本人の個人提出なし"
+        ],
+        "submission_code": "O-CS-1.9",
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "own_region",
+            "submission_number"
+          ]
+        }
+      },
+      {
+        "id": "O-CS-3_5",
+        "name": "O CS 3.5",
+        "bands": [
+          "3.5"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "実周波数表を確認。SOはゲストなし・同時1波、MOは実運用者2人以上・同帯1波。部門内場所不変、クロスバンド・レピータなし。ゲストOPとして運用した本人の個人提出なし"
+        ],
+        "submission_code": "O-CS-3.5",
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "own_region",
+            "submission_number"
+          ]
+        }
+      },
+      {
+        "id": "O-CS-7",
+        "name": "O CS 7",
+        "bands": [
+          "7"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "実周波数表を確認。SOはゲストなし・同時1波、MOは実運用者2人以上・同帯1波。部門内場所不変、クロスバンド・レピータなし。ゲストOPとして運用した本人の個人提出なし"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "own_region",
+            "submission_number"
+          ]
+        }
+      },
+      {
+        "id": "O-CS-14",
+        "name": "O CS 14",
+        "bands": [
+          "14"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "実周波数表を確認。SOはゲストなし・同時1波、MOは実運用者2人以上・同帯1波。部門内場所不変、クロスバンド・レピータなし。ゲストOPとして運用した本人の個人提出なし"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "own_region",
+            "submission_number"
+          ]
+        }
+      },
+      {
+        "id": "O-CS-21",
+        "name": "O CS 21",
+        "bands": [
+          "21"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "実周波数表を確認。SOはゲストなし・同時1波、MOは実運用者2人以上・同帯1波。部門内場所不変、クロスバンド・レピータなし。ゲストOPとして運用した本人の個人提出なし"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "own_region",
+            "submission_number"
+          ]
+        }
+      },
+      {
+        "id": "O-CS-28",
+        "name": "O CS 28",
+        "bands": [
+          "28"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "実周波数表を確認。SOはゲストなし・同時1波、MOは実運用者2人以上・同帯1波。部門内場所不変、クロスバンド・レピータなし。ゲストOPとして運用した本人の個人提出なし"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "own_region",
+            "submission_number"
+          ]
+        }
+      },
+      {
+        "id": "O-CS-50",
+        "name": "O CS 50",
+        "bands": [
+          "50"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "実周波数表を確認。SOはゲストなし・同時1波、MOは実運用者2人以上・同帯1波。部門内場所不変、クロスバンド・レピータなし。ゲストOPとして運用した本人の個人提出なし"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "own_region",
+            "submission_number"
+          ]
+        }
+      },
+      {
+        "id": "O-CS-144",
+        "name": "O CS 144",
+        "bands": [
+          "144"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "実周波数表を確認。SOはゲストなし・同時1波、MOは実運用者2人以上・同帯1波。部門内場所不変、クロスバンド・レピータなし。ゲストOPとして運用した本人の個人提出なし"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "own_region",
+            "submission_number"
+          ]
+        }
+      },
+      {
+        "id": "O-CS-430",
+        "name": "O CS 430",
+        "bands": [
+          "430"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "実周波数表を確認。SOはゲストなし・同時1波、MOは実運用者2人以上・同帯1波。部門内場所不変、クロスバンド・レピータなし。ゲストOPとして運用した本人の個人提出なし"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "own_region",
+            "submission_number"
+          ]
+        }
+      },
+      {
+        "id": "O-CS-1200",
+        "name": "O CS 1200",
+        "bands": [
+          "1200"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "実周波数表を確認。SOはゲストなし・同時1波、MOは実運用者2人以上・同帯1波。部門内場所不変、クロスバンド・レピータなし。ゲストOPとして運用した本人の個人提出なし"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "own_region",
+            "submission_number"
+          ]
+        }
+      },
+      {
+        "id": "O-CM-ALL",
+        "name": "O MO CS",
+        "bands": [
+          "1.9",
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28",
+          "50",
+          "144",
+          "430",
+          "1200"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 10,
+        "min_calls": 1,
+        "required_flags": [
+          "実周波数表を確認。SOはゲストなし・同時1波、MOは実運用者2人以上・同帯1波。部門内場所不変、クロスバンド・レピータなし。ゲストOPとして運用した本人の個人提出なし"
+        ],
+        "operator": "MO",
+        "operators_in_comments": true,
+        "regional": {
+          "min_operators": 2,
+          "required_declarations": [
+            "own_region",
+            "submission_number"
+          ]
+        }
+      },
+      {
+        "id": "O-MS-HF",
+        "name": "O MS HF",
+        "bands": [
+          "1.9",
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 6,
+        "min_calls": 1,
+        "required_flags": [
+          "実周波数表を確認。SOはゲストなし・同時1波、MOは実運用者2人以上・同帯1波。部門内場所不変、クロスバンド・レピータなし。ゲストOPとして運用した本人の個人提出なし"
+        ],
+        "operator": "SO",
+        "required_mode_families": [
+          "phone"
+        ],
+        "regional": {
+          "required_declarations": [
+            "own_region",
+            "submission_number"
+          ]
+        }
+      },
+      {
+        "id": "O-MS-VU",
+        "name": "O MS VU",
+        "bands": [
+          "50",
+          "144",
+          "430",
+          "1200"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 4,
+        "min_calls": 1,
+        "required_flags": [
+          "実周波数表を確認。SOはゲストなし・同時1波、MOは実運用者2人以上・同帯1波。部門内場所不変、クロスバンド・レピータなし。ゲストOPとして運用した本人の個人提出なし"
+        ],
+        "operator": "SO",
+        "required_mode_families": [
+          "phone"
+        ],
+        "regional": {
+          "required_declarations": [
+            "own_region",
+            "submission_number"
+          ]
+        }
+      },
+      {
+        "id": "O-MS-1_9",
+        "name": "O MS 1.9",
+        "bands": [
+          "1.9"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "実周波数表を確認。SOはゲストなし・同時1波、MOは実運用者2人以上・同帯1波。部門内場所不変、クロスバンド・レピータなし。ゲストOPとして運用した本人の個人提出なし"
+        ],
+        "submission_code": "O-MS-1.9",
+        "operator": "SO",
+        "required_mode_families": [
+          "phone"
+        ],
+        "regional": {
+          "required_declarations": [
+            "own_region",
+            "submission_number"
+          ]
+        }
+      },
+      {
+        "id": "O-MS-3_5",
+        "name": "O MS 3.5",
+        "bands": [
+          "3.5"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "実周波数表を確認。SOはゲストなし・同時1波、MOは実運用者2人以上・同帯1波。部門内場所不変、クロスバンド・レピータなし。ゲストOPとして運用した本人の個人提出なし"
+        ],
+        "submission_code": "O-MS-3.5",
+        "operator": "SO",
+        "required_mode_families": [
+          "phone"
+        ],
+        "regional": {
+          "required_declarations": [
+            "own_region",
+            "submission_number"
+          ]
+        }
+      },
+      {
+        "id": "O-MS-7",
+        "name": "O MS 7",
+        "bands": [
+          "7"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "実周波数表を確認。SOはゲストなし・同時1波、MOは実運用者2人以上・同帯1波。部門内場所不変、クロスバンド・レピータなし。ゲストOPとして運用した本人の個人提出なし"
+        ],
+        "operator": "SO",
+        "required_mode_families": [
+          "phone"
+        ],
+        "regional": {
+          "required_declarations": [
+            "own_region",
+            "submission_number"
+          ]
+        }
+      },
+      {
+        "id": "O-MS-14",
+        "name": "O MS 14",
+        "bands": [
+          "14"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "実周波数表を確認。SOはゲストなし・同時1波、MOは実運用者2人以上・同帯1波。部門内場所不変、クロスバンド・レピータなし。ゲストOPとして運用した本人の個人提出なし"
+        ],
+        "operator": "SO",
+        "required_mode_families": [
+          "phone"
+        ],
+        "regional": {
+          "required_declarations": [
+            "own_region",
+            "submission_number"
+          ]
+        }
+      },
+      {
+        "id": "O-MS-21",
+        "name": "O MS 21",
+        "bands": [
+          "21"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "実周波数表を確認。SOはゲストなし・同時1波、MOは実運用者2人以上・同帯1波。部門内場所不変、クロスバンド・レピータなし。ゲストOPとして運用した本人の個人提出なし"
+        ],
+        "operator": "SO",
+        "required_mode_families": [
+          "phone"
+        ],
+        "regional": {
+          "required_declarations": [
+            "own_region",
+            "submission_number"
+          ]
+        }
+      },
+      {
+        "id": "O-MS-28",
+        "name": "O MS 28",
+        "bands": [
+          "28"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "実周波数表を確認。SOはゲストなし・同時1波、MOは実運用者2人以上・同帯1波。部門内場所不変、クロスバンド・レピータなし。ゲストOPとして運用した本人の個人提出なし"
+        ],
+        "operator": "SO",
+        "required_mode_families": [
+          "phone"
+        ],
+        "regional": {
+          "required_declarations": [
+            "own_region",
+            "submission_number"
+          ]
+        }
+      },
+      {
+        "id": "O-MS-50",
+        "name": "O MS 50",
+        "bands": [
+          "50"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "実周波数表を確認。SOはゲストなし・同時1波、MOは実運用者2人以上・同帯1波。部門内場所不変、クロスバンド・レピータなし。ゲストOPとして運用した本人の個人提出なし"
+        ],
+        "operator": "SO",
+        "required_mode_families": [
+          "phone"
+        ],
+        "regional": {
+          "required_declarations": [
+            "own_region",
+            "submission_number"
+          ]
+        }
+      },
+      {
+        "id": "O-MS-144",
+        "name": "O MS 144",
+        "bands": [
+          "144"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "実周波数表を確認。SOはゲストなし・同時1波、MOは実運用者2人以上・同帯1波。部門内場所不変、クロスバンド・レピータなし。ゲストOPとして運用した本人の個人提出なし"
+        ],
+        "operator": "SO",
+        "required_mode_families": [
+          "phone"
+        ],
+        "regional": {
+          "required_declarations": [
+            "own_region",
+            "submission_number"
+          ]
+        }
+      },
+      {
+        "id": "O-MS-430",
+        "name": "O MS 430",
+        "bands": [
+          "430"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "実周波数表を確認。SOはゲストなし・同時1波、MOは実運用者2人以上・同帯1波。部門内場所不変、クロスバンド・レピータなし。ゲストOPとして運用した本人の個人提出なし"
+        ],
+        "operator": "SO",
+        "required_mode_families": [
+          "phone"
+        ],
+        "regional": {
+          "required_declarations": [
+            "own_region",
+            "submission_number"
+          ]
+        }
+      },
+      {
+        "id": "O-MS-1200",
+        "name": "O MS 1200",
+        "bands": [
+          "1200"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "実周波数表を確認。SOはゲストなし・同時1波、MOは実運用者2人以上・同帯1波。部門内場所不変、クロスバンド・レピータなし。ゲストOPとして運用した本人の個人提出なし"
+        ],
+        "operator": "SO",
+        "required_mode_families": [
+          "phone"
+        ],
+        "regional": {
+          "required_declarations": [
+            "own_region",
+            "submission_number"
+          ]
+        }
+      },
+      {
+        "id": "O-MS-QRP",
+        "name": "O MS QRP",
+        "bands": [
+          "1.9",
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28",
+          "50",
+          "144",
+          "430",
+          "1200"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": 5,
+        "min_bands": 1,
+        "max_bands": 10,
+        "min_calls": 1,
+        "required_flags": [
+          "実周波数表を確認。SOはゲストなし・同時1波、MOは実運用者2人以上・同帯1波。部門内場所不変、クロスバンド・レピータなし。ゲストOPとして運用した本人の個人提出なし"
+        ],
+        "operator": "SO",
+        "required_mode_families": [
+          "phone"
+        ],
+        "regional": {
+          "required_declarations": [
+            "own_region",
+            "submission_number"
+          ]
+        }
+      },
+      {
+        "id": "O-MM-ALL",
+        "name": "O MO MS",
+        "bands": [
+          "1.9",
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28",
+          "50",
+          "144",
+          "430",
+          "1200"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 10,
+        "min_calls": 1,
+        "required_flags": [
+          "実周波数表を確認。SOはゲストなし・同時1波、MOは実運用者2人以上・同帯1波。部門内場所不変、クロスバンド・レピータなし。ゲストOPとして運用した本人の個人提出なし"
+        ],
+        "operator": "MO",
+        "operators_in_comments": true,
+        "regional": {
+          "min_operators": 2,
+          "required_declarations": [
+            "own_region",
+            "submission_number"
+          ]
+        },
+        "required_mode_families": [
+          "phone"
+        ]
+      }
+    ],
+    "required_flags": [
+      "国内の規約対象局として、実運用地・使用周波数・免許範囲・完全な番号交換を確認した",
+      "大会原典の運用制限と提出数を確認し、未受信番号を事後に補っていない（申告得点・審査前）"
+    ],
+    "duplicate_fields": [
+      "call",
+      "band"
+    ],
+    "prefer": "first",
+    "special": "none",
+    "entrant": {
+      "station_types": [
+        "individual",
+        "club",
+        "special"
+      ],
+      "guest_policy": "mo_only",
+      "checklog_only_types": [
+        "special"
+      ]
+    },
+    "normalization": {
+      "bands": {
+        "1.9MHZ": "1.9",
+        "3.5MHZ": "3.5",
+        "7MHZ": "7",
+        "14MHZ": "14",
+        "21MHZ": "21",
+        "28MHZ": "28",
+        "50MHZ": "50",
+        "144MHZ": "144",
+        "430MHZ": "430",
+        "1200MHZ": "1200",
+        "1.8": "1.9",
+        "1.8MHZ": "1.9",
+        "1.2G": "1200",
+        "1.2GHZ": "1200"
+      },
+      "modes": {
+        "USB": "SSB",
+        "LSB": "SSB"
+      },
+      "mode_families": {}
+    },
+    "regional": {
+      "declarations": {
+        "own_region": "自局送信地域。国外運用の場合はDX",
+        "submission_number": "今回の提出番号 1 又は 2（提出セットの選択順と一致）"
+      },
+      "profile": "hyogo",
+      "local_a": [
+        "2702",
+        "2703",
+        "2704",
+        "2705",
+        "2706",
+        "2707",
+        "2708",
+        "2709",
+        "2710",
+        "2711",
+        "2713",
+        "2714",
+        "2715",
+        "2716",
+        "2717",
+        "2718",
+        "2719",
+        "2720",
+        "2721",
+        "2723",
+        "2724",
+        "2725",
+        "2726",
+        "2727",
+        "2728",
+        "2729",
+        "2730",
+        "2731",
+        "27001",
+        "27005",
+        "27007",
+        "27010",
+        "27011",
+        "27013",
+        "27016",
+        "27020",
+        "270101",
+        "270102",
+        "270103",
+        "270104",
+        "270105",
+        "270106",
+        "270107",
+        "270108",
+        "270109"
+      ],
+      "local_b": [
+        "02",
+        "03",
+        "04",
+        "05",
+        "06",
+        "07",
+        "08",
+        "09",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26",
+        "28",
+        "29",
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "35",
+        "36",
+        "37",
+        "38",
+        "39",
+        "40",
+        "41",
+        "42",
+        "43",
+        "44",
+        "45",
+        "46",
+        "47",
+        "48",
+        "101",
+        "102",
+        "103",
+        "104",
+        "105",
+        "106",
+        "107",
+        "108",
+        "109",
+        "110",
+        "111",
+        "112",
+        "113",
+        "114"
+      ],
+      "entry_set": {
+        "kind": "disjoint",
+        "max": 2
+      }
+    },
+    "submission": {
+      "formats": [
+        "JARL R1.0",
+        "JARL R2.1"
+      ],
+      "zone": "JST",
+      "contest": "オール兵庫コンテスト",
+      "instructions": "2026。最大2部門、対象帯域が重ならない組合せのみ。JARL R1.0/R2.1、hyogo_hgtest@yahoo.co.jp、1月18日23:59。2部門目はサマリーCALLSIGNと件名を基本コール直後に-2（例JP3ELG-2/3）。原コール不変。県内国外1点・マルチなし、2701は点ありマルチなし。 原案・原典はdocs/contest-researchに保存。2026参考版であり2027へ自動更新しません。主催受付・Windows実機は未検証。自動提出しません。",
+      "required_fields": [
+        "opplace"
+      ],
+      "row_scope": "category",
+      "club_entry": {
+        "prefix": "27-",
+        "station_types": [
+          "individual",
+          "club"
+        ]
+      }
+    },
+    "band_modes": {
+      "1.9": [
+        "CW",
+        "SSB",
+        "AM"
+      ],
+      "3.5": [
+        "CW",
+        "SSB",
+        "AM"
+      ],
+      "7": [
+        "CW",
+        "SSB",
+        "AM"
+      ],
+      "14": [
+        "CW",
+        "SSB",
+        "AM"
+      ],
+      "21": [
+        "CW",
+        "SSB",
+        "AM"
+      ],
+      "28": [
+        "CW",
+        "SSB",
+        "AM",
+        "FM"
+      ],
+      "50": [
+        "CW",
+        "SSB",
+        "AM",
+        "FM"
+      ],
+      "144": [
+        "CW",
+        "SSB",
+        "AM",
+        "FM"
+      ],
+      "430": [
+        "CW",
+        "SSB",
+        "AM",
+        "FM"
+      ],
+      "1200": [
+        "CW",
+        "SSB",
+        "AM",
+        "FM"
+      ]
+    },
+    "rule_view": {
+      "call_method": "県内局：電信 CQ TEST／電話 CQ オール兵庫コンテスト。県外局：電信 CQ HG TEST／電話 CQ オール兵庫コンテスト。呼び出し時は運用地点を示し、県内外が区別できるよう配慮。",
+      "counterparts": "県内局：すべての局。県外局・SWL：兵庫県内で運用する局に限ります。",
+      "points_display": "ナンバーを完全に交換した交信は1点。県外局同士は無効。同一バンドの重複は電波型式を変えても得点になりません。"
+    }
+  }
+}
+

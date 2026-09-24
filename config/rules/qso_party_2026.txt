@@ -1,0 +1,235 @@
+{
+  "schema": 2,
+  "id": "qso_party",
+  "name": "第79回QSOパーティ",
+  "year": 2026,
+  "url": "https://www.jarl.org/Japanese/1_Tanoshimo/1-1_Contest/qso_party_rule.html",
+  "organizer": "JARL",
+  "sort_name": "第79回QSOパーティ",
+  "points": {
+    "cw": 0,
+    "phone": 0,
+    "digital": 0
+  },
+  "conditions": [],
+  "duplicate": {
+    "enabled": true,
+    "by_mode": false
+  },
+  "multi1": {
+    "kind": "off",
+    "start": 0,
+    "length": 2,
+    "per_band": true
+  },
+  "multi2": {
+    "kind": "off",
+    "value": 1,
+    "condition": {
+      "all": []
+    }
+  },
+  "formula": "total",
+  "scoring": {
+    "eligible": {
+      "all": []
+    },
+    "multipliers": [
+      {
+        "id": "region",
+        "source": "area",
+        "kind": "whole",
+        "start": 0,
+        "length": 2,
+        "per_band": true,
+        "when": {
+          "all": []
+        }
+      }
+    ],
+    "bonus": 0
+  },
+  "event": {
+    "timezone": "JST",
+    "windows": [
+      {
+        "start": "2026-01-02 09:00",
+        "end": "2026-01-07 21:01",
+        "bands": [
+          "0.135",
+          "0.475",
+          "1.9",
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28",
+          "10",
+          "18",
+          "24",
+          "50",
+          "144",
+          "430",
+          "1200",
+          "2400",
+          "5600",
+          "10G",
+          "24000",
+          "47000",
+          "77000",
+          "135000",
+          "248000"
+        ]
+      }
+    ],
+    "categories": [
+      {
+        "id": "30",
+        "name": "アマチュア局",
+        "bands": [
+          "0.135",
+          "0.475",
+          "1.9",
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28",
+          "10",
+          "18",
+          "24",
+          "50",
+          "144",
+          "430",
+          "1200",
+          "2400",
+          "5600",
+          "10G",
+          "24000",
+          "47000",
+          "77000",
+          "135000",
+          "248000"
+        ],
+        "modes": [
+          "*"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 23,
+        "min_calls": 1,
+        "required_flags": [],
+        "submission_code": "30",
+        "regional": {
+          "required_declarations": [
+            "own_country"
+          ]
+        }
+      }
+    ],
+    "required_flags": [
+      "実際の完全なレポートと名前交換を確認。レピータ・SWLを含まない。全使用帯域・型式が自他局の免許と法令に適合する"
+    ],
+    "duplicate_fields": [
+      "call",
+      "band"
+    ],
+    "prefer": "first",
+    "special": "none",
+    "entrant": {
+      "station_types": [
+        "individual",
+        "club"
+      ],
+      "guest_policy": "allowed"
+    },
+    "normalization": {
+      "bands": {
+        "0.135MHZ": "0.135",
+        "0.475MHZ": "0.475",
+        "1.9MHZ": "1.9",
+        "3.5MHZ": "3.5",
+        "7MHZ": "7",
+        "14MHZ": "14",
+        "21MHZ": "21",
+        "28MHZ": "28",
+        "10MHZ": "10",
+        "18MHZ": "18",
+        "24MHZ": "24",
+        "50MHZ": "50",
+        "144MHZ": "144",
+        "430MHZ": "430",
+        "1200MHZ": "1200",
+        "2400MHZ": "2400",
+        "5600MHZ": "5600",
+        "10GMHZ": "10G",
+        "24000MHZ": "24000",
+        "47000MHZ": "47000",
+        "77000MHZ": "77000",
+        "135000MHZ": "135000",
+        "248000MHZ": "248000",
+        "1.8": "1.9",
+        "1.8MHZ": "1.9",
+        "1.2G": "1200",
+        "1.2GHZ": "1200",
+        "2.4G": "2400",
+        "2.4GHZ": "2400",
+        "5.6G": "5600",
+        "5.6GHZ": "5600",
+        "10G": "10G",
+        "10GHZ": "10G",
+        "24G": "24000",
+        "24GHZ": "24000",
+        "47G": "47000",
+        "47GHZ": "47000",
+        "77G": "77000",
+        "77GHZ": "77000",
+        "135G": "135000",
+        "135GHZ": "135000",
+        "248G": "248000",
+        "248GHZ": "248000",
+        "135KHZ": "0.135",
+        "475KHZ": "0.475"
+      },
+      "modes": {
+        "USB": "SSB",
+        "LSB": "SSB"
+      },
+      "mode_families": {}
+    },
+    "regional": {
+      "declarations": {
+        "own_country": "自局の運用国・地域（国内はJA）"
+      },
+      "profile": "qso_party",
+      "local_a": [],
+      "local_b": []
+    },
+    "submission": {
+      "formats": [
+        "JARL R1.0"
+      ],
+      "zone": "JST",
+      "contest": "第79回QSOパーティ",
+      "instructions": "2026。20局以上、得点競争なし、部門30。実交換RS(T)と名前（愛称・略称可）。全許可バンド・モード、レピータ不可。国内局は国内外、国外局は国内局との交信。JARL電子ログWeb又はnyp@jarl.org、1月31日。ステッカー希望はメールアドレス必須。紙の場合は返信封筒等を別途確認。 原案・原典はdocs/contest-researchに保存。2026参考版であり2027へ自動更新しません。主催受付・Windows実機は未検証。自動提出しません。",
+      "band_labels": {
+        "24000": "24G",
+        "47000": "47G",
+        "77000": "77G",
+        "135000": "135G",
+        "248000": "248G"
+      },
+      "required_fields": [
+        "email"
+      ]
+    },
+    "rule_view": {
+      "participants": "アマチュア局およびSWL。PSLogの登録部門はアマチュア局（コード30）です。",
+      "call_method": "電話：CQ NEW YEAR PARTY\n電信：CQ NYP",
+      "counterparts": "国内局は国内・国外のアマチュア局、国外局は日本国内のアマチュア局との交信が対象です。",
+      "frequency": "総務省告示のアマチュア業務に使用する電波型式・周波数の使用区別に従います。",
+      "restrictions": "総務省告示の使用区別からの逸脱、レピーターの使用は禁止です。",
+      "exchange": "相手局のシグナルレポートとオペレーターの名前。通称・ニックネーム・イニシャル・ハンドルネームも可。"
+    }
+  }
+}

@@ -1,0 +1,174 @@
+Web extraction, not original HTML. Retrieved 2026-09-14.
+WW DIGI - Cabrillo File Format (https://ww-digi.com/cabrillo.htm)
+citeturn264view0 [wordlim: 200] Crawled: 2 days ago; Content type: text/html; Source: open({"ref_id":"https://ww-digi.com/cabrillo.htm","lineno":null}); Total lines: 207
+L0: Other Contests: cite0†CQ WW†cqww.com cite1†CQ WPX†cqwpx.com cite2†CQ WW RTTY†cqwwrtty.com cite3†CQ WPX RTTY†cqwpxrtty.com cite4†CQ 160†cq160.com cite5†CQ VHF†cqww-vhf.com cite6†WW DIGI L1: 
+L2: cite7†Image: WWROF Logo L3: 
+L4: World Wide Digi DX Contest
+L5: 
+L6: cite8†Image: SCC Logo L7: 
+L8: cite9†Show navigation cite10†Hide navigation L9:   * cite11†Home L10:   * cite12†Rules L11:     * cite12†Rules L12:     * cite13†Rules FAQ L13:   * cite14†Plaques L14:   * cite15†Results L15:     * cite15†Results L16:     * cite16†Final Scores L17:     * cite17†Club Scores L18:     * cite18†Soapbox QRM L19:     * cite19†Raw Scores L20:     * cite20†Entry Statistics L21:   * cite21†Records L22:     * cite21†By Region L23:     * cite22†New Records L24:     * cite23†Highest QSO Rates L25:   * cite24†Logs L26:     * cite24†Submitting Your Log L27:     * cite25†Cabrillo Log Upload L28:     * cite26†ADIF Log Converter L29:     * cite27†Cabrillo File Format L30:     * cite28†Logs Received L31:     * cite29†Public Logs L32:   * cite30†Resources L33:     * cite31†Grid Map†www.mapability.com L34:     * cite32†History L35:     * cite33†Operating Tips L36:     * cite34†Location Names L37:     * cite35†Active Club Names L38:   * cite36†Contact Us L39:     * cite36†Contact Form L40:     * cite37†Organization L41: # Cabrillo File Format
+L42: 
+L43: Cabrillo refers to a universal log submission format for electronic logs that is widely used by all major contests.
+L44: 
+L45: There are two versions of the Cabrillo log file format. The WW Digi DX Contest accepts both Cabrillo v2 and v3 format files. One of the major changes from v2 to v3 was in the way categories are specified. We strongly request that you submit logs using the Cabrillo v3 format if possible.
+L46: ## Example File
+L47: Below is an example of a Cabrillo v3 file for the WW Digi DX Contest.
+L48: 
+L49:     START-OF-LOG: 3.0
+L50:     CONTEST: WW-DIGI
+L51:     CALLSIGN: HC8N
+L52:     LOCATION: DX
+L53:     CATEGORY-OPERATOR: MULTI-OP
+L54:     CATEGORY-TRANSMITTER: TWO
+L55:     CATEGORY-BAND: ALL
+L56:     CATEGORY-POWER: HIGH
+L57:     CATEGORY-MODE: DIGI
+L58:     CATEGORY-STATION: FIXED
+L59:     CLAIMED-SCORE: 8686317
+L60:     CLUB: NORTHERN CALIFORNIA CONTEST CLUB
+L61:     CREATED-BY: WT4I Contest Tools
+L62:     NAME: BOB SMITH
+L63:     ADDRESS: 100 Main St
+L64:     ADDRESS: OXFORD, TX 65003
+L65:     OPERATORS: K6AW, W6OTC, W0YK
+L66:     SOAPBOX: Fun contest!
+L67:     QSO:  3595 DG 2019-08-31 1711 HC8N             EI00   W1AW             FN32   0
+L68:     END-OF-LOG:
+L69: ## Editing the Cabrillo File
+L70: 
+L71: When manually entering Cabrillo header information, please follow the format below. The format for each entry is a key (LABEL:) followed by a space.
+L72: 
+L73: START-OF-LOG: 3.0
+L74: 
+L75:   * Must be the first line of the log submission.
+L76: 
+L77: END-OF-LOG:
+L78: 
+L79:   * Must be the last line of the log submission.
+L80: 
+L81: * * *
+L82: 
+L83: The intervening lines between the two lines above are:
+L84: 
+L85: CONTEST:
+L86: 
+L87:   * WW-DIGI
+L88: 
+L89: CALLSIGN: callsign
+L90: 
+L91:   * The callsign used during the contest.
+L92: 
+L93: CATEGORY-BAND:
+L94:   * ALL
+L95:   * 160M
+L96:   * 80M
+L97:   * 40M
+L98:   * 20M
+L99:   * 15M
+L100:   * 10M
+L101: 
+L102: The band-category must be one of the following: ALL, 160M, 80M, 40M, 20M, 15M or 10M. If you are entering an all band category, use ALL, otherwise select one of the individual bands shown. If you are entering as a single band but have QSOs on other bands, those QSOs must be included in the log. However, the log will be scored on the basis of your single-band designator in the CATEGORY-BAND line.
+L103: 
+L104: CATEGORY-MODE:
+L105: 
+L106:   * DIGI
+L107: CATEGORY-OPERATOR:
+L108:   * SINGLE-OP
+L109:   * MULTI-OP
+L110:   * CHECKLOG
+L111: 
+L112: CATEGORY-POWER:
+L113: 
+L114:   * HIGH
+L115:   * LOW
+L116:   * QRP
+L117: 
+L118: CATEGORY-TRANSMITTER:
+L119: 
+L120:   * ONE
+L121:   * TWO
+L122:   * UNLIMITED
+L123: 
+L124: CATEGORY-ASSISTED:
+L125: 
+L126:   * ASSISTED
+L127:   * NON-ASSISTED
+L128: 
+L129: This item is optional. Not used by WW-DIGI contest.
+L130: 
+L131: CATEGORY-STATION:
+L132: 
+L133:   * FIXED
+L134: 
+L135: CLAIMED-SCORE: n [optional]
+L136: 
+L137:   * The claimed-score of the log submission, in integer form such as 1217315 or 19113 or 12. Do not use deimal points or commas.
+L138: 
+L139: CLUB: text [optional]
+L140:   * Name of the radio club with which the score should be aggregated. Please spell out the club name exactly as it is listed on the cite38†Club Names†www.cqww.com web page.
+L141: 
+L142: CREATED-BY: text [optional]
+L143: 
+L144:   * Name and version of the logging program used to create the Cabrillo file.
+L145: 
+L146: EMAIL: text [optional]
+L147: 
+L148:   * An email address we can use to contact you.
+L149: 
+L150: LOCATION: [required for US, optional for others]
+L151: 
+L152:   * cite34†ARRL/RAC section for US/VE
+L153:   * otherwise DX
+L154: NAME: text
+L155: ADDRESS: text
+L156: ADDRESS-CITY: text
+L157: ADDRESS-STATE-PROVINCE: text
+L158: ADDRESS-POSTALCODE: text
+L159: ADDRESS-COUNTRY: text
+L160: 
+L161:   * Name and address. A maximum of four ADDRESS: lines is permitted.
+L162: 
+L163: OPERATORS: callsign1 [callsign2 callsign3...]
+L164:   * A space-delimited list of operator callsigns for multi-operator stations, or single operator entries who wish to show they operated at another station. If you operated at another station, you may list it by prepending an @ sign, e.g., W1ABC, W2DEF, W3GHI @W3BGN. NOTE: If you select a multi-operator category and do not enter operator callsigns in this field, the robot will reject your log. Please use a space or a comma between the operator calls.
+L165: 
+L166: SOAPBOX: text [optional]
+L167:   * Enter as many lines of soapbox text as you wish. Each line is 75 characters long and must begin with SOAPBOX: followed by a space.
+L168: 
+L169: QSO: qso-data
+L170: 
+L171:   * QSO data as specified below. All QSO lines should appear in chronological order. Cabrillo QSO template for WW Digi QSO data:
+L172: >                               ------info sent------- ------info rcvd-------
+L173: >     QSO: freq  mo date       time call          exch     call          exch        t
+L174: >     QSO: ***** ** yyyy-mm-dd nnnn ************* ******** ************* ********    n
+L175: >     QSO:  3595 DG 2019-08-31 1711 HC8N          EI00     W1AW          FN32        0
+L176: >     000000000111111111122222222223333333333444444444455555555556666666666777777777788
+L177: >     123456789012345678901234567890123456789012345678901234567890123456789012345678901
+L178: >
+L179: Explanation of QSO Fields
+L180: 
+L181: Each line must begin with “QSO:” followed by a space. The QSO template shows each item at a specific column. WW Digi will accept the fields in any column as long as there is a space between each item.
+L182: 
+L183: freq is frequency or band:
+L184: 
+L185:   * 1800 or actual frequency in kHz
+L186:   * 3500 or actual frequency in kHz
+L187:   * 7000 or actual frequency in kHz
+L188:   * 14000 or actual frequency in kHz
+L189:   * 21000 or actual frequency in kHz
+L190:   * 28000 or actual frequency in kHz
+L191: 
+L192: mo is mode:
+L193: 
+L194:   * DG
+L195: date is UTC date in yyyy-mm-dd form
+L196: 
+L197: time is UTC time in nnnn form (0000 – 2359)
+L198: 
+L199: call is callsign (only A-Z, 0-9 and / characters permitted)
+L200: 
+L201: exch is contest exchange (grid square in the form xxnn)
+L202: 
+L203: t is transmitter id. Used to identify RUN1/RUN2 stations in two-transmitter category. It is a single digit of 0 or 1.
+L204: 
+L205: Please ensure that your Cabrillo file includes this information. For the Multi-Two category, the last column in the log indicates which transmitter made the QSO, a 0 or a 1.
+L206: Copyright © 2019-2026 cite39†World Wide Radio Operators Foundation, Inc.†wwrof.org . All Rights Reserved. | cite40†Privacy Policy 

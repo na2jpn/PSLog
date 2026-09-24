@@ -1,0 +1,14 @@
+{
+  "source": "cqww_rtty_rules_2026.txt",
+  "inside": [],
+  "outside": [],
+  "id": "cq-ww-rtty",
+  "year": 2026,
+  "municipal_source_versions": {
+    "jcc": "2019-05-01",
+    "jcg": "2018-10-01",
+    "ward": "2024-01-01",
+    "history": "2024-01-01"
+  },
+  "sha256": "a4235060988d6c2d3e9b2d0fe7390157eb37d4dc7c22432a8f0e0b0f97a5141e"
+}

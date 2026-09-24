@@ -1,0 +1,163 @@
+{
+  "version": "1.00",
+  "source": "QSL(20260909-141613).txt",
+  "lines": 26071,
+  "records": 25943,
+  "issues": [
+    {
+      "line": 471,
+      "reason": "行末のバックスラッシュ2文字がありません。",
+      "raw": "2021-06-04 | 15:23 JST | 50 | SSB | JK8PBO | 59 | 59 | Sapporo Hokkaido Japan | Soka Saitama Japan | Es BURO.R  | JCC 0101 ¥\\"
+    },
+    {
+      "line": 689,
+      "reason": "行末のバックスラッシュ2文字がありません。",
+      "raw": "2021-07-15 | 11:48 JST | 21 | SSB | JF8RNL | 59 | 59 | Obihiro Hokkaido Japan | Soka Saitama Japan | Es BURO.R 202205.R | JCC 0107 ¥\\"
+    },
+    {
+      "line": 1083,
+      "reason": "行末のバックスラッシュ2文字がありません。",
+      "raw": "2021-08-20 | 18:50 JST | 18 | FT8 | 8N7OLP | +08 | -09 | Watari Miyagi Japan | Soka Saitama Japan | 東京五輪記念局 1way.R LoTW.R | JCG 06016 ¥\\"
+    },
+    {
+      "line": 3491,
+      "reason": "行末のバックスラッシュ2文字がありません。",
+      "raw": "2022-08-14 | 19:28 JST | 7 | FT8 | JR1HSI | -20 | -19 | Totsuka Yokohama Kanagawa Japan | Soka Saitama Japan | eQSL.R \\LoTW.R \\"
+    },
+    {
+      "line": 3695,
+      "reason": "行末のバックスラッシュ2文字がありません。",
+      "raw": "2022-09-06 | 18:00 JST | 430 | FM | JJ7LSV/7 | 59 | 59 | Hanamaki Iwate Japan | Kitagami Iwate Japan | /1 BURO.R | JCC 0307 ¥\\"
+    },
+    {
+      "line": 6719,
+      "reason": "行末のバックスラッシュ2文字がありません。",
+      "raw": "2023-02-19 | 16:53 JST | 7 | FT8 | JP3HIW | -04 | -05 | PM74 Hashimoto Wakayama Japan | Motegi Tochigi Japan | POTA JA-1130 Nakagawa C15008E Motegi eQSL.R \\LoTW.R \\"
+    },
+    {
+      "line": 6858,
+      "reason": "行末のバックスラッシュ2文字がありません。",
+      "raw": "2023-02-28 | 21:07 JST | 144 | FT8 | JP1PPB | -04 | +06 | PM95 Minuma Saitama Saitama Saitama Japan | Sakura Saitama Saitama Japan | POTA JA-1839 Akigase Gway C134406 Sakura-ku eQSL.R \\LoTW.R \\"
+    },
+    {
+      "line": 8179,
+      "reason": "12項目あります（10または11項目が必要）。",
+      "raw": "2023-06-03 | 22:38 JST | 430 | FM | 7K2COL | 58 | 55 | Yokohama Kanagawa Japan | Soka Saitama Japan | | JCC 111001 | JCC 110114   \\\\"
+    },
+    {
+      "line": 17648,
+      "reason": "行末のバックスラッシュ2文字がありません。",
+      "raw": "2024-11-15 | 08:47 JST | 7 | FT8 | JP7JPW | -14 | -16 | QM07 Kagamiishi Iwasegun Fukushima Japan | Soka Saitama Japan | 25W eQSL.R LoTW.R | JCG 07005A \\"
+    },
+    {
+      "line": 18907,
+      "reason": "12項目あります（10または11項目が必要）。",
+      "raw": "2025-01-26 | 17:19 JST | 144 | CW | JI1TAC | 599 | 599 | Itabashi Tokyo Japan | Kawaguchi Saitama Japan | 144.046 JP1152 C1304 eQSL.R | | JCC 100119  \\\\"
+    },
+    {
+      "line": 18939,
+      "reason": "12項目あります（10または11項目が必要）。",
+      "raw": "2025-02-07 | 15:44 JST | 7 | CW | JF1SSM | 599 | 599 | Aoba Yokohama Kanagawa Japan | Chiyoda Tokyo Japan | 7.011 | | JCC 110117  \\\\"
+    },
+    {
+      "line": 25640,
+      "reason": "12項目あります（10または11項目が必要）。",
+      "raw": "2026-08-02 | 01:33 JST | 3.5 | CW | JH1FNU | 599 | 599 | Soka Saitama Japan | Kawaguchi Saitama Japan | 13M | JCC 1321 hQSL.R eQSL.R | JCC 1321  \\\\"
+    }
+  ],
+  "notices": [
+    {
+      "line": 1,
+      "reason": "見出し行（交信には数えません）",
+      "raw": "DATE | TIME | BAND | MODE | HIS CALLSIGN | RTSs(I SEND) | RTSr(I RECEIVE) | HIS QTH | MY QTH | RMKS | JCCJCG \\\\"
+    },
+    {
+      "line": 3,
+      "reason": "年・運用の区切り。自局の自動振り分けは行いません。",
+      "raw": "----2012"
+    },
+    {
+      "line": 385,
+      "reason": "年・運用の区切り。自局の自動振り分けは行いません。",
+      "raw": "----2013"
+    },
+    {
+      "line": 410,
+      "reason": "年・運用の区切り。自局の自動振り分けは行いません。",
+      "raw": "----2021"
+    },
+    {
+      "line": 2192,
+      "reason": "年・運用の区切り。自局の自動振り分けは行いません。",
+      "raw": "----2022"
+    },
+    {
+      "line": 5726,
+      "reason": "年・運用の区切り。自局の自動振り分けは行いません。",
+      "raw": "----2023"
+    },
+    {
+      "line": 11978,
+      "reason": "年・運用の区切り。自局の自動振り分けは行いません。",
+      "raw": "----2023 /JD1"
+    },
+    {
+      "line": 12361,
+      "reason": "年・運用の区切り。自局の自動振り分けは行いません。",
+      "raw": "----2024"
+    },
+    {
+      "line": 18506,
+      "reason": "年・運用の区切り。自局の自動振り分けは行いません。",
+      "raw": "----2025"
+    },
+    {
+      "line": 22979,
+      "reason": "年・運用の区切り。自局の自動振り分けは行いません。",
+      "raw": "----2026"
+    }
+  ],
+  "warning": "振り分けは指定自局の仮計画です。区切り行の/JD1等は人が確認してください。実際の取り込みは行っていません。",
+  "annual_plan": [
+    {
+      "file": "2012_JH1HST_.txt",
+      "add": 371,
+      "skip": 0
+    },
+    {
+      "file": "2013_JH1HST_.txt",
+      "add": 14,
+      "skip": 0
+    },
+    {
+      "file": "2021_JH1HST_.txt",
+      "add": 1768,
+      "skip": 0
+    },
+    {
+      "file": "2022_JH1HST_.txt",
+      "add": 3520,
+      "skip": 1
+    },
+    {
+      "file": "2023_JH1HST_.txt",
+      "add": 6601,
+      "skip": 9
+    },
+    {
+      "file": "2024_JH1HST_.txt",
+      "add": 6128,
+      "skip": 5
+    },
+    {
+      "file": "2025_JH1HST_.txt",
+      "add": 4460,
+      "skip": 0
+    },
+    {
+      "file": "2026_JH1HST_.txt",
+      "add": 3066,
+      "skip": 0
+    }
+  ]
+}

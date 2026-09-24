@@ -1,0 +1,1006 @@
+{
+  "schema": 2,
+  "id": "xpo",
+  "name": "XPO記念コンテスト",
+  "year": 2026,
+  "url": "https://www.eonet.ne.jp/~ja3-test/kiyaku/xpokinen_2026kiyaku.htm",
+  "points": {
+    "phone": 1,
+    "cw": 1,
+    "digital": 1
+  },
+  "conditions": [],
+  "duplicate": {
+    "enabled": true,
+    "by_mode": false
+  },
+  "multi1": {
+    "kind": "off",
+    "start": 0,
+    "length": 2,
+    "per_band": true
+  },
+  "multi2": {
+    "kind": "off",
+    "value": 1,
+    "condition": {
+      "all": []
+    }
+  },
+  "formula": "total",
+  "organizer": "JARL関西地方本部",
+  "sort_name": "えっくすぴーおーきねん",
+  "scoring": {
+    "eligible": {
+      "all": []
+    },
+    "multipliers": [
+      {
+        "id": "region",
+        "source": "area",
+        "kind": "whole",
+        "start": 0,
+        "length": 2,
+        "per_band": true,
+        "when": {
+          "all": []
+        }
+      }
+    ],
+    "bonus": 0
+  },
+  "event": {
+    "timezone": "JST",
+    "windows": [
+      {
+        "start": "2026-09-21 06:00",
+        "end": "2026-09-21 18:00",
+        "bands": [
+          "1.9",
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28",
+          "50",
+          "144",
+          "430",
+          "1200",
+          "2400",
+          "5600",
+          "10G"
+        ]
+      }
+    ],
+    "categories": [
+      {
+        "id": "CA",
+        "name": "電信 SO 全帯",
+        "bands": [
+          "1.9",
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28",
+          "50",
+          "144",
+          "430",
+          "1200",
+          "2400",
+          "5600",
+          "10G"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": null,
+        "min_bands": 2,
+        "max_bands": 13,
+        "min_calls": 1,
+        "required_flags": [
+          "全運用を一人で行い、ゲスト・補助者を伴っていない",
+          "運用地は同一場所、又はコンテスト目的で移動したSOの開始時マルチ内のみで変更した"
+        ],
+        "operator": "SO",
+        "excluded_band_subsets": [
+          [
+            "1.9",
+            "3.5",
+            "7",
+            "14",
+            "21",
+            "28"
+          ],
+          [
+            "2400",
+            "5600",
+            "10G"
+          ]
+        ]
+      },
+      {
+        "id": "CH",
+        "name": "電信 SO HF",
+        "bands": [
+          "1.9",
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": null,
+        "min_bands": 2,
+        "max_bands": 6,
+        "min_calls": 1,
+        "required_flags": [
+          "全運用を一人で行い、ゲスト・補助者を伴っていない",
+          "運用地は同一場所、又はコンテスト目的で移動したSOの開始時マルチ内のみで変更した"
+        ],
+        "operator": "SO"
+      },
+      {
+        "id": "C19",
+        "name": "電信 SO 1.9MHz",
+        "bands": [
+          "1.9"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "全運用を一人で行い、ゲスト・補助者を伴っていない",
+          "運用地は同一場所、又はコンテスト目的で移動したSOの開始時マルチ内のみで変更した"
+        ],
+        "operator": "SO"
+      },
+      {
+        "id": "C35",
+        "name": "電信 SO 3.5MHz",
+        "bands": [
+          "3.5"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "全運用を一人で行い、ゲスト・補助者を伴っていない",
+          "運用地は同一場所、又はコンテスト目的で移動したSOの開始時マルチ内のみで変更した"
+        ],
+        "operator": "SO"
+      },
+      {
+        "id": "C7",
+        "name": "電信 SO 7MHz",
+        "bands": [
+          "7"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "全運用を一人で行い、ゲスト・補助者を伴っていない",
+          "運用地は同一場所、又はコンテスト目的で移動したSOの開始時マルチ内のみで変更した"
+        ],
+        "operator": "SO"
+      },
+      {
+        "id": "C14",
+        "name": "電信 SO 14MHz",
+        "bands": [
+          "14"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "全運用を一人で行い、ゲスト・補助者を伴っていない",
+          "運用地は同一場所、又はコンテスト目的で移動したSOの開始時マルチ内のみで変更した"
+        ],
+        "operator": "SO"
+      },
+      {
+        "id": "C21",
+        "name": "電信 SO 21MHz",
+        "bands": [
+          "21"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "全運用を一人で行い、ゲスト・補助者を伴っていない",
+          "運用地は同一場所、又はコンテスト目的で移動したSOの開始時マルチ内のみで変更した"
+        ],
+        "operator": "SO"
+      },
+      {
+        "id": "C28",
+        "name": "電信 SO 28MHz",
+        "bands": [
+          "28"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "全運用を一人で行い、ゲスト・補助者を伴っていない",
+          "運用地は同一場所、又はコンテスト目的で移動したSOの開始時マルチ内のみで変更した"
+        ],
+        "operator": "SO"
+      },
+      {
+        "id": "C50",
+        "name": "電信 SO 50MHz",
+        "bands": [
+          "50"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "全運用を一人で行い、ゲスト・補助者を伴っていない",
+          "運用地は同一場所、又はコンテスト目的で移動したSOの開始時マルチ内のみで変更した"
+        ],
+        "operator": "SO"
+      },
+      {
+        "id": "C144",
+        "name": "電信 SO 144MHz",
+        "bands": [
+          "144"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "全運用を一人で行い、ゲスト・補助者を伴っていない",
+          "運用地は同一場所、又はコンテスト目的で移動したSOの開始時マルチ内のみで変更した"
+        ],
+        "operator": "SO"
+      },
+      {
+        "id": "C430",
+        "name": "電信 SO 430MHz",
+        "bands": [
+          "430"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "全運用を一人で行い、ゲスト・補助者を伴っていない",
+          "運用地は同一場所、又はコンテスト目的で移動したSOの開始時マルチ内のみで変更した"
+        ],
+        "operator": "SO"
+      },
+      {
+        "id": "C1200",
+        "name": "電信 SO 1200MHz",
+        "bands": [
+          "1200"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "全運用を一人で行い、ゲスト・補助者を伴っていない",
+          "運用地は同一場所、又はコンテスト目的で移動したSOの開始時マルチ内のみで変更した"
+        ],
+        "operator": "SO"
+      },
+      {
+        "id": "C2400",
+        "name": "電信 SO 2400MHz以上",
+        "bands": [
+          "2400",
+          "5600",
+          "10G"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 3,
+        "min_calls": 1,
+        "required_flags": [
+          "全運用を一人で行い、ゲスト・補助者を伴っていない",
+          "運用地は同一場所、又はコンテスト目的で移動したSOの開始時マルチ内のみで変更した"
+        ],
+        "operator": "SO"
+      },
+      {
+        "id": "CC",
+        "name": "電信 MO 全帯",
+        "bands": [
+          "1.9",
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28",
+          "50",
+          "144",
+          "430",
+          "1200",
+          "2400",
+          "5600",
+          "10G"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 13,
+        "min_calls": 1,
+        "required_flags": [
+          "全運用者・補助者を提出書類に記載し、同一運用地（直径500m以内）を変更していない"
+        ],
+        "operator": "MO"
+      },
+      {
+        "id": "FA",
+        "name": "混合 SO 全帯",
+        "bands": [
+          "1.9",
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28",
+          "50",
+          "144",
+          "430",
+          "1200",
+          "2400",
+          "5600",
+          "10G"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": null,
+        "min_bands": 2,
+        "max_bands": 13,
+        "min_calls": 1,
+        "required_flags": [
+          "全運用を一人で行い、ゲスト・補助者を伴っていない",
+          "運用地は同一場所、又はコンテスト目的で移動したSOの開始時マルチ内のみで変更した"
+        ],
+        "operator": "SO",
+        "required_mode_families": [
+          "phone"
+        ],
+        "excluded_band_subsets": [
+          [
+            "1.9",
+            "3.5",
+            "7",
+            "14",
+            "21",
+            "28"
+          ],
+          [
+            "2400",
+            "5600",
+            "10G"
+          ]
+        ]
+      },
+      {
+        "id": "FH",
+        "name": "混合 SO HF",
+        "bands": [
+          "1.9",
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": null,
+        "min_bands": 2,
+        "max_bands": 6,
+        "min_calls": 1,
+        "required_flags": [
+          "全運用を一人で行い、ゲスト・補助者を伴っていない",
+          "運用地は同一場所、又はコンテスト目的で移動したSOの開始時マルチ内のみで変更した"
+        ],
+        "operator": "SO",
+        "required_mode_families": [
+          "phone"
+        ]
+      },
+      {
+        "id": "F19",
+        "name": "混合 SO 1.9MHz",
+        "bands": [
+          "1.9"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "全運用を一人で行い、ゲスト・補助者を伴っていない",
+          "運用地は同一場所、又はコンテスト目的で移動したSOの開始時マルチ内のみで変更した"
+        ],
+        "operator": "SO",
+        "required_mode_families": [
+          "phone"
+        ]
+      },
+      {
+        "id": "F35",
+        "name": "混合 SO 3.5MHz",
+        "bands": [
+          "3.5"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "全運用を一人で行い、ゲスト・補助者を伴っていない",
+          "運用地は同一場所、又はコンテスト目的で移動したSOの開始時マルチ内のみで変更した"
+        ],
+        "operator": "SO",
+        "required_mode_families": [
+          "phone"
+        ]
+      },
+      {
+        "id": "F7",
+        "name": "混合 SO 7MHz",
+        "bands": [
+          "7"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "全運用を一人で行い、ゲスト・補助者を伴っていない",
+          "運用地は同一場所、又はコンテスト目的で移動したSOの開始時マルチ内のみで変更した"
+        ],
+        "operator": "SO",
+        "required_mode_families": [
+          "phone"
+        ]
+      },
+      {
+        "id": "F14",
+        "name": "混合 SO 14MHz",
+        "bands": [
+          "14"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "全運用を一人で行い、ゲスト・補助者を伴っていない",
+          "運用地は同一場所、又はコンテスト目的で移動したSOの開始時マルチ内のみで変更した"
+        ],
+        "operator": "SO",
+        "required_mode_families": [
+          "phone"
+        ]
+      },
+      {
+        "id": "F21",
+        "name": "混合 SO 21MHz",
+        "bands": [
+          "21"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "全運用を一人で行い、ゲスト・補助者を伴っていない",
+          "運用地は同一場所、又はコンテスト目的で移動したSOの開始時マルチ内のみで変更した"
+        ],
+        "operator": "SO",
+        "required_mode_families": [
+          "phone"
+        ]
+      },
+      {
+        "id": "F28",
+        "name": "混合 SO 28MHz",
+        "bands": [
+          "28"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "全運用を一人で行い、ゲスト・補助者を伴っていない",
+          "運用地は同一場所、又はコンテスト目的で移動したSOの開始時マルチ内のみで変更した"
+        ],
+        "operator": "SO",
+        "required_mode_families": [
+          "phone"
+        ]
+      },
+      {
+        "id": "F50",
+        "name": "混合 SO 50MHz",
+        "bands": [
+          "50"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "全運用を一人で行い、ゲスト・補助者を伴っていない",
+          "運用地は同一場所、又はコンテスト目的で移動したSOの開始時マルチ内のみで変更した"
+        ],
+        "operator": "SO",
+        "required_mode_families": [
+          "phone"
+        ]
+      },
+      {
+        "id": "F144",
+        "name": "混合 SO 144MHz",
+        "bands": [
+          "144"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "全運用を一人で行い、ゲスト・補助者を伴っていない",
+          "運用地は同一場所、又はコンテスト目的で移動したSOの開始時マルチ内のみで変更した"
+        ],
+        "operator": "SO",
+        "required_mode_families": [
+          "phone"
+        ]
+      },
+      {
+        "id": "F430",
+        "name": "混合 SO 430MHz",
+        "bands": [
+          "430"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "全運用を一人で行い、ゲスト・補助者を伴っていない",
+          "運用地は同一場所、又はコンテスト目的で移動したSOの開始時マルチ内のみで変更した"
+        ],
+        "operator": "SO",
+        "required_mode_families": [
+          "phone"
+        ]
+      },
+      {
+        "id": "F1200",
+        "name": "混合 SO 1200MHz",
+        "bands": [
+          "1200"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "全運用を一人で行い、ゲスト・補助者を伴っていない",
+          "運用地は同一場所、又はコンテスト目的で移動したSOの開始時マルチ内のみで変更した"
+        ],
+        "operator": "SO",
+        "required_mode_families": [
+          "phone"
+        ]
+      },
+      {
+        "id": "F2400",
+        "name": "混合 SO 2400MHz以上",
+        "bands": [
+          "2400",
+          "5600",
+          "10G"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 3,
+        "min_calls": 1,
+        "required_flags": [
+          "全運用を一人で行い、ゲスト・補助者を伴っていない",
+          "運用地は同一場所、又はコンテスト目的で移動したSOの開始時マルチ内のみで変更した"
+        ],
+        "operator": "SO",
+        "required_mode_families": [
+          "phone"
+        ]
+      },
+      {
+        "id": "FC",
+        "name": "混合 MO 全帯",
+        "bands": [
+          "1.9",
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28",
+          "50",
+          "144",
+          "430",
+          "1200",
+          "2400",
+          "5600",
+          "10G"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 13,
+        "min_calls": 1,
+        "required_flags": [
+          "全運用者・補助者を提出書類に記載し、同一運用地（直径500m以内）を変更していない"
+        ],
+        "operator": "MO",
+        "required_mode_families": [
+          "phone"
+        ]
+      }
+    ],
+    "required_flags": [
+      "国内局同士の完全交信であり、番号は実際に交換した都府県地域番号である",
+      "CWはA1A、電話はSSB/AM/FMのみで指定周波数・免許範囲を守った（デジタル音声・A2A/F2Aは対象外）",
+      "1コール1種目・ゲストと補助者のMO扱い・同時送信制限を確認した",
+      "クロスバンド・レピータ交信・セルフスポットを含めず、リモート設備の同一所在地条件を守った",
+      "終了後に未受信情報を調べて番号やコールを補完していない（紙ログ電子化を除く）"
+    ],
+    "duplicate_fields": [
+      "call",
+      "band"
+    ],
+    "prefer": "first",
+    "special": "none",
+    "exchange": {
+      "kind": "numbered_region",
+      "codes": [
+        "101",
+        "102",
+        "103",
+        "104",
+        "105",
+        "106",
+        "107",
+        "108",
+        "109",
+        "110",
+        "111",
+        "112",
+        "113",
+        "114",
+        "02",
+        "03",
+        "04",
+        "05",
+        "06",
+        "07",
+        "08",
+        "09",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26",
+        "27",
+        "28",
+        "29",
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "35",
+        "36",
+        "37",
+        "38",
+        "39",
+        "40",
+        "41",
+        "42",
+        "43",
+        "44",
+        "45",
+        "46",
+        "47",
+        "48"
+      ],
+      "same_sent_region": true
+    },
+    "normalization": {
+      "bands": {
+        "1.9MHZ": "1.9",
+        "3.5MHZ": "3.5",
+        "7MHZ": "7",
+        "14MHZ": "14",
+        "21MHZ": "21",
+        "28MHZ": "28",
+        "50MHZ": "50",
+        "144MHZ": "144",
+        "430MHZ": "430",
+        "1200MHZ": "1200",
+        "2400MHZ": "2400",
+        "5600MHZ": "5600",
+        "1.8": "1.9",
+        "1.8MHZ": "1.9",
+        "1.2G": "1200",
+        "1.2GHZ": "1200",
+        "2.4G": "2400",
+        "2.4GHZ": "2400",
+        "5.6G": "5600",
+        "5.6GHZ": "5600",
+        "10GHZ": "10G",
+        "10.1G": "10G",
+        "10.1GHZ": "10G",
+        "10.4G": "10G",
+        "10.4GHZ": "10G",
+        "10100": "10G",
+        "10400": "10G",
+        "10100MHZ": "10G",
+        "10400MHZ": "10G"
+      },
+      "modes": {
+        "USB": "SSB",
+        "LSB": "SSB"
+      },
+      "mode_families": {}
+    },
+    "submission": {
+      "formats": [
+        "JARL R1.0",
+        "JARL R2.1"
+      ],
+      "zone": "JST",
+      "contest": "第56回XPO記念コンテスト",
+      "required_fields": [
+        "email"
+      ],
+      "instructions": "2026年規約・28種目。記念局も1点。全期間の交信を残して参加種目のみ採点。10.1/10.4GHzは10GHzへ統合。ゲスト・補助者を伴う運用はMO。締切2026-10-05、電子23:59まで。電子ログはメール本文、添付不可。共同企画の追加ログは不要です。自動送信しません。"
+    },
+    "entrant": {
+      "station_types": [],
+      "guest_policy": "mo_only"
+    },
+    "band_modes": {
+      "1.9": [
+        "CW",
+        "SSB",
+        "AM"
+      ],
+      "3.5": [
+        "CW",
+        "SSB",
+        "AM"
+      ],
+      "7": [
+        "CW",
+        "SSB",
+        "AM"
+      ],
+      "14": [
+        "CW",
+        "SSB",
+        "AM"
+      ],
+      "21": [
+        "CW",
+        "SSB",
+        "AM"
+      ],
+      "28": [
+        "CW",
+        "SSB",
+        "AM",
+        "FM"
+      ],
+      "50": [
+        "CW",
+        "SSB",
+        "AM",
+        "FM"
+      ],
+      "144": [
+        "CW",
+        "SSB",
+        "AM",
+        "FM"
+      ],
+      "430": [
+        "CW",
+        "SSB",
+        "AM",
+        "FM"
+      ],
+      "1200": [
+        "CW",
+        "SSB",
+        "AM",
+        "FM"
+      ],
+      "2400": [
+        "CW",
+        "SSB",
+        "AM",
+        "FM"
+      ],
+      "5600": [
+        "CW",
+        "SSB",
+        "AM",
+        "FM"
+      ],
+      "10G": [
+        "CW",
+        "SSB",
+        "AM",
+        "FM"
+      ]
+    },
+    "rule_view": {
+      "participants": "日本国内のアマチュア局。電信はCW（A1A）、電話はSSB・AM・FM。ゲストや補助者が運用に関わる場合はマルチオペ。",
+      "power": "制限なし",
+      "movement": "コンテスト中の運用場所は原則1か所（直径500mの範囲内）。コンテストのため常置場所を離れたシングルオペのみ、開始時のマルチプライヤー内で場所変更可。移動局はコール末尾に /数字または/JD1を付けます。",
+      "call_method": "電信：CQ XPO TEST\n電話：CQ XPOコンテスト",
+      "counterparts": "日本国内のアマチュア局同士の完全な交信。記念局（8J・8K・8N等）も一般局と同じ扱いです。",
+      "frequency": "1.9～10GHz帯（3.8・10・18・24MHz帯を除く）。1.9～430MHz帯は規約の電波型式別周波数表を参照。1200MHz以上は総務省告示の使用区別に従います。10.1GHzと10.4GHzは同一の10GHz帯として扱います。",
+      "restrictions": "クロスバンド交信、同一オペレーターの2波以上の同時発射、マルチオペの同一バンド2波以上の同時発射を禁止。レピーターやインターネット等経由の交信は得点・マルチに計上不可（規約のリモート運用例外あり）。セルフスポットやその依頼は禁止。リモート設備の所在地条件とコンテスト終了後のログ修正制限は公式規約を確認してください。",
+      "exchange": "RS(T) ＋ JARL制定の都府県・地域等のナンバー。",
+      "repeat": "同一局との同一バンド内の再交信は、電波型式が異なっても得点になりません。バンドが異なれば別に計上できます。",
+      "points_display": "完全な交信は1点。対象はCW、SSB、AM、FMで、DV・C4FMは電話部門に含みません。同一バンド内の重複は電波型式が違っても得点になりません。"
+    }
+  }
+}
+

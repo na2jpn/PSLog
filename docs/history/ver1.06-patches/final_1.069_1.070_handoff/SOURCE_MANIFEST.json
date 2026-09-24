@@ -1,0 +1,133 @@
+{
+  "schema": 6,
+  "project": "PSLog",
+  "version": "1.06",
+  "status": "FINAL_CANONICAL_SOURCE",
+  "canonical_filename": "PSLog_1.06_CANONICAL_SOURCE.zip",
+  "finalized_at": "2026-09-21",
+  "next_development_chat": "PSLOG106",
+  "next_development_line": "Ver1.06 series (first patch expected 1.061)",
+  "source_of_final_canonicalization": {
+    "baseline": {
+      "filename": "PSLog_1.05_CANONICAL_SOURCE(1).zip",
+      "sha256": "c14fe599eea8c3d9cf9de7e53914d90d95f38ee791e68302cf2ed520e7dacb09",
+      "note": "User-supplied Ver1.05 canonical source used as the sole starting baseline for this development chat."
+    },
+    "applied_artifacts": [
+      {
+        "filename": "PSLog_1.051_PATCH01.zip",
+        "sha256": "6dfeff11fcf54b03a72d4dff73670f00f78babf4c0badb978c965f7e5ad1e108"
+      },
+      {
+        "filename": "PSLog_1.052_PATCH02.zip",
+        "sha256": "c6be8468afa9ed41c05fddff258ac53444e9b0dfead5aee7917fa079bc22ea7a"
+      },
+      {
+        "filename": "PSLog_1.053_PATCH03.zip",
+        "sha256": "4ca8b2e7e88d04da0ce01441cab380c8ae30c75821eb13f804295b5a3c24ab77"
+      },
+      {
+        "filename": "PSLog_1.054_PATCH04.zip",
+        "sha256": "f8bf1c9708f6751c1dc36f1ee48552d840121ee16aa029513e42f29779cbb453"
+      },
+      {
+        "filename": "PSLog_1.055_PATCH05.zip",
+        "sha256": "30d70c00e389e8dcefd9f4419c7865446dc6a670cf75d5a4585b6dab07cf813b"
+      },
+      {
+        "filename": "PSLog_1.055_PATCH05_FIX1.zip",
+        "sha256": "dd2e07f16d16f4d42bd977eb856d942bd361f6871ff585b332eb7240c17e1951"
+      },
+      {
+        "filename": "PSLog_1.056_PATCH06.zip",
+        "sha256": "4aef4f4d3f8ab9a0d28f50b7857f827a5ae6907d235c1d2152cfdf8bd2ebd787"
+      },
+      {
+        "filename": "PSLog_1.056_PATCH06_FIX1.zip",
+        "sha256": "c4f8ec6af6ecb063142a0bbc2a9d62f47a678a8d891bd9e4bb16d4f7ff459736"
+      },
+      {
+        "filename": "PSLog_1.057_PATCH07.zip",
+        "sha256": "70b00e8b5550fa824b17474fda2516d28be336838625136bb2433467cfc666ee"
+      },
+      {
+        "filename": "PSLog_1.057_PATCH07_FIX2.zip",
+        "sha256": "e8c939bafb5ffcec92ced12b1bba36e82427f50ad99812f2c0c607fd018b8542"
+      },
+      {
+        "filename": "PSLog_1.058_PATCH08.zip",
+        "sha256": "3a4364ee250a9e2f05963c560563e8145d09fb02379e8f1b28a9851124dc18ea"
+      },
+      {
+        "filename": "PSLog_1.059_PATCH09.zip",
+        "sha256": "4f85d165d88bda4f019c731bb9ec6d881a0b4d22a0415c169ac614639fd1132f"
+      }
+    ],
+    "final_release_adjustments": [
+      "Contest submission final-stage Input confirmation and File save actions moved into the fixed wizard footer.",
+      "OPPLACE unconditional required_fields reviewed across contest rules: common portable-operation requirement retained; all-station unconditional requirement retained only for All Chiba, All Hyogo, KCJ, and KCJ Top Band.",
+      "VERSION, release packaging references, tests, and canonical handoff documentation updated to 1.06."
+    ],
+    "rule": "Future work must start from this Ver1.06 canonical ZIP only. Do not reconstruct by replaying Ver1.05 canonical plus 1.051–1.059 PATCH/FIX archives."
+  },
+  "canonicalization": {
+    "removed_generated": [
+      "build/",
+      "dist/",
+      "release/",
+      "__pycache__/",
+      "**/__pycache__/",
+      "*.pyc",
+      "*.pyo"
+    ],
+    "moved_history": [
+      "PATCH_*_README.md -> docs/history/ver1.05-patches/"
+    ],
+    "updated_entry_docs": [
+      "README.md",
+      "START_HERE.md",
+      "HANDOFF.md",
+      "CHANGELOG.md",
+      "docs/INDEX.md",
+      "docs/IMPLEMENTATION_STATUS.md",
+      "docs/specs/development/PSLOG_1.06_BASELINE.md",
+      "docs/specs/development/PSLOG_1.06_NEXT_CHAT_PLAN.md",
+      "docs/specs/development/VALIDATION.md",
+      "WINDOWS_BUILD.md",
+      "WINDOWS_CHECKLIST.txt",
+      "SAVE_LOCATION.md"
+    ]
+  },
+  "final_features_highlights": [
+    "[A] amateur standard-tab naming, persistent recently-closed tabs, RMKS2 using <<RMKS2>> inside the unchanged 11-field TXT format.",
+    "LogSearch immediate post-record editing, exact-QSO deletion, checked-row handoff actions, current-log full-display shortcut, and embedded callsign column/status improvements.",
+    "Three-step normal export with configurable RMKS1/RMKS2 mappings while fixed format fields remain standard.",
+    "Contest/QSO Party/Award rule and condition viewers, generic contest-category filtering that never drops registered categories, and contest band-count color badges.",
+    "Contest submission final actions stay visible in the fixed footer; OPPLACE is not globally forced for fixed operation unless the contest explicitly requires it.",
+    "Free-radio support is intentionally deferred to Ver1.061+ and is not implemented in this baseline."
+  ],
+  "verification": {
+    "canonicalization_compileall": "OK",
+    "full_discovery_container": "360 tests discovered; 293 completed successfully; 67 errors are PySide6-not-installed GUI import/runtime errors; no FAIL assertions.",
+    "targeted_non_gui": "63 tests OK (release 1.06, rule catalog, Windows packaging source checks, full restore, PATCH 03–09 regressions).",
+    "contest_rule_json": "87/87 config/rules JSON files parsed successfully.",
+    "latest_user_windows_confirmation": "User confirmed Ver1.058 build-windows.ps1 passed after one transient Windows TEMP file lock; no final Ver1.06 Windows/PySide6 run was available during canonicalization.",
+    "container_gui_note": "PySide6 is not installed in the canonicalization container. Final Windows GUI/full-suite/build verification remains the user-side responsibility."
+  },
+  "source_tree": {
+    "files_excluding_manifest": 1018,
+    "sha256_excluding_manifest": "d2f0426ee705a42a9b4c64918181dd44d6f13890f76f7073d43f78bd6a0b0a7c",
+    "hash_method": "SHA-256 over sorted UTF-8 relative path, NUL, per-file SHA-256, newline; SOURCE_MANIFEST.json excluded."
+  },
+  "entry_docs": [
+    "README.md",
+    "START_HERE.md",
+    "HANDOFF.md",
+    "docs/specs/development/PSLOG_1.06_BASELINE.md",
+    "docs/specs/development/PSLOG_1.06_NEXT_CHAT_PLAN.md",
+    "docs/INDEX.md",
+    "docs/IMPLEMENTATION_STATUS.md"
+  ],
+  "test_command": "python -m unittest discover -v",
+  "windows_build_command": ".\\build-windows.ps1"
+}

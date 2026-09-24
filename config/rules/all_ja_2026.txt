@@ -1,0 +1,2063 @@
+{
+  "schema": 2,
+  "id": "all_ja",
+  "name": "ALL JAコンテスト",
+  "year": 2026,
+  "url": "https://www.jarl.org/Japanese/1_Tanoshimo/1-1_Contest/allja_rules.html",
+  "points": {
+    "phone": 1,
+    "cw": 1,
+    "digital": 1
+  },
+  "conditions": [],
+  "duplicate": {
+    "enabled": true,
+    "by_mode": false
+  },
+  "multi1": {
+    "kind": "off",
+    "start": 0,
+    "length": 2,
+    "per_band": true
+  },
+  "multi2": {
+    "kind": "off",
+    "value": 1,
+    "condition": {
+      "all": []
+    }
+  },
+  "formula": "total",
+  "organizer": "JARL",
+  "sort_name": "おーるじゃぱん",
+  "scoring": {
+    "eligible": {
+      "all": []
+    },
+    "multipliers": [
+      {
+        "id": "region",
+        "source": "area",
+        "kind": "whole",
+        "start": 0,
+        "length": 2,
+        "per_band": true,
+        "when": {
+          "all": []
+        }
+      }
+    ],
+    "bonus": 0
+  },
+  "event": {
+    "timezone": "JST",
+    "windows": [
+      {
+        "start": "2026-04-25 21:00",
+        "end": "2026-04-26 21:00",
+        "bands": [
+          "1.9",
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28",
+          "50"
+        ]
+      }
+    ],
+    "categories": [
+      {
+        "id": "PA",
+        "name": "電話 SO 全帯",
+        "bands": [
+          "1.9",
+          "3.5",
+          "7",
+          "21",
+          "28",
+          "50"
+        ],
+        "modes": [
+          "SSB",
+          "USB",
+          "LSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": 20,
+        "min_bands": 1,
+        "max_bands": 6,
+        "min_calls": 1,
+        "operator": "SO",
+        "required_flags": [
+          "運用に関わる全作業を一人で行い、同時に複数波を送信していない",
+          "運用場所を変更していない、又は移動SOの許可範囲（開始時地域内、常置場所との往来なし）のみで変更した"
+        ],
+        "power_by_band": {
+          "1.9": 10,
+          "3.5": 10,
+          "7": 10,
+          "21": 10,
+          "28": 10,
+          "50": 20
+        }
+      },
+      {
+        "id": "P19",
+        "name": "電話 SO 1.9MHz",
+        "bands": [
+          "1.9"
+        ],
+        "modes": [
+          "SSB",
+          "USB",
+          "LSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": 10,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "operator": "SO",
+        "required_flags": [
+          "運用に関わる全作業を一人で行い、同時に複数波を送信していない",
+          "運用場所を変更していない、又は移動SOの許可範囲（開始時地域内、常置場所との往来なし）のみで変更した"
+        ],
+        "power_by_band": {
+          "1.9": 10
+        }
+      },
+      {
+        "id": "P35",
+        "name": "電話 SO 3.5MHz",
+        "bands": [
+          "3.5"
+        ],
+        "modes": [
+          "SSB",
+          "USB",
+          "LSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": 10,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "operator": "SO",
+        "required_flags": [
+          "運用に関わる全作業を一人で行い、同時に複数波を送信していない",
+          "運用場所を変更していない、又は移動SOの許可範囲（開始時地域内、常置場所との往来なし）のみで変更した"
+        ],
+        "power_by_band": {
+          "3.5": 10
+        }
+      },
+      {
+        "id": "P7",
+        "name": "電話 SO 7MHz",
+        "bands": [
+          "7"
+        ],
+        "modes": [
+          "SSB",
+          "USB",
+          "LSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": 10,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "operator": "SO",
+        "required_flags": [
+          "運用に関わる全作業を一人で行い、同時に複数波を送信していない",
+          "運用場所を変更していない、又は移動SOの許可範囲（開始時地域内、常置場所との往来なし）のみで変更した"
+        ],
+        "power_by_band": {
+          "7": 10
+        }
+      },
+      {
+        "id": "P21",
+        "name": "電話 SO 21MHz",
+        "bands": [
+          "21"
+        ],
+        "modes": [
+          "SSB",
+          "USB",
+          "LSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": 10,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "operator": "SO",
+        "required_flags": [
+          "運用に関わる全作業を一人で行い、同時に複数波を送信していない",
+          "運用場所を変更していない、又は移動SOの許可範囲（開始時地域内、常置場所との往来なし）のみで変更した"
+        ],
+        "power_by_band": {
+          "21": 10
+        }
+      },
+      {
+        "id": "P28",
+        "name": "電話 SO 28MHz",
+        "bands": [
+          "28"
+        ],
+        "modes": [
+          "SSB",
+          "USB",
+          "LSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": 10,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "operator": "SO",
+        "required_flags": [
+          "運用に関わる全作業を一人で行い、同時に複数波を送信していない",
+          "運用場所を変更していない、又は移動SOの許可範囲（開始時地域内、常置場所との往来なし）のみで変更した"
+        ],
+        "power_by_band": {
+          "28": 10
+        }
+      },
+      {
+        "id": "P50",
+        "name": "電話 SO 50MHz",
+        "bands": [
+          "50"
+        ],
+        "modes": [
+          "SSB",
+          "USB",
+          "LSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": 20,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "operator": "SO",
+        "required_flags": [
+          "運用に関わる全作業を一人で行い、同時に複数波を送信していない",
+          "運用場所を変更していない、又は移動SOの許可範囲（開始時地域内、常置場所との往来なし）のみで変更した"
+        ],
+        "power_by_band": {
+          "50": 20
+        }
+      },
+      {
+        "id": "PMA",
+        "name": "電話 MO 全帯",
+        "bands": [
+          "1.9",
+          "3.5",
+          "7",
+          "21",
+          "28",
+          "50"
+        ],
+        "modes": [
+          "SSB",
+          "USB",
+          "LSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": 20,
+        "min_bands": 1,
+        "max_bands": 6,
+        "min_calls": 1,
+        "operator": "MO",
+        "required_flags": [
+          "日本国内の同一運用地（直径500m以内）で運用し、途中で運用地を変更していない",
+          "同一バンドで複数波を同時送信せず、全運用者を提出書類に記載する"
+        ],
+        "power_by_band": {
+          "1.9": 10,
+          "3.5": 10,
+          "7": 10,
+          "21": 10,
+          "28": 10,
+          "50": 20
+        }
+      },
+      {
+        "id": "CAH",
+        "name": "電信 SO 全帯 H",
+        "bands": [
+          "1.9",
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28",
+          "50"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 7,
+        "min_calls": 1,
+        "operator": "SO",
+        "required_flags": [
+          "運用に関わる全作業を一人で行い、同時に複数波を送信していない",
+          "運用場所を変更していない、又は移動SOの許可範囲（開始時地域内、常置場所との往来なし）のみで変更した"
+        ],
+        "min_power_exclusive": 100
+      },
+      {
+        "id": "CAM",
+        "name": "電信 SO 全帯 M",
+        "bands": [
+          "1.9",
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28",
+          "50"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": 100,
+        "min_bands": 1,
+        "max_bands": 7,
+        "min_calls": 1,
+        "operator": "SO",
+        "required_flags": [
+          "運用に関わる全作業を一人で行い、同時に複数波を送信していない",
+          "運用場所を変更していない、又は移動SOの許可範囲（開始時地域内、常置場所との往来なし）のみで変更した"
+        ],
+        "min_power_exclusive": 5
+      },
+      {
+        "id": "CAP",
+        "name": "電信 SO 全帯 P",
+        "bands": [
+          "1.9",
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28",
+          "50"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": 5,
+        "min_bands": 1,
+        "max_bands": 7,
+        "min_calls": 1,
+        "operator": "SO",
+        "required_flags": [
+          "運用に関わる全作業を一人で行い、同時に複数波を送信していない",
+          "運用場所を変更していない、又は移動SOの許可範囲（開始時地域内、常置場所との往来なし）のみで変更した"
+        ]
+      },
+      {
+        "id": "C19H",
+        "name": "電信 SO 1.9MHz H",
+        "bands": [
+          "1.9"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "operator": "SO",
+        "required_flags": [
+          "運用に関わる全作業を一人で行い、同時に複数波を送信していない",
+          "運用場所を変更していない、又は移動SOの許可範囲（開始時地域内、常置場所との往来なし）のみで変更した"
+        ],
+        "min_power_exclusive": 100
+      },
+      {
+        "id": "C19M",
+        "name": "電信 SO 1.9MHz M",
+        "bands": [
+          "1.9"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": 100,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "operator": "SO",
+        "required_flags": [
+          "運用に関わる全作業を一人で行い、同時に複数波を送信していない",
+          "運用場所を変更していない、又は移動SOの許可範囲（開始時地域内、常置場所との往来なし）のみで変更した"
+        ],
+        "min_power_exclusive": 5
+      },
+      {
+        "id": "C19P",
+        "name": "電信 SO 1.9MHz P",
+        "bands": [
+          "1.9"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": 5,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "operator": "SO",
+        "required_flags": [
+          "運用に関わる全作業を一人で行い、同時に複数波を送信していない",
+          "運用場所を変更していない、又は移動SOの許可範囲（開始時地域内、常置場所との往来なし）のみで変更した"
+        ]
+      },
+      {
+        "id": "C35H",
+        "name": "電信 SO 3.5MHz H",
+        "bands": [
+          "3.5"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "operator": "SO",
+        "required_flags": [
+          "運用に関わる全作業を一人で行い、同時に複数波を送信していない",
+          "運用場所を変更していない、又は移動SOの許可範囲（開始時地域内、常置場所との往来なし）のみで変更した"
+        ],
+        "min_power_exclusive": 100
+      },
+      {
+        "id": "C35M",
+        "name": "電信 SO 3.5MHz M",
+        "bands": [
+          "3.5"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": 100,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "operator": "SO",
+        "required_flags": [
+          "運用に関わる全作業を一人で行い、同時に複数波を送信していない",
+          "運用場所を変更していない、又は移動SOの許可範囲（開始時地域内、常置場所との往来なし）のみで変更した"
+        ],
+        "min_power_exclusive": 5
+      },
+      {
+        "id": "C35P",
+        "name": "電信 SO 3.5MHz P",
+        "bands": [
+          "3.5"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": 5,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "operator": "SO",
+        "required_flags": [
+          "運用に関わる全作業を一人で行い、同時に複数波を送信していない",
+          "運用場所を変更していない、又は移動SOの許可範囲（開始時地域内、常置場所との往来なし）のみで変更した"
+        ]
+      },
+      {
+        "id": "C7H",
+        "name": "電信 SO 7MHz H",
+        "bands": [
+          "7"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "operator": "SO",
+        "required_flags": [
+          "運用に関わる全作業を一人で行い、同時に複数波を送信していない",
+          "運用場所を変更していない、又は移動SOの許可範囲（開始時地域内、常置場所との往来なし）のみで変更した"
+        ],
+        "min_power_exclusive": 100
+      },
+      {
+        "id": "C7M",
+        "name": "電信 SO 7MHz M",
+        "bands": [
+          "7"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": 100,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "operator": "SO",
+        "required_flags": [
+          "運用に関わる全作業を一人で行い、同時に複数波を送信していない",
+          "運用場所を変更していない、又は移動SOの許可範囲（開始時地域内、常置場所との往来なし）のみで変更した"
+        ],
+        "min_power_exclusive": 5
+      },
+      {
+        "id": "C7P",
+        "name": "電信 SO 7MHz P",
+        "bands": [
+          "7"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": 5,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "operator": "SO",
+        "required_flags": [
+          "運用に関わる全作業を一人で行い、同時に複数波を送信していない",
+          "運用場所を変更していない、又は移動SOの許可範囲（開始時地域内、常置場所との往来なし）のみで変更した"
+        ]
+      },
+      {
+        "id": "C14H",
+        "name": "電信 SO 14MHz H",
+        "bands": [
+          "14"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "operator": "SO",
+        "required_flags": [
+          "運用に関わる全作業を一人で行い、同時に複数波を送信していない",
+          "運用場所を変更していない、又は移動SOの許可範囲（開始時地域内、常置場所との往来なし）のみで変更した"
+        ],
+        "min_power_exclusive": 100
+      },
+      {
+        "id": "C14M",
+        "name": "電信 SO 14MHz M",
+        "bands": [
+          "14"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": 100,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "operator": "SO",
+        "required_flags": [
+          "運用に関わる全作業を一人で行い、同時に複数波を送信していない",
+          "運用場所を変更していない、又は移動SOの許可範囲（開始時地域内、常置場所との往来なし）のみで変更した"
+        ],
+        "min_power_exclusive": 5
+      },
+      {
+        "id": "C14P",
+        "name": "電信 SO 14MHz P",
+        "bands": [
+          "14"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": 5,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "operator": "SO",
+        "required_flags": [
+          "運用に関わる全作業を一人で行い、同時に複数波を送信していない",
+          "運用場所を変更していない、又は移動SOの許可範囲（開始時地域内、常置場所との往来なし）のみで変更した"
+        ]
+      },
+      {
+        "id": "C21H",
+        "name": "電信 SO 21MHz H",
+        "bands": [
+          "21"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "operator": "SO",
+        "required_flags": [
+          "運用に関わる全作業を一人で行い、同時に複数波を送信していない",
+          "運用場所を変更していない、又は移動SOの許可範囲（開始時地域内、常置場所との往来なし）のみで変更した"
+        ],
+        "min_power_exclusive": 100
+      },
+      {
+        "id": "C21M",
+        "name": "電信 SO 21MHz M",
+        "bands": [
+          "21"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": 100,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "operator": "SO",
+        "required_flags": [
+          "運用に関わる全作業を一人で行い、同時に複数波を送信していない",
+          "運用場所を変更していない、又は移動SOの許可範囲（開始時地域内、常置場所との往来なし）のみで変更した"
+        ],
+        "min_power_exclusive": 5
+      },
+      {
+        "id": "C21P",
+        "name": "電信 SO 21MHz P",
+        "bands": [
+          "21"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": 5,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "operator": "SO",
+        "required_flags": [
+          "運用に関わる全作業を一人で行い、同時に複数波を送信していない",
+          "運用場所を変更していない、又は移動SOの許可範囲（開始時地域内、常置場所との往来なし）のみで変更した"
+        ]
+      },
+      {
+        "id": "C28H",
+        "name": "電信 SO 28MHz H",
+        "bands": [
+          "28"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "operator": "SO",
+        "required_flags": [
+          "運用に関わる全作業を一人で行い、同時に複数波を送信していない",
+          "運用場所を変更していない、又は移動SOの許可範囲（開始時地域内、常置場所との往来なし）のみで変更した"
+        ],
+        "min_power_exclusive": 100
+      },
+      {
+        "id": "C28M",
+        "name": "電信 SO 28MHz M",
+        "bands": [
+          "28"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": 100,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "operator": "SO",
+        "required_flags": [
+          "運用に関わる全作業を一人で行い、同時に複数波を送信していない",
+          "運用場所を変更していない、又は移動SOの許可範囲（開始時地域内、常置場所との往来なし）のみで変更した"
+        ],
+        "min_power_exclusive": 5
+      },
+      {
+        "id": "C28P",
+        "name": "電信 SO 28MHz P",
+        "bands": [
+          "28"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": 5,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "operator": "SO",
+        "required_flags": [
+          "運用に関わる全作業を一人で行い、同時に複数波を送信していない",
+          "運用場所を変更していない、又は移動SOの許可範囲（開始時地域内、常置場所との往来なし）のみで変更した"
+        ]
+      },
+      {
+        "id": "C50H",
+        "name": "電信 SO 50MHz H",
+        "bands": [
+          "50"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "operator": "SO",
+        "required_flags": [
+          "運用に関わる全作業を一人で行い、同時に複数波を送信していない",
+          "運用場所を変更していない、又は移動SOの許可範囲（開始時地域内、常置場所との往来なし）のみで変更した"
+        ],
+        "min_power_exclusive": 100
+      },
+      {
+        "id": "C50M",
+        "name": "電信 SO 50MHz M",
+        "bands": [
+          "50"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": 100,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "operator": "SO",
+        "required_flags": [
+          "運用に関わる全作業を一人で行い、同時に複数波を送信していない",
+          "運用場所を変更していない、又は移動SOの許可範囲（開始時地域内、常置場所との往来なし）のみで変更した"
+        ],
+        "min_power_exclusive": 5
+      },
+      {
+        "id": "C50P",
+        "name": "電信 SO 50MHz P",
+        "bands": [
+          "50"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": 5,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "operator": "SO",
+        "required_flags": [
+          "運用に関わる全作業を一人で行い、同時に複数波を送信していない",
+          "運用場所を変更していない、又は移動SOの許可範囲（開始時地域内、常置場所との往来なし）のみで変更した"
+        ]
+      },
+      {
+        "id": "CMAH",
+        "name": "電信 MO 全帯 H",
+        "bands": [
+          "1.9",
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28",
+          "50"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 7,
+        "min_calls": 1,
+        "operator": "MO",
+        "required_flags": [
+          "日本国内の同一運用地（直径500m以内）で運用し、途中で運用地を変更していない",
+          "同一バンドで複数波を同時送信せず、全運用者を提出書類に記載する"
+        ],
+        "min_power_exclusive": 100
+      },
+      {
+        "id": "CM2H",
+        "name": "電信 マルチオペ2波 H",
+        "bands": [
+          "1.9",
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28",
+          "50"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": null,
+        "min_power_exclusive": 100,
+        "min_bands": 1,
+        "max_bands": 7,
+        "min_calls": 1,
+        "operator": "MO",
+        "required_mode_families": [],
+        "required_flags": [
+          "日本国内の同一運用地（直径500m以内）で運用し、途中で運用地を変更していない",
+          "同一バンドで複数波を同時送信せず、全運用者を提出書類に記載する",
+          "送信は同時に最大2波、異なるバンドで行い、系列1・2を確認した"
+        ],
+        "timing": {
+          "band_change": {
+            "kind": "stay",
+            "min_minutes": 10,
+            "tx_ids": [
+              "1",
+              "2"
+            ],
+            "on_violation": "exclude"
+          }
+        }
+      },
+      {
+        "id": "CMAM",
+        "name": "電信 MO 全帯 M",
+        "bands": [
+          "1.9",
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28",
+          "50"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": 100,
+        "min_bands": 1,
+        "max_bands": 7,
+        "min_calls": 1,
+        "operator": "MO",
+        "required_flags": [
+          "日本国内の同一運用地（直径500m以内）で運用し、途中で運用地を変更していない",
+          "同一バンドで複数波を同時送信せず、全運用者を提出書類に記載する"
+        ],
+        "min_power_exclusive": 5
+      },
+      {
+        "id": "CM2M",
+        "name": "電信 マルチオペ2波 M",
+        "bands": [
+          "1.9",
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28",
+          "50"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": 100,
+        "min_power_exclusive": 5,
+        "min_bands": 1,
+        "max_bands": 7,
+        "min_calls": 1,
+        "operator": "MO",
+        "required_mode_families": [],
+        "required_flags": [
+          "日本国内の同一運用地（直径500m以内）で運用し、途中で運用地を変更していない",
+          "同一バンドで複数波を同時送信せず、全運用者を提出書類に記載する",
+          "送信は同時に最大2波、異なるバンドで行い、系列1・2を確認した"
+        ],
+        "timing": {
+          "band_change": {
+            "kind": "stay",
+            "min_minutes": 10,
+            "tx_ids": [
+              "1",
+              "2"
+            ],
+            "on_violation": "exclude"
+          }
+        }
+      },
+      {
+        "id": "XAH",
+        "name": "電信電話 SO 全帯 H",
+        "bands": [
+          "1.9",
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28",
+          "50"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "USB",
+          "LSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 7,
+        "min_calls": 1,
+        "operator": "SO",
+        "required_flags": [
+          "運用に関わる全作業を一人で行い、同時に複数波を送信していない",
+          "運用場所を変更していない、又は移動SOの許可範囲（開始時地域内、常置場所との往来なし）のみで変更した"
+        ],
+        "min_power_exclusive": 100,
+        "required_mode_families": [
+          "phone"
+        ]
+      },
+      {
+        "id": "XAM",
+        "name": "電信電話 SO 全帯 M",
+        "bands": [
+          "1.9",
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28",
+          "50"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "USB",
+          "LSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": 100,
+        "min_bands": 1,
+        "max_bands": 7,
+        "min_calls": 1,
+        "operator": "SO",
+        "required_flags": [
+          "運用に関わる全作業を一人で行い、同時に複数波を送信していない",
+          "運用場所を変更していない、又は移動SOの許可範囲（開始時地域内、常置場所との往来なし）のみで変更した"
+        ],
+        "min_power_exclusive": 5,
+        "required_mode_families": [
+          "phone"
+        ]
+      },
+      {
+        "id": "XAP",
+        "name": "電信電話 SO 全帯 P",
+        "bands": [
+          "1.9",
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28",
+          "50"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "USB",
+          "LSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": 5,
+        "min_bands": 1,
+        "max_bands": 7,
+        "min_calls": 1,
+        "operator": "SO",
+        "required_flags": [
+          "運用に関わる全作業を一人で行い、同時に複数波を送信していない",
+          "運用場所を変更していない、又は移動SOの許可範囲（開始時地域内、常置場所との往来なし）のみで変更した"
+        ],
+        "required_mode_families": [
+          "phone"
+        ]
+      },
+      {
+        "id": "X19H",
+        "name": "電信電話 SO 1.9MHz H",
+        "bands": [
+          "1.9"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "USB",
+          "LSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "operator": "SO",
+        "required_flags": [
+          "運用に関わる全作業を一人で行い、同時に複数波を送信していない",
+          "運用場所を変更していない、又は移動SOの許可範囲（開始時地域内、常置場所との往来なし）のみで変更した"
+        ],
+        "min_power_exclusive": 100,
+        "required_mode_families": [
+          "phone"
+        ]
+      },
+      {
+        "id": "X19M",
+        "name": "電信電話 SO 1.9MHz M",
+        "bands": [
+          "1.9"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "USB",
+          "LSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": 100,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "operator": "SO",
+        "required_flags": [
+          "運用に関わる全作業を一人で行い、同時に複数波を送信していない",
+          "運用場所を変更していない、又は移動SOの許可範囲（開始時地域内、常置場所との往来なし）のみで変更した"
+        ],
+        "min_power_exclusive": 5,
+        "required_mode_families": [
+          "phone"
+        ]
+      },
+      {
+        "id": "X19P",
+        "name": "電信電話 SO 1.9MHz P",
+        "bands": [
+          "1.9"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "USB",
+          "LSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": 5,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "operator": "SO",
+        "required_flags": [
+          "運用に関わる全作業を一人で行い、同時に複数波を送信していない",
+          "運用場所を変更していない、又は移動SOの許可範囲（開始時地域内、常置場所との往来なし）のみで変更した"
+        ],
+        "required_mode_families": [
+          "phone"
+        ]
+      },
+      {
+        "id": "X35H",
+        "name": "電信電話 SO 3.5MHz H",
+        "bands": [
+          "3.5"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "USB",
+          "LSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "operator": "SO",
+        "required_flags": [
+          "運用に関わる全作業を一人で行い、同時に複数波を送信していない",
+          "運用場所を変更していない、又は移動SOの許可範囲（開始時地域内、常置場所との往来なし）のみで変更した"
+        ],
+        "min_power_exclusive": 100,
+        "required_mode_families": [
+          "phone"
+        ]
+      },
+      {
+        "id": "X35M",
+        "name": "電信電話 SO 3.5MHz M",
+        "bands": [
+          "3.5"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "USB",
+          "LSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": 100,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "operator": "SO",
+        "required_flags": [
+          "運用に関わる全作業を一人で行い、同時に複数波を送信していない",
+          "運用場所を変更していない、又は移動SOの許可範囲（開始時地域内、常置場所との往来なし）のみで変更した"
+        ],
+        "min_power_exclusive": 5,
+        "required_mode_families": [
+          "phone"
+        ]
+      },
+      {
+        "id": "X35P",
+        "name": "電信電話 SO 3.5MHz P",
+        "bands": [
+          "3.5"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "USB",
+          "LSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": 5,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "operator": "SO",
+        "required_flags": [
+          "運用に関わる全作業を一人で行い、同時に複数波を送信していない",
+          "運用場所を変更していない、又は移動SOの許可範囲（開始時地域内、常置場所との往来なし）のみで変更した"
+        ],
+        "required_mode_families": [
+          "phone"
+        ]
+      },
+      {
+        "id": "X7H",
+        "name": "電信電話 SO 7MHz H",
+        "bands": [
+          "7"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "USB",
+          "LSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "operator": "SO",
+        "required_flags": [
+          "運用に関わる全作業を一人で行い、同時に複数波を送信していない",
+          "運用場所を変更していない、又は移動SOの許可範囲（開始時地域内、常置場所との往来なし）のみで変更した"
+        ],
+        "min_power_exclusive": 100,
+        "required_mode_families": [
+          "phone"
+        ]
+      },
+      {
+        "id": "X7M",
+        "name": "電信電話 SO 7MHz M",
+        "bands": [
+          "7"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "USB",
+          "LSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": 100,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "operator": "SO",
+        "required_flags": [
+          "運用に関わる全作業を一人で行い、同時に複数波を送信していない",
+          "運用場所を変更していない、又は移動SOの許可範囲（開始時地域内、常置場所との往来なし）のみで変更した"
+        ],
+        "min_power_exclusive": 5,
+        "required_mode_families": [
+          "phone"
+        ]
+      },
+      {
+        "id": "X7P",
+        "name": "電信電話 SO 7MHz P",
+        "bands": [
+          "7"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "USB",
+          "LSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": 5,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "operator": "SO",
+        "required_flags": [
+          "運用に関わる全作業を一人で行い、同時に複数波を送信していない",
+          "運用場所を変更していない、又は移動SOの許可範囲（開始時地域内、常置場所との往来なし）のみで変更した"
+        ],
+        "required_mode_families": [
+          "phone"
+        ]
+      },
+      {
+        "id": "X14H",
+        "name": "電信電話 SO 14MHz H",
+        "bands": [
+          "14"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "USB",
+          "LSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "operator": "SO",
+        "required_flags": [
+          "運用に関わる全作業を一人で行い、同時に複数波を送信していない",
+          "運用場所を変更していない、又は移動SOの許可範囲（開始時地域内、常置場所との往来なし）のみで変更した"
+        ],
+        "min_power_exclusive": 100,
+        "required_mode_families": [
+          "phone"
+        ]
+      },
+      {
+        "id": "X14M",
+        "name": "電信電話 SO 14MHz M",
+        "bands": [
+          "14"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "USB",
+          "LSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": 100,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "operator": "SO",
+        "required_flags": [
+          "運用に関わる全作業を一人で行い、同時に複数波を送信していない",
+          "運用場所を変更していない、又は移動SOの許可範囲（開始時地域内、常置場所との往来なし）のみで変更した"
+        ],
+        "min_power_exclusive": 5,
+        "required_mode_families": [
+          "phone"
+        ]
+      },
+      {
+        "id": "X14P",
+        "name": "電信電話 SO 14MHz P",
+        "bands": [
+          "14"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "USB",
+          "LSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": 5,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "operator": "SO",
+        "required_flags": [
+          "運用に関わる全作業を一人で行い、同時に複数波を送信していない",
+          "運用場所を変更していない、又は移動SOの許可範囲（開始時地域内、常置場所との往来なし）のみで変更した"
+        ],
+        "required_mode_families": [
+          "phone"
+        ]
+      },
+      {
+        "id": "X21H",
+        "name": "電信電話 SO 21MHz H",
+        "bands": [
+          "21"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "USB",
+          "LSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "operator": "SO",
+        "required_flags": [
+          "運用に関わる全作業を一人で行い、同時に複数波を送信していない",
+          "運用場所を変更していない、又は移動SOの許可範囲（開始時地域内、常置場所との往来なし）のみで変更した"
+        ],
+        "min_power_exclusive": 100,
+        "required_mode_families": [
+          "phone"
+        ]
+      },
+      {
+        "id": "X21M",
+        "name": "電信電話 SO 21MHz M",
+        "bands": [
+          "21"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "USB",
+          "LSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": 100,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "operator": "SO",
+        "required_flags": [
+          "運用に関わる全作業を一人で行い、同時に複数波を送信していない",
+          "運用場所を変更していない、又は移動SOの許可範囲（開始時地域内、常置場所との往来なし）のみで変更した"
+        ],
+        "min_power_exclusive": 5,
+        "required_mode_families": [
+          "phone"
+        ]
+      },
+      {
+        "id": "X21P",
+        "name": "電信電話 SO 21MHz P",
+        "bands": [
+          "21"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "USB",
+          "LSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": 5,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "operator": "SO",
+        "required_flags": [
+          "運用に関わる全作業を一人で行い、同時に複数波を送信していない",
+          "運用場所を変更していない、又は移動SOの許可範囲（開始時地域内、常置場所との往来なし）のみで変更した"
+        ],
+        "required_mode_families": [
+          "phone"
+        ]
+      },
+      {
+        "id": "X28H",
+        "name": "電信電話 SO 28MHz H",
+        "bands": [
+          "28"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "USB",
+          "LSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "operator": "SO",
+        "required_flags": [
+          "運用に関わる全作業を一人で行い、同時に複数波を送信していない",
+          "運用場所を変更していない、又は移動SOの許可範囲（開始時地域内、常置場所との往来なし）のみで変更した"
+        ],
+        "min_power_exclusive": 100,
+        "required_mode_families": [
+          "phone"
+        ]
+      },
+      {
+        "id": "X28M",
+        "name": "電信電話 SO 28MHz M",
+        "bands": [
+          "28"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "USB",
+          "LSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": 100,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "operator": "SO",
+        "required_flags": [
+          "運用に関わる全作業を一人で行い、同時に複数波を送信していない",
+          "運用場所を変更していない、又は移動SOの許可範囲（開始時地域内、常置場所との往来なし）のみで変更した"
+        ],
+        "min_power_exclusive": 5,
+        "required_mode_families": [
+          "phone"
+        ]
+      },
+      {
+        "id": "X28P",
+        "name": "電信電話 SO 28MHz P",
+        "bands": [
+          "28"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "USB",
+          "LSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": 5,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "operator": "SO",
+        "required_flags": [
+          "運用に関わる全作業を一人で行い、同時に複数波を送信していない",
+          "運用場所を変更していない、又は移動SOの許可範囲（開始時地域内、常置場所との往来なし）のみで変更した"
+        ],
+        "required_mode_families": [
+          "phone"
+        ]
+      },
+      {
+        "id": "X50H",
+        "name": "電信電話 SO 50MHz H",
+        "bands": [
+          "50"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "USB",
+          "LSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "operator": "SO",
+        "required_flags": [
+          "運用に関わる全作業を一人で行い、同時に複数波を送信していない",
+          "運用場所を変更していない、又は移動SOの許可範囲（開始時地域内、常置場所との往来なし）のみで変更した"
+        ],
+        "min_power_exclusive": 100,
+        "required_mode_families": [
+          "phone"
+        ]
+      },
+      {
+        "id": "X50M",
+        "name": "電信電話 SO 50MHz M",
+        "bands": [
+          "50"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "USB",
+          "LSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": 100,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "operator": "SO",
+        "required_flags": [
+          "運用に関わる全作業を一人で行い、同時に複数波を送信していない",
+          "運用場所を変更していない、又は移動SOの許可範囲（開始時地域内、常置場所との往来なし）のみで変更した"
+        ],
+        "min_power_exclusive": 5,
+        "required_mode_families": [
+          "phone"
+        ]
+      },
+      {
+        "id": "X50P",
+        "name": "電信電話 SO 50MHz P",
+        "bands": [
+          "50"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "USB",
+          "LSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": 5,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "operator": "SO",
+        "required_flags": [
+          "運用に関わる全作業を一人で行い、同時に複数波を送信していない",
+          "運用場所を変更していない、又は移動SOの許可範囲（開始時地域内、常置場所との往来なし）のみで変更した"
+        ],
+        "required_mode_families": [
+          "phone"
+        ]
+      },
+      {
+        "id": "XMAH",
+        "name": "電信電話 MO 全帯 H",
+        "bands": [
+          "1.9",
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28",
+          "50"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "USB",
+          "LSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 7,
+        "min_calls": 1,
+        "operator": "MO",
+        "required_flags": [
+          "日本国内の同一運用地（直径500m以内）で運用し、途中で運用地を変更していない",
+          "同一バンドで複数波を同時送信せず、全運用者を提出書類に記載する"
+        ],
+        "min_power_exclusive": 100,
+        "required_mode_families": [
+          "phone"
+        ]
+      },
+      {
+        "id": "XM2H",
+        "name": "電信電話 マルチオペ2波 H",
+        "bands": [
+          "1.9",
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28",
+          "50"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "USB",
+          "LSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": null,
+        "min_power_exclusive": 100,
+        "min_bands": 1,
+        "max_bands": 7,
+        "min_calls": 1,
+        "operator": "MO",
+        "required_mode_families": [
+          "phone"
+        ],
+        "required_flags": [
+          "日本国内の同一運用地（直径500m以内）で運用し、途中で運用地を変更していない",
+          "同一バンドで複数波を同時送信せず、全運用者を提出書類に記載する",
+          "送信は同時に最大2波、異なるバンドで行い、系列1・2を確認した"
+        ],
+        "timing": {
+          "band_change": {
+            "kind": "stay",
+            "min_minutes": 10,
+            "tx_ids": [
+              "1",
+              "2"
+            ],
+            "on_violation": "exclude"
+          }
+        }
+      },
+      {
+        "id": "XMAM",
+        "name": "電信電話 MO 全帯 M",
+        "bands": [
+          "1.9",
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28",
+          "50"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "USB",
+          "LSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": 100,
+        "min_bands": 1,
+        "max_bands": 7,
+        "min_calls": 1,
+        "operator": "MO",
+        "required_flags": [
+          "日本国内の同一運用地（直径500m以内）で運用し、途中で運用地を変更していない",
+          "同一バンドで複数波を同時送信せず、全運用者を提出書類に記載する"
+        ],
+        "min_power_exclusive": 5,
+        "required_mode_families": [
+          "phone"
+        ]
+      },
+      {
+        "id": "XM2M",
+        "name": "電信電話 マルチオペ2波 M",
+        "bands": [
+          "1.9",
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28",
+          "50"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "USB",
+          "LSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": 100,
+        "min_power_exclusive": 5,
+        "min_bands": 1,
+        "max_bands": 7,
+        "min_calls": 1,
+        "operator": "MO",
+        "required_mode_families": [
+          "phone"
+        ],
+        "required_flags": [
+          "日本国内の同一運用地（直径500m以内）で運用し、途中で運用地を変更していない",
+          "同一バンドで複数波を同時送信せず、全運用者を提出書類に記載する",
+          "送信は同時に最大2波、異なるバンドで行い、系列1・2を確認した"
+        ],
+        "timing": {
+          "band_change": {
+            "kind": "stay",
+            "min_minutes": 10,
+            "tx_ids": [
+              "1",
+              "2"
+            ],
+            "on_violation": "exclude"
+          }
+        }
+      },
+      {
+        "id": "PN",
+        "name": "電話 SO ニューカマー",
+        "bands": [
+          "1.9",
+          "3.5",
+          "7",
+          "21",
+          "28",
+          "50"
+        ],
+        "modes": [
+          "SSB",
+          "USB",
+          "LSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": 20,
+        "min_bands": 1,
+        "max_bands": 6,
+        "min_calls": 1,
+        "operator": "SO",
+        "required_flags": [
+          "運用に関わる全作業を一人で行い、同時に複数波を送信していない",
+          "運用場所を変更していない、又は移動SOの許可範囲（開始時地域内、常置場所との往来なし）のみで変更した",
+          "初めて開局した個人局で、入力日は再免許日でなく最初の局免許年月日である"
+        ],
+        "power_by_band": {
+          "1.9": 10,
+          "3.5": 10,
+          "7": 10,
+          "21": 10,
+          "28": 10,
+          "50": 20
+        },
+        "qualification": {
+          "license_since": "2023-04-25",
+          "license_until": "2026-04-25"
+        }
+      },
+      {
+        "id": "CS",
+        "name": "電信 SO シルバー",
+        "bands": [
+          "1.9",
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28",
+          "50"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 7,
+        "min_calls": 1,
+        "operator": "SO",
+        "required_flags": [
+          "運用に関わる全作業を一人で行い、同時に複数波を送信していない",
+          "運用場所を変更していない、又は移動SOの許可範囲（開始時地域内、常置場所との往来なし）のみで変更した",
+          "年齢は申請者でなく実際の運用者の運用時年齢である"
+        ],
+        "qualification": {
+          "min_age": 70
+        }
+      },
+      {
+        "id": "XS",
+        "name": "電信電話 SO シルバー",
+        "bands": [
+          "1.9",
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28",
+          "50"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "USB",
+          "LSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 7,
+        "min_calls": 1,
+        "operator": "SO",
+        "required_flags": [
+          "運用に関わる全作業を一人で行い、同時に複数波を送信していない",
+          "運用場所を変更していない、又は移動SOの許可範囲（開始時地域内、常置場所との往来なし）のみで変更した",
+          "年齢は申請者でなく実際の運用者の運用時年齢である"
+        ],
+        "qualification": {
+          "min_age": 70
+        },
+        "required_mode_families": [
+          "phone"
+        ]
+      },
+      {
+        "id": "XMJ",
+        "name": "電信電話 MO ジュニア",
+        "bands": [
+          "1.9",
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28",
+          "50"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "USB",
+          "LSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 7,
+        "min_calls": 1,
+        "operator": "MO",
+        "required_flags": [
+          "日本国内の同一運用地（直径500m以内）で運用し、途中で運用地を変更していない",
+          "同一バンドで複数波を同時送信せず、全運用者を提出書類に記載する",
+          "全ての実運用者を年齢付きで入力した（成人の交信担当者を省略していない）"
+        ],
+        "qualification": {
+          "operators_max_age": 18
+        }
+      }
+    ],
+    "required_flags": [
+      "免許範囲・JARL指定周波数・各交信の送信出力を確認した（3.8MHz・WARC対象外）",
+      "交換したRS(T)と番号が完全で、運用時の記録に基づく訂正であることを確認した",
+      "クロスバンド・クロスモード・レピータ交信を含めていない",
+      "セルフスポット等の禁止、遠隔受信・リモート運用の条件を確認した",
+      "日本国内で運用し、1部門1種目・同一人の別コール提出に関する条件を確認した"
+    ],
+    "duplicate_fields": [
+      "call",
+      "band"
+    ],
+    "prefer": "first",
+    "special": "none",
+    "exchange": {
+      "kind": "jarl_region_power",
+      "regions": [
+        "101",
+        "102",
+        "103",
+        "104",
+        "105",
+        "106",
+        "107",
+        "108",
+        "109",
+        "110",
+        "111",
+        "112",
+        "113",
+        "114",
+        "02",
+        "03",
+        "04",
+        "05",
+        "06",
+        "07",
+        "08",
+        "09",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26",
+        "27",
+        "28",
+        "29",
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "35",
+        "36",
+        "37",
+        "38",
+        "39",
+        "40",
+        "41",
+        "42",
+        "43",
+        "44",
+        "45",
+        "46",
+        "47",
+        "48"
+      ],
+      "same_sent_region": true
+    },
+    "submission": {
+      "formats": [
+        "JARL R1.0",
+        "JARL R2.1"
+      ],
+      "zone": "JST",
+      "contest": "第68回 ALL JAコンテスト",
+      "instructions": "2026年規約。SWLを除く68種目。R2.1推奨、PN/CS/XSは資格情報の出力のためPSLogではR2.1を使用します。2波種目の系列は物理リグ番号ではなく1/2で入力。締切2026-05-06。移動運用時は運用地も記載してください。自動送信しません。",
+      "jarl_tx": true,
+      "required_fields": [
+        "email"
+      ]
+    },
+    "band_modes": {
+      "1.9": [
+        "CW",
+        "SSB",
+        "USB",
+        "LSB",
+        "AM"
+      ],
+      "3.5": [
+        "CW",
+        "SSB",
+        "USB",
+        "LSB",
+        "AM"
+      ],
+      "7": [
+        "CW",
+        "SSB",
+        "USB",
+        "LSB",
+        "AM"
+      ],
+      "14": [
+        "CW",
+        "SSB",
+        "USB",
+        "LSB",
+        "AM"
+      ],
+      "21": [
+        "CW",
+        "SSB",
+        "USB",
+        "LSB",
+        "AM"
+      ],
+      "28": [
+        "CW",
+        "SSB",
+        "USB",
+        "LSB",
+        "AM",
+        "FM"
+      ],
+      "50": [
+        "CW",
+        "SSB",
+        "USB",
+        "LSB",
+        "AM",
+        "FM"
+      ]
+    },
+    "rule_view": {
+      "power": "電話部門のすべての種目は10W以下（50MHz帯では20W以下）。",
+      "call_method": "電話：CQコンテスト（またはCQ JAコンテスト）\n電信：CQ TEST（またはCQ JA TEST）",
+      "restrictions": "2波種目では、2つの送信系列それぞれに10分間ルールを適用します。",
+      "participants": "日本国内のアマチュア局およびSWL（アマチュア局の電波を受信する個人）。",
+      "movement": "コンテスト中の運用場所変更は禁止。ただし常置場所を離れて移動運用するシングルオペは、開始時のマルチプライヤー内で場所を変更できます。マルチオペは直径500m以内の一箇所で運用します。",
+      "counterparts": "日本国内のアマチュア局との交信。",
+      "exchange": "RS(T)＋運用場所を示す都府県・地域等ナンバー＋その交信に使用した空中線電力の記号1文字。",
+      "repeat": "同一局・同一バンドの再交信は、電波型式が異なっても1回だけ得点対象です。",
+      "submission_notes": "JARL電子ログ形式をWebまたはテキストメールで提出。2波種目は交信ごとの送信波系列が分かるよう記載します。時刻はJST。",
+      "points_display": "完全な交信：1点。",
+      "multipliers_display": "各バンドで交信した異なる都府県・地域等。",
+      "submission_deadline": "2026年5月6日必着"
+    }
+  }
+}

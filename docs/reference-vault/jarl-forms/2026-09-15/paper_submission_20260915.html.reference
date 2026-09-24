@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>紙ログ・サマリーでのログ提出</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css" type="text/css"/>
+</head>
+<body>
+  <!-- トップバナー -->
+  <div class="top-banner">
+    <div class="banner-title"><a href="index.html">JARLコンテスト</a></div>
+    <div class="menu-item">
+    <a href="https://www.jarl.org/index.html">JARL HOME</a>
+    </div>
+    <div class="menu-item">
+    <a href="index.html">コンテスト HOME</a>
+    </div>
+    <div class="menu-item">
+      <a href="#">コンテスト規約一覧</a>
+      <div class="dropdown">
+        <a href="qso_party.html">QSOパーティ</a>
+        <a href="allja_rules.html">ALL JA</a>
+        <a href="aadx_rules.html">ALL ASIAN DX</a>
+        <a href="6d_rules.html">6m AND DOWN</a>
+        <a href="fd_rules.html">フィールドデー</a>
+        <a href="acag_rules.html">全市全郡</a>
+      </div>
+    </div>
+    <div class="menu-item">
+      <a href="https://contest.jarl.org/upload-redirect.html">電子ログアップロード</a>
+      </div>
+    <div class="menu-item">
+      <a href="#">最新コンテスト結果</a>
+      <div class="dropdown">
+ 	<a href="https://www.jarl.org/Japanese/1_Tanoshimo/1-1_Contest/qp/2025/qsop25.htm">2025 QSOパーティ</a>
+	<a href="https://www.jarl.org/Japanese/1_Tanoshimo/1-1_Contest/all_ja/2025/index.html">2025 ALL JA</a>
+	<a href="https://www.jarl.org/Japanese/1_Tanoshimo/1-1_Contest/all_asian/AA2025-index1.html">2025 ALL ASIAN DX</a>
+	<a href="https://www.jarl.org/Japanese/1_Tanoshimo/1-1_Contest/6m/2025/index.html">2025 6m AND DOWN</a>
+	<a href="https://www.jarl.org/Japanese/1_Tanoshimo/1-1_Contest/fd/2025/index.html">2025 フィールドデー</a>
+	<a href="https://www.jarl.org/Japanese/1_Tanoshimo/1-1_Contest/all_cg/2025/index.html">2025 全市全郡</a>
+      </div>
+      </div>
+	<div class="menu-item"><a href="q_and_a.html">FAQ</a></div>
+    <div class="menu-item"><a href="https://contest.jarl.org/cntdb/">スコア・データベース</a></div>
+<!--    <div class="menu-item"><a href="cc.html">コンテスト委員会紹介</a></div> -->
+    <div class="menu-item"><a href="contact.php">お問い合わせ</a></div>
+<form id="google-search-form" class="google-search-form" method="get" action="https://www.google.com/search" target="_blank">
+  <input type="text" id="search-box" placeholder="キーワードを入力" required>
+  <button type="submit">🔍 検索</button>
+</form>
+  </div>
+  <div class="notice-section">
+    <h1>紙ログによるログ提出</h1>
+    <p>
+JARL主催のすべてのコンテストにおいて、紙ログは総交信局数（SWL種目ではコンテストナンバーを送った局）が100局までで、すべて手書きとします。プリンタで印字された紙ログ、100局を超える紙ログは受け付けいたしません。
+    </p>
+    <p>当委員会の審査分科会メンバーにより、すべての手書きログを電子化する作業を行っております。より迅速な審査・結果発表を進めていく観点から、紙ログでの提出の方も電子ログ提出に挑戦してみてください。
+    </p>
+    <p>
+      ご家族やご友人などにお願いし、紙ログを電子ログに入力していただき、Webアップロードや電子メールで提出されても問題ありません。紙ログの電子化はコンテスト後のログ改変にあたりませんし、ご本人以外の方がログ電子化のお手伝いをされてもマルチオペとは見なさず、シングルオペとしてエントリーできます。
+      </p>
+    <p>
+      パソコンでロギングしているけど電子メールが使えない方は、USBメモリやSDカードなど<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+  <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+</svg><a href="media.html">記憶媒体によるコンテストログ提出</a>にも対応しています。特殊なロギングソフトでJARL形式の電子ログ・サマリーが出力できない、という方は<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+  <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+</svg><a href="contact.php">お問い合わせフォーム</a>か電子メール（contest@jarl.org）で事務局にお問い合わせください。できる限り対応するように努力します。
+      </p>
+       <p>
+      紙のログ・サマリーのフォーマットは、本Webよりダウンロードしてください。
+      </p>
+<p>なお、新春のQSOパーティについては、ステッカーの送付（SASE 同封）の関係から、紙ログの受け付け（プリントアウト可）を継続することとします。
+</p>
+
+<h2>JARL主催コンテスト 紙ログ・サマリーシート様式</h2>
+<ul>
+  <li>サマリーシート（<a href="http://www.jarl.org/Japanese/1_Tanoshimo/1-1_Contest/summary-sheet.pdf">PDF型式</a>）［記入例：<a href="http://www.jarl.org/Japanese/1_Tanoshimo/1-1_Contest/ALLJA-S.pdf">サマリー</a>（ALL JAコンテスト）］
+  <li>ログシート（<a href="http://www.jarl.org/Japanese/1_Tanoshimo/1-1_Contest/logsheet.pdf">PDF型式</a>）［記入例：<a href="http://www.jarl.org/Japanese/1_Tanoshimo/1-1_Contest/Log-sam.pdf">ログ</a>　・<a href="http://www.jarl.org/Japanese/1_Tanoshimo/1-1_Contest/SWL-L-sam.pdf">SWLでの提出ログ</a>］
+  <li>※ログシートは必要枚数分プリントアウト（またはコピー）してお使いください。
+</ul>
+</div>
+  <footer>
+    <a href="https://www.jarl.org/"><font color="white">JARL HOME</a> | <a href="index.html">コンテストHOME</a><br /><p><font color="white">&copy; 2025 日本アマチュア無線連盟</font>
+  </footer>
+<!-- ページトップへ -->
+<button id="back-to-top" onclick="scrollToTop()">
+    <svg viewBox="0 0 24 24">
+      <path d="M12 4l-8 8h6v8h4v-8h6z"/>
+    </svg>PAGE TOP
+</button>
+<script src="script.js"></script>
+</body>
+</html>

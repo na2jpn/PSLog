@@ -1,0 +1,31 @@
+{
+  "patch": "Ver1.064 PATCH04",
+  "base": "Ver1.063 PATCH03 applied source",
+  "file_count": 24,
+  "files": [
+    "test_v103_initial.py",
+    "test_patch01_1061.py",
+    "test_patch05.py",
+    "test_patch04.py",
+    "test_full_restore.py",
+    "test_patch03_1063.py",
+    "test_patch07_1057.py",
+    "jccjcg_batch_ui.py",
+    "test_patch08_1058.py",
+    "test_patch09_1059.py",
+    "CHANGELOG.md",
+    "test_release_106.py",
+    "test_patch06.py",
+    "test_windows_package.py",
+    "contest_ui.py",
+    "jccjcg_batch.py",
+    "test_v102.py",
+    "WINDOWS_BUILD.md",
+    "storage.py",
+    "build-windows.ps1",
+    "VER1.064_PATCH04_README.md",
+    "test_patch04_1064.py",
+    "test_patch10.py",
+    "test_patch03.py"
+  ]
+}

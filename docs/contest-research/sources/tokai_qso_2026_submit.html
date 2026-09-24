@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <HEAD>
+    <META charset="Shift-JIS">    
+  <TITLE>Tokai Contest log registration form</TITLE>
+ </HEAD>
+<!-- Background white, links blue (unvisited), navy (visited), red (active) -->
+ <BODY
+
+  BGCOLOR="#F8F4A8"
+  BGCOLOR="#CCFFFF"
+  TEXT="#669999"
+  LINK="#6666CC"
+  VLINK="#336666"
+  ALINK="#0000FF"
+ >
+  <hr>
+  <H1 ALIGN="CENTER">
+    JARL東海地方本部主催<br>
+    コンテストログ提出用Webサイト
+  </H1>
+  <HR>
+  <a href="https://www.tokai-jarl.jp/tkitest/tokai-log.html">
+  <img src="QR-tokai-log.png" width="15%">
+  </a>
+  <br>↑このQRコードからこのWebサイト(<a href="https://www.tokai-jarl.jp/tkitest/tokai-log.html">https://www.tokai-jarl.jp/tkitest/tokai-log.html</a>)にアクセスできます。ぜひご利用下さい！
+  <HR>
+
+    <font color="red">
+	このシステムによってログが提出されると、自動的にメールが発信されます。
+        <br>もし動作不良，提出済のログの取り消しやご意見・問い合わせ等がありましたら<a href="inquiry.html">問い合わせ窓口</a>までご連絡ください！
+	<br>
+</font>
+<hr>
+
+
+<BLOCKQUOTE>
+    <p>
+    <font color="blue">JARL東海地方本部主催コンテストにご参加いただきありがとうございます。</font>
+    <p>このフォームからJARL東海地方本部主催コンテストのログ（書類）を提出することができます。
+    <br>他のコンテストのログ（書類）は提出できません。
+    <br><font size="-2">（「<a href="https://contest.jarl.org/summarymaker_r1.htm">JARL電子ログサマリー作成ページ(R1.0用)</a> 」を使用する方は，
+   「提出先メールアドレス」を自分自身のメールアドレスに設定し，届いたメールの内容をここに貼り付けてください）</font>
+
+    <p>
+      提出できる書類は<font color="red">JARL電子ログ形式のみ</font>です（JARL電子ログ形式の詳細は<a href="http://www.jarl.org/Japanese/1_Tanoshimo/1-1_Contest/e-log.htm">こちら</a>）。
+      <br><font color="green">JARL東海地方本部主催コンテストでは、JARL電子ログ「R1.0の形式」または「R2.0の形式に廃止となった項目を追記した形式」で書類を作成し提出していただきます。</font>
+      <br>JARL電子ログ形式のファイルの準備ができていない方は<a href="tokai-log-input.html">こちら</a>から作成し提出することもできます。
+      
+    <p>提出方法：
+    <ol>
+      <li>コンテストログフト等で作成したJARL電子ログ形式のファイルを指定の場所に貼り付け、「送信」ボタンをクリックしてください。
+      <li>確認画面が表示されるので、「登録」ボタンをクリックして提出完了です（「登録が完了しました」と表示されることを確認してください）
+      <li>システムが登録を確認すると、<!--電子メールによる提出と同様に-->ログ（サマリーシート）内に記載された電子メールアドレス宛に受信通知を送信しますので確認してください。
+    </ol>
+    <p>
+      ご注意：
+      <ul>
+	<li>この提出フォームで書類を提出した場合、別途電子メールや紙ログで書類を提出いただく必要はありません。
+	<li>また、この提出フォームに加えて電子メールや紙ログでも提出いただいた場合は、提出フォームよりそちらを優先的に審査します。
+    <p>
+      <li>このシステムはJARL東海地方本部コンテスト委員会により実施しています。
+      <li>ご利用にあたり不都合な点が発見されたり、ご意見等がありましたら、
+	ログ提出時の記入欄にご記入ください。ログ内には記載しないでください。
+        <br>またこの記入欄に記載してもコンテスト審査には反映されません．コンテストに関する事項は電子ログ内に記載してください．
+    </ul>
+      
+  </BLOCKQUOTE>
+<hr>
+
+<!--
+種目チェックを行う場合に必要な情報
+
+<form action=/cgi-bin/tokai-log/check.cgi name="loginput" method="POST">
+  <ul>
+    <li>コンテスト名の選択：<br>
+      <select name="contestname" size="4">
+	<option value="QSO" selected>東海QSOコンテスト</option>
+	<option value="AI">愛・地球博記念コンテスト</option>
+	<option value="MARATHON">東海マラソンコンテスト</option>
+	<option value="D-STAR">D-STARコンテスト</option>
+      </select>
+    <li>ログファイルの選択<br>
+-->
+
+
+
+<form action=/cgi-bin/tokai-log/check.cgi name="test" method="POST">
+<font color="blue">下の白枠内にJARL電子ログ形式のファイルを「メモ帳」等で開き、コピー＆ペーストで文字データを貼り付けてください。
+<br>
+  次の「ファイル選択（参照）」ボタンをクリックしてファイルを選択して読み込ませることもできます。</font>
+  <br><font color="red">（うまく読み込めなかったり、文字化けする場合は下の枠内に直接文字データを貼り付けてください）</font>
+  <br>
+  <input type="file" id="selfile1" size="50">←文字コードをShift-JISで作成した場合（多くのパソコン等の場合はこちら）<br>
+  <input type="file" id="selfile2" size="50">←文字コードをUTF-8で作成した場合（上記で文字化けする場合はこちら）<br>
+  <div id="errmessage"></div>
+<br>
+（入力する電子ログの例）<br>
+<textarea cols=100 rows=10 readonly style="background-color:#AFFFAF">
+<SUMMARYSHEET VERSION=R1.0>
+<CONTESTNAME>第58回東海QSOコンテスト</CONTESTNAME>
+<CATEGORYCODE>I-SA</CATEGORYCODE>
+<CATEGORYNAME>管内局個人電話オールバンド</CATEGORYNAME>
+<CALLSIGN>JA2AAA/2</CALLSIGN>
+<SCORE BAND=7MHz>2,2,1</SCORE>
+<SCORE BAND=50MHz>1,1,1</SCORE>
+<SCORE BAND=430MHz>1,1,1</SCORE>
+<SCORE BAND=TOTAL>4,4,3</SCORE>
+<TOTALSCORE>12</TOTALSCORE>
+<ADDRESS>〒400-0000 愛知県名古屋市昭和区○○町1-1</ADDRESS>
+<TEL>052-000-0000</TEL>
+<NAME>東海　太郎</NAME>
+<EMAIL>JA2AAA@jarl.com</EMAIL>
+<LICENSECLASS>第１級アマチュア無線技士</LICENSECLASS>
+<POWER>50</POWER>
+<POWERTYPE>定格出力</POWERTYPE>
+<OPPLACE>愛知県岡崎市</OPPLACE>
+<EQUIPMENT>IC-0000, GPアンテナ</EQUIPMENT>
+<COMMENTS>とても楽しかったです。</COMMENTS>
+<OATH>私は，JARL東海地方本部制定のコンテスト規約および電波法令にしたがい運用した結果，ここに提出するサマリーシートおよびログシートなどが事実と相違ないものであることを，私の名誉において誓います。</OATH>
+<DATE>2018年3月21日</DATE>
+<SIGNATURE>東海 太郎</SIGNATURE>
+</SUMMARYSHEET>
+<LOGSHEET TYPE=CTESTWIN>
+DATE (JST) TIME   BAND MODE  CALLSIGN      SENTNo      RCVDNo      Mlt    Pts
+2018-03-21 09:17    7  CW    JA2RL         599 200105  599 200107  200107  1
+2018-03-21 10:33    7  SSB   JA2HDE        59  200105  59  200107  -       1
+2018-03-21 11:48   50  SSB   JA2YRL/2      59  200105  59  2018    2018    1
+2018-03-21 12:31  430  FM    JA2IGY        59  200105  599 2104    2104    1
+</LOGSHEET>
+</textarea>	
+<p>
+<font color="blue">この白枠内の情報が送信されます。文字化け等していないかじゅうぶん確認した後、最下段の「送信」ボタンをクリックして下さい．</font><br>
+    <textarea name="logtext" rows="40" cols="100"></textarea>
+<p>
+    <font color="blue">このWebログ提出システムに関してご意見・ご感想等がありましたら
+      ここに記入してください．
+      <br>ログ再提出等の伝言もこちらに記入いただけます．
+      <br>（この欄は審査には影響しません．無記入でも結構です．審査に関わる事項はここではなく必ず提出書類内の意見欄に記載してください）
+      <br>（コンテスト規約等のご意見やログの提出取り消しのご連絡は，<a href="https://www.tokai-jarl.jp/tkitest/inquiry.html" target="_blank">問い合わせ窓口</a>へお願いします）</font><br>
+    <textarea name="webcomment" rows="5" cols="100"></textarea>
+    
+<center>
+記入が終ったら次の「送信」ボタンを押して下さい．
+<br>
+確認画面が表示されるので，内容を確認し、「登録」ボタンを押します。
+<br>
+「登録が完了しました」というメッセージが表示されれば送信完了です．
+
+<p>
+<input type="submit" value="送信">
+<input type="reset" value="入力のやり直し"><p>
+</center>
+</form>
+
+</form>
+</center>
+
+   <script>
+     var obj1 = document.getElementById("selfile1");
+     var obj2 = document.getElementById("selfile2");
+
+     obj1.addEventListener("change",function(evt){
+
+     var file = evt.target.files;
+     var reader = new FileReader();
+     reader.readAsText(file[0],"Shift-JIS");
+
+     reader.onload = function(ev){
+     document.test.logtext.value = reader.result;
+     }
+
+     //エラー処理
+     reader.onerror = function(e){
+     //エラーメッセージを配列に格納する
+     var errmes = new Array(
+     "",
+     "ファイルが見つかりません！",
+     "セキュリティエラーが検出されました！",
+     "ファイルの読込が中断されました！",
+     "ファイルの読み込み権限がありません！",
+     "ファイルサイズが大き過ぎます！"
+     );
+     //エラーをinnerHTMLで書き出す
+     var obj2 = document.getElementById("errmessage");
+     obj2.innerHTML = errmes[reader.error.code];
+     }
+
+     },false);
+
+     obj2.addEventListener("change",function(evt){
+
+     var file = evt.target.files;
+     var reader = new FileReader();
+     reader.readAsText(file[0],"UTF-8");
+
+     reader.onload = function(ev){
+     document.test.logtext.value = reader.result;
+     }
+
+     //エラー処理
+     reader.onerror = function(e){
+     //エラーメッセージを配列に格納する
+     var errmes = new Array(
+     "",
+     "ファイルが見つかりません！",
+     "セキュリティエラーが検出されました！",
+     "ファイルの読込が中断されました！",
+     "ファイルの読み込み権限がありません！",
+     "ファイルサイズが大き過ぎます！"
+     );
+     //エラーをinnerHTMLで書き出す
+     var obj2 = document.getElementById("errmessage");
+     obj2.innerHTML = errmes[reader.error.code];
+     }
+
+     },false);
+     
+     </script>
+
+  <hr>
+  <address>
+  2018.03.23.<br>
+  2022.06.22.<br>    
+  tokai-log at tokai-jarl.jp
+  </address> 
+ </BODY>
+</HTML>

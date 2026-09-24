@@ -1,0 +1,779 @@
+{
+  "schema": 2,
+  "id": "all_asian_dx_phone",
+  "name": "ALL ASIAN DX Phone",
+  "year": 2026,
+  "url": "https://www.jarl.org/Japanese/1_Tanoshimo/1-1_Contest/aadx_rules.html",
+  "organizer": "JARL",
+  "sort_name": "ALL ASIAN DX Phone",
+  "points": {
+    "cw": 1,
+    "phone": 1,
+    "digital": 0
+  },
+  "conditions": [],
+  "duplicate": {
+    "enabled": true,
+    "by_mode": false
+  },
+  "multi1": {
+    "kind": "off",
+    "start": 0,
+    "length": 2,
+    "per_band": true
+  },
+  "multi2": {
+    "kind": "off",
+    "value": 1,
+    "condition": {
+      "all": []
+    }
+  },
+  "formula": "total",
+  "scoring": {
+    "eligible": {
+      "all": []
+    },
+    "multipliers": [
+      {
+        "id": "region",
+        "source": "area",
+        "kind": "whole",
+        "start": 0,
+        "length": 2,
+        "per_band": true,
+        "when": {
+          "all": []
+        }
+      }
+    ],
+    "bonus": 0
+  },
+  "event": {
+    "timezone": "UTC",
+    "windows": [
+      {
+        "start": "2026-09-05 00:00",
+        "end": "2026-09-07 00:00",
+        "bands": [
+          "1.9",
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28"
+        ]
+      }
+    ],
+    "categories": [
+      {
+        "id": "SO160HP",
+        "name": "SO160HP",
+        "bands": [
+          "1.9"
+        ],
+        "modes": [
+          "SSB"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "アジア表の版と実運用地を確認した。駐日米極東軍補助軍用無線局を有効相手へ含めない。全交信を記録している"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "own_entity",
+            "own_continent",
+            "exchange_age"
+          ]
+        }
+      },
+      {
+        "id": "SO80HP",
+        "name": "SO80HP",
+        "bands": [
+          "3.5"
+        ],
+        "modes": [
+          "SSB"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "アジア表の版と実運用地を確認した。駐日米極東軍補助軍用無線局を有効相手へ含めない。全交信を記録している"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "own_entity",
+            "own_continent",
+            "exchange_age"
+          ]
+        }
+      },
+      {
+        "id": "SO40HP",
+        "name": "SO40HP",
+        "bands": [
+          "7"
+        ],
+        "modes": [
+          "SSB"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "アジア表の版と実運用地を確認した。駐日米極東軍補助軍用無線局を有効相手へ含めない。全交信を記録している"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "own_entity",
+            "own_continent",
+            "exchange_age"
+          ]
+        }
+      },
+      {
+        "id": "SO20HP",
+        "name": "SO20HP",
+        "bands": [
+          "14"
+        ],
+        "modes": [
+          "SSB"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "アジア表の版と実運用地を確認した。駐日米極東軍補助軍用無線局を有効相手へ含めない。全交信を記録している"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "own_entity",
+            "own_continent",
+            "exchange_age"
+          ]
+        }
+      },
+      {
+        "id": "SO15HP",
+        "name": "SO15HP",
+        "bands": [
+          "21"
+        ],
+        "modes": [
+          "SSB"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "アジア表の版と実運用地を確認した。駐日米極東軍補助軍用無線局を有効相手へ含めない。全交信を記録している"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "own_entity",
+            "own_continent",
+            "exchange_age"
+          ]
+        }
+      },
+      {
+        "id": "SO10HP",
+        "name": "SO10HP",
+        "bands": [
+          "28"
+        ],
+        "modes": [
+          "SSB"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "アジア表の版と実運用地を確認した。駐日米極東軍補助軍用無線局を有効相手へ含めない。全交信を記録している"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "own_entity",
+            "own_continent",
+            "exchange_age"
+          ]
+        }
+      },
+      {
+        "id": "SOABHP",
+        "name": "SOABHP",
+        "bands": [
+          "1.9",
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28"
+        ],
+        "modes": [
+          "SSB"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 6,
+        "min_calls": 1,
+        "required_flags": [
+          "アジア表の版と実運用地を確認した。駐日米極東軍補助軍用無線局を有効相手へ含めない。全交信を記録している"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "own_entity",
+            "own_continent",
+            "exchange_age"
+          ]
+        }
+      },
+      {
+        "id": "SOABHP24",
+        "name": "SOABHP24",
+        "bands": [
+          "1.9",
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28"
+        ],
+        "modes": [
+          "SSB"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 6,
+        "min_calls": 1,
+        "required_flags": [
+          "アジア表の版と実運用地を確認した。駐日米極東軍補助軍用無線局を有効相手へ含めない。全交信を記録している"
+        ],
+        "operator": "SO",
+        "timing": {
+          "operating": {
+            "max_minutes": 2880,
+            "min_off_minutes": 60
+          }
+        },
+        "regional": {
+          "required_declarations": [
+            "first24",
+            "own_entity",
+            "own_continent",
+            "exchange_age"
+          ]
+        }
+      },
+      {
+        "id": "MSHP",
+        "name": "MSHP",
+        "bands": [
+          "1.9",
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28"
+        ],
+        "modes": [
+          "SSB"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 6,
+        "min_calls": 1,
+        "required_flags": [
+          "MSはRUN1波、異バンド新マルチのみMULT1波。実送信区間・役割を確認した",
+          "アジア表の版と実運用地を確認した。駐日米極東軍補助軍用無線局を有効相手へ含めない。全交信を記録している"
+        ],
+        "operator": "MO",
+        "timing": {
+          "band_change": {
+            "kind": "stay",
+            "min_minutes": 10,
+            "tx_ids": [
+              "0",
+              "1"
+            ],
+            "on_violation": "block"
+          }
+        },
+        "regional": {
+          "required_declarations": [
+            "own_entity",
+            "own_continent",
+            "exchange_age"
+          ]
+        }
+      },
+      {
+        "id": "MMHP",
+        "name": "MMHP",
+        "bands": [
+          "1.9",
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28"
+        ],
+        "modes": [
+          "SSB"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 6,
+        "min_calls": 1,
+        "required_flags": [
+          "アジア表の版と実運用地を確認した。駐日米極東軍補助軍用無線局を有効相手へ含めない。全交信を記録している"
+        ],
+        "operator": "MO",
+        "regional": {
+          "required_declarations": [
+            "own_entity",
+            "own_continent",
+            "exchange_age"
+          ]
+        }
+      },
+      {
+        "id": "SO160LP",
+        "name": "SO160LP",
+        "bands": [
+          "1.9"
+        ],
+        "modes": [
+          "SSB"
+        ],
+        "max_power": 100,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "アジア表の版と実運用地を確認した。駐日米極東軍補助軍用無線局を有効相手へ含めない。全交信を記録している"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "own_entity",
+            "own_continent",
+            "exchange_age"
+          ]
+        }
+      },
+      {
+        "id": "SO80LP",
+        "name": "SO80LP",
+        "bands": [
+          "3.5"
+        ],
+        "modes": [
+          "SSB"
+        ],
+        "max_power": 100,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "アジア表の版と実運用地を確認した。駐日米極東軍補助軍用無線局を有効相手へ含めない。全交信を記録している"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "own_entity",
+            "own_continent",
+            "exchange_age"
+          ]
+        }
+      },
+      {
+        "id": "SO40LP",
+        "name": "SO40LP",
+        "bands": [
+          "7"
+        ],
+        "modes": [
+          "SSB"
+        ],
+        "max_power": 100,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "アジア表の版と実運用地を確認した。駐日米極東軍補助軍用無線局を有効相手へ含めない。全交信を記録している"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "own_entity",
+            "own_continent",
+            "exchange_age"
+          ]
+        }
+      },
+      {
+        "id": "SO20LP",
+        "name": "SO20LP",
+        "bands": [
+          "14"
+        ],
+        "modes": [
+          "SSB"
+        ],
+        "max_power": 100,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "アジア表の版と実運用地を確認した。駐日米極東軍補助軍用無線局を有効相手へ含めない。全交信を記録している"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "own_entity",
+            "own_continent",
+            "exchange_age"
+          ]
+        }
+      },
+      {
+        "id": "SO15LP",
+        "name": "SO15LP",
+        "bands": [
+          "21"
+        ],
+        "modes": [
+          "SSB"
+        ],
+        "max_power": 100,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "アジア表の版と実運用地を確認した。駐日米極東軍補助軍用無線局を有効相手へ含めない。全交信を記録している"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "own_entity",
+            "own_continent",
+            "exchange_age"
+          ]
+        }
+      },
+      {
+        "id": "SO10LP",
+        "name": "SO10LP",
+        "bands": [
+          "28"
+        ],
+        "modes": [
+          "SSB"
+        ],
+        "max_power": 100,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "アジア表の版と実運用地を確認した。駐日米極東軍補助軍用無線局を有効相手へ含めない。全交信を記録している"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "own_entity",
+            "own_continent",
+            "exchange_age"
+          ]
+        }
+      },
+      {
+        "id": "SOABLP",
+        "name": "SOABLP",
+        "bands": [
+          "1.9",
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28"
+        ],
+        "modes": [
+          "SSB"
+        ],
+        "max_power": 100,
+        "min_bands": 1,
+        "max_bands": 6,
+        "min_calls": 1,
+        "required_flags": [
+          "アジア表の版と実運用地を確認した。駐日米極東軍補助軍用無線局を有効相手へ含めない。全交信を記録している"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "own_entity",
+            "own_continent",
+            "exchange_age"
+          ]
+        }
+      },
+      {
+        "id": "SOABLP24",
+        "name": "SOABLP24",
+        "bands": [
+          "1.9",
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28"
+        ],
+        "modes": [
+          "SSB"
+        ],
+        "max_power": 100,
+        "min_bands": 1,
+        "max_bands": 6,
+        "min_calls": 1,
+        "required_flags": [
+          "アジア表の版と実運用地を確認した。駐日米極東軍補助軍用無線局を有効相手へ含めない。全交信を記録している"
+        ],
+        "operator": "SO",
+        "timing": {
+          "operating": {
+            "max_minutes": 2880,
+            "min_off_minutes": 60
+          }
+        },
+        "regional": {
+          "required_declarations": [
+            "first24",
+            "own_entity",
+            "own_continent",
+            "exchange_age"
+          ]
+        }
+      },
+      {
+        "id": "MSLP",
+        "name": "MSLP",
+        "bands": [
+          "1.9",
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28"
+        ],
+        "modes": [
+          "SSB"
+        ],
+        "max_power": 100,
+        "min_bands": 1,
+        "max_bands": 6,
+        "min_calls": 1,
+        "required_flags": [
+          "MSはRUN1波、異バンド新マルチのみMULT1波。実送信区間・役割を確認した",
+          "アジア表の版と実運用地を確認した。駐日米極東軍補助軍用無線局を有効相手へ含めない。全交信を記録している"
+        ],
+        "operator": "MO",
+        "timing": {
+          "band_change": {
+            "kind": "stay",
+            "min_minutes": 10,
+            "tx_ids": [
+              "0",
+              "1"
+            ],
+            "on_violation": "block"
+          }
+        },
+        "regional": {
+          "required_declarations": [
+            "own_entity",
+            "own_continent",
+            "exchange_age"
+          ]
+        }
+      },
+      {
+        "id": "MMLP",
+        "name": "MMLP",
+        "bands": [
+          "1.9",
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28"
+        ],
+        "modes": [
+          "SSB"
+        ],
+        "max_power": 100,
+        "min_bands": 1,
+        "max_bands": 6,
+        "min_calls": 1,
+        "required_flags": [
+          "アジア表の版と実運用地を確認した。駐日米極東軍補助軍用無線局を有効相手へ含めない。全交信を記録している"
+        ],
+        "operator": "MO",
+        "regional": {
+          "required_declarations": [
+            "own_entity",
+            "own_continent",
+            "exchange_age"
+          ]
+        }
+      },
+      {
+        "id": "SOJR",
+        "name": "SOJR",
+        "bands": [
+          "1.9",
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28"
+        ],
+        "modes": [
+          "SSB"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 6,
+        "min_calls": 1,
+        "required_flags": [
+          "アジア表の版と実運用地を確認した。駐日米極東軍補助軍用無線局を有効相手へ含めない。全交信を記録している"
+        ],
+        "operator": "SO",
+        "qualification": {
+          "max_age": 19
+        },
+        "regional": {
+          "required_declarations": [
+            "own_entity",
+            "own_continent",
+            "exchange_age"
+          ]
+        }
+      },
+      {
+        "id": "SOSV",
+        "name": "SOSV",
+        "bands": [
+          "1.9",
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28"
+        ],
+        "modes": [
+          "SSB"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 6,
+        "min_calls": 1,
+        "required_flags": [
+          "アジア表の版と実運用地を確認した。駐日米極東軍補助軍用無線局を有効相手へ含めない。全交信を記録している"
+        ],
+        "operator": "SO",
+        "qualification": {
+          "min_age": 70
+        },
+        "regional": {
+          "required_declarations": [
+            "own_entity",
+            "own_continent",
+            "exchange_age"
+          ]
+        }
+      }
+    ],
+    "required_flags": [
+      "実運用地・免許・出力・原典の周波数を確認し、設備は単一所在地の直径500m内、場外受信機・セルフスポットなし。原番号を事後DBから補っていない",
+      "原典の同時送信・交信成立・参加数・クラブ資格と公開条件を確認した。各部門のSO/MOは実運用者で選んだ"
+    ],
+    "duplicate_fields": [
+      "call",
+      "band"
+    ],
+    "prefer": "first",
+    "special": "none",
+    "entrant": {
+      "station_types": [
+        "individual",
+        "club"
+      ],
+      "guest_policy": "allowed"
+    },
+    "normalization": {
+      "bands": {
+        "1.9MHZ": "1.9",
+        "3.5MHZ": "3.5",
+        "7MHZ": "7",
+        "14MHZ": "14",
+        "21MHZ": "21",
+        "28MHZ": "28",
+        "1.8": "1.9"
+      },
+      "modes": {
+        "USB": "SSB",
+        "LSB": "SSB"
+      },
+      "mode_families": {}
+    },
+    "regional": {
+      "profile": "aadx",
+      "declarations": {
+        "first24": "最初24運用時間のみ採点することを確認（休憩60分以上、以後も提出）",
+        "own_entity": "自局DXCC識別子（本土JA/K/VE/VK、JD1は別々のID）",
+        "own_continent": "自局実運用大陸 AF/AN/AS/EU/NA/OC/SA",
+        "exchange_age": "実際の送信年齢・MO平均年齢又は01"
+      }
+    },
+    "submission": {
+      "formats": [
+        "Cabrillo"
+      ],
+      "zone": "UTC",
+      "contest": "AADX-SSB",
+      "instructions": "Cabrillo3 UTC、対象外バンドも同じ提出物へ保持。CONTEST AADX-CW / AADX-SSB。Web contest.jarl.org/upload-aa 又はaaph@jarl.org、9月16日 UTC必着。SO年齢/MO平均年齢又は01を実交換どおり記録。MSのTX0=RUN、1=MULT。24hは実運用区間を申告し最初24時間だけ採点。相手/MMは自局ASのみ有効、マルチなし。主催受付・Windows実機未検証。"
+    },
+    "rule_view": {
+      "participants": "世界のアマチュア局。",
+      "power": "制限なし",
+      "movement": "コンテスト中の運用場所変更は禁止。マルチオペの運用範囲は直径500m以内。",
+      "call_method": "電話：CQ AA コンテスト",
+      "counterparts": "制限なし（得点・マルチの対象は運用地域によって異なります）。",
+      "restrictions": "小笠原諸島・沖の鳥島のJD1局はアジア州、南鳥島のJD1局はオセアニア州。公海上のMM局はアジア州の局との交信のみ有効で、得点掲載のみ（順位対象外）。MM局との交信はアジア州同士の得点、マルチ対象外。運用場所変更・クロスバンド・クロスモード・レピータは禁止。マルチオペの送信系列別10分間ルールなどは公式規約を参照。",
+      "exchange": "シングルオペ：RST符号による信号レポート＋コンテスト開始時のオペレーターの年齢または「01」。\nマルチオペ：RST符号による信号レポート＋コンテスト開始時のオペレーターの平均年齢または「01」。",
+      "repeat": "同一局・同一バンドの再交信は最初の1交信だけ得点対象です。",
+      "submission_notes": "提出する交信日時はUTC。締切はコンテスト終了日（UTC）から10日後必着（2026年は2026年9月16日）。",
+      "points_display": "アジア州の局：160mはアジア州3点・その他9点、80m・10mは2点・6点、その他のバンドは1点・3点。アジア州以外の局：アジア州との交信は順に3点・2点・1点。同一エンティティー内や対象外の交信は0点。",
+      "multipliers_display": "アジア州の局は各バンドで異なるDXCCエンティティー、アジア州以外の局は各バンドでアジア州の異なるWPXプリフィックス。MM局との交信はマルチになりません。",
+      "submission_deadline": "2026年9月16日必着（UTC）"
+    }
+  }
+}

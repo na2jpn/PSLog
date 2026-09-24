@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>WPX RTTY - Cabrillo File Format</title>
+<meta charset="UTF-8">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<link rel="preload" as="style" href="/design/cq-w3.css">
+<link rel="preload" as="style" href="/design/fontawesome6/css/fontawesome.min.css">
+<link rel="preload" as="script" href="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js">
+<link rel="preload" as="script" href="/design/doubletaptogo.min.js">
+<link href="/design/cq-w3.css" rel="stylesheet">
+<link href="/design/fontawesome6/css/fontawesome.min.css" rel="stylesheet">
+<link href="/design/fontawesome6/css/solid.css" rel="stylesheet">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+<div class="w3-container maxwidth1366">
+	<div class='w3-right w3-hide-small w3-small toptext'>
+		Other Contests: 
+		<a href="https://cqww.com" class="w3-button w3-white w3-border w3-border-gray w3-round w3-padding-small">CQ WW</a>
+		<a href="https://cqwpx.com/" class="w3-button w3-white w3-border w3-border-gray w3-round w3-padding-small">CQ WPX</a>
+		<a href="https://cqwwrtty.com" class="w3-button w3-white w3-border w3-border-gray w3-round w3-padding-small">CQ WW RTTY</a>
+		<a href="https://cqwpxrtty.com" class="w3-button w3-white w3-border w3-border-gray w3-round w3-padding-small">CQ WPX RTTY</a>
+		<a href="https://cq160.com" class="w3-button w3-white w3-border w3-border-gray w3-round w3-padding-small">CQ 160</a>
+		<a href="https://cqww-vhf.com" class="w3-button w3-white w3-border w3-border-gray w3-round w3-padding-small">CQ VHF</a>
+		<a href="https://ww-digi.com" class="w3-button w3-white w3-border w3-border-gray w3-round w3-padding-small">WW DIGI</a>
+	</div>
+</div>
+<div class='w3-row'>
+
+	<div class="w3-cell w3-cell-middle">
+		<a href="/index.htm">
+		<img alt='CQ Logo' src='/images/CQ-logo.png' class='cq=logo'>
+		</a>
+	</div>
+	<div class="w3-cell w3-cell-middle">
+		<p style="margin: 8px;" class="contestname">CQ WPX RTTY Contest</p>
+	</div>
+</div>
+
+<nav id="nav">
+	<a href="#nav" title="Show navigation">Show navigation</a>
+	<a href="#" title="Hide navigation">Hide navigation</a>
+	<ul>
+		<li><a href="/index.htm"><i class="fas fa-home"></i> Home</a></li>
+		<li>
+			<a href="/rules.htm">Rules</a>
+			<ul>
+			<li><a href="/rules/">Rules Archive</a></li>
+			</ul>
+		</li>
+		<li><a href="/plaques.htm" aria-haspopup="true">Plaques</a></li>
+		<li>
+			<a href="/results/" aria-haspopup="true">Results  <i class="fa fa-caret-down"></i></a>
+			<ul>
+				<li><a href="/results/">Results</a></li>
+				<li><a href="/scores.htm">Scores</a></li>
+				<li><a href="/overlayscores.htm">Overlay Scores</a></li>
+				<li><a href="/clubscores.htm">Club Scores</a></li>
+				<li><a href="/soapbox.htm">Soapbox Comments</a></li>
+				<li><a href="/raw.htm">Raw Scores</a></li>
+				<li><a href="/stats.htm">Entry Stats</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="/records.htm" aria-haspopup="true">Records  <i class="fa fa-caret-down"></i></a>
+			<ul>
+				<li><a href="/records.htm"><i class="fa-solid fa-book-atlas"></i> By Region</a></li>
+				<li><a href="/recordsthisyear.htm"><i class="fa-solid fa-star"></i> New Records</a></li>
+				<li><a href="/overlayrecordsthisyear.htm"><i class="fa-solid fa-star"></i> New Overlay Records</a></li>
+				<li><a href="/rates/">Highest QSO Rates</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="/logs.htm" aria-haspopup="true">Logs  <i class="fas fa-caret-down"></i></a>
+			<ul>
+				<li><a href="/logs.htm">Submitting Your Log</a></li>
+				<li><a href="/logcheck/">*Cabrillo Log Upload</a></li>
+				<li><a href="/adif/">ADIF Log Converter</a></li>
+				<li><a href="/cabrillo.htm">Cabrillo File Format</a></li>
+				<li><a href="/mixw.htm">Notes for MixW Users</a></li>
+				<li><a href="/logs_received.htm">Logs Received</a></li>
+				<li><a href="/publiclogs/">Public Logs</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="/api_reference.htm" aria-haspopup="true">Resources <i class="fa fa-caret-down"></i></a>
+			<ul>
+				<li><a href="/locations.htm">Location Names</a></li>
+				<li><a href="/clubnames.htm">Club Names</a></li>
+				<li><a href="/api_reference.htm">REST API Reference</a></li>
+			</ul>
+		</li>
+		<li><a href="/contact/" aria-haspopup="true">Contact Us  <i class="fas fa-caret-down"></i></a>
+		<ul>
+			<li><a href="/contact/">Contact Form</a></li>
+			<li><a href="/organization.htm">Organization</a></li>
+		</ul>
+		</li>
+	</ul>
+</nav>
+
+<script src="/design/doubletaptogo.min.js"></script>
+
+<script>
+$(function() {
+  if ($.fn.doubleTapToGo) {
+    $('#nav li:has(ul)').doubleTapToGo();
+  }
+});
+</script>
+
+
+
+<div class="w3-container" style="max-width: 1200px;">
+	<div class="w3-left-align w3-border-bottom w3-text-red"><h1>Cabrillo Log Format for the CQ WPX RTTY Contest</h1></div>
+
+	<p>Cabrillo refers to a universal log file format managed by the <a href="http://wwrof.org" target='blank'>
+	World Wide Radio Operators Foundation</a> (WWROF). 	Cabrillo is the required format for CQ WPX RTTY Contest logs.</p>
+	<p>There are two versions of the Cabrillo log file format. The CQ WPX RTTY 
+	Contest accepts both Cabrillo v2 and v3 format files. One of the major changes 
+	from v2 to v3 was in the way categories are specified. We strongly request 
+	that you submit logs using the Cabrillo v3 format if possible. </p>
+	<h3>Cabrillo Version 3 Header for the CQ WPX RTTY Contest</h3>
+	<p>Below is an example of a Cabrillo v3 file for the CQ WPX RTTY Contest.</p>
+	<pre>
+START-OF-LOG: 3.0
+CONTEST: CQ-WPX-RTTY
+CALLSIGN: NP3U
+LOCATION: PR
+CATEGORY-OPERATOR: MULTI-OP
+CATEGORY-TRANSMITTER: TWO
+CATEGORY-BAND: ALL
+CATEGORY-POWER: HIGH
+CATEGORY-MODE: RTTY
+CATEGORY-ASSISTED: ASSISTED
+CATEGORY-STATION: FIXED
+CLAIMED-SCORE: 10418000
+CLUB: Yankee Clipper Contest Club
+CREATED-BY: WriteLog V10.72C
+NAME: Randy Thompson
+ADDRESS: 1 Main St
+ADDRESS-CITY: Uxbridge
+ADDRESS-STATE-PROVINCE: MA
+ADDRESS-POSTALCODE: 01569
+ADDRESS-COUNTRY: USA
+OPERATORS: W1AN K3IU AJ1M N1HRA WP4U WP4N
+SOAPBOX: Put your comments here.
+SOAPBOX: Use multiple lines if needed.   
+QSO:  7044 RY 2009-02-14 0002 NP3U      599 1    VE1SK      599 001 0
+QSO:  7044 RY 2009-02-14 0003 NP3U      599 2    HB9DHG     599 002 0
+QSO:  7044 RY 2009-02-14 0003 NP3U      599 3    SI4G       599 001 0
+QSO:  7044 RY 2009-02-14 0004 NP3U      599 4    IW1AYD     599 001 0
+QSO:  7044 RY 2009-02-14 0006 NP3U      599 5    UZ2I       599   1 0
+QSO:  7044 RY 2009-02-14 0007 NP3U      599 6    I4HRH      599   1 0
+QSO: 14081 RY 2009-02-14 0007 NP3U      599 1    UA0ZAM     599 002 1
+QSO: 14081 RY 2009-02-14 0007 NP3U      599 2    K7RE       599 004 1
+QSO: 14081 RY 2009-02-14 0008 NP3U      599 3    AB0YM      599 002 1
+QSO:  7044 RY 2009-02-14 0008 NP3U      599 7    G4WGE      599 004 0
+QSO:  7044 RY 2009-02-14 0009 NP3U      599 8    LY6A       599 011 0
+QSO:  7044 RY 2009-02-14 0009 NP3U      599 9    I1OQI      599 004 0
+QSO:  7044 RY 2009-02-14 0010 NP3U      599 10   W1GSH      599 003 0
+QSO: 14081 RY 2009-02-14 0010 NP3U      599 4    K0SR       599 011 1
+QSO:  7044 RY 2009-02-14 0011 NP3U      599 11   OM3KWZ     599 007 0
+QSO: 14081 RY 2009-02-14 0013 NP3U      599 5    K7IA       599 002 1
+END-OF-LOG:
+</pre>
+	
+	<h4><a name="Editing_the_Cabrillo_File">
+ <font color="#000000">Editing the Cabrillo File</a></h4>
+	
+	<p>When manually entering Cabrillo header information, please follow the 
+ format below. The format for each entry is a key (<b>LABEL: </b>)<b> </b>followed by a 
+		space.</p>
+	<b>START-OF-LOG: 3.0 </b> 
+ <ul>
+ <li>Must be the first line of the log submission.</li>
+ </ul>
+ <p><b>END-OF-LOG:</b> </p>
+ <ul>
+ <li>Must be the last line of the log submission. </li>
+ </ul>
+ <hr>
+ <p>The intervening lines between the two lines above are:</p>
+ <p><b>CALLSIGN:</b> <i>callsign</i> </p>
+ <ul>
+ <li>The callsign used during the contest. </li>
+ </ul>
+ <p><b>CATEGORY-ASSISTED:</b></p>
+ <ul>
+ <li>ASSISTED</li>
+ <li>NON-ASSISTED</li>
+ </ul>
+ <p><b>CATEGORY-BAND:</b> </p>
+ <ul>
+ <li>ALL</li>
+ <li>80M</li>
+ <li>40M</li>
+ <li>20M</li>
+ <li>15M</li>
+ <li>10M</li>
+ </ul>
+ <p>The band-category must be one of the following: <b>ALL, 80M, 40M, 20M, 
+	15M or 10M</b>. If you are entering an all band category, use <b>ALL,</b> otherwise select 
+	one of the individual bands shown. If you are entering as a single 
+ band but have QSOs on other bands, those QSOs must be included in the log. 
+ However, the log will be scored on the basis of your single-band designator 
+ in the <b>CATEGORY-BAND:</b> line.</p>
+ <p><b>CATEGORY-MODE: RTTY</b></p>
+ <b>CATEGORY-OPERATOR:</b> 
+ <ul>
+ <li><b>SINGLE-OP 
+ </b> 
+ </li>
+ <li><b>MULTI-OP 
+ </b> 
+ </li>
+ <li><b>CHECKLOG</b></li>
+ </ul>
+ <p><b>CATEGORY-POWER:</b> </p>
+ <ul>
+ <li><b>HIGH 
+ </b> 
+ </li>
+ <li><b>LOW</b></li>
+ </ul>
+ <p><b>CATEGORY-STATION: FIXED</b></p>
+ <p><b>CATEGORY-TRANSMITTER:</b> </p>
+ <ul>
+ <li><b>ONE 
+ </b> 
+ </li>
+ <li><b>TWO</b></li>
+ <li><b>UNLIMITED</b></li>
+ <li><b>SWL </b> </li>
+ </ul>
+ <p><b>CLAIMED-SCORE:</b> <i>n</i> </p>
+ <ul>
+ <li>The claimed-score of the log submission, in integer form such as 1217315 
+ or 19113 or 12. Do not use commas. </li>
+ </ul>
+ <p><b>CLUB:</b> <i>text</i> [optional]</p>
+ <ul>
+ <li>Name of the radio club with which the score should be aggregated. Please spell out the club name exactly as it is listed on the 
+ <a href="clubnames.htm">Club 
+ Names</a> web page.</li>
+ </ul>
+ <p><b>CONTEST: CQ-WPX-RTTY </b></p>
+ <p><b>CREATED-BY:</b> <i>text</i> [optional]</p>
+ <ul>
+ <li>Name and version of the logging program used to create the Cabrillo 
+ file.</li>
+ </ul>
+ <p><b>EMAIL:</b> <i>text</i> [optional]</p>
+ <ul>
+ <li>A place to put an email address, if desired. This field will be 
+ ignored by ARRL and CQ email robots, which determine the email address 
+ from the headers of the inbound message.</li>
+ </ul>
+ <p><b>LOCATION:</b> </p>
+ <p><a href="http://www.arrl.org/contests/sections.abv.html">ARRL/RAC section</a> 
+ for US/VE, otherwise <b>DX </b>[required for US, optional for others]</p>
+ <b>NAME:</b> <i>text
+ </i><b>ADDRESS:</b> <i>text
+ </i><b>ADDRESS-CITY:</b> <i>text
+ </i><b>ADDRESS-STATE-PROVINCE:</b> <i>text
+ </i><b>ADDRESS-POSTALCODE:</b> <i>text
+ </i><b>ADDRESS-COUNTRY:</b> <i>text</i> 
+ <ul>
+ <li>Name and address. A maximum of four ADDRESS: lines is permitted. </li>
+ </ul>
+ <p><b>OPERATORS:</b> <i>callsign1 </i>[<i>callsign2 callsign3...</i>] </p>
+ <ul>
+ <li>A space-delimited list of operator callsign(s). Do not use commas. You may also list the callsign of the host station by placing 
+ an &quot;@&quot; character in front of the callsign within the operator list, such as 
+ </li>
+ </ul>
+ <pre>	OPERATORS: @N6IJ</pre>
+ <p><b>SOAPBOX:</b> <i>text</i> [optional]</p>
+ <ul>
+ <li>Enter as many lines of soapbox text as you wish. Each line is 75 characters 
+	long and must begin with <b>SOAPBOX: </b>followed by a space.</li>
+ </ul>
+ <p><b>QSO:</b> <i>qso-data</i></p>
+ <ul>
+ <li>QSO data as specified by the
+ <a href="https://wwrof.org/cabrillo/cabrillo-qso-templates/">Cabrillo QSO 
+ data format.</a> All QSO lines must appear in chronological order. 
+ Cabrillo QSO template for CQ WPX 
+	RTTY QSO data:</li>
+ </ul>
+ <blockquote>
+ <pre> --------info sent------- -------info rcvd--------
+QSO: freq mo date time call rst exch call rst exch t
+QSO: ***** ** yyyy-mm-dd nnnn ************* nnn ****** ************* nnn ****** n
+QSO: 28000 RY 2002-02-10 2126 LU/N5KO 599 0001 KA4RRU 599 0530 <span style="background-color: #FFFF00">
+</span>000000000111111111122222222223333333333444444444455555555556666666666777777777788
+123456789012345678901234567890123456789012345678901234567890123456789012345678901
+</pre>
+ </blockquote>
+<p align="left">Please ensure that your Cabrillo file includes this information. 
+All logs, including Multi-Op, must include both sent and received serial 
+numbers. Multi-Multi and Multi-Two must show serial numbers sent and 
+received by band. 
+	For the Multi-Two category, the last column in the log indicates which 
+	transmitter made the QSO, a 0 or a 1.</p>
+
+	</div>
+</div>
+<p>&nbsp;</p>
+<div class="w3-bar w3-green w3-padding w3-small w3-section" style="max-width: 1366px;">
+Copyright &copy; 
+2005-2026 
+<a href="https://wwrof.org" target="blank">World Wide Radio Operators Foundation, Inc.</a>. All Rights Reserved.
+</div>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NRK8SXX8FM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NRK8SXX8FM');
+</script>
+
+
+</body>
+
+</html>
+

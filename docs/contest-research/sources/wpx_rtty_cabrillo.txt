@@ -1,0 +1,235 @@
+WPX RTTY - Cabrillo File Format
+Other Contests:
+CQ WW
+CQ WPX
+CQ WW RTTY
+CQ WPX RTTY
+CQ 160
+CQ VHF
+WW DIGI
+CQ WPX RTTY Contest
+Show navigation
+Hide navigation
+Home
+Rules
+Rules Archive
+Plaques
+Results
+Results
+Scores
+Overlay Scores
+Club Scores
+Soapbox Comments
+Raw Scores
+Entry Stats
+Records
+By Region
+New Records
+New Overlay Records
+Highest QSO Rates
+Logs
+Submitting Your Log
+*Cabrillo Log Upload
+ADIF Log Converter
+Cabrillo File Format
+Notes for MixW Users
+Logs Received
+Public Logs
+Resources
+Location Names
+Club Names
+REST API Reference
+Contact Us
+Contact Form
+Organization
+$(function() {
+  if ($.fn.doubleTapToGo) {
+    $('#nav li:has(ul)').doubleTapToGo();
+  }
+});
+Cabrillo Log Format for the CQ WPX RTTY Contest
+Cabrillo refers to a universal log file format managed by the
+World Wide Radio Operators Foundation
+(WWROF). 	Cabrillo is the required format for CQ WPX RTTY Contest logs.
+There are two versions of the Cabrillo log file format. The CQ WPX RTTY 
+	Contest accepts both Cabrillo v2 and v3 format files. One of the major changes 
+	from v2 to v3 was in the way categories are specified. We strongly request 
+	that you submit logs using the Cabrillo v3 format if possible.
+Cabrillo Version 3 Header for the CQ WPX RTTY Contest
+Below is an example of a Cabrillo v3 file for the CQ WPX RTTY Contest.
+START-OF-LOG: 3.0
+CONTEST: CQ-WPX-RTTY
+CALLSIGN: NP3U
+LOCATION: PR
+CATEGORY-OPERATOR: MULTI-OP
+CATEGORY-TRANSMITTER: TWO
+CATEGORY-BAND: ALL
+CATEGORY-POWER: HIGH
+CATEGORY-MODE: RTTY
+CATEGORY-ASSISTED: ASSISTED
+CATEGORY-STATION: FIXED
+CLAIMED-SCORE: 10418000
+CLUB: Yankee Clipper Contest Club
+CREATED-BY: WriteLog V10.72C
+NAME: Randy Thompson
+ADDRESS: 1 Main St
+ADDRESS-CITY: Uxbridge
+ADDRESS-STATE-PROVINCE: MA
+ADDRESS-POSTALCODE: 01569
+ADDRESS-COUNTRY: USA
+OPERATORS: W1AN K3IU AJ1M N1HRA WP4U WP4N
+SOAPBOX: Put your comments here.
+SOAPBOX: Use multiple lines if needed.   
+QSO:  7044 RY 2009-02-14 0002 NP3U      599 1    VE1SK      599 001 0
+QSO:  7044 RY 2009-02-14 0003 NP3U      599 2    HB9DHG     599 002 0
+QSO:  7044 RY 2009-02-14 0003 NP3U      599 3    SI4G       599 001 0
+QSO:  7044 RY 2009-02-14 0004 NP3U      599 4    IW1AYD     599 001 0
+QSO:  7044 RY 2009-02-14 0006 NP3U      599 5    UZ2I       599   1 0
+QSO:  7044 RY 2009-02-14 0007 NP3U      599 6    I4HRH      599   1 0
+QSO: 14081 RY 2009-02-14 0007 NP3U      599 1    UA0ZAM     599 002 1
+QSO: 14081 RY 2009-02-14 0007 NP3U      599 2    K7RE       599 004 1
+QSO: 14081 RY 2009-02-14 0008 NP3U      599 3    AB0YM      599 002 1
+QSO:  7044 RY 2009-02-14 0008 NP3U      599 7    G4WGE      599 004 0
+QSO:  7044 RY 2009-02-14 0009 NP3U      599 8    LY6A       599 011 0
+QSO:  7044 RY 2009-02-14 0009 NP3U      599 9    I1OQI      599 004 0
+QSO:  7044 RY 2009-02-14 0010 NP3U      599 10   W1GSH      599 003 0
+QSO: 14081 RY 2009-02-14 0010 NP3U      599 4    K0SR       599 011 1
+QSO:  7044 RY 2009-02-14 0011 NP3U      599 11   OM3KWZ     599 007 0
+QSO: 14081 RY 2009-02-14 0013 NP3U      599 5    K7IA       599 002 1
+END-OF-LOG:
+Editing the Cabrillo File
+When manually entering Cabrillo header information, please follow the 
+ format below. The format for each entry is a key (
+LABEL:
+)
+followed by a 
+		space.
+START-OF-LOG: 3.0
+Must be the first line of the log submission.
+END-OF-LOG:
+Must be the last line of the log submission.
+The intervening lines between the two lines above are:
+CALLSIGN:
+callsign
+The callsign used during the contest.
+CATEGORY-ASSISTED:
+ASSISTED
+NON-ASSISTED
+CATEGORY-BAND:
+ALL
+80M
+40M
+20M
+15M
+10M
+The band-category must be one of the following:
+ALL, 80M, 40M, 20M, 
+	15M or 10M
+. If you are entering an all band category, use
+ALL,
+otherwise select 
+	one of the individual bands shown. If you are entering as a single 
+ band but have QSOs on other bands, those QSOs must be included in the log. 
+ However, the log will be scored on the basis of your single-band designator 
+ in the
+CATEGORY-BAND:
+line.
+CATEGORY-MODE: RTTY
+CATEGORY-OPERATOR:
+SINGLE-OP
+MULTI-OP
+CHECKLOG
+CATEGORY-POWER:
+HIGH
+LOW
+CATEGORY-STATION: FIXED
+CATEGORY-TRANSMITTER:
+ONE
+TWO
+UNLIMITED
+SWL
+CLAIMED-SCORE:
+n
+The claimed-score of the log submission, in integer form such as 1217315 
+ or 19113 or 12. Do not use commas.
+CLUB:
+text
+[optional]
+Name of the radio club with which the score should be aggregated. Please spell out the club name exactly as it is listed on the
+Club 
+ Names
+web page.
+CONTEST: CQ-WPX-RTTY
+CREATED-BY:
+text
+[optional]
+Name and version of the logging program used to create the Cabrillo 
+ file.
+EMAIL:
+text
+[optional]
+A place to put an email address, if desired. This field will be 
+ ignored by ARRL and CQ email robots, which determine the email address 
+ from the headers of the inbound message.
+LOCATION:
+ARRL/RAC section
+for US/VE, otherwise
+DX
+[required for US, optional for others]
+NAME:
+text
+ADDRESS:
+text
+ADDRESS-CITY:
+text
+ADDRESS-STATE-PROVINCE:
+text
+ADDRESS-POSTALCODE:
+text
+ADDRESS-COUNTRY:
+text
+Name and address. A maximum of four ADDRESS: lines is permitted.
+OPERATORS:
+callsign1
+[
+callsign2 callsign3...
+]
+A space-delimited list of operator callsign(s). Do not use commas. You may also list the callsign of the host station by placing 
+ an "@" character in front of the callsign within the operator list, such as
+OPERATORS: @N6IJ
+SOAPBOX:
+text
+[optional]
+Enter as many lines of soapbox text as you wish. Each line is 75 characters 
+	long and must begin with
+SOAPBOX:
+followed by a space.
+QSO:
+qso-data
+QSO data as specified by the
+Cabrillo QSO 
+ data format.
+All QSO lines must appear in chronological order. 
+ Cabrillo QSO template for CQ WPX 
+	RTTY QSO data:
+--------info sent------- -------info rcvd--------
+QSO: freq mo date time call rst exch call rst exch t
+QSO: ***** ** yyyy-mm-dd nnnn ************* nnn ****** ************* nnn ****** n
+QSO: 28000 RY 2002-02-10 2126 LU/N5KO 599 0001 KA4RRU 599 0530
+000000000111111111122222222223333333333444444444455555555556666666666777777777788
+123456789012345678901234567890123456789012345678901234567890123456789012345678901
+Please ensure that your Cabrillo file includes this information. 
+All logs, including Multi-Op, must include both sent and received serial 
+numbers. Multi-Multi and Multi-Two must show serial numbers sent and 
+received by band. 
+	For the Multi-Two category, the last column in the log indicates which 
+	transmitter made the QSO, a 0 or a 1.
+Copyright © 
+2005-2026
+World Wide Radio Operators Foundation, Inc.
+. All Rights Reserved.
+window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NRK8SXX8FM');

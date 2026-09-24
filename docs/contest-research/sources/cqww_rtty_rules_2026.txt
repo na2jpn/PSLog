@@ -1,0 +1,516 @@
+CQ WW RTTY - Rules
+window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-MT1NLXVLBT');
+Other Contests:
+CQ WW
+CQ WPX
+CQ WW RTTY
+CQ WPX RTTY
+CQ 160
+CQ VHF
+WW DIGI
+CQ WW RTTY Contest
+Show navigation
+Hide navigation
+Home
+Rules
+Rules
+Rules Archive
+Plaques
+Results
+Results Articles
+Final Scores
+Overlay Scores
+Club Scores
+Soapbox Comments
+Raw Scores
+Entry Statistics by Entity
+Entry Statistics by Category
+Records
+By Region
+New Records in Year
+New Overlay Records
+Winners by Year
+Highest QSO Rates
+Logs
+Submitting Your Log
+Cabrillo Log Upload
+ADIF File Converter
+Cabrillo File Format
+Notes for MixW Users
+Logs Received
+Public Logs
+Resources
+Club Names
+Location Names
+REST API Reference
+Contact Us
+Contact Form
+Organization
+$( function()
+	{
+		$( '#nav li:has(ul)' ).doubleTapToGo();
+	});
+Rules
+Translations (pdf)
+English
+Shqip [Albanian]
+العربية [Arabic]
+Հայերեն [Armenian]
+Беларуская [Belarusian]
+Bosanski [Bosnian]
+Български [Bulgarian]
+粵語 [Cantonese]
+中文 [Chinese]
+Čeština [Czech]
+Hrvatski [Croatian]
+Dansk [Danish]
+Nederlands [Dutch]
+Eesti [Estonian]
+Pilipino [Filipino]
+Suomeksi [Finnish]
+Français
+[French]
+ქართული [Georgian]
+Deutsch [German]
+Έλληνες
+[Greek]
+עברית [Hebrew]
+हिंदी [Hindi]
+Magyar [Hungarian]
+Íslenska [Icelandic]
+Indonesia [Indonesian]
+Gaeilge [Irish]
+Italiano [Italian]
+日本語 [Japanese]
+한국어 [Korean]
+Latviešu [Lativian]
+Lietuvių [Lithuaian]
+Lëtzebuergesch [Luxembourgish]
+Македонски [Macedonian]
+Bahasa Melayu [Malay]
+ᠮᠣᠩᠭᠣᠯ ᠬᠡᠯᠡ [Mongolian]
+မြန်မာလူမျိုး [Myanmar (Burmese)]
+Norsk [Norwegian]
+Polska [Polish]
+Português [Portuguese]
+Româna [Romanian]
+Русские [Russian]
+Srpski [Serbian]
+Slovenščina [Slovenian]
+Slovensko [Slovakian]
+Español [Spanish]
+Svenska [Swedish]
+ภาษาไทย [Thai]
+Türkçe [Turkish]
+Українські [Ukranian]
+người Việt Nam [Vietmanese]
+Cymraeg [Welch]
+Archive
+Rules from previous years
+The 2026 CQ World Wide RTTY DX Contest
+September 26-27
+Starts 00:00:00 UTC Saturday -- Ends 
+		23:59:59 UTC Sunday
+I. OBJECTIVE:
+For amateurs around the world to contact as many 
+		other amateurs in as many CQ zones, countries and W/VE QTHs as possible.
+II. BANDS:
+Five bands only: 3.5, 7, 14, 21 and 28 MHz. Observance 
+		of established band plans is strongly encouraged.
+III. CONTEST EXCHANGE:
+RST report plus CQ zone number of the station location (
+		e.g., 599 05). Stations in the continental USA and Canada also send QTH (e.g., 599 05 MA). 
+		See IV.C.3. below.
+IV. SCORING:
+A. Score:
+The final score is the result of the total QSO points 
+		multiplied by the sum of zone, country and QTH multipliers. Example: 1000 
+		QSO points * (30 Zones + 70 Countries + 35 W/VE QTHs) = 135,000 (final score).
+B. QSO Points:
+Stations may be contacted once on each band. QSO 
+		points are based on the location of the station worked.
+Contacts between stations on different continents 
+			count three (3) points.
+Contacts between stations on the same continent 
+			but in different countries count two (2) points.
+Contacts between stations in the same country 
+			count one (1) point.
+C. Multipliers:
+There are three types of multipliers.
+Zone: A multiplier of one (1) for each 
+			different CQ zone contacted on each band. The CQ Worked All Zones rules 
+			are the standard.
+Country: A multiplier of one (1) for each 
+			different country contacted on each band. The DXCC entity list, Worked All 
+			Europe (WAE) multiplier list plus IG9/IH9, and continental boundaries are 
+			standards for defining country multipliers. Maritime mobile stations count 
+			only for a zone multiplier.
+W/VE QTH: A multiplier of one (1) for 
+			each continental US state (48), The District of Columbia and each Canadian call area (14) 
+			contacted on each band. Please use only official U.S. Postal Service abbreviations 
+			to identify states (e.g., Michigan = MI, Massachusetts = MA, Ohio = OH, 
+			The District of Columbia = DC). 
+			Note:  Alaska (KL7) and 
+			Hawaii (KH6) are counted as country multipliers only and not as state multipliers. 
+			Canadian call areas (14 total) are as follows: NB (VE9), NS (VE1), QC 
+			(VE2), ON (VE3), MB (VE4), SK (VE5), AB (VE6), BC (VE7), NWT (VE8), NF (VO1), 
+			LB (VO2), NU (VY0), YT (VY1), PEI (VY2).
+V. ENTRY CATEGORIES:
+A. Single Operator Categories:
+One person (the operator) performs 
+		all operating and logging functions. There is no limit on operating time 
+		or band changes. Only one transmitted signal is permitted at any time.
+1. Single Operator:
+QSO finding assistance of any kind is prohibited 
+		(see VIII.2).
+a. High Power (All Band or Single Band):
+Total output power must 
+		not exceed
+1500 watts.
+b. Low Power (All Band or Single Band):
+Total output power must 
+		not exceed
+100 watts.
+c. QRP (All Band or Single Band):
+Total output power must not 
+		exceed
+5 watts.
+2. Single Operator Assisted:
+Entrants in this category may use 
+		QSO finding assistance (see VIII.2).
+a. High Power Assisted (All Band or Single Band):
+Total output 
+		power must not exceed
+1500 watts.
+b. Low Power Assisted (All Band or Single Band):
+Total output 
+		power must not exceed
+100 watts.
+c. QRP Assisted (All Band or Single Band):
+Total output power 
+		must not exceed
+5 watts.
+B. Single Operator Overlay Categories:
+Any Single Operator entrant 
+		that meets the requirements may ALSO enter one of the categories shown below 
+		by adding the appropriate CATEGORY-OVERLAY line in the Cabrillo log file 
+		header. Overlay category entries will be listed separately in the results; 
+		scored as All Bands; and grouped by High Power and Low Power (includes QRP).
+1. Classic Operator (CLASSIC):
+The entrant will use only one radio, 
+		no QSO finding assistance, and may operate up to 24 of the 48 hours --
+off times are a minimum of 60 minutes during which no QSO is logged
+. 
+		If the log shows more than 24 hours of operation, only the first 24 hours 
+		will be counted for the overlay score. Receiving while transmitting is prohibited. Single Operator 
+		Assisted entries are not eligible for this category.
+2. Rookie (ROOKIE):
+The operator was first licensed as a radio 
+		amateur less than three (3) years before the date of the contest. Indicate 
+		the date first licensed in the SOAPBOX field. Previous Rookie winners are ineligible for plaques in 
+		this category.
+3. Youth (YOUTH):
+The operator was 25 years old or younger at the 
+		start of the contest. Indicate the birth date in the SOAPBOX field.
+C. Multi-Operator Categories (all-band operation only):
+Any number 
+		of operators is allowed. QSO finding assistance is allowed. Only one transmitted 
+		signal per band is permitted at any time.
+1. Multi-Single:
+Only one transmitted signal 
+		on one band permitted at any time (run station/signal). Exception: One--and 
+		only one--other transmitted signal (multiplier station/signal) may be used, 
+		if—and only if—it is on a different band than the run transmitted 
+		signal and the station worked is a new multiplier. The run and 
+		multiplier transmitted signals may each make a maximum of 8 band changes per clock 
+		hour (00 through 59 minutes). The log must indicate which transmitted 
+		signal (run or multiplier) made each QSO. The multiplier transmitted signal may not call CQ 
+		(solicit contacts).
+a.
+High Power:
+Total output power must not exceed
+1500 
+		watts
+on any band at any time.
+b. Low Power:
+Total output power must not exceed
+100 watts
+on any band at any time.
+2. Multi-Two:
+A maximum of two transmitted 
+		signals may be used at any time, and they must be on two different bands. The log must indicate 
+		which station/signal made each QSO. Each station/signal may make a maximum of 
+		8 band changes in any clock hour (00 through 59 minutes). Total output power 
+		must not exceed
+1500 watts
+on any band at any time.
+3. Multi-Multi:
+The five contest bands 
+		may be activated simultaneously. Only one transmitted signal per band is 
+		permitted at any time. Total output power must not exceed
+1500 watts
+on any band at any time.
+4. Multi-Distributed:
+A maximum of five transmitted signals, 
+		one per band at any one time, from stations in different locations. All equipment (transmitters, 
+		receivers, amplifiers, antennas, etc.) must be in the same DXCC entity and CQ Zone, including remotely 
+		controlled equipment. Five bands may be activated simultaneously. Total output power of each transmitted 
+		signal must not exceed
+1500 watts
+. The Cabrillo log header must include the following lines: 
+		CATEGORY-OPERATOR: MULTI-OP, CATEGORY-STATION: DISTRIBUTED. Rules IX.5 and IX.6 do not apply to this 
+		category.
+D. Checklog:
+Entry submitted to assist with the log checking. 
+		The entry will not have a score in the results and the log will not be made 
+		public.
+VI. AWARDS:
+A single-band log will be eligible for a 
+		single-band award only. A log containing more than one band will be 
+		judged as an all-band entry unless specified as a single-band entry.
+A. Certificates:
+Electronic certificates will be made 
+		available for download for everyone that submits an entry by the log 
+		deadline.
+B. Plaques:
+Plaques are awarded for top performance 
+		in a number of categories. View the current list of plaques and sponsors 
+		at
+cqwwrtty.com/plaques.htm
+. Only one plaque 
+		will be awarded per entry. A station winning a plaque will not be considered 
+		for a sub-area award; the plaque will be awarded to the runner-up in that 
+		area.
+VII. CLUB COMPETITION:
+The club score is the total aggregate score 
+		from logs submitted by members. There are two separate club competition 
+		categories.
+A. USA Clubs:
+Participation is limited to club members residing within a 250 mile 
+		radius circle from the center of club area.
+B. DX Clubs:
+Participation is limited to club members residing within EITHER the DXCC 
+		entity where the club is located OR within a 400 km radius circle from the center of club area.
+C. General club rules:
+National organizations (e.g., JARL, REF or DARC) are not eligible for the club competition.
+Single-operator entries may only contribute to one club. Multi-operator scores may be 
+			allocated to multiple clubs as a percentage of the number of club members participating 
+			in the operation. The log entry must spell out the full club name (and club allocations if 
+			multi-op).
+A minimum of four logs must be received for a club to be listed in the results. 
+			Checklog entries are not counted for the club score.
+The word "reside" shall be defined as: To dwell permanently or 
+			continuously or to occupy a place as a person's fixed, permanent and 
+			principal home for legal purposes.
+Eligibe club members may contribute their DXpedition scores to their organization's 
+			club score.
+VIII. DEFINITIONS OF TERMS:
+1. Station location:
+The area in which all the transmitters, receivers 
+		and antennas are located. All transmitters, receivers and amplifiers must be within 
+		a single 500-meter diameter circle. Antennas must be physically connected 
+		by RF transmission lines to the transmitters and receivers.
+2. QSO finding assistance:
+The use of any technology or other 
+		source that provides call sign or multiplier identification of a signal 
+		to the operator, other than a single-channel RTTY decoder. This includes, 
+		but is not limited to, use of a wide-band multi-channel RTTY decoder, DX 
+		cluster, DX spotting web sites (e.g., DX Summit), local or remote call sign 
+		and frequency decoding technology (e.g., RTTY Skimmer or Reverse Beacon 
+		Network), or operating arrangements involving other individuals.
+IX. GENERAL RULES FOR ALL ENTRANTS:
+1.
+Entrants must operate within the limits of their chosen category when 
+		performing any activity that could impact their submitted score.
+2.
+A different call sign must be used for each entry. Only the entrant’s 
+		call sign may be used to aid the entrant’s score.
+3.
+Do not exceed the total output power limitation of the chosen entry 
+		category on any band. Total output power on any band at any time is measured at 
+		the output of the active amplifier(s).
+4.
+Self-spotting or asking to be spotted is not permitted.
+5.
+Remote operation is permitted if the physical location of all transmitters, 
+		receivers, and antennas are at the station location. A remotely operated 
+		station must obey all station license, operator license, and category limitations. 
+		The call sign used must be one issued or permitted by the Regulatory Authority 
+		of the station location.
+6.
+Remote receivers outside the station location are not permitted.
+7.
+Only one signal on a band is allowed at any time. When two or more 
+		transmitters are present on the same band, a hardware device MUST be used 
+		to prevent more than one signal at any one time. Alternating CQs on two 
+		or more frequencies on a band is not allowed.
+8.
+All requests for contacts, responses to calls, and copying of call 
+		signs and contest exchanges must be accomplished during the contest period 
+		using the mode and frequencies of the contest.
+9.
+Correction of logged call signs and exchanges after the contest, by 
+		use of any database, recordings, email or other methods is not allowed.
+10.
+Only 45.45 Baud. 170 Hz shift ITA2 mode is permitted.
+11.
+A human operator must initiate the following actions at all times: 1) changing receive or transmit 
+		frequencies, 2) calling a QSO partner, 3) logging a QSO. Autonomous systems or robots that emulate these 
+		actions are prohibited.
+X. LOG INSTRUCTIONS:
+Electronic submission of logs is
+required
+for all entrants.
+1. The log MUST show the following for each contact:
+correct date 
+		and time in UTC, frequency (or band), call sign of the station worked, exchange 
+		sent, and exchange received. A log without all required information may 
+		be reclassified to Checklog. Contacts should be logged at the time they 
+		are completed. Stations competing for World and Continent awards must provide 
+		accurate frequencies for all contacts in the log.
+2. Single band entrants are required to include all contacts
+made during the contest period, even if on other bands. Only contacts made 
+		on the band specified in the Cabrillo header will be considered for scoring purposes. 
+		Logs with contacts only on one band will be classified as single band entries.
+3. The CABRILLO file format is the standard for logs.
+See
+cqwwrtty.com/cabrillo.htm
+for detailed instructions on filling out the 
+		CABRILLO file header. Failure to fill out the header correctly may result 
+		in the entry being placed in the wrong category or reclassified as a Checklog. 
+		Note: USA and Canada stations must indicate the operating location in 
+		the CABRILLO header (e.g., LOCATION: OH); other stations indicate 'DX' 
+		(e.g., LOCATION: DX).
+4. Web upload is the only method of log submission.
+Web upload is available at
+cqwwrtty.com/logcheck/
+.
+5. Instructions for NON-CABRILLO electronic logs:
+If you are not 
+		able to submit a CABRILLO format log, please contact the Contest Director 
+		for assistance with submitting another format.
+6. Entry Confirmation:
+All logs received will be confirmed via 
+		email. A listing of logs received can be found at
+cqwwrtty.com/logs_received.html
+.
+7. Log withdrawal:
+after of the log deadline. Contact the Contest Director 
+		for instructions.
+XI. LOG DEADLINE:
+1.
+All entries must be sent WITHIN 48 HOURS after the end 
+		of the contest: no later than 2359 UTC September 29, 2026. Resubmitting an 
+		entry after the deadline will result in it being considered as a late log.
+2.
+An extension 
+		may be requested at
+cqwwrtty.com/contact/
+. 
+		The request must state a legitimate reason and must be received before the 
+		log deadline. Extensions are granted only upon confirmation by the Contest 
+		Director.
+3.
+Logs submitted 
+		after the deadline may be listed in the results, but will not be eligible for awards.
+XII. JUDGING:
+The CQ WW RTTY DX Contest Committee is responsible 
+		for checking and adjudicating the contest entries. Entrants are expected 
+		to follow the rules and best amateur radio practices. Violation of the rules 
+		of the contest or unsportsmanlike conduct may lead to disciplinary action 
+		by the Committee.
+A. Unsportsmanlike Conduct:
+Examples of unsportsmanlike conduct 
+		include, but are not limited to:
+1.
+Arranging or confirming any contacts during or after the contest 
+		by use of ANY non-amateur radio means such as telephones, Internet, instant 
+		messaging, chat rooms, VoIP, email, social media or web sites
+2.
+Transmissions by the entrant on frequencies outside of license 
+		limitations.
+3.
+Changing times in the log to meet band change or off time rules.
+4.
+Taking credit for excessive unverifiable QSOs or unverifiable 
+		multipliers.
+5.
+Signals with excessive bandwidth (e.g., splatter, clicks) or 
+		harmonics on other bands.
+6.
+Running stations making more than three consecutive contacts 
+		without sending their call sign.
+B. Audio Recordings:
+Any single operator entrant (see V.A.1) 
+		competing for a top five finish at the (a) World, (b) Continent, or (c) 
+		USA levels, including Classic Overlay, must record the transmitted and 
+		received audio as heard by the operator for the duration of the contest 
+		operation. The recording must be in a common format (e.g., mp3) and 
+		should include the audio to each ear as a separate channel. The 
+		recording must be a continuous recording (not a recording of individual 
+		QSOs). Time “off the air” (when not transmitting or receiving) does not 
+		have to recorded. The recording may be requested by the Committee within 
+		90 days after the log deadline to help adjudicate the log. The 
+		recording files must be provided by the entrant within 5 days of the 
+		request.
+Failure to submit a requested audio recording may result in the 
+		reclassification of a log entry or disqualification.
+C. Station Information:
+Entrants must agree to supply the following 
+		information upon request of the Contest Committee:
+1.
+Details and photographs of ther station equipment, antennas, amplifiers, 
+		switching systems, interlocks, etc.
+D. Disciplinary Actions:
+In the event of a violation, the entrant 
+		is subject to disqualification at the discretion of the Committee.
+1.
+Disqualified entries will be listed at the end of the published 
+		results and are not eligible for an award.
+2.
+Notification of Committee actions will be by email to the address 
+		provided with the log submission. The entrant has five days to appeal the 
+		decision to the Contest Director. After that time the decision is final.
+3.
+The Committee reserves the right to change the category of 
+		any entry based on its examination of the log or other information.
+E. Log Checking:
+All logs are checked using custom software and 
+		human judgment.
+1.
+Duplicate contacts are removed with no additional penalty.
+2.
+Contacts with an incorrect received exchange are removed with 
+		no additional penalty.
+3.
+Call sign errors (bust) or call signs not in the other 
+		log (NIL) are removed and receive a penalty of two times the QSO point value 
+		for that contact.
+XIII. DECLARATION:
+By submitting a CQ WW RTTY DX Contest log, 
+		and in consideration of the efforts of the CQ WW RTTY DX Contest Committee 
+		to review and evaluate that log, an entrant unconditionally and irrevocably 
+		agrees that he/she has: 1) read and understood the rules of the contest 
+		and agree to be bound by them, 2) operated according to all rules and regulations 
+		that pertain to amateur radio for the station location, 3) agreed the log 
+		entry may be made open to the public, and 4) accepted that
+		the issuing of disqualifications and other decisions 
+		of the Committee are official and final. If an entrant is unwilling 
+		or unable to agree to all of the foregoing, the entrant should not submit 
+		the entry or submit the entry as a Checklog only.
+Questions pertaining to the CQ WW RTTY DX Contest rules may be submitted 
+		at
+cqwwrtty.com/contact/
+. 
+		Answers for many frequently asked questions can be found at
+cqwwrtty.com/rules_faq.htm
+Copyright © 
+2000-2026
+World Wide Radio Operators Foundation, Inc.
+. All Rights Reserved.
+ |
+Privacy Policy

@@ -1,0 +1,1221 @@
+{
+  "schema": 2,
+  "id": "all_saga",
+  "name": "オール佐賀コンテスト",
+  "year": 2026,
+  "url": "https://www4.hp-ez.com/hp/jarlsaga/page10",
+  "points": {
+    "phone": 1,
+    "cw": 1,
+    "digital": 1
+  },
+  "conditions": [],
+  "duplicate": {
+    "enabled": true,
+    "by_mode": false
+  },
+  "multi1": {
+    "kind": "off",
+    "start": 0,
+    "length": 2,
+    "per_band": true
+  },
+  "multi2": {
+    "kind": "off",
+    "value": 1,
+    "condition": {
+      "all": []
+    }
+  },
+  "formula": "total",
+  "organizer": "JARL佐賀県支部",
+  "sort_name": "おーるさが",
+  "scoring": {
+    "eligible": {
+      "field": "exchange",
+      "op": "in",
+      "value": "4101,4102,4103,4104,4105,4106,4107,4108,4109,4110,41002G,41003B,41003D,41003G,41005A,41006D,41007C,41008A,41008C,41008F,101,102,103,104,105,106,107,108,109,110,111,112,113,114,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,42,43,44,45,46,47,48"
+    },
+    "multipliers": [
+      {
+        "id": "area",
+        "source": "exchange",
+        "kind": "whole",
+        "start": 0,
+        "length": 2,
+        "per_band": true,
+        "when": {
+          "all": []
+        }
+      }
+    ],
+    "bonus": 0
+  },
+  "event": {
+    "timezone": "JST",
+    "windows": [
+      {
+        "start": "2026-08-22 21:00",
+        "end": "2026-08-23 00:00",
+        "bands": [
+          "1.9",
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28",
+          "50",
+          "144",
+          "430"
+        ]
+      },
+      {
+        "start": "2026-08-23 06:00",
+        "end": "2026-08-23 15:00",
+        "bands": [
+          "1.9",
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28",
+          "50",
+          "144",
+          "430"
+        ]
+      }
+    ],
+    "categories": [
+      {
+        "id": "KF1",
+        "name": "県内シングルオペ 電話 1.9MHz",
+        "bands": [
+          "1.9"
+        ],
+        "modes": [
+          "SSB",
+          "USB",
+          "LSB",
+          "FM",
+          "AM"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "シングルオペで運用した",
+          "自局は佐賀県内で運用した"
+        ],
+        "operator": "SO",
+        "eligible": {
+          "all": []
+        }
+      },
+      {
+        "id": "XF1",
+        "name": "県外シングルオペ 電話 1.9MHz",
+        "bands": [
+          "1.9"
+        ],
+        "modes": [
+          "SSB",
+          "USB",
+          "LSB",
+          "FM",
+          "AM"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "シングルオペで運用した",
+          "自局は佐賀県外で運用した"
+        ],
+        "operator": "SO",
+        "eligible": {
+          "field": "exchange",
+          "op": "in",
+          "value": "4101,4102,4103,4104,4105,4106,4107,4108,4109,4110,41002G,41003B,41003D,41003G,41005A,41006D,41007C,41008A,41008C,41008F"
+        }
+      },
+      {
+        "id": "KF3",
+        "name": "県内シングルオペ 電話 3.5MHz",
+        "bands": [
+          "3.5"
+        ],
+        "modes": [
+          "SSB",
+          "USB",
+          "LSB",
+          "FM",
+          "AM"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "シングルオペで運用した",
+          "自局は佐賀県内で運用した"
+        ],
+        "operator": "SO",
+        "eligible": {
+          "all": []
+        }
+      },
+      {
+        "id": "XF3",
+        "name": "県外シングルオペ 電話 3.5MHz",
+        "bands": [
+          "3.5"
+        ],
+        "modes": [
+          "SSB",
+          "USB",
+          "LSB",
+          "FM",
+          "AM"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "シングルオペで運用した",
+          "自局は佐賀県外で運用した"
+        ],
+        "operator": "SO",
+        "eligible": {
+          "field": "exchange",
+          "op": "in",
+          "value": "4101,4102,4103,4104,4105,4106,4107,4108,4109,4110,41002G,41003B,41003D,41003G,41005A,41006D,41007C,41008A,41008C,41008F"
+        }
+      },
+      {
+        "id": "KF7",
+        "name": "県内シングルオペ 電話 7MHz",
+        "bands": [
+          "7"
+        ],
+        "modes": [
+          "SSB",
+          "USB",
+          "LSB",
+          "FM",
+          "AM"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "シングルオペで運用した",
+          "自局は佐賀県内で運用した"
+        ],
+        "operator": "SO",
+        "eligible": {
+          "all": []
+        }
+      },
+      {
+        "id": "XF7",
+        "name": "県外シングルオペ 電話 7MHz",
+        "bands": [
+          "7"
+        ],
+        "modes": [
+          "SSB",
+          "USB",
+          "LSB",
+          "FM",
+          "AM"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "シングルオペで運用した",
+          "自局は佐賀県外で運用した"
+        ],
+        "operator": "SO",
+        "eligible": {
+          "field": "exchange",
+          "op": "in",
+          "value": "4101,4102,4103,4104,4105,4106,4107,4108,4109,4110,41002G,41003B,41003D,41003G,41005A,41006D,41007C,41008A,41008C,41008F"
+        }
+      },
+      {
+        "id": "KF14",
+        "name": "県内シングルオペ 電話 14MHz",
+        "bands": [
+          "14"
+        ],
+        "modes": [
+          "SSB",
+          "USB",
+          "LSB",
+          "FM",
+          "AM"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "シングルオペで運用した",
+          "自局は佐賀県内で運用した"
+        ],
+        "operator": "SO",
+        "eligible": {
+          "all": []
+        }
+      },
+      {
+        "id": "XF14",
+        "name": "県外シングルオペ 電話 14MHz",
+        "bands": [
+          "14"
+        ],
+        "modes": [
+          "SSB",
+          "USB",
+          "LSB",
+          "FM",
+          "AM"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "シングルオペで運用した",
+          "自局は佐賀県外で運用した"
+        ],
+        "operator": "SO",
+        "eligible": {
+          "field": "exchange",
+          "op": "in",
+          "value": "4101,4102,4103,4104,4105,4106,4107,4108,4109,4110,41002G,41003B,41003D,41003G,41005A,41006D,41007C,41008A,41008C,41008F"
+        }
+      },
+      {
+        "id": "KF21",
+        "name": "県内シングルオペ 電話 21MHz",
+        "bands": [
+          "21"
+        ],
+        "modes": [
+          "SSB",
+          "USB",
+          "LSB",
+          "FM",
+          "AM"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "シングルオペで運用した",
+          "自局は佐賀県内で運用した"
+        ],
+        "operator": "SO",
+        "eligible": {
+          "all": []
+        }
+      },
+      {
+        "id": "XF21",
+        "name": "県外シングルオペ 電話 21MHz",
+        "bands": [
+          "21"
+        ],
+        "modes": [
+          "SSB",
+          "USB",
+          "LSB",
+          "FM",
+          "AM"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "シングルオペで運用した",
+          "自局は佐賀県外で運用した"
+        ],
+        "operator": "SO",
+        "eligible": {
+          "field": "exchange",
+          "op": "in",
+          "value": "4101,4102,4103,4104,4105,4106,4107,4108,4109,4110,41002G,41003B,41003D,41003G,41005A,41006D,41007C,41008A,41008C,41008F"
+        }
+      },
+      {
+        "id": "KF28",
+        "name": "県内シングルオペ 電話 28MHz",
+        "bands": [
+          "28"
+        ],
+        "modes": [
+          "SSB",
+          "USB",
+          "LSB",
+          "FM",
+          "AM"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "シングルオペで運用した",
+          "自局は佐賀県内で運用した"
+        ],
+        "operator": "SO",
+        "eligible": {
+          "all": []
+        }
+      },
+      {
+        "id": "XF28",
+        "name": "県外シングルオペ 電話 28MHz",
+        "bands": [
+          "28"
+        ],
+        "modes": [
+          "SSB",
+          "USB",
+          "LSB",
+          "FM",
+          "AM"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "シングルオペで運用した",
+          "自局は佐賀県外で運用した"
+        ],
+        "operator": "SO",
+        "eligible": {
+          "field": "exchange",
+          "op": "in",
+          "value": "4101,4102,4103,4104,4105,4106,4107,4108,4109,4110,41002G,41003B,41003D,41003G,41005A,41006D,41007C,41008A,41008C,41008F"
+        }
+      },
+      {
+        "id": "KF50",
+        "name": "県内シングルオペ 電話 50MHz",
+        "bands": [
+          "50"
+        ],
+        "modes": [
+          "SSB",
+          "USB",
+          "LSB",
+          "FM",
+          "AM"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "シングルオペで運用した",
+          "自局は佐賀県内で運用した"
+        ],
+        "operator": "SO",
+        "eligible": {
+          "all": []
+        }
+      },
+      {
+        "id": "XF50",
+        "name": "県外シングルオペ 電話 50MHz",
+        "bands": [
+          "50"
+        ],
+        "modes": [
+          "SSB",
+          "USB",
+          "LSB",
+          "FM",
+          "AM"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "シングルオペで運用した",
+          "自局は佐賀県外で運用した"
+        ],
+        "operator": "SO",
+        "eligible": {
+          "field": "exchange",
+          "op": "in",
+          "value": "4101,4102,4103,4104,4105,4106,4107,4108,4109,4110,41002G,41003B,41003D,41003G,41005A,41006D,41007C,41008A,41008C,41008F"
+        }
+      },
+      {
+        "id": "KF144",
+        "name": "県内シングルオペ 電話 144MHz",
+        "bands": [
+          "144"
+        ],
+        "modes": [
+          "SSB",
+          "USB",
+          "LSB",
+          "FM",
+          "AM"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "シングルオペで運用した",
+          "自局は佐賀県内で運用した"
+        ],
+        "operator": "SO",
+        "eligible": {
+          "all": []
+        }
+      },
+      {
+        "id": "XF144",
+        "name": "県外シングルオペ 電話 144MHz",
+        "bands": [
+          "144"
+        ],
+        "modes": [
+          "SSB",
+          "USB",
+          "LSB",
+          "FM",
+          "AM"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "シングルオペで運用した",
+          "自局は佐賀県外で運用した"
+        ],
+        "operator": "SO",
+        "eligible": {
+          "field": "exchange",
+          "op": "in",
+          "value": "4101,4102,4103,4104,4105,4106,4107,4108,4109,4110,41002G,41003B,41003D,41003G,41005A,41006D,41007C,41008A,41008C,41008F"
+        }
+      },
+      {
+        "id": "KF430",
+        "name": "県内シングルオペ 電話 430MHz",
+        "bands": [
+          "430"
+        ],
+        "modes": [
+          "SSB",
+          "USB",
+          "LSB",
+          "FM",
+          "AM"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "シングルオペで運用した",
+          "自局は佐賀県内で運用した"
+        ],
+        "operator": "SO",
+        "eligible": {
+          "all": []
+        }
+      },
+      {
+        "id": "XF430",
+        "name": "県外シングルオペ 電話 430MHz",
+        "bands": [
+          "430"
+        ],
+        "modes": [
+          "SSB",
+          "USB",
+          "LSB",
+          "FM",
+          "AM"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "シングルオペで運用した",
+          "自局は佐賀県外で運用した"
+        ],
+        "operator": "SO",
+        "eligible": {
+          "field": "exchange",
+          "op": "in",
+          "value": "4101,4102,4103,4104,4105,4106,4107,4108,4109,4110,41002G,41003B,41003D,41003G,41005A,41006D,41007C,41008A,41008C,41008F"
+        }
+      },
+      {
+        "id": "KFSM",
+        "name": "県内シングルオペ 電話 マルチバンド",
+        "bands": [
+          "1.9",
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28",
+          "50",
+          "144",
+          "430"
+        ],
+        "modes": [
+          "SSB",
+          "USB",
+          "LSB",
+          "FM",
+          "AM"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 9,
+        "min_calls": 1,
+        "required_flags": [
+          "シングルオペで運用した",
+          "自局は佐賀県内で運用した"
+        ],
+        "operator": "SO",
+        "eligible": {
+          "all": []
+        }
+      },
+      {
+        "id": "XFSM",
+        "name": "県外シングルオペ 電話 マルチバンド",
+        "bands": [
+          "1.9",
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28",
+          "50",
+          "144",
+          "430"
+        ],
+        "modes": [
+          "SSB",
+          "USB",
+          "LSB",
+          "FM",
+          "AM"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 9,
+        "min_calls": 1,
+        "required_flags": [
+          "シングルオペで運用した",
+          "自局は佐賀県外で運用した"
+        ],
+        "operator": "SO",
+        "eligible": {
+          "field": "exchange",
+          "op": "in",
+          "value": "4101,4102,4103,4104,4105,4106,4107,4108,4109,4110,41002G,41003B,41003D,41003G,41005A,41006D,41007C,41008A,41008C,41008F"
+        }
+      },
+      {
+        "id": "KC1",
+        "name": "県内シングルオペ 電信 1.9MHz",
+        "bands": [
+          "1.9"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "シングルオペで運用した",
+          "自局は佐賀県内で運用した"
+        ],
+        "operator": "SO",
+        "eligible": {
+          "all": []
+        }
+      },
+      {
+        "id": "XC1",
+        "name": "県外シングルオペ 電信 1.9MHz",
+        "bands": [
+          "1.9"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "シングルオペで運用した",
+          "自局は佐賀県外で運用した"
+        ],
+        "operator": "SO",
+        "eligible": {
+          "field": "exchange",
+          "op": "in",
+          "value": "4101,4102,4103,4104,4105,4106,4107,4108,4109,4110,41002G,41003B,41003D,41003G,41005A,41006D,41007C,41008A,41008C,41008F"
+        }
+      },
+      {
+        "id": "KC3",
+        "name": "県内シングルオペ 電信 3.5MHz",
+        "bands": [
+          "3.5"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "シングルオペで運用した",
+          "自局は佐賀県内で運用した"
+        ],
+        "operator": "SO",
+        "eligible": {
+          "all": []
+        }
+      },
+      {
+        "id": "XC3",
+        "name": "県外シングルオペ 電信 3.5MHz",
+        "bands": [
+          "3.5"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "シングルオペで運用した",
+          "自局は佐賀県外で運用した"
+        ],
+        "operator": "SO",
+        "eligible": {
+          "field": "exchange",
+          "op": "in",
+          "value": "4101,4102,4103,4104,4105,4106,4107,4108,4109,4110,41002G,41003B,41003D,41003G,41005A,41006D,41007C,41008A,41008C,41008F"
+        }
+      },
+      {
+        "id": "KC7",
+        "name": "県内シングルオペ 電信 7MHz",
+        "bands": [
+          "7"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "シングルオペで運用した",
+          "自局は佐賀県内で運用した"
+        ],
+        "operator": "SO",
+        "eligible": {
+          "all": []
+        }
+      },
+      {
+        "id": "XC7",
+        "name": "県外シングルオペ 電信 7MHz",
+        "bands": [
+          "7"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "シングルオペで運用した",
+          "自局は佐賀県外で運用した"
+        ],
+        "operator": "SO",
+        "eligible": {
+          "field": "exchange",
+          "op": "in",
+          "value": "4101,4102,4103,4104,4105,4106,4107,4108,4109,4110,41002G,41003B,41003D,41003G,41005A,41006D,41007C,41008A,41008C,41008F"
+        }
+      },
+      {
+        "id": "KC14",
+        "name": "県内シングルオペ 電信 14MHz",
+        "bands": [
+          "14"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "シングルオペで運用した",
+          "自局は佐賀県内で運用した"
+        ],
+        "operator": "SO",
+        "eligible": {
+          "all": []
+        }
+      },
+      {
+        "id": "XC14",
+        "name": "県外シングルオペ 電信 14MHz",
+        "bands": [
+          "14"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "シングルオペで運用した",
+          "自局は佐賀県外で運用した"
+        ],
+        "operator": "SO",
+        "eligible": {
+          "field": "exchange",
+          "op": "in",
+          "value": "4101,4102,4103,4104,4105,4106,4107,4108,4109,4110,41002G,41003B,41003D,41003G,41005A,41006D,41007C,41008A,41008C,41008F"
+        }
+      },
+      {
+        "id": "KC21",
+        "name": "県内シングルオペ 電信 21MHz",
+        "bands": [
+          "21"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "シングルオペで運用した",
+          "自局は佐賀県内で運用した"
+        ],
+        "operator": "SO",
+        "eligible": {
+          "all": []
+        }
+      },
+      {
+        "id": "XC21",
+        "name": "県外シングルオペ 電信 21MHz",
+        "bands": [
+          "21"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "シングルオペで運用した",
+          "自局は佐賀県外で運用した"
+        ],
+        "operator": "SO",
+        "eligible": {
+          "field": "exchange",
+          "op": "in",
+          "value": "4101,4102,4103,4104,4105,4106,4107,4108,4109,4110,41002G,41003B,41003D,41003G,41005A,41006D,41007C,41008A,41008C,41008F"
+        }
+      },
+      {
+        "id": "KC28",
+        "name": "県内シングルオペ 電信 28MHz",
+        "bands": [
+          "28"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "シングルオペで運用した",
+          "自局は佐賀県内で運用した"
+        ],
+        "operator": "SO",
+        "eligible": {
+          "all": []
+        }
+      },
+      {
+        "id": "XC28",
+        "name": "県外シングルオペ 電信 28MHz",
+        "bands": [
+          "28"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "シングルオペで運用した",
+          "自局は佐賀県外で運用した"
+        ],
+        "operator": "SO",
+        "eligible": {
+          "field": "exchange",
+          "op": "in",
+          "value": "4101,4102,4103,4104,4105,4106,4107,4108,4109,4110,41002G,41003B,41003D,41003G,41005A,41006D,41007C,41008A,41008C,41008F"
+        }
+      },
+      {
+        "id": "KC50",
+        "name": "県内シングルオペ 電信 50MHz",
+        "bands": [
+          "50"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "シングルオペで運用した",
+          "自局は佐賀県内で運用した"
+        ],
+        "operator": "SO",
+        "eligible": {
+          "all": []
+        }
+      },
+      {
+        "id": "XC50",
+        "name": "県外シングルオペ 電信 50MHz",
+        "bands": [
+          "50"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "シングルオペで運用した",
+          "自局は佐賀県外で運用した"
+        ],
+        "operator": "SO",
+        "eligible": {
+          "field": "exchange",
+          "op": "in",
+          "value": "4101,4102,4103,4104,4105,4106,4107,4108,4109,4110,41002G,41003B,41003D,41003G,41005A,41006D,41007C,41008A,41008C,41008F"
+        }
+      },
+      {
+        "id": "KC144",
+        "name": "県内シングルオペ 電信 144MHz",
+        "bands": [
+          "144"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "シングルオペで運用した",
+          "自局は佐賀県内で運用した"
+        ],
+        "operator": "SO",
+        "eligible": {
+          "all": []
+        }
+      },
+      {
+        "id": "XC144",
+        "name": "県外シングルオペ 電信 144MHz",
+        "bands": [
+          "144"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "シングルオペで運用した",
+          "自局は佐賀県外で運用した"
+        ],
+        "operator": "SO",
+        "eligible": {
+          "field": "exchange",
+          "op": "in",
+          "value": "4101,4102,4103,4104,4105,4106,4107,4108,4109,4110,41002G,41003B,41003D,41003G,41005A,41006D,41007C,41008A,41008C,41008F"
+        }
+      },
+      {
+        "id": "KC430",
+        "name": "県内シングルオペ 電信 430MHz",
+        "bands": [
+          "430"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "シングルオペで運用した",
+          "自局は佐賀県内で運用した"
+        ],
+        "operator": "SO",
+        "eligible": {
+          "all": []
+        }
+      },
+      {
+        "id": "XC430",
+        "name": "県外シングルオペ 電信 430MHz",
+        "bands": [
+          "430"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "シングルオペで運用した",
+          "自局は佐賀県外で運用した"
+        ],
+        "operator": "SO",
+        "eligible": {
+          "field": "exchange",
+          "op": "in",
+          "value": "4101,4102,4103,4104,4105,4106,4107,4108,4109,4110,41002G,41003B,41003D,41003G,41005A,41006D,41007C,41008A,41008C,41008F"
+        }
+      },
+      {
+        "id": "KCSM",
+        "name": "県内シングルオペ 電信 マルチバンド",
+        "bands": [
+          "1.9",
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28",
+          "50",
+          "144",
+          "430"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 9,
+        "min_calls": 1,
+        "required_flags": [
+          "シングルオペで運用した",
+          "自局は佐賀県内で運用した"
+        ],
+        "operator": "SO",
+        "eligible": {
+          "all": []
+        }
+      },
+      {
+        "id": "XCSM",
+        "name": "県外シングルオペ 電信 マルチバンド",
+        "bands": [
+          "1.9",
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28",
+          "50",
+          "144",
+          "430"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 9,
+        "min_calls": 1,
+        "required_flags": [
+          "シングルオペで運用した",
+          "自局は佐賀県外で運用した"
+        ],
+        "operator": "SO",
+        "eligible": {
+          "field": "exchange",
+          "op": "in",
+          "value": "4101,4102,4103,4104,4105,4106,4107,4108,4109,4110,41002G,41003B,41003D,41003G,41005A,41006D,41007C,41008A,41008C,41008F"
+        }
+      },
+      {
+        "id": "KFMM",
+        "name": "県内マルチオペ 電話 マルチバンド",
+        "bands": [
+          "1.9",
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28",
+          "50",
+          "144",
+          "430"
+        ],
+        "modes": [
+          "SSB",
+          "USB",
+          "LSB",
+          "FM",
+          "AM"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 9,
+        "min_calls": 1,
+        "required_flags": [
+          "マルチオペで運用し提出書類に運用者一覧を記載する",
+          "自局は佐賀県内で運用した"
+        ],
+        "operator": "MO",
+        "eligible": {
+          "all": []
+        }
+      },
+      {
+        "id": "XFMM",
+        "name": "県外マルチオペ 電話 マルチバンド",
+        "bands": [
+          "1.9",
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28",
+          "50",
+          "144",
+          "430"
+        ],
+        "modes": [
+          "SSB",
+          "USB",
+          "LSB",
+          "FM",
+          "AM"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 9,
+        "min_calls": 1,
+        "required_flags": [
+          "マルチオペで運用し提出書類に運用者一覧を記載する",
+          "自局は佐賀県外で運用した"
+        ],
+        "operator": "MO",
+        "eligible": {
+          "field": "exchange",
+          "op": "in",
+          "value": "4101,4102,4103,4104,4105,4106,4107,4108,4109,4110,41002G,41003B,41003D,41003G,41005A,41006D,41007C,41008A,41008C,41008F"
+        }
+      }
+    ],
+    "required_flags": [
+      "運用場所を変更していない",
+      "全交信の周波数と免許範囲を確認した（3.8MHz・WARC・中継等は対象外）",
+      "交信ナンバーを照合し市町・都府県地域番号の未確定行がない",
+      "参加は1種目だけとし当年規約の一般条件を確認した"
+    ],
+    "duplicate_fields": [
+      "call",
+      "band",
+      "mode_family"
+    ],
+    "prefer": "first",
+    "special": "none",
+    "submission": {
+      "formats": [
+        "JARL R1.0",
+        "JARL R2.1"
+      ],
+      "zone": "JST",
+      "contest": "第52回オール佐賀コンテスト",
+      "instructions": "提出件名：部門コード 自局コール（例 XCSM JH1HST）。提出先 jarlsagatest@cnc.bbiq.jp。締切2026-09-20。自動送信は行いません。"
+    },
+    "rule_view": {
+      "call_method": "電話：CQ佐賀コンテスト／電信：CQ SAGA TEST",
+      "counterparts": "県内局：県内を含む日本全国の局。県外局：佐賀県内局。",
+      "points_display": "完全な交信は1点。同一バンドではSSBとFMなど同じ電話モード間は重複扱い。"
+    }
+  }
+}
+

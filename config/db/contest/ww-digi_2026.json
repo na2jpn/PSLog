@@ -1,0 +1,14 @@
+{
+  "source": "wwdigi_rules_web_2026.txt",
+  "inside": [],
+  "outside": [],
+  "id": "ww-digi",
+  "year": 2026,
+  "municipal_source_versions": {
+    "jcc": "2019-05-01",
+    "jcg": "2018-10-01",
+    "ward": "2024-01-01",
+    "history": "2024-01-01"
+  },
+  "sha256": "ae35556434da8ceebdc910f420219ff14a325f2cf67e43777cbb0750837f2e69"
+}

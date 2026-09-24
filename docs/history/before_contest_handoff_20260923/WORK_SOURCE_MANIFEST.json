@@ -1,0 +1,26 @@
+{
+  "project": "PSLog",
+  "handoff_purpose": "Work: 87-contest rule display audit and implementation",
+  "current_version": "1.069",
+  "baseline_state": [
+    "Ver1.069 PATCH09",
+    "Ver1.069 PATCH09 FIX1",
+    "Ver1.069 PATCH09 FIX3"
+  ],
+  "authoritative_baseline": "This ZIP source tree itself",
+  "do_not_reconstruct_from_old_patches": true,
+  "historical_source_manifest_note": "SOURCE_MANIFEST.json records the Ver1.06 canonicalization history and is not the current Work baseline marker.",
+  "required_first_reads": [
+    "WORK_START_HERE.md",
+    "WORK_HANDOFF_PROMPT.md",
+    "START_HERE.md",
+    "HANDOFF.md",
+    "CHANGELOG.md",
+    "VER1.069_PATCH09_README.md",
+    "VER1.069_PATCH09_FIX1_README.md",
+    "VER1.069_PATCH09_FIX3_README.md",
+    "docs/development/contest_rule_display_audit_87/PSLog_1.069_CONTEST_RULE_DISPLAY_AUDIT_87.md",
+    "docs/development/contest_rule_display_audit_87/PSLog_1.069_CONTEST_RULE_DISPLAY_AUDIT_87.csv"
+  ],
+  "free_radio": "Deferred to Ver1.07; do not implement in this Work task"
+}

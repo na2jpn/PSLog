@@ -1,0 +1,267 @@
+{
+  "schema": 2,
+  "id": "kcwa_cw",
+  "name": "第42回KCWA CWコンテスト",
+  "year": 2025,
+  "url": "https://kcwa.sakura.ne.jp/2025/contest42/20251207CONTEST.html",
+  "organizer": "JARL京都府支部・京都CW愛好会",
+  "sort_name": "第42回KCWA CWコンテスト",
+  "points": {
+    "cw": 1,
+    "phone": 1,
+    "digital": 0
+  },
+  "conditions": [],
+  "duplicate": {
+    "enabled": true,
+    "by_mode": false
+  },
+  "multi1": {
+    "kind": "off",
+    "start": 0,
+    "length": 2,
+    "per_band": true
+  },
+  "multi2": {
+    "kind": "off",
+    "value": 1,
+    "condition": {
+      "all": []
+    }
+  },
+  "formula": "total",
+  "scoring": {
+    "eligible": {
+      "all": []
+    },
+    "multipliers": [
+      {
+        "id": "region",
+        "source": "area",
+        "kind": "whole",
+        "start": 0,
+        "length": 2,
+        "per_band": true,
+        "when": {
+          "all": []
+        }
+      }
+    ],
+    "bonus": 0
+  },
+  "event": {
+    "timezone": "JST",
+    "windows": [
+      {
+        "start": "2025-12-07 10:00",
+        "end": "2025-12-07 20:00",
+        "bands": [
+          "3.5",
+          "7"
+        ]
+      }
+    ],
+    "categories": [
+      {
+        "id": "B35",
+        "name": "3.5MHz部門",
+        "bands": [
+          "3.5"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "国内個人局のみ、相手も個人局。実周波数3.510～3.530/7.010～7.040MHz・A1A、同時1波・ゲストなし・場所変更なし。原送信連番と全帯履歴を確認した"
+        ],
+        "station_types": [
+          "individual"
+        ],
+        "operator": "SO",
+        "submission_code": "3.5MHz部門",
+        "regional": {
+          "required_declarations": [
+            "own_region",
+            "location"
+          ]
+        }
+      },
+      {
+        "id": "B7",
+        "name": "7MHz部門",
+        "bands": [
+          "7"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "国内個人局のみ、相手も個人局。実周波数3.510～3.530/7.010～7.040MHz・A1A、同時1波・ゲストなし・場所変更なし。原送信連番と全帯履歴を確認した"
+        ],
+        "station_types": [
+          "individual"
+        ],
+        "operator": "SO",
+        "submission_code": "7MHz部門",
+        "regional": {
+          "required_declarations": [
+            "own_region",
+            "location"
+          ]
+        }
+      },
+      {
+        "id": "MULTI",
+        "name": "マルチバンド部門",
+        "bands": [
+          "3.5",
+          "7"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": null,
+        "min_bands": 2,
+        "max_bands": 2,
+        "min_calls": 1,
+        "required_flags": [
+          "国内個人局のみ、相手も個人局。実周波数3.510～3.530/7.010～7.040MHz・A1A、同時1波・ゲストなし・場所変更なし。原送信連番と全帯履歴を確認した"
+        ],
+        "station_types": [
+          "individual"
+        ],
+        "operator": "SO",
+        "submission_code": "マルチバンド部門",
+        "regional": {
+          "required_declarations": [
+            "own_region",
+            "location"
+          ]
+        }
+      }
+    ],
+    "required_flags": [
+      "国内の規約対象局として、実運用地・使用周波数・免許範囲・完全な番号交換を確認した",
+      "大会原典の運用制限と提出数を確認し、未受信番号を事後に補っていない（申告得点・審査前）"
+    ],
+    "duplicate_fields": [
+      "call",
+      "band"
+    ],
+    "prefer": "first",
+    "special": "none",
+    "entrant": {
+      "station_types": [
+        "individual"
+      ],
+      "guest_policy": "forbidden"
+    },
+    "normalization": {
+      "bands": {
+        "3.5MHZ": "3.5",
+        "7MHZ": "7"
+      },
+      "modes": {
+        "USB": "SSB",
+        "LSB": "SSB"
+      },
+      "mode_families": {}
+    },
+    "regional": {
+      "declarations": {
+        "own_region": "自局のKCJ略称（62地域）",
+        "location": "運用場所（変更なし）"
+      },
+      "profile": "kcwa",
+      "local_a": [
+        "SY",
+        "RM",
+        "KK",
+        "OH",
+        "SC",
+        "IS",
+        "NM",
+        "SB",
+        "TC",
+        "KR",
+        "HD",
+        "IR",
+        "HY",
+        "OM",
+        "AM",
+        "IT",
+        "AT",
+        "YM",
+        "MG",
+        "FS",
+        "NI",
+        "NN",
+        "TK",
+        "KN",
+        "CB",
+        "ST",
+        "IB",
+        "TG",
+        "GM",
+        "YN",
+        "SO",
+        "GF",
+        "AC",
+        "ME",
+        "KT",
+        "SI",
+        "NR",
+        "OS",
+        "WK",
+        "HG",
+        "TY",
+        "FI",
+        "IK",
+        "OY",
+        "SN",
+        "YG",
+        "TT",
+        "HS",
+        "KA",
+        "TS",
+        "EH",
+        "KC",
+        "FO",
+        "SG",
+        "NS",
+        "KM",
+        "OT",
+        "MZ",
+        "KG",
+        "ON",
+        "OG",
+        "MT"
+      ],
+      "local_b": [],
+      "outside_category_checklog": true
+    },
+    "submission": {
+      "formats": [
+        "JARL R1.0"
+      ],
+      "zone": "JST",
+      "contest": "第42回KCWA CWコンテスト",
+      "instructions": "2025参考版。JARL R1.0、実交換RST+略称+帯域別連番（001開始）。単帯でも他帯チェックログを付ける。本文にコードなし、部門名をそのまま出力。kcwa2025@kcwa.sakura.ne.jp と jq3dgt@jarl.com の両方、件名コール、12月31日。2026へ自動更新しない。 原案・原典はdocs/contest-researchに保存。2026参考版であり2027へ自動更新しません。主催受付・Windows実機は未検証。自動提出しません。",
+      "order": "band_time"
+    },
+    "rule_view": {
+      "call_method": "電信：CQ KT TEST",
+      "points_display": "完全な交信1点。ただし提出ログ相互の照合が成立した交信のみ得点となり、ログ未提出局との交信は無得点。2025年第42回の規約です。",
+      "counterparts": "日本国内で運用する個人アマチュア局との電信交信。"
+    }
+  }
+}
+

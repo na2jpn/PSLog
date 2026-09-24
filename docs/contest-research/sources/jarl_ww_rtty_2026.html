@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>JARl World Wide RTTYコンテスト規約</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css" type="text/css"/>
+  <style>
+    /* インデント調整用の追加スタイル */
+    .notice-section ol, 
+    .notice-section ul {
+      padding-left: 2em; /* リストの左側に余白を作る */
+      margin-bottom: 1em;
+    }
+    .notice-section li {
+      margin-bottom: 0.5em; /* 項目間の間隔 */
+    }
+    /* 入れ子のリストをさらにインデントする場合 */
+    .notice-section li > ol, 
+    .notice-section li > ul {
+      margin-top: 0.5em;
+      padding-left: 1.5em;
+    }
+    /* 表の下の(注)などの調整 */
+    .notice-section table + ol {
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body>
+  <div class="top-banner">
+    <div class="banner-title"><a href="index.html">JARLコンテスト</a></div>
+    <div class="menu-item">
+      <a href="https://www.jarl.org/index.html">JARL HOME</a>
+    </div>
+    <div class="menu-item">
+      <a href="index.html">コンテスト HOME</a>
+    </div>
+    <div class="menu-item">
+      <a href="#">コンテスト規約一覧</a>
+      <div class="dropdown">
+        <a href="qso_party.html">QSOパーティ</a>
+        <a href="allja_rules.html">ALL JA</a>
+        <a href="aadx_rules.html">ALL ASIAN DX</a>
+        <a href="6d_rules.html">6m AND DOWN</a>
+        <a href="fd_rules.html">フィールドデー</a>
+        <a href="acag_rules.html">全市全郡</a>
+        <a href="rtty_rule.html">JARL World Wide RTTY</a>
+      </div>
+    </div>
+    <div class="menu-item">
+      <a href="https://contest.jarl.org/upload-redirect.html">電子ログアップロード</a>
+    </div>
+    <div class="menu-item">
+      <a href="#">最新コンテスト結果</a>
+      <div class="dropdown">
+        <a href="https://www.jarl.org/Japanese/1_Tanoshimo/1-1_Contest/qp/2026/qsop26.htm">2026 QSOパーティ</a>
+        <a href="https://www.jarl.org/Japanese/1_Tanoshimo/1-1_Contest/all_ja/2025/index.html">2025 ALL JA</a>
+        <a href="https://www.jarl.org/Japanese/1_Tanoshimo/1-1_Contest/all_asian/AA2025-index1.html">2025 ALL ASIAN DX</a>
+        <a href="https://www.jarl.org/Japanese/1_Tanoshimo/1-1_Contest/6m/2025/index.html">2025 6m AND DOWN</a>
+        <a href="https://www.jarl.org/Japanese/1_Tanoshimo/1-1_Contest/fd/2025/index.html">2025 フィールドデー</a>
+        <a href="https://www.jarl.org/Japanese/1_Tanoshimo/1-1_Contest/all_cg/2025/index.html">2025 全市全郡</a>
+      </div>
+    </div>
+    <div class="menu-item"><a href="q_and_a.html">FAQ</a></div>
+    <div class="menu-item"><a href="https://contest.jarl.org/cntdb/">スコア・データベース</a></div>
+    <div class="menu-item"><a href="contact.php">お問い合わせ</a></div>
+    <form id="google-search-form" class="google-search-form" method="get" action="https://www.google.com/search" target="_blank">
+      <input type="text" id="search-box" placeholder="キーワードを入力" required>
+      <button type="submit">🔍 検索</button>
+    </form>
+  </div>
+
+  <div class="notice-section">
+    <h1>JARL World Wide RTTYコンテスト規約</h1>
+    <p>世界中のアマチュア無線家がRTTYを用いて、可能な限り多くの他のアマチュア無線家と交信することを目的とし本コンテストを実施する。</p>
+
+    <h2>1 開催日時</h2>
+    <p>10月の第3土曜日00時00分（UTC）から翌日24時00分（UTC）まで</p>
+
+    <h2>2 使用周波数帯</h2>
+    <p>3.5、7、14、21、および28MHz帯</p>
+
+    <h2>3 モード</h2>
+    <p>RTTY （Baudotのみ）</p>
+
+    <h2>4 参加種目</h2>
+    <h3>4-1 参加種目</h3>
+    <table class="table table-bordered">
+      <tr>
+        <td colspan="2" rowspan="2"><div class="text-center">参加種目</div></td>
+        <td colspan="2" class="text-center">Cabrillo形式</td>
+        <td class="text-center">JARL形式</td>
+      </tr>
+      <tr>
+        <td class="text-center">CATEGORY-OPERATOR</td>
+        <td class="text-center">CATEGORY-POWER</td>
+        <td class="text-center">CATEGORYCODE</td>
+      </tr>
+      <tr>
+        <td rowspan="3"><div class="text-center">シングルオペ<br />（注1）</div></td>
+        <td>オールバンド ハイパワー <br />（注3）</td>
+        <td>SINGLE-OP</td>
+        <td>HIGH</td>
+        <td>SOHP</td>
+      </tr>
+      <tr>
+        <td>オールバンド ローパワー<br /> （注3）</td>
+        <td>SINGLE-OP</td>
+        <td>LOW</td>
+        <td>SOLP</td>
+      </tr>
+      <tr>
+        <td>オールバンド QRP <br /> （注3）</td>
+        <td>SINGLE-OP</td>
+        <td>QRP</td>
+        <td>SOQRP</td>
+      </tr>
+      <tr>
+        <td rowspan="2">マルチオペ<br />（注2）</td>
+        <td>オールバンド ハイパワー<br /> （注3）</td>
+        <td>MULTI-OP</td>
+        <td>HIGH</td>
+        <td>MMHP</td>
+      </tr>
+      <tr>
+        <td>オールバンド ローパワー<br /> （注3）</td>
+        <td>MULTI-OP</td>
+        <td>LOW</td>
+        <td>MMLP</td>
+      </tr>
+    </table>
+    <ol>
+      <li>（注1）シングルオペは、コンテスト中の運用に関わるすべての操作およびログ記録を一人で行うこと。いかなる時点においても送信信号は1波だけが許され、同一または異なるバンドにおける2波以上の信号の同時送信を禁止する。</li>
+      <li>（注2）マルチオペは、最大5つのバンドで同時に運用してもよい。いかなる時点においても送信信号はバンドごとに1波だけが許される。</li>
+      <li>（注3）QRPは出力5W以下。ローパワーは出力100W以下。ハイパワーは、オペレータおよび／または局の免許を発行する国の主管庁がその局に許可した最大送信出力範囲内とする。</li>
+    </ol>
+
+    <h3>4-2 シングルオペ YOUTHオーバーレイ種目</h3>
+    <p>コンテスト開始時点で25歳以下のシングルオペレータ参加者は、4-1項の各シングルオペ種目のYOUTHオーバーレイ種目にも参加できる。</p>
+
+    <h2>5 コンテストナンバー</h2>
+    <h3>5-1 シングルオペ局</h3>
+    <ol>
+      <li>RST＋年齢</li>
+      <li>・年齢：コンテスト開始時におけるオペレータの年齢、または”01”（ゼロワン）。（”01”の代わりに”00”または”99”の使用も可とする）</li>
+    </ol>
+
+    <h3>5-2 マルチオペ局</h3>
+    <ol>
+      <li>RST＋年齢</li>
+      <li>・年齢：コンテスト開始時におけるオペレータの平均年齢、または”01”（ゼロワン）。（”01”の代わりに”00”または”99”の使用も可とする）</li>
+    </ol>
+
+    <h2>6 共通規約</h2>
+    <ol>
+      <li>（1）すべてのアンテナ、送信機、受信機の設置場所は直径500メートルの単一円内に収めなければならない。</li>
+      <li>（2）コールサインまたはマルチプライヤーを受信信号の周波数情報と共にオペレータに知らせるあらゆる技術（QSO finding assistance）、たとえばWebクラスター、RTTYスキマー、リバースビーコンネットワーク等の使用を認める。</li>
+      <li>（3）コンテスト中は、アマチュア無線またはアマチュア無線以外の方法（携帯電話、メール、チャット、SNS など）を含むいかなる手段によるセルフスポッティングおよびスポッティングを依頼する行為も禁止する。</li>
+      <li>（4）リモート運用は、すべてのアンテナ、送信機、受信機がひとつの所在地に収まっている場合にのみ許される。すべてのリモート運用局は、局免許、オペレータ免許、および該当参加種目のルールに従うこと。</li>
+      <li>（5）送信機、受信機、アンテナを設置した無線局の所在地外に位置するリモート受信機の使用を禁止する。</li>
+      <li>（6）コンテスト終了後にログを修正することを禁止する。</li>
+      <li>（7）一つのコールサインで複数の種目にログを出すことを禁止する 。</li>
+      <li>（8）一人のオペレータが複数の異なるコールサインで運用し、それぞれのコールサインでログを提出することを禁止する。</li>
+    </ol>
+
+    <h2>7 得点およびマルチプライヤー</h2>
+    <h3>7-1 得点</h3>
+    <p>同一局との交信は各バンドで1回のみ得点とすることができる。</p>
+    <ul>
+      <li>・同一大陸内（同一エンティティ内も含む）の局との交信：2点</li>
+      <li>・異なる大陸の局との交信：3点</li>
+    </ul>
+
+    <h3>7-2 マルチプライヤー</h3>
+    <p>マルチプライヤーは下記（1）および（2）とする。</p>
+    <ol>
+      <li>（1）各バンドで交信した局（JA/W/VE/VKの本土を除く）の「DXCCリスト」による異なるエンティティ数
+        <ul>
+          <li>・小笠原諸島と沖の鳥島（JD1）は、エンティティマルチとして扱い、アジア州とする。</li>
+          <li>・南鳥島（JD1）は、エンティティマルチとして扱い、オセアニア州とする。</li>
+        </ul>
+      </li>
+      <li>（2）各バンドで交信したJA/W/VE/VKの本土内局のコールエリア
+        <p>JA/W/VE/VKの本土内局のコールエリアはプリフィックスの最後の数字とする。ただし、ポータブル表示がある場合は、ポータブル表示のエリア（ポータブル表示にエリアを示す数字を含まない場合は0エリア）とする。</p>
+        <ul>
+          <li>（例） JA1、7K1はJA1としてカウント</li>
+          <li>JR4、7K4はJA4としてカウント</li>
+          <li>8J20はJA0としてカウント</li>
+          <li>JA1RL/3はJA3としてカウント</li>
+          <li>VK/JA1YRLはVK0としてカウント<br/>（VK0エンティティではなく、0エリアとしてのみカウント）</li>
+        </ul>
+      </li>
+    </ol>
+
+    <h3>7-3 公海上のMM（Maritime Mobile）局</h3>
+    <ul>
+      <li>MM局との交信は、運用場所によらず得点を2点とし、マルチにはカウントしない。</li>
+      <li>MM局は、結果発表に得点を掲載するが表彰対象とはしない。</li>
+    </ul>
+
+    <h2>8 総得点の計算方法</h2>
+    <p>〔各バンドにおける得点の和〕×〔各バンドで得たエンティティとコールエリアのマルチプライヤーの和〕</p>
+
+    <h2>9 書類の提出</h2>
+    <h3>（1）書類の提出方法</h3>
+    <p>キャブリロ（Cabrillo）形式（推奨）あるいはJARL電子ログ形式で作成したテキストデータをログ提出用Webページの指示に従ってアップロード、または電子メールで提出先アドレスに送信する。ログ提出用Webページからのアップロードを強く推奨する。郵送によるログ提出は受け付けない。</p>
+
+    <h3>（2）書類の記入上の注意</h3>
+    <ol>
+      <li>① 時間はUTCを使用する。</li>
+      <li>② 運用周波数は実際に運用した周波数をkHz単位でログに記載することを推奨する。ただし、MHz単位のバンド表示による記載も許容する。</li>
+      <li>③ マルチオペは、全オペレータのコールサイン（コールサインがない場合は氏名）を、キャブリロ（Cabrillo）形式では OPERATORS：に、JARL電子ログ形式 では&lt;MULTIOPLIST&gt;に記入する。マルチオペ種目においてオペレータの記載が無い場合はコールサインのオペレータが一人で運用したとみなすが、シングルオペ種目へのエントリー変更は行わない。</li>
+      <li>④ ユース（YOUTH）オーバーレイ種目の場合：キャブリロ（Cabrillo）形式では、「CATEGORY-OVERLAY:」項目に「YOUTH」と記入すること。JARL電子ログ形式では&lt;AGE&gt;に、「YOUTH」または年齢を記入すること。</li>
+      <li>⑤ チェックログとして提出する場合には、キャブリロ（Cabrillo）形式では、「CATEGORY-OPERATOR:」項目に「CHECKLOG」と記入すること。JARL電子ログ形式では&lt;CATEGORYCODE&gt;に「CHECKLOG」と記入すること。<br />一部の交信データのみをチェックログとしたい場合は、当該QSOデータ行の先頭に”X”を記載する。</li>
+      <li>⑥ JA局の運用地：運用地が設置場所または常置場所と異なる場合は、運用地の都道府県をキャブリロ（Cabrillo）形式ではLOCATION：に、JARL電子ログ形式では&lt;OPPLACE&gt;に記入すること。運用場所の記載が無い場合はコールサインのエリア（ポータブル表示のある場合は、ポータブル表示のエリア）での運用とみなす。</li>
+    </ol>
+
+    <h3>（3）提出締切日</h3>
+    <p>コンテスト終了から10日後の24:00（UTC）必着</p>
+
+    <h3>（4）提出先</h3>
+    <ol>
+      <li>電子ログをWebからアップロードする場合 <a href="https://contest.jarl.org/upload-aa">https://contest.jarl.org/upload-aa</a></li>
+      <li>電子ログをE-mailで送信する場合 <a href="mailto:rtty@jarl.org">rtty@jarl.org</a></li>
+    </ol>
+
+    <h3>（5）ログデータの公開</h3>
+    <p>全てのログ提出局（CHECKLOGを除く）のログデータを結果発表後に公開する。</p>
+
+    <h2>10 賞</h2>
+    <p>
+      以下の局に、電子化した賞状を贈る。
+      </p>
+    <ol>
+      <li>（1）各種目における全世界1位の局</li>
+      <li>（2）各種目における各大陸1位の局</li>
+      <li>（3）各種目における各エンティティ1位の局</li>
+      <li>（4）シングルオペ各種目のYOUTHオーバーレイ種目における各大陸1位の局</li>
+      <li>（5）シングルオペ各種目における日本（JA）の各コールエリア1位の局（コールエリアは運用場所のエリアとする）</li>
+      <li>（6）（1）～（5）について、紙の賞状発行を希望する局は所定の手順で申請すること。</li>
+      <li>（7）ログを提出した全ての参加局（CHECKLOGは除く）に、電子化した参加証を贈る。</li>
+    </ol>
+
+    <h2>11 宣誓と失格事項等</h2>
+    <p>
+      書類の提出をすることにより、参加者は以下の事項を承諾したとみなす：
+      </p>
+    <ol>
+      <li>（1）本コンテスト規約を読み理解し、これに従うことに同意する。</li>
+      <li>（2）局所在地におけるアマチュア無線に関する全ての規則・規制に従って運用する。</li>
+      <li>（3）個人情報の利用について<br />JARLは、収集した個人情報についてJARLの実施するコンテスト業務遂行（集計・審査・賞状発送・広報活動）のためだけに利用する。</li>
+      <li>（4）コンテスト参加者は、提出したログ内容（個人情報は除く）が公開されることに同意したとみなす。ログ内容の公開を望まない場合はCHECKLOGとして提出すること。</li>
+      <li>（5）実際の運用状況等、ログ審査に必要とコンテスト委員会が判断した追加情報の提供に協力すること。</li>
+      <li>（6）この規約に定める事項に違反した場合、および、ログシートに虚偽の記載が認められた場合は、コンテスト審査において処分を決定する。この処分とは、減点、警告、エントリーのチェックログへの移行、失格等を言う。</li>
+      <li>（7）（6）およびコンテスト結果に対して異議の申し立てを受け、裁定の結果失格となった局は、失格の日から3年間はJARL主催コンテストに参加しても入賞を認めない。</li>
+      <li>（8）失格の局は、コールサインおよび失格の理由をWebサイトに発表する。</li>
+    </ol>
+
+    <h2>12 JARL登録クラブの得点および順位等</h2>
+    <p>JARL登録クラブの構成員（日本国内から参加したシングルオペ局とマルチオペ局1局）から申告された総得点をクラブごとに集計の上、登録クラブ種別ごとに順位を決定する。<br />
+    クラブ対抗に提出できるマルチオペ局のオペレータ（ゲストオペレータを含む）の半数以上はそのJARL登録クラブの構成員であること。JARL登録クラブについて、審査に必要な資料等の提出を求める場合がある。</p>
+
+    <h2>13 結果発表</h2>
+    <p>翌年4月頃を予定（JARL Web）</p>
+
+    <div style="margin-top: 20px;">
+      <a href="paper_certified.html">紙の賞状申請手順</a> &nbsp;
+      <a href="log_submission.html">ログ提出まとめ</a>
+    </div>
+
+    <button id="back-to-top" onclick="scrollToTop()">
+      <svg viewBox="0 0 24 24"><path d="M12 4l-8 8h6v8h4v-8h6z"/></svg>PAGE TOP
+    </button>
+  </div>
+
+  <footer>
+    <a href="https://www.jarl.org/">JARL HOME</a> | <a href="index.html">コンテストHOME</a><br />
+    <span style="color:white">&copy; 2026 日本アマチュア無線連盟</span>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

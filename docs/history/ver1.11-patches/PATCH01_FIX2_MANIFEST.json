@@ -1,0 +1,201 @@
+{
+  "version": "1.12",
+  "patch": "PATCH01_FIX2",
+  "base": "PSLog_1.11_PATCH01 + PATCH01_FIX1",
+  "scope": "Version bump to 1.12 and Windows release filename de-hardcoding",
+  "runtime_source_changed": true,
+  "files": [
+    {
+      "path": "VER1.12_PATCH01_FIX2_README.md",
+      "size": 1153,
+      "sha256": "d5aeb50c1a1a704f9dbdad3c0f037ba1f13c1d6aaef885002f7555b64faa8a6f"
+    },
+    {
+      "path": "WINDOWS_CHECKLIST.txt",
+      "size": 2169,
+      "sha256": "875edc5d04d5cec17b74ec9be6461fa28e611e91182e1ff159a1c61e83b3a2f5"
+    },
+    {
+      "path": "build-windows.ps1",
+      "size": 3607,
+      "sha256": "0428583e41f1cce7cd6c9ab97abb561b7b70b20f170fc234166e358bc72ace2f"
+    },
+    {
+      "path": "storage.py",
+      "size": 16626,
+      "sha256": "f65772c16887b0c8e293e33e079c5e8e15c28e46ee39029adb1c95a78d36b3db"
+    },
+    {
+      "path": "test_free_radio_111.py",
+      "size": 3932,
+      "sha256": "ca2a9aa7c0933d6309f6f87d53cdee3d0e18bc2361a7dc3c0e3163dfbccd4723"
+    },
+    {
+      "path": "test_full_restore.py",
+      "size": 7919,
+      "sha256": "29da6287b70882e152e880207f1045ff9459298bfeb39c5d9a5f528620f3ad7a"
+    },
+    {
+      "path": "test_patch01_1061.py",
+      "size": 10117,
+      "sha256": "d13abfe773b2b7c43d5aa9477207ef48ec374ffee904e116c55fb8a0bcedb444"
+    },
+    {
+      "path": "test_patch01_1071.py",
+      "size": 2870,
+      "sha256": "ec0dc239dd5e767d9c6f74aee5e6803c119ff5bfe7c947628e49f59a1fca2ebc"
+    },
+    {
+      "path": "test_patch02_1072.py",
+      "size": 3604,
+      "sha256": "87985abba2b8192019d7b792b02be5a7e8822f0fbed230e47f2c14e687fb89bf"
+    },
+    {
+      "path": "test_patch03.py",
+      "size": 2568,
+      "sha256": "f8640a88dc6a5b37cfd37c331b00f1acf2d0fcff38bb7e70285e51bf231bc927"
+    },
+    {
+      "path": "test_patch03_1063.py",
+      "size": 4220,
+      "sha256": "6e9db69f155aa73a3de9be073b5d5145e471f83c3dc63e83b91db1add3d6b3bd"
+    },
+    {
+      "path": "test_patch03_1073.py",
+      "size": 3149,
+      "sha256": "636fff11369a12ae251f08dd9b9492cbcc8a5f06ced30f87bca4d7f6bb910237"
+    },
+    {
+      "path": "test_patch04.py",
+      "size": 2919,
+      "sha256": "301bc02b831c26f98d62879a41820566d9a2b38abdf35a03924f86b6bdb28b38"
+    },
+    {
+      "path": "test_patch04_1064.py",
+      "size": 4218,
+      "sha256": "f8134e4f7337f9b555466975c0d9a8fe9317e2083450ca2b0dc6be5f111d4b8e"
+    },
+    {
+      "path": "test_patch04_1074.py",
+      "size": 6943,
+      "sha256": "74102a6c722ce8f746193ff0e85d99a10c229d37265c66c0fde0f5e9c2ddb789"
+    },
+    {
+      "path": "test_patch05.py",
+      "size": 2912,
+      "sha256": "bf234790cae5e1ef767bc9518c0304526e5447dea150751d06994be4ff7ae90c"
+    },
+    {
+      "path": "test_patch05_1065.py",
+      "size": 2917,
+      "sha256": "958137bb199153bd01b59f1e5487a44c8322e3408ed277d322de15fa01c6af8b"
+    },
+    {
+      "path": "test_patch05_1075.py",
+      "size": 3871,
+      "sha256": "3c81cf0e8e0026eee57e26250e1a6177e0a293389cb341a3c0b3c7ee10e34318"
+    },
+    {
+      "path": "test_patch06.py",
+      "size": 3765,
+      "sha256": "364dab37a5fd19ee66e30605e67135b3f34847f8e8b6ef8da965f1bebf0beb26"
+    },
+    {
+      "path": "test_patch06_1066.py",
+      "size": 3743,
+      "sha256": "93f8336de03c756fb6ad15475b01f829658e1f67814635fe9c6461ed81683e3c"
+    },
+    {
+      "path": "test_patch06_1076.py",
+      "size": 4100,
+      "sha256": "d0d9ad40b4bea503bcf8e35881e4d04756d39b5f70cf7b7d24395ec5f769050e"
+    },
+    {
+      "path": "test_patch07_1057.py",
+      "size": 1678,
+      "sha256": "5494b7be183099bf42c7aa7239ad557c9b431afaf088e7af07e9a63362e53fa7"
+    },
+    {
+      "path": "test_patch07_1067.py",
+      "size": 2630,
+      "sha256": "86fd6b27cdbb70b624c6b0328a48a0fb00c36f7c53a1e8a9bc1e5d5bed671d65"
+    },
+    {
+      "path": "test_patch07_1077.py",
+      "size": 4110,
+      "sha256": "6856f9b54395a5815258c552abd14d39b493ad2e32d1613a6a5775eae7e59f5d"
+    },
+    {
+      "path": "test_patch08_1058.py",
+      "size": 1920,
+      "sha256": "f6ca9ac33f57646f45995a8e30636c4d62604d8a08179eeea6342dba0b08147f"
+    },
+    {
+      "path": "test_patch08_1068.py",
+      "size": 997,
+      "sha256": "cf703bb9d9167736250802e8beb0f0b559bdf7195c7d88f64a21814ddae08b5b"
+    },
+    {
+      "path": "test_patch08_1078.py",
+      "size": 1653,
+      "sha256": "6e27facfdd6612581ebb9ee8cf1393abc5df6f711c0dbc43e67c7179c2c9f2bb"
+    },
+    {
+      "path": "test_patch08_fix1_1068.py",
+      "size": 2852,
+      "sha256": "6c1d88872af59bbfa450b7041e4f3ac0a71552a846471021ac8885f87f1fd35a"
+    },
+    {
+      "path": "test_patch09_1059.py",
+      "size": 3898,
+      "sha256": "9296ee6747611533f626c6eb3b059a568575cccfe28c393eabc0d6cbd0449fce"
+    },
+    {
+      "path": "test_patch09_1069.py",
+      "size": 1198,
+      "sha256": "8744505644799a1843e2ed58f91ce1db7918b1f5610ac028f1d8fe1bb9494c2c"
+    },
+    {
+      "path": "test_patch10.py",
+      "size": 3243,
+      "sha256": "6ff9f58610c76d0dae62be9ae7f42efd769d33a86235ed9489d3c6abb422961d"
+    },
+    {
+      "path": "test_patch10_1070.py",
+      "size": 2650,
+      "sha256": "a0944155c24d02e44ce0fcc7f8cd8b931fb0c51657ab8a23980943c85718caae"
+    },
+    {
+      "path": "test_patch10_1070_core.py",
+      "size": 1271,
+      "sha256": "494dbd17f8b45c5c0e0f4eebddbdc3a6e1fb1bafd43e28eb3c005eaa78087a54"
+    },
+    {
+      "path": "test_release_106.py",
+      "size": 3155,
+      "sha256": "be7b8e3caac50f956a441e5200b73dfba71e8743d28910959e106d0c914345f7"
+    },
+    {
+      "path": "test_v102.py",
+      "size": 3183,
+      "sha256": "f10a3ac1b458cdad7955bcba939abd556f9af55ea9f6f7d885d251f01adcfd98"
+    },
+    {
+      "path": "test_v103_initial.py",
+      "size": 2406,
+      "sha256": "e0edb043b4b1aea0df67262689eeba19a8fb4e16a589290f976f6b2ca57c2c83"
+    },
+    {
+      "path": "test_windows_package.py",
+      "size": 8424,
+      "sha256": "705e0519a66c5784e34bce48d43298ca8f47077652919f3f77c333beef502182"
+    }
+  ],
+  "validation": {
+    "python_compile": "34 changed Python files compiled successfully",
+    "non_gui_regression": "159 tests OK",
+    "windows_package_tests": "OK",
+    "version_order": "1.12 > 1.11, 1.101, 1.10 confirmed",
+    "gui": "PySide6-dependent GUI tests require Windows-side validation"
+  }
+}

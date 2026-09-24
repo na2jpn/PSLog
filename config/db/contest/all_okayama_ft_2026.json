@@ -1,0 +1,14 @@
+{
+  "source": "okayama_ft8_2026.html",
+  "inside": [],
+  "outside": [],
+  "id": "all_okayama_ft",
+  "year": 2026,
+  "municipal_source_versions": {
+    "jcc": "2019-05-01",
+    "jcg": "2018-10-01",
+    "ward": "2024-01-01",
+    "history": "2024-01-01"
+  },
+  "sha256": "ce99b84fc30c2a61319fcc347770a6610d424bdff7c0f775a44e827be8288b88"
+}

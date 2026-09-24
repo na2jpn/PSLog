@@ -1,0 +1,112 @@
+{
+  "patch": "Ver1.067 PATCH07",
+  "base": "Ver1.066 PATCH06 + FIX1 applied source",
+  "version": "1.067",
+  "files": [
+    {
+      "path": "CHANGELOG.md",
+      "sha256": "05fe627607b1af8f74c80c34e2dc55b16ddabd040be267aad081bc7d89b714c2"
+    },
+    {
+      "path": "VER1.067_PATCH07_README.md",
+      "sha256": "6bd88a93cb587f10bfb08c6e0def78d8afe3576f3b1c9fef9f96d69b61a6f662"
+    },
+    {
+      "path": "WINDOWS_BUILD.md",
+      "sha256": "14a988b06f785e0e60771d1b7153ef10e9112d95ae9beb758a43459ee1cb48c5"
+    },
+    {
+      "path": "build-windows.ps1",
+      "sha256": "882ebc864b4a4bdbb9a1ec86e7565c3d8e787216ab9e3d785615658189c8fef2"
+    },
+    {
+      "path": "qsl_batch.py",
+      "sha256": "ab012df97e5cdf46032408688455a26303c742c2b77b0e78ad9d55c3e730d7e4"
+    },
+    {
+      "path": "qsl_ui.py",
+      "sha256": "f06c0547b408c04dd10be35a22257f1467664ce83acb90fe3ae0c574a6cf4791"
+    },
+    {
+      "path": "storage.py",
+      "sha256": "8858580b8e83aa65b6b522bc56316b936787a16e1ed3e7faae1737bec659e9a5"
+    },
+    {
+      "path": "test_full_restore.py",
+      "sha256": "3211178f30e41ff40f7beb8b56c2b5a8c83993ebe7888b316edfdeee58b9c416"
+    },
+    {
+      "path": "test_patch01_1061.py",
+      "sha256": "a315caad028916458420295e3d944833260699d30b6e4deea4aae0022425a2fe"
+    },
+    {
+      "path": "test_patch03.py",
+      "sha256": "3498d5315a5cb6aee9670358665520a4a7fb07d8052e815e59b574a1b720e921"
+    },
+    {
+      "path": "test_patch03_1063.py",
+      "sha256": "c2e3de460194ddfd29170c980fb9357b0d4714993e20a6451354ffa6d2f32962"
+    },
+    {
+      "path": "test_patch04.py",
+      "sha256": "c7f4c5d780bcbc937b1a2d20d5fc221830e7b7a30ff2ad8a8f89dbb7c579c600"
+    },
+    {
+      "path": "test_patch04_1064.py",
+      "sha256": "9dfd13644ec0f89ada92b10339f6a205d4834bb9c76e3d8c8500c92ad0852532"
+    },
+    {
+      "path": "test_patch05.py",
+      "sha256": "996c192a253e4b97955f63b0d570caa773975ec0d49d8f51205b5ca666f954ef"
+    },
+    {
+      "path": "test_patch05_1065.py",
+      "sha256": "f5a7cc788891fa536a66dd96f94e73d08d825c5b003a8986763c8bbb4a90ff60"
+    },
+    {
+      "path": "test_patch06.py",
+      "sha256": "c598836483029c4a1c52cd1cf5cafd2fb4934e4cf88287eddf3a1e94595832f2"
+    },
+    {
+      "path": "test_patch06_1066.py",
+      "sha256": "b14bd17958bfe6f796623231c94b6115bbe287b88a1834854c72100ea04b1c8e"
+    },
+    {
+      "path": "test_patch07_1057.py",
+      "sha256": "88398ddec8d1d6055b207835aec19aa5a983ad7c5c117422fa16115a97f43550"
+    },
+    {
+      "path": "test_patch07_1067.py",
+      "sha256": "14f0262c6816b6e6d8dc526222f19fc8587d7e12dbe2f53e15da6817144d83dc"
+    },
+    {
+      "path": "test_patch08_1058.py",
+      "sha256": "ab3a46697d0a815eb8211cf109f5884bbbe630b9834fa1e419bbf0c40ccf6fbe"
+    },
+    {
+      "path": "test_patch09_1059.py",
+      "sha256": "9d334ed69543f90d0fa70300c19baf71d459d820d4e0c690fe3be19a448b6ec7"
+    },
+    {
+      "path": "test_patch10.py",
+      "sha256": "7d8c0741951c4683aa188cadf4de34f2018dc2a938232977cdbe46dc5227a519"
+    },
+    {
+      "path": "test_release_106.py",
+      "sha256": "827aa877f1f909c725e864052e024b6e8ac7e139d097fb2e7397278d1271d6dd"
+    },
+    {
+      "path": "test_v102.py",
+      "sha256": "f3e8c99ec8b6dee113181c9828d4805b959fefd544208ecf25e7d7118da10378"
+    },
+    {
+      "path": "test_v103_initial.py",
+      "sha256": "238c29eb68869b12d1b32c17bd63a9aa7aaa6c8d64f238ed12af00652ff7af43"
+    },
+    {
+      "path": "test_windows_package.py",
+      "sha256": "de375c8e8ba0b884ba60cde1d903aad818a0ab964f24f271b5855521a0bab514"
+    }
+  ],
+  "notes": "Apply over Ver1.066 PATCH06 + FIX1 source using relative paths. No user data files are included."
+}

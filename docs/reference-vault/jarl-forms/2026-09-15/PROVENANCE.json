@@ -1,0 +1,38 @@
+[
+  {
+    "stored_name": "jarl_summary_20260915.pdf.reference",
+    "url": "https://www.jarl.org/Japanese/1_Tanoshimo/1-1_Contest/summary-sheet.pdf",
+    "retrieved_at_utc": "2026-09-15T05:22:06.413875+00:00",
+    "original_extension": ".pdf",
+    "mime_type": "application/pdf",
+    "last_modified_header": "Thu, 04 Dec 2025 04:03:00 GMT",
+    "bytes": 141668,
+    "sha256": "360facd66a6bf100d6d9bf8ae6bc1a03630febf33b153b90f304ab80083501e4",
+    "content_modified": false,
+    "purpose": "開発参照用。アプリ配布対象外。自由利用許諾を示すものではない。"
+  },
+  {
+    "stored_name": "jarl_logsheet_20260915.pdf.reference",
+    "url": "https://www.jarl.org/Japanese/1_Tanoshimo/1-1_Contest/logsheet.pdf",
+    "retrieved_at_utc": "2026-09-15T05:22:06.659369+00:00",
+    "original_extension": ".pdf",
+    "mime_type": "application/pdf",
+    "last_modified_header": "Fri, 08 Feb 2019 02:16:00 GMT",
+    "bytes": 157067,
+    "sha256": "dbaa1d134b1a481921fa242046c0653ff6f92f90399e6d2393de87a2b95ef7f7",
+    "content_modified": false,
+    "purpose": "開発参照用。アプリ配布対象外。自由利用許諾を示すものではない。"
+  },
+  {
+    "stored_name": "paper_submission_20260915.html.reference",
+    "url": "https://www.jarl.org/Japanese/1_Tanoshimo/1-1_Contest/paper_submission.html",
+    "retrieved_at_utc": "2026-09-15T05:22:06.375958+00:00",
+    "original_extension": ".html",
+    "mime_type": "text/html",
+    "last_modified_header": "Thu, 19 Feb 2026 04:25:00 GMT",
+    "bytes": 6535,
+    "sha256": "5c42041817bb3bb1a88012daac29d1fc1e7d631798c65e1af8fc5d79be6bc32b",
+    "content_modified": false,
+    "purpose": "開発参照用。アプリ配布対象外。自由利用許諾を示すものではない。"
+  }
+]

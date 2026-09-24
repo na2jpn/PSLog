@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<link rel="stylesheet" type="text/css" href="http://libs.jj4kme.mydns.jp/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="common.css" />
+<link rel="stylesheet" type="text/css" href="uploadLog.css" />
+<script src="http://libs.jj4kme.mydns.jp/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="http://libs.jj4kme.mydns.jp/jQuery/jquery.js"></script>
+<script src="common.js"></script>
+<script src="uploadLog.js"></script>
+<title></title>
+</head>
+<body>
+<p id="message"></p>
+<p>zLog令和版、zLog令和版ALL形式への対応が完了しております。<br />
+どうしてもうまく取り込めない場合は、<span id="organizer_name"></span> まで連絡をお願いします</p>
+<p>zLog令和版への対応に伴い、旧来のzLogで作成されたログフォーマットは「非対応」となります、ご容赦ください SRY</p>
+<p>コンテストのサマリーとログはこちらからアップロードをお願いします<br />
+サマリーとログを入力後、「提出」ボタンを押してください<br />
+作成済みのファイルやテキストデータを取り込むこともできます</p>
+<br />
+<p>ログの提出手順</p>
+<ol>
+<li>ファイル形式とアップロード方法に応じて「ログとサマリーの取込」覧のボタンを押す</li>
+<li>「ログのタイムゾーン」を選択</li>
+<li>データをテキストファイルに保存してある場合はファイルをアップロード、テキストデータを貼り付ける場合は「テキストを貼付け」の欄に貼り付け</li>
+<li>「取込」ボタンを押す</li>
+<li>下段の「参加部門」以下に取り込んだ内容が表示されるので、内容に間違いが無いかを確認</li>
+<li>「提出」ボタンを押す</li>
+</ol>
+<!-- 取り込みフォーム -->
+<div id="import" class="modal" role="dialog" data-bs-backdrop="static" data-bs-keyboard="false"><div class="modal-dialog modal-dialog-centered" role="document"><div class="modal-content">
+	<div class="modal-header bg-primary text-white"><span class="modal-title">ログデータの取り込み</span></div>
+	<div class="modal-body"><form class="form" id="import">
+		<input type="hidden" id="contest_id" name="contest_id" />
+		<input type="hidden" id="fileType"   name="fileType"   />
+		<input type="hidden" id="method"     name="method"     />
+		<table class="table table-bordered w-auto">
+			<tbody>
+				<tr>
+					<th>フォーマット</th>
+					<td id="fileType"></td>
+				</tr>
+				<tr>
+					<th>ログのタイムゾーン</th>
+					<td>
+						<div class="row">
+							<div class="col-6"><div class="input-group">
+								<input class="input-group-check" id="timezone_jst" name="timezone" value="+09" type="radio" />
+								<label class="input-group-label" for="timezone_jst">ＪＳＴ</label>
+							</div></div>
+							<div class="col-6"><div class="input-group">
+								<input class="input-group-check" id="timezone_utc" name="timezone" value="+00" type="radio" />
+								<label class="input-group-label" for="timezone_utc">ＵＴＣ</label>
+							</div></div>
+						</div>
+						<div class="row">
+							<div class="col">
+								<span class="message">間違えると相手側のログと照合できなくなりますのでご注意</span></td>
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr id="file">
+					<th>ファイルをアップロード</th>
+					<td><input class="form-control" type="file" id="source" name="source" /></td>
+				</tr>
+				<tr id="text">
+					<th>テキストを貼付け</th>
+					<td><textarea class="form-control" id="source" name="source"></textarea></td>
+				</tr>
+			</tbody>
+		</table>
+		<p><span class="message">「取り込み開始」ボタンを押しただけでは提出は完了していません。ログの内容を確認して、最下部の「提出」ボタンを押してください</span></p>
+	</form></div>
+	<div class="modal-footer">
+		<button class="btn btn-danger"  id="import_start" >取り込み開始</button>
+		<button class="btn btn-primary" id="import_cancel">キャンセル</button>
+	</div>
+</div></div></div>
+<div class="card">
+	<div class="card-header fw-bold">ログとサマリーの取り込み</div>
+	<div class="card-body"><table class="table table-bordered w-auto" id="import"><tbody>
+		<tr>
+			<th>ＪＡＲＬ形式<br /><span>(R1.0, R2.0, R2.1とも)</span></th>
+			<td><button class="btn btn-primary me-1" id="jarl_file">ファイルから</button>
+				<button class="btn btn-primary"      id="jarl_text">テキスト貼付</button></td>
+		</tr>
+		<tr>
+			<th>Cabrillo形式<br /><span>(2.0, 3.0とも)</span></th>
+			<td><button class="btn btn-primary me-1" id="cabrillo_file">ファイルから</button>
+				<button class="btn btn-primary"      id="cabrillo_text">テキスト貼付</button></td>
+		</tr>
+	</tbody></table></div>
+</div>
+<form class="form" id="register" onsubmit="return false">
+	<input type="hidden"                 name="method"    value="register" />
+	<input type="hidden" id="contest_id" name="contest_id" />
+	<input type="hidden" id="timezone"   name="timezone"  value="+09" />
+	<input type="hidden" id="file_name"  name="file_name" value="" />
+	<input type="hidden" id="status"     name="status"    value="1" />
+
+	<div class="card">
+		<div class="card-header fw-bold">サマリーシート</div>
+		<div class="card-body">
+			<div class="row g-1">
+				<div class="col-2 position-relative">
+					<label for="category-code">参加部門コード</label>
+					<input type="text" class="form-control" id="category-code" onblur="onBlur_CategoryCode(this);" />
+					<div class="invalid-tooltip"></div>
+				</div>
+				<div class="col position-relative">
+					<label for="category">参加部門</label>
+					<select class="form-select" id="category" name="category" onchange="onChange_CategoryName(this);"></select>
+					<div class="invalid-tooltip"></div>
+				</div>
+			</div>
+			<div class="row mt-3">
+				<div class="col-3 position-relative">
+					<label for="owner">運用したコールサイン</label>
+					<input type="text" class="form-control" id="owner" name="owner" maxlength="12" onkeypress="return onKeyPress_Owner(event);" onblur="onBlur_Owner(this);" placeholder="JA4QRO" />
+					<span class="message">&quot;/4&quot;等も含めて入力ください</span>
+					<div class="invalid-tooltip"></div>
+				</div>
+				<div class="col-4 position-relative">
+					<label for="name">氏名(社団名)</label>
+					<input type="text" class="form-control" id="name" name="name" onblur="onBlur_Name(this);" placeholder="コン テス太" />
+					<div class="invalid-tooltip"></div>
+				</div>
+				<div class="col-5 position-relative">
+					<label for="email">Ｅメールアドレス</label>
+					<input type="text" class="form-control" id="email" name="email" placeholder="callsign@jarl.com" />
+					<div class="invalid-tooltip"></div>
+				</div>
+			</div>
+			<div class="row mt-3">
+				<div class="col position-relative">
+					<label for="address">連絡先住所</label>
+					<input type="text" class="form-control" id="address" name="address" onblur="onBlur_Address(this);" />
+					<span class="message">未入力の場合、賞状をお送りすることができません</span>
+				</div>
+			</div>
+			<div class="row mt-3">
+				<div class="col position-relative">
+					<label for="multioplist">運用者リスト</label>
+					<input type="text" class="form-control" id="multioplist" name="multioplist" />
+				</div>
+			</div>
+			<div class="row mt-3">
+				<div class="col position-relative">
+					<label for="comments">コメント</label>
+					<input type="text" class="form-control" id="comments" name="comments" />
+				</div>
+			</div>
+			<div class="row mt-3">
+				<div class="col-6 d-none" id="box_regclub">
+					<div class="row gx-0">
+						<div class="col-4 position-relative pe-0">
+							<label for="regclubnumber">登録クラブ番号</label>
+							<input type="text" class="form-control" id="regclubnumber" name="regclubnumber" maxlength="10" onkeypress="return onKeyPress_Regclubnumber(event);" onblur="onBlur_Regclubnumber(this);" />
+							<div class="invalid-tooltip"></div>
+						</div>
+						<div class="col-8 position-relative ps-0">
+							<label></label>
+							<input type="text" class="form-control" id="regclubname" readonly="readonly" />
+						</div>
+					</div>
+					<div class="row"><div class="col">&nbsp;<br />&nbsp;</div></div>
+				</div>
+				<div class="col-6 d-none" id="box_password">
+					<div class="row gx-0">
+						<div class="col position-relative pe-0">
+							<label for="password1">成績閲覧用パスワード</label>
+							<input type="password" class="form-control" maxlength="72" id="password1" placeholder="パスワード" name="password" />
+						</div>
+						<div class="col position-relative ps-0" id="password">
+							<label></label>
+							<input type="password" class="form-control" maxlength="72" id="password2" placeholder="パスワード(確認用)" />
+						</div>
+					</div>
+					<div class="row"><div class="col">
+						<span class="message">７２文字以内で同じものを２回入力してください。<br />未入力の場合、ご自身で照合結果を閲覧することができません</span>
+					</div></div>
+				</div>
+			</div>
+			<label>暫定スコア</label>
+			<table class="table table-bordered w-auto" id="score">
+				<thead><tr>
+					<th id="band"   >周波数帯</th>
+					<th id="numqso" >ＱＳＯ数</th>
+					<th id="point"  >点数</th>
+					<th id="multi"  >マルチ</th>
+					<th id="score"  >得点</th>
+				</tr></thead>
+				<tbody></tbody>
+				<tfoot><tr>
+					<th class="fs-6" id="band_0"  >合計</th>
+					<td class="fs-6" id="numqso_0"></td>
+					<td class="fs-6" id="point_0" ></td>
+					<td class="fs-6" id="multi_0" ></td>
+					<td class="fs-6" id="score_0" ></td>
+				</tr></tfoot>
+			</table>
+		</div>
+	</div>
+	<div class="card">
+		<div class="card-header fw-bold">ログシート</div>
+		<div class="card-body">
+			<table class="table table-bordered w-auto" id="kensu">
+				<tbody><tr>
+					<th>ログデータ件数</th>
+					<td id="logCount" class="text-end">0</td>
+<!--
+					<th>ログフォーマット</th>
+					<td id="logType"></td>
+-->
+				</tr></tbody>
+			</table>
+			<table class="table table-bordered w-auto" id="log">
+				<thead><tr>
+					<th id="datetime">交信日時(<span id="timezone">JST</span>)</th>
+					<th id="callsign">相手の<br />コールサイン</th>
+					<th id="frequency">周波数帯</th>
+					<th id="mode">電波の型式</th>
+					<th id="sentNumber">送信ナンバー</th>
+					<th id="recvNumber">受信ナンバー</th>
+					<th id="button">&nbsp;</th>
+				</tr></thead>
+				<tbody></tbody>
+				<tfoot>
+					<tr id="input">
+						<td class="datetime"><div class="d-flex flex-row">
+							<div class="position-relative">
+								<input type="date" class="form-control p-1" id="workdate" onblur="onBlur_Date(this);" />
+								<div class="invalid-tooltip"></div>
+							</div>
+							<div class="position-relative">
+								<input type="time" class="form-control p-1" id="worktime" onblur="onBlur_Time(this);" />
+								<div class="invalid-tooltip"></div>
+							</div>
+						</div></td>
+						<td class="callsign position-relative">
+							<input type="text" class="form-control p-1" id="callsign" maxlength="12" onkeypress="return onKeyPress_Callsign(event);" onblur="onBlur_Callsign(this);" />
+							<div class="invalid-tooltip"></div>
+						</td>
+						<td class="freq"><div class="input-group position-relative">
+							<select id="freq" class="form-select p-1" onblur="onBlur_Freq(this);"></select>
+							<span class="input-group-text p-1">MHz</span>
+							<div class="invalid-tooltip"></div>
+						</div></td>
+						<td class="mode"><div class="position-relative">
+							<select id="mode" class="form-select p-1" onblur="onBlur_Mode(this);"></select>
+							<div class="invalid-tooltip"></div>
+						</div></td>
+						<td class="sentNumber"><div class="d-flex flex-row">
+							<div class="position-relative">
+								<input type="text" class="form-control p-1" id="sent_rst" maxlength="3" onkeypress="return onKeyPress_Rst(event);" onblur="onBlur_Rst(this);" />
+								<div class="invalid-tooltip"></div>
+							</div>
+							<div class="position-relative">
+								<input type="text" class="form-control p-1" id="sent_multi" maxlength="10" onkeypress="return onKeyPress_Multi(event);" onblur="onBlur_Multi(this);" />
+								<div class="invalid-tooltip"></div>
+							</div>
+						</div></td>
+						<td class="recvNumber"><div class="d-flex flex-row">
+							<div class="position-relative">
+								<input type="text" class="form-control p-1" id="recv_rst"   maxlength="3" onkeypress="return onKeyPress_Rst(event);"   onblur="onBlur_Rst(this);" />
+								<div class="invalid-tooltip"></div>
+							</div>
+							<div class="position-relative">
+								<input type="text" class="form-control p-1" id="recv_multi" maxlength="7" onkeypress="return onKeyPress_Multi(event);" onblur="onBlur_Multi(this);" />
+								<div class="invalid-tooltip"></div>
+							</div>
+						</div></td>
+						<td><button class="btn btn-sm btn-primary" onclick="addRow(event);" disabled="disabled">追加</button></td>
+					</tr>
+					<tr id="message">
+						<td colspan="7"><span class="message">一番下の行は登録されません。必ず「追加」ボタンを押してください</span></td>
+					</tr>
+				</tfoot>
+			</table>
+		</div>
+	</div>
+	<div class="card">
+		<div class="card-header fw-bold">確認と提出</div>
+		<div class="card-body">
+			<table class="table table-bordered w-auto" id="oath">
+				<tr id="replaceLog">
+					<td><div class="position-relative">
+						<label for="replaceLog"><span class="message">ﾁｪｯｸ</span></label>
+						<input type="checkbox" id="replaceLog" />
+					</div></td>
+					<td class="align-middle">既に提出されている同じ参加部門のログが削除されることに同意します</td>
+				</tr>
+			</table>
+			<button id="register" class="btn btn-primary">提　出</button>
+		</div>
+	</div>
+</form>
+<!-- コールサインの説明 -->
+<div id="helpCallsign" class="helpContent">
+	<p>小文字での入力も可能です。大文字に変換します。</p>
+</div>
+<!-- ヘッダー -->
+<div id="header" class="fixed-top text-center bg-light border border-primary border-2 rounded pt-1 pb-1">
+	<h2><span id="contest_name"></span> ログアップロード</h2>
+</div>
+<!-- フッター -->
+<div id="footer" class="fixed-bottom text-end bg-light border-top border-primary border-2 pt-1 pb-1 pe-3">
+	<span id="organizer_name"></span>
+</div>
+<!-- ダイアログフォーム -->
+<div id="dialog" class="modal" tabindex="-1" role="dialog" data-bs-backdrop="static" data-bs-keyboard="false"><div class="modal-dialog modal-dialog-centered" role="document"><div class="modal-content">
+	<div class="modal-header bg-primary text-white"><span class="modal-title"></span></div>
+	<div class="modal-body"><p></p></div>
+	<div class="modal-footer"></div>
+</div></div></div>
+<!-- 待機中背景 -->
+<div id="wait"></div>
+</body>
+</html>

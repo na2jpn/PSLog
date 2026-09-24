@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>CQ VHF  - Cabrillo Log Format</title>
+<meta charset="UTF-8">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<link rel="preload" as="style" href="/design/cq-w3.css">
+<link rel="preload" as="style" href="/design/fontawesome6/css/fontawesome.min.css">
+<link rel="preload" as="script" href="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js">
+<link rel="preload" as="script" href="/design/doubletaptogo.min.js">
+<link href="/design/cq-w3.css" rel="stylesheet">
+<link href="/design/fontawesome6/css/fontawesome.min.css" rel="stylesheet">
+<link href="/design/fontawesome6/css/solid.css" rel="stylesheet">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script></head>
+
+<body>
+
+<div class="w3-container container-max1366">
+	<div class="w3-right w3-hide-small w3-small toptext">
+		Other Contests: 
+		<a href="https://cqww.com" class="w3-button w3-white w3-border w3-border-gray w3-round w3-padding-small">CQ WW</a>
+		<a href="https://cqwpx.com/" class="w3-button w3-white w3-border w3-border-gray w3-round w3-padding-small">CQ WPX</a>
+		<a href="https://cqwwrtty.com" class="w3-button w3-white w3-border w3-border-gray w3-round w3-padding-small">CQ WW RTTY</a>
+		<a href="https://cqwpxrtty.com" class="w3-button w3-white w3-border w3-border-gray w3-round w3-padding-small">CQ WPX RTTY</a>
+		<a href="https://cq160.com" class="w3-button w3-white w3-border w3-border-gray w3-round w3-padding-small">CQ 160</a>
+		<a href="https://cqww-vhf.com" class="w3-button w3-white w3-border w3-border-gray w3-round w3-padding-small">CQ VHF</a>
+		<a href="https://ww-digi.com" class="w3-button w3-white w3-border w3-border-gray w3-round w3-padding-small">WW DIGI</a>
+	</div>
+</div>
+<div class='w3-row'>
+
+	<div class="w3-cell w3-cell-middle">
+		<a href="/index.htm">
+		<img alt="CQ Logo" src="/images/CQ-logo.png" style="margin: 8px; height: 104px; height: 6.15vw; min-height: 41px; width: 100px; width: 6vw; min-width: 40px;" >
+		</a>
+	</div>
+	<div class="w3-cell w3-cell-middle">
+		<p style="margin: 8px;" class="contestname">CQ World Wide VHF Contest</p>
+	</div>
+</div>
+
+<nav id="nav">
+	<a href="#nav" title="Show navigation">Show navigation</a>
+	<a href="#" title="Hide navigation">Hide navigation</a>
+	<ul>
+		<li><a href="/index.htm"><i class="fa-solid fa-house"></i> Home</a></li>
+		<li><a href="/rules.htm" aria-haspopup="true">Rules  <i class="fa-solid fa-caret-down"></i></a>
+		<ul>
+			<li><a href="/rules/">Rules</a></li>
+			<li><a href="/rules/2026_cq_ww_vhf_rules.pdf">Rules (pdf)</a></li>
+			<li><a href="/rules/rules_archive">Rules Archive</a></li>
+		</ul>
+		</li>
+		<li><a href="/plaques/">Plaques</a></li>
+		<li><a href="/results/" aria-haspopup="true">Results <i class="fa-solid fa-caret-down"></i></a> 
+		<ul>
+			<li><a href="/results/">Results Articles</a></li>
+			<li><a href="/scores-ssb.htm"><i class="fa-solid fa-rectangle-list"></i> Final Scores SSB/CW</a></li>
+			<li><a href="/scores-digital.htm"><i class="fa-solid fa-rectangle-list"></i> Final Scores Digital</a></li>
+			<li><a href="/scores.htm"><i class="fa-solid fa-rectangle-list"></i> Final Scores (2000-2024)</a></li>
+			<li><a href="/clubscores.htm">Club Scores</a></li>
+			<li><a href="/scatter.htm">Scatter Comments</a></li>
+			<li><a href="/stats.htm">Entry Statistics</a></li>
+		</ul>
+		</li>
+			<li><a href="/records.htm">Records<i class="fa-solid fa-caret-down"></i></a>
+		<ul>
+			<li><a href="/records-ssb.htm"><i class="fa-solid fa-rectangle-list"></i> Records SSB/CW</a></li>
+			<li><a href="/records-digital.htm"><i class="fa-solid fa-rectangle-list"></i> Records Digital</a></li>
+			<li><a href="/records.htm"><i class="fa-solid fa-rectangle-list"></i> Records (2000-2024)</a></li>
+		</ul>
+		</li>
+		<li><a href="/logs.htm" aria-haspopup="true">Logs  <i class="fa-solid fa-caret-down"></i></a>
+		<ul>
+			<li><a href="/logs.htm">How to Submit Your Log</a></li>
+			<li><a href="/logcheck/"><i class="fa-solid fa-arrow-up-from-bracket"></i> Cabrillo Log Upload</a></li>
+			<li><a href="/adif/"><i class="fa-solid fa-wand-magic-sparkles"></i> ADIF Log Converter</a></li>
+			<li><a href="/cabrillo.htm">Cabrillo File Format</a></li>
+			<li><a href="/ft8.htm">Logging FT8 QSOs</a></li>
+			<li><a href="/clubnames.htm">Club Names</a></li>
+			<li><a href="/logs_received_digi.htm">Logs Received - Digital</a></li>
+			<li><a href="/logs_received_ssbcw.htm">Logs Received - SSB/CW</a></li>
+		</ul>
+		<li><a href="/contact/" aria-haspopup="true">Contact Us  <i class="fa-solid fa-caret-down"></i></a>
+		<ul>
+			<li><a href="/contact/"><i class="fa-solid fa-arrows-to-circle"></i> Contact Form</a></li>
+			<li><a href="/organization.htm"><i class="fa-solid fa-people-group"></i> Organization</a></li>
+		</ul>
+		</li>
+	</ul>
+</nav>
+
+<script src="/design/doubletaptogo.min.js" async></script>
+
+<script>
+	$( function()
+	{
+		$( '#nav li:has(ul)' ).doubleTapToGo();
+	});
+</script>
+
+
+<div class='w3-container container-max1200'>
+<div class='w3-left-align w3-border-bottom w3-text-red'><h1>Cabrillo Log Format for the CQ WW VHF Contest</h1></div>
+
+<p>Cabrillo refers to a universal log file format managed by the <a href="http://wwrof.org" target='blank'>
+World Wide Radio Operators Foundation</a> (WWROF). 	Cabrillo is the required format for CQ WW DX Contest logs.</p>
+
+<p>There are two versions of the Cabrillo log file format. The CQ WW VHF Contest accepts both Cabrillo v2 
+and v3 format files. One of the major changes from v2 to v3 was in the way categories are specified. 
+We strongly request that you submit logs using the Cabrillo v3 format if possible. </p>
+
+<p>[<a href="#Cabrillo_File_Version_2">Jump to Cabrillo v2</a>]</p>
+
+<h3>Cabrillo Version 3 Header for the CQ WW DX Contest</h3>
+
+<p>Below is an example of a Cabrillo v3 file for the CQ WW VHF Contest.</p>
+<pre>
+START-OF-LOG: 3.0
+CONTEST: CQ-VHF-SSBCW
+CALLSIGN: AA1ZZZ
+LOCATION: WMA
+CATEGORY-OPERATOR: SINGLE-OP
+CATEGORY-BAND: ALL
+CATEGORY-POWER: HIGH
+CATEGORY-MODE: SSB
+CATEGORY-TRANSMITTER: ONE
+CLAIMED-SCORE: 9447
+CLUB: My Contest Club
+CREATED-BY: SuperLogger v1.0
+NAME: John Smith
+ADDRESS: 100 Main St
+ADDRESS-CITY: Uxbridge
+ADDRESS-STATE-PROVINCE: MA
+ADDRESS-POSTALCODE: 01569
+ADDRESS-COUNTRY: USA
+OPERATORS: K5ZD
+SOAPBOX: Put your comments here.
+SOAPBOX: Use multiple lines if needed.
+QSO:  50  CW  2001-07-17 1817 AA1ZZZ  FN31    W2AJM  FN21
+QSO:  50  PH  2001-07-17 1819 AA1ZZZ  FN31    N1DMJ  FN32
+QSO: 144  PH  2001-07-17 1826 AA1ZZZ  FN31    W1XX   FN31
+END-OF-LOG:
+</pre>
+
+<p>The format for each line is <b>&lt;LABEL&gt;</b>: followed by a space.</p>
+
+<p><b>START-OF-LOG:</b> version-number X.X<br>
+Must be the first line of the log submission. This file is version 3.0.</p>
+
+<p><b>CALLSIGN:</b> <i>callsign</i><br>
+The callsign used during the contest.</p>
+
+<p><b>CONTEST:</b> <i>contest-name</i><br>
+The contest-name must be:</p>
+<ul>
+	<li>CQ-VHF-SSBCW</li>
+	<li>CQ-VHF-DIGI</li>
+</ul>
+
+<p><i>Be sure to use hyphens as shown.</i></p>
+
+<p><b>CATEGORY-OPERATOR:</b> <i>text</i><br>
+The category-operator <b>must</b> be one of the following.</p>
+<ul>
+	<li>SINGLE-OP </li>
+	<li>ROVER </li>
+	<li>HILLTOPPER </li>
+	<li>MULTI-OP </li>
+	<li>CHECKLOG </li>
+</ul>
+
+<p><b>CATEGORY-BAND:</b> <i>text</i><br>
+The category-band must be one of the following. If you are entering an all 
+band category, use ALL, otherwise select one of the individual bands shown.</p>
+<ul>
+	<li>ALL </li>
+	<li>6M</li>
+	<li>2M</li>
+</ul>
+
+<p><b>CATEGORY-POWER:</b> <i>text</i><br>
+The category-power must be one of the following.</p>
+<ul>
+	<li>HIGH </li>
+	<li>LOW </li>
+	<li>QRP </li>
+</ul>
+
+<p><b>CATEGORY-MODE:</b> <i>text</i><br>
+The category-mode must be one of the following.</p>
+<ul>
+	<li>SSB</li>
+	<li>CW</li>
+	<li>DG</li>
+	<li>FM</li>
+	<li>MIXED</li>
+</ul>
+
+<p><b>CLAIMED-SCORE:</b>&nbsp; <i>integer</i><br>
+The claimed-score of the log submission, in integer form such as 1217315 
+or 19113 or 12. Do not include commas or other text.</p>
+
+<p><b>CLUB:</b> <i>text </i><br>
+Name of the radio club with which the score should be aggregated. <b>PLEASE 
+SPELL OUT THE CLUB NAME! </b>(See<a href="clubnames.htm"> list of active club names</a>.)</p>
+
+<p><b>CREATED-BY</b>: <i>text</i> <br>
+Name and version of the logging program used to create the Cabrillo file. 
+(This field is optional.) </p>
+
+<p><b>LOCATION:</b> <i>text</i><br>
+USA and Canada stations please put your State, Province, or ARRL Section. 
+All others please put DX. (See <a href="https://cqww.com/locations.htm">list of accepted entries</a>.)</p>
+
+<p><b>EMAIL:</b> <i>text</i> <br>
+A place to put an email address where we can contact you if there is a question 
+about your log. This field is required.</p>
+
+<p><b>NAME</b>: <i>text</i> <br>
+Name. Maximum of 75 characters long.</p>
+
+<p><b>ADDRESS</b>: <i>text</i> <br>
+Mailing address, each line should be a maximum of 45 characters long. Up 
+to 6 address lines are permitted.</p>
+
+<p><b>ADDRESS-CITY:</b> <i>text</i> <b><br>
+ADDRESS-STATE-PROVINCE:</b> <i>text</i> <b><br>
+ADDRESS-POSTALCODE:</b> <i>text</i> <br>
+Optional fields for providing mailing address details.</p>
+
+<p><b>ADDRESS-COUNTRY:</b> <i>text</i> <br>
+US Postal Service name for the country of your mailing address.</p>
+
+<p><b>OPERATORS:</b> <i>callsign1 [callsign2 callsign3...]</i><br>
+A space-delimited list of operator callsigns for multi operator stations, 
+or single operator entries who wish to show they operated at another station.  
+If you operated at another station, you may list it by prepending an @ sign, 
+e.g., W1ABC, W2DEF, W3GHI @W3BGN. <b>NOTE:</b> If you select a multi-operator 
+category and do not enter operator callsigns in this field, the robot will 
+reject your log. <strong>Please use a space or a comma between the operator calls.</strong></p>
+
+<p><b>SOAPBOX</b>: <i>text</i><br>
+Enter as many lines of soapbox text as you wish. Each line is a maximum 
+of 75 characters long and must begin with SOAPBOX: followed by a space.</p>
+
+<p><strong>X-&lt;anything&gt;:</strong> <i>text</i><br>
+Lines beginning with X- are ignored by the robot and log checking software.&nbsp; 
+Use this for adding comment lines to your log. <em>Exception:</em> See X-QSO below. </p>
+
+<p><b>QSO</b>: <i>qso-data</i><br>
+The qso-data format is shown below. </p>
+
+<pre>
+		--------info sent------- -------info rcvd--------
+QSO: band  mo date       time sent call  sent QRA rcvd call  rcvd QRA 
+QSO: ***** ** yyyy-mm-dd nnnn *********  ****     *********  ****
+QSO:  144  PH 2000-11-26 0711 W1XX       FN41     JT1Z/P     IN56
+000000000111111111122222222223333333333444444444455555555556666666666777777777788
+123456789012345678901234567890123456789012345678901234567890123456789012345678901
+</pre>
+
+<p>Valid entries in the mode field for the SSB/CW contest are CW, FM and PH.  Valid entry in the mode field 
+for the DIGITAL contest is DG.</p>
+
+<p>Note: The CQ WW VHF log checking software uses spaces for delimiters 
+between fields. It is not necessary for all columns to line up in the 
+columns shown above.</p>
+
+<p><b>X-QSO</b>: <i>qso-data</i><br>
+Any QSO marked with this tag will be ignored in your log and credit will 
+be given to the other station. </p>
+
+<p><b>END-OF-LOG:</b><br>
+Must be the last line of the log submission.</p>
+
+<h4>More Information about Cabrillo</h4>
+<p>The CQ WW VHF Contest only recognizes the Cabrillo fields shown on this page. 
+The complete Cabrillo specification can be found at
+<a href="https://wwrof.org/cabrillo/">https://wwrof.org/cabrillo/</a>.</p>
+
+</div>
+<p>&nbsp;</p>
+<div class="w3-bar w3-indigo w3-padding w3-small w3-section container-max1366">
+Copyright &copy; 
+2011-2026 
+<a href="https://wwrof.org" target="blank">World Wide Radio Operators Foundation, Inc.</a>. All Rights Reserved.
+</div>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-W8W699LCG0"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-W8W699LCG0');
+</script> 
+
+</body>
+</html>

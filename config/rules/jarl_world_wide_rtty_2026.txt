@@ -1,0 +1,300 @@
+{
+  "schema": 2,
+  "id": "jarl_world_wide_rtty",
+  "name": "JARL World Wide RTTY",
+  "year": 2026,
+  "url": "https://www.jarl.org/Japanese/1_Tanoshimo/1-1_Contest/rtty_rules.html",
+  "organizer": "JARL",
+  "sort_name": "JARL World Wide RTTY",
+  "points": {
+    "cw": 1,
+    "phone": 1,
+    "digital": 0
+  },
+  "conditions": [],
+  "duplicate": {
+    "enabled": true,
+    "by_mode": false
+  },
+  "multi1": {
+    "kind": "off",
+    "start": 0,
+    "length": 2,
+    "per_band": true
+  },
+  "multi2": {
+    "kind": "off",
+    "value": 1,
+    "condition": {
+      "all": []
+    }
+  },
+  "formula": "total",
+  "scoring": {
+    "eligible": {
+      "all": []
+    },
+    "multipliers": [
+      {
+        "id": "region",
+        "source": "area",
+        "kind": "whole",
+        "start": 0,
+        "length": 2,
+        "per_band": true,
+        "when": {
+          "all": []
+        }
+      }
+    ],
+    "bonus": 0
+  },
+  "event": {
+    "timezone": "UTC",
+    "windows": [
+      {
+        "start": "2026-10-17 00:00",
+        "end": "2026-10-19 00:00",
+        "bands": [
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28"
+        ]
+      }
+    ],
+    "categories": [
+      {
+        "id": "SOHP",
+        "name": "SOHP",
+        "bands": [
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28"
+        ],
+        "modes": [
+          "RTTY"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 5,
+        "min_calls": 1,
+        "required_flags": [
+          "Baudot RTTYのみ。SO全帯1波、MOは各帯1波最大5帯。JA/K/VE/VK本土と島嶼、JD1の2エンティティを実運用地で区別した。未受信番号の事後修正なし"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "own_entity",
+            "own_continent",
+            "exchange_age",
+            "youth",
+            "youth_birth"
+          ]
+        }
+      },
+      {
+        "id": "SOLP",
+        "name": "SOLP",
+        "bands": [
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28"
+        ],
+        "modes": [
+          "RTTY"
+        ],
+        "max_power": 100,
+        "min_bands": 1,
+        "max_bands": 5,
+        "min_calls": 1,
+        "required_flags": [
+          "Baudot RTTYのみ。SO全帯1波、MOは各帯1波最大5帯。JA/K/VE/VK本土と島嶼、JD1の2エンティティを実運用地で区別した。未受信番号の事後修正なし"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "own_entity",
+            "own_continent",
+            "exchange_age",
+            "youth",
+            "youth_birth"
+          ]
+        }
+      },
+      {
+        "id": "SOQRP",
+        "name": "SOQRP",
+        "bands": [
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28"
+        ],
+        "modes": [
+          "RTTY"
+        ],
+        "max_power": 5,
+        "min_bands": 1,
+        "max_bands": 5,
+        "min_calls": 1,
+        "required_flags": [
+          "Baudot RTTYのみ。SO全帯1波、MOは各帯1波最大5帯。JA/K/VE/VK本土と島嶼、JD1の2エンティティを実運用地で区別した。未受信番号の事後修正なし"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "own_entity",
+            "own_continent",
+            "exchange_age",
+            "youth",
+            "youth_birth"
+          ]
+        }
+      },
+      {
+        "id": "MMHP",
+        "name": "MMHP",
+        "bands": [
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28"
+        ],
+        "modes": [
+          "RTTY"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 5,
+        "min_calls": 1,
+        "required_flags": [
+          "Baudot RTTYのみ。SO全帯1波、MOは各帯1波最大5帯。JA/K/VE/VK本土と島嶼、JD1の2エンティティを実運用地で区別した。未受信番号の事後修正なし"
+        ],
+        "operator": "MO",
+        "regional": {
+          "required_declarations": [
+            "own_entity",
+            "own_continent",
+            "exchange_age",
+            "youth",
+            "youth_birth"
+          ]
+        }
+      },
+      {
+        "id": "MMLP",
+        "name": "MMLP",
+        "bands": [
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28"
+        ],
+        "modes": [
+          "RTTY"
+        ],
+        "max_power": 100,
+        "min_bands": 1,
+        "max_bands": 5,
+        "min_calls": 1,
+        "required_flags": [
+          "Baudot RTTYのみ。SO全帯1波、MOは各帯1波最大5帯。JA/K/VE/VK本土と島嶼、JD1の2エンティティを実運用地で区別した。未受信番号の事後修正なし"
+        ],
+        "operator": "MO",
+        "regional": {
+          "required_declarations": [
+            "own_entity",
+            "own_continent",
+            "exchange_age",
+            "youth",
+            "youth_birth"
+          ]
+        }
+      }
+    ],
+    "required_flags": [
+      "実運用地・免許・出力・原典の周波数を確認し、設備は単一所在地の直径500m内、場外受信機・セルフスポットなし。原番号を事後DBから補っていない",
+      "原典の同時送信・交信成立・参加数・クラブ資格と公開条件を確認した。各部門のSO/MOは実運用者で選んだ"
+    ],
+    "duplicate_fields": [
+      "call",
+      "band"
+    ],
+    "prefer": "first",
+    "special": "none",
+    "entrant": {
+      "station_types": [
+        "individual",
+        "club"
+      ],
+      "guest_policy": "allowed"
+    },
+    "normalization": {
+      "bands": {
+        "3.5MHZ": "3.5",
+        "7MHZ": "7",
+        "14MHZ": "14",
+        "21MHZ": "21",
+        "28MHZ": "28",
+        "1.8": "1.9"
+      },
+      "modes": {
+        "USB": "SSB",
+        "LSB": "SSB"
+      },
+      "mode_families": {
+        "RTTY": "digital"
+      }
+    },
+    "regional": {
+      "profile": "jarl_rtty",
+      "declarations": {
+        "own_entity": "自局DXCC識別子（本土JA/K/VE/VK、島嶼は別ID）",
+        "own_continent": "自局の実運用大陸",
+        "exchange_age": "実際に送った年齢・平均又は01/00/99",
+        "youth": "YOUTH 又は NONE",
+        "youth_birth": "YOUTHの生年月日 YYYY-MM-DD（NONEは -）"
+      }
+    },
+    "submission": {
+      "formats": [
+        "Cabrillo",
+        "JARL R1.0",
+        "JARL R2.1"
+      ],
+      "zone": "UTC",
+      "contest": "JARL World Wide RTTY",
+      "instructions": "2026第1回保存版。JARL電子ログUTC。Web contest.jarl.org/upload-aa 推奨、rtty@jarl.orgも可、10月29日00:00UTC締切。Cabrillo3対応。CONTEST等未指定ヘッダーは暫定・編集可能で提出フォームで確認。周波数はMHz帯域表示。年齢は実交換（01/00/99可）、MOは平均。YOUTHはSO開始時25歳以下でAGE/意見欄へ記載。公海MM自己局は得点掲載・表彰対象外。主催受付・Windows実機未検証。",
+      "club_entry": {
+        "prefix": null,
+        "station_types": [
+          "individual",
+          "club"
+        ]
+      }
+    },
+    "rule_view": {
+      "participants": "世界中のアマチュア無線家。シングルオペ・マルチオペの各種目で参加できます。",
+      "power": "制限なし",
+      "movement": "アンテナ・送信機・受信機の設置場所は、直径500mの単一の円内に収めます。",
+      "call_method": "公式規約に特定の呼び出し文言の指定はありません。",
+      "counterparts": "世界中のアマチュア局との交信。",
+      "restrictions": "Baudot方式のRTTYのみ。シングルオペは同時に1波、マルチオペは最大5バンドで各バンド1波。設備は直径500mの単一円内に設置します。セルフスポッティングとその依頼は禁止。公海上のMM局との交信は2点ですがマルチにならず、MM局自身は得点掲載のみで表彰対象外です。",
+      "exchange": "シングルオペ：RST＋コンテスト開始時のオペレーターの年齢、または「01」（「00」「99」も可）。\nマルチオペ：RST＋コンテスト開始時のオペレーターの平均年齢、または「01」（「00」「99」も可）。",
+      "repeat": "同一局との交信は、各バンドで最初の1回だけ得点対象です。",
+      "submission_notes": "提出日時はUTC。2026年の締切は10月28日24:00 UTC必着（10月29日00:00 UTCと同じ時刻）。Webアップロードを推奨。Cabrillo形式またはJARL電子ログ形式で、メール提出も可。郵送は受け付けません。",
+      "points_display": "同一大陸内：2点。異なる大陸：3点。MM局との交信：2点。",
+      "multipliers_display": "各バンドの異なるDXCCエンティティー。JA・W・VE・VK本土局は異なるコールエリア。MM局はマルチ対象外。",
+      "submission_deadline": "2026年10月28日24:00 UTC必着"
+    }
+  }
+}

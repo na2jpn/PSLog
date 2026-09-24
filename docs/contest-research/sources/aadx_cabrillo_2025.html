@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AADX Cabrillo Format Guide</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      padding: 2em;
+      color: #000;
+    }
+    h1 {
+      color: #004080;
+      font-weight: bold;
+    }
+    h2 {
+      color: #0066cc;
+      font-weight: bold;
+      margin-top: 2em;
+    }
+    h3 {
+      color: #0099cc;
+      font-weight: bold;
+      margin-top: 1.5em;
+    }
+    pre {
+      background-color: #f4f4f4;
+      padding: 1em;
+      border-left: 4px solid #ccc;
+      overflow-x: auto;
+    }
+    code {
+      font-family: Consolas, monospace;
+    }
+    em {
+      font-style: italic;
+    }
+    .highlight-green {
+      color: #228B22;
+    }
+    .highlight-red {
+      color: #FF0000;
+    }
+    .highlight-blue {
+      color: #1E90FF;
+    }
+    .normal-black {
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+  <h1>Cabrillo Format for the JARL All Asian DX (AADX) Contest</h1>
+  <p><strong>Date:</strong> March 25, 2025<br>
+     <strong>Author:</strong> JARL Contest Committee</p>
+
+  <p>Cabrillo is a universal contest log submission format proposed by N5KO. That is one of the required formats for e-mailed submission for the All Asian DX (AADX) Contest as well as the JARL's original format.</p>
+<p>There are two versions of the Cabrillo format available today. Both version 3.0 and 2.0 of the Cabrillo format can be accepted for the AADX contest.</p>
+<p>The basic Cabrillo specification is described at <a href="http://www.kkn.net/~trey/cabrillo/">http://www.kkn.net/~trey/cabrillo/</a> but there are some additional data items are defined below for the AADX contest.</p>
+<p>If you have any question, please contact <a href="mailto:contest@jarl.org">JARL Contest Committee</a>.</p>
+
+  <h2>Summary Sheet Specification</h2>
+<p><strong>The descriptions highlighted by <span class="highlight-green">green are for version 3.0</span> only, those highlighted by <span class="highlight-blue">light blue are for version 2.0</span> only, and those without any marker are common to version 3.0 and 2.0.</strong></p>
+  <ul>
+    <li><strong>START-OF-LOG:</strong> <em>version-number</em><br />
+      Must be the first line of the log submission. The <em>version-number</em> is 3.0 or 2.0.</li>
+    <li><strong>END-OF-LOG:</strong><br /> Must be the last line of the log submission.</li>
+    <li><strong>CALLSIGN:</strong> <em>callsign</em><br />
+      The Callsign used during the contest</li>
+    <div class="highlight-green">
+      <li><strong>CATEGORY-ASSISTED:</strong> (<em>not used in AADX</em>)
+    <li><strong>CATEGORY-BAND: </strong><em>text</em><br />
+      ALL, 160M, 80M, 40M, 20M, 15M or 10M.</li>
+    <li><strong>CATEGORY-MODE:</strong> <em>text</em><br /> CW or SSB (can be omitted as long as the contest-name is identified properly)</li>
+      <li><strong>CATEGORY-OPERATOR:</strong><em>text</em><br />
+	SINGLE-OP, MULTI-OP or CHECKLOG</li>
+      <li><strong>CATEGORY-POWER:</strong> <em>text</em><br />
+	HIGH or LOW.</li>
+      <li><strong>CATEGORY-STATION: </strong> (<em>not used in AADX</em>)
+      <li><strong>CATEGORY-TIME:</strong> <em>text</em><br />
+	24-HOURS (for Single Operator All-Band 24-hour Category)</li>
+      <li><strong>CATEGORY-TRANSMITTER:</strong> <em>text</em><br />
+	ONE or UNLIMITED (MULTI-OP must identify)</span>
+</div>
+<div class="normal-black">
+  <li><strong>CATEGORY-OVERLAY:</strong> <em>text</em><br />
+    SOSV or SOJR (The option for JA stations which category is SINGLE-OP,ALL)
+</div>
+      <div class="highlight-blue">
+	<li><strong>CATEGORY:</strong> <em>operator-category band-category power-category [time-category] [mode-category]</em><br />
+For JARL AADX Contest the <em>operator-category</em> must be one of the following:<br />
+SINGLE-OP, MULTI-ONE, MULTI-MULTI or CHECKLOG.<br />
+The <em>band-category</em> must be one of the following:<br />
+ALL, 160M, 80M, 40M, 20M, 15M or 10M.<br />
+The <em>power-category</em> must be HIGH, LOW.<br />
+The <em>mode-category</em> must be CW, SSB. (can be omitted as long as the contest-name is identified properly)<br />
+	  NOTE: If you are entering a 24 Hours category (Single Operator All Band 24 Hours), you must also provide the <em>time-category</em> information as 24-HOURS. If you are not entering a 24 Hours category, do not include the <em>time-category information</em>.
+      </div>
+      <div class="normal-black">
+	<li><strong>CLAIMED-SCORE:</strong><em> n</em><br />
+The claimed-score of the log submission, in integer form such as 1217315 or 19113 or 12.
+<li><strong>CLUB:</strong><em> text</em><br />
+Number of the JARL registered club with which the score should be aggregated. (Must be written with JARL registration number.)
+<li><strong>CONTEST:</strong><em> contest-name</em><br />
+AADX-CW or AADX-SSB.
+<li><strong>CREATED-BY:</strong><em> text</em><br />
+Name and version of the logging program used to create the Cabrillo file. (can be omitted)
+<li><strong>EMAIL:</strong><em> text</em><br />
+JARL intends to send emails to the address specified in this field.
+<li><strong>LOCATION:</strong><em> text</em><br />
+Used to indicate the location where the station was operating from.
+<li><strong>NAME:</strong><em> text</em><br />
+<li><strong>ADDRESS:</strong><em> text</em><br />
+<li><strong>ADDRESS:</strong><em> text</em><br />
+<li><strong>ADDRESS:</strong><em> text</em><br />
+Mailing address. Each line should be a maximum of 45 characters long.
+  Up to 6 address lines are permitted.
+      </div>
+      <div class="highlight-green">
+<li><strong>ADDRESS-CITY:</strong><em> text (optional)</em><br />
+<li><strong>ADDRESS-STATE-PROVINCE:</strong><em> text (optional)</em><br />
+<li><strong>ADDRESS-POSTALCODE:</strong><em> text (optional)</em><br />
+<li><strong>ADDRESS-COUNTRY:</strong><em> text (optional)</em><br />
+</div>
+      <div class="normal-black">
+	<li><strong>OPERATORS:</strong><em> callsign1 [callsign2 callsign3...]</em><br />
+A space-delimited list of operator callsign(s). You may also list the callsign of the host station by placing an "@" character in front of the callsign within the operator list, such as
+<li>OPERATORS: @N6IJ
+<li><strong>OFFTIME:</strong><em> (not used in AADX)</em>
+<li><strong>SOAPBOX:</strong><em> text</em>
+<li><strong>SOAPBOX:</strong><em> text</em>
+<li><strong>SOAPBOX:</strong><em> text</em><br />
+... [as many as needed...]<br />
+Soapbox comments. (optional for all stations)</em><br />
+Any location information (indicate the DXCC entity if it's not definitely judged it from the callsign)<br />
+Operator's age. (must be for JA's SINGLE-OP JUNIOR and SENIOR)
+<li><strong>QSO:</strong><em> qso-data</em><br />
+QSO data as specified by the Cabrillo QSO data format.
+<li><strong>DEBUG:</strong><em> n</em><br />
+The DEBUG: tag is intended for software developers. If the JARL email robot receives a log with the DEBUG: tag set, then it will do all its regular processing and generate an auto-reply message, but it will not save the log into data set provided to the log checking team.
+
+  <h2><span class="highlight-red">QSO Template</span></h2>
+  <pre><code>
+      --------info sent------- -------info rcvd--------
+QSO: freq  mo date       time call          rst exch   call          rst exch   t
+QSO: ***** ** yyyy-mm-dd nnnn ************* nnn ****** ************* nnn ****** n
+QSO:  3798 PH 2005-09-03 1324 K8YU          59  36     JA1RL         59  42     0
+000000000111111111122222222223333333333444444444455555555556666666666777777777788
+123456789012345678901234567890123456789012345678901234567890123456789012345678901
+This is the same format as those for many other contests.
+</code></pre>
+       <ul>
+    <li><strong>freq:</strong> <br />
+Actual integer frequency in kHz; if freq not known then 28000, 21000, 14000, 7000, 3500, 1800
+<li><strong>mo:</strong> <br />
+CW or PH
+<li><strong>date:</strong> <br />
+UTC date in yyyy-mm-dd form
+<li><strong>time:</strong> <br />
+UTC time in nnnn form
+<li><strong>call:</strong> <br />
+callsign (only A-Z, 0-9 and / permitted)
+<li><strong>rst:</strong> <br />
+RST
+<li><strong>exch:</strong> <br />
+contest exchange
+<li><strong>t:</strong> <br />
+transmitter id 0, 1, 2, 3, 4 or 5 (not required for SINGLE-OP category and omitted)
+       </ul>
+       
+  <h2><span class="highlight-red">Example: Cabrillo Log v3.0</span></h2>
+  <pre><code>
+START-OF-LOG: 3.0
+CALLSIGN: K8YU
+CATEGORY-BAND: ALL
+CATEGORY-MODE: SSB
+CATEGORY-OPERATOR: SINGLE-OP
+CATEGORY-POWER: HIGH
+CLAIMED-SCORE: 256
+CLUB: 
+CONTEST: AADX-SSB
+CREATED-BY: Elogmaker V10.0
+EMAIL: xxx @ zzz.com
+NAME: Hidetoshi Tsutsumi
+ADDRESS: 599 Radio blvd, Cleveland,
+ADDRESS: OH, 44131
+ADDRESS: USA
+OPERATORS: JH8KYU
+SOAPBOX: RIG: YAESU FT-3000 + Amp
+SOAPBOX: ANT: Dipole
+SOAPBOX: Operator's License: Extra
+SOAPBOX: Very fun contest. I want to spend much longer period next year.
+QSO: 14190 PH 2009-09-05 0147 K8YU          59  49     HL4CJG        59  48      
+QSO: 14173 PH 2009-09-05 0157 K8YU          59  49     BD1BYV        59  41      
+QSO: 14227 PH 2009-09-05 0208 K8YU          59  49     HL4RBR        59  62      
+QSO: 14228 PH 2009-09-05 0722 K8YU          59  49     UA0IDZ        59  47      
+QSO: 14253 PH 2009-09-05 0724 K8YU          59  49     BX5AA         59  49      
+QSO: 21288 PH 2009-09-05 0748 K8YU          59  49     HL2FDW        59  48      
+QSO: 14265 PH 2009-09-06 0312 K8YU          59  49     BY3MM         59  59      
+END-OF-LOG:</code></pre>
+
+  <h2><span class="highlight-red">Example: Cabrillo v2.0</span></h2>
+  <pre><code>
+START-OF-LOG: 2.0
+CALLSIGN: 3W2KYU
+CATEGORY: SINGLE-OP ALL HIGH 24-HOURS
+CATEGORY-OVERLAY:
+CLAIMED-SCORE: 882
+CLUB: 06-2-3
+CONTEST: AADX-CW
+CREATED-BY: WriteLog V10.32E
+NAME: Hidetoshi Tsutsumi
+ADDRESS: 1-14-5 Sugamo
+ADDRESS: Toshima-ku,Tokyo,170-8073
+ADDRESS: Japan
+OPERATORS: JH8KYU
+SOAPBOX: RIG: Kenwood TS-850 100W
+SOAPBOX: ANT: 3EL YAGI for 10/15/20 m and DP for 160/80/40m
+SOAPBOX: Operator's License: Japanese 1st class
+SOAPBOX: Condx for Europe and US was really great! Thanks for a nice contest!
+QSO: 21000 CW 2000-06-17 2014 3W2KYU        599 40     W7YU          599 91    
+QSO: 21000 CW 2000-06-17 2015 3W2KYU        599 40     I4YCE         599 58    
+QSO: 21000 CW 2000-06-17 2017 3W2KYU        599 40     DL3PS         599 36    
+QSO: 28000 CW 2000-06-17 2021 3W2KYU        599 40     I2TAO         599 63    
+QSO: 28000 CW 2000-06-17 2025 3W2KYU        599 40     EA3GIP        599 31    
+QSO: 28000 CW 2000-06-17 2026 3W2KYU        599 40     I1URX         599 28    
+QSO: 28000 CW 2000-06-17 2026 3W2KYU        599 40     I4VJC         599 60    
+QSO: 28000 CW 2000-06-17 2026 3W2KYU        599 40     W7RG          599 52    
+QSO: 28000 CW 2000-06-17 2027 3W2KYU        599 40     W5IZ          599 57    
+QSO: 28000 CW 2000-06-17 2027 3W2KYU        599 40     9A9R          599 45    
+QSO:  7000 CW 2000-06-17 2040 3W2KYU        599 40     E21EJC        599 27    
+QSO:  7000 CW 2000-06-17 2041 3W2KYU        599 40     HS0AC         599 23    
+END-OF-LOG:</code></pre>
+
+  <h2><span class="highlight-red">For more information</span></h2>
+  <p>If you have any further question on the electronic submission, please ask  <strong><a href="mailto:contest@jarl.org">JARL Contest Committee</a></strong>.</p>
+<p>  
+    <a href="https://www.jarl.org/English/0-2.htm">&copy; 2025 The Japan Amateur Radio League, Inc.</a>
+</p>
+<!-- ページトップへ -->
+<script>
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+<button id="back-to-top" onclick="scrollToTop()">
+    <svg viewBox="0 0 24 24">
+      <path d="M12 4l-8 8h6v8h4v-8h6z"/>
+    </svg>PAGE TOP
+</button>
+</body>
+</html>

@@ -1,0 +1,139 @@
+Web extraction, not original HTML. Retrieved 2026-09-14. URL: https://ww-digi.com/rules_faq
+WW DIGI - Rules FAQ (https://ww-digi.com/rules_faq)
+citeturn266view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://ww-digi.com/rules_faq","lineno":null}); Total lines: 173
+L0: Other Contests: cite0†CQ WW†cqww.com cite1†CQ WPX†cqwpx.com cite2†CQ WW RTTY†cqwwrtty.com cite3†CQ WPX RTTY†cqwpxrtty.com cite4†CQ 160†cq160.com cite5†CQ VHF†cqww-vhf.com cite6†WW DIGI L1: 
+L2: cite7†Image: WWROF Logo L3: 
+L4: World Wide Digi DX Contest
+L5: 
+L6: cite8†Image: SCC Logo L7: 
+L8: cite9†Show navigation cite10†Hide navigation L9:   * cite11†Home L10:   * cite12†Rules L11:     * cite12†Rules L12:     * cite13†Rules FAQ L13:   * cite14†Plaques L14:   * cite15†Results L15:     * cite15†Results L16:     * cite16†Final Scores L17:     * cite17†Club Scores L18:     * cite18†Soapbox QRM L19:     * cite19†Raw Scores L20:     * cite20†Entry Statistics L21:   * cite21†Records L22:     * cite21†By Region L23:     * cite22†New Records L24:     * cite23†Highest QSO Rates L25:   * cite24†Logs L26:     * cite24†Submitting Your Log L27:     * cite25†Cabrillo Log Upload L28:     * cite26†ADIF Log Converter L29:     * cite27†Cabrillo File Format L30:     * cite28†Logs Received L31:     * cite29†Public Logs L32:   * cite30†Resources L33:     * cite31†Grid Map†www.mapability.com L34:     * cite32†History L35:     * cite33†Operating Tips L36:     * cite34†Location Names L37:     * cite35†Active Club Names L38:   * cite36†Contact Us L39:     * cite36†Contact Form L40:     * cite37†Organization L41: # Rules FAQ
+L42: ## WW Digi DX Contest Rules - Frequently Asked Questions
+L43: 
+L44: The purpose of this page is to answer some of the common questions about the rules of the WW Digi DX contest and how some of the rules are interpreted by the WW Digi Contest Committee. Please send any questions to cite38†[email protected] .
+L45: 
+L46: The explanations here apply ONLY to the WW Digi DX Contest!
+L47: 
+L48: cite39†General Questions | cite40†Logging Questions | cite41†Single Operator | cite42†Multi-Operator | cite43†Club Entry L49: Click on the question to show the answer.
+L50: ### General Questions
+L51: 
+L52: Q: Can I work the same station on the same band with both FT4 and FT8?
+L53: 
+L54: Yes, but the second QSO will be considered a dupe for zero points. However, do not remove dupes from your log because this may cause a NIL penalty for your QSO partner. This is considered unsportsmanlike operating behavior.
+L55: 
+L56: Q: Rule XII. C.3. states "... call-signs not found in the other log..." What does this mean?
+L57: This means that your callsign was not found in the other log, i.e., it is Not-in-Log (NIL). The penalty for a NIL is two times the QSO point value for that contact.
+L58: 
+L59: Q: Is there any limit on operating time?
+L60: 
+L61: There is no limit on operating time for any of the categories.
+L62: 
+L63: Q: How do I handle a special callsign that is too long to permit my Grid Square in the same message?
+L64: 
+L65: One method is to define the TX5 message as <call grid> and interleave that message with your TX6 CQ message and your TX2 SNR message.
+L66: Q: Is a separate “operator action” required for each of the mult-streamed QSOs?
+L67: No. A single action, such as Enable TX where the software then selects up to three potential QSO partners to send messages to, is sufficient for multi-streaming. In general, automation can occur within a QSO period, e.g., auto-sequencing through the TX messages based on receiving the appropriate RX messages. But, each QSO must have at least one operator action associated with it to avoid robotic operation which is not permitted.
+L68: One way to think about it that one operator action is required for each “serial” QSO and for up to 3 “parallel” QSOs. After a set of up to 3 multi-streamed QSOs are underway, any future QSO or set of multi-streamed QSOs requires another operator action.
+L69: ### Logging Questions
+L70: 
+L71: Q: I would like to work on several bands, but only submit a single band entry. Is this allowed? How should I submit my log?
+L72: Yes, you may work other bands and still submit your log as a single band entry. First, please make sure your log includes all QSOs made on all bands. This helps us with the log checking. Second, make sure the Cabrillo file header has your category set for the single band you want to enter. (e.g., CATEGORY-BAND: 20M) Only the QSOs on the single band will be used to compute your score.
+L73: 
+L74: Please enter only one log containing ALL QSOs! Each log that you submit will overwrite the previously submitted log.
+L75: Q: I have multiple log files because I used dedicated software on each radio, so how do I submit my entry?
+L76: 
+L77: Only one log file may be submitted per callsign so your must combine separate log files into one log file. One way to do this is to combine the ADIF files into one file using a text editor before converting to the Cabrillo file.
+L78: 
+L79: The QSOs do not need to be in chronological order in the log. So you can append QSOs from one log to the end of the other.
+L80: Q: I work a station and they do not give me their grid, what should I put in the log?
+L81: 
+L82: Log the grid as ZZ00.
+L83: 
+L84: Q: Should I work and log duplicates? How are they counted by the log checking?
+L85: Yes! Please log all contacts that you make even if they are duplicates.
+L86: For example... XX9XX works K5ZD but logs it as K5ZB. K5ZD logged XX9XX correctly. Later XX9XX works K5ZD again. This time he logs K5ZD correctly. K5ZD logs the second duplicate QSO and scores it as zero points. For this case, the log checking software assigns K5ZD with a good qso and a dupe (no penalty). XX9XX gets a busted callsign (K5ZB) and a good qso (K5ZD).
+L87: Q: I made a mistake in logging and do not want a QSO to count. Should I remove it from my log?
+L88: 
+L89: No, please do not remove any QSOs from your log! This will cause the other station that worked you to lose credit for the contact.
+L90: 
+L91: If you want to remove a QSO for any reason, use a text editor to add "X-" to the beginning of the QSO line in the Cabrillo file. For example:
+L92: 
+L93:     X-QSO: 7023 DG 2009-08-31 2333 AK1W +02 FN42 XX9XX -03 PM45
+L94: The log checking software will not count this QSO for you, but will give credit to the other station.
+L95: 
+L96: Q: I kept some paper notes of corrections when I was unable to change the log during the contest. May I use my notes to correct the log after the contest?
+L97: 
+L98: Yes, but only from your own notes or memory, provided that it reflects what was sent over the air. No corrections, additions, deletions to what was sent over the air is allowed.
+L99: Rule IX.9 says "9. Correction of logged callsigns and exchanges after the contest by using any database, recordings, email or other methods of confirming QSOs is not allowed." You must not look up callsigns on the DX Cluster, RBN or DX newsletters after the contest. You may not ask via email or telephone for confirmation that a contact occured.
+L100: 
+L101: Q: Should I submit the log in Cabrillo v2 or v3?
+L102: The Cabrillo log format standard has changed over time. v3 is the preferred format for log submissions. The log robot will accept either v2 or v3 format and will automatically convert them to v3. View more information on cite24†log submission requirements here .
+L103: 
+L104: Q: What if I am not able to submit my log within the 5 day deadline?
+L105: An extension may be requested by email to <cite44†[email protected] >. The request must include the entry callsign, a valid reason for why the extension is needed, and a date by which the log will be submitted. The request must be submitted before the log deadline. Requests can be submitted before the contest. The maximum extension that can be granted is 10 days. All requests for extension must be acknowledged by the Contest Director to be valid.
+L106: 
+L107: Q: How do I create a Cabrillo file for this contest?
+L108: Most logging software exports an ADIF file. This can be easily converted to the Cabrillo format file required for this contest. Use the ADIF Converter at ww-digi.com/adif/ to do this conversion and it will interface to the Cabrillo Log Upload webpage that uploads your log to the contest server.
+L109: 
+L110: Q: What do I do if my QSO partner doesn’t send their Grid Square?
+L111: Enter ZZ00 for the received Grid Square. Always log a QSO where any information was exchanged. Otherwise, your QSO partner may be unfairly penalized if the QSO is not in your log. This is considered unsportsmanlike conduct.
+L112: ### Single Operator
+L113: 
+L114: Q: If I am a Single Operator, can I use the Reverse Beacon Network (RBN) or DX Cluster?
+L115: 
+L116: Yes. All categories are permitted to use QSO finding (spotting) assistance.
+L117: 
+L118: Q: As a Single Operator, can I post my scores to a live scoreboard? Can I view the scores of others?
+L119: 
+L120: Any entry class may post their scores to a live scoreboard (e.g., cq-contest.net or contestonlinescore.org) and view the live scores.
+L121: ### Multi-Operator
+L122: 
+L123: Q: Is there a limit on the number of times we can use X-QSO in our log?
+L124: 
+L125: X-QSO is intended for correction of occasional mistakes that happen during the contest. If the committee decides that X-QSO is being used to avoid the 10 minute rule the log will be subject to possible reclassification or other committee action, as deemed appropriate.
+L126: 
+L127: Q: Can we use two or more radios on the same band to make QSOs?
+L128: When two or more transmitters are present on the same band, a hardware device MUST be used to prevent more than one signal at any one time. It is not permitted to request or solicit QSOs (e.g., call CQ) on more than one frequency at a time. The second interlocked station on the band should only be calling stations and must change frequencies after each QSO.
+L129: Q: The rules for Multi-Two state "A maximum of two transmitted signals on two different bands may be used at any time." If we are working on two bands, can we transmit on a third band to call CQ or call a multiplier?
+L130: 
+L131: If you want to start transmitting on a third band, you must stop transmitting on one of the other bands. There is no exception.
+L132: 
+L133: Q: If we make a band change at the top of the hour, which hour is credited with the change?
+L134: The Multi-Single and Multi-Two categories allow each transmitter to make 8 band changes per hour. Here is an example log for one of the transmitters:
+L135: 
+L136:     QSO: 14082 DG 2012-10-27 0052 K5ZD      -02 FN42 ED8W      +01 IL18 1
+L137:     QSO: 14082 DG 2012-10-27 0057 K5ZD      -11 FN42 RW1CW     -06 KO59 1
+L138:     QSO:  7084 DG 2012-10-27 0103 K5ZD      -07 FN42 SV1ELI    +00 KM17 1
+L139:     QSO:  7086 DG 2012-10-27 0108 K5ZD      +03 FN42 LY7A      +01 KO24 1
+L140: The band change is counted in the 0100z hour because it happened at 0103.
+L141: 
+L142: Q: Can an operator of a multi-op station also work the contest from their home station and submit an entry?
+L143: 
+L144: Yes, it is permitted for an operator to work from home with his own callsign and then also from a multi-operator station.
+L145: ### Club Entry Questions
+L146: 
+L147: Q: Can I enter single band, but operate other bands and have the all band score count for my club?
+L148: 
+L149: No. Only the score of your stated entry category will be applied to the club score.
+L150: 
+L151: Q: Can a score be split between more than one club?
+L152: 
+L153: Single operator entries must indicate only ONE club that will receive their score.
+L154: Multi-operator entries may split their score among the clubs of the operators. The split will be by a percentage of the number of club members participating in the operation. The split is defined on the CLUB: line of the log file. Please show the split and then the club name. It is not required that all splits add up to 100%. Here are some examples of club splits:
+L155: 
+L156: CLUB: 3/8 WILLAMETTE VALLEY, 1/8 WESTERN WASHINGTON DX CLUB, 4/8 SOUTHERN CALIFORNIA CONTEST CLUB
+L157: CLUB: 1/7 NORTHERN CALIFORNIA CONTEST CLUB, 4/7 FRANKFORD RADIO CLUB
+L158: 
+L159: Please spell out all club names according to the list of names at cite45†http://www.cqww.com/clubnames.htm†www.cqww.com .
+L160: 
+L161: Entering a split will cause the log submission robot to return a warning message that the club name does not match any on the list. You may ignore this message.
+L162: Q: The rules for DX clubs state "Participation is limited to club members living and operating within the DXCC country where the club is located OR within a 400 km radius circle from the center of club area..." What is meant by "OR"?
+L163: 
+L164: OR = Both. The club area is defined as the country where the club is located plus the area within a 400 km radius circle around the club center. This allows a club that is on the border of two countries to have members outside of the club location country.
+L165: Q: What is the club center?
+L166: 
+L167: Each club may select any location to be the center. Once this place is chosen, it must be the same for both modes of the contest. If there is a question, the CQWW Committee will ask the club officers to specify the location.
+L168: 
+L169: Q: Can club members that travel on DXpeditions count their score for the club?
+L170: 
+L171: Yes. Club members living within the club area that go on DXpeditions to other countries can count their score for the club. They must specify the club name in the log.
+L172: Copyright © 2019-2026 cite46†World Wide Radio Operators Foundation, Inc.†wwrof.org . All Rights Reserved. | cite47†Privacy Policy 

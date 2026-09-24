@@ -1,0 +1,184 @@
+Web extraction, not original HTML. Retrieved 2026-09-14. URL: https://ww-digi.com/rules/
+ww-digi.com (https://ww-digi.com/rules/)
+citeturn265view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://ww-digi.com/rules/","lineno":null}); Total lines: 218
+L0: ﻿ WW DIGI - Rules
+L1: 
+L2: Other Contests: cite0†CQ WW†cqww.com cite1†CQ WPX†cqwpx.com cite2†CQ WW RTTY†cqwwrtty.com cite3†CQ WPX RTTY†cqwpxrtty.com cite4†CQ 160†cq160.com cite5†CQ VHF†cqww-vhf.com cite6†WW DIGI L3: 
+L4: cite7†Image: WWROF Logo L5: 
+L6: World Wide Digi DX Contest
+L7: 
+L8: cite8†Image: SCC Logo L9: 
+L10: cite9†Show navigation cite10†Hide navigation L11:   * cite11†Home L12:   * cite12†Rules L13:     * cite12†Rules L14:     * cite13†Rules FAQ L15:   * cite14†Plaques L16:   * cite15†Results L17:     * cite15†Results L18:     * cite16†Final Scores L19:     * cite17†Club Scores L20:     * cite18†Soapbox QRM L21:     * cite19†Raw Scores L22:     * cite20†Entry Statistics L23:   * cite21†Records L24:     * cite21†By Region L25:     * cite22†New Records L26:     * cite23†Highest QSO Rates L27:   * cite24†Logs L28:     * cite24†Submitting Your Log L29:     * cite25†Cabrillo Log Upload L30:     * cite26†ADIF Log Converter L31:     * cite27†Cabrillo File Format L32:     * cite28†Logs Received L33:     * cite29†Public Logs L34:   * cite30†Resources L35:     * cite31†Grid Map†www.mapability.com L36:     * cite32†History L37:     * cite33†Operating Tips L38:     * cite34†Location Names L39:     * cite35†Active Club Names L40:   * cite36†Contact Us L41:     * cite36†Contact Form L42:     * cite37†Organization L43: # Rules
+L44: ### Translations (pdf)
+L45: 
+L46: Note: If you can translate to other
+L47: languages or improve the current ones,
+L48: please send an email to the
+L49: cite38†contest director .
+L50: cite39†Български [Bulgarian] cite40†中文 [Chinese] cite41†Čeština [Czech] cite42†English cite43†Suomeksi [Finnish] cite44†Français [French] cite45†Deutsch [German] cite46†Bahasa Indonesia [Indonesian] cite47†Italiano [Italian] cite48†日本語 [Japanese] cite49†Norsk [Norwegian] cite50†Português [Portuguese] cite51†Română [Romanian] cite52†Русский [Russian] cite53†Slovenščina [Slovenian] cite54†Español [Spanish] cite55†Türkçe [Turkish] cite56†Українська [Ukrainian] L51: ## 2026 World Wide Digi DX Contest
+L52: 
+L53: Starts: Saturday August 29 12:00:00 UTC
+L54: Ends:   Sunday August 30 11:59:59 UTC
+L55: 
+L56: I. OBJECTIVE: For amateurs around the world to contact as many other amateurs in as many Maidenhead Grid Fields as possible using the FT4 and FT8 modes.
+L57: 
+L58: II. BANDS: Six bands only: 1.8, 3.5, 7, 14, 21 and 28 MHz.
+L59: 
+L60: A. FT4 recommended sub-bands:
+L61: 1.840-1.844
+L62: 3.580-3.589
+L63: 7.080-7.089
+L64: 14.080-14.089***
+L65: 21.080-21.089
+L66: 28.080-28.089
+L67: Set the radio dial at the bottom of the sub-band and work stations on audio frequencies within the radio passband, typically 2.5-4 kHz wide. If a sub-band becomes crowded, move the radio dial frequency up in 3 kHz increments, as needed. (For example: 7.080, 7.083 and 7.086)
+L68: 
+L69: B. FT8 recommended sub-bands:
+L70: 1.844-1.848
+L71: 3.590-3.599
+L72: 7.090-7.099
+L73: 14.090-14.099
+L74: 21.090-21.099
+L75: 28.090-28.099
+L76: Set the radio dial at the bottom of the sub-band and work stations on audio frequencies within the radio passband typically 2.5-4 kHz wide. If a sub-band becomes crowded, move the radio dial frequency up in 3 kHz increments, as needed. (For example: 7.090, 7.093 and 7.096)
+L77: 
+L78: *** Please note that 14.080 Mhz is the standard “everyday” FT4 20-meter frequency. In order to avoid confusion with non-contest stations, it may be better to use 14.083 Mhz.
+L79: 
+L80: C. JA sub-bands on 80 meters:
+L81: FT4: 3.570
+L82: FT8: 3.573
+L83: III. CONTEST EXCHANGE: 4-character Grid Square.
+L84: 
+L85: IV. SCORING:
+L86: 
+L87: A. Score: The final score is the sum of QSO points across all bands multiplied by the sum of 2-character Grid Fields across all bands. Example: 1000 QSO points * (70 Grid Fields) = 70,000 (final score).
+L88: B. QSO Points: QSOs are scored only once per band, either FT4 or FT8. QSOs are one (1) point plus one (1) point for each 3000 km between Grid Square centers of the QSO partners. (e.g., 5541 km = 2 points). Short-path distances are used, regardless of actual signal path.
+L89: 
+L90: C. Multipliers: A multiplier of one (1) for each different 2-character Grid Field contacted on each band.
+L91: 
+L92: V. ENTRY CATEGORIES:
+L93: A. Single Operator Categories: One person (the operator) performs all operating and logging functions. There is no limit on band changes. QSO finding assistance of any kind is allowed.
+L94: 
+L95: 1. Single Transmitter (SINGLE-ONE): Only one transmitted signal on one band is permitted at any time.
+L96: 
+L97: a. High Power (All Band or Single Band): Total output power must not exceed 1500 watts.
+L98: 
+L99: b. Low Power (All Band or Single Band): Total output power must not exceed 100 watts.
+L100: c. QRP (All Band or Single Band): Total output power must not exceed 5 watts.
+L101: 
+L102: 2. Multi-Transmitter (SINGLE-UNLIMITED): All-band operation only. The six contest bands may be activated simultaneously.
+L103: 
+L104: a. High Power: Total output power must not exceed 1500 watts on any band at any time.
+L105: 
+L106: b. Low Power: Total output power must not exceed 100 watts on any band at any time.
+L107: 
+L108: c. QRP: Total output power must not exceed 5 watts on any band at any time.
+L109: B. Multi-Operator Categories (all-band operation only): Any number of operators is allowed.
+L110: 
+L111: 1. Single Transmitter (MULTI-ONE): Only one transmitted signal on one band is permitted at any time. The transmitted signal may make a maximum of 8 band changes per clock hour (00 through 59 minutes).
+L112: 
+L113: a. High Power: Total output power must not exceed 1500 watts on any band at any time.
+L114: 
+L115: b. Low Power: Total output power must not exceed 100 watts on any band at any time.
+L116: 2. Two Transmitters (MULTI-TWO): A maximum of two transmitted signals on two different bands may be used at any time. The log must indicate which transmitted signal made each QSO. Each transmitted signal may make a maximum of 8 band changes in any clock hour (00 through 59 minutes). Total output power must not exceed 1500 watts on any band at any time.
+L117: 3. Multi-Transmitter (MULTI-UNLIMITED): The six contest bands may be activated simultaneously. Total output power must not exceed 1500 watts on any band at any time.
+L118: 
+L119: C. Checklog: Entry submitted to assist with the log checking. The entry will not have a score in the results and the log will not be made public.
+L120: 
+L121: VI. AWARDS: A single-band log will be eligible for a single-band award only. A log containing more than one band will be judged as an all-band entry unless specified as a single-band entry.
+L122: A. Certificates: Electronic certificates will be made available for download for everyone that submits an entry by the log deadline.
+L123: 
+L124: B. Plaques: Plaques are awarded for top performance in a number of categories. View the current list of plaques and sponsors at cite14†<ww-digi.com/plaques.htm> . Only one plaque will be awarded per entry. A station winning a plaque will not be considered for a sub-area award; the plaque will be awarded to the runner-up in that sub-area.
+L125: VII. CLUB COMPETITION: The club score is the total aggregate score from logs submitted by members. There are two separate club competition categories.
+L126: 
+L127: A. USA Clubs: Participation is limited to club members residing within a 250 mile radius circle from the center of club area.
+L128: B. DX Clubs: Participation is limited to club members residing within EITHER the DXCC entity where the club is located OR within a 400 km radius circle from the center of club area (except for expeditions organized specifically for the contest conducted by members who reside within the club area).
+L129: 
+L130: C. General club rules:
+L131:   1. National organizations (e.g., JARL, REF or DARC) are not eligible for the club competition.
+L132:   2. Single-operator entries may only contribute to one club. Multi-operator scores may be allocated to multiple clubs as a percentage of the number of club members participating in the operation. The log entry must spell out the full club name (and club allocations if multi-op).
+L133:   3. A minimum of four logs must be received for a club to be listed in the results. Checklog entries are not counted for the club score.
+L134:   4. The word "reside" shall be defined as: To dwell permanently or continuously or to occupy a place as a person's fixed, permanent and principal home for legal purposes.
+L135:   5. Eligible club members may contribute their DXpedition scores to their organization's club entry.
+L136: VIII. DEFINITIONS OF TERMS:
+L137: 
+L138: 1. Station location: The area in which all the transmitters, receivers and antennas are located. All transmitters and receivers must be within a single 500-meter diameter circle. Antennas must be physically connected by RF transmission lines to the transmitters and receivers.
+L139: 2. Grid Field: The first two characters of the Maidenhead locator system. Each character is a letter from A-R for a total of 324 Grid Fields defining the world. These are used for multipliers on each band.
+L140: 3. Grid Square: The first four characters of the Maidenhead locator system. The first two characters are the Grid Field as defined above. The second two characters are each a digit from 0-9 for a total of 32,400 Grid Squares defining the world. These are used in the exchange and for determining QSO points.
+L141: 
+L142: IX. GENERAL RULES FOR ALL ENTRANTS:
+L143: 
+L144: 1. Entrants must operate within the limits of their chosen category when performing any activity that could impact their submitted score.
+L145: 2. A different call sign must be used for each entry. Only the entrant’s call sign may be used to aid the entrant’s score.
+L146: 
+L147: 3. Do not exceed the total output power limitation of the chosen entry category on any band. Total output power on any band at any time is measured at the output of the active amplifier(s).
+L148: 
+L149: 4. Self-spotting or asking to be spotted is not permitted.
+L150: 5. Remote operation is permitted if the physical location of all transmitters, receivers, and antennas are at the station location. A remotely operated station must obey all station license, operator license, and category limitations. The call sign used must be one issued or permitted by the Regulatory Authority of the station location.
+L151: 
+L152: 6. Remote receivers outside the station location are not permitted.
+L153: 
+L154: 7. Alternating CQs on two or more frequencies on a band is not permitted.
+L155: 8. All requests for contacts, responses to calls, and copying of call signs and contest exchanges must be accomplished during the contest period using the mode and frequencies of the contest.
+L156: 
+L157: 9. Correction of logged call signs and exchanges after the contest, by use of any database, recordings, email or other methods is not allowed.
+L158: 
+L159: 10. Call signs logged must be the same as those exchanged over the air by the entrants during the QSO.
+L160: 
+L161: 11. Only FT4 and FT8 modes are permitted.
+L162: 12. A human operator must initiate calling each QSO partner. Autonomous systems or robots that emulate this action are prohibited.
+L163: 
+L164: X. LOG INSTRUCTIONS: Electronic submission of logs is required for all entrants.
+L165: 1. The log MUST show the following for each contact: correct date and time in UTC, frequency (or band), call sign of the station worked, exchange sent, and exchange received. A log without all required information may be reclassified to Checklog. Contacts should be logged at the time they are completed. Stations competing for World and Continent awards must provide accurate frequencies for all contacts in the log.
+L166: 2. Single band entrants are required to include all contacts made during the contest period, even if on other bands. Only contacts made on the band specified in the Cabrillo header will be considered for scoring purposes. Logs with contacts only on one band will be classified as single band entries.
+L167: 3. The CABRILLO file format is the standard for logs. See <cite27†ww-digi.com/cabrillo.htm > for detailed instructions on filling out the CABRILLO file header. Failure to fill out the header correctly may result in the entry being placed in the wrong category or reclassified as a Checklog. Note: USA and Canada stations must indicate the operating location in the CABRILLO header (e.g., LOCATION: OH); other stations indicate 'DX' (e.g., LOCATION: DX).
+L168: If your logging software does not export a Cabrillo file, please use the ADIF Converter at <cite26†ww-digi.com/adif/ > to convert your ADIF log to Cabrillo.
+L169: 
+L170: 4. Web upload is the required method of log submission. Web upload is available at <cite25†ww-digi.com/logcheck/ >.
+L171: 
+L172: 5. Instructions for NON-CABRILLO electronic logs: If you are not able to submit a CABRILLO format log, please contact the Contest Director for assistance with submitting another format.
+L173: 6. Entry Confirmation: All logs received will be confirmed via email. A listing of logs received can be found at <cite28†ww-digi.com/logs_received.htm >.
+L174: 
+L175: 7. Log withdrawal: An entrant may withdraw the submitted log for any reason within 30 days after the log deadline. Contact the Contest Director for instructions.
+L176: 
+L177: XI. LOG DEADLINE:
+L178: 1. All entries must be sent WITHIN 48 HOURS after the end of the contest: no later than 2359 UTC September 1, 2026. Resubmitting an entry after the deadline will result in it being considered as a late log.
+L179: 
+L180: 2. An extension may be requested by email to <cite57†[email protected] >. The request must state a legitimate reason and must be received before the log deadline. Extensions are granted only upon confirmation by the Contest Director.
+L181: 3. Logs submitted after the deadline may be listed in the results, but are not eligible for awards.
+L182: 
+L183: XII. JUDGING: The WW Digi DX Contest Committee is responsible for checking and adjudicating the contest entries. Entrants are expected to follow the rules and good amateur radio practices. Violation of the rules of the contest or unsportsmanlike conduct may lead to disciplinary action by the Committee.
+L184: 
+L185: A. Unsportsmanlike Conduct: Examples of unsportsmanlike conduct include, but are not limited to:
+L186: 1. Arranging or confirming any contacts during or after the contest by use of ANY non-amateur radio means such as telephones, Internet, instant messaging, chat rooms, VoIP, email, social media or web sites
+L187: 
+L188: 2. Transmissions by the entrant on frequencies outside of license limitations.
+L189: 
+L190: 3. Changing times in the log to meet band change rules.
+L191: 
+L192: 4. Taking credit for excessive unverifiable QSOs or unverifiable multipliers.
+L193: 5. Poor signal quality that interferes with other stations’ ability to operate. This includes, but is not limited to: signals with excessive bandwidth (e.g., splatter, clicks, IMD), harmonics on other bands, and excessive audio levels.
+L194: 
+L195: B. Disciplinary Actions: In the event of a violation, the entrant is subject to disqualification at the discretion of the Committee.
+L196: 
+L197: 1. Disqualified entries will be listed at the end of the published results and are not eligible for an award.
+L198: 2. Notification of Committee actions will be sent by email to the address provided with the log submission. The entrant has five days to appeal the decision to the Contest Director. After that time the decision is final.
+L199: 
+L200: 3. The Committee reserves the right to change the category of any entry based on its examination of the log or other information.
+L201: 
+L202: C. Log Checking: All logs are checked using custom software and human judgment.
+L203: 
+L204: 1. Duplicate contacts are removed with no additional penalty.
+L205: 2. Contacts with an incorrectly received exchange are removed with no additional penalty.
+L206: 
+L207: 3. Call sign errors (bust) or call signs not in the other log (NIL) are removed and receive a penalty of the QSO point value for that contact.
+L208: 
+L209: 4. Contacts that do not meet the band change rules for multi-operator entries are removed with no additional penalty.
+L210: XIII.
+L211: DECLARATION: By submitting a WW Digi DX Contest log, and in consideration of the efforts of the WW Digi DX Contest Committee to review and evaluate that log, an entrant unconditionally and irrevocably agrees that he/she has: 1) read and understood the rules of the contest and agree to be bound by them, 2) operated according to all rules and regulations that pertain to amateur radio for the station location, 3) agreed the log entry may be made open to the public, and 4) accepted that the issuing of disqualifications and other decisions of the Committee are official and final.
+L212: If an entrant is unwilling or unable to agree to all of the foregoing, the entrant should not submit the entry or submit the entry as a Checklog only.
+L213: Questions pertaining to the WW Digi DX Contest rules may be submitted by email to <cite58†[email protected] >. Answers for many frequently asked questions can be found at <cite59†ww-digi.com/rules_faq >.
+L214: 
+L215: 
+L216: 
+L217: Copyright © 2019-2026 cite60†World Wide Radio Operators Foundation, Inc.†wwrof.org . All Rights Reserved. | cite61†Privacy Policy 

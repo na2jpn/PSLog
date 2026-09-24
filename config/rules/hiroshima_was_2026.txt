@@ -1,0 +1,1376 @@
+{
+  "schema": 2,
+  "id": "hiroshima_was",
+  "name": "広島WASコンテスト",
+  "year": 2026,
+  "url": "https://hs-contest.org/was-2026-rule/",
+  "organizer": "JARL広島県支部",
+  "sort_name": "広島WASコンテスト",
+  "points": {
+    "cw": 1,
+    "phone": 1,
+    "digital": 0
+  },
+  "conditions": [],
+  "duplicate": {
+    "enabled": true,
+    "by_mode": false
+  },
+  "multi1": {
+    "kind": "off",
+    "start": 0,
+    "length": 2,
+    "per_band": true
+  },
+  "multi2": {
+    "kind": "off",
+    "value": 1,
+    "condition": {
+      "all": []
+    }
+  },
+  "formula": "total",
+  "scoring": {
+    "eligible": {
+      "all": []
+    },
+    "multipliers": [
+      {
+        "id": "region",
+        "source": "area",
+        "kind": "whole",
+        "start": 0,
+        "length": 2,
+        "per_band": true,
+        "when": {
+          "all": []
+        }
+      }
+    ],
+    "bonus": 0
+  },
+  "event": {
+    "timezone": "JST",
+    "windows": [
+      {
+        "start": "2026-02-28 21:00",
+        "end": "2026-03-01 00:00",
+        "bands": [
+          "1.9",
+          "3.5"
+        ]
+      },
+      {
+        "start": "2026-03-01 13:00",
+        "end": "2026-03-01 17:00",
+        "bands": [
+          "7"
+        ]
+      },
+      {
+        "start": "2026-03-01 09:00",
+        "end": "2026-03-01 12:00",
+        "bands": [
+          "14",
+          "50",
+          "144"
+        ]
+      },
+      {
+        "start": "2026-03-01 09:00",
+        "end": "2026-03-01 11:00",
+        "bands": [
+          "21"
+        ]
+      },
+      {
+        "start": "2026-03-01 08:00",
+        "end": "2026-03-01 10:00",
+        "bands": [
+          "28"
+        ]
+      },
+      {
+        "start": "2026-03-01 10:00",
+        "end": "2026-03-01 12:00",
+        "bands": [
+          "430",
+          "1200",
+          "2400",
+          "5600",
+          "10G",
+          "24000",
+          "47000",
+          "77000",
+          "135000",
+          "248000"
+        ]
+      }
+    ],
+    "categories": [
+      {
+        "id": "N-M",
+        "name": "N M",
+        "bands": [
+          "1.9",
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28",
+          "50",
+          "144",
+          "430",
+          "1200",
+          "2400",
+          "5600",
+          "10G",
+          "24000",
+          "47000",
+          "77000",
+          "135000",
+          "248000"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "AM",
+          "FM",
+          "RTTY",
+          "FT8",
+          "FT4",
+          "JT65",
+          "JT9",
+          "SSTV",
+          "FAX",
+          "PSK31",
+          "DSTAR",
+          "FREEDV",
+          "C4FM",
+          "DMR"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 18,
+        "min_calls": 1,
+        "required_flags": [
+          "同帯内場所変更なし。マルチは全帯同一地、単帯間のみ場所変更可。MO全員の氏名又はコールと資格を記載。データ/音声区分・実レポートを確認した"
+        ],
+        "operator": "SO",
+        "operators_in_comments": false,
+        "regional": {
+          "entry_group": "exclusive",
+          "required_declarations": [
+            "own_region",
+            "locations"
+          ]
+        }
+      },
+      {
+        "id": "N-MVU",
+        "name": "N MVU",
+        "bands": [
+          "50",
+          "144",
+          "430",
+          "1200",
+          "2400",
+          "5600",
+          "10G",
+          "24000",
+          "47000",
+          "77000",
+          "135000",
+          "248000"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "AM",
+          "FM",
+          "RTTY",
+          "FT8",
+          "FT4",
+          "JT65",
+          "JT9",
+          "SSTV",
+          "FAX",
+          "PSK31",
+          "DSTAR",
+          "FREEDV",
+          "C4FM",
+          "DMR"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 12,
+        "min_calls": 1,
+        "required_flags": [
+          "同帯内場所変更なし。マルチは全帯同一地、単帯間のみ場所変更可。MO全員の氏名又はコールと資格を記載。データ/音声区分・実レポートを確認した"
+        ],
+        "operator": "SO",
+        "operators_in_comments": false,
+        "regional": {
+          "entry_group": "exclusive",
+          "required_declarations": [
+            "own_region",
+            "locations"
+          ]
+        }
+      },
+      {
+        "id": "N-1_8",
+        "name": "N 1.8",
+        "bands": [
+          "1.9"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "AM",
+          "FM",
+          "RTTY",
+          "FT8",
+          "FT4",
+          "JT65",
+          "JT9",
+          "SSTV",
+          "FAX",
+          "PSK31",
+          "DSTAR",
+          "FREEDV",
+          "C4FM",
+          "DMR"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "同帯内場所変更なし。マルチは全帯同一地、単帯間のみ場所変更可。MO全員の氏名又はコールと資格を記載。データ/音声区分・実レポートを確認した"
+        ],
+        "submission_code": "N-1.8",
+        "operator": "SO",
+        "operators_in_comments": false,
+        "regional": {
+          "entry_group": "single",
+          "required_declarations": [
+            "own_region",
+            "locations"
+          ]
+        }
+      },
+      {
+        "id": "N-3_5",
+        "name": "N 3.5",
+        "bands": [
+          "3.5"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "AM",
+          "FM",
+          "RTTY",
+          "FT8",
+          "FT4",
+          "JT65",
+          "JT9",
+          "SSTV",
+          "FAX",
+          "PSK31",
+          "DSTAR",
+          "FREEDV",
+          "C4FM",
+          "DMR"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "同帯内場所変更なし。マルチは全帯同一地、単帯間のみ場所変更可。MO全員の氏名又はコールと資格を記載。データ/音声区分・実レポートを確認した"
+        ],
+        "submission_code": "N-3.5",
+        "operator": "SO",
+        "operators_in_comments": false,
+        "regional": {
+          "entry_group": "single",
+          "required_declarations": [
+            "own_region",
+            "locations"
+          ]
+        }
+      },
+      {
+        "id": "N-7",
+        "name": "N 7",
+        "bands": [
+          "7"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "AM",
+          "FM",
+          "RTTY",
+          "FT8",
+          "FT4",
+          "JT65",
+          "JT9",
+          "SSTV",
+          "FAX",
+          "PSK31",
+          "DSTAR",
+          "FREEDV",
+          "C4FM",
+          "DMR"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "同帯内場所変更なし。マルチは全帯同一地、単帯間のみ場所変更可。MO全員の氏名又はコールと資格を記載。データ/音声区分・実レポートを確認した"
+        ],
+        "operator": "SO",
+        "operators_in_comments": false,
+        "regional": {
+          "entry_group": "single",
+          "required_declarations": [
+            "own_region",
+            "locations"
+          ]
+        }
+      },
+      {
+        "id": "N-14",
+        "name": "N 14",
+        "bands": [
+          "14"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "AM",
+          "FM",
+          "RTTY",
+          "FT8",
+          "FT4",
+          "JT65",
+          "JT9",
+          "SSTV",
+          "FAX",
+          "PSK31",
+          "DSTAR",
+          "FREEDV",
+          "C4FM",
+          "DMR"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "同帯内場所変更なし。マルチは全帯同一地、単帯間のみ場所変更可。MO全員の氏名又はコールと資格を記載。データ/音声区分・実レポートを確認した"
+        ],
+        "operator": "SO",
+        "operators_in_comments": false,
+        "regional": {
+          "entry_group": "single",
+          "required_declarations": [
+            "own_region",
+            "locations"
+          ]
+        }
+      },
+      {
+        "id": "N-21",
+        "name": "N 21",
+        "bands": [
+          "21"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "AM",
+          "FM",
+          "RTTY",
+          "FT8",
+          "FT4",
+          "JT65",
+          "JT9",
+          "SSTV",
+          "FAX",
+          "PSK31",
+          "DSTAR",
+          "FREEDV",
+          "C4FM",
+          "DMR"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "同帯内場所変更なし。マルチは全帯同一地、単帯間のみ場所変更可。MO全員の氏名又はコールと資格を記載。データ/音声区分・実レポートを確認した"
+        ],
+        "operator": "SO",
+        "operators_in_comments": false,
+        "regional": {
+          "entry_group": "single",
+          "required_declarations": [
+            "own_region",
+            "locations"
+          ]
+        }
+      },
+      {
+        "id": "N-28",
+        "name": "N 28",
+        "bands": [
+          "28"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "AM",
+          "FM",
+          "RTTY",
+          "FT8",
+          "FT4",
+          "JT65",
+          "JT9",
+          "SSTV",
+          "FAX",
+          "PSK31",
+          "DSTAR",
+          "FREEDV",
+          "C4FM",
+          "DMR"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "同帯内場所変更なし。マルチは全帯同一地、単帯間のみ場所変更可。MO全員の氏名又はコールと資格を記載。データ/音声区分・実レポートを確認した"
+        ],
+        "operator": "SO",
+        "operators_in_comments": false,
+        "regional": {
+          "entry_group": "single",
+          "required_declarations": [
+            "own_region",
+            "locations"
+          ]
+        }
+      },
+      {
+        "id": "N-50",
+        "name": "N 50",
+        "bands": [
+          "50"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "AM",
+          "FM",
+          "RTTY",
+          "FT8",
+          "FT4",
+          "JT65",
+          "JT9",
+          "SSTV",
+          "FAX",
+          "PSK31",
+          "DSTAR",
+          "FREEDV",
+          "C4FM",
+          "DMR"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "同帯内場所変更なし。マルチは全帯同一地、単帯間のみ場所変更可。MO全員の氏名又はコールと資格を記載。データ/音声区分・実レポートを確認した"
+        ],
+        "operator": "SO",
+        "operators_in_comments": false,
+        "regional": {
+          "entry_group": "single",
+          "required_declarations": [
+            "own_region",
+            "locations"
+          ]
+        }
+      },
+      {
+        "id": "N-144",
+        "name": "N 144",
+        "bands": [
+          "144"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "AM",
+          "FM",
+          "RTTY",
+          "FT8",
+          "FT4",
+          "JT65",
+          "JT9",
+          "SSTV",
+          "FAX",
+          "PSK31",
+          "DSTAR",
+          "FREEDV",
+          "C4FM",
+          "DMR"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "同帯内場所変更なし。マルチは全帯同一地、単帯間のみ場所変更可。MO全員の氏名又はコールと資格を記載。データ/音声区分・実レポートを確認した"
+        ],
+        "operator": "SO",
+        "operators_in_comments": false,
+        "regional": {
+          "entry_group": "single",
+          "required_declarations": [
+            "own_region",
+            "locations"
+          ]
+        }
+      },
+      {
+        "id": "N-430",
+        "name": "N 430",
+        "bands": [
+          "430"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "AM",
+          "FM",
+          "RTTY",
+          "FT8",
+          "FT4",
+          "JT65",
+          "JT9",
+          "SSTV",
+          "FAX",
+          "PSK31",
+          "DSTAR",
+          "FREEDV",
+          "C4FM",
+          "DMR"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "同帯内場所変更なし。マルチは全帯同一地、単帯間のみ場所変更可。MO全員の氏名又はコールと資格を記載。データ/音声区分・実レポートを確認した"
+        ],
+        "operator": "SO",
+        "operators_in_comments": false,
+        "regional": {
+          "entry_group": "single",
+          "required_declarations": [
+            "own_region",
+            "locations"
+          ]
+        }
+      },
+      {
+        "id": "N-1200",
+        "name": "N 1200",
+        "bands": [
+          "1200",
+          "2400",
+          "5600",
+          "10G",
+          "24000",
+          "47000",
+          "77000",
+          "135000",
+          "248000"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "AM",
+          "FM",
+          "RTTY",
+          "FT8",
+          "FT4",
+          "JT65",
+          "JT9",
+          "SSTV",
+          "FAX",
+          "PSK31",
+          "DSTAR",
+          "FREEDV",
+          "C4FM",
+          "DMR"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 9,
+        "min_calls": 1,
+        "required_flags": [
+          "同帯内場所変更なし。マルチは全帯同一地、単帯間のみ場所変更可。MO全員の氏名又はコールと資格を記載。データ/音声区分・実レポートを確認した"
+        ],
+        "operator": "SO",
+        "operators_in_comments": false,
+        "regional": {
+          "entry_group": "single",
+          "required_declarations": [
+            "own_region",
+            "locations"
+          ]
+        }
+      },
+      {
+        "id": "N-MM",
+        "name": "N MM",
+        "bands": [
+          "1.9",
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28",
+          "50",
+          "144",
+          "430",
+          "1200",
+          "2400",
+          "5600",
+          "10G",
+          "24000",
+          "47000",
+          "77000",
+          "135000",
+          "248000"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "AM",
+          "FM",
+          "RTTY",
+          "FT8",
+          "FT4",
+          "JT65",
+          "JT9",
+          "SSTV",
+          "FAX",
+          "PSK31",
+          "DSTAR",
+          "FREEDV",
+          "C4FM",
+          "DMR"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 18,
+        "min_calls": 1,
+        "required_flags": [
+          "同帯内場所変更なし。マルチは全帯同一地、単帯間のみ場所変更可。MO全員の氏名又はコールと資格を記載。データ/音声区分・実レポートを確認した"
+        ],
+        "operator": "MO",
+        "operators_in_comments": true,
+        "regional": {
+          "entry_group": "exclusive",
+          "required_declarations": [
+            "own_region",
+            "locations"
+          ]
+        }
+      },
+      {
+        "id": "G-M",
+        "name": "G M",
+        "bands": [
+          "1.9",
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28",
+          "50",
+          "144",
+          "430",
+          "1200",
+          "2400",
+          "5600",
+          "10G",
+          "24000",
+          "47000",
+          "77000",
+          "135000",
+          "248000"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "AM",
+          "FM",
+          "RTTY",
+          "FT8",
+          "FT4",
+          "JT65",
+          "JT9",
+          "SSTV",
+          "FAX",
+          "PSK31",
+          "DSTAR",
+          "FREEDV",
+          "C4FM",
+          "DMR"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 18,
+        "min_calls": 1,
+        "required_flags": [
+          "同帯内場所変更なし。マルチは全帯同一地、単帯間のみ場所変更可。MO全員の氏名又はコールと資格を記載。データ/音声区分・実レポートを確認した"
+        ],
+        "operator": "SO",
+        "operators_in_comments": false,
+        "regional": {
+          "entry_group": "exclusive",
+          "required_declarations": [
+            "own_region",
+            "locations"
+          ]
+        }
+      },
+      {
+        "id": "G-1_8",
+        "name": "G 1.8",
+        "bands": [
+          "1.9"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "AM",
+          "FM",
+          "RTTY",
+          "FT8",
+          "FT4",
+          "JT65",
+          "JT9",
+          "SSTV",
+          "FAX",
+          "PSK31",
+          "DSTAR",
+          "FREEDV",
+          "C4FM",
+          "DMR"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "同帯内場所変更なし。マルチは全帯同一地、単帯間のみ場所変更可。MO全員の氏名又はコールと資格を記載。データ/音声区分・実レポートを確認した"
+        ],
+        "submission_code": "G-1.8",
+        "operator": "SO",
+        "operators_in_comments": false,
+        "regional": {
+          "entry_group": "single",
+          "required_declarations": [
+            "own_region",
+            "locations"
+          ]
+        }
+      },
+      {
+        "id": "G-3_5",
+        "name": "G 3.5",
+        "bands": [
+          "3.5"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "AM",
+          "FM",
+          "RTTY",
+          "FT8",
+          "FT4",
+          "JT65",
+          "JT9",
+          "SSTV",
+          "FAX",
+          "PSK31",
+          "DSTAR",
+          "FREEDV",
+          "C4FM",
+          "DMR"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "同帯内場所変更なし。マルチは全帯同一地、単帯間のみ場所変更可。MO全員の氏名又はコールと資格を記載。データ/音声区分・実レポートを確認した"
+        ],
+        "submission_code": "G-3.5",
+        "operator": "SO",
+        "operators_in_comments": false,
+        "regional": {
+          "entry_group": "single",
+          "required_declarations": [
+            "own_region",
+            "locations"
+          ]
+        }
+      },
+      {
+        "id": "G-7",
+        "name": "G 7",
+        "bands": [
+          "7"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "AM",
+          "FM",
+          "RTTY",
+          "FT8",
+          "FT4",
+          "JT65",
+          "JT9",
+          "SSTV",
+          "FAX",
+          "PSK31",
+          "DSTAR",
+          "FREEDV",
+          "C4FM",
+          "DMR"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "同帯内場所変更なし。マルチは全帯同一地、単帯間のみ場所変更可。MO全員の氏名又はコールと資格を記載。データ/音声区分・実レポートを確認した"
+        ],
+        "operator": "SO",
+        "operators_in_comments": false,
+        "regional": {
+          "entry_group": "single",
+          "required_declarations": [
+            "own_region",
+            "locations"
+          ]
+        }
+      },
+      {
+        "id": "G-14",
+        "name": "G 14",
+        "bands": [
+          "14"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "AM",
+          "FM",
+          "RTTY",
+          "FT8",
+          "FT4",
+          "JT65",
+          "JT9",
+          "SSTV",
+          "FAX",
+          "PSK31",
+          "DSTAR",
+          "FREEDV",
+          "C4FM",
+          "DMR"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "同帯内場所変更なし。マルチは全帯同一地、単帯間のみ場所変更可。MO全員の氏名又はコールと資格を記載。データ/音声区分・実レポートを確認した"
+        ],
+        "operator": "SO",
+        "operators_in_comments": false,
+        "regional": {
+          "entry_group": "single",
+          "required_declarations": [
+            "own_region",
+            "locations"
+          ]
+        }
+      },
+      {
+        "id": "G-21",
+        "name": "G 21",
+        "bands": [
+          "21"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "AM",
+          "FM",
+          "RTTY",
+          "FT8",
+          "FT4",
+          "JT65",
+          "JT9",
+          "SSTV",
+          "FAX",
+          "PSK31",
+          "DSTAR",
+          "FREEDV",
+          "C4FM",
+          "DMR"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "同帯内場所変更なし。マルチは全帯同一地、単帯間のみ場所変更可。MO全員の氏名又はコールと資格を記載。データ/音声区分・実レポートを確認した"
+        ],
+        "operator": "SO",
+        "operators_in_comments": false,
+        "regional": {
+          "entry_group": "single",
+          "required_declarations": [
+            "own_region",
+            "locations"
+          ]
+        }
+      },
+      {
+        "id": "G-28",
+        "name": "G 28",
+        "bands": [
+          "28"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "AM",
+          "FM",
+          "RTTY",
+          "FT8",
+          "FT4",
+          "JT65",
+          "JT9",
+          "SSTV",
+          "FAX",
+          "PSK31",
+          "DSTAR",
+          "FREEDV",
+          "C4FM",
+          "DMR"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "同帯内場所変更なし。マルチは全帯同一地、単帯間のみ場所変更可。MO全員の氏名又はコールと資格を記載。データ/音声区分・実レポートを確認した"
+        ],
+        "operator": "SO",
+        "operators_in_comments": false,
+        "regional": {
+          "entry_group": "single",
+          "required_declarations": [
+            "own_region",
+            "locations"
+          ]
+        }
+      },
+      {
+        "id": "G-50",
+        "name": "G 50",
+        "bands": [
+          "50"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "AM",
+          "FM",
+          "RTTY",
+          "FT8",
+          "FT4",
+          "JT65",
+          "JT9",
+          "SSTV",
+          "FAX",
+          "PSK31",
+          "DSTAR",
+          "FREEDV",
+          "C4FM",
+          "DMR"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "同帯内場所変更なし。マルチは全帯同一地、単帯間のみ場所変更可。MO全員の氏名又はコールと資格を記載。データ/音声区分・実レポートを確認した"
+        ],
+        "operator": "SO",
+        "operators_in_comments": false,
+        "regional": {
+          "entry_group": "single",
+          "required_declarations": [
+            "own_region",
+            "locations"
+          ]
+        }
+      },
+      {
+        "id": "G-144",
+        "name": "G 144",
+        "bands": [
+          "144"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "AM",
+          "FM",
+          "RTTY",
+          "FT8",
+          "FT4",
+          "JT65",
+          "JT9",
+          "SSTV",
+          "FAX",
+          "PSK31",
+          "DSTAR",
+          "FREEDV",
+          "C4FM",
+          "DMR"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "同帯内場所変更なし。マルチは全帯同一地、単帯間のみ場所変更可。MO全員の氏名又はコールと資格を記載。データ/音声区分・実レポートを確認した"
+        ],
+        "operator": "SO",
+        "operators_in_comments": false,
+        "regional": {
+          "entry_group": "single",
+          "required_declarations": [
+            "own_region",
+            "locations"
+          ]
+        }
+      },
+      {
+        "id": "G-430",
+        "name": "G 430",
+        "bands": [
+          "430"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "AM",
+          "FM",
+          "RTTY",
+          "FT8",
+          "FT4",
+          "JT65",
+          "JT9",
+          "SSTV",
+          "FAX",
+          "PSK31",
+          "DSTAR",
+          "FREEDV",
+          "C4FM",
+          "DMR"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "同帯内場所変更なし。マルチは全帯同一地、単帯間のみ場所変更可。MO全員の氏名又はコールと資格を記載。データ/音声区分・実レポートを確認した"
+        ],
+        "operator": "SO",
+        "operators_in_comments": false,
+        "regional": {
+          "entry_group": "single",
+          "required_declarations": [
+            "own_region",
+            "locations"
+          ]
+        }
+      },
+      {
+        "id": "G-1200",
+        "name": "G 1200",
+        "bands": [
+          "1200",
+          "2400",
+          "5600",
+          "10G",
+          "24000",
+          "47000",
+          "77000",
+          "135000",
+          "248000"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "AM",
+          "FM",
+          "RTTY",
+          "FT8",
+          "FT4",
+          "JT65",
+          "JT9",
+          "SSTV",
+          "FAX",
+          "PSK31",
+          "DSTAR",
+          "FREEDV",
+          "C4FM",
+          "DMR"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 9,
+        "min_calls": 1,
+        "required_flags": [
+          "同帯内場所変更なし。マルチは全帯同一地、単帯間のみ場所変更可。MO全員の氏名又はコールと資格を記載。データ/音声区分・実レポートを確認した"
+        ],
+        "operator": "SO",
+        "operators_in_comments": false,
+        "regional": {
+          "entry_group": "single",
+          "required_declarations": [
+            "own_region",
+            "locations"
+          ]
+        }
+      },
+      {
+        "id": "G-MM",
+        "name": "G MM",
+        "bands": [
+          "1.9",
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28",
+          "50",
+          "144",
+          "430",
+          "1200",
+          "2400",
+          "5600",
+          "10G",
+          "24000",
+          "47000",
+          "77000",
+          "135000",
+          "248000"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "AM",
+          "FM",
+          "RTTY",
+          "FT8",
+          "FT4",
+          "JT65",
+          "JT9",
+          "SSTV",
+          "FAX",
+          "PSK31",
+          "DSTAR",
+          "FREEDV",
+          "C4FM",
+          "DMR"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 18,
+        "min_calls": 1,
+        "required_flags": [
+          "同帯内場所変更なし。マルチは全帯同一地、単帯間のみ場所変更可。MO全員の氏名又はコールと資格を記載。データ/音声区分・実レポートを確認した"
+        ],
+        "operator": "MO",
+        "operators_in_comments": true,
+        "regional": {
+          "entry_group": "exclusive",
+          "required_declarations": [
+            "own_region",
+            "locations"
+          ]
+        }
+      }
+    ],
+    "required_flags": [
+      "国内の規約対象局として、実運用地・使用周波数・免許範囲・完全な番号交換を確認した",
+      "大会原典の運用制限と提出数を確認し、未受信番号を事後に補っていない（申告得点・審査前）"
+    ],
+    "duplicate_fields": [
+      "call",
+      "band",
+      "mode_family"
+    ],
+    "prefer": "first",
+    "special": "none",
+    "entrant": {
+      "station_types": [
+        "individual",
+        "club"
+      ],
+      "guest_policy": "allowed"
+    },
+    "normalization": {
+      "bands": {
+        "1.9MHZ": "1.9",
+        "3.5MHZ": "3.5",
+        "7MHZ": "7",
+        "14MHZ": "14",
+        "21MHZ": "21",
+        "28MHZ": "28",
+        "50MHZ": "50",
+        "144MHZ": "144",
+        "430MHZ": "430",
+        "1200MHZ": "1200",
+        "2400MHZ": "2400",
+        "5600MHZ": "5600",
+        "10GMHZ": "10G",
+        "24000MHZ": "24000",
+        "47000MHZ": "47000",
+        "77000MHZ": "77000",
+        "135000MHZ": "135000",
+        "248000MHZ": "248000",
+        "1.8": "1.9",
+        "1.8MHZ": "1.9",
+        "1.2G": "1200",
+        "1.2GHZ": "1200",
+        "2.4G": "2400",
+        "2.4GHZ": "2400",
+        "5.6G": "5600",
+        "5.6GHZ": "5600",
+        "10G": "10G",
+        "10GHZ": "10G",
+        "24G": "24000",
+        "24GHZ": "24000",
+        "47G": "47000",
+        "47GHZ": "47000",
+        "77G": "77000",
+        "77GHZ": "77000",
+        "135G": "135000",
+        "135GHZ": "135000",
+        "248G": "248000",
+        "248GHZ": "248000"
+      },
+      "modes": {
+        "USB": "SSB",
+        "LSB": "SSB",
+        "D-STAR": "DSTAR"
+      },
+      "mode_families": {
+        "RTTY": "digital",
+        "FT8": "digital",
+        "FT4": "digital",
+        "JT65": "digital",
+        "JT9": "digital",
+        "SSTV": "digital",
+        "FAX": "digital",
+        "PSK31": "digital",
+        "DSTAR": "digital",
+        "FREEDV": "digital",
+        "C4FM": "digital",
+        "DMR": "digital"
+      }
+    },
+    "regional": {
+      "declarations": {
+        "own_region": "自局の実送信番号（N市郡区、GはGL4）",
+        "locations": "実バンドごとの運用地と時刻（同帯移動なし、マルチは全帯同一地）"
+      },
+      "profile": "hiroshima",
+      "local_a": [
+        "3502",
+        "3503",
+        "3504",
+        "3505",
+        "3508",
+        "3509",
+        "3510",
+        "3511",
+        "3512",
+        "3513",
+        "3514",
+        "3515",
+        "3516",
+        "35001",
+        "35007",
+        "35008",
+        "35010",
+        "35016",
+        "350101",
+        "350102",
+        "350103",
+        "350104",
+        "350105",
+        "350106",
+        "350107",
+        "350108"
+      ],
+      "local_b": [],
+      "entry_set": {
+        "kind": "modes_disjoint",
+        "max": 2
+      }
+    },
+    "submission": {
+      "formats": [
+        "JARL R1.0"
+      ],
+      "zone": "JST",
+      "contest": "広島WASコンテスト",
+      "instructions": "2026。JARL R1.0 JST、3月31日、log-2026@HS-contest.org。単帯2種目はサマリー/ログを1本文にまとめて提出、添付不可。自局コールだけの件名。各部門を生成後「提出セット」で1ファイルへ結合。県外GL4・県内市郡区、県内相手5/他1点。 原案・原典はdocs/contest-researchに保存。2026参考版であり2027へ自動更新しません。主催受付・Windows実機は未検証。自動提出しません。",
+      "band_labels": {
+        "1.9": "1.8"
+      },
+      "order": "band_time",
+      "row_scope": "category",
+      "required_fields": []
+    },
+    "rule_view": {
+      "call_method": "電信・デジタル：CQ WAS TEST／電話：CQ WASコンテスト（またはCQ広島コンテスト）。",
+      "counterparts": "県内局・県外局とも交信対象。県外局同士と海外局との交信も有効。",
+      "points_display": "広島県内局との交信5点、県外局との交信1点。電信・電話・デジタルの各モード群は同一バンドでもそれぞれ1交信ずつ有効。"
+    }
+  }
+}
+

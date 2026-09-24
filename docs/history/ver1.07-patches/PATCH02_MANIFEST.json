@@ -1,0 +1,199 @@
+{
+  "patch": "Ver1.072 PATCH02",
+  "version": "1.072",
+  "baseline": "PSLog_1.07_CANONICAL_SOURCE.zip + PSLog_1.071_PATCH01.zip",
+  "changed_file_count": 37,
+  "files": [
+    {
+      "path": "CHANGELOG.md",
+      "size": 8417,
+      "sha256": "da687d9acaebdd7b9df40ccd6d6ac02354c99084945ad442a4f151deed559772"
+    },
+    {
+      "path": "USER_GUIDE.txt",
+      "size": 14676,
+      "sha256": "b48e3b0db2487ea86788de9d79e8f4b1bd06e9a966354c6ddf1d3fa846376047"
+    },
+    {
+      "path": "VER1.072_PATCH02_README.md",
+      "size": 2631,
+      "sha256": "7960ea2edc69684c49ea43c7491f673232d1048cce1f7a3bacb64510a9d8b9d0"
+    },
+    {
+      "path": "build-windows.ps1",
+      "size": 3346,
+      "sha256": "294707c195bc62bdaebef14a19f6b6090ea8aab31102e8536806b9d3b73ab067"
+    },
+    {
+      "path": "docs/specs/io/QSL_BATCH.md",
+      "size": 7313,
+      "sha256": "9db7e7da44e9420bee2331ed4e10277d07198ca364dcea0c4affcb5298e09d20"
+    },
+    {
+      "path": "jccjcg_batch.py",
+      "size": 14782,
+      "sha256": "4ec70acd068f1631a860b651a5c90134e93e47592e5ce49b0d9852544944968b"
+    },
+    {
+      "path": "main.py",
+      "size": 107594,
+      "sha256": "f069de872605eeac8f68d86ae47dccfad200e64463eefa901839bf95f736b32f"
+    },
+    {
+      "path": "qsl_batch.py",
+      "size": 28989,
+      "sha256": "13a6d7da850aee071191d7c597ac99396eb9ef4ebf59a97ad2c351485d3d48de"
+    },
+    {
+      "path": "qsl_ui.py",
+      "size": 27036,
+      "sha256": "cd4de55e6357696473223d75acf6ef5fdaf625b420d44775c73223aace3c2abd"
+    },
+    {
+      "path": "storage.py",
+      "size": 16181,
+      "sha256": "69b3fd7c282588c97e9af847f125c3239d432a33e1bd3a92d0dbaa06c2c99fd2"
+    },
+    {
+      "path": "test_full_restore.py",
+      "size": 7920,
+      "sha256": "dd5db5e556ae70750abbf2a56fd77cf727de2823de2ad5bf6550753fc09c88f0"
+    },
+    {
+      "path": "test_patch01_1061.py",
+      "size": 10118,
+      "sha256": "5f5553afb0696698be3745456cb17863e3b2d03a2053200764e0b747bd86607a"
+    },
+    {
+      "path": "test_patch01_1071.py",
+      "size": 2871,
+      "sha256": "f19eaff0646b72efd4e6402b7b98c0d8a2377d67727fcf8abd85d60ad5b32b9d"
+    },
+    {
+      "path": "test_patch02_1072.py",
+      "size": 3605,
+      "sha256": "05d5aa81b17e107d41b75984d8b7484eeebef7ad3e15b24818af8bc122688ac3"
+    },
+    {
+      "path": "test_patch03.py",
+      "size": 2569,
+      "sha256": "e02b82a83e39c5fd329a91b8caee682c7ea73579448a73382dd127de3bbbd903"
+    },
+    {
+      "path": "test_patch03_1063.py",
+      "size": 4221,
+      "sha256": "61a27882176a1f0bd54948646ddb71983d73d66e639d01b8ada1b2a9b7bb17fa"
+    },
+    {
+      "path": "test_patch04.py",
+      "size": 2920,
+      "sha256": "123e517adb2732129240c708916ff204965723dfa04a0632986c7160eea3411f"
+    },
+    {
+      "path": "test_patch04_1064.py",
+      "size": 4219,
+      "sha256": "c386633183da7be12ca71f533a42c0823caff6f9de7ec8173ddb599caf08141f"
+    },
+    {
+      "path": "test_patch05.py",
+      "size": 2913,
+      "sha256": "f06861ba4ce440040bf9fcb390348109c90039feca74ee09eac845947c73c3cc"
+    },
+    {
+      "path": "test_patch05_1065.py",
+      "size": 2918,
+      "sha256": "1237a8419b926b4807bfab2272b679d4d426629a88eac068d972800eacc939b7"
+    },
+    {
+      "path": "test_patch06.py",
+      "size": 3766,
+      "sha256": "51746a016f4703c51c3a602ddd53b3fe779d822b4e738f490d5b97a474e87876"
+    },
+    {
+      "path": "test_patch06_1066.py",
+      "size": 3744,
+      "sha256": "49ede2db0db8aa32d0e851ff94a2b5c18dfc283cbd3d7a304735dfb5c4f688b9"
+    },
+    {
+      "path": "test_patch07_1057.py",
+      "size": 1679,
+      "sha256": "c51c6394202367d2e1122852019f27681a69b9871f5c908366a57d0addffb23f"
+    },
+    {
+      "path": "test_patch07_1067.py",
+      "size": 2631,
+      "sha256": "7d8d7d2031975c55aca6e59689322711f8831966a671e15046e3e422afa08cdc"
+    },
+    {
+      "path": "test_patch08_1058.py",
+      "size": 1921,
+      "sha256": "ab8bed734a78b18420e513e919bbb572a1daf0d8c7189fb29377b656939fba28"
+    },
+    {
+      "path": "test_patch08_1068.py",
+      "size": 998,
+      "sha256": "aa8fc47126320df14271bf3f5f550ebac9e196a2cc9d7697c4469a848fa2a12e"
+    },
+    {
+      "path": "test_patch08_fix1_1068.py",
+      "size": 2853,
+      "sha256": "01b6fa0c784a818fb497f071e0d7e17f688cd0327b899923fd918aed7e0f0e92"
+    },
+    {
+      "path": "test_patch09_1059.py",
+      "size": 3899,
+      "sha256": "027ea238b578d46663ab542bb3a96f2194a95a692e452f8156993669ffd67511"
+    },
+    {
+      "path": "test_patch09_1069.py",
+      "size": 1199,
+      "sha256": "ff244349017818cf17bc013607a5ed71d4e8788454e9aa5d8a4e8a6a29bbf627"
+    },
+    {
+      "path": "test_patch10.py",
+      "size": 3244,
+      "sha256": "63b1a0cffedec346168daab01cc2b85f9d8eb69c9db4e6c914df2bc70f314561"
+    },
+    {
+      "path": "test_patch10_1070.py",
+      "size": 2651,
+      "sha256": "bd19e628170fae5d24dd0605b55fad3827252d26a0ed1f441bf59b71a18e64fc"
+    },
+    {
+      "path": "test_patch10_1070_core.py",
+      "size": 1272,
+      "sha256": "7fd8c3991c4e0c6b1606808c34519192f7b69f24a28dde965325f1fd69e879c2"
+    },
+    {
+      "path": "test_release_106.py",
+      "size": 3156,
+      "sha256": "15bfe757fa639a37ad5ee0e1cf4096b6f89874cddad3b60acbc6b252a1928643"
+    },
+    {
+      "path": "test_v102.py",
+      "size": 3184,
+      "sha256": "59fa0f5126d00ea1bb1a1280b2b58a280d76e85e5131e841850f8543ceba8d7e"
+    },
+    {
+      "path": "test_v103_initial.py",
+      "size": 2407,
+      "sha256": "f831dc10adf650ac8be759016e64647fa213e731de7f39af31247a3ee7f165e0"
+    },
+    {
+      "path": "test_windows_package.py",
+      "size": 8299,
+      "sha256": "5d021cb6e206c08fc09c7d6ab1b186fc709301db9b597a018d5403f9ea1bae73"
+    },
+    {
+      "path": "user_guide.py",
+      "size": 15390,
+      "sha256": "bb5df47e111e0a4762a55ddb3febd83c15414de95e471ad86bb875fb55505d32"
+    }
+  ],
+  "notes": [
+    "JCC/JCG batch RMKS1 parsing ignores formal QSL tags (.R and non-.R) and standalone decimal frequency memos only.",
+    "RMKS2 remains excluded and arbitrary note text is never mined for integers.",
+    "QSL receipt TXT accepts optional JCC/JCG as a fourth order-independent field; time still requires colon.",
+    "Optional QSL input JCC/JCG is confirmation data only; the QSL batch still updates RMKS only."
+  ]
+}

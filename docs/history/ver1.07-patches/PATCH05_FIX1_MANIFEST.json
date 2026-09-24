@@ -1,0 +1,22 @@
+{
+  "version": "1.075",
+  "patch": "PATCH05_FIX1",
+  "base": "Ver1.075 PATCH05",
+  "files": [
+    {
+      "path": "CHANGELOG.md",
+      "size": 12804,
+      "sha256": "e042a46a27939ed417aef2294b99d1897faf1e734054edf095cb514f99dd5f90"
+    },
+    {
+      "path": "VER1.075_PATCH05_FIX1_README.md",
+      "size": 909,
+      "sha256": "62c32b0a47f7bad7b46141fcbdb879cd8d641576dd1eb1fc0dca20c2917e54da"
+    },
+    {
+      "path": "test_patch05_1075.py",
+      "size": 3415,
+      "sha256": "bd8302e509165f7883b40c05d246cf7aeb55fbcd84f13fe5c7fb872d5f93fa72"
+    }
+  ]
+}

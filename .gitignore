@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+build/
+dist/
+release/
+*.spec.bak
+windows-tests.txt
+*.log
+# runtime/user data
+logbook/
+bak/
+output/
+config/conf.cfg
+config/*.cfg
+logbook_flr/

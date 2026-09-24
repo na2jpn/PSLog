@@ -1,0 +1,198 @@
+{
+  "patch": "Ver1.077 PATCH07",
+  "version": "1.077",
+  "baseline": "Ver1.076 PATCH06 applied source",
+  "changed_file_count": 38,
+  "files": [
+    {
+      "path": "CHANGELOG.md",
+      "size": 15518,
+      "sha256": "c903a3d54d647d684abf1effde474bdbbaa68bfbbeed36c7c95556d44851d5b3"
+    },
+    {
+      "path": "VER1.077_PATCH07_README.md",
+      "size": 2638,
+      "sha256": "86010ba68ebc44580b42a033410db2c40e13b3c668f44ec54dbde0213ceb509d"
+    },
+    {
+      "path": "build-windows.ps1",
+      "size": 3346,
+      "sha256": "f5ae5881952085ebde9178726406ed0215f2d461594144c7ed55e6d0abde8c61"
+    },
+    {
+      "path": "help_ui.py",
+      "size": 12045,
+      "sha256": "88f2264999025adefed6eb733886ae47384217f9091ba430ff78fa44c481b6ff"
+    },
+    {
+      "path": "main.py",
+      "size": 134385,
+      "sha256": "0327a9f3bf3c2f08790c1b4959b55f3d2557564b0443b8749f62be5f43c6d074"
+    },
+    {
+      "path": "session_state.py",
+      "size": 12004,
+      "sha256": "4027701c3ae5714931aa3b030ceedc81c8bea78d7346293012a443a73c9a1273"
+    },
+    {
+      "path": "storage.py",
+      "size": 16225,
+      "sha256": "79776b3b8f83a4a21fa7040baa9da1547fb126ec83e1e6cc75995521b2f263ae"
+    },
+    {
+      "path": "test_full_restore.py",
+      "size": 7920,
+      "sha256": "1ead3883ac128355c4865c41ba6d2fdb05c486e0da659e9e0a9716fec8c19b59"
+    },
+    {
+      "path": "test_patch01_1061.py",
+      "size": 10118,
+      "sha256": "c64acd0112437cb0714d69287a68d2100fa155e4fb25814125bde0ba7f537eae"
+    },
+    {
+      "path": "test_patch01_1071.py",
+      "size": 2871,
+      "sha256": "c9f5845089a449ece165ecc5e417cc75884085e521c0abc89d7459a1a82f63bb"
+    },
+    {
+      "path": "test_patch02_1072.py",
+      "size": 3605,
+      "sha256": "dd7014cde4b1582ee540d8a5c86cbd15020f90b03cf184aa9934189e061e7b7a"
+    },
+    {
+      "path": "test_patch03.py",
+      "size": 2569,
+      "sha256": "f4533b16d4c94e98b1e2809f078be8c2006d9431bc60889db80f4bb70409d78e"
+    },
+    {
+      "path": "test_patch03_1063.py",
+      "size": 4221,
+      "sha256": "8778cead11ea41baf154a658fc5cde33aa6810e825df39032bc619f684fbe41b"
+    },
+    {
+      "path": "test_patch03_1073.py",
+      "size": 3150,
+      "sha256": "0be9f1785cc44318f1352b0a90409c3f7777e791e9b8df92e831624368e9a7d0"
+    },
+    {
+      "path": "test_patch04.py",
+      "size": 2920,
+      "sha256": "192b982404c7d32aa5f92e661c5ae1879436b9648247128410bb12d5b8fffe46"
+    },
+    {
+      "path": "test_patch04_1064.py",
+      "size": 4219,
+      "sha256": "69c754a09ae1254233685d80bcb99ecb45e913a493e5427cc0253c0ab392260a"
+    },
+    {
+      "path": "test_patch04_1074.py",
+      "size": 6944,
+      "sha256": "63a3244c56ae06db32ff5d627f74578b87b87bb8dd509b8735329ded80c5fefe"
+    },
+    {
+      "path": "test_patch05.py",
+      "size": 2913,
+      "sha256": "27ff86d254658927e47d013e0340516c79a68943c8d3c1bcb34093b2c4baf35c"
+    },
+    {
+      "path": "test_patch05_1065.py",
+      "size": 2918,
+      "sha256": "bb06bb04685200860d82b9ee943bd419a47cec3f1d257d5acec3e685b28a629e"
+    },
+    {
+      "path": "test_patch05_1075.py",
+      "size": 3872,
+      "sha256": "0d13f7380ee7f1a316cf4e5553a3318894163161f20b56d58163d993c05efaab"
+    },
+    {
+      "path": "test_patch06.py",
+      "size": 3766,
+      "sha256": "09eb3c35246c637242c1c130bdb23e324f5bd4a0f9d98bee727c422146d272ac"
+    },
+    {
+      "path": "test_patch06_1066.py",
+      "size": 3744,
+      "sha256": "94d58ed280a7782c6b2b3651458b01e10e135fad3afeb6353ded91bf0e9b19b1"
+    },
+    {
+      "path": "test_patch06_1076.py",
+      "size": 4101,
+      "sha256": "648aaf946ff5efd1f252bdf4b8eff5bcf6d9b80e511dd19eeea2364f78fe8330"
+    },
+    {
+      "path": "test_patch07_1057.py",
+      "size": 1679,
+      "sha256": "f801c21f99c0006e82555e9afd62460ec342d35d3a47f9231fa0472a54fb2c35"
+    },
+    {
+      "path": "test_patch07_1067.py",
+      "size": 2631,
+      "sha256": "6f106e0adeb0389028b4a4eb2598cb4fda036d9cb5f5e1cff6bc3894bd9c93c4"
+    },
+    {
+      "path": "test_patch07_1077.py",
+      "size": 4111,
+      "sha256": "0e7201ddb866947bc8ccef65445dfe0daa536ef4790da7aab34ed4671ef722fe"
+    },
+    {
+      "path": "test_patch08_1058.py",
+      "size": 1921,
+      "sha256": "0d6013637aa6011f78a6b8658d137c96c042d4e164b8aa7975585de54adb6c71"
+    },
+    {
+      "path": "test_patch08_1068.py",
+      "size": 998,
+      "sha256": "78d8f6945ea63ccb0df31e8863c9cf35b1271b239df4473843ec2b78c4b8b0b4"
+    },
+    {
+      "path": "test_patch08_fix1_1068.py",
+      "size": 2853,
+      "sha256": "8a9a4446ff2263371f6a74d60a87b8a181591d5accd17f9188b9ea99c37ea234"
+    },
+    {
+      "path": "test_patch09_1059.py",
+      "size": 3899,
+      "sha256": "dd0a62fe756f3000c89e9372f4404eb88c2520372b3bf62d5f9b742c7136d781"
+    },
+    {
+      "path": "test_patch09_1069.py",
+      "size": 1199,
+      "sha256": "4ef6f34f00f2f3ee60b56d4cecd9327e9c7172f619e9d3fbc330b863ed9f8bd5"
+    },
+    {
+      "path": "test_patch10.py",
+      "size": 3244,
+      "sha256": "8b3ea02e1186f53da801f9d76287c458fd69fdbcee05d285f624af091fcc87c3"
+    },
+    {
+      "path": "test_patch10_1070.py",
+      "size": 2651,
+      "sha256": "169bc8b021d5ff051d75e05700303ea16b9ea8d9d1c06bd7f8625e55a3212d93"
+    },
+    {
+      "path": "test_patch10_1070_core.py",
+      "size": 1272,
+      "sha256": "f60b3da1f2285a0a4573385111991153d8646f8604ab3dd0c1e7110e2e45770b"
+    },
+    {
+      "path": "test_release_106.py",
+      "size": 3156,
+      "sha256": "e29d71458fcd52a7afc3ece58cd732e336ffec6241ca29570b01096c22992e02"
+    },
+    {
+      "path": "test_v102.py",
+      "size": 3184,
+      "sha256": "3225ca74e40a43eda4ddc7b03001ee5be4015da372da49aeb8ed495353dd0329"
+    },
+    {
+      "path": "test_v103_initial.py",
+      "size": 2407,
+      "sha256": "18262e665309d62532663a5172228a283b69b68bb3a529f8d6f5fffde2636d02"
+    },
+    {
+      "path": "test_windows_package.py",
+      "size": 8299,
+      "sha256": "a3b69dc24133cde5ff9160460338b26788ec810c0b81efa0dfb0c6658e2ba75a"
+    }
+  ]
+}

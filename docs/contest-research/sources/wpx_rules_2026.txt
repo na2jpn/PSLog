@@ -1,0 +1,485 @@
+CQ WPX - Rules
+@media only screen and (max-width: 400px) {
+            /* For mobile phones: */
+            [class*="w3-bar-block w3-card-2 w3-right"] {
+                min-width: 45%;
+            }
+        }
+Other Contests:
+CQ WW
+CQ WPX
+CQ WW RTTY
+CQ WPX RTTY
+CQ 160
+CQ VHF
+WW DIGI
+CQ World Wide WPX Contest
+Show navigation
+Hide navigation
+Home
+Rules
+Rules
+Rules FAQ
+Rules Archive
+Plaques
+Results
+Results Articles
+Final Scores SSB
+Final Scores CW
+Overlay Scores
+Club Scores
+Soapbox Comments SSB
+Soapbox Comments CW
+Raw Scores SSB
+Raw Scores CW
+Public Log Checking Reports
+Entry Maps
+Entry Statistics
+Records
+By Region
+Overlay Categories
+Prefix Records
+New Records
+New Overlay Records
+Legacy Single Op By Region
+Winners by Year
+Highest QSO Rates
+Logs
+Submitting Your Log
+Cabrillo Log Upload
+ADIF Log Converter
+Cabrillo File Format
+Logs Received - SSB
+Logs Received - CW
+Public Logs
+Resources
+Resources
+Club Names
+Location Names
+Public Log Checking Reports
+REST API Reference
+Contact Us
+Contact Form
+Organization
+Blog
+Blog
+Archive
+$( function()
+	{
+		$( '#nav li:has(ul)' ).doubleTapToGo();
+	});
+Rules
+Translations
+English
+Български
+[Bulgarian]
+中文
+[Chinese]
+Čeština
+[Czech]
+Nederlandse [Dutch]
+Español [Spanish]
+Suomeksi [Finnish]
+Français
+[French]
+Deutsch [German]
+Έλληνες
+[Greek]
+日本語
+[Japanese]
+Română
+[Romanian]
+Русский
+[Russian]
+Slovenščina
+[Slovenian]
+Turk [Turkish]
+Current Rules (pdf)
+2026 CQ World-Wide WPX Contest
+SSB: March 28-29, 2025 CW: May 30-31, 2026
+Starts: 0000 UTC Saturday Ends: 2359 UTC Sunday
+I. OBJECTIVE:
+For amateurs worldwide to contact as many amateurs and prefixes as possible 
+		during the contest period.
+II. PERIOD OF OPERATION:
+48 hours. Single Operator stations may operate 36 of the 48 hours –
+off times must be a minimum of 60 minutes during which no QSO is logged.
+Multi-operator stations may operate the full 48 hours.
+III. BANDS:
+Only the 1.8, 3.5, 7, 14, 21, and 28 MHz bands may be used.
+Observance of 
+		established band plans is strongly encouraged.
+IV. EXCHANGE:
+RS(T) report plus a progressive contact serial number starting with 001 for 
+		the first contact. Note: Multi-Two, Multi-Unlimited, and Multi-Distributed 
+		entrants use separate serial number sequences on each band.
+V. SCORING:
+A. Score:
+The final score is the result of the total QSO points 
+		multiplied by the number of different prefixes worked.
+B. QSO Points:
+A station may be worked once on each band for QSO 
+		point credit:
+1.
+Contacts between stations on different continents are worth 
+		three (3) points on 28, 21, and 14 MHz and six (6) points on 7, 3.5, and 
+		1.8 MHz.
+2.
+Contacts between stations on the same continent, but different 
+		countries, are worth one (1) point on 28, 21, and 14 MHz and two (2) points 
+		on 7, 3.5, and 1.8 MHz. Exception: For North American stations only—contacts 
+		between stations within the North American boundaries (both stations must 
+		be located in North America) are worth two (2) points on 28, 21, and 14 
+		MHz and four (4) points on 7, 3.5, and 1.8 MHz.
+3.
+Contacts between stations in the same country are worth 1 point 
+		regardless of band.
+C. Prefix Multipliers:
+The prefix multiplier is the number of 
+		valid prefixes worked. Each PREFIX is counted only once regardless of the 
+		band or number of times the same prefix is worked.
+1.
+A PREFIX is the letter/numeral combination which forms the first part 
+		of the amateur call. Examples: N8, W8, WD8, HG1, HG19, KC2, OE2, OE25, LY1000, etc. 
+		Any difference in the numbering, lettering, or order of same shall count as a 
+		separate prefix. In cases of portable operation, the portable designator will 
+		then become the prefix. The portable prefix must be an authorized prefix of the 
+		country/call area of operation. Portable designators without numbers will be 
+		assigned a zero (Ø) after the second letter of the portable designator to form 
+		the prefix. Example: PA/N8BJQ would become PAØ. All calls without numbers will 
+		be assigned a zero (Ø) after the first two letters to form the prefix. Example: 
+		XEFTJW would count as XEØ. Maritime mobile, mobile, /A, /E, /J, /P, or other 
+		license class identifiers do not count as prefixes.
+2.
+Special event, commemorative, and other unique prefix stations 
+		are encouraged to participate. Prefixes must be issued or permitted by the licensing 
+		authority of the country of operation.
+VI. ENTRY CATEGORIES:
+Use of QSO alerting assistance is permitted in all categories with the exception 
+		of the Single Operator Classic Overlay.
+A. Single Operator Categories:
+One person (the operator) performs 
+		all operating and logging functions. There is no limit on band changes. 
+		Only one transmitted signal is permitted at any time.
+1. Single Operator High Power (All Band or Single Band):
+Total 
+		output power must not exceed
+1500 watts.
+2. Single Operator Low Power (All Band or Single Band):
+Total 
+		output power must not exceed
+100 watts.
+3. Single Operator QRP (All Band or Single Band):
+Total 
+		output power must not exceed
+5 watts.
+B. Single Operator Overlay Categories:
+Any Single Operator entrant 
+		who meets the requirements may ALSO enter one of the categories shown below 
+		by adding the appropriate CATEGORY-OVERLAY line in the Cabrillo log file 
+		header. Overlay category entries will be listed separately in the results, 
+		scored as All Bands, and grouped by High Power and Low Power (includes QRP).
+1. Tribander/Single Element (TB-WIRES):
+During the contest an entrant shall use only one (1) tribander (any 
+		type, with a single feed line from the transmitter to the antenna) for 10, 
+		15, and 20 meters and single-element antennas on 40, 80, and 160 meters. Separate 
+		receiving antennas are not permitted in this category.
+2. Rookie (ROOKIE):
+To enter this category 
+		the operator must have been licensed as a radio amateur three (3) years 
+		or less on the date of the contest. The date the operator was first licensed
+must
+be 
+		indicated in the SOAPBOX field. Previous Rookie winners are not eligible for plaques 
+		in this category.
+3. Classic Operator (CLASSIC):
+The entrant will 
+		use only one radio and may operate up to 24 of the 48 hours – off times are a 
+		minimum of 60 minutes during which no QSO is logged. If the log shows more than 
+		24 hours of operation, only the first 24 hours will be counted for the overlay score. 
+		Use of QSO alerting assistance of any kind is prohibited (see rule IX.B) for the 
+		duration of contest. Receiving while transmitting is also prohibited.
+4. Youth (YOUTH):
+The operator was 25 years old or younger at the 
+		start of the contest. Indicate the birth date in the SOAPBOX field.
+C. Multi-Operator Categories (All Band only):
+More than one person 
+		can contribute to the final score during the official contest period. Select 
+		category based on number of transmitted signals or number of locations
+1. Single-Transmitter (MULTI-ONE):
+Only one transmitted signal 
+		is permitted at any time. A maximum of ten (10) band changes may be made 
+		in any clock hour (00 through 59 minutes). For example, a change from 20 
+		meters to 40 meters and then back to 20 meters counts as two band changes. 
+		Use a single serial number sequence for the entire log.
+a. High Power.
+Total output power of 
+		each transmitted signal must not exceed
+1500 watts
+.
+b. Low Power.
+Total output power of 
+		each transmitted signal must not exceed
+100 watts
+.
+2. Two-Transmitter (MULTI-TWO):
+A maximum of two transmitted signals 
+		is permitted at any time on two different bands. Both transmitters may work 
+		any station. A station may only be worked once per band regardless of which 
+		transmitter is used.
+The log must indicate which transmitter made each 
+		QSO
+(column 81 of CABRILLO QSO template for CQ contests). Each transmitter 
+		may make a maximum of eight (8) band changes in any clock hour (00 through 
+		59 minutes). Use a separate serial number sequence for each band. Total 
+		output power of each transmitted signal must not exceed
+1500 watts.
+3. Multi-Transmitter (MULTI-UNLIMITED):
+A maximum of six transmitted 
+		signals, one per band, at any one time. Six bands may be activated simultaneously. 
+		Use a separate serial number sequence for each band. Total output power 
+		of each transmitted signal must not exceed
+1500 watts.
+4. Multi-Transmitter Distributed (MULTI-DISTRIBUTED):
+A maximum of six 
+		transmitted signals, one per band at any one time, from stations in different 
+		locations.  All equipment (transmitters, receivers, amplifiers, antennas, etc.) 
+		must be located in same DXCC entity and CQ Zone, including remotely controlled 
+		equipment.  Six bands may be activated simultaneously.  Use a separate serial 
+		number sequence for each band. Total output power of each transmitted signal 
+		must not exceed
+1500 watts
+.  The Cabrillo log header must include the following 
+		lines: CATEGORY-OPERATOR: MULTI-OP, CATEGORY-STATION: DISTRIBUTED.  Rules 
+		X.E and X.F do not apply to this category.
+D. Checklog:
+Entry submitted to assist with the log checking. The entry will 
+		not have a score in the results and the log will not be made public.
+VII. AWARDS:
+A single-band log will be eligible for a single-band 
+		award only.
+A. Plaques
+are awarded to recognize top performance in a number 
+		of categories. View the current list of plaques and sponsors at 
+		<
+www.cqwpx.com/plaques/
+>.
+Only one plaque will be awarded per entry. A station winning a World 
+		plaque will not be considered for a sub-area award. That award will be given 
+		to the runner-up for that area if the number of entries justifies the award.
+B. Certificates:
+Electronic certificates will be made available 
+		for download for everyone that submits an on-time entry.
+VIII. CLUB COMPETITION:
+The club score is the total aggregate score from logs submitted by members. 
+		There are two separate club competition categories.
+A. USA Clubs:
+Participation is limited to club members residing within 
+		a 250 mile radius circle from the center of club area.
+B. DX Clubs:
+Participation is limited to club members residing within 
+		EITHER the DXCC country where the club is located OR within a 400 km radius circle 
+		from the center of the club.
+C. General Club Rules:
+National organizations (e.g., JARL, REF or DARC) are not eligible 
+			for the club competition.
+Single-operator entries may only contribute to one club. Multi-operator 
+			scores may be allocated to multiple clubs as a percentage of the number 
+			of club members participating in the operation. The log entry must spell 
+			out the full club name (and club allocations if multi-op).
+A minimum of four logs must be received for a club to be listed 
+			in the results. Checklog entries are not counted for the club score.
+The word “reside” shall be defined as: To dwell permanently or 
+			continuously or to occupy a place as a person's fixed, 
+			permanent, and principal home for legal purposes.
+Eligible club members may contribute their DXpedition scores to 
+			their organization’s club entry.
+IX. DEFINITIONS OF TERMS:
+A. Station location:
+The area in which all the transmitters, receivers, 
+		amplifiers and antennas are located. All transmitters, receivers and amplifiers must 
+		be within a single 500-meter diameter circle. Antennas must be physically connected 
+		by RF transmission lines to the transmitters, receivers and amplifiers.
+B. QSO finding assistance:
+The use of any technology or other 
+		source that provides call sign or multiplier identification of a signal 
+		to the operator. This includes, but is not limited to, use of a CW decoder, 
+		DX cluster, DX spotting web sites (e.g., DX Summit), local or remote call 
+		sign and frequency decoding technology (e.g., CW Skimmer or Reverse Beacon 
+		Network), or operating arrangements involving other individuals.
+X. GENERAL RULES FOR ALL ENTRANTS:
+A.
+Entrants must operate within the limits of their chosen category 
+		when performing any activity that could affect their submitted score.
+B.
+A different callsign must be used for each entry. Only the 
+		entrant’s callsign may be used to aid the entrant’s score.
+C.
+Do not exceed the total output power limitation of the chosen 
+		category on any band. Total output power on any band at any time is measured 
+		at the final output of the active amplifier(s).
+D.
+Self-spotting or asking to be spotted is not permitted.
+E.
+All operation must take place from one station location. Remote 
+		operation is permitted if the physical location of all transmitters, receivers, 
+		and antennas are at one station location. A remotely operated station must 
+		obey all station license, operator license, and category limitations. The 
+		call sign used must be one issued or permitted by the Regulatory Authority 
+		of the station location.
+F.
+Remote receivers outside the station location are not permitted.
+G.
+Only one signal on a band is allowed at any time.
+H.
+Alternating CQs 
+		on two or more frequencies on a band is not permitted.
+I.
+All requests for contacts, responses to calls, and copying 
+		of call signs and contest exchanges must be accomplished during the contest 
+		period using the mode and frequencies of the contest.
+J.
+Correction of logged call signs and exchanges after the contest 
+		by using any database, recordings, email or other methods of confirming 
+		QSOs is not allowed.
+K.
+Call signs logged must be the same as those exchanged over 
+		the air by the entrants during the QSO.
+L.
+For ITU Region 1 stations: transmitting on the 40m band, above 
+		7200 KHz during the SSB (phone) contest weekend is not permitted.
+M.
+For ITU Region 1 stations: transmitting below 1810 KHz during the 
+		contest weekends is not permitted.
+N.
+A human operator must initiate the following actions at all times: 1) 
+		changing receive or transmit frequencies, 2) calling a QSO partner, 3) logging a 
+		QSO. Autonomous systems or robots that emulate these actions are prohibited.
+XI. LOG INSTRUCTIONS:
+Electronic submission of logs is
+required
+for all entrants.
+A. The log MUST show the following for each contact:
+correct date 
+		and time in UTC, frequency (or band), call sign of the station worked, exchange 
+		sent, and exchange received. A log without all required information may 
+		be reclassified to Checklog. Contacts should be logged immediately as they 
+		are completed. Stations competing for World, Continent, and USA awards must 
+		provide accurate frequencies for all contacts in the log.
+B. Single band entrants are required to include all contacts
+made 
+		during the contest period, even if on other bands. Only contacts made on 
+		the band specified in the Cabrillo header will be considered 
+		for scoring purposes. Logs with contacts only on one band will be classified 
+		as single band entries.
+C. The CABRILLO file format is the standard for logs.
+See www.cqwpx.com/cabrillo.htm 
+		for detailed instructions on filling out the CABRILLO file header. Failure 
+		to fill out the header correctly may result in the entry being placed in 
+		the wrong category or reclassified as a Checklog. Note: U.S. stations must 
+		indicate the station location in the CABRILLO header (e.g., LOCATION: OH).
+D. Web upload is the only method of log submission.
+Web upload of logs is available at <
+www.cqwpx.com/logcheck/
+>. All logs received will be confirmed via e-mail. A listing of 
+		logs received can be found at <
+www.cqwpx.com.
+>
+E. Instructions for NON-CABRILLO electronic logs:
+If you are not 
+		able to submit a CABRILLO format log, please contact the Contest Director 
+		for assistance with submitting another format.
+F. Entry Confirmation:
+All logs received will be confirmed via 
+		e-mail. A listing of logs received can be found at <
+www.cqwpx.com.
+>.
+G. Log withdrawal:
+An entrant may withdraw the submitted log for 
+		any reason within 30 days of the log deadline. Contact the Contest Director 
+		for instructions.
+XII. LOG DEADLINE:
+A.
+All entries must be submitted WITHIN 48 HOURS after the end of the 
+		contest: SSB logs no later than 2359 UTC 31 March 2026, 
+		CW logs no later than 2359 UTC 2 June 2026. Resubmitting an entry after the 
+		deadline will result in it being considered as a late log.
+B.
+An extension may be requested by e-mail to <
+director@cqwpx.com
+>. The request 
+		must state a legitimate reason and must be received before the log deadline. 
+		Extensions are granted only upon confirmation by the Contest Director.
+C.
+Logs submitted after the deadline may be listed in 
+		the results but are not eligible for awards.
+XIII. JUDGING:
+The CQ WPX Contest Committee is responsible for checking 
+		and adjudicating the contest entries. Entrants are expected to follow the 
+		rules and best amateur radio practices. Violation of the rules of the contest 
+		or unsportsmanlike conduct may lead to disciplinary action by the Committee.
+A. Unsportsmanlike Conduct:
+Examples of unsportsmanlike conduct include, 
+		but are not limited to:
+ARRANGING or CONFIRMING any contacts during the contest by use of 
+			ANY non-amateur radio means such as telephones, Internet, instant messaging, 
+			chat rooms, VoIP, social media or web sites.
+Transmissions by the entrant on frequencies outside of license limitations.
+Changing times in the log to meet band change or off time rules.
+Taking credit for excessive unverifiable QSOs or unverifiable multipliers.
+Signals with excessive bandwidth (e.g., splatter, clicks) or harmonics 
+			on other bands.
+Running stations making more than 3 contacts without sending their 
+			callsign.
+B. Disciplinary Actions:
+In the event of a violation, the entrant is 
+		subject to disqualification at the discretion of the Committee.
+DISQUALIFICATION: Entry will be listed at the end of the published 
+			results and is not eligible for an award.
+Notification of Committee actions will be sent by email to the address 
+			provided with the log submission. The entrant has five days to appeal 
+			the decision to the Contest Director. After that time the decision is 
+			final.
+An entrant may withdraw the submitted log for any reason within 
+			30 days of the log deadline. Contact the Contest Director for instructions.
+The Committee reserves the right to change the category of any entry 
+			based on its examination of the log or other information.
+C. Log Checking:
+All logs are checked using custom software and human 
+		judgment.
+Duplicate contacts are removed with no additional penalty.
+Contacts with an incorrectly received exchange are removed with no 
+		additional penalty.
+Call sign errors or call signs not found in the other log are removed 
+		and receive a penalty of two times the QSO point value for that contact.
+Contacts that do not meet the band change rules for multi-operator 
+		entries are removed with no additional penalty.
+D. Station Information:
+Entrants must agree to supply the following information 
+		upon request of the Contest Committee:
+Details and photographs of their station equipment, antennas, amplifiers, 
+		switching systems, etc.
+XIV. DECLARATION:
+By submitting a CQ WPX Contest log, and in consideration of the efforts 
+		of the CQ WPX Contest Committee to review and evaluate that log, an entrant 
+		unconditionally and irrevocably agrees that he/she has: 1) read and understood 
+		the rules of the contest and agrees to be bound by them, 2) operated according 
+		to all rules and regulations that pertain to amateur radio for the station 
+		location, 3) agreed the log entry may be made open to the public, and 4) 
+		accepted that the issuing of disqualifications and other decisions of the 
+		Committee are official and final. If an entrant is unwilling or unable to 
+		agree to all of the foregoing, the entrant should not submit the entry or 
+		submit the entry as a Checklog only.
+Questions pertaining to the CQ WPX Contest may be emailed to the CQ WPX 
+		Contest Director <
+director@cqwpx.com
+>.
+Copyright © 
+2000-2026
+World Wide Radio Operators Foundation, Inc.
+. All Rights Reserved.
+window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-J2GTCJFFRC');

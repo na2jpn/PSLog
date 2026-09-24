@@ -1,0 +1,198 @@
+{
+  "schema": 1,
+  "project": "PSLog",
+  "patch": "Ver1.071 PATCH01",
+  "version": "1.071",
+  "baseline": {
+    "filename": "PSLog_1.07_CANONICAL_SOURCE.zip",
+    "sha256": "f93b70ffad0c587f4c19a87b88a6155e7f1405e2e40090b5190e5c427956cbc2"
+  },
+  "changed_files": [
+    {
+      "path": "CHANGELOG.md",
+      "size": 7550,
+      "sha256": "ec94d5e14ced0d5d55746c9e072b5b4c07c9a04ff83be229ffe433f77137d196"
+    },
+    {
+      "path": "VER1.071_PATCH01_README.md",
+      "size": 3487,
+      "sha256": "b30a7139da4ade3c1ca3e000230efd7202751fd0e0c6de5c3e4d84bff499c7f1"
+    },
+    {
+      "path": "build-windows.ps1",
+      "size": 3346,
+      "sha256": "cf936a13dc70f3d4cbfacc674a928bd6562d0f5306c36abf381ad33ff76c1e39"
+    },
+    {
+      "path": "contest_export.py",
+      "size": 35736,
+      "sha256": "136f0db0e4dc20ace73b416323d9a9bec515f303caa958f291b2128c1d4a1bc4"
+    },
+    {
+      "path": "contest_overview.py",
+      "size": 11555,
+      "sha256": "cb74a37d13f9a11c8333390a7689cce17fe3000a8ad67410647588b4300238c7"
+    },
+    {
+      "path": "contest_submit_ui.py",
+      "size": 41976,
+      "sha256": "c203deb5def45d3edf6e9df86e41f6b76666a3f17ef4ee405386d41a238403d9"
+    },
+    {
+      "path": "contest_ui.py",
+      "size": 51107,
+      "sha256": "646e2b30f193493e412b87a710a72de3b1b88c17e9f282c9bd72f9966bbb1f18"
+    },
+    {
+      "path": "main.py",
+      "size": 107594,
+      "sha256": "7eaf0e131e577c5d4aa2cccdebd69a8b826d6b7184a4e6d1307c8c9c4fc05deb"
+    },
+    {
+      "path": "storage.py",
+      "size": 16181,
+      "sha256": "97eacdc66bc25b4419e1ad2c09fbaca3a86db2f6ed3182dae446ca4403013ab5"
+    },
+    {
+      "path": "test_ai_chikyu_2026.py",
+      "size": 11571,
+      "sha256": "b01d6ae2dabf1bbad026095191757107d82bf61b133b7c460ac3805ff1940a36"
+    },
+    {
+      "path": "test_full_restore.py",
+      "size": 7920,
+      "sha256": "c398a6d6c4641f116d1ee92a36d8397e4dc6eaa08005018a3b432a00c9287abd"
+    },
+    {
+      "path": "test_jarl_summary_required.py",
+      "size": 2347,
+      "sha256": "be88e945e283210aeb5793f29b8b801c1a683b65f6f429020cb6430ebd34e593"
+    },
+    {
+      "path": "test_patch01_1061.py",
+      "size": 10118,
+      "sha256": "f6e6cc4bf689a198131116112589f0959819b2783aa4da23d2aa24b66f9a992c"
+    },
+    {
+      "path": "test_patch01_1071.py",
+      "size": 2871,
+      "sha256": "c966a1fe65702f582c2fd0d719d579d1b7dd1285a3d6a74c40fdf99e49a4ebeb"
+    },
+    {
+      "path": "test_patch03.py",
+      "size": 2569,
+      "sha256": "6bf5d9c4eda9bd602cfb135cf1c795a23b90785a3fdcac30973ffd90acdaa08a"
+    },
+    {
+      "path": "test_patch03_1063.py",
+      "size": 4221,
+      "sha256": "701e42b7dee57923f52a78750893c6d3ea436f6231df4522aa90dcab0df2694c"
+    },
+    {
+      "path": "test_patch04.py",
+      "size": 2920,
+      "sha256": "514163c0a75c6c4638d403a87a515760a538331c373de99d3c4a774a310725d0"
+    },
+    {
+      "path": "test_patch04_1064.py",
+      "size": 4219,
+      "sha256": "542e2f3683e03f50c3f1830e5b3bde383fc20b43257118849ccd802cf4650003"
+    },
+    {
+      "path": "test_patch05.py",
+      "size": 2913,
+      "sha256": "c4439c47ef9a3229e6b0a62737f14a7e8b760190d8f9622f047967e09b319174"
+    },
+    {
+      "path": "test_patch05_1065.py",
+      "size": 2918,
+      "sha256": "75c6260678c2815c58e57646d43dc3fe644bc1a7f28907dcbb8f2d49f72d7ef9"
+    },
+    {
+      "path": "test_patch06.py",
+      "size": 3766,
+      "sha256": "97a821cfd3f5a3bd89721406b3a006c8e770d1d811260b31709a43a0640326b1"
+    },
+    {
+      "path": "test_patch06_1066.py",
+      "size": 3744,
+      "sha256": "b9904753b59791a5fd0cb16d76e7f50a10c2c769dde3149bc1cabca9709a1b91"
+    },
+    {
+      "path": "test_patch07_1057.py",
+      "size": 1679,
+      "sha256": "2344c1d0ca28522f4b41ce4d36483c7765089a39961a6a79f70ed47624a47eed"
+    },
+    {
+      "path": "test_patch07_1067.py",
+      "size": 2631,
+      "sha256": "aebad622f463262ed35a349a624e211931ffded9782819122b7b84fb932bafc1"
+    },
+    {
+      "path": "test_patch08_1058.py",
+      "size": 1921,
+      "sha256": "a62757aa8fc0f942bf5eb377690f54cac5a7fbd8d12abfeb1301f84c6c147a97"
+    },
+    {
+      "path": "test_patch08_1068.py",
+      "size": 998,
+      "sha256": "7da21e4d6cd44aa25c3c618256fc36414811ce343042c3ac903281af711b851f"
+    },
+    {
+      "path": "test_patch08_fix1_1068.py",
+      "size": 2853,
+      "sha256": "c34c143fa932972dbf09f40cbc32378971ba26f4808986b8026269aa444f6651"
+    },
+    {
+      "path": "test_patch09_1059.py",
+      "size": 3899,
+      "sha256": "f6cd3d8a1f4765abaedf1fe6933d28a504308e01bcef3c15cba25eb15cb5fe89"
+    },
+    {
+      "path": "test_patch09_1069.py",
+      "size": 1199,
+      "sha256": "487a09844827b851fc23607425d03f6cb5c457dd20017565385e3959664edcfe"
+    },
+    {
+      "path": "test_patch10.py",
+      "size": 3244,
+      "sha256": "d2c08b6dad3dec8c89463d31033a5a343f233803c1bb04b99e8ad670ada64e1f"
+    },
+    {
+      "path": "test_patch10_1070.py",
+      "size": 2651,
+      "sha256": "9277582cffa015f8a6b3d206e4a79d0afce4f1f35517028aaf8f925cac7de32f"
+    },
+    {
+      "path": "test_patch10_1070_core.py",
+      "size": 1272,
+      "sha256": "da43321e487acef988b37bcf22c7c3c3671761fbbb93f5ffc2f9ae655c11cb48"
+    },
+    {
+      "path": "test_release_106.py",
+      "size": 3156,
+      "sha256": "b091f46a590e2450bea1593c21f560317d08329475f6e4712c08b0182a8dcf40"
+    },
+    {
+      "path": "test_v102.py",
+      "size": 3184,
+      "sha256": "bfb3ea3a88b5c8e70d77630af364f9caf629acdf15a2b7ff0554f1acfcc9b801"
+    },
+    {
+      "path": "test_v103_initial.py",
+      "size": 2407,
+      "sha256": "97cadb04e8370b690c2652e0ae7f0c65c0d21aee938590a2fcf99ee54c1c3c6a"
+    },
+    {
+      "path": "test_windows_package.py",
+      "size": 8299,
+      "sha256": "4020f0b635793749ea72a9b827dbb1e59c3b3813178a99eae3ad222363a74dff"
+    }
+  ],
+  "notes": [
+    "Apply directly over the Ver1.07 canonical source; do not replay older patches.",
+    "JARL interactive submission requires email; legacy low-level read compatibility remains.",
+    "Ai Chikyu JST default is regression-locked; contest overview uses rule_view.power when present.",
+    "Requested stage-2 and stage-3 vertical whitespace is compacted without fixed pixel heights."
+  ]
+}

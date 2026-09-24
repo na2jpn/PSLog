@@ -1,0 +1,269 @@
+CQ 160 - Rules
+Other Contests:
+CQ WW
+CQ WPX
+CQ WW RTTY
+CQ WPX RTTY
+CQ 160
+CQ VHF
+WW DIGI
+CQ World Wide 160-Meter Contest
+Show navigation
+Hide navigation
+Home
+Rules
+Rules
+Rules Archive
+Plaques
+Results
+Results Articles
+Final Scores
+Club Scores
+Soapbox Comments
+Raw Scores SSB
+Raw Scores CW
+Entry Statistics
+Records
+By Region
+USA Call Areas
+Canada Provinces
+New Records
+Logs
+Submitting Your Log
+Cabrillo Log Upload
+ADIF Log Converter
+Cabrillo File Format
+Logs Received - SSB
+Logs Received - CW
+Public Logs
+Resources
+Resources
+Club Names
+Location Names
+REST API Reference
+Contact Us
+Contact Form
+Organization
+$(function() {
+  if ($.fn.doubleTapToGo) {
+    $('#nav li:has(ul)').doubleTapToGo();
+  }
+});
+Rules
+Download the 2026 CQ World Wide 160 Meter 
+	Contest rules in PDF format
+The 2026 CQ World Wide 160-Meter Contest
+CW: 2200Z January 23 to 2200Z January 25
+SSB: 2200Z February 27 to 2200Z March 1
+DEADLINES FOR LOG SUBMISSIONS ARE 5 DAYS!
+I. OBJECTIVE:
+For amateurs around the world to contact other amateurs in as many U.S. states, 
+		Canadian provinces, and countries as possible utilizing the 160 meter band.
+II. BAND USE:
+1810–2000 kHz in ITU Region 1. 1800–2000 
+		kHz in ITU Regions 2 and 3. All entrants are encouraged to spread out as 
+		much as possible, obeying frequency restrictions and power limits for their 
+		own country.
+Any violations of the ITU band use may result in disqualification.
+Please be aware and considerate of other users of data modes such as FT8 in the contest
+		band segments.
+III. CATEGORIES:
+For Single Operator Assisted Only:
+The use of one and only one 
+		remote receiver located within 100 kilometers of the main transmitter site 
+		is permitted, in addition to the receiver at the transmitter site. 
+		WebSDRs are OK, but must be located within the 100-KM limit. 
+		The rule is designed to accommodate new technology, and for those who experience 
+		high noise levels at the transmitting site.
+Anyone found using a remote 
+		receiver outside the limit will be subject to disqualification.
+For all categories:
+The main site is defined as all transmitters, 
+		receivers, and antennas must be located on the same contiguous property. If 
+		the property is not contiguous, then all equipment must fall within a 1500-meter 
+		radius. All antennas must be connected by wires to the main station. This rule 
+		applies to all entrants.
+There is only ONE CQ Running frequency allowed for each station. “Flip Flopping” 
+		between 2 frequencies during the same time period (thus taking up 2 frequencies) 
+		is unsportsmanlike and will result in disqualification.
+The use of any so-called “Chat Rooms” via the internet or similar means for 
+		communication between stations or operators during the contest period is strictly 
+		prohibited. Do not arrange or confirm QSOs by any other means than the use of the 
+		160-meter band and the same mode as used in the contest. Any such use may result 
+		in disqualification at the discretion of the committee. The use of self-spotting 
+		is not allowed in any category.
+Remote operation for UNASSISTED entries
+is permitted under the 
+		following conditions:
+The use of any receiver located away from the main site is strictly 
+			prohibited.
+The use of a separate receiver at the remote control operator location is 
+			strictly prohibited.
+Any receiver not physically located at the main TX site is strictly prohibited.
+			This includes receivers linked via the Internet or RF that are not located at the main TX site.
+If the remotely operated station is located in another DXCC entity, it is required 
+			to comply with all local country regulations.
+Operating time: Each contest is 48 hours long and starts at 2200Z.
+Single operator stations may only operate 30 out of the 48 hours. Multi-Operator 
+		stations may operate 40 hours. Off times must be a minimum of 30 minutes 
+		in length for all categories.
+(A) Single Operator:
+One person performs all of the operating, logging, 
+		and spotting functions. Maximum operating time is 30 hours.
+QSO finding assistance 
+		is NOT allowed*
+(See definition below).  Only one transmitted signal is allowed 
+		at any moment in time. Maximum power is
+1500 watts
+total output.
+(B) Single Operator/Low Power:
+Same as (A) with the exception that the output power shall not exceed
+100 
+		watts
+. Stations in this category compete with other Low Power stations only.
+(C) QRP:
+Same as (A) with the exception that the output power shall not exceed 5 
+		watts. Stations in this category compete with other QRP stations only.
+Note: All QRP stations may use
+QSO finding assistance
+.
+(D) Single Operator Assisted/High Power:
+Same as (A) with the following exceptions: The use of
+QSO finding assistance
+IS
+allowed. The use of one and only one remote receiver within 100 kilometers of the 
+		transmitter site is allowed.
+(E) Single Operator Assisted/Low Power:
+Same as (D) with the following 
+		exceptions: Output power shall not exceed
+100 watts
+.
+(F) Multi-Operator: HIGH POWER ONLY.
+All rules apply as in Single Op Assisted (
+except 
+		remote receivers ARE NOT allowed
+); however, more than one operator (person) 
+		is involved in the operation. Maximum operating time is
+40
+hours. Only one 
+		transmitted signal is allowed at any moment in time. Maximum power is
+1500 watts
+total or the output power allowed by your country, whichever is less.
+*QSO FINDING ASSISTANCE:
+The use of any technology or other source that 
+		provides call sign or multiplier identification of a signal to the operator. 
+		This includes, but is not limited to, use of a CW decoder, DX cluster, DX spotting 
+		web sites (e.g., DX Summit), local or remote call sign and frequency decoding 
+		technology (e.g., CW Skimmer or Reverse Beacon Network), or operating arrangements 
+		involving other individuals.
+IV. EXCHANGE:
+RS(T) and state for U.S., province for Canada, and CQ Zone for DX. Note: 
+		Zones are location indicators only and do not count for multipliers.
+V. MULTIPLIER:
+U.S. States:
+(48 contiguous states); U.S. District of Columbia (DC) (1)
+Canadian Provinces:
+(14) VO1, VO2, NB, NS, PEI (VY2), VE2, VE3, VE4, VE5, VE6, VE7, VE8 (NT), 
+		VY1 (YT), VY0 (NU). Note VO1 and VO2 are separate due to tradition.
+DXCC countries and including WAE countries:
+WAE: 1AØ, 3A, 4O, 4U1I, 4U1V, 9A, 9H, C3, CT, CU, DL, E7, EA, EA6, EI, ER, ES, 
+		EU, F, G, GD, GI, GJ, GM, GM/s, GU, GW, HA, HB, HBØ, HV, I, IS, 
+		IT (without IG9/IH9 Zone 33 which are listed in Africa), JW, JW/b, JX, LA, LX, 
+		LY, LZ, OE, OH, OHØ, OJØ, OK, OM, ON, OY, OZ, PA, R1F, RA, RA2, S5, SM, SP, SV, 
+		SV/A, SV5, SV9, T7, TA1, TF, TK, UR, YL, YO, YU, Z6, Z3, ZA, ZB.
+VI. POINTS:
+Contacts with stations in own country: 2 points.
+Contacts with other countries on same continent: 5 points.
+Contacts with other continents: 10 points
+Maritime mobile contacts count 5 points. There is no multiplier value 
+		for a maritime mobile contact.
+VII. SCORING:
+All stations—the final score is the result of the total QSO points 
+		multiplied by the sum of all multipliers (states, VE provinces, DX countries).
+VIII. AWARDS:
+Certificates will be awarded to all entries. They are downloadable and located here:
+		<
+https://cq160.com/scores.htm
+>
+Trophies will be awarded for top scorers in many categories. The trophies and donors 
+		for all categories can be found here:
+https://cq160.com/plaques.htm
+>
+If you are interested in sponsoring a plaque, please contact 
+		us at: <
+questions@CQ160.com
+>.
+IX. CLUB COMPETITION:
+Any club that submits at least three logs may enter the Club Competition. The name of the club
+		must be clearly identified under club competition on the summary sheet, or summary portion of
+		the Cabrillo log. Please make sure all entrants from your club use the same club name (spelled
+		the same) in the Cabrillo entry. Most club names can be found here:
+		<
+https://cq160.com/clubnames.htm
+>
+The club score is the total aggregate score from logs submitted by members.
+A. USA Clubs:
+Participation is limited to club members residing within a 250 mile radius
+		circle from the center of club area.
+B. DX Clubs:
+Participation is limited to club members residing within EITHER the DXCC
+		country where the club is located OR within a 400 km radius circle from the center of the club.
+C. General Club Rules:
+National organizations (e.g., JARL, REF or DARC) are not eligible for the club competition.
+Single-operator entries may only contribute to one club. Multi-operator scores may be allocated to 
+		multiple clubs as a percentage of the number of club members participating in the operation. The log 
+		entry must spell out the full club name (and club allocations if multi-op).
+A minimum of three logs must be received for a club to be listed in the results. Checklog entries 
+		are not counted for the club score.
+The word “reside” shall be defined as: To dwell permanently or continuously or to
+		occupy a place as a person's fixed, permanent, and principal home for legal purposes.
+X. LOG INSTRUCTIONS:
+The deadline for log submissions is 5 days from the end of the contest.
+For CW this is 2200z January 30, 2026.
+For SSB this is 2200z March 6, 2026.
+The submission of Cabrillo logs is required. Please submit CQ WW 160 Meter Contest 
+		logs via the web upload tool found at:
+https://cq160.com/logcheck/
+A. The log MUST show the following for each contact: correct date and time in UTC, call 
+		sign of the station worked, exchange sent, and exchange received. A log without all 
+		required information may be reclassified to Checklog. Contacts should be logged 
+		immediately as they are completed. Stations competing for World, Zone, Continent and 
+		USA awards must provide accurate frequencies for all contacts in the log.
+B. Instructions for NON-CABRILLO electronic logs: If you are not able to submit a 
+		CABRILLO format log, please contact the Contest Director for assistance with submitting 
+		another format.
+C. Entry Confirmation: All logs received will be confirmed via e-mail. A listing of logs 
+		received can be found at <
+www.cq160.com
+>.
+D. Log withdrawal: An entrant may withdraw the submitted log for any reason within 30 
+		days of the log deadline. Contact the Contest Director for instructions.
+XI. PENALTIES AND DISQUALIFICATION:
+Logs will be cross-checked and penalties will be applied at the committee’s 
+		discretion for contacts determined to be bad or busted. The bad QSO is removed 
+		and a penalty of two more equivalent QSOs is applied to the points only. 
+		No penalty should be applied for unique QSOs unless they are deemed excessive. 
+		A log may be disqualified for violation of amateur radio regulations, unsportsmanlike 
+		conduct, or claiming excessive unverified contacts.
+Report file outputs showing final score calculations will be available 
+		for all entrants after the results are published. The decisions of the CQ 
+		WW 160 Contest Committee are final.
+XII. DECLARATION:
+By submitting a CQ 160 Meter Contest log, and in consideration of the efforts of the 
+		CQ WW 160 Contest Committee to review and evaluate that log, an entrant unconditionally 
+		and irrevocably agrees that he/she has: 1) read and understood the rules of the 
+		contest and agrees to be bound by them, 2) operated according to all rules and 
+		regulations that pertain to amateur radio for the station location, 3) agreed 
+		the log entry may be made open to the public, and 4) accepted 
+		that the issuing of disqualifications and other decisions of the Committee are official 
+		and final. If an entrant is unwilling or unable to agree to all of the foregoing, the 
+		entrant should not submit the entry or submit the entry as a Checklog only.
+Copyright © 
+2010-2026
+World Wide Radio Operators Foundation, Inc.
+. All Rights Reserved.
+window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1EKCYZL4MZ');

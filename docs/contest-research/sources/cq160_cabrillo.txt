@@ -1,0 +1,409 @@
+CQ WW - Cabrillo Log Format for the CQ 160M Contest
+Other Contests:
+CQ WW
+CQ WPX
+CQ WW RTTY
+CQ WPX RTTY
+CQ 160
+CQ VHF
+WW DIGI
+CQ World Wide 160-Meter Contest
+Show navigation
+Hide navigation
+Home
+Rules
+Rules
+Rules Archive
+Plaques
+Results
+Results Articles
+Final Scores
+Club Scores
+Soapbox Comments
+Raw Scores SSB
+Raw Scores CW
+Entry Statistics
+Records
+By Region
+USA Call Areas
+Canada Provinces
+New Records
+Logs
+Submitting Your Log
+Cabrillo Log Upload
+ADIF Log Converter
+Cabrillo File Format
+Logs Received - SSB
+Logs Received - CW
+Public Logs
+Resources
+Resources
+Club Names
+Location Names
+REST API Reference
+Contact Us
+Contact Form
+Organization
+$(function() {
+  if ($.fn.doubleTapToGo) {
+    $('#nav li:has(ul)').doubleTapToGo();
+  }
+});
+Cabrillo Log Format for the CQ 160M Contest
+Cabrillo refers to a universal log file format managed by the
+World Wide Radio Operators Foundation
+(WWROF). 
+		Cabrillo is the preferred format for CQ 160M Contest logs.
+There are two versions of the Cabrillo log file format. The CQ 160M 
+		Contest accepts both Cabrillo v2 and v3 format files. One of the major changes 
+		from v2 to v3 was in the way categories are specified. We strongly request 
+		that you submit logs using the Cabrillo v3 format if possible.
+[
+Jump to Cabrillo v2
+]
+Cabrillo Version 3 Header for the CQ 160M Contest
+Below is an example of a Cabrillo v3 file for the CQ 160M Contest.
+START-OF-LOG: 3.0
+CALLSIGN: AA1ZZZ
+CONTEST: CQ-160-SSB
+CATEGORY-OPERATOR: SINGLE-OP
+CATEGORY-ASSISTED: NON-ASSISTED
+CATEGORY-BAND: 160M
+CATEGORY-POWER: HIGH
+CATEGORY-MODE: CW
+CATEGORY-TRANSMITTER: ONE
+CLAIMED-SCORE: 47852
+CERTIFICATE: YES
+CLUB: My Contest Club
+LOCATION: WMA
+CREATED-BY: SuperLogger v1.0
+NAME: John Smith
+ADDRESS: 100 Main St
+ADDRESS-CITY: Uxbridge
+ADDRESS-STATE-PROVINCE: MA
+ADDRESS-POSTALCODE: 01569
+ADDRESS-COUNTRY: USA
+OPERATORS: K5ZD
+SOAPBOX: Put your comments here.
+SOAPBOX: Use multiple lines if needed.
+QSO:  1810 PH 2000-10-26 0711 AA1ZZZ          59  MA     K9QZO         59  IL     0
+QSO:  1815 PH 2000-10-26 0711 AA1ZZZ          59  MA     P29AS         59  28     0
+QSO:  1833 PH 2000-10-26 0711 AA1ZZZ          59  MA     4S7TWG        59  22     0
+QSO:  1841 PH 2000-10-26 0711 AA1ZZZ          59  MA     JT1FAX        59  23     0
+QSO:  1822 PH 2000-10-26 0711 AA1ZZZ          59  MA     WA6MIC        59  CA     0
+END-OF-LOG:
+The format for each line is
+<KEY>:
+followed by a space.
+START-OF-LOG:
+version-number X.X
+Must be the first line of the log submission. This file is version 3.0.
+CALLSIGN:
+callsign
+The callsign used during the contest.
+CONTEST:
+contest-name
+The contest-name must be one of the following.
+CQ-160-CW
+CQ-160-SSB
+Be sure to use hyphens as shown. DO NOT PUT THE YEAR OR USE PH INSTEAD 
+		OF SSB.
+CATEGORY-OPERATOR:
+text
+The category-operator must be one of the following.
+SINGLE-OP
+MULTI-OP
+CHECKLOG
+CATEGORY-ASSISTED:
+text
+The category-assisted must be one of the following.
+ASSISTED
+NON-ASSISTED
+CATEGORY-MODE:
+text
+The category-mode must be one of the following.
+SSB
+CW
+CATEGORY-BAND:
+text
+The category-band must be one of the following.
+160M
+CATEGORY-POWER:
+text
+The category-power must be one of the following.
+HIGH
+LOW
+QRP
+CATEGORY-TRANSMITTER:
+text
+The category-transmitter is required for multi-operator entries and must 
+		be one of the following.
+ONE
+CERTIFICATE:
+text
+Indicate whether or not you wish to receive, if eligible, a paper certificate 
+		sent via postal mail. YES is the default.
+YES
+NO
+CLAIMED-SCORE:
+integer
+The claimed-score of the log submission, in integer form such as 217315 
+		or 19113 or 12. Do not include commas or other text.
+CLUB:
+text
+Name of the radio club with which the score should be aggregated.
+PLEASE 
+		SPELL OUT THE CLUB NAME!
+(See
+list of club names
+.)
+CREATED-BY
+:
+text
+Name and version of the logging program used to create the Cabrillo file. 
+		(This field is optional.)
+LOCATION:
+text
+USA and Canada stations please put your State, Province, or ARRL Section. 
+		All others please put DX. (See
+list of accepted entries
+.)
+EMAIL:
+text
+A place to put an email address where we can contact you if there is a question 
+		about your log.
+NAME
+:
+text
+Name. Maximum of 75 characters long.
+ADDRESS
+:
+text
+Mailing address, each line should be a maximum of 45 characters long. Up 
+		to 6 address lines are permitted.
+ADDRESS-CITY:
+text
+ADDRESS-STATE-PROVINCE:
+text
+ADDRESS-POSTALCODE:
+text
+Optional fields for providing mailing address details.
+ADDRESS-COUNTRY:
+text
+US Postal Service name for the country of your mailing address. Only required 
+		for mailing addresses outside of the United States.
+OPERATORS:
+callsign1 [callsign2 callsign3...]
+A space-delimited list of operator callsigns for multi operator stations, 
+		or single operator entries who wish to show they operated at another station.  
+		If you operated at another station, you may list it by prepending an @ sign, 
+		e.g., W1ABC, W2DEF, W3GHI @W3BGN.
+NOTE:
+If you select a multi-operator 
+		category and do not enter operator callsigns in this field, the robot will 
+		reject your log.
+Please use a space or a comma between the operator 
+		calls.
+SOAPBOX
+:
+text
+Enter as many lines of soapbox text as you wish. Each line is a maximum 
+		of 75 characters long and must begin with SOAPBOX: followed by a space.
+X-<anything>:
+text
+Lines beginning with X- are ignored by the robot and log checking software. 
+		Use this for adding comment lines to your log.
+Exception:
+See X-QSO 
+		below.
+QSO
+:
+qso-data
+The qso-data format is shown below.
+--------info sent------- -------info rcvd--------
+QSO: freq  mo date       time call          rst exch   call          rst exch   t
+QSO: ***** ** yyyy-mm-dd nnnn ************* nnn ****** ************* nnn ****** n
+QSO:  1861 CW 2009-01-24 0310 K5ZD          599     MA N2NT          599    NJ  0
+QSO:  1861 CW 2009-01-24 0313 K5ZD          599     MA HA6NL         599    15  0 
+000000000111111111122222222223333333333444444444455555555556666666666777777777788
+123456789012345678901234567890123456789012345678901234567890123456789012345678901
+Note for Column 81 (transmitter number): Must be a 0 or a 1. This column is not 
+		used for the CQ 160M contest.
+Note: The log checking software uses spaces for delimiters 
+		between fields. It is not necessary for all columns to line up in the 
+		columns shown above.
+END-OF-LOG:
+Must be the last line of the log submission.
+Cabrillo Version 2 Header for the 
+		CQ 160M Contest
+Here is an example of a Cabrillo v2 file for the CQ 160M Contest. Use of Cabrillo 
+		v2 is deprecated, but still accepted by the log submission robot.
+START-OF-LOG: 2.0
+CONTEST: CQ-160-SSB 
+CALLSIGN: AA1ZZZ
+CATEGORY: SINGLE-OP ALL LOW
+CLAIMED-SCORE: 
+CLUB: 
+CERTIFICATE: YES
+ARRL-SECTION: WMA
+NAME: John Smith
+ADDRESS: 100 Main St
+ADDRESS-CITY: Uxbridge
+ADDRESS-STATE-PROVINCE: MA
+ADDRESS-POSTALCODE: 01569
+ADDRESS-COUNTRY: USA
+OPERATORS: [required for multi-op stations]
+SOAPBOX: [add lines if needed]
+SOAPBOX: 
+QSO:  1810 PH 2000-10-26 0711 AA1ZZZ          59  MA     K9QZO         59  IL     0
+QSO:  1815 PH 2000-10-26 0711 AA1ZZZ          59  MA     P29AS         59  28     0
+QSO:  1833 PH 2000-10-26 0711 AA1ZZZ          59  MA     4S7TWG        59  22     0
+QSO:  1841 PH 2000-10-26 0711 AA1ZZZ          59  MA     JT1FAX        59  23     0
+QSO:  1822 PH 2000-10-26 0711 AA1ZZZ          59  MA     WA6MIC        59  CA     0
+END-OF-LOG:
+The format for each line is
+<KEY>
+: followed by a space.
+START-OF-LOG:
+version-number X.X
+Must be the first line of the log submission. This file is version 2.0. 
+		/p>
+CALLSIGN:
+call sign
+The call sign used during the contest.
+CONTEST:
+contest-name
+The contest-name must be one of the following.
+CQ-160-CW
+CQ-160-SSB
+Be sure to use hyphens as shown. DO NOT PUT THE YEAR OR USE PH INSTEAD 
+		OF SSB.
+CATEGORY:
+operator-category band-category power-category
+[
+mode-category]
+The only possible category combinations for the CQ WW 160-Meter contest are:
+CATEGORY: SINGLE-OP 160M HIGH
+	CATEGORY: SINGLE-OP 160M LOW
+	CATEGORY: SINGLE-OP 160M QRP
+	CATEGORY: SINGLE-OP-ASSISTED 160M HIGH
+	CATEGORY: MULTI-ONE 160M HIGH
+	CATEGORY: CHECKLOG
+The
+operator-category
+must be one of the following.
+SINGLE-OP
+SINGLE-OP-ASSISTED
+MULTI-ONE
+CHECKLOG
+The
+band-category
+must be one of the following:
+160M
+The
+power-category
+must be one of the following.
+HIGH
+LOW
+QRP
+The
+mode-category
+must be one of the following.
+SSB
+CW
+CERTIFICATE:
+text
+Indicate whether or not you wish to receive, if eligible, a paper certificate 
+		sent via postal mail. YES is the default.
+YES
+NO
+CLAIMED-SCORE:
+integer
+The claimed-score of the log submission, in integer form such as 217315 
+		or 19113 or 12. Do not include commas or other text.
+CLUB:
+text
+Name of the radio club with which the score should be aggregated.
+PLEASE 
+		SPELL OUT THE CLUB NAME!
+(See
+list of club names
+.)
+CREATED-BY
+:
+text
+Name and version of the logging program used to create the Cabrillo file. 
+		(This field is optional.)
+ARRL-SECTION:
+arrl-section
+USA and Canada stations please put your State, Province, or ARRL Section. 
+		All others please put DX. (See
+list of accepted entries
+.)
+EMAIL:
+text
+A place to put an email address, if desired.
+NAME
+:
+text
+Name. Maximum of 75 characters long.
+ADDRESS
+:
+text
+Mailing address, each line should be a maximum of 45 characters long. Up 
+		to 6 address lines are permitted.
+Please put the country name all alone on the last address line using 
+		the US Postal Service name for the country of your mailing address. Only 
+		required for mailing addresses outside of the United States.
+OPERATORS:
+callsign1 [callsign2 callsign3...]
+A space-delimited list of operator callsigns for multi operator stations, 
+		or single operator entries who wish to show they operated at another station.
+If you operated at another station, you may list it by prepending an @ sign, 
+		e.g., W1ABC, W2DEF, W3GHI @W3BGN. NOTE:
+If you select a multi-operator 
+		category and do not enter operator callsigns in this field, the robot will 
+		reject your log.
+Please use a space or a comma between the operator 
+		calls.
+SOAPBOX
+:
+text
+Enter as many lines of soapbox text as you wish. Each line is a maximum 
+		of 75 characters long and must begin with SOAPBOX: followed by a space.
+X-<anything>:
+text
+Lines beginning with X- are ignored by the robot and log checking software. 
+		Use this for adding comment lines to your log.
+QSO
+:
+qso-data
+The qso-data format is shown below.
+--------info sent------- -------info rcvd--------
+QSO: freq  mo date       time call          rst exch   call          rst exch   t
+QSO: ***** ** yyyy-mm-dd nnnn ************* nnn ****** ************* nnn ****** n
+QSO:  1861 CW 2009-01-24 0310 K5ZD          599     MA N2NT          599    NJ  0
+QSO:  1861 CW 2009-01-24 0313 K5ZD          599     MA HA6NL         599    15  0 
+000000000111111111122222222223333333333444444444455555555556666666666777777777788
+123456789012345678901234567890123456789012345678901234567890123456789012345678901
+Note for Column 81 (transmitter number): Must be a 0 or a 1. This column is not 
+		used for the CQ 160M contest.
+Note: The log checking software uses spaces for delimiters 
+		between fields. It is not necessary for all columns to line up in the 
+		columns shown above.
+END-OF-LOG:
+Must be the last line of the log submission.
+More Information about Cabrillo
+The CQ 160M Contest only recognizes the Cabrillo fields shown on this page. 
+		The complete Cabrillo specification can be viewed at
+http://wwrof.org/cabrillo/
+.
+Copyright © 
+2010-2026
+World Wide Radio Operators Foundation, Inc.
+. All Rights Reserved.
+window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1EKCYZL4MZ');

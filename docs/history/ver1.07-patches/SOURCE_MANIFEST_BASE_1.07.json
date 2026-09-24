@@ -1,0 +1,89 @@
+{
+  "schema": 7,
+  "project": "PSLog",
+  "version": "1.07",
+  "status": "FINAL_CANONICAL_SOURCE",
+  "canonical_filename": "PSLog_1.07_CANONICAL_SOURCE.zip",
+  "finalized_at": "2026-09-24",
+  "next_development_line": "Ver1.07 series (first patch expected 1.071; next canonical target 1.08)",
+  "source_of_final_canonicalization": {
+    "baseline": {
+      "filename": "PSLog_1.069_CONTEST_RULES_HANDOFF_SOURCE.zip",
+      "sha256": "e0b23bc57a52738fa7351b226e1c80ef3ef12f1c2f37c5d333b96726c21f5b7d",
+      "note": "Sole starting baseline; includes accepted 87-rule contest display audit/handoff state."
+    },
+    "applied_artifacts": [
+      {
+        "filename": "PSLog_1.070_PATCH10.zip",
+        "sha256": "d9001af634e3440a1300a3e031f9653f0e6c976a1dbb609e0d63899a28ae989e",
+        "note": "Contest manager start-month labels; standard submission band/time sort option; VERSION 1.070."
+      },
+      {
+        "filename": "PSLog_1.070_PATCH10_FIX2.zip",
+        "sha256": "a0fe0b73f729a530400aaf25d7c3a9ba1932fb7e8edb4651edb5acd38346f059",
+        "note": "Includes FIX1 test repair and source/frozen-aware bundled-rule origin classification."
+      }
+    ],
+    "canonical_release_adjustments": [
+      "Release VERSION changed from development label 1.070 to canonical 1.07.",
+      "Windows release package name changed from PSLog_1.070_Windows_* to PSLog_1.07_Windows_*.",
+      "No additional contest/business logic added after the accepted 1.070 + FIX2 behavior.",
+      "PATCH/FIX/Work handoff artifacts moved from source root to docs/history/ver1.06-patches/.",
+      "Current entry, build, validation, baseline, and continuation documents refreshed for Ver1.07."
+    ],
+    "rule": "Future development must start from this Ver1.07 canonical ZIP only. Do not reconstruct by replaying Ver1.06-series PATCH/FIX or Ver1.069 Work artifacts."
+  },
+  "canonicalization": {
+    "removed_generated": [
+      "build/",
+      "dist/",
+      "release/",
+      "__pycache__/",
+      "**/__pycache__/",
+      "*.pyc",
+      "*.pyo"
+    ],
+    "moved_history": [
+      "Ver1.061–1.070 PATCH/FIX READMEs and manifests -> docs/history/ver1.06-patches/",
+      "Ver1.069 Work/handoff checksum/manifests -> docs/history/ver1.06-patches/",
+      "PSLog_Ver1.061_PATCH01_FIX1/FIX2 snapshots -> docs/history/ver1.06-patches/"
+    ],
+    "updated_entry_docs": [
+      "README.md",
+      "START_HERE.md",
+      "HANDOFF.md",
+      "NEXT_CHAT_PROMPT.md",
+      "CHANGELOG.md",
+      "docs/INDEX.md",
+      "docs/IMPLEMENTATION_STATUS.md",
+      "docs/specs/development/PSLOG_1.07_BASELINE.md",
+      "docs/specs/development/PSLOG_1.07_NEXT_CHAT_PLAN.md",
+      "docs/specs/development/VALIDATION.md",
+      "WINDOWS_BUILD.md",
+      "WINDOWS_CHECKLIST.txt",
+      "SAVE_LOCATION.md",
+      "USER_GUIDE.txt"
+    ]
+  },
+  "release_highlights": [
+    "Registered catalog remains 87 rules: 86 contests + 1 QSO Party.",
+    "Contest rule manager labels include start year/month.",
+    "Standard submission option can sort log by band and then time; event.submission.order=band_time sets initial ON state.",
+    "Ai Chikyu Expo Memorial Contest defaults band/time sort ON while retaining user override.",
+    "Bundled-rule origin classification is source/frozen-aware for cross-platform development and distribution compatibility.",
+    "Contest rule_view remains human-readable reference data and does not itself create new submission rejection/check conditions."
+  ],
+  "verification": {
+    "user_windows_confirmation": "2026-09-24: User reported Ver1.070 PATCH10 + FIX2 built successfully and launched successfully on Windows.",
+    "canonicalization_compileall": "OK",
+    "full_discovery_linux": "444 tests run; 375 passed; 69 errors are PySide6-not-installed GUI import/runtime errors; 0 FAIL assertions.",
+    "targeted_non_gui": "49 tests OK: bundled-rule origin, 1.070 core, full restore, Windows packaging, release regression, and 87-rule display audit suites.",
+    "contest_rule_catalog": "87-rule parse/render audit tests OK.",
+    "note": "Canonical 1.07 release adjustment changes version/package metadata and documentation only after accepted 1.070 + FIX2 functional state."
+  },
+  "source_tree": {
+    "files_excluding_manifest": 1106,
+    "sha256_excluding_manifest": "b07fdadb02a8edaa32e847b39b31efe0e92c7ca7fd960537f0b20383bd3d8b44",
+    "hash_method": "SHA-256 over sorted UTF-8 relative path, NUL, per-file SHA-256 hex, newline; SOURCE_MANIFEST.json excluded."
+  }
+}

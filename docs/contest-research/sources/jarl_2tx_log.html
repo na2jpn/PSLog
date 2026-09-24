@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>2波種目のログ記入方法</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css" type="text/css"/>
+</head>
+<body>
+  <!-- トップバナー -->
+  <div class="top-banner">
+    <div class="banner-title"><a href="index.html">JARLコンテスト</a></div>
+    <div class="menu-item">
+    <a href="https://www.jarl.org/index.html">JARL HOME</a>
+    </div>
+    <div class="menu-item">
+    <a href="index.html">コンテスト HOME</a>
+    </div>
+    <div class="menu-item">
+      <a href="#">コンテスト規約一覧</a>
+      <div class="dropdown">
+        <a href="qso_party.html">QSOパーティ</a>
+        <a href="allja_rules.html">ALL JA</a>
+        <a href="aadx_rules.html">ALL ASIAN DX</a>
+        <a href="6d_rules.html">6m AND DOWN</a>
+        <a href="fd_rules.html">フィールドデー</a>
+        <a href="acag_rules.html">全市全郡</a>
+      </div>
+    </div>
+    <div class="menu-item">
+      <a href="https://contest.jarl.org/upload-redirect.html">電子ログアップロード</a>
+      </div>
+    <div class="menu-item">
+      <a href="#">最新コンテスト結果</a>
+      <div class="dropdown">
+ 	<a href="https://www.jarl.org/Japanese/1_Tanoshimo/1-1_Contest/qp/2025/qsop25.htm">2025 QSOパーティ</a>
+	<a href="https://www.jarl.org/Japanese/1_Tanoshimo/1-1_Contest/all_ja/2024/index.html">2024 ALL JA</a>
+	<a href="https://www.jarl.org/Japanese/1_Tanoshimo/1-1_Contest/all_asian/AA2024-index1.html">2024 ALL ASIAN DX</a>
+	<a href="https://www.jarl.org/Japanese/1_Tanoshimo/1-1_Contest/6m/2024/index.html">2024 6m AND DOWN</a>
+	<a href="https://www.jarl.org/Japanese/1_Tanoshimo/1-1_Contest/fd/2024/index.html">2024 フィールドデー</a>
+	<a href="https://www.jarl.org/Japanese/1_Tanoshimo/1-1_Contest/all_cg/2024/index.html">2024 全市全郡</a>
+      </div>
+      </div>
+	<div class="menu-item"><a href="q_and_a.html">FAQ</a></div>
+    <div class="menu-item"><a href="https://contest.jarl.org/cntdb/">スコア・データベース</a></div>
+<!--    <div class="menu-item"><a href="cc.html">コンテスト委員会紹介</a></div> -->
+    <div class="menu-item"><a href="contact.php">お問い合わせ</a></div>
+<form id="google-search-form" class="google-search-form" method="get" action="https://www.google.com/search" target="_blank">
+  <input type="text" id="search-box" placeholder="キーワードを入力" required>
+  <button type="submit">🔍 検索</button>
+</form>
+  </div>
+  <div class="notice-section">
+    <h1>2波種目のログ記入方法</h1>
+
+    <p>
+      2波種目では異なる2バンドで同時に送信し交信できますが、2波のうちいずれの送信波系列で交信したかが分かるようにログを作成する必要があります。
+</p><p>
+2波種目のログ記入方法には、交信ごとに送信波系列が分かるようにする方法と、2系列の送信波ごとに時間順に並べる方法の2通りがあります。<br />
+いずれの方法で記入してもよいですが、JARLコンテスト委員会ではログ受付後のソフトウェアによる処理が容易な交信ごとに送信波系列が分かるようにする方法を推奨します。
+<p>
+それぞれの記入方法について以下に解説します。
+</p>
+<h2>■送信波系列番号について</h2>
+<p>
+送信波系列を区別するために2つの異なる数字を用いた送信波系列番号を使用します。送信波系列番号は、末尾が数字になっていれば数字の前に半角の英字・記号を組合わせた番号の使用も可能です。
+</p>
+<p>
+  2つの異なる数字、または、英字・記号と2つの異なる数字の組み合わせによる送信波系列番号の例を下記に示します。（下記のいずれでも可）
+  </p>
+<ul>
+<li>0 と 1
+<li>1 と 2
+<li>TX0 と TX1
+<li>TX1 と TX2
+<li>TX#0 と TX#1
+<li>TX#1 と TX#2
+</ul>
+<ol>
+<li>※3つ以上の送信波系列番号は使用しないでください。3つ以上の送信波系列番号が使用されている場合はマルチオペ・オールバンド種目に変更される場合があります。<br />
+（NG例：0 と 1 と 2、　TX1 と TX2 と TX3、など）
+
+<li>※	数字を含まないアルファベットや記号のみによる送信波系列表示は使用しないでくだい。<br />
+ （NG例：A と B、　TX# と TX$、など）
+</ol>
+
+<h2>■交信ごとに送信波系列が分かるようにする方法</h2>
+<p>
+各QSO行の末尾に送信波系列番号を記入します。
+</p>
+
+<p>ログの記載例：</p>
+
+<p>（例1）送信波系列番号に0 と 1 を使用した場合（JARL形式）</p>
+<pre>
+2025-04-27 00:01  3.5   CW      JK2***   599 10M     599 21P     21    1    0
+2025-04-27 00:02  3.5   CW      JF3***   599 10M     599 27M     27    1    0
+2025-04-27 00:02  7     SSB     7L1***   599 10M     599 13H     13    1    1
+2025-04-27 00:04  3.5   CW      JA6***   599 10M     599 43H     43    1    0
+2025-04-27 00:15  7     SSB     JR7***   599 10M     599 03M     03    1    1
+2025-04-27 00:16  7     SSB     JJ7***   599 10M     599 07M     07    1    1
+2025-04-27 00:20  3.5   CW      JR6***   599 10M     599 47M     47    1    0
+2025-04-27 00:25  7     SSB     JE8***   599 10M     599 109M    109   1    1
+</pre>
+<p>（例2）送信波系列番号に0 と 1 を使用した場合（JARL形式で任意項目のマルチと得点をを省略した場合）</p>
+<pre>
+2025-04-27 00:01  3.5   CW      JK2***   599 10M     599 21P     0
+2025-04-27 00:02  3.5   CW      JF3***   599 10M     599 27M     0
+2025-04-27 00:02  7     SSB     7L1***   599 10M     599 13H     1
+2025-04-27 00:04  3.5   CW      JA6***   599 10M     599 43H     0
+2025-04-27 00:15  7     SSB     JR7***   599 10M     599 03M     1
+2025-04-27 00:16  7     SSB     JJ7***   599 10M     599 07M     1
+2025-04-27 00:20  3.5   CW      JR6***   599 10M     599 47M     0
+2025-04-27 00:25  7     SSB     JE8***   599 10M     599 109M    1
+</pre>
+
+<p>（例3）送信波系列番号にTX0 と TX1 を使用した場合（JARL形式）</p>
+<pre>
+2024-04-27 00:01  3.5   CW    JK2***    599 10M     599 21P     21    1   TX0
+2024-04-27 00:02  3.5   CW    JF3***    599 10M     599 27M     27    1   TX0
+2024-04-27 00:02  7     SSB   7L1***    599 10M     599 13H     13    1   TX1
+2024-04-27 00:04  3.5   CW    JA6***    599 10M     599 43H     43    1   TX0
+2024-04-27 00:15  7     SSB   JR7***    599 10M     599 03M     03    1   TX1
+2024-04-27 00:16  7     SSB   JJ7***    599 10M     599 07M     07    1   TX1
+2024-04-27 00:20  3.5   CW    JR6***    599 10M     599 47M     47    1   TX0
+2024-04-27 00:25  7     SSB   JE8***    599 10M     599 109M    109   1   TX1
+</pre>
+
+<p>（例4）送信波系列番号にTX#0 と TX#1 を使用し送信波ごとにQSOを時間順に並べた場合（JARL形式）</p>
+<pre>
+2024-04-27 00:01  3.5   CW    JK2***    599 10M     599 21P     21    1   TX#0
+2024-04-27 00:02  3.5   CW    JF3***    599 10M     599 27M     27    1   TX#0
+2024-04-27 00:04  3.5   CW    JA6***    599 10M     599 43H     43    1   TX#0
+2024-04-27 00:20  3.5   CW    JR6***    599 10M     599 47M     47    1   TX#0
+2024-04-27 00:02  7     SSB   7L1***    599 10M     599 13H     13    1   TX#1
+2024-04-27 00:15  7     SSB   JR7***    599 10M     599 03M     03    1   TX#1
+2024-04-27 00:16  7     SSB   JJ7***    599 10M     599 07M     07    1   TX#1
+2024-04-27 00:25  7     SSB   JE8***    599 10M     599 109M    109   1   TX#1
+</pre>
+<p>（例5）送信波系列番号に0 と 1 を使用した場合（Cabrillo形式）</p>
+<pre>
+QSO:  3523 CW 2025-04-27 0001 JA1YRL  599 10M   JK2***    599 21P      0
+QSO:  3523 CW 2025-04-27 0002 JA1YRL  599 10M   JF3***    599 27M      0
+QSO:  7040 CW 2025-04-27 0002 JA1YRL  599 10M   7L1***    599 13H      1
+QSO:  3523 CW 2025-04-27 0004 JA1YRL  599 10M   JA6***    599 43H      0
+QSO:  7040 CW 2025-04-27 0015 JA1YRL  599 10M   JR7***    599 03M      1
+QSO:  7040 CW 2025-04-27 0016 JA1YRL  599 10M   JJ7***    599 07M      1
+QSO:  3523 CW 2025-04-27 0020 JA1YRL  599 10M   JR6***    599 47M      0
+QSO:  7040 CW 2025-04-27 0025 JA1YRL  599 10M   JE8***    599 109M     1
+</pre>
+
+<h2>■2系列の送信波ごとに時間順に並べる方法</h2>
+<p>送信波ごとにQSOを時間順に並べ、各送信波ログの先頭に送信波系列番号を記載した行を挿入します。</p>
+
+<p>（例1）送信波系列番号にTX1とTX2を使用した場合</p>
+<pre>
+TX1
+2025-04-27 00:01  3.5   CW      JK2***   599 10M     599 21P     21    1  
+2025-04-27 00:02  3.5   CW      JF3***   599 10M     599 27M     27    1  
+2025-04-27 00:04  3.5   CW      JA6***   599 10M     599 43H     43    1  
+2025-04-27 00:20  3.5   CW      JR6***   599 10M     599 47M     47    1  
+TX2
+2025-04-27 00:02  7     SSB     7L1***   599 10M     599 13H     13    1  
+2025-04-27 00:15  7     SSB     JR7***   599 10M     599 03M     03    1  
+2025-04-27 00:16  7     SSB     JJ7***   599 10M     599 07M     07    1  
+2025-04-27 00:25  7     SSB     JE8***   599 10M     599 109M    109   1  
+</pre>
+
+<p>（例2）送信波系列番号に0と1を使用した場合</p>
+<pre>
+0
+2025-04-27 00:01  3.5   CW      JK2***   599 10M     599 21P     21    1  
+2025-04-27 00:02  3.5   CW      JF3***   599 10M     599 27M     27    1  
+2025-04-27 00:04  3.5   CW      JA6***   599 10M     599 43H     43    1  
+2025-04-27 00:20  3.5   CW      JR6***   599 10M     599 47M     47    1  
+1
+2025-04-27 00:02  7     SSB     7L1***   599 10M     599 13H     13    1  
+2025-04-27 00:15  7     SSB     JR7***   599 10M     599 03M     03    1  
+2025-04-27 00:16  7     SSB     JJ7***   599 10M     599 07M     07    1  
+2025-04-27 00:25  7     SSB     JE8***   599 10M     599 109M    109   1  
+</pre>
+  </div>
+  </div>
+  <footer>
+    <a href="https://www.jarl.org/"><p><font color="white">JARL HOME</a> | <a href="index.html">コンテストHOME</a><br />&copy; 2025 日本アマチュア無線連盟</font></p>
+  </footer>
+<!-- ページトップへ -->
+<button id="back-to-top" onclick="scrollToTop()">
+    <svg viewBox="0 0 24 24">
+      <path d="M12 4l-8 8h6v8h4v-8h6z"/>
+    </svg>PAGE TOP
+</button>
+<script src="script.js"></script>
+</body>
+</html>

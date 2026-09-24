@@ -1,0 +1,13 @@
+{
+  "version": "1.069",
+  "current_baseline": "PSLog_1.069_CONTEST_RULES_HANDOFF_SOURCE.zip",
+  "manifest": "HANDOFF_SOURCE_MANIFEST.json",
+  "integrated_patches": [
+    "PSLog_1.069_CONTEST_RULE_VIEW_WORK_PROGRESS.zip",
+    "PSLog_1.069_CONTEST_RULE_VIEW_TEST_ENCODING_FIX.zip",
+    "PSLog_1.069_CONTEST_RULE_VIEW_LAYOUT_PATCH.zip",
+    "PSLog_1.069_CONTEST_RULE_VIEW_15_PATCH.zip",
+    "PSLog_1.069_CONTEST_RULE_VIEW_REMAINING71_RECHECK_PATCH.zip",
+    "PSLog_1.069_RULE_VIEW_TEST_FIX2.zip"
+  ]
+}

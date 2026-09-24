@@ -1,0 +1,404 @@
+{
+  "schema": 2,
+  "id": "all_okayama_ft",
+  "name": "オール岡山FT8/FT4",
+  "year": 2026,
+  "url": "https://www.jarl.com/okayama/oy-ft8-test-rule-2026.html",
+  "organizer": "オール岡山FT8/FT4",
+  "sort_name": "オール岡山FT8/FT4",
+  "points": {
+    "cw": 1,
+    "phone": 1,
+    "digital": 0
+  },
+  "conditions": [],
+  "duplicate": {
+    "enabled": true,
+    "by_mode": false
+  },
+  "multi1": {
+    "kind": "off",
+    "start": 0,
+    "length": 2,
+    "per_band": true
+  },
+  "multi2": {
+    "kind": "off",
+    "value": 1,
+    "condition": {
+      "all": []
+    }
+  },
+  "formula": "total",
+  "scoring": {
+    "eligible": {
+      "all": []
+    },
+    "multipliers": [
+      {
+        "id": "region",
+        "source": "area",
+        "kind": "whole",
+        "start": 0,
+        "length": 2,
+        "per_band": true,
+        "when": {
+          "all": []
+        }
+      }
+    ],
+    "bonus": 0
+  },
+  "event": {
+    "timezone": "UTC",
+    "windows": [
+      {
+        "start": "2026-09-06 00:00",
+        "end": "2026-09-06 12:00",
+        "bands": [
+          "1.9",
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28",
+          "50",
+          "144",
+          "430",
+          "1200",
+          "2400"
+        ]
+      }
+    ],
+    "categories": [
+      {
+        "id": "L-SD",
+        "name": "L-SD",
+        "bands": [
+          "1.9",
+          "3.5",
+          "7"
+        ],
+        "modes": [
+          "FT4",
+          "FT8"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 3,
+        "min_calls": 1,
+        "required_flags": [
+          "記念局等特別局はチェックログ。通常個人/社団のSO/MOは実運用人数で選んだ"
+        ],
+        "operator": "SO"
+      },
+      {
+        "id": "L-SDP",
+        "name": "L-SDP",
+        "bands": [
+          "1.9",
+          "3.5",
+          "7"
+        ],
+        "modes": [
+          "FT4",
+          "FT8"
+        ],
+        "max_power": 5,
+        "min_bands": 1,
+        "max_bands": 3,
+        "min_calls": 1,
+        "required_flags": [
+          "記念局等特別局はチェックログ。通常個人/社団のSO/MOは実運用人数で選んだ"
+        ],
+        "operator": "SO"
+      },
+      {
+        "id": "L-MD",
+        "name": "L-MD",
+        "bands": [
+          "1.9",
+          "3.5",
+          "7"
+        ],
+        "modes": [
+          "FT4",
+          "FT8"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 3,
+        "min_calls": 1,
+        "required_flags": [
+          "記念局等特別局はチェックログ。通常個人/社団のSO/MOは実運用人数で選んだ"
+        ],
+        "operator": "MO"
+      },
+      {
+        "id": "L-MDP",
+        "name": "L-MDP",
+        "bands": [
+          "1.9",
+          "3.5",
+          "7"
+        ],
+        "modes": [
+          "FT4",
+          "FT8"
+        ],
+        "max_power": 5,
+        "min_bands": 1,
+        "max_bands": 3,
+        "min_calls": 1,
+        "required_flags": [
+          "記念局等特別局はチェックログ。通常個人/社団のSO/MOは実運用人数で選んだ"
+        ],
+        "operator": "MO"
+      },
+      {
+        "id": "H-SD",
+        "name": "H-SD",
+        "bands": [
+          "14",
+          "21",
+          "28"
+        ],
+        "modes": [
+          "FT4",
+          "FT8"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 3,
+        "min_calls": 1,
+        "required_flags": [
+          "記念局等特別局はチェックログ。通常個人/社団のSO/MOは実運用人数で選んだ"
+        ],
+        "operator": "SO"
+      },
+      {
+        "id": "H-SDP",
+        "name": "H-SDP",
+        "bands": [
+          "14",
+          "21",
+          "28"
+        ],
+        "modes": [
+          "FT4",
+          "FT8"
+        ],
+        "max_power": 5,
+        "min_bands": 1,
+        "max_bands": 3,
+        "min_calls": 1,
+        "required_flags": [
+          "記念局等特別局はチェックログ。通常個人/社団のSO/MOは実運用人数で選んだ"
+        ],
+        "operator": "SO"
+      },
+      {
+        "id": "H-MD",
+        "name": "H-MD",
+        "bands": [
+          "14",
+          "21",
+          "28"
+        ],
+        "modes": [
+          "FT4",
+          "FT8"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 3,
+        "min_calls": 1,
+        "required_flags": [
+          "記念局等特別局はチェックログ。通常個人/社団のSO/MOは実運用人数で選んだ"
+        ],
+        "operator": "MO"
+      },
+      {
+        "id": "H-MDP",
+        "name": "H-MDP",
+        "bands": [
+          "14",
+          "21",
+          "28"
+        ],
+        "modes": [
+          "FT4",
+          "FT8"
+        ],
+        "max_power": 5,
+        "min_bands": 1,
+        "max_bands": 3,
+        "min_calls": 1,
+        "required_flags": [
+          "記念局等特別局はチェックログ。通常個人/社団のSO/MOは実運用人数で選んだ"
+        ],
+        "operator": "MO"
+      },
+      {
+        "id": "V-SD",
+        "name": "V-SD",
+        "bands": [
+          "50",
+          "144",
+          "430",
+          "1200",
+          "2400"
+        ],
+        "modes": [
+          "FT4",
+          "FT8"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 5,
+        "min_calls": 1,
+        "required_flags": [
+          "記念局等特別局はチェックログ。通常個人/社団のSO/MOは実運用人数で選んだ"
+        ],
+        "operator": "SO"
+      },
+      {
+        "id": "V-SDP",
+        "name": "V-SDP",
+        "bands": [
+          "50",
+          "144",
+          "430",
+          "1200",
+          "2400"
+        ],
+        "modes": [
+          "FT4",
+          "FT8"
+        ],
+        "max_power": 5,
+        "min_bands": 1,
+        "max_bands": 5,
+        "min_calls": 1,
+        "required_flags": [
+          "記念局等特別局はチェックログ。通常個人/社団のSO/MOは実運用人数で選んだ"
+        ],
+        "operator": "SO"
+      },
+      {
+        "id": "V-MD",
+        "name": "V-MD",
+        "bands": [
+          "50",
+          "144",
+          "430",
+          "1200",
+          "2400"
+        ],
+        "modes": [
+          "FT4",
+          "FT8"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 5,
+        "min_calls": 1,
+        "required_flags": [
+          "記念局等特別局はチェックログ。通常個人/社団のSO/MOは実運用人数で選んだ"
+        ],
+        "operator": "MO"
+      },
+      {
+        "id": "V-MDP",
+        "name": "V-MDP",
+        "bands": [
+          "50",
+          "144",
+          "430",
+          "1200",
+          "2400"
+        ],
+        "modes": [
+          "FT4",
+          "FT8"
+        ],
+        "max_power": 5,
+        "min_bands": 1,
+        "max_bands": 5,
+        "min_calls": 1,
+        "required_flags": [
+          "記念局等特別局はチェックログ。通常個人/社団のSO/MOは実運用人数で選んだ"
+        ],
+        "operator": "MO"
+      }
+    ],
+    "required_flags": [
+      "国内全局を対象とした実運用で、完全なGL交換を確認した。FT8/FT4以外は含めず、QSO後のDBで番号を補っていない",
+      "公式WWデジタル設定・CQ OYTでGLのみ交換。RS/RST/SNRは不要。提出時の部門・UTC/JST・再提出置換と締切を確認した"
+    ],
+    "duplicate_fields": [
+      "call",
+      "band"
+    ],
+    "prefer": "first",
+    "special": "none",
+    "entrant": {
+      "station_types": [
+        "individual",
+        "club",
+        "special"
+      ],
+      "guest_policy": "allowed",
+      "checklog_only_types": [
+        "special"
+      ]
+    },
+    "normalization": {
+      "bands": {
+        "1.9MHZ": "1.9",
+        "3.5MHZ": "3.5",
+        "7MHZ": "7",
+        "14MHZ": "14",
+        "21MHZ": "21",
+        "28MHZ": "28",
+        "50MHZ": "50",
+        "144MHZ": "144",
+        "430MHZ": "430",
+        "1200MHZ": "1200",
+        "2400MHZ": "2400",
+        "1.8": "1.9"
+      },
+      "modes": {
+        "USB": "SSB",
+        "LSB": "SSB"
+      },
+      "mode_families": {
+        "FT4": "digital",
+        "FT8": "digital"
+      }
+    },
+    "regional": {
+      "profile": "okayama_ft",
+      "declarations": {},
+      "entry_set": {
+        "kind": "disjoint",
+        "max": 3
+      }
+    },
+    "submission": {
+      "formats": [
+        "Cabrillo"
+      ],
+      "zone": "UTC",
+      "contest": "オール岡山FT8/FT4",
+      "instructions": "12種目L/H/V別に提出。Cabrillo3は公式案内のWSJT-X WW-DIGI形式・UTC、フォームで同じUTCと正式部門コードを選択。CONTEST WW-DIGIは交換形式の識別、提出先は岡山専用。9月16日締切、時分規定なし。CQ OYT設定でGLのみ交換。フォームで内容・部門を確認して提出。主催受付は未検証。",
+      "row_scope": "category"
+    },
+    "rule_view": {
+      "call_method": "FT8/FT4：CQ OYT",
+      "counterparts": "県内局：国内すべてのアマチュア局。県外局：岡山県内局。",
+      "points_display": "FT8/FT4による完全な交信は1点。同一バンドの重複はFT8とFT4を変えても1回のみ有効。相手局のログ提出がない交信は得点になりません。"
+    }
+  }
+}
+

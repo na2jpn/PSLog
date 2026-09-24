@@ -1,0 +1,455 @@
+{
+  "id": "all_okayama_numbers",
+  "year": 2026,
+  "organizer": "JARL岡山県支部",
+  "source": "https://www.jarl.com/okayama/oy-test-rule-2026.html",
+  "sha256": "030f284dc0977cb12455d30e5384cf94c1e056b12147254158acbb6f28154c8c",
+  "municipal_source_versions": {
+    "jcc": "2019-05-01",
+    "jcg": "2018-10-01",
+    "ward": "2024-01-01",
+    "history": "2024-01-01"
+  },
+  "inside": [
+    {
+      "code": "3102",
+      "label": "Kurashiki            倉敷",
+      "kind": "city",
+      "source": "jcc-list.txt",
+      "contest_usable": true
+    },
+    {
+      "code": "3103",
+      "label": "Tsuyama              津山",
+      "kind": "city",
+      "source": "jcc-list.txt",
+      "contest_usable": true
+    },
+    {
+      "code": "3104",
+      "label": "Tamano               玉野",
+      "kind": "city",
+      "source": "jcc-list.txt",
+      "contest_usable": true
+    },
+    {
+      "code": "3107",
+      "label": "Kasaoka              笠岡",
+      "kind": "city",
+      "source": "jcc-list.txt",
+      "contest_usable": true
+    },
+    {
+      "code": "3109",
+      "label": "Ibara                井原",
+      "kind": "city",
+      "source": "jcc-list.txt",
+      "contest_usable": true
+    },
+    {
+      "code": "3110",
+      "label": "Soja                 総社",
+      "kind": "city",
+      "source": "jcc-list.txt",
+      "contest_usable": true
+    },
+    {
+      "code": "3111",
+      "label": "Takahashi            高梁",
+      "kind": "city",
+      "source": "jcc-list.txt",
+      "contest_usable": true
+    },
+    {
+      "code": "3112",
+      "label": "Niimi                新見",
+      "kind": "city",
+      "source": "jcc-list.txt",
+      "contest_usable": true
+    },
+    {
+      "code": "3113",
+      "label": "Bizen                備前",
+      "kind": "city",
+      "source": "jcc-list.txt",
+      "contest_usable": true
+    },
+    {
+      "code": "3114",
+      "label": "Setouchi             瀬戸内",
+      "kind": "city",
+      "source": "jcc-list.txt",
+      "contest_usable": true
+    },
+    {
+      "code": "3115",
+      "label": "Akaiwa               赤磐",
+      "kind": "city",
+      "source": "jcc-list.txt",
+      "contest_usable": true
+    },
+    {
+      "code": "3116",
+      "label": "Maniwa               真庭",
+      "kind": "city",
+      "source": "jcc-list.txt",
+      "contest_usable": true
+    },
+    {
+      "code": "3117",
+      "label": "Mimasaka             美作",
+      "kind": "city",
+      "source": "jcc-list.txt",
+      "contest_usable": true
+    },
+    {
+      "code": "3118",
+      "label": "Asakuchi             浅口",
+      "kind": "city",
+      "source": "jcc-list.txt",
+      "contest_usable": true
+    },
+    {
+      "code": "31001",
+      "label": "Aida                英田",
+      "kind": "county",
+      "source": "jcg-list.txt",
+      "contest_usable": true
+    },
+    {
+      "code": "31003",
+      "label": "Asakuchi            浅口",
+      "kind": "county",
+      "source": "jcg-list.txt",
+      "contest_usable": true
+    },
+    {
+      "code": "31006",
+      "label": "Oda                 小田",
+      "kind": "county",
+      "source": "jcg-list.txt",
+      "contest_usable": true
+    },
+    {
+      "code": "31007",
+      "label": "Katsuta             勝田",
+      "kind": "county",
+      "source": "jcg-list.txt",
+      "contest_usable": true
+    },
+    {
+      "code": "31010",
+      "label": "Kume                久米",
+      "kind": "county",
+      "source": "jcg-list.txt",
+      "contest_usable": true
+    },
+    {
+      "code": "31015",
+      "label": "Tsukubo             都窪",
+      "kind": "county",
+      "source": "jcg-list.txt",
+      "contest_usable": true
+    },
+    {
+      "code": "31016",
+      "label": "Tomata              苫田",
+      "kind": "county",
+      "source": "jcg-list.txt",
+      "contest_usable": true
+    },
+    {
+      "code": "31017",
+      "label": "Maniwa              真庭",
+      "kind": "county",
+      "source": "jcg-list.txt",
+      "contest_usable": true
+    },
+    {
+      "code": "31019",
+      "label": "Wake                和気",
+      "kind": "county",
+      "source": "jcg-list.txt",
+      "contest_usable": true
+    },
+    {
+      "code": "31020",
+      "label": "Kaga                加賀",
+      "kind": "county",
+      "source": "jcg-list.txt",
+      "contest_usable": true
+    },
+    {
+      "code": "310101",
+      "label": "Kita           北",
+      "kind": "ward",
+      "source": "ku-list.txt",
+      "contest_usable": true
+    },
+    {
+      "code": "310102",
+      "label": "Naka           中",
+      "kind": "ward",
+      "source": "ku-list.txt",
+      "contest_usable": true
+    },
+    {
+      "code": "310103",
+      "label": "Hinagashi      東",
+      "kind": "ward",
+      "source": "ku-list.txt",
+      "contest_usable": true
+    },
+    {
+      "code": "310104",
+      "label": "Minami         南",
+      "kind": "ward",
+      "source": "ku-list.txt",
+      "contest_usable": true
+    }
+  ],
+  "outside": [
+    {
+      "code": "101",
+      "name": "宗谷"
+    },
+    {
+      "code": "102",
+      "name": "留萌"
+    },
+    {
+      "code": "103",
+      "name": "上川"
+    },
+    {
+      "code": "104",
+      "name": "オホーツク"
+    },
+    {
+      "code": "105",
+      "name": "空知"
+    },
+    {
+      "code": "106",
+      "name": "石狩"
+    },
+    {
+      "code": "107",
+      "name": "根室"
+    },
+    {
+      "code": "108",
+      "name": "後志"
+    },
+    {
+      "code": "109",
+      "name": "十勝"
+    },
+    {
+      "code": "110",
+      "name": "釧路"
+    },
+    {
+      "code": "111",
+      "name": "日高"
+    },
+    {
+      "code": "112",
+      "name": "胆振"
+    },
+    {
+      "code": "113",
+      "name": "桧山"
+    },
+    {
+      "code": "114",
+      "name": "渡島"
+    },
+    {
+      "code": "02",
+      "name": "青森"
+    },
+    {
+      "code": "03",
+      "name": "岩手"
+    },
+    {
+      "code": "04",
+      "name": "秋田"
+    },
+    {
+      "code": "05",
+      "name": "山形"
+    },
+    {
+      "code": "06",
+      "name": "宮城"
+    },
+    {
+      "code": "07",
+      "name": "福島"
+    },
+    {
+      "code": "08",
+      "name": "新潟"
+    },
+    {
+      "code": "09",
+      "name": "長野"
+    },
+    {
+      "code": "10",
+      "name": "東京"
+    },
+    {
+      "code": "11",
+      "name": "神奈川"
+    },
+    {
+      "code": "12",
+      "name": "千葉"
+    },
+    {
+      "code": "13",
+      "name": "埼玉"
+    },
+    {
+      "code": "14",
+      "name": "茨城"
+    },
+    {
+      "code": "15",
+      "name": "栃木"
+    },
+    {
+      "code": "16",
+      "name": "群馬"
+    },
+    {
+      "code": "17",
+      "name": "山梨"
+    },
+    {
+      "code": "18",
+      "name": "静岡"
+    },
+    {
+      "code": "19",
+      "name": "岐阜"
+    },
+    {
+      "code": "20",
+      "name": "愛知"
+    },
+    {
+      "code": "21",
+      "name": "三重"
+    },
+    {
+      "code": "22",
+      "name": "京都"
+    },
+    {
+      "code": "23",
+      "name": "滋賀"
+    },
+    {
+      "code": "24",
+      "name": "奈良"
+    },
+    {
+      "code": "25",
+      "name": "大阪"
+    },
+    {
+      "code": "26",
+      "name": "和歌山"
+    },
+    {
+      "code": "27",
+      "name": "兵庫"
+    },
+    {
+      "code": "28",
+      "name": "富山"
+    },
+    {
+      "code": "29",
+      "name": "福井"
+    },
+    {
+      "code": "30",
+      "name": "石川"
+    },
+    {
+      "code": "32",
+      "name": "島根"
+    },
+    {
+      "code": "33",
+      "name": "山口"
+    },
+    {
+      "code": "34",
+      "name": "鳥取"
+    },
+    {
+      "code": "35",
+      "name": "広島"
+    },
+    {
+      "code": "36",
+      "name": "香川"
+    },
+    {
+      "code": "37",
+      "name": "徳島"
+    },
+    {
+      "code": "38",
+      "name": "愛媛"
+    },
+    {
+      "code": "39",
+      "name": "高知"
+    },
+    {
+      "code": "40",
+      "name": "福岡"
+    },
+    {
+      "code": "41",
+      "name": "佐賀"
+    },
+    {
+      "code": "42",
+      "name": "長崎"
+    },
+    {
+      "code": "43",
+      "name": "熊本"
+    },
+    {
+      "code": "44",
+      "name": "大分"
+    },
+    {
+      "code": "45",
+      "name": "宮崎"
+    },
+    {
+      "code": "46",
+      "name": "鹿児島"
+    },
+    {
+      "code": "47",
+      "name": "沖縄"
+    },
+    {
+      "code": "48",
+      "name": "小笠原"
+    }
+  ],
+  "submission_page": "http://contest.jj4kme.mydns.jp/uploadLog.html?20260531_092548_7091",
+  "submission_fetch": "2026-09-14 web取得502、実パーサー未確認"
+}

@@ -1,0 +1,876 @@
+{
+  "schema": 2,
+  "id": "ww-digi",
+  "name": "World Wide Digi DX",
+  "year": 2026,
+  "url": "https://ww-digi.com/rules/",
+  "organizer": "World Wide Digi DX",
+  "sort_name": "World Wide Digi DX",
+  "points": {
+    "cw": 1,
+    "phone": 1,
+    "digital": 0
+  },
+  "conditions": [],
+  "duplicate": {
+    "enabled": true,
+    "by_mode": false
+  },
+  "multi1": {
+    "kind": "off",
+    "start": 0,
+    "length": 2,
+    "per_band": true
+  },
+  "multi2": {
+    "kind": "off",
+    "value": 1,
+    "condition": {
+      "all": []
+    }
+  },
+  "formula": "total",
+  "scoring": {
+    "eligible": {
+      "all": []
+    },
+    "multipliers": [
+      {
+        "id": "region",
+        "source": "area",
+        "kind": "whole",
+        "start": 0,
+        "length": 2,
+        "per_band": true,
+        "when": {
+          "all": []
+        }
+      }
+    ],
+    "bonus": 0
+  },
+  "event": {
+    "timezone": "UTC",
+    "windows": [
+      {
+        "start": "2026-08-29 12:00",
+        "end": "2026-08-30 12:00",
+        "bands": [
+          "1.9",
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28"
+        ]
+      }
+    ],
+    "categories": [
+      {
+        "id": "SO_ONE_HIGH_ALL",
+        "name": "SO ONE HIGH ALL",
+        "bands": [
+          "1.9",
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28"
+        ],
+        "modes": [
+          "FT4",
+          "FT8"
+        ],
+        "max_power": 1500,
+        "min_bands": 1,
+        "max_bands": 6,
+        "min_calls": 1,
+        "required_flags": [
+          "各帯1波、部門の送信機数・実出力、SOの全作業1人を確認。各QSO開始は人が操作、無人ロボットなし。賞対象の場合は実周波数を入力した"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "unknown_grid"
+          ]
+        }
+      },
+      {
+        "id": "SO_ONE_HIGH_160M",
+        "name": "SO ONE HIGH 160M",
+        "bands": [
+          "1.9"
+        ],
+        "modes": [
+          "FT4",
+          "FT8"
+        ],
+        "max_power": 1500,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "各帯1波、部門の送信機数・実出力、SOの全作業1人を確認。各QSO開始は人が操作、無人ロボットなし。賞対象の場合は実周波数を入力した"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "unknown_grid"
+          ]
+        }
+      },
+      {
+        "id": "SO_ONE_HIGH_80M",
+        "name": "SO ONE HIGH 80M",
+        "bands": [
+          "3.5"
+        ],
+        "modes": [
+          "FT4",
+          "FT8"
+        ],
+        "max_power": 1500,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "各帯1波、部門の送信機数・実出力、SOの全作業1人を確認。各QSO開始は人が操作、無人ロボットなし。賞対象の場合は実周波数を入力した"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "unknown_grid"
+          ]
+        }
+      },
+      {
+        "id": "SO_ONE_HIGH_40M",
+        "name": "SO ONE HIGH 40M",
+        "bands": [
+          "7"
+        ],
+        "modes": [
+          "FT4",
+          "FT8"
+        ],
+        "max_power": 1500,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "各帯1波、部門の送信機数・実出力、SOの全作業1人を確認。各QSO開始は人が操作、無人ロボットなし。賞対象の場合は実周波数を入力した"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "unknown_grid"
+          ]
+        }
+      },
+      {
+        "id": "SO_ONE_HIGH_20M",
+        "name": "SO ONE HIGH 20M",
+        "bands": [
+          "14"
+        ],
+        "modes": [
+          "FT4",
+          "FT8"
+        ],
+        "max_power": 1500,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "各帯1波、部門の送信機数・実出力、SOの全作業1人を確認。各QSO開始は人が操作、無人ロボットなし。賞対象の場合は実周波数を入力した"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "unknown_grid"
+          ]
+        }
+      },
+      {
+        "id": "SO_ONE_HIGH_15M",
+        "name": "SO ONE HIGH 15M",
+        "bands": [
+          "21"
+        ],
+        "modes": [
+          "FT4",
+          "FT8"
+        ],
+        "max_power": 1500,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "各帯1波、部門の送信機数・実出力、SOの全作業1人を確認。各QSO開始は人が操作、無人ロボットなし。賞対象の場合は実周波数を入力した"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "unknown_grid"
+          ]
+        }
+      },
+      {
+        "id": "SO_ONE_HIGH_10M",
+        "name": "SO ONE HIGH 10M",
+        "bands": [
+          "28"
+        ],
+        "modes": [
+          "FT4",
+          "FT8"
+        ],
+        "max_power": 1500,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "各帯1波、部門の送信機数・実出力、SOの全作業1人を確認。各QSO開始は人が操作、無人ロボットなし。賞対象の場合は実周波数を入力した"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "unknown_grid"
+          ]
+        }
+      },
+      {
+        "id": "SO_UNLIMITED_HIGH",
+        "name": "SO UNLIMITED HIGH",
+        "bands": [
+          "1.9",
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28"
+        ],
+        "modes": [
+          "FT4",
+          "FT8"
+        ],
+        "max_power": 1500,
+        "min_bands": 1,
+        "max_bands": 6,
+        "min_calls": 1,
+        "required_flags": [
+          "各帯1波、部門の送信機数・実出力、SOの全作業1人を確認。各QSO開始は人が操作、無人ロボットなし。賞対象の場合は実周波数を入力した"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "unknown_grid"
+          ]
+        }
+      },
+      {
+        "id": "SO_ONE_LOW_ALL",
+        "name": "SO ONE LOW ALL",
+        "bands": [
+          "1.9",
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28"
+        ],
+        "modes": [
+          "FT4",
+          "FT8"
+        ],
+        "max_power": 100,
+        "min_bands": 1,
+        "max_bands": 6,
+        "min_calls": 1,
+        "required_flags": [
+          "各帯1波、部門の送信機数・実出力、SOの全作業1人を確認。各QSO開始は人が操作、無人ロボットなし。賞対象の場合は実周波数を入力した"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "unknown_grid"
+          ]
+        }
+      },
+      {
+        "id": "SO_ONE_LOW_160M",
+        "name": "SO ONE LOW 160M",
+        "bands": [
+          "1.9"
+        ],
+        "modes": [
+          "FT4",
+          "FT8"
+        ],
+        "max_power": 100,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "各帯1波、部門の送信機数・実出力、SOの全作業1人を確認。各QSO開始は人が操作、無人ロボットなし。賞対象の場合は実周波数を入力した"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "unknown_grid"
+          ]
+        }
+      },
+      {
+        "id": "SO_ONE_LOW_80M",
+        "name": "SO ONE LOW 80M",
+        "bands": [
+          "3.5"
+        ],
+        "modes": [
+          "FT4",
+          "FT8"
+        ],
+        "max_power": 100,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "各帯1波、部門の送信機数・実出力、SOの全作業1人を確認。各QSO開始は人が操作、無人ロボットなし。賞対象の場合は実周波数を入力した"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "unknown_grid"
+          ]
+        }
+      },
+      {
+        "id": "SO_ONE_LOW_40M",
+        "name": "SO ONE LOW 40M",
+        "bands": [
+          "7"
+        ],
+        "modes": [
+          "FT4",
+          "FT8"
+        ],
+        "max_power": 100,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "各帯1波、部門の送信機数・実出力、SOの全作業1人を確認。各QSO開始は人が操作、無人ロボットなし。賞対象の場合は実周波数を入力した"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "unknown_grid"
+          ]
+        }
+      },
+      {
+        "id": "SO_ONE_LOW_20M",
+        "name": "SO ONE LOW 20M",
+        "bands": [
+          "14"
+        ],
+        "modes": [
+          "FT4",
+          "FT8"
+        ],
+        "max_power": 100,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "各帯1波、部門の送信機数・実出力、SOの全作業1人を確認。各QSO開始は人が操作、無人ロボットなし。賞対象の場合は実周波数を入力した"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "unknown_grid"
+          ]
+        }
+      },
+      {
+        "id": "SO_ONE_LOW_15M",
+        "name": "SO ONE LOW 15M",
+        "bands": [
+          "21"
+        ],
+        "modes": [
+          "FT4",
+          "FT8"
+        ],
+        "max_power": 100,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "各帯1波、部門の送信機数・実出力、SOの全作業1人を確認。各QSO開始は人が操作、無人ロボットなし。賞対象の場合は実周波数を入力した"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "unknown_grid"
+          ]
+        }
+      },
+      {
+        "id": "SO_ONE_LOW_10M",
+        "name": "SO ONE LOW 10M",
+        "bands": [
+          "28"
+        ],
+        "modes": [
+          "FT4",
+          "FT8"
+        ],
+        "max_power": 100,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "各帯1波、部門の送信機数・実出力、SOの全作業1人を確認。各QSO開始は人が操作、無人ロボットなし。賞対象の場合は実周波数を入力した"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "unknown_grid"
+          ]
+        }
+      },
+      {
+        "id": "SO_UNLIMITED_LOW",
+        "name": "SO UNLIMITED LOW",
+        "bands": [
+          "1.9",
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28"
+        ],
+        "modes": [
+          "FT4",
+          "FT8"
+        ],
+        "max_power": 100,
+        "min_bands": 1,
+        "max_bands": 6,
+        "min_calls": 1,
+        "required_flags": [
+          "各帯1波、部門の送信機数・実出力、SOの全作業1人を確認。各QSO開始は人が操作、無人ロボットなし。賞対象の場合は実周波数を入力した"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "unknown_grid"
+          ]
+        }
+      },
+      {
+        "id": "SO_ONE_QRP_ALL",
+        "name": "SO ONE QRP ALL",
+        "bands": [
+          "1.9",
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28"
+        ],
+        "modes": [
+          "FT4",
+          "FT8"
+        ],
+        "max_power": 5,
+        "min_bands": 1,
+        "max_bands": 6,
+        "min_calls": 1,
+        "required_flags": [
+          "各帯1波、部門の送信機数・実出力、SOの全作業1人を確認。各QSO開始は人が操作、無人ロボットなし。賞対象の場合は実周波数を入力した"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "unknown_grid"
+          ]
+        }
+      },
+      {
+        "id": "SO_ONE_QRP_160M",
+        "name": "SO ONE QRP 160M",
+        "bands": [
+          "1.9"
+        ],
+        "modes": [
+          "FT4",
+          "FT8"
+        ],
+        "max_power": 5,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "各帯1波、部門の送信機数・実出力、SOの全作業1人を確認。各QSO開始は人が操作、無人ロボットなし。賞対象の場合は実周波数を入力した"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "unknown_grid"
+          ]
+        }
+      },
+      {
+        "id": "SO_ONE_QRP_80M",
+        "name": "SO ONE QRP 80M",
+        "bands": [
+          "3.5"
+        ],
+        "modes": [
+          "FT4",
+          "FT8"
+        ],
+        "max_power": 5,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "各帯1波、部門の送信機数・実出力、SOの全作業1人を確認。各QSO開始は人が操作、無人ロボットなし。賞対象の場合は実周波数を入力した"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "unknown_grid"
+          ]
+        }
+      },
+      {
+        "id": "SO_ONE_QRP_40M",
+        "name": "SO ONE QRP 40M",
+        "bands": [
+          "7"
+        ],
+        "modes": [
+          "FT4",
+          "FT8"
+        ],
+        "max_power": 5,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "各帯1波、部門の送信機数・実出力、SOの全作業1人を確認。各QSO開始は人が操作、無人ロボットなし。賞対象の場合は実周波数を入力した"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "unknown_grid"
+          ]
+        }
+      },
+      {
+        "id": "SO_ONE_QRP_20M",
+        "name": "SO ONE QRP 20M",
+        "bands": [
+          "14"
+        ],
+        "modes": [
+          "FT4",
+          "FT8"
+        ],
+        "max_power": 5,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "各帯1波、部門の送信機数・実出力、SOの全作業1人を確認。各QSO開始は人が操作、無人ロボットなし。賞対象の場合は実周波数を入力した"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "unknown_grid"
+          ]
+        }
+      },
+      {
+        "id": "SO_ONE_QRP_15M",
+        "name": "SO ONE QRP 15M",
+        "bands": [
+          "21"
+        ],
+        "modes": [
+          "FT4",
+          "FT8"
+        ],
+        "max_power": 5,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "各帯1波、部門の送信機数・実出力、SOの全作業1人を確認。各QSO開始は人が操作、無人ロボットなし。賞対象の場合は実周波数を入力した"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "unknown_grid"
+          ]
+        }
+      },
+      {
+        "id": "SO_ONE_QRP_10M",
+        "name": "SO ONE QRP 10M",
+        "bands": [
+          "28"
+        ],
+        "modes": [
+          "FT4",
+          "FT8"
+        ],
+        "max_power": 5,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "各帯1波、部門の送信機数・実出力、SOの全作業1人を確認。各QSO開始は人が操作、無人ロボットなし。賞対象の場合は実周波数を入力した"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "unknown_grid"
+          ]
+        }
+      },
+      {
+        "id": "SO_UNLIMITED_QRP",
+        "name": "SO UNLIMITED QRP",
+        "bands": [
+          "1.9",
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28"
+        ],
+        "modes": [
+          "FT4",
+          "FT8"
+        ],
+        "max_power": 5,
+        "min_bands": 1,
+        "max_bands": 6,
+        "min_calls": 1,
+        "required_flags": [
+          "各帯1波、部門の送信機数・実出力、SOの全作業1人を確認。各QSO開始は人が操作、無人ロボットなし。賞対象の場合は実周波数を入力した"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "unknown_grid"
+          ]
+        }
+      },
+      {
+        "id": "MO_ONE_HIGH",
+        "name": "MO ONE HIGH",
+        "bands": [
+          "1.9",
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28"
+        ],
+        "modes": [
+          "FT4",
+          "FT8"
+        ],
+        "max_power": 1500,
+        "min_bands": 1,
+        "max_bands": 6,
+        "min_calls": 1,
+        "required_flags": [
+          "各帯1波、部門の送信機数・実出力、SOの全作業1人を確認。各QSO開始は人が操作、無人ロボットなし。賞対象の場合は実周波数を入力した"
+        ],
+        "operator": "MO",
+        "timing": {
+          "band_change": {
+            "kind": "hourly",
+            "max_changes": 8,
+            "tx_ids": [],
+            "on_violation": "block"
+          }
+        },
+        "regional": {
+          "required_declarations": [
+            "unknown_grid"
+          ]
+        }
+      },
+      {
+        "id": "MO_ONE_LOW",
+        "name": "MO ONE LOW",
+        "bands": [
+          "1.9",
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28"
+        ],
+        "modes": [
+          "FT4",
+          "FT8"
+        ],
+        "max_power": 100,
+        "min_bands": 1,
+        "max_bands": 6,
+        "min_calls": 1,
+        "required_flags": [
+          "各帯1波、部門の送信機数・実出力、SOの全作業1人を確認。各QSO開始は人が操作、無人ロボットなし。賞対象の場合は実周波数を入力した"
+        ],
+        "operator": "MO",
+        "timing": {
+          "band_change": {
+            "kind": "hourly",
+            "max_changes": 8,
+            "tx_ids": [],
+            "on_violation": "block"
+          }
+        },
+        "regional": {
+          "required_declarations": [
+            "unknown_grid"
+          ]
+        }
+      },
+      {
+        "id": "MO_TWO_HIGH",
+        "name": "MO TWO HIGH",
+        "bands": [
+          "1.9",
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28"
+        ],
+        "modes": [
+          "FT4",
+          "FT8"
+        ],
+        "max_power": 1500,
+        "min_bands": 1,
+        "max_bands": 6,
+        "min_calls": 1,
+        "required_flags": [
+          "各帯1波、部門の送信機数・実出力、SOの全作業1人を確認。各QSO開始は人が操作、無人ロボットなし。賞対象の場合は実周波数を入力した"
+        ],
+        "operator": "MO",
+        "timing": {
+          "band_change": {
+            "kind": "hourly",
+            "max_changes": 8,
+            "tx_ids": [
+              "0",
+              "1"
+            ],
+            "on_violation": "block"
+          }
+        },
+        "regional": {
+          "required_declarations": [
+            "unknown_grid"
+          ]
+        }
+      },
+      {
+        "id": "MO_UNLIMITED_HIGH",
+        "name": "MO UNLIMITED HIGH",
+        "bands": [
+          "1.9",
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28"
+        ],
+        "modes": [
+          "FT4",
+          "FT8"
+        ],
+        "max_power": 1500,
+        "min_bands": 1,
+        "max_bands": 6,
+        "min_calls": 1,
+        "required_flags": [
+          "各帯1波、部門の送信機数・実出力、SOの全作業1人を確認。各QSO開始は人が操作、無人ロボットなし。賞対象の場合は実周波数を入力した"
+        ],
+        "operator": "MO",
+        "regional": {
+          "required_declarations": [
+            "unknown_grid"
+          ]
+        }
+      }
+    ],
+    "required_flags": [
+      "実運用地・免許・出力・原典の周波数を確認し、設備は単一所在地の直径500m内、場外受信機・セルフスポットなし。原番号を事後DBから補っていない",
+      "原典の同時送信・交信成立・参加数・クラブ資格と公開条件を確認した。各部門のSO/MOは実運用者で選んだ"
+    ],
+    "duplicate_fields": [
+      "call",
+      "band"
+    ],
+    "prefer": "first",
+    "special": "none",
+    "entrant": {
+      "station_types": [
+        "individual",
+        "club"
+      ],
+      "guest_policy": "allowed"
+    },
+    "normalization": {
+      "bands": {
+        "1.9MHZ": "1.9",
+        "3.5MHZ": "3.5",
+        "7MHZ": "7",
+        "14MHZ": "14",
+        "21MHZ": "21",
+        "28MHZ": "28",
+        "1.8": "1.9"
+      },
+      "modes": {
+        "USB": "SSB",
+        "LSB": "SSB"
+      },
+      "mode_families": {
+        "FT4": "digital",
+        "FT8": "digital"
+      }
+    },
+    "regional": {
+      "profile": "ww_digi",
+      "declarations": {
+        "unknown_grid": "受信GLがZZ00なら総得点未確定・CLAIMED-SCORE省略で提出することの確認"
+      }
+    },
+    "submission": {
+      "formats": [
+        "Cabrillo"
+      ],
+      "zone": "UTC",
+      "contest": "World Wide Digi DX",
+      "instructions": "2026 WW-DIGI Cabrillo3 UTC、FT4/FT8=DG、レポートなし。GL4中心の球面距離で1+floor(km/3000)、マルチGL2。距離境界の主催照合は未検証。受信GL不明ZZ00は捏造せず、申告得点を省略して提出できる。全帯ログ保持。Webのみ。本文締切48時間と9月1日23:59UTCの不一致を原案に保持し早い側までの提出を案内。"
+    },
+    "rule_view": {
+      "counterparts": "世界中のアマチュア局。FT4・FT8で交信。",
+      "points_display": "1交信1点に、相互のグリッドスクエア中心間距離3000kmごとに1点を加算（短距離経路で計算）。同一局・同一バンドはFT4とFT8を通して1回のみ得点。",
+      "call_method": "公式規約に定型のCQ呼び出し指定なし。"
+    }
+  }
+}
+

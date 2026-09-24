@@ -1,0 +1,28 @@
+{
+  "version": "1.11",
+  "patch": "PATCH01_FIX1",
+  "base": "PSLog_1.11_PATCH01.zip",
+  "scope": "Regression-test expectation correction only",
+  "runtime_source_changed": false,
+  "files": [
+    {
+      "path": "test_patch10_1070.py",
+      "size": 2650,
+      "sha256": "571d15bdf159fc670ce60e4fd64fa42382cba668fa2b68606060c655a209fe89"
+    },
+    {
+      "path": "test_v101.py",
+      "size": 3327,
+      "sha256": "2c5aa44e7c6812481dea26cb87252cc500e108f32f2ed584414918ec069c49a6"
+    },
+    {
+      "path": "VER1.11_PATCH01_FIX1_README.md",
+      "size": 942,
+      "sha256": "00711fc045ed0a39310622ca45e0956c4193d1cfe5f2aa7bdf6ca08ab926199f"
+    }
+  ],
+  "classification": {
+    "test_patch10_1070.py": "stale test: expected old version 1.10 after intentional version bump to 1.11",
+    "test_v101.py": "stale test: expected pre-origin-label text although current accepted RuleStore behavior marks temporary/source-tree rules as user-defined"
+  }
+}

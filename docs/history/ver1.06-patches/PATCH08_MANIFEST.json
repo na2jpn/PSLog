@@ -1,0 +1,142 @@
+{
+  "patch": "Ver1.068 PATCH08",
+  "base": "Ver1.067 PATCH07 applied source",
+  "version": "1.068",
+  "files": [
+    {
+      "path": "CHANGELOG.md",
+      "sha256": "4918295f34e8483820f3e4f9d84466fbffd13098024dd6cc5560676637b5ef03",
+      "size": 1473
+    },
+    {
+      "path": "VER1.068_PATCH08_README.md",
+      "sha256": "6d6c1393ed159b07943056edd44558f8de66e429862dc36011aef99425dddc4a",
+      "size": 1518
+    },
+    {
+      "path": "WINDOWS_BUILD.md",
+      "sha256": "c53a5731c2edec3c96f0997e1e94075c2de5ccbc6274d895592b007a7c59a5cf",
+      "size": 9577
+    },
+    {
+      "path": "build-windows.ps1",
+      "sha256": "e77895739d62b5897ee2482dc658079e28866232e25c15fef32e10141846f8dd",
+      "size": 3345
+    },
+    {
+      "path": "qsl_ui.py",
+      "sha256": "1bb302fe66eb34bad5fb0dfee8d2797d31bbd1294e1a892b39e82742e4b8f437",
+      "size": 26689
+    },
+    {
+      "path": "storage.py",
+      "sha256": "267502c102c9a69e2fcfafc9b240c6cf1886eaa6c7589714d1474d88ee1c8fc2",
+      "size": 16181
+    },
+    {
+      "path": "test_full_restore.py",
+      "sha256": "9dca709c293c8f3804690e6bc57f889ef20e10815afc353419c92fab568c86c4",
+      "size": 7920
+    },
+    {
+      "path": "test_patch01_1061.py",
+      "sha256": "316feddbb195adfee3c042c91506712614b322ee92a1c5ff0309aa58613e68eb",
+      "size": 8491
+    },
+    {
+      "path": "test_patch03.py",
+      "sha256": "b01731c576e82df3a41ca96ab9c4e7cbd14a3006b4624e4175251609dbfb9d9b",
+      "size": 2569
+    },
+    {
+      "path": "test_patch03_1063.py",
+      "sha256": "d0decdf404ca38543e424a2289539b5ac389f851eedabcc2c750f64cb17c893d",
+      "size": 4221
+    },
+    {
+      "path": "test_patch04.py",
+      "sha256": "cdc9a359d2b8e6755f54a92d99763b74fce6f3203bc3e2f1881e408bcee9ab92",
+      "size": 2920
+    },
+    {
+      "path": "test_patch04_1064.py",
+      "sha256": "45ae288cc1f8ca21d75318ae63e37ac7bc84d469796ea1cf381edfe521f2c0f8",
+      "size": 4219
+    },
+    {
+      "path": "test_patch05.py",
+      "sha256": "fda33d334e0f1a1166e59c34d1b30c585e847e44721bdb204fb1bf948d2e319d",
+      "size": 2913
+    },
+    {
+      "path": "test_patch05_1065.py",
+      "sha256": "a7fae13ac6e41e43eb0a1f869a646a17941948bbc61aeb48bd3ac703c4b2dbaf",
+      "size": 2918
+    },
+    {
+      "path": "test_patch06.py",
+      "sha256": "403770d3095c8ee20d725f0a7a0233130fa71e7fb4231d4ae425d97f24d50dcc",
+      "size": 3540
+    },
+    {
+      "path": "test_patch06_1066.py",
+      "sha256": "6b0d3a77f898d93665b44ee9f9d5226b9da96c2ed2a6afd9bdb0dc60a899912d",
+      "size": 3744
+    },
+    {
+      "path": "test_patch07_1057.py",
+      "sha256": "5339fa3bd20c2cf019598078505fa062f8780b66d522a1d5efd2445f029775eb",
+      "size": 1679
+    },
+    {
+      "path": "test_patch07_1067.py",
+      "sha256": "7f23d647d224bb503f48e587e9a831e13616ba2342ade246e267863f5453ccc3",
+      "size": 2631
+    },
+    {
+      "path": "test_patch08_1058.py",
+      "sha256": "ebfa80066bfd73969bca58bfc75e8bb9836202540f06c7d499e8d3db48a2bf00",
+      "size": 1921
+    },
+    {
+      "path": "test_patch08_1068.py",
+      "sha256": "2a0c0c33f3a8feaee20ec67dfa12f85dc346ef13a1551e1c53a8f3e133bb1b29",
+      "size": 1106
+    },
+    {
+      "path": "test_patch09_1059.py",
+      "sha256": "5f266d3d25c7f0b0794275738e6587fde397305790ad3919869adce68e47926f",
+      "size": 3899
+    },
+    {
+      "path": "test_patch10.py",
+      "sha256": "ebc43bb58f9856dfd30453f6f1f22746f6aba5c32b2888656c0ceb54fa0b09d1",
+      "size": 3244
+    },
+    {
+      "path": "test_qsl_gui.py",
+      "sha256": "52114bdf24357147d66c2069c11b6ce3de83bd9b012858989d21450a9d0de5d4",
+      "size": 5058
+    },
+    {
+      "path": "test_release_106.py",
+      "sha256": "dc769470429edd0feb5681c2884c11aa8e60c09c53ee6819ab2bdac31ddb4afe",
+      "size": 3156
+    },
+    {
+      "path": "test_v102.py",
+      "sha256": "dd3a4cd68eff47656885086e04300c777d8a308a65638b1a6f9f24be6c2652b9",
+      "size": 3184
+    },
+    {
+      "path": "test_v103_initial.py",
+      "sha256": "7ac08549d849987c3e17bc8e705be8e331b1d947f4aa360c210fee845d44f9e0",
+      "size": 2407
+    },
+    {
+      "path": "test_windows_package.py",
+      "sha256": "079d13632eb28173a5a3d0ba1581ba7ee6bb81aec6324c9952de005aea3255b4",
+      "size": 8299
+    }
+  ]
+}

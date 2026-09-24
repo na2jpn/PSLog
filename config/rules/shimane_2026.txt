@@ -1,0 +1,685 @@
+{
+  "schema": 2,
+  "id": "shimane",
+  "name": "第46回島根対全日本コンテスト",
+  "year": 2026,
+  "url": "https://jarl-shimane.jimdofree.com/事業計画/",
+  "organizer": "JARL島根県支部",
+  "sort_name": "第46回島根対全日本コンテスト",
+  "points": {
+    "cw": 1,
+    "phone": 1,
+    "digital": 0
+  },
+  "conditions": [],
+  "duplicate": {
+    "enabled": true,
+    "by_mode": false
+  },
+  "multi1": {
+    "kind": "off",
+    "start": 0,
+    "length": 2,
+    "per_band": true
+  },
+  "multi2": {
+    "kind": "off",
+    "value": 1,
+    "condition": {
+      "all": []
+    }
+  },
+  "formula": "total",
+  "scoring": {
+    "eligible": {
+      "all": []
+    },
+    "multipliers": [
+      {
+        "id": "region",
+        "source": "area",
+        "kind": "whole",
+        "start": 0,
+        "length": 2,
+        "per_band": true,
+        "when": {
+          "all": []
+        }
+      }
+    ],
+    "bonus": 0
+  },
+  "event": {
+    "timezone": "JST",
+    "windows": [
+      {
+        "start": "2026-06-21 09:00",
+        "end": "2026-06-21 15:00",
+        "bands": [
+          "7",
+          "21",
+          "28",
+          "50",
+          "144",
+          "430"
+        ]
+      }
+    ],
+    "categories": [
+      {
+        "id": "1A",
+        "name": "1 individual VU",
+        "bands": [
+          "50",
+          "144",
+          "430"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "FM"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 3,
+        "min_calls": 1,
+        "required_flags": [
+          "開催中同一地点・同帯1波・クロスバンドなし。AJDは移動先エリアで国内10局、QSL取得を要件にしない"
+        ],
+        "station_types": [
+          "individual"
+        ],
+        "operators_in_comments": false,
+        "regional": {
+          "section": "VU",
+          "required_declarations": [
+            "own_region",
+            "bonus",
+            "licensed_region",
+            "portable_equipment"
+          ]
+        }
+      },
+      {
+        "id": "1B",
+        "name": "1 individual HFH",
+        "bands": [
+          "21",
+          "28"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "FM"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 2,
+        "min_calls": 1,
+        "required_flags": [
+          "開催中同一地点・同帯1波・クロスバンドなし。AJDは移動先エリアで国内10局、QSL取得を要件にしない"
+        ],
+        "station_types": [
+          "individual"
+        ],
+        "operators_in_comments": false,
+        "regional": {
+          "section": "HFH",
+          "required_declarations": [
+            "own_region",
+            "bonus",
+            "licensed_region",
+            "portable_equipment"
+          ]
+        }
+      },
+      {
+        "id": "1C",
+        "name": "1 individual HFL",
+        "bands": [
+          "7"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "FM"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "開催中同一地点・同帯1波・クロスバンドなし。AJDは移動先エリアで国内10局、QSL取得を要件にしない"
+        ],
+        "station_types": [
+          "individual"
+        ],
+        "operators_in_comments": false,
+        "regional": {
+          "section": "HFL",
+          "required_declarations": [
+            "own_region",
+            "bonus",
+            "licensed_region",
+            "portable_equipment"
+          ]
+        }
+      },
+      {
+        "id": "1D",
+        "name": "1 individual AJD",
+        "bands": [
+          "7",
+          "21",
+          "28"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "FM"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 3,
+        "min_calls": 1,
+        "required_flags": [
+          "開催中同一地点・同帯1波・クロスバンドなし。AJDは移動先エリアで国内10局、QSL取得を要件にしない"
+        ],
+        "station_types": [
+          "individual"
+        ],
+        "operators_in_comments": false,
+        "regional": {
+          "section": "AJD",
+          "required_declarations": [
+            "own_region",
+            "bonus",
+            "licensed_region",
+            "portable_equipment"
+          ]
+        }
+      },
+      {
+        "id": "1E",
+        "name": "1 club VU",
+        "bands": [
+          "50",
+          "144",
+          "430"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "FM"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 3,
+        "min_calls": 1,
+        "required_flags": [
+          "開催中同一地点・同帯1波・クロスバンドなし。AJDは移動先エリアで国内10局、QSL取得を要件にしない"
+        ],
+        "station_types": [
+          "club"
+        ],
+        "operators_in_comments": true,
+        "regional": {
+          "section": "VU",
+          "required_declarations": [
+            "own_region",
+            "bonus",
+            "licensed_region",
+            "portable_equipment"
+          ]
+        }
+      },
+      {
+        "id": "1F",
+        "name": "1 club HFH",
+        "bands": [
+          "21",
+          "28"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "FM"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 2,
+        "min_calls": 1,
+        "required_flags": [
+          "開催中同一地点・同帯1波・クロスバンドなし。AJDは移動先エリアで国内10局、QSL取得を要件にしない"
+        ],
+        "station_types": [
+          "club"
+        ],
+        "operators_in_comments": true,
+        "regional": {
+          "section": "HFH",
+          "required_declarations": [
+            "own_region",
+            "bonus",
+            "licensed_region",
+            "portable_equipment"
+          ]
+        }
+      },
+      {
+        "id": "1G",
+        "name": "1 club HFL",
+        "bands": [
+          "7"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "FM"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "開催中同一地点・同帯1波・クロスバンドなし。AJDは移動先エリアで国内10局、QSL取得を要件にしない"
+        ],
+        "station_types": [
+          "club"
+        ],
+        "operators_in_comments": true,
+        "regional": {
+          "section": "HFL",
+          "required_declarations": [
+            "own_region",
+            "bonus",
+            "licensed_region",
+            "portable_equipment"
+          ]
+        }
+      },
+      {
+        "id": "1H",
+        "name": "1 club AJD",
+        "bands": [
+          "7",
+          "21",
+          "28"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "FM"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 3,
+        "min_calls": 1,
+        "required_flags": [
+          "開催中同一地点・同帯1波・クロスバンドなし。AJDは移動先エリアで国内10局、QSL取得を要件にしない"
+        ],
+        "station_types": [
+          "club"
+        ],
+        "operators_in_comments": true,
+        "regional": {
+          "section": "AJD",
+          "required_declarations": [
+            "own_region",
+            "bonus",
+            "licensed_region",
+            "portable_equipment"
+          ]
+        }
+      },
+      {
+        "id": "2A",
+        "name": "2 individual VU",
+        "bands": [
+          "50",
+          "144",
+          "430"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "FM"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 3,
+        "min_calls": 1,
+        "required_flags": [
+          "開催中同一地点・同帯1波・クロスバンドなし。AJDは移動先エリアで国内10局、QSL取得を要件にしない"
+        ],
+        "station_types": [
+          "individual"
+        ],
+        "operators_in_comments": false,
+        "regional": {
+          "section": "VU",
+          "required_declarations": [
+            "own_region",
+            "bonus",
+            "licensed_region",
+            "portable_equipment"
+          ]
+        }
+      },
+      {
+        "id": "2B",
+        "name": "2 individual HFH",
+        "bands": [
+          "21",
+          "28"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "FM"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 2,
+        "min_calls": 1,
+        "required_flags": [
+          "開催中同一地点・同帯1波・クロスバンドなし。AJDは移動先エリアで国内10局、QSL取得を要件にしない"
+        ],
+        "station_types": [
+          "individual"
+        ],
+        "operators_in_comments": false,
+        "regional": {
+          "section": "HFH",
+          "required_declarations": [
+            "own_region",
+            "bonus",
+            "licensed_region",
+            "portable_equipment"
+          ]
+        }
+      },
+      {
+        "id": "2C",
+        "name": "2 individual HFL",
+        "bands": [
+          "7"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "FM"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "開催中同一地点・同帯1波・クロスバンドなし。AJDは移動先エリアで国内10局、QSL取得を要件にしない"
+        ],
+        "station_types": [
+          "individual"
+        ],
+        "operators_in_comments": false,
+        "regional": {
+          "section": "HFL",
+          "required_declarations": [
+            "own_region",
+            "bonus",
+            "licensed_region",
+            "portable_equipment"
+          ]
+        }
+      },
+      {
+        "id": "2E",
+        "name": "2 club VU",
+        "bands": [
+          "50",
+          "144",
+          "430"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "FM"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 3,
+        "min_calls": 1,
+        "required_flags": [
+          "開催中同一地点・同帯1波・クロスバンドなし。AJDは移動先エリアで国内10局、QSL取得を要件にしない"
+        ],
+        "station_types": [
+          "club"
+        ],
+        "operators_in_comments": true,
+        "regional": {
+          "section": "VU",
+          "required_declarations": [
+            "own_region",
+            "bonus",
+            "licensed_region",
+            "portable_equipment"
+          ]
+        }
+      },
+      {
+        "id": "2F",
+        "name": "2 club HFH",
+        "bands": [
+          "21",
+          "28"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "FM"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 2,
+        "min_calls": 1,
+        "required_flags": [
+          "開催中同一地点・同帯1波・クロスバンドなし。AJDは移動先エリアで国内10局、QSL取得を要件にしない"
+        ],
+        "station_types": [
+          "club"
+        ],
+        "operators_in_comments": true,
+        "regional": {
+          "section": "HFH",
+          "required_declarations": [
+            "own_region",
+            "bonus",
+            "licensed_region",
+            "portable_equipment"
+          ]
+        }
+      },
+      {
+        "id": "2G",
+        "name": "2 club HFL",
+        "bands": [
+          "7"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "FM"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "開催中同一地点・同帯1波・クロスバンドなし。AJDは移動先エリアで国内10局、QSL取得を要件にしない"
+        ],
+        "station_types": [
+          "club"
+        ],
+        "operators_in_comments": true,
+        "regional": {
+          "section": "HFL",
+          "required_declarations": [
+            "own_region",
+            "bonus",
+            "licensed_region",
+            "portable_equipment"
+          ]
+        }
+      }
+    ],
+    "required_flags": [
+      "国内の規約対象局として、実運用地・使用周波数・免許範囲・完全な番号交換を確認した",
+      "大会原典の運用制限と提出数を確認し、未受信番号を事後に補っていない（申告得点・審査前）"
+    ],
+    "duplicate_fields": [
+      "call",
+      "band",
+      "mode_group"
+    ],
+    "prefer": "first",
+    "special": "none",
+    "entrant": {
+      "station_types": [
+        "individual",
+        "club"
+      ],
+      "guest_policy": "allowed"
+    },
+    "normalization": {
+      "bands": {
+        "7MHZ": "7",
+        "21MHZ": "21",
+        "28MHZ": "28",
+        "50MHZ": "50",
+        "144MHZ": "144",
+        "430MHZ": "430"
+      },
+      "modes": {
+        "USB": "SSB",
+        "LSB": "SSB"
+      },
+      "mode_families": {}
+    },
+    "regional": {
+      "declarations": {
+        "own_region": "実際の送信地域",
+        "bonus": "HF県内移動1000点の申告 YES / NO",
+        "licensed_region": "自局設置場所の市郡番号",
+        "portable_equipment": "YES申告時:既設無線設備・既設電源を使わない事実と移動場所"
+      },
+      "profile": "shimane",
+      "local_a": [
+        "3201",
+        "3202",
+        "3203",
+        "3204",
+        "3205",
+        "3206",
+        "3207",
+        "3209",
+        "32003",
+        "32004",
+        "32006",
+        "32008",
+        "32012"
+      ],
+      "local_b": [
+        "02",
+        "03",
+        "04",
+        "05",
+        "06",
+        "07",
+        "08",
+        "09",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26",
+        "27",
+        "28",
+        "29",
+        "30",
+        "31",
+        "33",
+        "34",
+        "35",
+        "36",
+        "37",
+        "38",
+        "39",
+        "40",
+        "41",
+        "42",
+        "43",
+        "44",
+        "45",
+        "46",
+        "47",
+        "48",
+        "101",
+        "102",
+        "103",
+        "104",
+        "105",
+        "106",
+        "107",
+        "108",
+        "109",
+        "110",
+        "111",
+        "112",
+        "113",
+        "114"
+      ],
+      "entry_set": {
+        "kind": "sections",
+        "max": 4
+      }
+    },
+    "submission": {
+      "formats": [
+        "JARL R1.0"
+      ],
+      "zone": "JST",
+      "contest": "第46回島根対全日本コンテスト",
+      "instructions": "2026。通常3部門とAJD別提出。HF県内移動資格時は各HF提出の最後に1000加算。AJD数値点0、完成時刻を得点欄へ、時刻順10局。JARL R1.0、shimane3201@jarl.com、7月13日。移動先市町村を記載。 原案・原典はdocs/contest-researchに保存。2026参考版であり2027へ自動更新しません。主催受付・Windows実機は未検証。自動提出しません。",
+      "row_scope": "category",
+      "required_fields": []
+    },
+    "mode_groups": {
+      "CW": "CW",
+      "SSB": "SSB",
+      "FM": "FM"
+    },
+    "rule_view": {
+      "participants": "日本国内で運用するアマチュア局。島根県内へ移動して運用する県外局は県内局として参加します。",
+      "movement": "コンテスト中の運用地点変更と複数地点からの運用は禁止。県内での移動運用地は市町村まで提出書類に記載します。",
+      "call_method": "県内局：電話 CQオールジャパン／電信 CQ AJ TEST。県外局：電話 CQ島根／電信 CQ SN TEST。",
+      "counterparts": "島根県内局：日本国内の局。県外局：島根県内局。",
+      "frequency": "7・21・28・50・144・430MHz帯。部門別の対象帯域とJARLコンテスト使用周波数帯を確認してください。使用モードはCW・SSB・FM。",
+      "restrictions": "クロスバンド交信、コンテスト中の運用地点変更、複数地点からの運用、同一バンドでの2波以上の同時発射は禁止。10分間ルールは適用しません。",
+      "exchange": "県内局：RS(T)＋市郡ナンバー。県外局：RS(T)＋都府県・支庁ナンバー。",
+      "repeat": "同一局との同一バンドの交信は最初の1交信が得点対象。ただし電波型式が異なる場合は、それぞれ得点対象です。",
+      "points_display": "有効な交信は1点。県内外局が規定条件で島根県内へ移動してHF部門に参加した場合は移動得点1000点を加算。同一バンドでも電波形式が異なれば別交信として得点可。"
+    }
+  }
+}
+

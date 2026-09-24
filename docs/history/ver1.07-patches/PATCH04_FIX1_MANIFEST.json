@@ -1,0 +1,28 @@
+{
+  "patch": "Ver1.074 PATCH04 FIX1",
+  "version": "1.074",
+  "baseline": "PSLog_1.074_PATCH04.zip applied to Ver1.073",
+  "changed_file_count": 4,
+  "files": [
+    {
+      "path": "CHANGELOG.md",
+      "size": 11193,
+      "sha256": "a1005dd25b8323cf8ab11fed3ec8c368a63220964efecb174420b7dd391abb53"
+    },
+    {
+      "path": "VER1.074_PATCH04_FIX1_README.md",
+      "size": 2543,
+      "sha256": "9de1b4ec715aafa4cb71f8fb01492335ede1384bdf097479a6802a586c019901"
+    },
+    {
+      "path": "jccjcg_award_check_ui.py",
+      "size": 9583,
+      "sha256": "a7e4c43eea68c2b2e777fac2be197291373913264bbb2f5b49935ecea58e4400"
+    },
+    {
+      "path": "test_patch04_1074.py",
+      "size": 6944,
+      "sha256": "f7d903788bc53bf4f86afc409a3c251c7d18e080fc961838b7e231de551b4aa1"
+    }
+  ]
+}

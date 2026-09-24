@@ -1,0 +1,1533 @@
+{
+  "schema": 2,
+  "id": "cq-ww-cw",
+  "name": "CQ World Wide CW",
+  "year": 2025,
+  "url": "https://cqww.com/rules.htm",
+  "organizer": "CQ WW DX Contest Committee",
+  "sort_name": "CQ WW",
+  "points": {
+    "cw": 1,
+    "phone": 1,
+    "digital": 0
+  },
+  "conditions": [],
+  "duplicate": {
+    "enabled": true,
+    "by_mode": false
+  },
+  "multi1": {
+    "kind": "off",
+    "start": 0,
+    "length": 2,
+    "per_band": true
+  },
+  "multi2": {
+    "kind": "off",
+    "value": 1,
+    "condition": {
+      "all": []
+    }
+  },
+  "formula": "total",
+  "scoring": {
+    "eligible": {
+      "all": []
+    },
+    "multipliers": [
+      {
+        "id": "zone",
+        "source": "area",
+        "kind": "whole",
+        "start": 0,
+        "length": 2,
+        "per_band": true,
+        "when": {
+          "all": []
+        }
+      },
+      {
+        "id": "country",
+        "source": "country",
+        "kind": "whole",
+        "start": 0,
+        "length": 2,
+        "per_band": true,
+        "when": {
+          "all": []
+        }
+      }
+    ],
+    "bonus": 0
+  },
+  "event": {
+    "timezone": "UTC",
+    "windows": [
+      {
+        "start": "2025-11-29 00:00",
+        "end": "2025-12-01 00:00",
+        "bands": [
+          "1.9",
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28"
+        ]
+      }
+    ],
+    "categories": [
+      {
+        "id": "SO_HIGH_ALL",
+        "name": "SO HIGH ALL",
+        "bands": [
+          "1.9",
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": 1500,
+        "min_bands": 1,
+        "max_bands": 6,
+        "min_calls": 1,
+        "required_flags": [
+          "SO全作業1人・同時1波。QSO発見援助なし",
+          "全送受信設備は500m径の単一所在地、アンテナ有線接続、場外受信機なし"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "overlay",
+            "overlay_evidence",
+            "own_cq_entity",
+            "own_continent",
+            "own_cq_zone"
+          ]
+        }
+      },
+      {
+        "id": "SO_HIGH_160M",
+        "name": "SO HIGH 160M",
+        "bands": [
+          "1.9"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": 1500,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "SO全作業1人・同時1波。QSO発見援助なし",
+          "全送受信設備は500m径の単一所在地、アンテナ有線接続、場外受信機なし"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "overlay",
+            "overlay_evidence",
+            "own_cq_entity",
+            "own_continent",
+            "own_cq_zone"
+          ]
+        }
+      },
+      {
+        "id": "SO_HIGH_80M",
+        "name": "SO HIGH 80M",
+        "bands": [
+          "3.5"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": 1500,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "SO全作業1人・同時1波。QSO発見援助なし",
+          "全送受信設備は500m径の単一所在地、アンテナ有線接続、場外受信機なし"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "overlay",
+            "overlay_evidence",
+            "own_cq_entity",
+            "own_continent",
+            "own_cq_zone"
+          ]
+        }
+      },
+      {
+        "id": "SO_HIGH_40M",
+        "name": "SO HIGH 40M",
+        "bands": [
+          "7"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": 1500,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "SO全作業1人・同時1波。QSO発見援助なし",
+          "全送受信設備は500m径の単一所在地、アンテナ有線接続、場外受信機なし"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "overlay",
+            "overlay_evidence",
+            "own_cq_entity",
+            "own_continent",
+            "own_cq_zone"
+          ]
+        }
+      },
+      {
+        "id": "SO_HIGH_20M",
+        "name": "SO HIGH 20M",
+        "bands": [
+          "14"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": 1500,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "SO全作業1人・同時1波。QSO発見援助なし",
+          "全送受信設備は500m径の単一所在地、アンテナ有線接続、場外受信機なし"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "overlay",
+            "overlay_evidence",
+            "own_cq_entity",
+            "own_continent",
+            "own_cq_zone"
+          ]
+        }
+      },
+      {
+        "id": "SO_HIGH_15M",
+        "name": "SO HIGH 15M",
+        "bands": [
+          "21"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": 1500,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "SO全作業1人・同時1波。QSO発見援助なし",
+          "全送受信設備は500m径の単一所在地、アンテナ有線接続、場外受信機なし"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "overlay",
+            "overlay_evidence",
+            "own_cq_entity",
+            "own_continent",
+            "own_cq_zone"
+          ]
+        }
+      },
+      {
+        "id": "SO_HIGH_10M",
+        "name": "SO HIGH 10M",
+        "bands": [
+          "28"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": 1500,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "SO全作業1人・同時1波。QSO発見援助なし",
+          "全送受信設備は500m径の単一所在地、アンテナ有線接続、場外受信機なし"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "overlay",
+            "overlay_evidence",
+            "own_cq_entity",
+            "own_continent",
+            "own_cq_zone"
+          ]
+        }
+      },
+      {
+        "id": "SO_LOW_ALL",
+        "name": "SO LOW ALL",
+        "bands": [
+          "1.9",
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": 100,
+        "min_bands": 1,
+        "max_bands": 6,
+        "min_calls": 1,
+        "required_flags": [
+          "SO全作業1人・同時1波。QSO発見援助なし",
+          "全送受信設備は500m径の単一所在地、アンテナ有線接続、場外受信機なし"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "overlay",
+            "overlay_evidence",
+            "own_cq_entity",
+            "own_continent",
+            "own_cq_zone"
+          ]
+        }
+      },
+      {
+        "id": "SO_LOW_160M",
+        "name": "SO LOW 160M",
+        "bands": [
+          "1.9"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": 100,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "SO全作業1人・同時1波。QSO発見援助なし",
+          "全送受信設備は500m径の単一所在地、アンテナ有線接続、場外受信機なし"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "overlay",
+            "overlay_evidence",
+            "own_cq_entity",
+            "own_continent",
+            "own_cq_zone"
+          ]
+        }
+      },
+      {
+        "id": "SO_LOW_80M",
+        "name": "SO LOW 80M",
+        "bands": [
+          "3.5"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": 100,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "SO全作業1人・同時1波。QSO発見援助なし",
+          "全送受信設備は500m径の単一所在地、アンテナ有線接続、場外受信機なし"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "overlay",
+            "overlay_evidence",
+            "own_cq_entity",
+            "own_continent",
+            "own_cq_zone"
+          ]
+        }
+      },
+      {
+        "id": "SO_LOW_40M",
+        "name": "SO LOW 40M",
+        "bands": [
+          "7"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": 100,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "SO全作業1人・同時1波。QSO発見援助なし",
+          "全送受信設備は500m径の単一所在地、アンテナ有線接続、場外受信機なし"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "overlay",
+            "overlay_evidence",
+            "own_cq_entity",
+            "own_continent",
+            "own_cq_zone"
+          ]
+        }
+      },
+      {
+        "id": "SO_LOW_20M",
+        "name": "SO LOW 20M",
+        "bands": [
+          "14"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": 100,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "SO全作業1人・同時1波。QSO発見援助なし",
+          "全送受信設備は500m径の単一所在地、アンテナ有線接続、場外受信機なし"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "overlay",
+            "overlay_evidence",
+            "own_cq_entity",
+            "own_continent",
+            "own_cq_zone"
+          ]
+        }
+      },
+      {
+        "id": "SO_LOW_15M",
+        "name": "SO LOW 15M",
+        "bands": [
+          "21"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": 100,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "SO全作業1人・同時1波。QSO発見援助なし",
+          "全送受信設備は500m径の単一所在地、アンテナ有線接続、場外受信機なし"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "overlay",
+            "overlay_evidence",
+            "own_cq_entity",
+            "own_continent",
+            "own_cq_zone"
+          ]
+        }
+      },
+      {
+        "id": "SO_LOW_10M",
+        "name": "SO LOW 10M",
+        "bands": [
+          "28"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": 100,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "SO全作業1人・同時1波。QSO発見援助なし",
+          "全送受信設備は500m径の単一所在地、アンテナ有線接続、場外受信機なし"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "overlay",
+            "overlay_evidence",
+            "own_cq_entity",
+            "own_continent",
+            "own_cq_zone"
+          ]
+        }
+      },
+      {
+        "id": "SO_QRP_ALL",
+        "name": "SO QRP ALL",
+        "bands": [
+          "1.9",
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": 5,
+        "min_bands": 1,
+        "max_bands": 6,
+        "min_calls": 1,
+        "required_flags": [
+          "SO全作業1人・同時1波。QSO発見援助なし",
+          "全送受信設備は500m径の単一所在地、アンテナ有線接続、場外受信機なし"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "overlay",
+            "overlay_evidence",
+            "own_cq_entity",
+            "own_continent",
+            "own_cq_zone"
+          ]
+        }
+      },
+      {
+        "id": "SO_QRP_160M",
+        "name": "SO QRP 160M",
+        "bands": [
+          "1.9"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": 5,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "SO全作業1人・同時1波。QSO発見援助なし",
+          "全送受信設備は500m径の単一所在地、アンテナ有線接続、場外受信機なし"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "overlay",
+            "overlay_evidence",
+            "own_cq_entity",
+            "own_continent",
+            "own_cq_zone"
+          ]
+        }
+      },
+      {
+        "id": "SO_QRP_80M",
+        "name": "SO QRP 80M",
+        "bands": [
+          "3.5"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": 5,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "SO全作業1人・同時1波。QSO発見援助なし",
+          "全送受信設備は500m径の単一所在地、アンテナ有線接続、場外受信機なし"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "overlay",
+            "overlay_evidence",
+            "own_cq_entity",
+            "own_continent",
+            "own_cq_zone"
+          ]
+        }
+      },
+      {
+        "id": "SO_QRP_40M",
+        "name": "SO QRP 40M",
+        "bands": [
+          "7"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": 5,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "SO全作業1人・同時1波。QSO発見援助なし",
+          "全送受信設備は500m径の単一所在地、アンテナ有線接続、場外受信機なし"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "overlay",
+            "overlay_evidence",
+            "own_cq_entity",
+            "own_continent",
+            "own_cq_zone"
+          ]
+        }
+      },
+      {
+        "id": "SO_QRP_20M",
+        "name": "SO QRP 20M",
+        "bands": [
+          "14"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": 5,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "SO全作業1人・同時1波。QSO発見援助なし",
+          "全送受信設備は500m径の単一所在地、アンテナ有線接続、場外受信機なし"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "overlay",
+            "overlay_evidence",
+            "own_cq_entity",
+            "own_continent",
+            "own_cq_zone"
+          ]
+        }
+      },
+      {
+        "id": "SO_QRP_15M",
+        "name": "SO QRP 15M",
+        "bands": [
+          "21"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": 5,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "SO全作業1人・同時1波。QSO発見援助なし",
+          "全送受信設備は500m径の単一所在地、アンテナ有線接続、場外受信機なし"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "overlay",
+            "overlay_evidence",
+            "own_cq_entity",
+            "own_continent",
+            "own_cq_zone"
+          ]
+        }
+      },
+      {
+        "id": "SO_QRP_10M",
+        "name": "SO QRP 10M",
+        "bands": [
+          "28"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": 5,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "SO全作業1人・同時1波。QSO発見援助なし",
+          "全送受信設備は500m径の単一所在地、アンテナ有線接続、場外受信機なし"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "overlay",
+            "overlay_evidence",
+            "own_cq_entity",
+            "own_continent",
+            "own_cq_zone"
+          ]
+        }
+      },
+      {
+        "id": "SA_HIGH_ALL",
+        "name": "SA HIGH ALL",
+        "bands": [
+          "1.9",
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": 1500,
+        "min_bands": 1,
+        "max_bands": 6,
+        "min_calls": 1,
+        "required_flags": [
+          "SO全作業1人・同時1波。QSO発見援助ありの区分を選択した",
+          "全送受信設備は500m径の単一所在地、アンテナ有線接続、場外受信機なし"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "overlay",
+            "overlay_evidence",
+            "own_cq_entity",
+            "own_continent",
+            "own_cq_zone"
+          ]
+        }
+      },
+      {
+        "id": "SA_HIGH_160M",
+        "name": "SA HIGH 160M",
+        "bands": [
+          "1.9"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": 1500,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "SO全作業1人・同時1波。QSO発見援助ありの区分を選択した",
+          "全送受信設備は500m径の単一所在地、アンテナ有線接続、場外受信機なし"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "overlay",
+            "overlay_evidence",
+            "own_cq_entity",
+            "own_continent",
+            "own_cq_zone"
+          ]
+        }
+      },
+      {
+        "id": "SA_HIGH_80M",
+        "name": "SA HIGH 80M",
+        "bands": [
+          "3.5"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": 1500,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "SO全作業1人・同時1波。QSO発見援助ありの区分を選択した",
+          "全送受信設備は500m径の単一所在地、アンテナ有線接続、場外受信機なし"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "overlay",
+            "overlay_evidence",
+            "own_cq_entity",
+            "own_continent",
+            "own_cq_zone"
+          ]
+        }
+      },
+      {
+        "id": "SA_HIGH_40M",
+        "name": "SA HIGH 40M",
+        "bands": [
+          "7"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": 1500,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "SO全作業1人・同時1波。QSO発見援助ありの区分を選択した",
+          "全送受信設備は500m径の単一所在地、アンテナ有線接続、場外受信機なし"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "overlay",
+            "overlay_evidence",
+            "own_cq_entity",
+            "own_continent",
+            "own_cq_zone"
+          ]
+        }
+      },
+      {
+        "id": "SA_HIGH_20M",
+        "name": "SA HIGH 20M",
+        "bands": [
+          "14"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": 1500,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "SO全作業1人・同時1波。QSO発見援助ありの区分を選択した",
+          "全送受信設備は500m径の単一所在地、アンテナ有線接続、場外受信機なし"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "overlay",
+            "overlay_evidence",
+            "own_cq_entity",
+            "own_continent",
+            "own_cq_zone"
+          ]
+        }
+      },
+      {
+        "id": "SA_HIGH_15M",
+        "name": "SA HIGH 15M",
+        "bands": [
+          "21"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": 1500,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "SO全作業1人・同時1波。QSO発見援助ありの区分を選択した",
+          "全送受信設備は500m径の単一所在地、アンテナ有線接続、場外受信機なし"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "overlay",
+            "overlay_evidence",
+            "own_cq_entity",
+            "own_continent",
+            "own_cq_zone"
+          ]
+        }
+      },
+      {
+        "id": "SA_HIGH_10M",
+        "name": "SA HIGH 10M",
+        "bands": [
+          "28"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": 1500,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "SO全作業1人・同時1波。QSO発見援助ありの区分を選択した",
+          "全送受信設備は500m径の単一所在地、アンテナ有線接続、場外受信機なし"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "overlay",
+            "overlay_evidence",
+            "own_cq_entity",
+            "own_continent",
+            "own_cq_zone"
+          ]
+        }
+      },
+      {
+        "id": "SA_LOW_ALL",
+        "name": "SA LOW ALL",
+        "bands": [
+          "1.9",
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": 100,
+        "min_bands": 1,
+        "max_bands": 6,
+        "min_calls": 1,
+        "required_flags": [
+          "SO全作業1人・同時1波。QSO発見援助ありの区分を選択した",
+          "全送受信設備は500m径の単一所在地、アンテナ有線接続、場外受信機なし"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "overlay",
+            "overlay_evidence",
+            "own_cq_entity",
+            "own_continent",
+            "own_cq_zone"
+          ]
+        }
+      },
+      {
+        "id": "SA_LOW_160M",
+        "name": "SA LOW 160M",
+        "bands": [
+          "1.9"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": 100,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "SO全作業1人・同時1波。QSO発見援助ありの区分を選択した",
+          "全送受信設備は500m径の単一所在地、アンテナ有線接続、場外受信機なし"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "overlay",
+            "overlay_evidence",
+            "own_cq_entity",
+            "own_continent",
+            "own_cq_zone"
+          ]
+        }
+      },
+      {
+        "id": "SA_LOW_80M",
+        "name": "SA LOW 80M",
+        "bands": [
+          "3.5"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": 100,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "SO全作業1人・同時1波。QSO発見援助ありの区分を選択した",
+          "全送受信設備は500m径の単一所在地、アンテナ有線接続、場外受信機なし"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "overlay",
+            "overlay_evidence",
+            "own_cq_entity",
+            "own_continent",
+            "own_cq_zone"
+          ]
+        }
+      },
+      {
+        "id": "SA_LOW_40M",
+        "name": "SA LOW 40M",
+        "bands": [
+          "7"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": 100,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "SO全作業1人・同時1波。QSO発見援助ありの区分を選択した",
+          "全送受信設備は500m径の単一所在地、アンテナ有線接続、場外受信機なし"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "overlay",
+            "overlay_evidence",
+            "own_cq_entity",
+            "own_continent",
+            "own_cq_zone"
+          ]
+        }
+      },
+      {
+        "id": "SA_LOW_20M",
+        "name": "SA LOW 20M",
+        "bands": [
+          "14"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": 100,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "SO全作業1人・同時1波。QSO発見援助ありの区分を選択した",
+          "全送受信設備は500m径の単一所在地、アンテナ有線接続、場外受信機なし"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "overlay",
+            "overlay_evidence",
+            "own_cq_entity",
+            "own_continent",
+            "own_cq_zone"
+          ]
+        }
+      },
+      {
+        "id": "SA_LOW_15M",
+        "name": "SA LOW 15M",
+        "bands": [
+          "21"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": 100,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "SO全作業1人・同時1波。QSO発見援助ありの区分を選択した",
+          "全送受信設備は500m径の単一所在地、アンテナ有線接続、場外受信機なし"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "overlay",
+            "overlay_evidence",
+            "own_cq_entity",
+            "own_continent",
+            "own_cq_zone"
+          ]
+        }
+      },
+      {
+        "id": "SA_LOW_10M",
+        "name": "SA LOW 10M",
+        "bands": [
+          "28"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": 100,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "SO全作業1人・同時1波。QSO発見援助ありの区分を選択した",
+          "全送受信設備は500m径の単一所在地、アンテナ有線接続、場外受信機なし"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "overlay",
+            "overlay_evidence",
+            "own_cq_entity",
+            "own_continent",
+            "own_cq_zone"
+          ]
+        }
+      },
+      {
+        "id": "SA_QRP_ALL",
+        "name": "SA QRP ALL",
+        "bands": [
+          "1.9",
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": 5,
+        "min_bands": 1,
+        "max_bands": 6,
+        "min_calls": 1,
+        "required_flags": [
+          "SO全作業1人・同時1波。QSO発見援助ありの区分を選択した",
+          "全送受信設備は500m径の単一所在地、アンテナ有線接続、場外受信機なし"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "overlay",
+            "overlay_evidence",
+            "own_cq_entity",
+            "own_continent",
+            "own_cq_zone"
+          ]
+        }
+      },
+      {
+        "id": "SA_QRP_160M",
+        "name": "SA QRP 160M",
+        "bands": [
+          "1.9"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": 5,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "SO全作業1人・同時1波。QSO発見援助ありの区分を選択した",
+          "全送受信設備は500m径の単一所在地、アンテナ有線接続、場外受信機なし"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "overlay",
+            "overlay_evidence",
+            "own_cq_entity",
+            "own_continent",
+            "own_cq_zone"
+          ]
+        }
+      },
+      {
+        "id": "SA_QRP_80M",
+        "name": "SA QRP 80M",
+        "bands": [
+          "3.5"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": 5,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "SO全作業1人・同時1波。QSO発見援助ありの区分を選択した",
+          "全送受信設備は500m径の単一所在地、アンテナ有線接続、場外受信機なし"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "overlay",
+            "overlay_evidence",
+            "own_cq_entity",
+            "own_continent",
+            "own_cq_zone"
+          ]
+        }
+      },
+      {
+        "id": "SA_QRP_40M",
+        "name": "SA QRP 40M",
+        "bands": [
+          "7"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": 5,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "SO全作業1人・同時1波。QSO発見援助ありの区分を選択した",
+          "全送受信設備は500m径の単一所在地、アンテナ有線接続、場外受信機なし"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "overlay",
+            "overlay_evidence",
+            "own_cq_entity",
+            "own_continent",
+            "own_cq_zone"
+          ]
+        }
+      },
+      {
+        "id": "SA_QRP_20M",
+        "name": "SA QRP 20M",
+        "bands": [
+          "14"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": 5,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "SO全作業1人・同時1波。QSO発見援助ありの区分を選択した",
+          "全送受信設備は500m径の単一所在地、アンテナ有線接続、場外受信機なし"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "overlay",
+            "overlay_evidence",
+            "own_cq_entity",
+            "own_continent",
+            "own_cq_zone"
+          ]
+        }
+      },
+      {
+        "id": "SA_QRP_15M",
+        "name": "SA QRP 15M",
+        "bands": [
+          "21"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": 5,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "SO全作業1人・同時1波。QSO発見援助ありの区分を選択した",
+          "全送受信設備は500m径の単一所在地、アンテナ有線接続、場外受信機なし"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "overlay",
+            "overlay_evidence",
+            "own_cq_entity",
+            "own_continent",
+            "own_cq_zone"
+          ]
+        }
+      },
+      {
+        "id": "SA_QRP_10M",
+        "name": "SA QRP 10M",
+        "bands": [
+          "28"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": 5,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "SO全作業1人・同時1波。QSO発見援助ありの区分を選択した",
+          "全送受信設備は500m径の単一所在地、アンテナ有線接続、場外受信機なし"
+        ],
+        "operator": "SO",
+        "regional": {
+          "required_declarations": [
+            "overlay",
+            "overlay_evidence",
+            "own_cq_entity",
+            "own_continent",
+            "own_cq_zone"
+          ]
+        }
+      },
+      {
+        "id": "MS_HIGH",
+        "name": "MS_HIGH",
+        "bands": [
+          "1.9",
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": 1500,
+        "min_bands": 1,
+        "max_bands": 6,
+        "min_calls": 1,
+        "required_flags": [
+          "RUN/MULT又は2系列を全行に0/1で記録し、同時は別帯。MSのMULTは新マルチだけ・CQを出さない",
+          "全送受信設備は500m径の単一所在地、アンテナ有線接続、場外受信機なし"
+        ],
+        "operator": "MO",
+        "timing": {
+          "band_change": {
+            "kind": "stay",
+            "min_minutes": 10,
+            "tx_ids": [
+              "0",
+              "1"
+            ],
+            "on_violation": "block"
+          }
+        },
+        "regional": {
+          "required_declarations": [
+            "own_cq_entity",
+            "own_continent",
+            "own_cq_zone"
+          ]
+        }
+      },
+      {
+        "id": "MS_LOW",
+        "name": "MS_LOW",
+        "bands": [
+          "1.9",
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": 100,
+        "min_bands": 1,
+        "max_bands": 6,
+        "min_calls": 1,
+        "required_flags": [
+          "RUN/MULT又は2系列を全行に0/1で記録し、同時は別帯。MSのMULTは新マルチだけ・CQを出さない",
+          "全送受信設備は500m径の単一所在地、アンテナ有線接続、場外受信機なし"
+        ],
+        "operator": "MO",
+        "timing": {
+          "band_change": {
+            "kind": "stay",
+            "min_minutes": 10,
+            "tx_ids": [
+              "0",
+              "1"
+            ],
+            "on_violation": "block"
+          }
+        },
+        "regional": {
+          "required_declarations": [
+            "own_cq_entity",
+            "own_continent",
+            "own_cq_zone"
+          ]
+        }
+      },
+      {
+        "id": "M2_HIGH",
+        "name": "M2_HIGH",
+        "bands": [
+          "1.9",
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": 1500,
+        "min_bands": 1,
+        "max_bands": 6,
+        "min_calls": 1,
+        "required_flags": [
+          "RUN/MULT又は2系列を全行に0/1で記録し、同時は別帯。MSのMULTは新マルチだけ・CQを出さない",
+          "全送受信設備は500m径の単一所在地、アンテナ有線接続、場外受信機なし"
+        ],
+        "operator": "MO",
+        "timing": {
+          "band_change": {
+            "kind": "hourly",
+            "max_changes": 8,
+            "tx_ids": [
+              "0",
+              "1"
+            ],
+            "on_violation": "block"
+          }
+        },
+        "regional": {
+          "required_declarations": [
+            "own_cq_entity",
+            "own_continent",
+            "own_cq_zone"
+          ]
+        }
+      },
+      {
+        "id": "MM_HIGH",
+        "name": "MM_HIGH",
+        "bands": [
+          "1.9",
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": 1500,
+        "min_bands": 1,
+        "max_bands": 6,
+        "min_calls": 1,
+        "required_flags": [
+          "全送受信設備は500m径の単一所在地、アンテナ有線接続、場外受信機なし"
+        ],
+        "operator": "MO",
+        "regional": {
+          "required_declarations": [
+            "own_cq_entity",
+            "own_continent",
+            "own_cq_zone"
+          ]
+        }
+      },
+      {
+        "id": "MD_HIGH",
+        "name": "MD_HIGH",
+        "bands": [
+          "1.9",
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28"
+        ],
+        "modes": [
+          "CW"
+        ],
+        "max_power": 1500,
+        "min_bands": 1,
+        "max_bands": 6,
+        "min_calls": 1,
+        "required_flags": [
+          "全設備は同一DXCC・CQゾーン内の分散構成"
+        ],
+        "operator": "MO",
+        "regional": {
+          "required_declarations": [
+            "own_cq_entity",
+            "own_continent",
+            "own_cq_zone"
+          ]
+        }
+      }
+    ],
+    "required_flags": [
+      "CQカントリー（DXCC/WAE/IG9/IH9）、大陸、ゾーンを実運用地で確認し、未受信番号を事後に補っていない。CQ専用欄は通常DXCC欄と分離した",
+      "同帯1波、必要なインターロック、交互CQなし、セルフスポット・依頼なし、原典の周波数・免許・実出力・外部手段による交信確認禁止を守った",
+      "参加部門・クラブ資格と配分・公開と審査への同意を確認した。必要な録音・設備資料は実際に保存し、ソフトの確認欄を資料の代用にしない",
+      "Overlayを申告する場合、CLASSICは1台・無援助・送信中受信なし、ROOKIE/YOUTHは本人資格、TB-WIRESは対象大会のアンテナ条件を確認した"
+    ],
+    "duplicate_fields": [
+      "call",
+      "band"
+    ],
+    "prefer": "first",
+    "special": "none",
+    "entrant": {
+      "station_types": [
+        "individual",
+        "club"
+      ],
+      "guest_policy": "allowed"
+    },
+    "normalization": {
+      "bands": {
+        "1.9MHZ": "1.9",
+        "3.5MHZ": "3.5",
+        "7MHZ": "7",
+        "14MHZ": "14",
+        "21MHZ": "21",
+        "28MHZ": "28",
+        "1.8": "1.9"
+      },
+      "modes": {
+        "USB": "SSB",
+        "LSB": "SSB"
+      },
+      "mode_families": {}
+    },
+    "regional": {
+      "profile": "cq_ww",
+      "declarations": {
+        "overlay": "Overlay NONE / CLASSIC / ROOKIE / YOUTH",
+        "overlay_evidence": "Overlay根拠：ROOKIE初免許日・YOUTH生年月日YYYY-MM-DD、CLASSIC全運用区間 start / end を ; 区切り、NONEは -",
+        "own_cq_entity": "自局CQカントリー識別子（JA、DL、本土米K、加VEなど）",
+        "own_continent": "自局の実運用大陸 AF/AN/AS/EU/NA/OC/SA",
+        "own_cq_zone": "自局の実運用CQゾーン1～40"
+      }
+    },
+    "submission": {
+      "formats": [
+        "Cabrillo"
+      ],
+      "zone": "UTC",
+      "contest": "CQ-WW-CW",
+      "instructions": "2025保存版。Cabrillo3実周波数、Web https://cqww.com/logcheck/ 。単帯でも他帯の交信を提出に残す。CLASSIC等は別集計し、本体得点を置換しない。締切2025-12-0523:59UTC。主催審査前。"
+    },
+    "rule_view": {
+      "counterparts": "世界中のアマチュア局。CWで交信。",
+      "points_display": "異なる大陸3点、同大陸の異なる国1点（北米局の例外あり）、同一国内0点（ゾーン・国マルチには算入可）。登録大会は2025年。",
+      "call_method": "公式規約に定型のCQ呼び出し指定なし。"
+    }
+  }
+}
+

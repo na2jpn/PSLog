@@ -1,0 +1,119 @@
+{
+  "patch": "Ver1.065 PATCH05",
+  "base": "Ver1.064 PATCH04 FIX1",
+  "version": "1.065",
+  "files": [
+    {
+      "path": "CHANGELOG.md",
+      "sha256": "06028a695678f575d5239f76e6a5200b6f0dfa4ce1a1b257206f9e595db71a86"
+    },
+    {
+      "path": "VER1.065_PATCH05_README.md",
+      "sha256": "4607c5719da5b7214960b12c4cb7f0464a24023b9a63706b27ca2e2dfc06bef5"
+    },
+    {
+      "path": "WINDOWS_BUILD.md",
+      "sha256": "15c7c9eb2992d94e70a10448ad665d733a08f7d95eb7f491270e371aa0aab631"
+    },
+    {
+      "path": "build-windows.ps1",
+      "sha256": "d4e7ee5c1d3ef8555b1c339c1c7425ba84bf098143cebdaf638a3ba780674a5f"
+    },
+    {
+      "path": "help_ui.py",
+      "sha256": "536932188c02a4e0ade3eee351facc7a8d03a8d3660a2c3f4518253d921755ed"
+    },
+    {
+      "path": "qsl_batch.py",
+      "sha256": "cf251cd06952477811889a5fe237d84f3f0d593c8e976557afc84a0bae41be16"
+    },
+    {
+      "path": "qsl_marks.py",
+      "sha256": "adad3f5cecb609db818f686cca9a2e9eddd14767d57f40fdbf1f96043248178d"
+    },
+    {
+      "path": "qsl_ui.py",
+      "sha256": "ae1dab16b66620085fbefbcab0b4fad6cc3ef5a7935c45103bf381130ab405ed"
+    },
+    {
+      "path": "storage.py",
+      "sha256": "a2197fa821631d4349fcec864e71da6d704145b735dc0a93e180b1aab7ebe13a"
+    },
+    {
+      "path": "test_full_restore.py",
+      "sha256": "8e7d68ef07303fa46e9c9c77385b2257471d454dad244982b4c42ae7108e03ca"
+    },
+    {
+      "path": "test_patch01_1061.py",
+      "sha256": "eb8b03f360e3012904f68598a791123a51a4ea7b64910faaed8fe605f1500c14"
+    },
+    {
+      "path": "test_patch03.py",
+      "sha256": "b7aa97e3c205c2a2de71338cb1cb3e313024d8be7c242a2e0c3b19768f365e5f"
+    },
+    {
+      "path": "test_patch03_1063.py",
+      "sha256": "2b4661ae329ee5bb72c97a2c90e0d295f4a872f4d758c94a9410f77206791c0b"
+    },
+    {
+      "path": "test_patch04.py",
+      "sha256": "33350c70e599f074eeec4adfb68d49a36efc3d175ea365b6e3fa974b2484d58f"
+    },
+    {
+      "path": "test_patch04_1064.py",
+      "sha256": "e5d13fa9c23aa4e6a803dd6aa61f2e66acb9ddfa52feb222c3581761fc888f2a"
+    },
+    {
+      "path": "test_patch05.py",
+      "sha256": "74133252c93ac4125934d49b93e089829d37b20cb57b46336cdb154370423c25"
+    },
+    {
+      "path": "test_patch05_1065.py",
+      "sha256": "e8fd022f7873b87043fcf207b473313b87a834678d792c5c40e3dd448f29a347"
+    },
+    {
+      "path": "test_patch06.py",
+      "sha256": "83dbdc4da462bdf0772d00b5f136c0619beb88a7c370b84f58e0505169daf584"
+    },
+    {
+      "path": "test_patch07_1057.py",
+      "sha256": "0c29ba0094bdf71bf995ea176b3f250a5ff581798b97bf8576fab479c32a9b0f"
+    },
+    {
+      "path": "test_patch08_1058.py",
+      "sha256": "769efbd62292732d00bc483f832be12f48a8e600c33e213a6fe4d9aea31a02bd"
+    },
+    {
+      "path": "test_patch09_1059.py",
+      "sha256": "3200097839afd988467e67845fca05b111c043ac01196b867082c518eeb302e4"
+    },
+    {
+      "path": "test_patch10.py",
+      "sha256": "31a8a4f12b3bc78ee14024f8eb16d4699d67492b3db666c8fc9decbf94ca4ebe"
+    },
+    {
+      "path": "test_qsl_batch.py",
+      "sha256": "2dd33a65a2b1200c325f1952d5433399244caa18db4183168f6d0410ca8e4d7e"
+    },
+    {
+      "path": "test_qsl_gui.py",
+      "sha256": "1c2af411515d2a63be043a4052d5b1e44bf6351a1f5938c6d4790ed22c8760ae"
+    },
+    {
+      "path": "test_release_106.py",
+      "sha256": "21b265b91db15e01b1d24e0518fca2a84f3ebbee7238610a1cd6bed7c128ae20"
+    },
+    {
+      "path": "test_v102.py",
+      "sha256": "ac8acc9e4ec3d929ee28c7f9d6292d9574f6c3372ab148ed052ab60c215a8edc"
+    },
+    {
+      "path": "test_v103_initial.py",
+      "sha256": "010770bab17d403a2a98a657451950ac861cd7eed4e4f733f07a8b09a78800ad"
+    },
+    {
+      "path": "test_windows_package.py",
+      "sha256": "1324146b415fe065f30d2d511bc1fcd55adef8e5d34c4ed3d4e3f5fc98ae5344"
+    }
+  ]
+}

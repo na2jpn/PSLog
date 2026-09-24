@@ -1,0 +1,213 @@
+{
+  "patch": "Ver1.076 PATCH06",
+  "version": "1.076",
+  "baseline": "Ver1.075 PATCH05 + FIX1 + FIX2 applied",
+  "changed_file_count": 41,
+  "files": [
+    {
+      "path": "CHANGELOG.md",
+      "size": 14144,
+      "sha256": "07bec409afb95eb0eb8273061fe1b75de85294d93fc62254af2ee41f3f632c5b"
+    },
+    {
+      "path": "VER1.076_PATCH06_README.md",
+      "size": 2198,
+      "sha256": "d24fe5e8e33829349f8bf0ab4c4b576c56353c87e0da0d7c38fe5923442ff242"
+    },
+    {
+      "path": "build-windows.ps1",
+      "size": 3346,
+      "sha256": "a11857a34f6673a94c193ed45f8d772fd1ae6cf5e3c35a87d35247272f5aff50"
+    },
+    {
+      "path": "docs/specs/data/LOCATION_DB.md",
+      "size": 5875,
+      "sha256": "2ec1382b965b0bfe3faee99ccd792a7a2640b63996b77d1e5ff0bba09c1d1ef8"
+    },
+    {
+      "path": "jccjcg_batch.py",
+      "size": 16935,
+      "sha256": "0ff867e7275a3875fae97b2cee634061356cc4d15f95af34e7ba2b99c5fa5c41"
+    },
+    {
+      "path": "location_suggest.py",
+      "size": 2949,
+      "sha256": "df3b8f244350e29c22d85f4d9ece1bb6cbad4dd82249c7efb513c7b3b871b867"
+    },
+    {
+      "path": "locations.py",
+      "size": 3813,
+      "sha256": "14c96c52ea46b98e5c25d8fb6106276db841ef71c440a1e7f3bb2e2e79b3fcc2"
+    },
+    {
+      "path": "main.py",
+      "size": 110248,
+      "sha256": "809a0a47c7dfe0054461c7339d81754aaddd0ed8036d38de65c952f904b2c093"
+    },
+    {
+      "path": "session_state.py",
+      "size": 12086,
+      "sha256": "adefc88154a3a2c6d29b364dad492128a6368d0cebb83d91ba3d4a6dfe39cf07"
+    },
+    {
+      "path": "storage.py",
+      "size": 16225,
+      "sha256": "e18a6952d14da0d2b52dac59f6101093f8019f5f63f81666162119dd5d8d451a"
+    },
+    {
+      "path": "test_full_restore.py",
+      "size": 7920,
+      "sha256": "c19e3bda0170baaa25bb82df8a1920c05026c36e515bdec16ac27af19f126b6e"
+    },
+    {
+      "path": "test_patch01_1061.py",
+      "size": 10118,
+      "sha256": "ba9cc87ecbec1b2f5869b85d067073dba9c93d1d6d383a274de773995bdc1720"
+    },
+    {
+      "path": "test_patch01_1071.py",
+      "size": 2871,
+      "sha256": "30505cac8660892a97386a24fe03da5c18143620cd505a413f613f731fc2b9f3"
+    },
+    {
+      "path": "test_patch02_1061.py",
+      "size": 4844,
+      "sha256": "2ec14e3ba21c17c30159d121575702daf9815f8c70eb3fc7126359fdcbd9a011"
+    },
+    {
+      "path": "test_patch02_1072.py",
+      "size": 3605,
+      "sha256": "2d37f5a521fb36bb26a76953610dcd5afb99f04c5e92e2f7dca2d9b6003e0d88"
+    },
+    {
+      "path": "test_patch03.py",
+      "size": 2569,
+      "sha256": "05667256119551ebb3976cb9111a8ceb543cd417e2db04cc3148c35814775ddc"
+    },
+    {
+      "path": "test_patch03_1063.py",
+      "size": 4221,
+      "sha256": "32424a592a4f6fb6bb98ff8eb9030f744db456c4275a8cc9e28a58fd3780b131"
+    },
+    {
+      "path": "test_patch03_1073.py",
+      "size": 3150,
+      "sha256": "0b4ffbaa64b39c4d8d670e070b6b87b049309d61e62b59c9d46ee751924de928"
+    },
+    {
+      "path": "test_patch04.py",
+      "size": 2920,
+      "sha256": "9db74c87685cc0b581f05e8b44ffec9933e5b8dedda050841b471e2d4ff21175"
+    },
+    {
+      "path": "test_patch04_1064.py",
+      "size": 4219,
+      "sha256": "860f43f488947120b41b0c084722790573db692b6ef36bf8768293930e920bf0"
+    },
+    {
+      "path": "test_patch04_1074.py",
+      "size": 6944,
+      "sha256": "e2a6a30aea52edc74dbef1f5d988a69d7a65591720b17b6730c5fe160bddc36a"
+    },
+    {
+      "path": "test_patch05.py",
+      "size": 2913,
+      "sha256": "0c6e406c1296989b3b57f759b7760eabaa48292036877bf0ceca277ce7dc99f8"
+    },
+    {
+      "path": "test_patch05_1065.py",
+      "size": 2918,
+      "sha256": "08612fd7c0da2d63664507e377b451afea9bd168aa224b31ea419bdc1ab9019e"
+    },
+    {
+      "path": "test_patch05_1075.py",
+      "size": 3872,
+      "sha256": "90e4246ef7f050550dbe129f823a07e6f729e9d95e12ff850105569b839597e4"
+    },
+    {
+      "path": "test_patch06.py",
+      "size": 3766,
+      "sha256": "41297c646c994d2d4b84c86080db2afe09f72bf96603279840e2dfcd11222b66"
+    },
+    {
+      "path": "test_patch06_1066.py",
+      "size": 3744,
+      "sha256": "29025e4adeba4eb6acce5b9238e61a190d8640af4cf318c46e8710fda1a42d7f"
+    },
+    {
+      "path": "test_patch06_1076.py",
+      "size": 4105,
+      "sha256": "ae011b1bde18a39eed6815d34391e708b1eef236e612450dbb1a5c37a79c416f"
+    },
+    {
+      "path": "test_patch07_1057.py",
+      "size": 1679,
+      "sha256": "ece24e2220e505976f7ea13307a4da41f7ecfb06fdf0f4c008f3063bb89c2b1a"
+    },
+    {
+      "path": "test_patch07_1067.py",
+      "size": 2631,
+      "sha256": "d71034724577bfeec3831887b62e5c0f612f3e4247e87002a1c56a131ff8573c"
+    },
+    {
+      "path": "test_patch08_1058.py",
+      "size": 1921,
+      "sha256": "b02ad6c9ab2020430e200f3b5b16468eb056d1b1c7de44cfad5e4abf1081d8af"
+    },
+    {
+      "path": "test_patch08_1068.py",
+      "size": 998,
+      "sha256": "806b83a8340ce2cfdb764c4bbe77900cd2373f6772fcbdc116845328d9e66064"
+    },
+    {
+      "path": "test_patch08_fix1_1068.py",
+      "size": 2853,
+      "sha256": "fbeef8f21d3092359672645f3e5d56780c93daf2e71139b8fbb77a77a8a0309d"
+    },
+    {
+      "path": "test_patch09_1059.py",
+      "size": 3899,
+      "sha256": "910440dfc9192703079d204548e7b1a88e9de4eb27d580a6c25936b5361352e3"
+    },
+    {
+      "path": "test_patch09_1069.py",
+      "size": 1199,
+      "sha256": "c0a8b95f84aba8f088db90533794573a98fab386b37342a9cbeb59773ae917ef"
+    },
+    {
+      "path": "test_patch10.py",
+      "size": 3244,
+      "sha256": "e35b92c62a8ac21c0457e84b7b5b191ce3bcd12b3d3abeabbac68d52ae5757e9"
+    },
+    {
+      "path": "test_patch10_1070.py",
+      "size": 2651,
+      "sha256": "228c0bca235a15b8aeb17589d2526a3644bb1a7a20635e30cdcf9dfa682d6575"
+    },
+    {
+      "path": "test_patch10_1070_core.py",
+      "size": 1272,
+      "sha256": "f9c71e832f519c45157bd3a68bfe65bb8f7a876f0d579647f80e38a515619fb3"
+    },
+    {
+      "path": "test_release_106.py",
+      "size": 3156,
+      "sha256": "dfff84f2cc3a9e7d600a1a1966c525a075c3b48dad68c73dc1be58023bb03fde"
+    },
+    {
+      "path": "test_v102.py",
+      "size": 3184,
+      "sha256": "f980be2bb7d9fde01135db014c5cd96c2a7c4857e23b0ae5f28b6f191992e30a"
+    },
+    {
+      "path": "test_v103_initial.py",
+      "size": 2407,
+      "sha256": "d8b6a5e162ee7904aff2b16a44313211eea85930d7640e4d1e622755061a1806"
+    },
+    {
+      "path": "test_windows_package.py",
+      "size": 8299,
+      "sha256": "bc98622ef086be2ad49700715f761b19526a6084898cefbffc62a8306602766f"
+    }
+  ]
+}

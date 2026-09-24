@@ -1,0 +1,224 @@
+CQ VHF  - Rules
+@media only screen and (max-width: 400px) {
+            /* For mobile phones: */
+            [class*="w3-bar-block w3-card-2 w3-right"] {
+                min-width: 45%;
+            }
+        }
+Other Contests:
+CQ WW
+CQ WPX
+CQ WW RTTY
+CQ WPX RTTY
+CQ 160
+CQ VHF
+WW DIGI
+CQ World Wide VHF Contest
+Show navigation
+Hide navigation
+Home
+Rules
+Rules
+Rules (pdf)
+Rules Archive
+Plaques
+Results
+Results Articles
+Final Scores SSB/CW
+Final Scores Digital
+Final Scores (2000-2024)
+Club Scores
+Scatter Comments
+Entry Statistics
+Records
+Records SSB/CW
+Records Digital
+Records (2000-2024)
+Logs
+How to Submit Your Log
+Cabrillo Log Upload
+ADIF Log Converter
+Cabrillo File Format
+Logging FT8 QSOs
+Club Names
+Logs Received - Digital
+Logs Received - SSB/CW
+Contact Us
+Contact Form
+Organization
+$( function()
+	{
+		$( '#nav li:has(ul)' ).doubleTapToGo();
+	});
+Rules - 2026 CQ World-Wide VHF Contest
+SSB/CW/FM
+Begins: 1400 UTC Saturday, July 4, 2026
+Ends: 1400 UTC Sunday, July 5, 2026
+Digital
+Begins: 1400 UTC Saturday, July 18, 2026
+Ends: 1400 UTC Sunday, July 19, 2026
+I. OBJECTIVE
+The objectives of this contest are for amateurs around the world to contact as many amateurs as 
+possible in the contest period, to promote VHF, to allow VHF operators the opportunity to experience 
+the enhanced propagation available at this time of year, and for interested amateurs to collect VHF 
+Maidenhead grid locators for award credits.
+II. BANDS
+All amateur radio frequencies on 50 MHz (6 meters) and 144 MHz (2 meters) may be used as authorized 
+by local law and license class. Work stations
+once per band
+.
+III. MODES
+Only analog modes (SSB/CW/FM) during the SSB/CW weekend.
+Only digital modes (FT4, FT8, MSK144, Q65, etc) during the Digital weekend.
+IV. CONTEST EXCHANGE
+Callsign and Maidenhead grid locator (4 characters, e.g., EM15). Signal reports are not required 
+and should not be included in the log entry.
+V. MULTIPLIERS
+The multiplier is the number of different grid locators worked per band. A grid locator is counted 
+once per band. Exception: The Rover who moves into a new grid locator may count the same grid locator 
+more than once per band as long as the Rover is in a new grid locator location. 
+Such change in location must be clearly indicated in the Rover's log.
+A Rover station becomes a new QSO to the stations working him or her when that rover changes grid locator.
+The grid locator is the four-character Maidenhead grid (e.g. EM15).
+VI. SCORING
+One (1) point per QSO on 50 MHz and two (2) points per QSO on 144 MHz. Multiply total QSO points 
+times total number of grid locators (GL) worked.
+Rovers: For each new grid locator visited, contacts and grid locators count as new. Final Rover score 
+is the sum of contact points made from each grid locator times the sum of all grid locators worked 
+from all grids visited.
+Example 1. K1GX works stations as follows:
+50 QSOs (50 x 1 = 50) and 25 GLs (25 multipliers) on 50 MHz
+35 QSOs (35 x 2 = 70) and 8 GLs (8 multipliers) on 144 MHz
+K1GX has 120 QSO points (50 + 70 = 120) x 33 multipliers
+(25 + 8 = 33) = 3,960 total points.
+Example 2. AC0RA/R works stations as follows:
+From EN52: 50 QSOs (50 x 1 = 50) and 25 GLs (25 multipliers) on 50 MHz
+From EN52: 40 QSOs (40 x 2 = 80) and 10 GLs (10 multipliers) on 144 MHz
+From EN51: 60 QSOs (60 x 1 = 60) and 30 GLs (30 multipliers) on 50 MHz
+From EN51: 20 QSOs (20 x 2 = 40) and 5 GLs (5 multipliers) on 144 MHz
+AC0RA/R has 230 QSO points (50 + 80 + 60 + 40) x 70 multipliers
+(25 + 10 + 30 + 5) = 16,100 total point
+VII. ENTRY CATEGORIES
+For all categories (except Rover): Transmitters and receivers must be located within a 500-meter 
+diameter circle.  Antennas must be physically connected by RF transmission lines to the transmitters 
+and receivers.  Stations in any category, except Rover, shall operate from a single location, home 
+or portable.  All entry categories may transmit on 6 meters and 2 meters simultaneously.  Only one 
+transmit signal per band is allowed.
+Single Operator
+: One person (the operator) performs all operating and logging functions.
+High Power (All Band or Single Band):  Total output power must not exceed 1500 watts.
+Low Power (All Band or Single Band):  Total output power must not exceed 100 watts.
+QRP (All Band or Single Band):  Total output power must not exceed 10 watts.
+Hilltopper
+: This is a single-op portable category for an all-band entry limited in time to a 
+maximum of 6 continuous hours. Backpackers and portables who do not want to devote resources and time 
+to the full contest period are encouraged to participate, especially to activate rare grids.  Any 
+power source is acceptable.  Total output power must not exceed 100 watts.
+Rover
+: A Rover station is one manned by no more than two operators, travels to more than one 
+grid location, and signs "Rover" or "/R" with no more than one callsign.
+Multi-Op
+. A multi-op station is one with two or more operators. Only one signal per 
+band is allowed.
+VI. ASSISTANCE
+All entrants, regardless of category, are permitted to use spotting assistance or nets including 
+but not limited to DX-alerting nets, internet chat rooms, APRS and other packet, reverse beacon networks 
+and repeaters to identify stations available for contacts and to announce their availability for contacts.
+Such assistance may NOT be used to convey receipt or non-receipt of any required element of a 
+contact or to request a repeat of any required element of a contact during a QSO.  It is acceptable to 
+use assistance to let your QSO partner that you have successfully received all required information to 
+complete a valid QSO (eg:  Telling a partner in an MSK144 QSO that you have received his RRR or RR73 transmission).
+Rovers may use APRS or other assistance methods to announce their location and frequency.
+IX. AWARDS
+Electronic certificates will be made available for download for everyone that submits an entry. 
+Plaques will be awarded to the highest scoring stations where sponsored. They are offered in various 
+categories on a sponsored basis. Clubs and individual plaque donors are sought and may find information 
+on how to sponsor a CQWW VHF Contest plaque at 
+<
+https://cqww-vhf.com/plaques.htm
+>.
+X. CLUB COMPETITION
+The club score is the total aggregate score from logs submitted by members and includes scores 
+from both the SSB/CW and Digital contests.
+There are two separate club competition categories:
+USA Clubs
+: Participation is limited to club members residing within a 250 mile radius circle from 
+the center of club area.
+DX Clubs
+: Participation is limited to club members residing within EITHER the DXCC country where 
+the club is located OR within a 400 km radius circle from the center of club.
+The word “reside” shall be defined as: To dwell permanently or continuously or to occupy a place as a 
+person's fixed, permanent, and principal home for legal purposes.
+General club rules:
+National organizations (e.g., JARL, REF or DARC) are not eligible for the club competition.
+Spell out the full name of the club. See examples of active club names at 
+<
+https://cqww-vhf.com/clubnames.htm
+>.
+Single-operator entries may only contribute to one club. Multi-operator scores may be allocated 
+to multiple clubs as a percentage of the number of club members participating in the operation. The log 
+entry must spell out the full club name (and club allocations if multi-op).
+A minimum of three logs must be received for a club to be listed in the results. Checklog entries 
+are not counted for the club score.
+XI. MISCELLANEOUS
+An operator may sign only one callsign during the contest. This means that an operator cannot generate 
+QSOs by first signing his callsign, then signing his daughter's callsign, even though both callsigns are 
+assigned to the same location.
+A station located exactly on a dividing line of a grid locator must choose only one grid locator from 
+which to operate for exchange purposes.
+A different multiplier cannot be given out without moving the complete station at least 100 meters.
+Use of commonly recognized repeater frequencies is prohibited. Recognized FM simplex frequencies such as 146.49, .52, 
+.55, and .58, and local-option simplex channels may be used for contest purposes.
+Repeater and satellite QSOs are not valid for contest credit.
+Aeronautical mobile contacts do not count.
+UTC is the required logging time.
+XII. LOG SUBMISSIONS
+Log entries must be submitted by
+July 10, 2026
+for the SSB/CW/FM contest and
+July 24, 2026
+for the Digital contest to be eligible for awards.
+An extension may be requested by e-mail to <
+director@cqww-vhf.com
+>. 
+The request must state a legitimate reason and must be received before the log deadline. Extensions are granted 
+only upon confirmation by the Contest Director.
+Logs submitted after the deadline may be listed in the results, but are not eligible for awards.
+The CABRILLO file format is the standard for logs. See 
+<
+https://cqww-vhf.com/cabrillo.htm
+> for detailed 
+instructions on filling out the CABRILLO file header. Note: U.S. stations must indicate the station location 
+in the CABRILLO header (e.g., LOCATION: OH).
+Valid entries in the mode field of QSO: lines
+SSB/CW contest:  CW, FM or PH
+Digital contest: DG
+Web upload of Cabrillo log files is the only method of log submission. Web upload is available at 
+<
+https://cqww-vhf.com/logcheck/
+>.
+An ADIF Converter is provided for convenience and, at present, is suitable only for FIXED station logs. It is 
+available at <
+https://cqww-vhf.com/adif/
+>.
+Entry Confirmation: All logs received will be confirmed via email. A listing of logs received can be viewed at 
+<
+https://cqww-vhf.com/logs_received.htm
+>
+XIII. DECLARATION
+Your submission of a log entry affirms that: (1) you have abided by all the rules of the contest as well 
+as those of your country's licensing authority; (2) you accept any decisions made regarding your entry by 
+the contest's adjudication process which are official and final.
+Questions pertaining to the CQ WW VHF Contest rules may be sent to 
+<
+questions@cqww-vhf.com
+>.
+Copyright © 
+2011-2026
+World Wide Radio Operators Foundation, Inc.
+. All Rights Reserved.
+window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-W8W699LCG0');

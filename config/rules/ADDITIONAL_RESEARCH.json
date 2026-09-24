@@ -1,0 +1,200 @@
+{
+  "contests": [
+    {
+      "id": "scalg-6m-cw",
+      "year": 2026,
+      "name": "SCALG 6m CWコンテスト",
+      "organizer": "エスカルゴ（SCALG）",
+      "rules_url": "https://scalg6mcw.web.fc2.com/2026_sc_kiyaku_01a.html",
+      "status": "定義・自動試験済み（2026保存版、主催受付・Windows実機未検証）",
+      "implementation_note": "docs/contest-research/extra_scalg_6m_cw_2026_reference.md",
+      "rule_file": "scalg-6m-cw_2026.txt",
+      "rule_files": [
+        "scalg-6m-cw_2026.txt"
+      ],
+      "implementation_gate": "6競技区分＋チェック8。無効取得年でも交信点維持。初取得年・電鍵・必要写真・固定移動の事実は本人申告、認定/写真審査は主催。"
+    },
+    {
+      "id": "kcj",
+      "year": 2026,
+      "name": "KCJコンテスト",
+      "organizer": "全国CW同好会（KCJ）",
+      "rules_url": "https://kcj-cw.com/contest/rule/2026_47_kcj_ja_t.pdf",
+      "status": "定義・自動試験済み（2026保存版、主催受付・Windows実機未検証）",
+      "implementation_note": "docs/contest-research/extra_kcj_2026_reference.md",
+      "rule_file": "kcj_2026.txt",
+      "rule_files": [
+        "kcj_2026.txt"
+      ],
+      "implementation_gate": "JARL R1.0/R2.1を採用。Cabrillo・主催結果取り込みは現版の必須残件から除外。"
+    },
+    {
+      "id": "kcj-topband",
+      "year": 2026,
+      "name": "KCJトップバンドコンテスト",
+      "organizer": "全国CW同好会（KCJ）",
+      "rules_url": "https://kcj-cw.com/contest/rule/2026_42_top_ja_t.pdf",
+      "status": "定義・自動試験済み（2026保存版、主催受付・Windows実機未検証）",
+      "implementation_note": "docs/contest-research/extra_kcj_topband_2026_reference.md",
+      "rule_file": "kcj-topband_2026.txt",
+      "rule_files": [
+        "kcj-topband_2026.txt"
+      ],
+      "implementation_gate": "JARL R1.0/R2.1を採用。Cabrillo追加は現版の範囲外。"
+    },
+    {
+      "id": "cq-ww-ssb",
+      "year": 2025,
+      "name": "CQ WW DX SSB",
+      "organizer": "CQ WW DX Contest Committee",
+      "rules_url": "https://cqww.com/rules.htm",
+      "status": "2025定義・自動試験済み（主催受付・Windows実機未検証）",
+      "implementation_note": "docs/contest-research/extra_cqww_dx_2025_reference.md",
+      "rule_file": "cq-ww-ssb_2025.txt",
+      "rule_files": [
+        "cq-ww-ssb_2025.txt"
+      ],
+      "implementation_gate": "当面2025採用で利用者確定。"
+    },
+    {
+      "id": "cq-ww-cw",
+      "year": 2025,
+      "name": "CQ WW DX CW",
+      "organizer": "CQ WW DX Contest Committee",
+      "rules_url": "https://cqww.com/rules.htm",
+      "status": "2025定義・自動試験済み（主催受付・Windows実機未検証）",
+      "implementation_note": "docs/contest-research/extra_cqww_dx_2025_reference.md",
+      "rule_file": "cq-ww-cw_2025.txt",
+      "rule_files": [
+        "cq-ww-cw_2025.txt"
+      ],
+      "implementation_gate": "当面2025採用で利用者確定。"
+    },
+    {
+      "id": "cq-ww-rtty",
+      "year": 2026,
+      "name": "CQ WW RTTY",
+      "organizer": "CQ WW RTTY DX Contest Committee",
+      "rules_url": "https://cqwwrtty.com/rules.htm",
+      "status": "2026定義・自動試験済み（主催受付・Windows実機未検証）",
+      "implementation_note": "docs/contest-research/extra_cqww_rtty_2026_reference.md",
+      "rule_file": "cq-ww-rtty_2026.txt",
+      "rule_files": [
+        "cq-ww-rtty_2026.txt"
+      ],
+      "implementation_gate": "保存規約による全種目・CQカントリー別得点と独立マルチ・Cabrillo出力・Overlay資格と別集計を試験済み。"
+    },
+    {
+      "id": "cq-wpx-ssb",
+      "year": 2026,
+      "name": "CQ WPX SSB",
+      "organizer": "CQ WPX Contest Committee",
+      "rules_url": "https://cqwpx.com/rules/",
+      "status": "2026定義・自動試験済み（主催受付・Windows実機未検証）",
+      "implementation_note": "docs/contest-research/extra_wpx_2026_reference.md",
+      "rule_file": "cq-wpx-ssb_2026.txt",
+      "rule_files": [
+        "cq-wpx-ssb_2026.txt"
+      ],
+      "implementation_gate": "保存規約による全種目・CQカントリー別得点と独立マルチ・Cabrillo出力・Overlay資格と別集計を試験済み。"
+    },
+    {
+      "id": "cq-wpx-cw",
+      "year": 2026,
+      "name": "CQ WPX CW",
+      "organizer": "CQ WPX Contest Committee",
+      "rules_url": "https://cqwpx.com/rules/",
+      "status": "2026定義・自動試験済み（主催受付・Windows実機未検証）",
+      "implementation_note": "docs/contest-research/extra_wpx_2026_reference.md",
+      "rule_file": "cq-wpx-cw_2026.txt",
+      "rule_files": [
+        "cq-wpx-cw_2026.txt"
+      ],
+      "implementation_gate": "保存規約による全種目・CQカントリー別得点と独立マルチ・Cabrillo出力・Overlay資格と別集計を試験済み。"
+    },
+    {
+      "id": "cq-wpx-rtty",
+      "year": 2026,
+      "name": "CQ WPX RTTY",
+      "organizer": "CQ WPX RTTY Contest Committee",
+      "rules_url": "https://cqwpxrtty.com/rules.htm",
+      "status": "2026定義・自動試験済み（主催受付・Windows実機未検証）",
+      "implementation_note": "docs/contest-research/extra_wpx_2026_reference.md",
+      "rule_file": "cq-wpx-rtty_2026.txt",
+      "rule_files": [
+        "cq-wpx-rtty_2026.txt"
+      ],
+      "implementation_gate": "保存規約による全種目・CQカントリー別得点と独立マルチ・Cabrillo出力・Overlay資格と別集計を試験済み。"
+    },
+    {
+      "id": "cq-160-cw",
+      "year": 2026,
+      "name": "CQ 160 CW",
+      "organizer": "CQ WW 160 Contest Committee",
+      "rules_url": "https://cq160.com/rules/index.htm",
+      "status": "2026定義・自動試験済み（主催受付・Windows実機未検証）",
+      "implementation_note": "docs/contest-research/extra_cq160_2026_reference.md",
+      "rule_file": "cq-160-cw_2026.txt",
+      "rule_files": [
+        "cq-160-cw_2026.txt"
+      ],
+      "implementation_gate": "6種目、米州・加14地域・CQカントリーを分離、2/5/10点とMM5点マルチなし。Cabrillo3実周波数、SO30h/MO40h・休止30分。"
+    },
+    {
+      "id": "cq-160-ssb",
+      "year": 2026,
+      "name": "CQ 160 SSB",
+      "organizer": "CQ WW 160 Contest Committee",
+      "rules_url": "https://cq160.com/rules/index.htm",
+      "status": "2026定義・自動試験済み（主催受付・Windows実機未検証）",
+      "implementation_note": "docs/contest-research/extra_cq160_2026_reference.md",
+      "rule_file": "cq-160-ssb_2026.txt",
+      "rule_files": [
+        "cq-160-ssb_2026.txt"
+      ],
+      "implementation_gate": "CWと別日程・RS/PH、6種目。CQゾーンはマルチなし。CQ専用カントリー欄は実運用地を手動確認。"
+    },
+    {
+      "id": "cq-vhf-ssbcw",
+      "year": 2026,
+      "name": "CQ VHF SSB/CW/FM",
+      "organizer": "CQ WW VHF Contest Committee",
+      "rules_url": "https://cqww-vhf.com/rules/",
+      "status": "2026定義・自動試験済み（主催受付・Windows実機未検証）",
+      "implementation_note": "docs/contest-research/extra_cqvhf_2026_reference.md",
+      "rule_file": "cq-vhf-ssbcw_2026.txt",
+      "rule_files": [
+        "cq-vhf-ssbcw_2026.txt"
+      ],
+      "implementation_gate": "12種目、GL4・Roverグリッド別の重複/マルチ、レポートなしCabrillo3。相手Roverは/R表記を必要とする。"
+    },
+    {
+      "id": "cq-vhf-digi",
+      "year": 2026,
+      "name": "CQ VHF Digital",
+      "organizer": "CQ WW VHF Contest Committee",
+      "rules_url": "https://cqww-vhf.com/rules/",
+      "status": "2026定義・自動試験済み（主催受付・Windows実機未検証）",
+      "implementation_note": "docs/contest-research/extra_cqvhf_2026_reference.md",
+      "rule_file": "cq-vhf-digi_2026.txt",
+      "rule_files": [
+        "cq-vhf-digi_2026.txt"
+      ],
+      "implementation_gate": "既知モードに加え任意入力を処理。原モード保持、CabrilloではDG。主催判断。"
+    },
+    {
+      "id": "ww-digi",
+      "year": 2026,
+      "name": "WW DIGI",
+      "organizer": "WW Digi DX Contest Committee",
+      "rules_url": "https://ww-digi.com/rules/",
+      "status": "2026定義・自動試験済み（主催受付・Windows実機未検証）",
+      "implementation_note": "docs/contest-research/extra_wwdigi_2026_reference.md",
+      "rule_file": "ww-digi_2026.txt",
+      "rule_files": [
+        "ww-digi_2026.txt"
+      ],
+      "implementation_gate": "28種目。GL4中心間距離点/GL2マルチ・FT4/FT8共通重複・系列別毎時8変更。ZZ00は総得点未確定でCLAIMED-SCORE省略。Cabrillo3・全帯保持。"
+    }
+  ]
+}

@@ -1,0 +1,1081 @@
+[
+  {
+    "file": "miyazaki_2026.html",
+    "url": "https://www.jarl.com/mztest/contest2026kiyaku.html",
+    "checked": "2026-09-13",
+    "sha256": "34003f57fe360b6a40c164a19b429c7aab963bb925b3a18a9fa99000623e9f24",
+    "bytes": 37608
+  },
+  {
+    "file": "miyazaki_faq.html",
+    "url": "https://www.jarl.com/mztest/contest_faq.html",
+    "checked": "2026-09-13",
+    "sha256": "d9c83d18ffa9e26f2a4574c1284e5842b67b4fd612505e81664df778e128776f",
+    "bytes": 11909
+  },
+  {
+    "file": "all_kanagawa_2026.pdf",
+    "url": "https://www.jarlkn.info/application/files/9917/7020/6189/55.pdf",
+    "checked": "2026-09-13",
+    "sha256": "8afb2e56d74b53492383060c80f62b762d8e6e43f15ab002215c95cb4f5c8f5b",
+    "bytes": 320256
+  },
+  {
+    "file": "ishikari_2026.html",
+    "url": "https://isb.jarl.pro/2026/05/12/post-1624/",
+    "checked": "2026-09-13",
+    "bytes": 225399,
+    "sha256": "844b88b69f3ef158bdc08f0b9e54f455baa1df07c864fbefce98db2fc0322a04"
+  },
+  {
+    "file": "all_kushiro_2026.pdf",
+    "url": "https://www.jarl.com/senkon/kn_pdf/45con_%E8%A6%8F%E4%BF%AE%E6%AD%A33_1.pdf",
+    "checked": "2026-09-13",
+    "bytes": 151319,
+    "sha256": "1c2e5553ea7fed6b7a2e6e2200278c05b4b11594f881f484bd39c70db30baca7"
+  },
+  {
+    "file": "yamagata_sakuranbo_2026.pdf",
+    "url": "https://jarlyamagata.ham-yamagata.com/wp-content/uploads/2026/02/n8-sakuranbo-annai.pdf",
+    "checked": "2026-09-13",
+    "bytes": 435908,
+    "sha256": "bc74b92cf97a3c457f82f0210197e36e7739bdf71720bd03f4649b281eef6afc"
+  },
+  {
+    "file": "all_gifu_2026_web_extract.txt",
+    "url": "https://jarl-gifu.up.seesaa.net/image/E7ACAC29E59B9EE382AAE383BCE383ABE5B290E9989CE382B3E383B3E38386E382B9E38388E383BBE8A68FE7B484.pdf",
+    "checked": "2026-09-13",
+    "format": "web extracted text, not original PDF",
+    "sha256": "d4af9711407cf3f8fa658a536c9f0a4dda03a927f453a1505263fc471d45ffe6",
+    "original_pdf_status": "HTTP 403; not saved"
+  },
+  {
+    "file": "oita_2026.html",
+    "url": "https://jarl-oita.blogspot.com/2026/05/blog-post.html",
+    "checked": "2026-09-13",
+    "bytes": 101061,
+    "sha256": "794e213fade3a4d7dd9ffb81fa18889c9897cd40998853e77ae1f2b969b08db8"
+  },
+  {
+    "file": "oita_2026_categories.png",
+    "url": "https://jarl-oita.blogspot.com/2026/05/blog-post.html#category-image",
+    "checked": "2026-09-13",
+    "bytes": 101951,
+    "sha256": "da1edc9ed3741cc8728d5e9b5a057f0827d9a172463eba803194faacddb036bb"
+  },
+  {
+    "file": "oita_2026_ctestwin.html",
+    "url": "https://jarl-oita.blogspot.com/2026/05/2026ctestwin.html",
+    "checked": "2026-09-13",
+    "bytes": 89488,
+    "sha256": "eae0d63edd5cfea4c9f4ccd8000d05e5c187513367d830148c101d36a3a5e9d9"
+  },
+  {
+    "file": "yamanashi_2026.pdf",
+    "url": "http://www.jarl17.org/wp/wp-content/uploads/2026/03/%E7%AC%AC21%E5%9B%9E%E5%B1%B1%E6%A2%A8%E3%82%B3%E3%83%B3%E3%83%86%E3%82%B9%E3%83%88%E8%A6%8F%E7%B4%84.pdf",
+    "checked": "2026-09-13",
+    "bytes": 219676,
+    "sha256": "0d51ee85e5fa797687a1e7ece8f1faf34a5c8e77a9df75422d087d9486d6f1a3"
+  },
+  {
+    "file": "niigata_2026.html",
+    "url": "https://www.jarl.com/08test/contest/2026/niigata/rule.html",
+    "checked": "2026-09-13",
+    "bytes": 9858,
+    "sha256": "db73169b364d43e092b7e6cff799a21aab3a94dda87691b7991350c411868a14"
+  },
+  {
+    "file": "gigahertz_2026.html",
+    "url": "https://www.jarl.com/08test/contest/2026/ghz/rule.html",
+    "checked": "2026-09-13",
+    "bytes": 9720,
+    "sha256": "bd0d9ea9bdfbca475c6aebbf6fc665fda492e939030c6ed0aed36bfb7c872982"
+  },
+  {
+    "file": "aadx_2026.html",
+    "url": "https://www.jarl.org/Japanese/1_Tanoshimo/1-1_Contest/aadx_rules.html",
+    "checked": "2026-09-13",
+    "bytes": 26107,
+    "sha256": "2e47143d934fec044210c2de35a1ed8302f01334d4f37f94bef98f578d174e3b"
+  },
+  {
+    "file": "aadx_cabrillo_2025.html",
+    "url": "https://www.jarl.org/English/4_Library/A-4-3_Contests/cabrilloformat.html",
+    "checked": "2026-09-13",
+    "bytes": 11734,
+    "sha256": "64995364952733c524fae057bbbdb0a76c706879f93b55a5fa67f33f1a80b817"
+  },
+  {
+    "file": "jarl_log_submission_20260913.html",
+    "url": "https://www.jarl.org/Japanese/1_Tanoshimo/1-1_Contest/log_submission.html",
+    "checked": "2026-09-13",
+    "bytes": 7511,
+    "sha256": "f15f7b1a69d0761b4e44b2705a672cf419b6fb94dc6796d6f7faee18b28dad6b"
+  },
+  {
+    "file": "shimane_2026.pdf",
+    "source": "user attachment 2026第46回島根対全日本コンテスト規約.pdf",
+    "checked": "2026-09-13",
+    "bytes": 122774,
+    "sha256": "1f70eb93053e5659aaa1f85521418c56aefa90b64d07c5f10a730c53e5aeb7cf"
+  },
+  {
+    "file": "all_ja8_2026.pdf",
+    "url": "https://jarl.hokkaido.jp/wp-content/uploads/2026/04/6983fec72be466a5b0f356b6234f10b2.pdf",
+    "checked": "2026-09-13",
+    "bytes": 351254,
+    "sha256": "e48839511e7c909dff617d62ead96013b532b53da8e63c6f73613db723fb02b8"
+  },
+  {
+    "file": "tochigi_2026.pdf",
+    "url": "https://www.jarl.com/tochigi/contest/28tochicon_1.pdf",
+    "checked": "2026-09-13",
+    "bytes": 191532,
+    "sha256": "1ec30dbae28d43e86dd7bf46eb8efd66a7af2605a7462391778804bd4c9a47c0"
+  },
+  {
+    "file": "tochigi_2026.html",
+    "url": "https://www.jarl.com/tochigi/contest/tochicontest.html",
+    "checked": "2026-09-13",
+    "bytes": 13705,
+    "sha256": "d8c475bdf07f1b6fe04820711dfbf06a5e51218dd085ebde848bd6d38fecba52"
+  },
+  {
+    "file": "tochigi_2026.txt",
+    "url": "https://www.jarl.com/tochigi/contest/28tochicon_1.pdf",
+    "checked": "2026-09-13",
+    "bytes": 7642,
+    "sha256": "e8be663a179803d33cd6db88e64e211f51967625ddb18e23bd32f12f3b253f5d"
+  },
+  {
+    "file": "six_meter_and_down_2026.html",
+    "url": "https://www.jarl.org/Japanese/1_Tanoshimo/1-1_Contest/6d_rules.html",
+    "checked": "2026-09-13",
+    "bytes": 26559,
+    "sha256": "0f06329bb2b8e4c60772fdb80bd3e0ddc006e9442e8c19be8e508a1bee47c981"
+  },
+  {
+    "file": "jarl_region_codes.txt",
+    "url": "https://www.jarl.org/Japanese/A_Shiryo/A-2_jcc-jcg/shicho-list.txt",
+    "checked": "2026-09-13",
+    "bytes": 1590,
+    "sha256": "460e7ab44a6c437e1b11dff3210c23a9b12dc9a3a8392c4370cb598f33fe43f5"
+  },
+  {
+    "file": "jarl_q_and_a.html",
+    "url": "https://www.jarl.org/Japanese/1_Tanoshimo/1-1_Contest/q_and_a.html",
+    "checked": "2026-09-13",
+    "bytes": 44281,
+    "sha256": "956468f42e60a9cece7dd64780022f12df1b386220c9ec5ed263da2bff401a61"
+  },
+  {
+    "file": "jarl_logformat.html",
+    "url": "https://www.jarl.org/Japanese/1_Tanoshimo/1-1_Contest/logformat.html",
+    "checked": "2026-09-13",
+    "bytes": 18504,
+    "sha256": "43786d1b9211ed5127dcca6b1eb69a04f67804430f953287a32219a6af5fd97a"
+  },
+  {
+    "file": "jarl_cabrillo.html",
+    "url": "https://www.jarl.org/Japanese/1_Tanoshimo/1-1_Contest/cabrillo.html",
+    "checked": "2026-09-13",
+    "bytes": 7363,
+    "sha256": "73d43617691eddccf59ffe3befe52ab1b037294de14b415eef75208356a5347a"
+  },
+  {
+    "file": "jarl_log_submission.html",
+    "url": "https://www.jarl.org/Japanese/1_Tanoshimo/1-1_Contest/log_submission.html",
+    "checked": "2026-09-13",
+    "bytes": 7511,
+    "sha256": "f15f7b1a69d0761b4e44b2705a672cf419b6fb94dc6796d6f7faee18b28dad6b"
+  },
+  {
+    "file": "okhotsk_2026.pdf",
+    "url": "https://www.jarl.com/okhotsk/conte2026.pdf",
+    "checked": "2026-09-13",
+    "bytes": 204427,
+    "sha256": "54870942963657c5b74b657258fba5b0b6fac768213cfa30b305da4be5fdf0f8"
+  },
+  {
+    "file": "okhotsk_2026.txt",
+    "url": "https://www.jarl.com/okhotsk/conte2026.pdf",
+    "checked": "2026-09-13",
+    "bytes": 4141,
+    "sha256": "6c784fe1b3ca0917396741da7529c37099251962fb4824f67305e2bc17ac0950"
+  },
+  {
+    "file": "okhotsk_home_20260913.html",
+    "url": "https://www.jarl.com/okhotsk/",
+    "checked": "2026-09-13",
+    "bytes": 14589,
+    "sha256": "057426138db553b787c538d69d5bb3c443ec257b149e9ac476a002316ad6cec7"
+  },
+  {
+    "file": "all_ja5_2026.html",
+    "url": "https://www.jarl.com/shikoku/oa-08/index.html",
+    "checked": "2026-09-13",
+    "bytes": 20133,
+    "sha256": "bedbcc0c0a520ce9d4288108f076f2b7d329a507ace6fb0d0aaf2b8c6eb3bc45"
+  },
+  {
+    "file": "shiga_2026.html",
+    "url": "https://www.jarl.com/shiga/shiga_con.html",
+    "checked": "2026-09-13",
+    "bytes": 41311,
+    "sha256": "178da3d4fec16dd1da585b5d4ff99238cb6d013ba5e2e4ed9b54878d34668a6e"
+  },
+  {
+    "file": "iburi_hidaka_2026.pdf",
+    "url": "http://lake-toya.jp/iburihidaka/wp-content/uploads/2026/06/%E7%AC%AC51%E5%9B%9E%E8%83%86%E6%8C%AF%E6%97%A5%E9%AB%98%E6%94%AF%E9%83%A8%E3%82%B3%E3%83%B3%E3%83%86%E3%82%B9%E3%83%88%E8%A6%8F%E7%B4%84.pdf",
+    "checked": "2026-09-14",
+    "bytes": 188419,
+    "sha256": "461a51be6fcb5c166bc7ab41dfa8d8e5298b54cef341b06c6984b7e21ea876ab"
+  },
+  {
+    "file": "iburi_hidaka_2026.txt",
+    "url": "http://lake-toya.jp/iburihidaka/wp-content/uploads/2026/06/%E7%AC%AC51%E5%9B%9E%E8%83%86%E6%8C%AF%E6%97%A5%E9%AB%98%E6%94%AF%E9%83%A8%E3%82%B3%E3%83%B3%E3%83%86%E3%82%B9%E3%83%88%E8%A6%8F%E7%B4%84.pdf",
+    "checked": "2026-09-14",
+    "bytes": 5140,
+    "sha256": "4ae0881dcc9620b887abd93901539a3b92fba9574ff8af41a9c434a65d563b34"
+  },
+  {
+    "file": "all_aomori_2026.html",
+    "url": "https://jarl-aomori.sakura.ne.jp/contest/all-aomori/",
+    "checked": "2026-09-14",
+    "bytes": 99772,
+    "sha256": "75a0eaa0f7f472923357993505d96f6bc53787e7c2e7542075778f8f4a9a0463"
+  },
+  {
+    "file": "kagoshima_2026.pdf",
+    "url": "https://www.jarl.com/kagoshima/contest/26/kiyaku.pdf",
+    "checked": "2026-09-14",
+    "bytes": 193473,
+    "sha256": "4366fb852b5b7e9e31046941200c056a736b2ef5cece1373c14349659c15192c"
+  },
+  {
+    "file": "kagoshima_2026.txt",
+    "url": "https://www.jarl.com/kagoshima/contest/26/kiyaku.pdf",
+    "checked": "2026-09-14",
+    "bytes": 7644,
+    "sha256": "58ff5384823b74552a401331f1c4896d07b17fa6dbfe7e0e5f5d1fd522ea1e41"
+  },
+  {
+    "file": "field_day_2026.html",
+    "url": "https://www.jarl.org/Japanese/1_Tanoshimo/1-1_Contest/fd_rules.html",
+    "checked": "2026-09-14",
+    "bytes": 42220,
+    "sha256": "64db7eeb00dfac1321050cb86028557b4c3cd936b4124b9e19311fbce20330a7"
+  },
+  {
+    "file": "jarl_2tx2.html",
+    "url": "https://www.jarl.org/Japanese/1_Tanoshimo/1-1_Contest/2tx2.html",
+    "checked": "2026-09-14",
+    "bytes": 12513,
+    "sha256": "cb7ed046f37024321c0b579928ebc59220bb7fe29f89384504c34ecc7ea1e68f"
+  },
+  {
+    "file": "jarl_2tx_log.html",
+    "url": "https://www.jarl.org/Japanese/1_Tanoshimo/1-1_Contest/2tx_log.html",
+    "checked": "2026-09-14",
+    "bytes": 10357,
+    "sha256": "4e2e10d40fb864904aca1958915d5be08da009598882506370aaa37ee7c2450e"
+  },
+  {
+    "file": "nara_vuhf_2026.html",
+    "url": "https://jarl-nara.com/cont_26.htm",
+    "checked": "2026-09-14",
+    "bytes": 16828,
+    "sha256": "3f974ea09c454f8d580c3cbaec9e10f4d8396e45f2e19b2404e615bd0356010d"
+  },
+  {
+    "file": "nara_vuhf_log_submission_2026.html",
+    "url": "https://www.minami3.com/naratest/index.html",
+    "checked": "2026-09-14",
+    "bytes": 27072,
+    "sha256": "4c3e4e8fdbfcd11da0af78c33f9cb343d7131f11b7b6179bb8dff6a5225662dc"
+  },
+  {
+    "file": "ja9_vu_2026.pdf",
+    "url": "https://www.jarl.com/hokuriku/CONTEST/%E8%A6%8F%E7%B4%84/2026/JA9%E3%82%B3%E3%83%B3%E3%83%86%E3%82%B9%E3%83%88VU2026%E8%A6%8F%E7%B4%84.pdf",
+    "checked": "2026-09-14",
+    "bytes": 249999,
+    "sha256": "d923ba896d4b1a337dfb3e8f85af25ce27130e079da921af460ad3f8facd520b"
+  },
+  {
+    "file": "kamikawa_soya_2026.pdf",
+    "url": "https://www.jarl.com/kamikawa/contest/2026KSContest.pdf",
+    "checked": "2026-09-14",
+    "bytes": 88460,
+    "sha256": "4021b9bbc8b99afc5797734bc3055a177e40699b14222a5e670c8175856269ac"
+  },
+  {
+    "file": "all_saga_2026_web_extract.json",
+    "url": "https://www4.hp-ez.com/hp/jarlsaga/page10",
+    "checked": "2026-09-14",
+    "bytes": 21425,
+    "sha256": "0bd8b37c6e9619e2f9a8346523095f9899b9d3ecce6c377bd3b361089895615d"
+  },
+  {
+    "file": "oshima_hiyama_2026.pdf",
+    "url": "https://ohs.hokkaido.jp/wp-content/uploads/2026/07/%E7%AC%AC34%E5%9B%9E-JARL-%E6%B8%A1%E5%B3%B6%E6%AA%9C%E5%B1%B1%E6%94%AF%E9%83%A8%E3%82%B3%E3%83%B3%E3%83%86%E3%82%B9%E3%83%88%E8%A6%8F%E7%B4%84.pdf",
+    "checked": "2026-09-14",
+    "bytes": 205070,
+    "sha256": "990e31f1c4eae482d441ae0b23ba7fc4acc16aaa91dd640907bd1c08a0a24ab9"
+  },
+  {
+    "file": "okayama_ft8_2026.html",
+    "url": "https://www.jarl.com/okayama/oy-ft8-test-rule-2026.html",
+    "checked": "2026-09-14",
+    "bytes": 14608,
+    "sha256": "ce99b84fc30c2a61319fcc347770a6610d424bdff7c0f775a44e827be8288b88"
+  },
+  {
+    "file": "okayama_ft8_submit_2026.html",
+    "url": "http://contest.jj4kme.mydns.jp/uploadLog.html?20260531_092524_3231",
+    "checked": "2026-09-14",
+    "bytes": 15310,
+    "sha256": "600665c6d6a3f055edffac572416cad3da25a1c182ddf7b575b213b9e4318967"
+  },
+  {
+    "file": "all_akita_2026.pdf",
+    "url": "user attachment: オール秋田2026規約.pdf",
+    "checked": "2026-09-14",
+    "bytes": 153826,
+    "sha256": "9740ae5abc59d3ee0366f97d7c116d8ff41e2a55b7cc1bc301f4f67e6ac34d7a"
+  },
+  {
+    "file": "fukuoka_2026.pdf",
+    "url": "user attachment: 2026-20th-fukuoka-contest-regulations.pdf",
+    "checked": "2026-09-14",
+    "bytes": 173449,
+    "sha256": "e21464fc70797184509b44eeb66040bfc64275606b5651de6f122eae46e8cb00"
+  },
+  {
+    "file": "all_okayama_2026.html",
+    "url": "https://www.jarl.com/okayama/oy-test-rule-2026.html",
+    "checked": "2026-09-14",
+    "bytes": 23038,
+    "sha256": "030f284dc0977cb12455d30e5384cf94c1e056b12147254158acbb6f28154c8c"
+  },
+  {
+    "file": "xpo_2026.html",
+    "url": "https://www.eonet.ne.jp/~ja3-test/kiyaku/xpokinen_2026kiyaku.htm",
+    "checked": "2026-09-14",
+    "bytes": 63957,
+    "sha256": "b2caad84215ad8399045a651aa651a27f4c52352f905f97439d68a6ad54f12f3"
+  },
+  {
+    "file": "ai_chikyuhaku_2026.html",
+    "url": "https://www.tokai-jarl.jp/tkitest/regulation/21st-ai.html",
+    "checked": "2026-09-14",
+    "bytes": 18275,
+    "sha256": "34f305f5828d60aea304c5f54d22226dfc767a35aa0e1b2239241012fbd4f1a1"
+  },
+  {
+    "file": "acag_2026.html",
+    "url": "https://www.jarl.org/Japanese/1_Tanoshimo/1-1_Contest/acag_rules.html",
+    "checked": "2026-09-14",
+    "bytes": 39563,
+    "sha256": "aef1eda26401a53a868fa8a958b3dbd5f4e508a50d85ba599cebf3f888e75435"
+  },
+  {
+    "file": "all_tottori_2026.pdf",
+    "url": "https://www.jarl.com/tottori/files/2026tttest_rules.pdf",
+    "checked": "2026-09-14",
+    "bytes": 352867,
+    "sha256": "deb70e41525166f64d23964a36fffcfd9617f47ccd134b84b938a35c14ecc429"
+  },
+  {
+    "file": "all_ja_2026.html",
+    "url": "https://www.jarl.org/Japanese/1_Tanoshimo/1-1_Contest/allja_rules.html",
+    "checked": "2026-09-14",
+    "bytes": 33279,
+    "sha256": "08684f7bfd9b7dacb3d6e4905e9ff16717fbd5a312d3895c31f7195c5bcf86df"
+  },
+  {
+    "file": "jarl_ww_rtty_2026.html",
+    "url": "https://www.jarl.org/Japanese/1_Tanoshimo/1-1_Contest/rtty_rule.html",
+    "checked": "2026-09-14",
+    "bytes": 17661,
+    "sha256": "97d7972eac01e21d0bc8653b5b45985736064cf5efbec2168e3696a7f1925efb"
+  },
+  {
+    "file": "all_chiba_2026.pdf",
+    "url": "http://jarl-chiba.info/2026test/2026info.pdf",
+    "checked": "2026-09-14",
+    "bytes": 328132,
+    "sha256": "740ab32635b7a258ec4fc258f5c540992d9766d600b30deb88e0f51e3d0e8ab7"
+  },
+  {
+    "file": "tokyo_cw_2026.pdf",
+    "url": "https://jarltokyo.com/_media/contest/contest_rules_cw_ver20260826.pdf",
+    "checked": "2026-09-14",
+    "bytes": 969045,
+    "sha256": "98fc3f07c31d05d60cec8b0c6c6b2046fce51acb4bbd4f9863bc43f4f66e61c6"
+  },
+  {
+    "file": "all_osaka_2026.pdf",
+    "url": "https://ja3ujr.sakura.ne.jp/jarlosaka/contest/2026-kiyaku.pdf",
+    "checked": "2026-09-14",
+    "bytes": 290960,
+    "sha256": "92612b7c32d7435759775c512a5167e976038dd7d12251d218b956d631b05a08"
+  },
+  {
+    "file": "all_osaka_2026.html",
+    "url": "https://ja3ujr.sakura.ne.jp/jarlosaka/contest/kiyaku2026.html",
+    "checked": "2026-09-14",
+    "bytes": 24754,
+    "sha256": "a3c5102f8afbce2f736b5af11a7c72ec4f0fec96411d72606f5aa3e092965eb8"
+  },
+  {
+    "file": "ja9_hf_2026.pdf",
+    "url": "https://www.jarl.com/hokuriku/CONTEST/%E8%A6%8F%E7%B4%84/2026/JA9%E3%82%B3%E3%83%B3%E3%83%86%E3%82%B9%E3%83%88HF2026%E8%A6%8F%E7%B4%84.pdf",
+    "checked": "2026-09-14",
+    "bytes": 248877,
+    "sha256": "fbc964f1c62fb7283d585f10077c43b0c08fbc7ffc460f267d2de12bf5e074fb"
+  },
+  {
+    "file": "all_kyushu_2026.pdf",
+    "url": "https://www.jarl.com/kyushu/contest/%EF%BC%94%EF%BC%97%E8%A6%8F%E7%B4%84.pdf",
+    "checked": "2026-09-14",
+    "bytes": 181425,
+    "sha256": "93a44d47d6a5c39a16f6fe0777cb36d2eee297e56ef39c813674604c913f4ff7"
+  },
+  {
+    "file": "kyushu_regions.pdf",
+    "url": "https://www.jarl.com/kyushu/contest/%E9%83%BD%E5%BA%9C%E7%9C%8C%E3%83%BB%E5%9C%B0%E5%9F%9F%E7%AD%89%E3%81%AE%E3%83%AA%E3%82%B9%E3%83%88.pdf",
+    "checked": "2026-09-14",
+    "bytes": 52433,
+    "sha256": "052016efc4e6189f7ae1b5165e8ada11c3d0662022c4882906021cc228ce658b"
+  },
+  {
+    "file": "kyushu_index_2026.html",
+    "url": "https://www.jarl.com/kyushu/ja6test.html",
+    "checked": "2026-09-14",
+    "bytes": 38482,
+    "sha256": "3c41d2a8c0f5c729755ab1c084f4ff7cbcac8a7aa41e110bde8fc8bc478562f2"
+  },
+  {
+    "file": "kyushu_jcc_40.html",
+    "url": "https://www.jarl.org/Japanese/A_Shiryo/A-2_jcc-jcg/40.htm",
+    "checked": "2026-09-14",
+    "bytes": 12111,
+    "sha256": "1ff9b497a74f915c01eb1929e857a3a897867a3833ed2c2ae548499ec6ba9ad8"
+  },
+  {
+    "file": "kyushu_jcc_41.html",
+    "url": "https://www.jarl.org/Japanese/A_Shiryo/A-2_jcc-jcg/41.htm",
+    "checked": "2026-09-14",
+    "bytes": 3085,
+    "sha256": "87a93b1d54691fce548ce082350ea141d372df3d8ed9366aa5d215cbb5ed858b"
+  },
+  {
+    "file": "kyushu_jcc_42.html",
+    "url": "https://www.jarl.org/Japanese/A_Shiryo/A-2_jcc-jcg/42.htm",
+    "checked": "2026-09-14",
+    "bytes": 4198,
+    "sha256": "0e7762d23205673f00546a84d8cad352627f78c24e2f8890823d9c6116b2e3ee"
+  },
+  {
+    "file": "kyushu_jcc_43.html",
+    "url": "https://www.jarl.org/Japanese/A_Shiryo/A-2_jcc-jcg/43.htm",
+    "checked": "2026-09-14",
+    "bytes": 5392,
+    "sha256": "a2deacdc4dee368fd0bf3eebf31877455e4459b6f4305eafd955ad9060d44635"
+  },
+  {
+    "file": "kyushu_jcc_44.html",
+    "url": "https://www.jarl.org/Japanese/A_Shiryo/A-2_jcc-jcg/44.htm",
+    "checked": "2026-09-14",
+    "bytes": 5037,
+    "sha256": "418105f4a88c62fc10c16b130794962d357554ffebf72f04f253f1ca6a529916"
+  },
+  {
+    "file": "kyushu_jcc_45.html",
+    "url": "https://www.jarl.org/Japanese/A_Shiryo/A-2_jcc-jcg/45.htm",
+    "checked": "2026-09-14",
+    "bytes": 3132,
+    "sha256": "3a292d69268ec04d6c90e5487f99a1a02a05d8f0291b049d0d117683899c8dbf"
+  },
+  {
+    "file": "kyushu_jcc_46.html",
+    "url": "https://www.jarl.org/Japanese/A_Shiryo/A-2_jcc-jcg/46.htm",
+    "checked": "2026-09-14",
+    "bytes": 6324,
+    "sha256": "2b510f7e2b76e342f4e053adb31f1d53f436a6ccb9309e7c2d04b9a4f1b7dee5"
+  },
+  {
+    "file": "kyushu_jcc_47.html",
+    "url": "https://www.jarl.org/Japanese/A_Shiryo/A-2_jcc-jcg/47.htm",
+    "checked": "2026-09-14",
+    "bytes": 3622,
+    "sha256": "90612aa0d75452154a14a1cb88b8edc55bd6a5c2405c54ea5c666e6034869816"
+  },
+  {
+    "file": "tokyo_uhf_2026.pdf",
+    "url": "https://jarltokyo.com/_media/contest/contest_rules_uhf_ver20260826.pdf",
+    "checked": "2026-09-14",
+    "bytes": 1014714,
+    "sha256": "2f2ddfcf8c45ea0faa60b4aa74f72e7f531b22959bb247fb9dc071be6fab96ef"
+  },
+  {
+    "file": "kcwa_2025.html",
+    "url": "https://kcwa.sakura.ne.jp/2025/contest42/20251207CONTEST.html",
+    "checked": "2026-09-14",
+    "bytes": 6474,
+    "sha256": "b9453b8657e575b6bd5a6f6ed2c045f5150b5dc2df0a9aa11c27f1d05b7127e3"
+  },
+  {
+    "file": "all_ja0_18_2025.html",
+    "url": "https://jarl-nn.asama-net.com/index.php?html_id=00000503",
+    "checked": "2026-09-14",
+    "bytes": 10432,
+    "sha256": "ddd81bde024a2073977316126d00ae0b2a665cf21eaa4569f20aa2f48d68935d"
+  },
+  {
+    "file": "ja0_elog_instructions.html",
+    "url": "https://jarl-nn.asama-net.com/index.php?html_id=00000023",
+    "checked": "2026-09-14",
+    "bytes": 16148,
+    "sha256": "3a760c46eb246f13a6f9417083a1788596c1f4b8c78f2bbc6ca9617e2d7f8aff"
+  },
+  {
+    "file": "all_hyogo_2026.pdf",
+    "url": "https://www.jarl.com/hyogo/contest/contest2026/2026-ALL-HG_rule.pdf",
+    "checked": "2026-09-14",
+    "sha256": "49e037cee1305783af3b3f2607deca7816faf0ef3acc42519389bf6ec0aaabe3",
+    "bytes": 324889
+  },
+  {
+    "file": "all_hyogo_contest_day_v2.pdf",
+    "url": "https://www.jarl.com/hyogo/contest/cm_contest-day(Ver-2).pdf",
+    "checked": "2026-09-14",
+    "sha256": "aa5dbb31e58ee1b7ed6c4bd4e0877331e6c16459cee19f7d5460fbd415f56a7d",
+    "bytes": 141660
+  },
+  {
+    "file": "toyama_2026_detail.html",
+    "url": "https://commu-chika.jp/organizations/1420/events/4720",
+    "checked": "2026-09-14",
+    "sha256": "216d40d97f12e28c8a66fceec70b3a339db8cab6ecdc435778a651d60d7a5d61",
+    "bytes": 52900
+  },
+  {
+    "file": "all_kumamoto_2026.pdf",
+    "url": "https://www.jarl.com/kmtest/2026allkumamotoreg.pdf",
+    "checked": "2026-09-14",
+    "sha256": "1ca0a89776582443ca42c36aa37b25c964e6d6dc49e9389c45ec948c5f73d1b3",
+    "bytes": 205937
+  },
+  {
+    "file": "all_saitama_44.pdf",
+    "url": "https://www.jarl.com/allst/rule/44st.pdf",
+    "checked": "2026-09-14",
+    "sha256": "57aa8d2b9dc7e7117b634544cb48d73f8009af00a9ac27f8c2f3c1f10d41669d",
+    "bytes": 316309
+  },
+  {
+    "file": "all_miyagi_2026.pdf",
+    "url": "https://ja7rl.sakura.ne.jp/2026MG.pdf",
+    "checked": "2026-09-14",
+    "sha256": "43f1ae618bee31444b6e4924d1e0bb1cb90086816af5d7eedfbb4b3722179521",
+    "bytes": 112808
+  },
+  {
+    "file": "miyagi_contest_page.html",
+    "url": "https://ja7rl.sakura.ne.jp/page014.html",
+    "checked": "2026-09-14",
+    "sha256": "0cee9b950f1faac3f1f636f73596287a8e7b83970b6d89572cf36ce32e196da9",
+    "bytes": 6911
+  },
+  {
+    "file": "miyagi_elog.html",
+    "url": "https://ja7rl.sakura.ne.jp/contestlogmaker.html",
+    "checked": "2026-09-14",
+    "sha256": "91c836b9c54911092056352037c3c697855fb4f8d0e94ee053a2ada2cc3af2b1",
+    "bytes": 6755
+  },
+  {
+    "file": "kyoto_70.pdf",
+    "url": "https://je3zpz.ampr.org/kt_test/kt70-kiyaku.pdf",
+    "checked": "2026-09-14",
+    "sha256": "0182f35af64453a3bbc88d31934c445ac41de4b19b90e1c13e0a7dade021666c",
+    "bytes": 303131
+  },
+  {
+    "file": "kyoto_elog.html",
+    "url": "https://www.jarl.com/kyoto/contest/KT/emailent.htm",
+    "checked": "2026-09-14",
+    "sha256": "942e30ce850dbbb4800e959a9eec6bfdb4b669b8b8556b62b5b6c0eb653825c6",
+    "bytes": 61331
+  },
+  {
+    "file": "iwate_winter.pdf",
+    "url": "https://jarl-iwate.com/wp-content/uploads/51ea8f1a1ed0bc896ab5d5812937aeb2.pdf",
+    "checked": "2026-09-14",
+    "sha256": "b0d2d1be883588f9779825810bcde8f70e9f2d3648940d2ba8f3070d171b169f",
+    "bytes": 118628
+  },
+  {
+    "file": "hiroshima_was_2026.html",
+    "url": "https://hs-contest.org/was-2026-rule/",
+    "checked": "2026-09-14",
+    "sha256": "743da3904bfabd829463fd5005cb8c3d1cff18769e71fb344bf634ddf2462243",
+    "bytes": 56686
+  },
+  {
+    "file": "hiroshima_was_report_2026.html",
+    "url": "https://hs-contest.org/was-2026-report/",
+    "checked": "2026-09-14",
+    "sha256": "cc37e91599f2fc78e5ff54a3c1ecb1fe86ead8d710b39e5abc633ce24270c1c9",
+    "bytes": 40051
+  },
+  {
+    "file": "hiroshima_was_faq.html",
+    "url": "https://hs-contest.org/qanda/",
+    "checked": "2026-09-14",
+    "sha256": "c2370bcb8d5aa3e25f54255583a39573053de8c936f6f7a0374d8dadfa38d995",
+    "bytes": 155946
+  },
+  {
+    "file": "all_ja0_35_7_2026.html",
+    "url": "https://jarl-nn.asama-net.com/index.php?html_id=00000510",
+    "checked": "2026-09-14",
+    "sha256": "41d8c7dc81f8b611d5f7b191ef695780cb7304a02aa073863adb033e76f298df",
+    "bytes": 11363
+  },
+  {
+    "file": "all_ja4_2026.pdf",
+    "url": "https://www.jarl.com/chugoku2/pdf/2025ALLJA4CONTEST.pdf",
+    "checked": "2026-09-14",
+    "sha256": "6dd6ff3c5efbe51f67e95557632de4eab9eadede43b9fba50618b90cf58cced1",
+    "bytes": 114009
+  },
+  {
+    "file": "all_ja4_2026.html",
+    "url": "http://ja4test.mydns.jp/ja4test_04.html",
+    "checked": "2026-09-14",
+    "sha256": "e9db631ca82ed74a333fe0b05b300d17e684b6ff0d5c42679cda1bc9cae2e0d0",
+    "bytes": 32065
+  },
+  {
+    "file": "all_ja4_upload.html",
+    "url": "http://contest.jj4kme.mydns.jp/uploadLog.html?20250804_162044_8082",
+    "checked": "2026-09-14",
+    "sha256": "600665c6d6a3f055edffac572416cad3da25a1c182ddf7b575b213b9e4318967",
+    "bytes": 15310
+  },
+  {
+    "file": "tokai_qso_66_2026.html",
+    "url": "https://www.tokai-jarl.jp/tkitest/regulation/66th-tkiqso.html",
+    "checked": "2026-09-14",
+    "sha256": "f375ea1dfcdda099605302c5f9d70022d4861ef7b7bd4264eebf5cb496eb3082",
+    "bytes": 16392
+  },
+  {
+    "file": "tokai_qso_2026_faq.html",
+    "url": "https://www.tokai-jarl.jp/tkitest/qanda/index.html",
+    "checked": "2026-09-14",
+    "sha256": "78484fda0326be658d045240d134dbacfed89697fb61d4a8fdec1877b59db6a1",
+    "bytes": 22576
+  },
+  {
+    "file": "tokai_qso_2026_submit.html",
+    "url": "https://www.tokai-jarl.jp/tkitest/tokai-log.html",
+    "checked": "2026-09-14",
+    "sha256": "ab46de2cd343f7151680db828eedad16939f130ff315415f7b584efca2d95918",
+    "bytes": 8824
+  },
+  {
+    "file": "nagasaki_2026.pdf",
+    "url": "https://www.jarl.com/nagasaki/nstest/2026ntst.pdf",
+    "checked": "2026-09-14",
+    "sha256": "6fad0d94968f8802c31dd17b4920f14b9e0530203d5c27efbe22a4e2550a69d5",
+    "bytes": 137191
+  },
+  {
+    "file": "kanagawa_emergency_44_2026.pdf",
+    "url": "https://www.jarlkn.info/application/files/6917/7020/6189/44.pdf",
+    "checked": "2026-09-14",
+    "sha256": "5535cba54fbe1a67c53a8dec1f9a17c23f52eb73c113d080ee853e82521424f2",
+    "bytes": 218117
+  },
+  {
+    "file": "kanagawa_submit_20260201.pdf",
+    "url": "https://www.jarlkn.info/index.php/download_file/view/207/218",
+    "checked": "2026-09-14",
+    "sha256": "a653772bfefda82516f8640b9bd0acd5dd0a2ac619e868ee4feb7a45f3e3cb34",
+    "bytes": 192490
+  },
+  {
+    "file": "kanagawa_emergency_inside_20260130.zip",
+    "url": "https://www.jarlkn.info/index.php/download_file/view/216/218",
+    "checked": "2026-09-14",
+    "sha256": "53b8f1247dbe6b90bd7a67837b0e5968a030f8346f3ecc0063c0f71d0e363f3d",
+    "bytes": 36346
+  },
+  {
+    "file": "kanagawa_emergency_outside_20260130.zip",
+    "url": "https://www.jarlkn.info/index.php/download_file/view/217/218",
+    "checked": "2026-09-14",
+    "sha256": "35dcfb5702f2a73617dbc9ad15d009ee29af8d9d2a7eb94f8b7548a608b391fd",
+    "bytes": 27949
+  },
+  {
+    "file": "wakayama_38.pdf",
+    "url": "https://www.jarl.com/wakayama/pdf/wk-test/contest38kiyaku.pdf",
+    "checked": "2026-09-14",
+    "sha256": "24e17d7cfb92a0a11938e9e9ebfd2aba5c15559492c1d1e5dc603a4c45cc4853",
+    "bytes": 273798
+  },
+  {
+    "file": "all_tohoku_2026.pdf",
+    "url": "https://www.jarl.com/tohoku/7contest/2026JA7TEST.pdf",
+    "checked": "2026-09-14",
+    "sha256": "c0469ba6eb46c113b15b5fb5a50d3a01dfef5ed51ec5c0dc93ea0b4467038318",
+    "bytes": 314300
+  },
+  {
+    "file": "all_tohoku_2026_elog.html",
+    "url": "https://ja7rl.sakura.ne.jp/ja7_contestlogmaker.html",
+    "checked": "2026-09-14",
+    "sha256": "b5728a62aa4e80cefd90127f4bff2680dbfef7a62ff3be464a22913e88f4cff7",
+    "bytes": 6614
+  },
+  {
+    "file": "tokyo_rules_20240331_for_2026.pdf",
+    "url": "https://jarltokyo.com/_media/contest/contest_rules_ver20240331.pdf",
+    "checked": "2026-09-14",
+    "sha256": "8287fd8a71e194e84e8a8ae7b386c32723167577a5ea2c6fe3fd5ab01766a338",
+    "bytes": 310775
+  },
+  {
+    "file": "tokyo_revision_notice_20260830.html",
+    "url": "https://jarltokyo.com/contest",
+    "checked": "2026-09-14",
+    "sha256": "f29d6e7885f402adc95c1c899b6e9088ab4edb419b309dfa5703b118d6e86e10",
+    "bytes": 24376
+  },
+  {
+    "file": "shizuoka_35_2026.pdf",
+    "url": "https://www.jarl.com/shizuoka/35kiyaku.pdf",
+    "checked": "2026-09-14",
+    "sha256": "4d49bbffcc82f6e27d183a1ca9a46bf20db40215ebbece2015921ec85440548c",
+    "bytes": 157974
+  },
+  {
+    "file": "shizuoka_35_faq.pdf",
+    "url": "https://www.jarl.com/shizuoka/35QA3.pdf",
+    "checked": "2026-09-14",
+    "sha256": "13ab1d6d257a3636d4e92381fb3232a6744d70df27542a12d3d3a3fe2bf487ee",
+    "bytes": 148760
+  },
+  {
+    "file": "shizuoka_35_elog.pdf",
+    "url": "https://www.jarl.com/shizuoka/35ElogCyuui.pdf",
+    "checked": "2026-09-14",
+    "sha256": "5a40c5a2a6011789aa686c077c8469249ab25bea31fdacf82cb4f4d5321d52e5",
+    "bytes": 80998
+  },
+  {
+    "file": "shizuoka_2026_notices.html",
+    "url": "https://www.jarl.com/shizuoka/",
+    "checked": "2026-09-14",
+    "sha256": "6ed8a5668cc9e31be99db3a23391c356a0ee949750af1af2e95a3f2a329abb71",
+    "bytes": 39561
+  },
+  {
+    "file": "mie33_49_2026.pdf",
+    "url": "https://www.ztv.ne.jp/isoda/33/annual/49/49rule.pdf",
+    "checked": "2026-09-14",
+    "sha256": "4ec276471f981026e546cc430a418606f065a93465a6ed979dc659e2892188f4",
+    "bytes": 100171
+  },
+  {
+    "file": "mie33_index.html",
+    "url": "https://www.ztv.ne.jp/isoda/33/",
+    "checked": "2026-09-14",
+    "sha256": "af3e909d30ecdddacf4bf6e1fd8134799ae420f4d082fe7da06eb158ebb95aa2",
+    "bytes": 5738
+  },
+  {
+    "file": "mie33_faq.html",
+    "url": "https://www.ztv.ne.jp/isoda/33/doc/FAQ.html",
+    "checked": "2026-09-14",
+    "sha256": "e214dccf90c436e9aba3fcd73f08b684e835417349174bb4b59c5242d51c41fd",
+    "bytes": 3344
+  },
+  {
+    "file": "mie33_elog.html",
+    "url": "https://www.ztv.ne.jp/isoda/33/doc/elog35more.html",
+    "checked": "2026-09-14",
+    "sha256": "248f53015bd34801155a33340f5a2e123cef05e802852bf92a3e497af3ed3cc9",
+    "bytes": 2787
+  },
+  {
+    "file": "tsugarukaikyou_2026.html",
+    "url": "https://jarl-aomori.sakura.ne.jp/contest/tsugarukaikyou/",
+    "checked": "2026-09-14",
+    "sha256": "7bfb12b247b56b012085ea066a6e3791cc65ce82b332d71336799924b1f8cda3",
+    "bytes": 106104
+  },
+  {
+    "file": "all_yamaguchi_2026.pdf",
+    "url": "user attachment:2026oiddemaseallyamaguchicontestrule.pdf",
+    "checked": "2026-09-14",
+    "sha256": "3ea7f287312d93407fd3f0a4323bd6a697c9813b9873c28b76254658c4dd2134",
+    "bytes": 150854
+  },
+  {
+    "file": "all_yamaguchi_2026_web_note.txt",
+    "url": "https://jarl33yamaguchi.jimdofree.com/お知らせのコーナー/令和８年度の行事/第25回おいでませオール山口コンテスト規約/",
+    "checked": "2026-09-14",
+    "sha256": "d42e07a28fdc8ad502030a590c1f309bb566f1caf1b17fabb0cff6d3f11f97e0",
+    "bytes": 535
+  },
+  {
+    "file": "ja0_vhf_2026.pdf",
+    "url": "https://www.jarl.com/zerocontest/rule2026/ja0vhf2026.pdf",
+    "checked": "2026-09-14",
+    "sha256": "fd21cd860c129ee17c96395dd4887e85ce306049df3fc909dc980abdde55cda3",
+    "bytes": 206362
+  },
+  {
+    "file": "ja0_committee_20260709.pdf",
+    "url": "https://www.jarl.com/zerocontest/result2026/comment_2026.pdf",
+    "checked": "2026-09-14",
+    "sha256": "b1d7bbc0a04e540ea32dada1bb6c6a7b442f0f51d30204aef467c5587eaecc4e",
+    "bytes": 527728
+  },
+  {
+    "file": "kansai_vus_2026.html",
+    "url": "https://www.eonet.ne.jp/~ja3-test/kiyaku/ja3test_2026kiyaku.files/sheet001.htm",
+    "checked": "2026-09-14",
+    "sha256": "37a8df84659fea05e90f55a711a9a7bb43e5d9fcc84d3da70bc942d676b32400",
+    "bytes": 53693
+  },
+  {
+    "file": "all_gunma_2026.pdf",
+    "url": "https://agc.akagi76.com/wp-content/uploads/2026agcrule.pdf",
+    "checked": "2026-09-14",
+    "sha256": "519d86f844e79e849d99ad6d8f180b62ca0d29b90d705a8e8ca2f373877a1b57",
+    "bytes": 280188
+  },
+  {
+    "file": "scalg_6m_cw_2026.html",
+    "url": "https://scalg6mcw.web.fc2.com/2026_sc_kiyaku_01a.html",
+    "checked": "2026-09-14",
+    "sha256": "16a90c7cdb4860d9dfcb1592ca5ad89535358fa9794e8653581dad228f608d33",
+    "bytes": 11704
+  },
+  {
+    "file": "kcj_2026.pdf",
+    "url": "https://kcj-cw.com/contest/rule/2026_47_kcj_ja_t.pdf",
+    "checked": "2026-09-14",
+    "sha256": "2bd4411322ae4e8372d24313386328859e0a68e70af609797b8bdd4bf45956e1",
+    "bytes": 179221
+  },
+  {
+    "file": "kcj_submit_202608.pdf",
+    "url": "https://kcj-cw.com/contest/submit.pdf",
+    "checked": "2026-09-14",
+    "sha256": "de79bcc9e154cb034ea41adece240f3b6e452de730539f1c4900858d5156af00",
+    "bytes": 104224
+  },
+  {
+    "file": "kcj_topband_2026.pdf",
+    "url": "https://kcj-cw.com/contest/rule/2026_42_top_ja_t.pdf",
+    "checked": "2026-09-14",
+    "sha256": "dfd75ec3f215ca8bbdddae2f97b1bec04ad9f511218e25227731e79f43542bbb",
+    "bytes": 177904
+  },
+  {
+    "file": "cqww_rules_2025.html",
+    "url": "https://cqww.com/rules.htm",
+    "checked": "2026-09-14",
+    "sha256": "6b36ef3fedce125f75e1ac62c1dd931ee52236594f3f13d59ddf9563c8b1b900",
+    "bytes": 29845
+  },
+  {
+    "file": "cqww_rules_2025.txt",
+    "url": "https://cqww.com/rules.htm",
+    "checked": "2026-09-14",
+    "sha256": "77198b6234e92e6dc1ffe4e118dd6769df48c8240e652ef5a6bcc1fed2819f2c",
+    "bytes": 18757
+  },
+  {
+    "file": "cqww_rtty_rules_2026.html",
+    "url": "https://cqwwrtty.com/rules.htm",
+    "checked": "2026-09-14",
+    "sha256": "9539b2d4fa06f4ebb79e9688ff8df47fd9bd0eb163c6de86a336a5312d654145",
+    "bytes": 35593
+  },
+  {
+    "file": "cqww_rtty_rules_2026.txt",
+    "url": "https://cqwwrtty.com/rules.htm",
+    "checked": "2026-09-14",
+    "sha256": "a4235060988d6c2d3e9b2d0fe7390157eb37d4dc7c22432a8f0e0b0f97a5141e",
+    "bytes": 20488
+  },
+  {
+    "file": "cqww_cabrillo.html",
+    "url": "https://cqww.com/cabrillo.htm",
+    "checked": "2026-09-14",
+    "sha256": "dac58b4f86a32d482a05f53cdf899dd12637ba1b42cb26fe3839547ed770093c",
+    "bytes": 24710
+  },
+  {
+    "file": "cqww_cabrillo.txt",
+    "url": "https://cqww.com/cabrillo.htm",
+    "checked": "2026-09-14",
+    "sha256": "1a1a58f41fdd334c89a0d2c9e1712eb23411e1e58ec77eef96a6d526c425b2b0",
+    "bytes": 14872
+  },
+  {
+    "file": "cqww_rtty_cabrillo.html",
+    "url": "https://cqwwrtty.com/cabrillo.htm",
+    "checked": "2026-09-14",
+    "sha256": "16a31037e27540ce3e7975798ab6e5726bbcd7eac05b196177b826f768dd72f9",
+    "bytes": 14943
+  },
+  {
+    "file": "cqww_rtty_cabrillo.txt",
+    "url": "https://cqwwrtty.com/cabrillo.htm",
+    "checked": "2026-09-14",
+    "sha256": "955e5b3719f2be95cc1150cfd0df854a2771b7d08fb5c58f34c89bc1c6640291",
+    "bytes": 7796
+  },
+  {
+    "file": "cqvhf_rules_2026.html",
+    "url": "https://cqww-vhf.com/rules/",
+    "checked": "2026-09-14",
+    "sha256": "436fdc726128241b6d72673cf552ca7fc6ea56c1385821a08acf4e2d43f538da",
+    "bytes": 17535
+  },
+  {
+    "file": "cqvhf_cabrillo.html",
+    "url": "https://cqww-vhf.com/cabrillo.htm",
+    "checked": "2026-09-14",
+    "sha256": "8fab7890cd5879a1c0fc8b3e899a2371ea30aee421d8c5188feed13c1e7e963d",
+    "bytes": 12800
+  },
+  {
+    "file": "wwdigi_faq_web.txt",
+    "url": "https://ww-digi.com/rules_faq",
+    "checked": "2026-09-14",
+    "sha256": "bd66ce2658ed87a5595c7cf1c388f3d6e0b16df6f2b962850933fa1101ba53d1",
+    "bytes": 14337
+  },
+  {
+    "file": "cqvhf_cabrillo.txt",
+    "url": "https://cqww-vhf.com/cabrillo.htm",
+    "checked": "2026-09-14",
+    "sha256": "50772a3de4c92f813ef0a1b556539b433b81d79eaa1836edadc7ffc4647e3805",
+    "bytes": 6139
+  },
+  {
+    "file": "wpx_rtty_cabrillo.txt",
+    "url": "https://cqwpxrtty.com/cabrillo.htm",
+    "checked": "2026-09-14",
+    "sha256": "ff66bacb728fd3f8c7b49fbf184e2b45cca703b7a4dd146c76aef1689a643934",
+    "bytes": 6649
+  },
+  {
+    "file": "cq160_rules_2026.txt",
+    "url": "https://cq160.com/rules/index.htm",
+    "checked": "2026-09-14",
+    "sha256": "5e971b7bdfa34ddad3255b34d11b6c83af51ebf758f188fa3f2de6a1b90a8fee",
+    "bytes": 11992
+  },
+  {
+    "file": "wpx_cabrillo.txt",
+    "url": "https://cqwpx.com/cabrillo.htm",
+    "checked": "2026-09-14",
+    "sha256": "ab9718356942aad595c26ee7abffb2ba199739d8c75ff089027b1c20f9537f6d",
+    "bytes": 14258
+  },
+  {
+    "file": "wpx_rules_2026.html",
+    "url": "https://cqwpx.com/rules/",
+    "checked": "2026-09-14",
+    "sha256": "1b2462754d2543c2525fc962f3f282f379cee73b739e5b3b7536450803aabfe6",
+    "bytes": 31534
+  },
+  {
+    "file": "wwdigi_cabrillo_web.txt",
+    "url": "https://ww-digi.com/cabrillo.htm",
+    "checked": "2026-09-14",
+    "sha256": "91b60cc37f3a3d0f59ee2cabc809edb70d27f434633185bd73380be381f1f12e",
+    "bytes": 8712
+  },
+  {
+    "file": "wpx_rtty_rules_2026.txt",
+    "url": "https://cqwpxrtty.com/rules.htm",
+    "checked": "2026-09-14",
+    "sha256": "f0c3ef8f07984d954ce79bd698ee8f0ee0b5440fc793d58a4a88a655e0c37b84",
+    "bytes": 19347
+  },
+  {
+    "file": "cqvhf_rules_2026.txt",
+    "url": "https://cqww-vhf.com/rules/",
+    "checked": "2026-09-14",
+    "sha256": "4c5f606734741a80b8434cbe7fc051207eefcd3392d2b80508fc77817fb99bf4",
+    "bytes": 10358
+  },
+  {
+    "file": "wpx_rules_2026.txt",
+    "url": "https://cqwpx.com/rules/",
+    "checked": "2026-09-14",
+    "sha256": "cdd9da26b715f423cffb81a4b93c626200f93f991e345c82923baa2862c61190",
+    "bytes": 20319
+  },
+  {
+    "file": "cq160_cabrillo.html",
+    "url": "https://cq160.com/cabrillo.htm",
+    "checked": "2026-09-14",
+    "sha256": "b5a02a3db183aa426136d70adf0708d42b2ba54f096f8d613740b1125c6c9e56",
+    "bytes": 20584
+  },
+  {
+    "file": "wpx_rtty_cabrillo.html",
+    "url": "https://cqwpxrtty.com/cabrillo.htm",
+    "checked": "2026-09-14",
+    "sha256": "a6604b070b4bb3af36cd3682edd6f0459160c0a5330f05efed2709a255ff3d54",
+    "bytes": 13385
+  },
+  {
+    "file": "cq160_cabrillo.txt",
+    "url": "https://cq160.com/cabrillo.htm",
+    "checked": "2026-09-14",
+    "sha256": "fdacd0500ffd61d7278e4606303b1bee995a741a8b27b21787ac5bc626e8dab2",
+    "bytes": 11866
+  },
+  {
+    "file": "cq160_rules_2026.html",
+    "url": "https://cq160.com/rules/index.htm",
+    "checked": "2026-09-14",
+    "sha256": "9224cd98cd79f012be60e18c30b97caebaaaf582b2754c90a3a58f9811fce82c",
+    "bytes": 18942
+  },
+  {
+    "file": "wwdigi_rules_web_2026.txt",
+    "url": "https://ww-digi.com/rules/",
+    "checked": "2026-09-14",
+    "sha256": "ae35556434da8ceebdc910f420219ff14a325f2cf67e43777cbb0750837f2e69",
+    "bytes": 18510
+  },
+  {
+    "file": "wpx_rtty_rules_2026.html",
+    "url": "https://cqwpxrtty.com/rules.htm",
+    "checked": "2026-09-14",
+    "sha256": "6b8d012b48fe6a1533650044e7ff1cd1ede5b3071ae6aba5ed22fa1bc9b7b0d8",
+    "bytes": 31921
+  },
+  {
+    "file": "wpx_cabrillo.html",
+    "url": "https://cqwpx.com/cabrillo.htm",
+    "checked": "2026-09-14",
+    "sha256": "518e6f93a4faa440fa84c719f5447ec09dde36224294757c1cbd57cde6c27c02",
+    "bytes": 24211
+  }
+]

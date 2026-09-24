@@ -1,0 +1,14 @@
+{
+  "source": "cqvhf_rules_2026.txt",
+  "inside": [],
+  "outside": [],
+  "id": "cq-vhf-digi",
+  "year": 2026,
+  "municipal_source_versions": {
+    "jcc": "2019-05-01",
+    "jcg": "2018-10-01",
+    "ward": "2024-01-01",
+    "history": "2024-01-01"
+  },
+  "sha256": "4c5f606734741a80b8434cbe7fc051207eefcd3392d2b80508fc77817fb99bf4"
+}

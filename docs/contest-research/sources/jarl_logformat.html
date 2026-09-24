@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>電子ログのフォーマット</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css" type="text/css"/>
+</head>
+<body>
+  <!-- トップバナー -->
+  <div class="top-banner">
+    <div class="banner-title"><a href="index.html">JARLコンテスト</a></div>
+    <div class="menu-item">
+    <a href="https://www.jarl.org/index.html">JARL HOME</a>
+    </div>
+    <div class="menu-item">
+    <a href="index.html">コンテスト HOME</a>
+    </div>
+    <div class="menu-item">
+      <a href="#">コンテスト規約</a>
+      <div class="dropdown">
+        <a href="qso_party.html">QSOパーティ</a>
+        <a href="allja_rules.html">ALL JA</a>
+        <a href="aadx_rules.html">ALL ASIAN DX</a>
+        <a href="6d_rules.html">6m AND DOWN</a>
+        <a href="fd_rules.html">フィールドデー</a>
+        <a href="acag_rules.html">全市全郡</a>
+      </div>
+    </div> 
+    <div class="menu-item">
+      <a href="https://contest.jarl.org/upload-redirect.html">電子ログアップロード</a>
+      </div>
+    <div class="menu-item">
+      <a href="#">最新コンテスト結果</a>
+      <div class="dropdown">
+ 	<a href="https://www.jarl.org/Japanese/1_Tanoshimo/1-1_Contest/qp/2025/qsop25.htm">2025 QSOパーティ</a>
+	<a href="https://www.jarl.org/Japanese/1_Tanoshimo/1-1_Contest/all_ja/2025/index.html">2025 ALL JA</a>
+	<a href="https://www.jarl.org/Japanese/1_Tanoshimo/1-1_Contest/all_asian/AA2025-index1.html">2025 ALL ASIAN DX</a>
+	<a href="https://www.jarl.org/Japanese/1_Tanoshimo/1-1_Contest/6m/2025/index.html">2025 6m AND DOWN</a>
+	<a href="https://www.jarl.org/Japanese/1_Tanoshimo/1-1_Contest/fd/2025/index.html">2025 フィールドデー</a>
+	<a href="https://www.jarl.org/Japanese/1_Tanoshimo/1-1_Contest/all_cg/2025/index.html">2025 全市全郡</a>
+      </div>
+      </div>
+	<div class="menu-item"><a href="q_and_a.html">FAQ</a></div>
+    <div class="menu-item"><a href="https://contest.jarl.org/cntdb/">スコア・データベース</a></div>
+    <div class="menu-item"><a href="contact.php">お問い合わせ</a></div>
+<form id="google-search-form" class="google-search-form" method="get" action="https://www.google.com/search" target="_blank">
+  <input type="text" id="search-box" placeholder="キーワードを入力" required>
+  <button type="submit">🔍 検索</button>
+</form>
+  </div>
+  <div class="notice-section">
+	<a name="PageTop"></a>
+  <div class="notice-section">
+	<a name="PageTop"></a>
+    <main class="container">
+<h1>電子ログのフォーマット</h1>
+<p>
+電子ログのフォーマットについて説明します。
+</p>
+<h2>サマリーシートの部分</h2>
+<p>電子ログ提出にあたっては、VERSION=R2.1を使用してください
+（R1.0、R2.0のバージョンでも受付けますが、R2.1の使用を推奨します）。
+</p>
+表1にサマリーシートのフォーマットを、表2に各タグ記載内容の詳細説明を記載します。
+
+サマリーシートは
+<pre>
+&lt;SUMMARYSHEET VERSION=R2.1&gt;
+</pre>
+という行で始めて、
+<pre>
+&lt;/SUMMARYSHEET&gt;
+</pre>
+という行で終わります。
+</p><p>
+これらの&lt;SUMMARYSHEET VERSION=R2.1&gt;行と&lt;/SUMMARYSHEET&gt;行の間に、各項目（表1の赤字部分）を各自の参加結果に従って記入します。</p>
+<p>各項目は、下記の注意事項を守って記入してください。</p>
+<ul>
+<li>各項目の順序は任意です。
+<li>記入する内容がない項目（ALL JAコンテストに提出する場合のフィールドデーコンテストの場合の局種係数の項目など）は その行自体を記載せず省略できます。
+<li>英数字記号（&lt;、&gt;、/）は必ず半角文字を使用してください。
+<li>得点や交信局数等の数値の入力の際には、3桁区切りは入れないでください。
+<li>行が長くなって途中で改行が入っても問題ありませんが、タグ&lt;・・・&gt;の途中で改行しないようにしてください。
+</ul>
+
+<h3>【表1】サマリーシートのフォーマット</h3>
+<pre>
+&lt;SUMMARYSHEET VERSION=R2.1&gt;
+&lt;CONTESTNAME&gt;コンテストの名称&lt;/CONTESTNAME&gt;
+&lt;CATEGORYCODE&gt;参加部門種目コードナンバー&lt;/CATEGORYCODE&gt;
+&lt;CALLSIGN&gt;コールサイン&lt;/CALLSIGN&gt;
+&lt;OPCALLSIGN&gt;ゲストオペ運用者のコールサイン&lt;/OPCALLSIGN&gt;
+&lt;TOTALSCORE&gt;総得点&lt;/TOTALSCORE&gt;
+&lt;ADDRESS&gt;連絡先住所&lt;/ADDRESS&gt;
+&lt;NAME&gt;氏名(クラブ局の名称)&lt;/NAME&gt;
+&lt;TEL&gt;電話番号&lt;/TEL&gt;
+&lt;EMAIL&gt;E-mailアドレス&lt;/EMAIL&gt;
+&lt;LICENSEDATE&gt;局免許年月日&lt;/LICENSEDATE&gt;
+&lt;AGE&gt;年齢&lt;/AGE&gt;
+&lt;POWER&gt;コンテスト中使用した最大空中線電力(W)&lt;/POWER&gt;
+&lt;FDCOEFF&gt;フィールドデーコンテストの場合の局種係数&lt;/FDCOEFF&gt;
+&lt;OPPLACE&gt;運用地&lt;/OPPLACE&gt;
+&lt;POWERSUPPLY&gt;使用電源&lt;/POWERSUPPLY&gt;
+&lt;COMMENTS&gt;意見&lt;/COMMENTS&gt;
+&lt;MULTIOPLIST&gt;マルチオペ種目運用者のコールサインまたは氏名&lt;/MULTIOPLIST&gt;
+&lt;REGCLUBNUMBER&gt;登録クラブ番号&lt;/REGCLUBNUMBER&gt;
+&lt;OATH&gt;宣誓文&lt;/OATH&gt;
+&lt;DATE&gt;日付&lt;/DATE&gt;
+&lt;SIGNATURE&gt;署名&lt;/SIGNATURE&gt;
+&lt;/SUMMARYSHEET&gt;
+</pre>
+ 
+<h3>【表2】タグの内容詳細説明</h3>
+<table>
+  <tr>
+    <td>タグ</td><td>必須／任意</td><td>説明</td>
+</tr>
+<tr><td>&lt;CONTESTNAME&gt;</td><td>必須</td><td>ログ提出するコンテストの名称を記入</td></tr>
+<tr><td>&lt;CATEGORYCODE&gt;</td><td>必須</td><td>コンテスト規約中の「参加部門および種目」の表中の「コードナンバー」を記入</td></tr>
+<tr><td>&lt;CALLSIGN&gt;</td><td>必須</td><td>ログを提出する局のコールサインを記入</td></tr>
+<tr><td>&lt;OPCALLSIGN&gt;</td><td>任意</td><td>シングルオペ種目でゲストオペを行った場合、ゲストオペ運用者のコールサインを記入。例えば、7K6ABCを7K6XYZが運用した場合、7K6XYZをここに入れる。シングルオペ種目でゲストオペでない場合は不要。</td></tr>
+<tr><td>&lt;TOTALSCORE&gt;</td><td>必須</td><td>総得点を記入</td></tr>
+<tr><td>&lt;ADDRESS&gt;</td><td>必須</td><td>連絡先住所を記入。</td></tr>
+<tr><td>&lt;NAME&gt;</td><td>必須</td><td>氏名を記入。クラブ局の場合はクラブ局名称を記入。</td></tr>
+<tr><td>&lt;TEL&gt;</td><td>任意</td><td>ログ審査の連絡に必要となることがあるので記入。</td></tr>
+<tr><td>&lt;EMAIL&gt;</td><td>任意（電子ログでは必須）</td><td>ログ審査時の連絡やLCR（Log Check Report）を送付するために必要なので記入。</td></tr>
+<tr><td>&lt;LICENSEDATE&gt;</td><td>PN必須</td><td>ニューカマー種目（PN）のみ。局免許年月日を入力</td></tr>
+<tr><td>&lt;AGE&gt;</td><td>CS、XS、SOSV、SOJR必須</td><td>シルバー種目（CS、XS、SOSV）、ジュニア種目（SOJR）のみ。年齢を記入。</td></tr>
+<tr><td>&lt;POWER&gt;</td><td>必須</td><td>コンテスト中使用した最大の空中線電力(W) を記入。SWL種目では省略、空白、または0とする。</td></tr>
+<tr><td>&lt;FDCOEFF&gt;</td><td>FD必須</td><td>FDコンテスト時の局種係数を規約に従って記入する。FDコンテスト以外は不要。</td></tr>
+<tr><td>&lt;OPPLACE&gt;</td><td>FD必須</td><td>運用地。運用地が設置場所または常置場所と異なる場合はFD以外も記入必須。</td></tr>
+<tr><td>&lt;POWERSUPPLY&gt;</td><td>FD必須</td><td>FDのみ。使用した電源。フィールドデーステーションAでは、電池、発動発電機など、移動用電源であることが分かるように記入。商用電源使用時は不要。FDコンテスト以外は不要。</td></tr>
+<tr><td>&lt;COMMENTS&gt;</td><td>任意</td><td>感想や意見が有れば記入。</td></tr>
+<tr><td>&lt;MULTIOPLIST&gt;</td><td>マルチオペ必須</td><td>マルチオペ種目運用者のコールサインまたは氏名を記入。シングルオペ種目の場合は不要。</td></tr>
+<tr><td>&lt;REGCLUBNUMBER&gt;</td><td>任意</td><td>登録クラブ番号を記入。</td></tr>
+<tr><td>&lt;OATH&gt;</td><td>必須</td><td>宣誓文。必ず下記例通りの文面で記入。</td></tr>
+<tr><td colspan="3">私は、JARL制定のコンテスト規約および 電波法令にしたがい運用した結果、ここに提出する サマリーシートおよびログシートなどが事実と相違ないものであることを、私の名誉において誓います。</td></tr>
+<tr><td>&lt;DATE&gt;</td><td>必須</td><td>宣誓、署名した年月日を記入。</td></tr>
+<tr><td>&lt;SIGNATURE&gt;</td><td>必須</td><td>宣誓者の氏名を記入。</td></tr>
+</table>
+ 
+<h2>ログシート</h2>
+<p>サマリーシートに続けてログシートのデータを記載します。</p>
+<p>表3にログシート部分に記述する項目と説明を示します。</p>
+<p>
+ログシートの部分は、
+<pre>
+&lt;LOGSHEET TYPE="使用ログソフト"&gt;
+</pre>
+という行で始めて、
+<pre>
+&lt;/LOGSHEET&gt;
+</pre>
+<p>という行で終わり、それらの行の間にログソフトで作成したテキストファイル形式のログデータ本体をそのまま置いてください。</p>
+<p>&lt;LOGSHEET TYPE="使用ログソフト"&gt; の「使用ログソフト」部分には、ログデータの作成に使用したログソフトまたは任意の文字列を記入してください。</p>
+<p>（例）</p>
+<pre style="font-family: sans-serif;">
+&lt;LOGSHEET TYPE="CTESTWIN"&gt;
+&lt;LOGSHEET TYPE="N1MM+"&gt;
+&lt;LOGSHEET TYPE="ZLOG"&gt;
+&lt;LOGSHEET TYPE="自作"&gt;
+</pre>
+など
+<p>
+ログデータ本体は、表3、表4に示すJARL形式、またはCabrillo形式を推奨します。</p>
+<p>下記の注意事項を守って記入してください。</p>
+<ul>
+<li>1交信を1行に記入。
+<li>英数字半角を使用。空白も含めて全角（2バイト）文字は使用しないでください（QSOパーティを除く）。
+<li>各項目間の区切り文字（デリミタ）には、連続する1個以上の空白およびタブを使用する。
+<li>時刻は、国内コンテストではJST、ALL ASIAN DXコンテストではUTCで記入
+（UTCで記入したログを、「電子ログサマリー作成ページ」からJSTに変換してアップロードすることもできます。詳しくは「Cabrillo形式、時刻をUTCで記入したログの提出方法」を参照してください）。
+<li>コールサインのプリフィックスとサフィックス間に空白を入れない（[ ]は空白）。<br />
+（×）JA1[ ]RL →　（○)JA1RL
+<li>RS(T)レポートとナンバーの間は半角の空白を入れる。<br />
+（×）59911L →（○)599[ ]11L
+<li>ナンバーとパワーコード間に空白を入れない。<br />
+（×）11[ ]M →（○)11M
+</ul>
+【表3】項目の説明
+<table class="table table-striped">
+<thead>
+  <tr><th scope="col" style="width:6rem;">タグ</th>
+  <th scope="col" style="width:7rem;">書式</th>
+  <th scope="col" style="width:5rem;">必須／任意</th>
+  <th score="col">説明</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>年月日</td><td>YYYY-MM-DD</td><td>必須　　　　</td><td>西暦年4桁、月2桁、日2桁をハイフンでつなぐ</td></tr>
+<tr><td>時分</td><td>hh:mm</td><td>必須</td><td>国内コンテストはJST、ALL ASIAN DXコンテストはUTC</td></tr>
+<tr><td>バンド</td><td>XX</td><td>必須</td><td>MHz単位で記入。1200MHz以上はGHz単位も可</td></tr>
+<tr><td>モード</td><td>##<td>必須</td><td>CW/SSB/AM/FM/DV（D-STAR）</td></tr>
+<tr><td>交信局</td><td>##<td>必須</td><td>相手局コールサイン</td></tr>
+<tr><td>送信RST</td><td>XX(X)</td><td>必須</td><td>送信したシグナルレポート</td></tr>
+<tr><td>送信ナンバー</td><td>##<td>必須</td><td>コンテストナンバーからシグナルレポートを除いたもの。59920Lなら20L</td></tr>
+<tr><td>受信RST</td><td>XX(X)</td><td>必須</td><td>受信したシグナルレポート</td></tr>
+<tr><td>受信ナンバー</td><td>##<td>必須</td><td>コンテストナンバーからシグナルレポートを除いたもの。59925Hなら25H</td></tr>
+<tr><td>マルチ</td><td>XX</td><td>任意</td><td>ログ審査では全QSOの再チェックを行うので記入してもしなくても良い</td></tr>
+<tr><td>得点</td><td>XX</td><td>任意</td><td>ログ審査では全QSOの再チェックを行うので記入してもしなくても良い</td></tr>
+</tbody>
+</table>
+ 
+<h3>【表4】ログシートの記入例</h3>
+<p>
+  例1．各項目の先頭をそろえた場合
+</p>
+<pre>
+2016-04-23 21:53 50  SSB JA2Y** 59  20L 59  20L 20 1
+2016-04-23 22:02 144 SSB JA2*** 59  20L 59  20L -  1
+2016-04-23 22:15 7   CW  JE3*** 599 20M 599 25M 25 1
+</pre>
+<p>
+  例2．各項目を半角空けた場合
+  </p>
+<pre>
+2016-04-23 21:53 50 SSB JA2Y** 59 20L 59 20L 20 1
+2016-04-23 22:02 144 SSB JA2*** 59 20L 59 20L - 1
+2016-04-23 22:15 7 CW JE3*** 599 20M 599 25M 25 1
+</pre>
+
+<p>例3．任意項目のマルチと得点を記入しない場合</p>
+<pre>
+2016-04-23 21:53 50  SSB JA2Y** 59  20L  59  20L
+2016-04-23 22:02 144 SSB JA2*** 59  20L  59  20L
+2016-04-23 22:15 7   CW  JE3*** 599 20M  599 25M
+</pre>
+
+<h3>推奨形式以外のログシート形式</h3>
+使用しているログソフトが推奨形式を出力しない場合でも以下の約束を守っていただければ受け付けられます。自作の場合も同様です。
+<li>1 QSO 1行であること
+<li>全角（2バイト）文字は使用しない（QSOパーティを除く）
+<li>項目が区切り文字（半角の空白、等）で区切られていること。区切り文字としてカンマも使用可
+<li>各行には表3で示した必須項目がすべて含まれていること
+<li>コンテストナンバーの記載順は、送信ナンバーを先、受信ナンバーを後とすること
+<li>項目はすべての行で同じ順に並んでいること。上の行と同じ内容であっても省略せずに記入すること
+
+<h3>サマリーシート・ログシートの例</h3>
+
+<p>表5、表6に、サマリー・ログシートの例を示します。</p>
+<p>【表5】サマリーシート・ログシート例（ALL JAの場合）</p>
+<pre>
+&lt;SUMMARYSHEET VERSION=R2.1&gt;
+&lt;CONTESTNAME&gt;ALL JAコンテスト&lt;/CONTESTNAME&gt;
+&lt;CATEGORYCODE&gt;XS&lt;/CATEGORYCODE&gt;
+&lt;CALLSIGN&gt;7K6ABC/1&lt;/CALLSIGN&gt;
+&lt;OPCALLSIGN&gt;7K6XYZ&lt;/OPCALLSIGN&gt;
+&lt;TOTALSCORE&gt;184338&lt;/TOTALSCORE&gt;
+&lt;ADDRESS&gt;〒170-8073 東京都豊島区南大塚3-43-1&lt;/ADDRESS&gt;
+&lt;NAME&gt;大塚 太郎&lt;/NAME&gt;
+&lt;TEL&gt;01-2345-6789&lt;/TEL&gt;
+&lt;EMAIL&gt;7k6abc@jarl.com&lt;/EMAIL&gt;
+&lt;AGE&gt;73&lt;/AGE&gt;  
+&lt;POWER&gt;50&lt;/POWER&gt;
+&lt;COMMENTS&gt;過去の自己記録を更新することができました。&lt;/COMMENTS&gt;
+&lt;REGCLUBNUMBER&gt;10-*-***&lt;/REGCLUBNUMBER&gt;
+&lt;OATH&gt;私は、JARL制定のコンテスト規約および電波法令にしたがい運用した結果、
+ここに提出するサマリーシートおよびログシートなどが事実と相違ないものであることを、
+私の名誉において誓います。&lt;/OATH&gt;
+&lt;DATE&gt;20**年5月12日&lt;/DATE&gt;
+&lt;SIGNATURE&gt;大塚 太郎&lt;/SIGNATURE&gt;
+&lt;/SUMMARYSHEET&gt;
+&lt;LOGSHEET TYPE="自作"&gt;
+DATE(JST)  TIME  BAND MODE CALLSIGN SENTNo   RCVDNo 
+20**-04-28 22:54 7    SSB  JM1***   59  10L  59  13M 
+20**-04-28 22:55 7    SSB  JK1***   59  10M  59  10M 
+〜〜〜〜〜〜〜〜〜〜〜〜〜〜　　中略　　〜〜〜〜〜〜〜〜〜〜〜〜〜〜　
+20**-04-29 21:53 50   SSB  JA2Y**   59  10L  59  20L 
+20**-04-29 22:02 144  SSB  JA2***   59  10L  59  20L 
+20**-04-29 22:15 7    CW   JE3***   599 10M  599 25M 
+&lt;/LOGSHEET&gt; 
+</pre>
+
+<p>【表6】サマリーシート・ログシート例（フィールドデーコンテストの場合）</p>
+<pre>
+&lt;SUMMARYSHEET VERSION=R2.1&gt;
+&lt;CONTESTNAME&gt;フィールドデーコンテスト&lt;/CONTESTNAME&gt;
+&lt;CATEGORYCODE&gt;PN&lt;/CATEGORYCODE&gt;
+&lt;CALLSIGN&gt;7K6ABC/1&lt;/CALLSIGN&gt;
+&lt;TOTALSCORE&gt;184338&lt;/TOTALSCORE&gt;
+&lt;ADDRESS&gt;〒170-8073 東京都豊島区南大塚3-43-1&lt;/ADDRESS&gt;
+&lt;NAME&gt;大塚 太郎&lt;/NAME&gt;
+&lt;TEL&gt;01-2345-6789&lt;/TEL&gt;
+&lt;EMAIL&gt;7k6abc@jarl.com&lt;/EMAIL&gt;
+&lt;LICENSEDATE&gt;2022年01月10日&lt;/LICENSEDATE&gt;
+&lt;POWER&gt;10&lt;/POWER&gt;
+&lt;FDCOEFF&gt;2&lt;/FDCOEFF&gt;
+&lt;OPPLACE&gt;秩父郡堂平山&lt;/OPPLACE&gt;
+&lt;POWERSUPPLY&gt;発動発電機&lt;/POWERSUPPLY&gt;
+&lt;COMMENTS&gt;暑かったけど50MHzのコンディションが良くて楽しめました。&lt;/COMMENTS&gt;
+&lt;REGCLUBNUMBER&gt;10-*-***&lt;/REGCLUBNUMBER&gt;
+&lt;OATH&gt;私は、JARL制定のコンテスト規約および電波法令にしたがい運用した結果、
+ここに提出するサマリーシートおよびログシートなどが事実と相違ないものであることを、
+私の名誉において誓います。&lt;/OATH&gt;
+&lt;DATE&gt;20**年8月12日&lt;/DATE&gt;
+&lt;SIGNATURE&gt;大塚 太郎&lt;/SIGNATURE&gt;
+&lt;/SUMMARYSHEET&gt;
+&lt;LOGSHEET TYPE="自作"&gt;
+DATE(JST) TIME BAND MODE CALLSIGN SENTNo RCVDNo Multi PTS 
+20**-08-03 19:54 7 SSB JM1*** 59 13L 59 13M 13 1 
+20**-08-03 19:55 7 SSB JK1*** 59 13M 59 10M 10 1 
+〜〜〜〜〜〜〜〜〜〜〜〜〜〜　　中略　　〜〜〜〜〜〜〜〜〜〜〜〜〜〜　
+20**-08-03 21:53 50 SSB JA2Y** 59 13L 59 20L 20 1 
+20**-08-03 22:02 144 SSB JA2*** 59 13L 59 20L - 1 
+20**-08-03 22:15 7 CW JE3*** 599 13M 599 25M 25 1
+&lt;/LOGSHEET&gt; 
+</pre>
+</div>
+</div>
+<footer>
+    <a href="https://www.jarl.org/"><p><font color="white">JARL HOME</a> | <a href="index.html">コンテストHOME</a><br />&copy; 2025 日本アマチュア無線連盟</font></p>
+    </footer>
+<!-- ページトップへ -->
+<button id="back-to-top" onclick="scrollToTop()">
+    <svg viewBox="0 0 24 24">
+      <path d="M12 4l-8 8h6v8h4v-8h6z"/>
+    </svg>PAGE TOP
+</button>
+<script src="script.js"></script>
+    </body>
+</html>

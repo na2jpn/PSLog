@@ -1,0 +1,233 @@
+CQ VHF  - Cabrillo Log Format
+Other Contests:
+CQ WW
+CQ WPX
+CQ WW RTTY
+CQ WPX RTTY
+CQ 160
+CQ VHF
+WW DIGI
+CQ World Wide VHF Contest
+Show navigation
+Hide navigation
+Home
+Rules
+Rules
+Rules (pdf)
+Rules Archive
+Plaques
+Results
+Results Articles
+Final Scores SSB/CW
+Final Scores Digital
+Final Scores (2000-2024)
+Club Scores
+Scatter Comments
+Entry Statistics
+Records
+Records SSB/CW
+Records Digital
+Records (2000-2024)
+Logs
+How to Submit Your Log
+Cabrillo Log Upload
+ADIF Log Converter
+Cabrillo File Format
+Logging FT8 QSOs
+Club Names
+Logs Received - Digital
+Logs Received - SSB/CW
+Contact Us
+Contact Form
+Organization
+$( function()
+	{
+		$( '#nav li:has(ul)' ).doubleTapToGo();
+	});
+Cabrillo Log Format for the CQ WW VHF Contest
+Cabrillo refers to a universal log file format managed by the
+World Wide Radio Operators Foundation
+(WWROF). 	Cabrillo is the required format for CQ WW DX Contest logs.
+There are two versions of the Cabrillo log file format. The CQ WW VHF Contest accepts both Cabrillo v2 
+and v3 format files. One of the major changes from v2 to v3 was in the way categories are specified. 
+We strongly request that you submit logs using the Cabrillo v3 format if possible.
+[
+Jump to Cabrillo v2
+]
+Cabrillo Version 3 Header for the CQ WW DX Contest
+Below is an example of a Cabrillo v3 file for the CQ WW VHF Contest.
+START-OF-LOG: 3.0
+CONTEST: CQ-VHF-SSBCW
+CALLSIGN: AA1ZZZ
+LOCATION: WMA
+CATEGORY-OPERATOR: SINGLE-OP
+CATEGORY-BAND: ALL
+CATEGORY-POWER: HIGH
+CATEGORY-MODE: SSB
+CATEGORY-TRANSMITTER: ONE
+CLAIMED-SCORE: 9447
+CLUB: My Contest Club
+CREATED-BY: SuperLogger v1.0
+NAME: John Smith
+ADDRESS: 100 Main St
+ADDRESS-CITY: Uxbridge
+ADDRESS-STATE-PROVINCE: MA
+ADDRESS-POSTALCODE: 01569
+ADDRESS-COUNTRY: USA
+OPERATORS: K5ZD
+SOAPBOX: Put your comments here.
+SOAPBOX: Use multiple lines if needed.
+QSO:  50  CW  2001-07-17 1817 AA1ZZZ  FN31    W2AJM  FN21
+QSO:  50  PH  2001-07-17 1819 AA1ZZZ  FN31    N1DMJ  FN32
+QSO: 144  PH  2001-07-17 1826 AA1ZZZ  FN31    W1XX   FN31
+END-OF-LOG:
+The format for each line is
+<LABEL>
+: followed by a space.
+START-OF-LOG:
+version-number X.X
+Must be the first line of the log submission. This file is version 3.0.
+CALLSIGN:
+callsign
+The callsign used during the contest.
+CONTEST:
+contest-name
+The contest-name must be:
+CQ-VHF-SSBCW
+CQ-VHF-DIGI
+Be sure to use hyphens as shown.
+CATEGORY-OPERATOR:
+text
+The category-operator
+must
+be one of the following.
+SINGLE-OP
+ROVER
+HILLTOPPER
+MULTI-OP
+CHECKLOG
+CATEGORY-BAND:
+text
+The category-band must be one of the following. If you are entering an all 
+band category, use ALL, otherwise select one of the individual bands shown.
+ALL
+6M
+2M
+CATEGORY-POWER:
+text
+The category-power must be one of the following.
+HIGH
+LOW
+QRP
+CATEGORY-MODE:
+text
+The category-mode must be one of the following.
+SSB
+CW
+DG
+FM
+MIXED
+CLAIMED-SCORE:
+integer
+The claimed-score of the log submission, in integer form such as 1217315 
+or 19113 or 12. Do not include commas or other text.
+CLUB:
+text
+Name of the radio club with which the score should be aggregated.
+PLEASE 
+SPELL OUT THE CLUB NAME!
+(See
+list of active club names
+.)
+CREATED-BY
+:
+text
+Name and version of the logging program used to create the Cabrillo file. 
+(This field is optional.)
+LOCATION:
+text
+USA and Canada stations please put your State, Province, or ARRL Section. 
+All others please put DX. (See
+list of accepted entries
+.)
+EMAIL:
+text
+A place to put an email address where we can contact you if there is a question 
+about your log. This field is required.
+NAME
+:
+text
+Name. Maximum of 75 characters long.
+ADDRESS
+:
+text
+Mailing address, each line should be a maximum of 45 characters long. Up 
+to 6 address lines are permitted.
+ADDRESS-CITY:
+text
+ADDRESS-STATE-PROVINCE:
+text
+ADDRESS-POSTALCODE:
+text
+Optional fields for providing mailing address details.
+ADDRESS-COUNTRY:
+text
+US Postal Service name for the country of your mailing address.
+OPERATORS:
+callsign1 [callsign2 callsign3...]
+A space-delimited list of operator callsigns for multi operator stations, 
+or single operator entries who wish to show they operated at another station.  
+If you operated at another station, you may list it by prepending an @ sign, 
+e.g., W1ABC, W2DEF, W3GHI @W3BGN.
+NOTE:
+If you select a multi-operator 
+category and do not enter operator callsigns in this field, the robot will 
+reject your log.
+Please use a space or a comma between the operator calls.
+SOAPBOX
+:
+text
+Enter as many lines of soapbox text as you wish. Each line is a maximum 
+of 75 characters long and must begin with SOAPBOX: followed by a space.
+X-<anything>:
+text
+Lines beginning with X- are ignored by the robot and log checking software.  
+Use this for adding comment lines to your log.
+Exception:
+See X-QSO below.
+QSO
+:
+qso-data
+The qso-data format is shown below.
+--------info sent------- -------info rcvd--------
+QSO: band  mo date       time sent call  sent QRA rcvd call  rcvd QRA 
+QSO: ***** ** yyyy-mm-dd nnnn *********  ****     *********  ****
+QSO:  144  PH 2000-11-26 0711 W1XX       FN41     JT1Z/P     IN56
+000000000111111111122222222223333333333444444444455555555556666666666777777777788
+123456789012345678901234567890123456789012345678901234567890123456789012345678901
+Valid entries in the mode field for the SSB/CW contest are CW, FM and PH.  Valid entry in the mode field 
+for the DIGITAL contest is DG.
+Note: The CQ WW VHF log checking software uses spaces for delimiters 
+between fields. It is not necessary for all columns to line up in the 
+columns shown above.
+X-QSO
+:
+qso-data
+Any QSO marked with this tag will be ignored in your log and credit will 
+be given to the other station.
+END-OF-LOG:
+Must be the last line of the log submission.
+More Information about Cabrillo
+The CQ WW VHF Contest only recognizes the Cabrillo fields shown on this page. 
+The complete Cabrillo specification can be found at
+https://wwrof.org/cabrillo/
+.
+Copyright © 
+2011-2026
+World Wide Radio Operators Foundation, Inc.
+. All Rights Reserved.
+window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-W8W699LCG0');

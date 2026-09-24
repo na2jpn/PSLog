@@ -1,0 +1,14 @@
+{
+  "source": "cq160_rules_2026.txt",
+  "inside": [],
+  "outside": [],
+  "id": "cq-160-ssb",
+  "year": 2026,
+  "municipal_source_versions": {
+    "jcc": "2019-05-01",
+    "jcg": "2018-10-01",
+    "ward": "2024-01-01",
+    "history": "2024-01-01"
+  },
+  "sha256": "5e971b7bdfa34ddad3255b34d11b6c83af51ebf758f188fa3f2de6a1b90a8fee"
+}

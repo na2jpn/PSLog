@@ -1,0 +1,14 @@
+{
+  "source": "aadx_2026.html",
+  "inside": [],
+  "outside": [],
+  "id": "all_asian_dx_cw",
+  "year": 2026,
+  "municipal_source_versions": {
+    "jcc": "2019-05-01",
+    "jcg": "2018-10-01",
+    "ward": "2024-01-01",
+    "history": "2024-01-01"
+  },
+  "sha256": "2e47143d934fec044210c2de35a1ed8302f01334d4f37f94bef98f578d174e3b"
+}

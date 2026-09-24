@@ -1,0 +1,258 @@
+{
+  "schema": 1,
+  "id": "cq-ww-ssb_2025",
+  "name": "CQ World Wide SSB 2025",
+  "year": 2025,
+  "url": "https://cqww.com/cabrillo.htm",
+  "version": "3.0",
+  "contest": "CQ-WW-SSB",
+  "encoding": "ascii",
+  "frequency": "actual",
+  "rule_id": "cq-ww-ssb",
+  "headers": [
+    {
+      "tag": "CATEGORY-OPERATOR",
+      "required": true,
+      "default": "SINGLE-OP",
+      "choices": [
+        "SINGLE-OP",
+        "MULTI-OP",
+        "CHECKLOG",
+        "ROVER",
+        "HILLTOPPER"
+      ]
+    },
+    {
+      "tag": "CATEGORY-BAND",
+      "required": true,
+      "default": "ALL",
+      "choices": []
+    },
+    {
+      "tag": "CATEGORY-POWER",
+      "required": true,
+      "default": "LOW",
+      "choices": [
+        "HIGH",
+        "LOW",
+        "QRP"
+      ]
+    },
+    {
+      "tag": "CATEGORY-MODE",
+      "required": true,
+      "default": "SSB",
+      "choices": [
+        "CW",
+        "SSB",
+        "RTTY",
+        "FM",
+        "DIGI",
+        "DG",
+        "MIXED"
+      ]
+    },
+    {
+      "tag": "CATEGORY-ASSISTED",
+      "required": false,
+      "default": "NON-ASSISTED",
+      "choices": [
+        "ASSISTED",
+        "NON-ASSISTED"
+      ]
+    },
+    {
+      "tag": "CATEGORY-STATION",
+      "required": false,
+      "default": "FIXED",
+      "choices": []
+    },
+    {
+      "tag": "CATEGORY-TIME",
+      "required": false,
+      "default": "",
+      "choices": []
+    },
+    {
+      "tag": "CATEGORY-TRANSMITTER",
+      "required": false,
+      "default": "ONE",
+      "choices": [
+        "ONE",
+        "TWO",
+        "LIMITED",
+        "UNLIMITED",
+        "SWL"
+      ]
+    },
+    {
+      "tag": "LOCATION",
+      "required": true,
+      "default": "",
+      "choices": []
+    },
+    {
+      "tag": "NAME",
+      "required": true,
+      "default": "",
+      "choices": []
+    },
+    {
+      "tag": "ADDRESS",
+      "required": true,
+      "default": "",
+      "choices": []
+    },
+    {
+      "tag": "ADDRESS-CITY",
+      "required": false,
+      "default": "",
+      "choices": []
+    },
+    {
+      "tag": "ADDRESS-STATE-PROVINCE",
+      "required": false,
+      "default": "",
+      "choices": []
+    },
+    {
+      "tag": "ADDRESS-POSTALCODE",
+      "required": false,
+      "default": "",
+      "choices": []
+    },
+    {
+      "tag": "ADDRESS-COUNTRY",
+      "required": false,
+      "default": "",
+      "choices": []
+    },
+    {
+      "tag": "EMAIL",
+      "required": true,
+      "default": "",
+      "choices": []
+    },
+    {
+      "tag": "CLUB",
+      "required": false,
+      "default": "",
+      "choices": []
+    },
+    {
+      "tag": "OPERATORS",
+      "required": false,
+      "default": "",
+      "choices": []
+    },
+    {
+      "tag": "SOAPBOX",
+      "required": false,
+      "default": "",
+      "choices": []
+    },
+    {
+      "tag": "CATEGORY-OVERLAY",
+      "required": false,
+      "default": "",
+      "choices": []
+    },
+    {
+      "tag": "CERTIFICATE",
+      "required": false,
+      "default": "",
+      "choices": [
+        "YES",
+        "NO"
+      ]
+    },
+    {
+      "tag": "GRID-LOCATOR",
+      "required": false,
+      "default": "",
+      "choices": []
+    }
+  ],
+  "columns": [
+    {
+      "source": "frequency",
+      "width": 5,
+      "align": "right",
+      "part": 0,
+      "literal": ""
+    },
+    {
+      "source": "mode",
+      "width": 2,
+      "align": "left",
+      "part": 0,
+      "literal": ""
+    },
+    {
+      "source": "date",
+      "width": 10,
+      "align": "left",
+      "part": 0,
+      "literal": ""
+    },
+    {
+      "source": "time",
+      "width": 4,
+      "align": "left",
+      "part": 0,
+      "literal": ""
+    },
+    {
+      "source": "own",
+      "width": 13,
+      "align": "left",
+      "part": 0,
+      "literal": ""
+    },
+    {
+      "source": "rst_sent",
+      "width": 3,
+      "align": "right",
+      "part": 0,
+      "literal": ""
+    },
+    {
+      "source": "sent",
+      "width": 6,
+      "align": "left",
+      "part": 0,
+      "literal": ""
+    },
+    {
+      "source": "call",
+      "width": 13,
+      "align": "left",
+      "part": 0,
+      "literal": ""
+    },
+    {
+      "source": "rst_received",
+      "width": 3,
+      "align": "right",
+      "part": 0,
+      "literal": ""
+    },
+    {
+      "source": "received",
+      "width": 6,
+      "align": "left",
+      "part": 0,
+      "literal": ""
+    },
+    {
+      "source": "tx",
+      "width": 1,
+      "part": 0,
+      "align": "left",
+      "literal": ""
+    }
+  ],
+  "modes": {
+    "SSB": "PH"
+  }
+}

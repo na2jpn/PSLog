@@ -1,0 +1,14 @@
+{
+  "source": "wpx_rules_2026.txt",
+  "inside": [],
+  "outside": [],
+  "id": "cq-wpx-ssb",
+  "year": 2026,
+  "municipal_source_versions": {
+    "jcc": "2019-05-01",
+    "jcg": "2018-10-01",
+    "ward": "2024-01-01",
+    "history": "2024-01-01"
+  },
+  "sha256": "cdd9da26b715f423cffb81a4b93c626200f93f991e345c82923baa2862c61190"
+}

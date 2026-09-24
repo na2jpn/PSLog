@@ -1,0 +1,11 @@
+﻿PSLog
+Copyright (c) 2026 H.Tanaka (JH1HST)
+Originally developed by H.Tanaka (JH1HST)
+AKIHABARA-GIKEN
+
+Based on PSLog Format — established in 2013
+
+PSLogは、H.Tanakaが自身のアマチュア無線交信ログを管理するために私的に開発し、利用するソフトウェアです。
+作者自身の使いやすさを優先しており、第三者の要望への対応、サポート、不具合修正や継続提供を約束するものではありません。
+利用・改良は利用条件の範囲で自由ですが、利用者自身の判断と責任で行ってください。記録内容や提出ファイルの確認、必要なバックアップは利用者が行ってください。
+法令上免責できない責任まで免除する趣旨ではありません。

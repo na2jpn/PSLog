@@ -1,0 +1,225 @@
+{
+  "patch": "PSLog 1.11 PATCH 01",
+  "base": "PSLog_1.10_CANONICAL_SOURCE.zip",
+  "target_version": "1.11",
+  "scope": "Free-radio initial implementation",
+  "apply": "Overlay these changed files onto the Ver1.10 canonical source tree.",
+  "files": [
+    {
+      "path": "free_radio.py",
+      "sha256": "1bcb1601d9fdfc3e8e5cc0645727bdcc5a181b07edf394e966bbaf9e84df6785",
+      "size": 6146
+    },
+    {
+      "path": "free_search.py",
+      "sha256": "093ea27631af857569c95fd4439760e8ff23456c044c528f4da0763103347c0b",
+      "size": 2826
+    },
+    {
+      "path": "free_search_ui.py",
+      "sha256": "f95636731543ab2e7bfd9384375baa0e3464047d5ffca7b34af8f8849d4316c5",
+      "size": 7782
+    },
+    {
+      "path": "full_backup.py",
+      "sha256": "b3ba53e6fdbdedee06e316e74e2a3453ea10548f9adcb814d6738746f5abb820",
+      "size": 6445
+    },
+    {
+      "path": "full_restore.py",
+      "sha256": "3947b1ff964f44c85ce182865fc0c383eba2a38b8f1d8dc299881225af5005b6",
+      "size": 12215
+    },
+    {
+      "path": "main.py",
+      "sha256": "bf743da10f8987a66674f10bbdab78df353c6a84a84d0f73ce7c0b4a3e2fa099",
+      "size": 155311
+    },
+    {
+      "path": "search_ui.py",
+      "sha256": "aea20b9f13fac4c7a4458a060389e5948bacb33f2323f21170ad139727ff8d7b",
+      "size": 37163
+    },
+    {
+      "path": "session_state.py",
+      "sha256": "aabfb40907442e3b94596e425ee2cbfd2209641fa5ffee2cba348d2324ea8274",
+      "size": 13921
+    },
+    {
+      "path": "storage.py",
+      "sha256": "66f0ae783f1d86eaee44d563dd54edb8355373d4323d8d1558abe8d80ef9dbf5",
+      "size": 16626
+    },
+    {
+      "path": "test_free_radio_111.py",
+      "sha256": "7d47859aa1f798d8bf6d8ea5b9ecc0e843492c9232cce1089a1d80facc7232db",
+      "size": 3932
+    },
+    {
+      "path": "test_full_restore.py",
+      "sha256": "f43777b46c43d130b09434a23a5a9b0976b3b12a4d71afbad273144356cb630e",
+      "size": 7919
+    },
+    {
+      "path": "test_patch01_1061.py",
+      "sha256": "6fce659ad9f7c3314906cf1ab5377b73623fcf06ce95c1a533e10fafb8c8133d",
+      "size": 10117
+    },
+    {
+      "path": "test_patch01_1071.py",
+      "sha256": "56c3a9c3aa4d18cac8f6bb90845efc01d60205098c6e8c23edee00a1a69f4677",
+      "size": 2870
+    },
+    {
+      "path": "test_patch02_1072.py",
+      "sha256": "7939abc29d2f91a39720add4033475ebfafaf6172ba65e223b8bad1fdc20ed9e",
+      "size": 3604
+    },
+    {
+      "path": "test_patch03.py",
+      "sha256": "042e0367d6df90b32299c683ca0c3f0b151a82a050fcac488f8d7395d5813fa9",
+      "size": 2568
+    },
+    {
+      "path": "test_patch03_1063.py",
+      "sha256": "b3ef1e1728a25b0d60a90c87cb95e85ef17408339d59cd7f54e96640ab69636b",
+      "size": 4220
+    },
+    {
+      "path": "test_patch03_1073.py",
+      "sha256": "4addc666e088fe4116561cbb12c0283724a588d622a2be84f3d82c5ff5fa6e72",
+      "size": 3149
+    },
+    {
+      "path": "test_patch04.py",
+      "sha256": "3aaec77b7a0f6d2d5d2335ae8e2318e41aeead99394d0e156b2f2e7184b5ecca",
+      "size": 2919
+    },
+    {
+      "path": "test_patch04_1064.py",
+      "sha256": "1c46590e31e8884d4a4c8a641875b18fc74d084314e397a2b62e57767ddfb8e7",
+      "size": 4218
+    },
+    {
+      "path": "test_patch04_1074.py",
+      "sha256": "a1717a25eb099a579e6afcceecf437a1e715c65ff9986f54d5094f382b256f86",
+      "size": 6943
+    },
+    {
+      "path": "test_patch05.py",
+      "sha256": "3c92fece7aa055f427435d21a539e6356b6522d97904f2ed87a923a45300b020",
+      "size": 2912
+    },
+    {
+      "path": "test_patch05_1065.py",
+      "sha256": "f235d2f74cdac9716b35215318f1a60171ab200e8d9d346c703fbd3d49f38c0e",
+      "size": 2917
+    },
+    {
+      "path": "test_patch05_1075.py",
+      "sha256": "0ef1fbf81b845919dbfc860e246ea8669130cc349eaaa23c2391a7fdbe1ccad4",
+      "size": 3871
+    },
+    {
+      "path": "test_patch06.py",
+      "sha256": "fd8f635e9e2faace38ea4512c359dd91d5b7699473499009f82c1cf1c90df1d8",
+      "size": 3765
+    },
+    {
+      "path": "test_patch06_1066.py",
+      "sha256": "37612a3fe19c50b2a40b39c0fccaeead50668cb030da502393c3c7dc1be86edc",
+      "size": 3743
+    },
+    {
+      "path": "test_patch06_1076.py",
+      "sha256": "03263591a4d50b2c779ca1d779f2a98418bf0b100e99b939206255c29fc261b2",
+      "size": 4100
+    },
+    {
+      "path": "test_patch07_1057.py",
+      "sha256": "64ac19c45ee7dc0877a3b91bb12028587c367b478712f8d9ab343059f2974aaf",
+      "size": 1678
+    },
+    {
+      "path": "test_patch07_1067.py",
+      "sha256": "1f157fc411e1df45fd494cf8191eef607b7f6a24f92af52f100acb7cc941004d",
+      "size": 2630
+    },
+    {
+      "path": "test_patch07_1077.py",
+      "sha256": "2ae0fb2acb716aecb664532916fc0658a92a610acd7baee1501c5f4885226ab0",
+      "size": 4110
+    },
+    {
+      "path": "test_patch08_1058.py",
+      "sha256": "5d0da697f61b3209af9e8be79f110936381ad1e6c92c733a1a8170b6b17dc6ce",
+      "size": 1920
+    },
+    {
+      "path": "test_patch08_1068.py",
+      "sha256": "f32cfbf3a6fb87012b351e06b4257b09b9c70e6db3196088c86e0c0d7253a8dc",
+      "size": 997
+    },
+    {
+      "path": "test_patch08_1078.py",
+      "sha256": "221d8b0e821cd3a11f5780a94905bcf5315823dc3f4fa79ae24afefa3df29773",
+      "size": 1653
+    },
+    {
+      "path": "test_patch08_fix1_1068.py",
+      "sha256": "ea4cd48ab471a6ec3a89d21f73e7b9a285698959011a8d6a0cc11d390566cfe1",
+      "size": 2852
+    },
+    {
+      "path": "test_patch09_1059.py",
+      "sha256": "72450284cb0c2033f059760db7d23e9632c3e6325ddaf4da6e1bc6dd07eb8dc0",
+      "size": 3898
+    },
+    {
+      "path": "test_patch09_1069.py",
+      "sha256": "8f6c7dbc870fa53d39d951eabe3ad939fa101c3d989c2b7133394078d0da6552",
+      "size": 1198
+    },
+    {
+      "path": "test_patch10.py",
+      "sha256": "83a30bc54856a8930674eb2a7eed84cb955c672bb80e411cafccff680fdd6f23",
+      "size": 3243
+    },
+    {
+      "path": "test_patch10_1070_core.py",
+      "sha256": "dd8b2d1121856716ce1ed639f7b550b2f22922d4a460223c8d8b7ab3f1c1bb4c",
+      "size": 1271
+    },
+    {
+      "path": "test_release_106.py",
+      "sha256": "c85e7cf981ea736fd2035314a6c2756bfd24ea56cb6491af1087dd0b3035574c",
+      "size": 3155
+    },
+    {
+      "path": "test_v102.py",
+      "sha256": "af70071cbf2af2787520aea3b3ba02e460838974d42f1af546e5e8f98833765b",
+      "size": 3183
+    },
+    {
+      "path": "test_v103_initial.py",
+      "sha256": "15bcb1b128c33477807416b4bb211a3e2e4abe0c89ef3e2eb77bd2c49bde0572",
+      "size": 2406
+    },
+    {
+      "path": "test_windows_package.py",
+      "sha256": "b7bd8a473acb169597d6c12cd882a76b83fed3992f9334ea36c43a2c3104a591",
+      "size": 8291
+    },
+    {
+      "path": "year_move.py",
+      "sha256": "932258041a0d6f547bf9366faf99d36c9e1f0f47eaafca76df30ffd3bc7b3f27",
+      "size": 5714
+    }
+  ],
+  "validation": {
+    "python_compile": "passed for changed Python source",
+    "free_radio_core_tests": "7 passed",
+    "unittest_discover": "499 tests run; 0 failures; 69 import errors because PySide6 is unavailable in the GPT/Linux environment; 9 skipped",
+    "zip_crc": "checked after packaging"
+  }
+}

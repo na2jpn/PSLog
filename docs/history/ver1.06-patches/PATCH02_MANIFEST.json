@@ -1,0 +1,85 @@
+{
+  "patch": "Ver1.061 PATCH 02",
+  "files": [
+    {
+      "path": "CHANGELOG.md",
+      "sha256": "185590005ff681fcd4587049a83f63bc7c1cb8f1a9d5294095bef44d62a0569b",
+      "size": 19763
+    },
+    {
+      "path": "VER1.061_PATCH02_README.md",
+      "sha256": "4ca21e08ee909309444e43928a443ea6a49569f11e6d3ea3735524168a9ab263",
+      "size": 3887
+    },
+    {
+      "path": "batch_recovery.py",
+      "sha256": "c0d2f5d194e8c414a69e87e9a217c6d9e81d56eab482ea70289811f6fcc4ace7",
+      "size": 4746
+    },
+    {
+      "path": "blacklist_ui.py",
+      "sha256": "791cba35e8e85a09499fbd16c16fb3cc669dea2aefd05c61225268d7018e9a60",
+      "size": 5873
+    },
+    {
+      "path": "contest_ui.py",
+      "sha256": "d2c53123da21cf2787e0d2584b04f5ec8b22f39a27ce00cd21aa87bc87c71e3c",
+      "size": 50883
+    },
+    {
+      "path": "export_ui.py",
+      "sha256": "417d11c118b2ff9e622e75fb8bff4c2be3a80cce023a0685ecc98ef8ee3e9219",
+      "size": 14683
+    },
+    {
+      "path": "exporting.py",
+      "sha256": "379ae71ee07e65be4e5e7341b2f35ccfbb687a7d587a3209f0ed9e6d11e8f2fc",
+      "size": 10696
+    },
+    {
+      "path": "jccjcg_batch.py",
+      "sha256": "c06b77a3f3c5e60a1d77091d325256adf56e877a60283c9a90bc0aadae28ca48",
+      "size": 10608
+    },
+    {
+      "path": "jccjcg_batch_ui.py",
+      "sha256": "8fea6093c337d90beb40e5a59cc6bd88da6407061ef83ad9d3cbff33f4306401",
+      "size": 12275
+    },
+    {
+      "path": "main.py",
+      "sha256": "5ba2a3990a3d419ebc81187b8ff2fa1f6ae4dc497a8e1cfe3e3796a59d19847e",
+      "size": 106250
+    },
+    {
+      "path": "pota_ui.py",
+      "sha256": "9c8eb415665decf929fddd906bb7b9899d127a3a0a798da655e6dee302a69e3f",
+      "size": 10148
+    },
+    {
+      "path": "qsl_ui.py",
+      "sha256": "1e81f1e690011f8f19fd40cab2b39bbd9fd321f1e10914fa7e15d68132975152",
+      "size": 10301
+    },
+    {
+      "path": "search_ui.py",
+      "sha256": "ca0b0de97b1438392c218237e457c7a82e1fe76f6a5ba5b52330794ca3b924d7",
+      "size": 32325
+    },
+    {
+      "path": "sota_ui.py",
+      "sha256": "8a3f2afbb1ef3e2d9caeb692ce7c06c6d3b3efe317b47961d949e8f4432065e4",
+      "size": 13438
+    },
+    {
+      "path": "test_patch02_1061.py",
+      "sha256": "23782dfc50456c3eaf326744c209c35dbcb3a81fbc03e599682d523bbcb78ad0",
+      "size": 4740
+    },
+    {
+      "path": "user_guide.py",
+      "sha256": "7c02183ff9971de30b050bb8aefa2eb83d7f70d7726d1e9adfe1e18ccc43c10e",
+      "size": 15060
+    }
+  ]
+}

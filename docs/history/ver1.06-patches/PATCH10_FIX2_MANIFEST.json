@@ -1,0 +1,28 @@
+{
+  "patch": "Ver1.070 PATCH10 FIX2",
+  "base": "PSLog_1.070_PATCH10.zip",
+  "includes_fix1": true,
+  "version": "1.070",
+  "files": [
+    {
+      "path": "VER1.070_PATCH10_FIX2_README.md",
+      "sha256": "befef424e46896c09f99498c9a76469de42b4d182146723a6c6122d56cb2fa0e",
+      "size": 2294
+    },
+    {
+      "path": "bundled_sync.py",
+      "sha256": "cfefaee0b94c1d33904928d40943c87984e0bfd69ab49e5629f331dd1750c5e9",
+      "size": 4729
+    },
+    {
+      "path": "test_patch01_1061.py",
+      "sha256": "906f7fa18f15e79c34186b292e84255ea623d53aa7795fd878e7d2075b05e7b3",
+      "size": 10118
+    },
+    {
+      "path": "test_patch10_1070.py",
+      "sha256": "f4529214be7c05bac69508a4f202dd2aa3a92d6034d860739993797304d0d425",
+      "size": 2651
+    }
+  ]
+}

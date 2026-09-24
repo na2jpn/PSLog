@@ -1,0 +1,833 @@
+{
+  "all_tohoku": {
+    "year": 2026,
+    "source_file": "all_tohoku_2026.pdf",
+    "source_url": "https://www.jarl.com/tohoku/7contest/2026JA7TEST.pdf",
+    "source_checked": "2026-09-14",
+    "rule_view": {
+      "call_method": "電話：CQ オール東北コンテスト／電信：CQ JA7 TEST",
+      "counterparts": "東北管内局：日本国内で運用する局。東北管外局：東北管内で運用する局。",
+      "power": "電話部門は1.8～28MHz帯10W以下、50MHz帯以上20W以下。",
+      "points_display": "各バンドで異なる局との完全な交信は1点。同一バンドの電信と電話はそれぞれ得点可。"
+    }
+  },
+  "ai_chikyu": {
+    "year": 2026,
+    "source_file": "ai_chikyuhaku_2026.html",
+    "source_url": "https://www.tokai-jarl.jp/tkitest/regulation/21st-ai.html",
+    "source_checked": "2026-09-14",
+    "rule_view": {
+      "participants": "日本国内の陸上で運用するアマチュア局およびSWL。",
+      "power": "電話部門は20W以下（HF帯は10W以下）。",
+      "movement": "コンテスト中の運用場所変更は禁止。ただし、コンテスト参加の目的で常置場所を離れ移動運用するシングルオペに限り、運用開始時のマルチプライヤー内での場所変更を認める。移動運用局は運用場所を市区町村名まで明記する。",
+      "call_method": "電話：CQ AIコンテスト（またはCQ 愛コンテスト）\n電信：CQ AI TEST",
+      "counterparts": "日本国内の陸上で運用するアマチュア局。管外局同士の交信も有効。",
+      "frequency": "JARLコンテスト使用周波数帯、および1200MHz以上の各アマチュアバンド。1200MHz以上は総務省告示の「アマチュア業務に使用する電波の型式及び周波数の使用区別」による。",
+      "restrictions": "D-STARの交信はDVモード（デジタル音声通信）かつシンプレックス。モリゾー＆キッコロ種目は2波以上の電波の同時発射を禁止。運用場所変更の条件は「移動運用」欄を参照。",
+      "exchange": "RS(T) + 自局の運用場所を示す都府県支庁ナンバー。",
+      "repeat": "同一バンドの同一局は、電信・電話（FM/SSB等）・電話（D-STAR）の各区分でそれぞれ1交信まで得点可。",
+      "points_display": "完全な交信は1点。同一バンドでも電信、通常の電話、D-STARのDVはそれぞれ1交信ずつ有効。"
+    }
+  },
+  "tokai_qso": {
+    "year": 2026,
+    "source_file": "tokai_qso_66_2026.html",
+    "source_url": "https://www.tokai-jarl.jp/tkitest/regulation/66th-tkiqso.html",
+    "source_checked": "2026-09-14",
+    "rule_view": {
+      "call_method": "管内局：電信 CQ TEST、電話 CQコンテスト。管外局：電信 CQ TKI TEST、電話 CQ東海コンテスト。",
+      "counterparts": "管内局：国内の陸上局。管外局・SWL：2エリア内の陸上局に限ります。",
+      "points_display": "1.9MHz帯3点、3.5～21MHz帯1点、28MHz帯2点、50～430MHz帯1点、1200MHz帯3点、2400MHz帯5点、5600MHz帯10点、10.1GHz帯以上20点。D-STARのDVは指定の電話部門でシンプレックス交信。"
+    }
+  },
+  "xpo": {
+    "year": 2026,
+    "source_file": "xpo_2026.html",
+    "source_url": "https://www.eonet.ne.jp/~ja3-test/kiyaku/xpokinen_2026kiyaku.htm",
+    "source_checked": "2026-09-14",
+    "rule_view": {
+      "participants": "日本国内のアマチュア局。電信はCW（A1A）、電話はSSB・AM・FM。ゲストや補助者が運用に関わる場合はマルチオペ。",
+      "power": "制限なし",
+      "movement": "コンテスト中の運用場所は原則1か所（直径500mの範囲内）。コンテストのため常置場所を離れたシングルオペのみ、開始時のマルチプライヤー内で場所変更可。移動局はコール末尾に /数字または/JD1を付けます。",
+      "call_method": "電信：CQ XPO TEST\n電話：CQ XPOコンテスト",
+      "counterparts": "日本国内のアマチュア局同士の完全な交信。記念局（8J・8K・8N等）も一般局と同じ扱いです。",
+      "frequency": "1.9～10GHz帯（3.8・10・18・24MHz帯を除く）。1.9～430MHz帯は規約の電波型式別周波数表を参照。1200MHz以上は総務省告示の使用区別に従います。10.1GHzと10.4GHzは同一の10GHz帯として扱います。",
+      "restrictions": "クロスバンド交信、同一オペレーターの2波以上の同時発射、マルチオペの同一バンド2波以上の同時発射を禁止。レピーターやインターネット等経由の交信は得点・マルチに計上不可（規約のリモート運用例外あり）。セルフスポットやその依頼は禁止。リモート設備の所在地条件とコンテスト終了後のログ修正制限は公式規約を確認してください。",
+      "exchange": "RS(T) ＋ JARL制定の都府県・地域等のナンバー。",
+      "repeat": "同一局との同一バンド内の再交信は、電波型式が異なっても得点になりません。バンドが異なれば別に計上できます。",
+      "points_display": "完全な交信は1点。対象はCW、SSB、AM、FMで、DV・C4FMは電話部門に含みません。同一バンド内の重複は電波型式が違っても得点になりません。"
+    }
+  },
+  "kansai_vus": {
+    "year": 2026,
+    "source_file": "kansai_vus_2026.html",
+    "source_url": "https://www.eonet.ne.jp/~ja3-test/kiyaku/ja3test_2026kiyaku.files/sheet001.htm",
+    "source_checked": "2026-09-14",
+    "rule_view": {
+      "call_method": "電信：CQ JA3 TEST／電話：CQ JA3コンテスト",
+      "counterparts": "管内局：日本国内の局。管外局：関西管内局に限ります。",
+      "points_display": "完全な交信は1点。管外局同士は得点になりません。対象モードはCW、SSB、AM、FMで、DV・C4FMは電話に含みません。"
+    }
+  },
+  "okhotsk": {
+    "year": 2026,
+    "source_file": "okhotsk_2026.pdf",
+    "source_url": "https://www.jarl.com/okhotsk/conte2026.pdf",
+    "source_checked": "2026-09-13",
+    "rule_view": {
+      "call_method": "電話：CQオホーツクコンテスト／電信：CQ OKH TEST",
+      "counterparts": "管内局：国内のアマチュア局。管外局：オホーツク総合振興局管内の局。",
+      "points_display": "管内局・管外局とも対象相手との完全な交信は1点。同一バンドでは電波型式が異なっても1交信のみ有効。"
+    }
+  },
+  "all_mie_33": {
+    "year": 2026,
+    "source_file": "mie33_49_2026.pdf",
+    "source_url": "https://www.ztv.ne.jp/isoda/33/annual/49/49rule.pdf",
+    "source_checked": "2026-09-14",
+    "rule_view": {
+      "call_method": "県内局・JL局：電信 CQ ME TEST／電話 CQ オール三重33コンテスト こちら県内局。県人局：電信 CQ MEJ TEST／電話は「こちら県人局」。県外局：電信 CQ MEX TEST／電話は「こちら県外局」。",
+      "counterparts": "県内局・JL局・県人局：海外を含む全アマチュア局。県外局：県内局・JL局・県人局。",
+      "points_display": "相手が県内局・JL局なら3点、県人局・県外局なら1点（県外局同士は無効）。自局と相手の区分別の得点早見表に従います。同一バンドではモードを変えても1交信のみ有効。"
+    }
+  },
+  "kamikawa_souya": {
+    "year": 2026,
+    "source_file": "kamikawa_soya_2026.pdf",
+    "source_url": "https://www.jarl.com/kamikawa/contest/2026KSContest.pdf",
+    "source_checked": "2026-09-14",
+    "rule_view": {
+      "call_method": "電話：管内局 CQ上川宗谷支部コンテスト、管外局 CQ上川宗谷支部コンテスト管外局。電信：管内局 CQ KS TEST、管外局 CQ KSX TEST。",
+      "power": "電話部門のすべての種目は50W以下。",
+      "points_display": "国内局との完全な交信は1点。上川宗谷支部管内局との完全な交信は2点。",
+      "counterparts": "国内のアマチュア局。管外局は管内局と2局以上交信する参加条件があります。"
+    }
+  },
+  "kcwa_cw": {
+    "year": 2025,
+    "source_file": "kcwa_2025.html",
+    "source_url": "https://kcwa.sakura.ne.jp/2025/contest42/20251207CONTEST.html",
+    "source_checked": "2026-09-14",
+    "rule_view": {
+      "call_method": "電信：CQ KT TEST",
+      "points_display": "完全な交信1点。ただし提出ログ相互の照合が成立した交信のみ得点となり、ログ未提出局との交信は無得点。2025年第42回の規約です。",
+      "counterparts": "日本国内で運用する個人アマチュア局との電信交信。"
+    }
+  },
+  "kyoto": {
+    "year": 2026,
+    "source_file": "kyoto_70.pdf",
+    "source_url": "https://je3zpz.ampr.org/kt_test/kt70-kiyaku.pdf",
+    "source_checked": "2026-09-14",
+    "rule_view": {
+      "call_method": "電話：CQ京都コンテスト（府外局は「こちらは府外局」を付加）。電信：府内局 CQ TEST、府外局 CQ KT TEST。",
+      "counterparts": "府内局：府内・府外局との交信。府外局：京都府内局との交信のみ得点対象。",
+      "points_display": "京都府内局は府内局との交信2点、府外局との交信1点。府外局・SWLは府内局1点、府外局0点。同一バンドの電信と電話は別々に得点可。"
+    }
+  },
+  "all_saga": {
+    "year": 2026,
+    "source_file": "all_saga_2026_web_extract.json",
+    "source_url": "https://www4.hp-ez.com/hp/jarlsaga/page10",
+    "source_checked": "2026-09-14",
+    "rule_view": {
+      "call_method": "電話：CQ佐賀コンテスト／電信：CQ SAGA TEST",
+      "counterparts": "県内局：県内を含む日本全国の局。県外局：佐賀県内局。",
+      "points_display": "完全な交信は1点。同一バンドではSSBとFMなど同じ電話モード間は重複扱い。"
+    }
+  },
+  "all_hyogo": {
+    "year": 2026,
+    "source_file": "all_hyogo_2026.pdf",
+    "source_url": "https://www.jarl.com/hyogo/contest/contest2026/2026-ALL-HG_rule.pdf",
+    "source_checked": "2026-09-14",
+    "rule_view": {
+      "call_method": "県内局：電信 CQ TEST／電話 CQ オール兵庫コンテスト。県外局：電信 CQ HG TEST／電話 CQ オール兵庫コンテスト。呼び出し時は運用地点を示し、県内外が区別できるよう配慮。",
+      "counterparts": "県内局：すべての局。県外局・SWL：兵庫県内で運用する局に限ります。",
+      "points_display": "ナンバーを完全に交換した交信は1点。県外局同士は無効。同一バンドの重複は電波型式を変えても得点になりません。"
+    }
+  },
+  "all_chiba": {
+    "year": 2026,
+    "source_file": "all_chiba_2026.pdf",
+    "source_url": "http://jarl-chiba.info/2026test/2026info.pdf",
+    "source_checked": "2026-09-14",
+    "rule_view": {
+      "call_method": "電信：県内局 CQ CB TEST／県外局 CQ CBX TEST。電話：県内局 CQ 千葉コンテスト／県外局 CQ 千葉コンテスト こちらは県外局。",
+      "counterparts": "県内局：国内すべてのアマチュア局。県外局：千葉県内のアマチュア局。",
+      "points_display": "県内局との交信は電信3点・電話2点。県内局から県外局への交信は電信2点・電話1点。県外局同士は0点。電信と電話は別々に得点可。電話にはデジタルモードを含みます。"
+    }
+  },
+  "wakayama": {
+    "year": 2026,
+    "source_file": "wakayama_38.pdf",
+    "source_url": "https://www.jarl.com/wakayama/pdf/wk-test/contest38kiyaku.pdf",
+    "source_checked": "2026-09-14",
+    "rule_view": {
+      "power": "電話部門の全種目は10W以下。",
+      "points_display": "完全な交信は1点。県外局同士は対象外。同一バンドの重複はモードを変えても得点になりません。",
+      "call_method": "電信：県内局 CQ WK TEST IN／県外局 CQ WK TEST NI。電話：CQ 和歌山コンテストに「こちらは県内局／県外局」を付加。",
+      "counterparts": "県内局：国内全域。県外局：和歌山県内局のみ。"
+    }
+  },
+  "all_saitama": {
+    "year": 2026,
+    "source_file": "all_saitama_44.pdf",
+    "source_url": "https://www.jarl.com/allst/rule/44st.pdf",
+    "source_checked": "2026-09-14",
+    "rule_view": {
+      "call_method": "電話：県内局 CQ埼玉コンテスト／県外局 CQ埼玉コンテスト こちらは県外局。電信：県内局 CQ ST TEST／県外局 CQ STX TEST。",
+      "counterparts": "県内局・県外局とも埼玉県を含む全国内局。",
+      "points_display": "相手が埼玉県内局なら電信3点・電話2点、相手が県外局なら電信2点・電話1点。"
+    }
+  },
+  "oita": {
+    "year": 2026,
+    "source_file": "oita_2026.html",
+    "source_url": "https://jarl-oita.blogspot.com/2026/05/blog-post.html",
+    "source_checked": "2026-09-13",
+    "rule_view": {
+      "call_method": "電信：県内局 CQ OT TEST／県外局 CQ OTG TEST／県人局 CQ OTJ TEST。電話：CQ 大分コンテストの後に自局の局区分を明示。",
+      "points_display": "完全な交信は1点。電話のSSB・AM・FM・DV・DMR等は異なるモードならそれぞれ得点可。CW以外のデータ通信（FT4・FT8・パケット等）は得点になりません。",
+      "counterparts": "県内局・県人局：国内のアマチュア局。県外局：大分県内局と県人局。"
+    }
+  },
+  "all_osaka": {
+    "year": 2026,
+    "source_file": "all_osaka_2026.html",
+    "source_url": "https://ja3ujr.sakura.ne.jp/jarlosaka/contest/kiyaku2026.html",
+    "source_checked": "2026-09-14",
+    "rule_view": {
+      "call_method": "府内局：電信・デジタル CQ OSKO TEST／電話 CQ オール大阪コンテスト こちらは府内局。府外局：電信・デジタル CQ OSK TEST／電話 CQ オール大阪コンテスト。",
+      "counterparts": "府内局：日本国内のすべてのアマチュア局。府外局：大阪府内局。",
+      "points_display": "通常の完全な交信は1点。大阪府内のYL・20歳未満局でナンバーにYが付く局との交信は2点、JARL局でXが付く局は4点。府外局同士は0点。デジタル部門にRTTY・SSTVがあります。"
+    }
+  },
+  "nara_vuhf": {
+    "year": 2026,
+    "source_file": "nara_vuhf_2026_rules.pdf",
+    "source_url": "",
+    "source_checked": "",
+    "rule_view": {
+      "call_method": "電信：CQ NR TEST（県内局は/NRで区別）。電話：CQ 奈良コンテスト（県内局は「こちらは奈良県内局」を付加）。",
+      "counterparts": "県内局：国内すべてのアマチュア局。県外局：奈良県内で運用する局のみ。",
+      "points_display": "ナンバーを完全に交換した有効交信は1点。同一バンドの同一局は電波形式を変えても1回のみ得点対象。"
+    },
+    "source_note": "保存済み主催規約PDF。登録URLから参照。"
+  },
+  "all_miyagi": {
+    "year": 2026,
+    "source_file": "all_miyagi_2026.pdf",
+    "source_url": "https://ja7rl.sakura.ne.jp/2026MG.pdf",
+    "source_checked": "2026-09-14",
+    "rule_view": {
+      "call_method": "県内局：電信 CQ MG TEST／電話 CQ 宮城コンテスト。県外局：電信 CQ MGX TEST／電話 CQ 宮城コンテスト こちらは県外局。",
+      "counterparts": "県内局：全国内局。県外局：宮城県内局。",
+      "points_display": "完全な交信は1点。同一バンドの電信・電話はそれぞれ得点可。"
+    }
+  },
+  "miyazaki": {
+    "year": 2026,
+    "source_file": "miyazaki_2026.html",
+    "source_url": "https://www.jarl.com/mztest/contest2026kiyaku.html",
+    "source_checked": "2026-09-13",
+    "rule_view": {
+      "call_method": "電話：CQ宮崎コンテストの後に県内・県外・県人局の区分。電信：県内局 CQ MZ TEST／県外局 CQ MZG TEST／県人局 CQ MZK TEST。",
+      "counterparts": "県内局：国内外のすべてのアマチュア局。県外局：宮崎県内局および県人局。",
+      "points_display": "ナンバーを完全に交換した交信は1点。同一バンドでは電波型式が異なっても1交信のみ有効。"
+    }
+  },
+  "toyama_emergency": {
+    "year": 2026,
+    "source_file": "toyama_2026_detail.html",
+    "source_url": "https://www.jarl.com/toyama/25ham/49OSO.pdf",
+    "source_checked": "2026-09-23",
+    "rule_view": {
+      "call_method": "電信：CQ TEST または CQ TY TEST／電話：CQ コンテスト または CQ 富山コンテスト",
+      "points_display": "完全な交信は1点。県外局同士は無得点。同一バンドでは電波形式が異なっても1交信のみ有効。",
+      "power": "空中線電力は必要最小限。",
+      "counterparts": "県内局は国内のアマチュア局。県外局同士は得点にならず、県外局は富山県内局との交信が得点対象。"
+    },
+    "url": "https://www.jarl.com/toyama/25ham/49OSO.pdf",
+    "source_note": "支部公式PDFで同内容を再照合。保存HTMLは主催クラブ掲載の転載。"
+  },
+  "oidemase_yamaguchi": {
+    "year": 2026,
+    "source_file": "all_yamaguchi_2026.pdf",
+    "source_url": "user attachment:2026oiddemaseallyamaguchicontestrule.pdf",
+    "source_checked": "2026-09-14",
+    "rule_view": {
+      "call_method": "電話：CQ 山口コンテスト／電信：CQ YG TEST",
+      "counterparts": "山口県内局・中国地方局：国内すべての局。4エリア外局：4エリアの局。",
+      "points_display": "山口県内局との交信は2点、中国地方局・エリア外局との交信は1点。HF以外は同一バンドの電話と電信を別々に得点可。"
+    }
+  },
+  "yamagata_sakuranbo": {
+    "year": 2026,
+    "source_file": "yamagata_sakuranbo_2026.pdf",
+    "source_url": "https://jarlyamagata.ham-yamagata.com/wp-content/uploads/2026/02/n8-sakuranbo-annai.pdf",
+    "source_checked": "2026-09-13",
+    "rule_view": {
+      "call_method": "電話：県内局 CQ 山形コンテスト／県外局 CQ 山形コンテスト こちら県外局。電信：県内局 CQ YM TEST／県外局 CQ YMKG TEST。",
+      "points_display": "完全な交信は1点。県外局同士と同一バンドの重複交信は得点になりません。デジタルモード交信は禁止。",
+      "counterparts": "山形県内局：国内局。県外局：山形県内局（県外局同士は無得点）。"
+    }
+  },
+  "yamanashi": {
+    "year": 2026,
+    "source_file": "yamanashi_2026.pdf",
+    "source_url": "http://www.jarl17.org/wp/wp-content/uploads/2026/03/%E7%AC%AC21%E5%9B%9E%E5%B1%B1%E6%A2%A8%E3%82%B3%E3%83%B3%E3%83%86%E3%82%B9%E3%83%88%E8%A6%8F%E7%B4%84.pdf",
+    "source_checked": "2026-09-13",
+    "rule_view": {
+      "call_method": "電話：CQ 山梨コンテスト（県内局は「こちらは県内局」を付けても可）。電信：CQ YN TEST（県内局はCQ YNN TEST、県外局はCQ YNG TESTも可）。",
+      "counterparts": "県内・県外局との国内交信。県外局同士の交信も有効ですが、山梨県内局との交信が少なくとも1局必要です。",
+      "points_display": "山梨県内局との完全な交信は3点、県外局とは1点。同一バンドでも電信と電話はそれぞれ1交信ずつ有効。"
+    }
+  },
+  "all_gifu": {
+    "year": 2026,
+    "source_file": "all_gifu_2026_web_extract.txt",
+    "source_url": "https://jarl-gifu.up.seesaa.net/image/E7ACAC29E59B9EE382AAE383BCE383ABE5B290E9989CE382B3E383B3E38386E382B9E38388E383BBE8A68FE7B484.pdf",
+    "source_checked": "2026-09-13",
+    "rule_view": {
+      "call_method": "県内局：電信 CQ TEST／電話 CQコンテスト。県外局：電信 CQ GF／電話 CQ岐阜県。",
+      "counterparts": "県内局：国内の陸上アマチュア局。県外局：岐阜県内で運用する局。",
+      "points_display": "コンテストナンバーを完全に送受した交信は1点。"
+    }
+  },
+  "all_okayama": {
+    "year": 2026,
+    "source_file": "all_okayama_2026.html",
+    "source_url": "https://www.jarl.com/okayama/oy-test-rule-2026.html",
+    "source_checked": "2026-09-14",
+    "rule_view": {
+      "call_method": "電信・RTTY：県内局 CQ OY TEST、県外局 CQ OYX TEST。電話：CQ岡山コンテスト（県内局は県内局であることをアナウンス）。",
+      "counterparts": "県内局：国内で運用するすべてのアマチュア局。県外局：岡山県内で運用するアマチュア局。",
+      "points_display": "完全な交信は1点。RTTYも参加対象。同一バンドの再交信はモードが異なっても1回のみ有効で、相手局ログとの照合が成立することが条件。"
+    }
+  },
+  "iwate_winter": {
+    "year": 2026,
+    "source_file": "iwate_winter.pdf",
+    "source_url": "https://jarl-iwate.com/wp-content/uploads/51ea8f1a1ed0bc896ab5d5812937aeb2.pdf",
+    "source_checked": "2026-09-14",
+    "rule_view": {
+      "call_method": "電話：CQいわてウィンターコンテスト／電信：CQ IW TEST（県内局は県内局であることを送出）。",
+      "counterparts": "国内すべてのアマチュア局。",
+      "points_display": "岩手県内局は県内局との交信1点・県外局2点。岩手県外局は県外局との交信1点・県内局2点。",
+      "power": "許可された出力の範囲内。移動局は最大50W。"
+    }
+  },
+  "shimane": {
+    "year": 2026,
+    "source_file": "shimane_2026.pdf",
+    "source_url": "",
+    "source_checked": "2026-09-13",
+    "rule_view": {
+      "participants": "日本国内で運用するアマチュア局。島根県内へ移動して運用する県外局は県内局として参加します。",
+      "movement": "コンテスト中の運用地点変更と複数地点からの運用は禁止。県内での移動運用地は市町村まで提出書類に記載します。",
+      "call_method": "県内局：電話 CQオールジャパン／電信 CQ AJ TEST。県外局：電話 CQ島根／電信 CQ SN TEST。",
+      "counterparts": "島根県内局：日本国内の局。県外局：島根県内局。",
+      "frequency": "7・21・28・50・144・430MHz帯。部門別の対象帯域とJARLコンテスト使用周波数帯を確認してください。使用モードはCW・SSB・FM。",
+      "restrictions": "クロスバンド交信、コンテスト中の運用地点変更、複数地点からの運用、同一バンドでの2波以上の同時発射は禁止。10分間ルールは適用しません。",
+      "exchange": "県内局：RS(T)＋市郡ナンバー。県外局：RS(T)＋都府県・支庁ナンバー。",
+      "repeat": "同一局との同一バンドの交信は最初の1交信が得点対象。ただし電波型式が異なる場合は、それぞれ得点対象です。",
+      "points_display": "有効な交信は1点。県内外局が規定条件で島根県内へ移動してHF部門に参加した場合は移動得点1000点を加算。同一バンドでも電波形式が異なれば別交信として得点可。"
+    },
+    "source_note": "保存済み2026年主催規約PDF。公式直リンク未特定。"
+  },
+  "hiroshima_was": {
+    "year": 2026,
+    "source_file": "hiroshima_was_2026.html",
+    "source_url": "https://hs-contest.org/was-2026-rule/",
+    "source_checked": "2026-09-14",
+    "rule_view": {
+      "call_method": "電信・デジタル：CQ WAS TEST／電話：CQ WASコンテスト（またはCQ広島コンテスト）。",
+      "counterparts": "県内局・県外局とも交信対象。県外局同士と海外局との交信も有効。",
+      "points_display": "広島県内局との交信5点、県外局との交信1点。電信・電話・デジタルの各モード群は同一バンドでもそれぞれ1交信ずつ有効。"
+    }
+  },
+  "gigahertz": {
+    "year": 2026,
+    "source_file": "gigahertz_2026.html",
+    "source_url": "https://www.jarl.com/08test/contest/2026/ghz/rule.html",
+    "source_checked": "2026-09-13",
+    "rule_view": {
+      "call_method": "電信：CQ GHZ TEST／電話：CQギガヘルツコンテスト",
+      "counterparts": "信越管内局：日本国内のアマチュア局。信越管外局：信越管内で運用するアマチュア局。",
+      "points_display": "1200MHz帯1点、2400MHz帯2点、5600MHz帯以上5点。CW・SSB・FMで電波型式が異なれば同一バンドの同一局でも得点可。デジタルモードは対象外。"
+    }
+  },
+  "niigata_branch": {
+    "year": 2026,
+    "source_file": "niigata_2026.html",
+    "source_url": "https://www.jarl.com/08test/contest/2026/niigata/rule.html",
+    "source_checked": "2026-09-13",
+    "rule_view": {
+      "call_method": "電話：県内局 CQ 新潟コンテスト／県外局 CQ 新潟コンテスト こちら県外局。電信：県内局 CQ NI TEST／県外局 CQ NIX TEST。",
+      "counterparts": "県内局：日本国内のアマチュア局。県外局：新潟県内で運用するアマチュア局。",
+      "points_display": "完全な交信は1点。同一局・同一バンドでも電信と電話はそれぞれ1交信ずつ有効。"
+    }
+  },
+  "niigata_low_band": {
+    "year": 2026,
+    "source_file": "niigata_2026.html",
+    "source_url": "https://www.jarl.com/08test/contest/2026/niigata/rule.html",
+    "source_checked": "2026-09-13",
+    "rule_view": {
+      "call_method": "電話：県内局 CQ 新潟コンテスト／県外局 CQ 新潟コンテスト こちら県外局。電信：県内局 CQ NI TEST／県外局 CQ NIX TEST。",
+      "counterparts": "県内局：日本国内のアマチュア局。県外局：新潟県内で運用するアマチュア局。",
+      "points_display": "完全な交信は1点。同一局・同一バンドでも電信と電話はそれぞれ1交信ずつ有効。"
+    }
+  },
+  "tokyo_cw": {
+    "year": 2026,
+    "source_file": "tokyo_cw_2026.pdf",
+    "source_url": "https://jarltokyo.com/_media/contest/contest_rules_cw_ver20260826.pdf",
+    "source_checked": "2026-09-14",
+    "rule_view": {
+      "call_method": "電信：CQ TK TEST",
+      "points_display": "相手が東京都内局なら2点、都外局なら1点。電信部門のみ。",
+      "counterparts": "都内局・都外局との国内交信が得点対象。"
+    }
+  },
+  "tokyo_uhf": {
+    "year": 2026,
+    "source_file": "tokyo_uhf_2026.pdf",
+    "source_url": "https://jarltokyo.com/_media/contest/contest_rules_uhf_ver20260826.pdf",
+    "source_checked": "2026-09-14",
+    "rule_view": {
+      "call_method": "電信：CQ TK TEST／電話：CQトウキョウコンテスト。",
+      "points_display": "相手が東京都内局なら2点、都外局なら1点。10GHz帯種目は10.1GHzと10.4GHzの得点・マルチを別々に計算します。",
+      "counterparts": "都内局・都外局との国内交信が得点対象。"
+    }
+  },
+  "tokyo": {
+    "year": 2026,
+    "source_file": "tokyo_rules_20240331_for_2026.pdf",
+    "source_url": "https://jarltokyo.com/_media/contest/contest_rules_ver20240331.pdf",
+    "source_checked": "2026-09-14",
+    "rule_view": {
+      "call_method": "電信：CQ TK TEST／電話：CQトウキョウコンテスト。",
+      "points_display": "相手が東京都内局なら2点、都外局なら1点。",
+      "counterparts": "都内局・都外局との国内交信が得点対象。"
+    },
+    "source_note": "登録PDFは2024年改訂。2026年の東京コンテスト当時の規約として参照。東京都支部では2027年改訂準備を告知。"
+  },
+  "tochigi": {
+    "year": 2026,
+    "source_file": "tochigi_2026.txt",
+    "source_url": "https://www.jarl.com/tochigi/contest/28tochicon_1.pdf",
+    "source_checked": "2026-09-13",
+    "rule_view": {
+      "call_method": "電話：CQ 栃木コンテスト",
+      "counterparts": "県内局・県外局とも全国内局との交信が有効。県外局同士の交信も対象。",
+      "points_display": "ナンバーを完全に交換した交信は1点。"
+    }
+  },
+  "oshima_hiyama": {
+    "year": 2026,
+    "source_file": "oshima_hiyama_2026.pdf",
+    "source_url": "https://ohs.hokkaido.jp/wp-content/uploads/2026/07/%E7%AC%AC34%E5%9B%9E-JARL-%E6%B8%A1%E5%B3%B6%E6%AA%9C%E5%B1%B1%E6%94%AF%E9%83%A8%E3%82%B3%E3%83%B3%E3%83%86%E3%82%B9%E3%83%88%E8%A6%8F%E7%B4%84.pdf",
+    "source_checked": "2026-09-14",
+    "rule_view": {
+      "call_method": "電話：CQ 渡島檜山支部コンテスト／電信：CQ OH TEST",
+      "counterparts": "管内局：国内のアマチュア局。管外局：渡島檜山管内で運用する局。",
+      "points_display": "完全な交信は1点。音声の電話はデジタル音声も有効。同一バンドの同一局はマルチが変わっても1交信のみ得点。"
+    }
+  },
+  "shiga": {
+    "year": 2026,
+    "source_file": "shiga_2026.html",
+    "source_url": "https://www.jarl.com/shiga/shiga_con.html",
+    "source_checked": "2026-09-13",
+    "rule_view": {
+      "call_method": "電信：県内局 CQ SI TEST／県外局 CQ SHIGA TEST。電話：CQ 滋賀コンテスト（県内局は県内局であることを送出）。",
+      "counterparts": "日本国内のアマチュア局。",
+      "points_display": "滋賀県内局との完全な交信は5点、県外局は1点。ただしJL3ZKVとの完全な交信は6点。"
+    }
+  },
+  "all_kumamoto": {
+    "year": 2026,
+    "source_file": "all_kumamoto_2026.pdf",
+    "source_url": "https://www.jarl.com/kmtest/2026allkumamotoreg.pdf",
+    "source_checked": "2026-09-14",
+    "rule_view": {
+      "call_method": "電信：県内局 CQ KM TEST／県外局 CQ KMO TEST。電話：CQ 熊本コンテスト（県内局は「県内局」を送出）。",
+      "counterparts": "県内局：国内で運用するアマチュア局。県外局：熊本県内で運用するアマチュア局。",
+      "power": "個人局・社団局とも100W以下。",
+      "points_display": "各バンドで異なる局との完全な交信は1点。同一バンドの電信と電話はそれぞれ得点可。"
+    }
+  },
+  "ishikari": {
+    "year": 2026,
+    "source_file": "ishikari_2026.html",
+    "source_url": "https://isb.jarl.pro/2026/05/12/post-1624/",
+    "source_checked": "2026-09-13",
+    "rule_view": {
+      "call_method": "電信：CQ ISB TEST／電話：CQ 石狩後志支部コンテスト",
+      "counterparts": "管内局：全国のアマチュア局。管外局：石狩後志支部管内局。",
+      "points_display": "管内局・管外局とも対象相手との完全な交信は1点。同一バンドでは電波形式を変えても1交信のみ有効。"
+    }
+  },
+  "kanagawa_emergency": {
+    "year": 2026,
+    "source_file": "kanagawa_emergency_44_2026.pdf",
+    "source_url": "https://www.jarlkn.info/application/files/6917/7020/6189/44.pdf",
+    "source_checked": "2026-09-14",
+    "rule_view": {
+      "call_method": "電話：県内局 CQ神奈川訓練／県外局 CQ神奈川訓練 こちらは県外局",
+      "counterparts": "県内局：すべての国内局。県外局：神奈川県内で運用する局。",
+      "points_display": "ナンバーを完全に交換した交信は1点。同一バンドの同一局は電波形式を変えても1交信だけ得点対象。"
+    }
+  },
+  "all_kanagawa": {
+    "year": 2026,
+    "source_file": "all_kanagawa_2026.pdf",
+    "source_url": "https://www.jarlkn.info/application/files/9917/7020/6189/55.pdf",
+    "source_checked": "2026-09-13",
+    "rule_view": {
+      "call_method": "県内局：電信 CQ KN TEST／電話 CQ神奈川コンテスト。県外局：電信 CQ KNX TEST／電話 CQ神奈川コンテスト こちらは県外局。",
+      "counterparts": "県内局：すべての国内局。県外局：神奈川県内で運用する局。",
+      "power": "電話部門の全種目は原則10W以下。50～430MHz帯は20W以下、1200MHz帯は1W以下、2400MHz帯は2W以下。",
+      "points_display": "ナンバーを完全に交換した交信は1点。同一バンドの同一局は電波形式を変えても1交信のみ得点対象。"
+    }
+  },
+  "fukuoka": {
+    "year": 2026,
+    "source_file": "fukuoka_2026.pdf",
+    "source_url": "user attachment: 2026-20th-fukuoka-contest-regulations.pdf",
+    "source_checked": "2026-09-14",
+    "rule_view": {
+      "participants": "日本国内のアマチュア局。県内・県外の区分は実際の運用場所によります。クラブ局を1人で運用した場合はシングルオペ。",
+      "power": "固定局100W以下、移動局50W以下。",
+      "movement": "移動局は50W以内。県内・県外の区分は実際に運用する場所で決まります。",
+      "call_method": "県内局：電話 CQ福岡コンテスト／電信 CQ FO TEST。県外局：電話 CQ福岡コンテスト こちらは県外局／電信 CQ FOX TEST。",
+      "counterparts": "県内局・県外局とも国内局との交信が得点対象です。県外局同士の交信も1点として扱います。",
+      "frequency": "1.8～430MHz帯（WARCバンドを除く）。JARL制定のコンテスト周波数に従います。",
+      "exchange": "県内局：RS(T)＋市郡区ナンバー。県外局：RS(T)＋JARL制定の都府県・地域等ナンバー。",
+      "repeat": "同一局との同一バンドの交信は電信・電話それぞれ1交信ずつ有効。バンドが異なればそれぞれ有効。",
+      "points_display": "福岡県内局との完全な交信は3点、県外局との交信は1点。同一バンドの電信と電話は各1交信ずつ有効。"
+    },
+    "source_note": "主催規約のユーザー提供PDF。公開公式URLは未特定。"
+  },
+  "all_akita": {
+    "year": 2026,
+    "source_file": "all_akita_2026.pdf",
+    "source_url": "user attachment: オール秋田2026規約.pdf",
+    "source_checked": "2026-09-14",
+    "rule_view": {
+      "participants": "国内のアマチュア局・SWL。県内局は秋田県内で運用する局、県外局はそれ以外。8J7等の記念局での運用はチェックログ扱いです。",
+      "power": "制限なし",
+      "movement": "移動は種目ごとのマルチプライヤーが変わらない範囲内で認められます。移動地はサマリーに記載します。上空・海上移動は不可。",
+      "call_method": "電信：県内局 CQ AT TEST／県外局 CQ ATG TEST。電話：CQ オール秋田コンテスト（県内局は県内局であることを送出）。",
+      "counterparts": "県内局：県内を含む全国の局。県外局：秋田県内の局。",
+      "frequency": "各バンドのJARLコンテスト使用周波数帯と総務省告示の使用区別に従います。種目別の対象バンドは公式規約の表を参照してください。",
+      "restrictions": "上空・海上移動とレピーター使用は不可。マルチオペは2人以上の運用（アシストも含む）。2種目提出には組合せ制限があります。",
+      "exchange": "県内局：RS(T)＋秋田県内の市町村略号。県外局：RS(T)＋都府県・北海道地域等の番号。",
+      "repeat": "同一局・同一バンドでも電信と電話はそれぞれ得点可。同一バンド・同一モードの重複交信は得点不可。",
+      "points_display": "完全な交信は1点。同一バンドでも電信と電話はそれぞれ得点可。"
+    },
+    "source_note": "主催規約のユーザー提供PDF。公開公式URLは未特定。"
+  },
+  "all_gunma": {
+    "year": 2026,
+    "source_file": "all_gunma_2026.pdf",
+    "source_url": "https://agc.akagi76.com/wp-content/uploads/2026agcrule.pdf",
+    "source_checked": "2026-09-14",
+    "rule_view": {
+      "call_method": "電信：県内局 CQ GM TEST／県外局 CQ GMO TEST。電話：CQ オール群馬コンテスト（県内局は群馬県を明示）。",
+      "counterparts": "県内局：県内・県外局。県外局：群馬県内局。",
+      "points_display": "電信の完全な交信は2点、電話は1点。同一バンドでは電波型式を変えても1交信のみ有効。"
+    }
+  },
+  "iburi_hidaka": {
+    "year": 2026,
+    "source_file": "iburi_hidaka_2026.txt",
+    "source_url": "http://lake-toya.jp/iburihidaka/wp-content/uploads/2026/06/%E7%AC%AC51%E5%9B%9E%E8%83%86%E6%8C%AF%E6%97%A5%E9%AB%98%E6%94%AF%E9%83%A8%E3%82%B3%E3%83%B3%E3%83%86%E3%82%B9%E3%83%88%E8%A6%8F%E7%B4%84.pdf",
+    "source_checked": "2026-09-14",
+    "rule_view": {
+      "call_method": "電話：CQ 胆振日高コンテスト／CQ IHコンテスト／CQコンテスト。電信：CQ IH TEST。",
+      "counterparts": "管内局：国内のアマチュア局。管外局：胆振日高管内のアマチュア局。",
+      "points_display": "管内局・管外局とも対象相手との完全な交信は1点。"
+    }
+  },
+  "all_kushiro": {
+    "year": 2026,
+    "source_file": "all_kushiro_2026.pdf",
+    "source_url": "https://www.jarl.com/senkon/kn_pdf/45con_%E8%A6%8F%E4%BF%AE%E6%AD%A33_1.pdf",
+    "source_checked": "",
+    "rule_view": {
+      "call_method": "電信：CQ SK TEST／電話：CQ オール釧根コンテスト",
+      "counterparts": "管内局：管内局を含む国内局。管外局・SWL：釧路・根室振興局管内のアマチュア局。",
+      "points_display": "完全な交信は1点。同一バンドの同一局は電波形式が違っても重複得点になりません。"
+    }
+  },
+  "nagasaki": {
+    "year": 2026,
+    "source_file": "nagasaki_2026.pdf",
+    "source_url": "https://www.jarl.com/nagasaki/nstest/2026ntst.pdf",
+    "source_checked": "2026-09-14",
+    "rule_view": {
+      "call_method": "電信：県内局 CQ NS TEST／県外局 CQ NSX TEST。電話：CQ 長崎県コンテスト（県内局・県外局の区分を付加）。",
+      "counterparts": "県内局：日本国内のアマチュア局。県外局・SWL：長崎県内で運用するアマチュア局。",
+      "power": "HFマルチバンドの電話部門は10W以下。",
+      "points_display": "各バンドで異なる局との交信は1点。同一バンドでは電信・電話を変えても後の交信は重複扱い。"
+    }
+  },
+  "all_ja0_160m": {
+    "year": 2025,
+    "source_file": "all_ja0_18_2025.html",
+    "source_url": "https://jarl-nn.asama-net.com/index.php?html_id=00000503",
+    "source_checked": "2026-09-14",
+    "rule_view": {
+      "points_display": "0エリア管内局との交信3点、管外局との交信1点。登録大会は2025年の1.8MHz部門です。",
+      "counterparts": "国内局同士の交信が有効。",
+      "call_method": "公式規約に定型のCQ呼び出し指定なし。"
+    }
+  },
+  "all_ja0_35": {
+    "year": 2026,
+    "source_file": "all_ja0_35_7_2026.html",
+    "source_url": "https://jarl-nn.asama-net.com/index.php?html_id=00000510",
+    "source_checked": "2026-09-14",
+    "rule_view": {
+      "counterparts": "国内局同士の交信が有効。",
+      "points_display": "0エリア管内局との交信3点、管外局との交信1点。",
+      "call_method": "公式規約に定型のCQ呼び出し指定なし。"
+    }
+  },
+  "all_ja0_7": {
+    "year": 2026,
+    "source_file": "all_ja0_35_7_2026.html",
+    "source_url": "https://jarl-nn.asama-net.com/index.php?html_id=00000510",
+    "source_checked": "2026-09-14",
+    "rule_view": {
+      "counterparts": "国内局同士の交信が有効。",
+      "points_display": "0エリア管内局との交信3点、管外局との交信1点。",
+      "call_method": "公式規約に定型のCQ呼び出し指定なし。"
+    }
+  },
+  "all_aomori": {
+    "year": 2026,
+    "source_file": "all_aomori_2026.html",
+    "source_url": "https://jarl-aomori.sakura.ne.jp/contest/all-aomori/",
+    "source_checked": "2026-09-14",
+    "rule_view": {
+      "call_method": "電話：CQ 青森コンテスト（県内局は県内局と送出）。電信：県内局 CQ AMA TEST／県外局 CQ AM TEST。",
+      "counterparts": "県内局：すべての国内局。県外局：青森県内で運用する局。",
+      "points_display": "相手が青森県内の市なら1点、町なら2点、村なら3点。県内局から県外局への交信は1点。同一バンドの電信と電話はそれぞれ得点可。"
+    }
+  },
+  "tsugaru_kaikyo": {
+    "year": 2026,
+    "source_file": "tsugarukaikyou_2026.html",
+    "source_url": "https://jarl-aomori.sakura.ne.jp/contest/tsugarukaikyou/",
+    "source_checked": "2026-09-14",
+    "rule_view": {
+      "call_method": "電話：CQ津軽海峡コンテスト／電信：CQ TK TEST",
+      "counterparts": "管内局：国内のアマチュア局。管外局：青森県内または渡島・檜山地域で運用する局。",
+      "points_display": "管内局は津軽海峡を挟む渡島・檜山地域と青森県との交信3点、同一管内の局とは2点、その他1点。管外局は対象の管内局との交信1点。"
+    }
+  },
+  "shizuoka": {
+    "year": 2026,
+    "source_file": "shizuoka_35_2026.pdf",
+    "source_url": "https://www.jarl.com/shizuoka/35kiyaku.pdf",
+    "source_checked": "2026-09-14",
+    "rule_view": {
+      "call_method": "電信：県内局 CQ TEST／県外局 CQ S TEST。電話：CQ 静岡コンテスト（県内局は県内局であることを送出）。",
+      "counterparts": "県内局：国内のアマチュア局。県外局：静岡県内で運用する局。",
+      "points_display": "1.9～430MHz帯1点、1200MHz帯3点、2.4GHz帯5点、5.6GHz帯10点、10GHz帯以上20点。430MHz帯以下のQRP局との交信は2倍。QRP局同士は4点になる場合があります。"
+    }
+  },
+  "all_tottori": {
+    "year": 2026,
+    "source_file": "all_tottori_2026.pdf",
+    "source_url": "https://www.jarl.com/tottori/files/2026tttest_rules.pdf",
+    "source_checked": "2026-09-14",
+    "rule_view": {
+      "call_method": "県外局：電話 CQ 鳥取コンテスト／電信 CQ TTX TEST。県内局：電話 CQ 鳥取コンテスト こちらは県内局／電信 CQ TT TEST。",
+      "counterparts": "県内局：鳥取県内を含む国内の局。県外局：鳥取県内局。",
+      "points_display": "完全な交信は1点。電信電話種目では同一バンドの同一局でも電信・電話をそれぞれ1点として計上可。"
+    }
+  },
+  "kagoshima": {
+    "year": 2026,
+    "source_file": "kagoshima_2026.pdf",
+    "source_url": "https://www.jarl.com/kagoshima/contest/26/kiyaku.pdf",
+    "source_checked": "2026-09-14",
+    "rule_view": {
+      "call_method": "電話：CQ 鹿児島コンテストの後に県内・県外・県人局の区分。電信：県内局 CQ KG TEST／県人局 CQ KJ TEST／県外局 CQ KX TEST。",
+      "counterparts": "県内局・県人局：国内で運用する局。県外局：県内局と県人局。",
+      "power": "100W以下（シングルオペ・マルチオペ共通）。100W超はチェックログ扱い。",
+      "points_display": "完全な交信は1点。同一局・同一バンドでも電信と電話は各1交信ずつ有効。"
+    }
+  },
+  "cq-wpx-cw": {
+    "year": 2026,
+    "source_file": "wpx_rules_2026.txt",
+    "source_url": "https://cqwpx.com/rules/",
+    "source_checked": "2026-09-14",
+    "rule_view": {
+      "counterparts": "世界中のアマチュア局。",
+      "points_display": "異なる大陸：14/21/28MHz帯3点、1.8/3.5/7MHz帯6点。同大陸の異なる国：高い3バンド1点、低い3バンド2点（北米局同士の例外あり）。同一国内：全バンド1点。CW部門。",
+      "call_method": "公式規約に定型のCQ呼び出し指定なし。"
+    }
+  },
+  "cq-wpx-ssb": {
+    "year": 2026,
+    "source_file": "wpx_rules_2026.txt",
+    "source_url": "https://cqwpx.com/rules/",
+    "source_checked": "2026-09-14",
+    "rule_view": {
+      "counterparts": "世界中のアマチュア局。",
+      "points_display": "異なる大陸：14/21/28MHz帯3点、1.8/3.5/7MHz帯6点。同大陸の異なる国：高い3バンド1点、低い3バンド2点（北米局同士の例外あり）。同一国内：全バンド1点。SSB部門。",
+      "call_method": "公式規約に定型のCQ呼び出し指定なし。"
+    },
+    "source_note": "保存した公式ルールのSSB開催日の表記は2025とあり、登録年2026との齟齬。得点本文は確認。"
+  },
+  "cq-wpx-rtty": {
+    "year": 2026,
+    "source_file": "wpx_rtty_rules_2026.txt",
+    "source_url": "https://cqwpxrtty.com/rules.htm",
+    "source_checked": "2026-09-14",
+    "rule_view": {
+      "counterparts": "世界中のアマチュア局。RTTYモードで交信。",
+      "points_display": "RTTYで異なる大陸：14/21/28MHz帯3点、3.5/7MHz帯6点。同大陸の異なる国：高い3バンド2点、低い2バンド4点。同一国内：高い3バンド1点、低い2バンド2点。",
+      "call_method": "公式規約に定型のCQ呼び出し指定なし。"
+    }
+  },
+  "cq-160-cw": {
+    "year": 2026,
+    "source_file": "cq160_rules_2026.txt",
+    "source_url": "https://cq160.com/rules/index.htm",
+    "source_checked": "2026-09-14",
+    "rule_view": {
+      "counterparts": "世界中のアマチュア局。160m帯の電信交信。",
+      "points_display": "同一国内の局2点、同大陸の異なる国5点、異なる大陸10点。海上移動局との交信は5点（マルチにはなりません）。",
+      "call_method": "公式規約に定型のCQ呼び出し指定なし。"
+    }
+  },
+  "cq-160-ssb": {
+    "year": 2026,
+    "source_file": "cq160_rules_2026.txt",
+    "source_url": "https://cq160.com/rules/index.htm",
+    "source_checked": "2026-09-14",
+    "rule_view": {
+      "counterparts": "世界中のアマチュア局。160m帯のSSB交信。",
+      "points_display": "同一国内の局2点、同大陸の異なる国5点、異なる大陸10点。海上移動局との交信は5点（マルチにはなりません）。",
+      "call_method": "公式規約に定型のCQ呼び出し指定なし。"
+    }
+  },
+  "cq-ww-cw": {
+    "year": 2025,
+    "source_file": "cqww_rules_2025.txt",
+    "source_url": "https://cqww.com/rules.htm",
+    "source_checked": "2026-09-14",
+    "rule_view": {
+      "counterparts": "世界中のアマチュア局。CWで交信。",
+      "points_display": "異なる大陸3点、同大陸の異なる国1点（北米局の例外あり）、同一国内0点（ゾーン・国マルチには算入可）。登録大会は2025年。",
+      "call_method": "公式規約に定型のCQ呼び出し指定なし。"
+    }
+  },
+  "cq-ww-ssb": {
+    "year": 2025,
+    "source_file": "cqww_rules_2025.txt",
+    "source_url": "https://cqww.com/rules.htm",
+    "source_checked": "2026-09-14",
+    "rule_view": {
+      "counterparts": "世界中のアマチュア局。SSBで交信。",
+      "points_display": "異なる大陸3点、同大陸の異なる国1点（北米局の例外あり）、同一国内0点（ゾーン・国マルチには算入可）。登録大会は2025年。",
+      "call_method": "公式規約に定型のCQ呼び出し指定なし。"
+    }
+  },
+  "cq-ww-rtty": {
+    "year": 2026,
+    "source_file": "cqww_rtty_rules_2026.txt",
+    "source_url": "https://cqwwrtty.com/rules.htm",
+    "source_checked": "2026-09-14",
+    "rule_view": {
+      "counterparts": "世界中のアマチュア局。RTTYで交信。",
+      "points_display": "RTTYで異なる大陸3点、同大陸の異なる国2点、同一国内1点。",
+      "call_method": "公式規約に定型のCQ呼び出し指定なし。"
+    }
+  },
+  "cq-vhf-digi": {
+    "year": 2026,
+    "source_file": "cqvhf_rules_2026.txt",
+    "source_url": "https://cqww-vhf.com/rules/",
+    "source_checked": "2026-09-14",
+    "rule_view": {
+      "counterparts": "世界中のアマチュア局。デジタル開催はFT4・FT8・MSK144・Q65等のデジタルモードのみ。",
+      "points_display": "50MHz帯1点、144MHz帯2点。ローバーは移動先グリッドで別交信として得点になる場合があります。",
+      "call_method": "公式規約に定型のCQ呼び出し指定なし。"
+    }
+  },
+  "cq-vhf-ssbcw": {
+    "year": 2026,
+    "source_file": "cqvhf_rules_2026.txt",
+    "source_url": "https://cqww-vhf.com/rules/",
+    "source_checked": "2026-09-14",
+    "rule_view": {
+      "counterparts": "世界中のアマチュア局。SSB/CW/FM開催はこれらアナログのモードのみ（デジタル開催は別大会）。",
+      "points_display": "50MHz帯1点、144MHz帯2点。ローバーは移動先グリッドで別交信として得点になる場合があります。",
+      "call_method": "公式規約に定型のCQ呼び出し指定なし。"
+    }
+  },
+  "ww-digi": {
+    "year": 2026,
+    "source_file": "wwdigi_rules_web_2026.txt",
+    "source_url": "https://ww-digi.com/rules/",
+    "source_checked": "2026-09-14",
+    "rule_view": {
+      "counterparts": "世界中のアマチュア局。FT4・FT8で交信。",
+      "points_display": "1交信1点に、相互のグリッドスクエア中心間距離3000kmごとに1点を加算（短距離経路で計算）。同一局・同一バンドはFT4とFT8を通して1回のみ得点。",
+      "call_method": "公式規約に定型のCQ呼び出し指定なし。"
+    }
+  },
+  "scalg-6m-cw": {
+    "year": 2026,
+    "source_file": "scalg_6m_cw_2026.html",
+    "source_url": "https://scalg6mcw.web.fc2.com/2026_sc_kiyaku_01a.html",
+    "source_checked": "2026-09-14",
+    "rule_view": {
+      "call_method": "電信：CQ SC TEST",
+      "counterparts": "50MHz帯の電信で交信する局。",
+      "points_display": "完全な交信は1点。SWLの完全な受信も1点。"
+    }
+  },
+  "all_okayama_ft": {
+    "year": 2026,
+    "source_file": "okayama_ft8_2026.html",
+    "source_url": "https://www.jarl.com/okayama/oy-ft8-test-rule-2026.html",
+    "source_checked": "2026-09-14",
+    "rule_view": {
+      "call_method": "FT8/FT4：CQ OYT",
+      "counterparts": "県内局：国内すべてのアマチュア局。県外局：岡山県内局。",
+      "points_display": "FT8/FT4による完全な交信は1点。同一バンドの重複はFT8とFT4を変えても1回のみ有効。相手局のログ提出がない交信は得点になりません。"
+    }
+  },
+  "kcj-topband": {
+    "year": 2026,
+    "source_file": "kcj_topband_2026.pdf",
+    "source_url": "https://kcj-cw.com/contest/rule/2026_42_top_ja_t.pdf",
+    "source_checked": "2026-09-14",
+    "rule_view": {
+      "counterparts": "国内局・国外局とのCW交信。",
+      "points_display": "国内局は国内局との交信1点・国外局2点。国外局は国内局2点・国外局1点。提出ログの相互照合が一致した交信のみ有効。",
+      "call_method": "公式規約に定型のCQ呼び出し指定なし。"
+    }
+  },
+  "kcj": {
+    "year": 2026,
+    "source_file": "kcj_2026.pdf",
+    "source_url": "https://kcj-cw.com/contest/rule/2026_47_kcj_ja_t.pdf",
+    "source_checked": "2026-09-14",
+    "rule_view": {
+      "counterparts": "国内局・国外局とのCW交信。",
+      "points_display": "国内局は国内局との交信1点・国外局2点。国外局は国内局2点・国外局1点。提出ログの相互照合が一致した交信のみ有効。",
+      "call_method": "公式規約に定型のCQ呼び出し指定なし。"
+    }
+  }
+}

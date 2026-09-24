@@ -1,0 +1,84 @@
+{
+  "schema": 10,
+  "project": "PSLog",
+  "version": "1.14",
+  "status": "FINAL_CANONICAL_SOURCE",
+  "canonical_filename": "PSLog_1.14_CANONICAL_SOURCE.zip",
+  "finalized_at": "2026-09-25",
+  "next_development_line": "Ver1.14 series (first normal patch expected 1.141; next canonical number follows user instruction)",
+  "source_of_final_canonicalization": {
+    "baseline": {
+      "filename": "PSLog_1.13_CANONICAL_SOURCE.zip",
+      "sha256": "52429a944b166c021bed902ecae682757c65bf933c072c3d3a84cc2e84ac1c63",
+      "note": "Ver1.13 canonical baseline created and accepted in the current PSLOG111 development line."
+    },
+    "applied_artifacts": [
+      {
+        "filename": "PSLog_1.14_DIFF.zip",
+        "sha256": "2c94b6639faf2de84f69bf692386402d85ee45257a3bd5bf1b8c650dbe88a675",
+        "note": "User-accepted first-start enhancement: amateur/free-radio callsign selector and free-radio-only startup."
+      }
+    ],
+    "canonical_release_adjustments": [
+      "Accepted Ver1.14 diff overlaid exactly on Ver1.13 canonical source; runtime files from the diff retain the diff-manifest SHA-256 values.",
+      "Entry/handoff/baseline/build/validation documentation refreshed for Ver1.14.",
+      "Ver1.14 diff README/manifest and the Ver1.13 source manifest snapshot moved to docs/history/ver1.14-diff/.",
+      "No new runtime business/UI behavior was added during Ver1.14 canonicalization beyond the accepted Ver1.14 diff state."
+    ],
+    "rule": "Future development must start from this Ver1.14 canonical ZIP only. Do not reconstruct by replaying Ver1.13 plus PSLog_1.14_DIFF.zip or earlier PATCH/FIX artifacts."
+  },
+  "canonicalization": {
+    "removed_generated": [
+      "build/",
+      "dist/",
+      "release/",
+      "__pycache__/",
+      "**/__pycache__/",
+      "*.pyc",
+      "*.pyo"
+    ],
+    "moved_history": [
+      "PSLog_1.14_DIFF manifest and README -> docs/history/ver1.14-diff/",
+      "Ver1.13 SOURCE_MANIFEST snapshot -> docs/history/ver1.14-diff/SOURCE_MANIFEST_BASE_1.13.json"
+    ],
+    "updated_entry_docs": [
+      "README.md",
+      "START_HERE.md",
+      "HANDOFF.md",
+      "NEXT_CHAT_PROMPT.md",
+      "CHANGELOG.md",
+      "docs/INDEX.md",
+      "docs/IMPLEMENTATION_STATUS.md",
+      "docs/specs/development/PSLOG_1.14_BASELINE.md",
+      "docs/specs/development/PSLOG_1.14_NEXT_CHAT_PLAN.md",
+      "docs/specs/development/VALIDATION.md",
+      "docs/specs/data/FREE_RADIO_LOGGING.md",
+      "WINDOWS_BUILD.md",
+      "WINDOWS_CHECKLIST.txt",
+      "SAVE_LOCATION.md",
+      "USER_GUIDE.txt"
+    ]
+  },
+  "release_highlights": [
+    "First-launch dialog starts with the amateur-radio callsign prompt and can switch to the free-radio callsign prompt.",
+    "PSLog can start in free-radio-only mode without configuring an amateur-radio callsign.",
+    "Free-radio first start selects type, optional model, and automatic log year, and replaces the initial empty standard tab with a free-radio tab.",
+    "Free-radio-only settings do not overwrite the amateur own-call setting.",
+    "Free-radio calls are not inherited into newly created amateur standard/EASY/contest tabs.",
+    "Blank-model free-radio tabs restore correctly after restart.",
+    "All Ver1.13 free-radio storage/search/tab separation and Windows dynamic release naming remain in force."
+  ],
+  "verification": {
+    "user_windows_observation": "2026-09-25: user applied the Ver1.14 diff over the already-extracted Ver1.13 source, reported no problem, and requested Ver1.14 canonicalization.",
+    "accepted_diff_overlay_sha256_check": "All files listed in PSLog_1.14_DIFF/PATCH_MANIFEST.json (except the README archived as history) match their declared SHA-256 in the canonical build tree.",
+    "canonicalization_compileall": "OK",
+    "targeted_regression": "43 tests OK: initial-start Ver1.14, free-radio, full restore, Windows packaging, updater version order, Ver1.070 core, and Ver1.06 release regressions.",
+    "full_discovery_linux": "507 tests run; 69 errors are PySide6-not-installed GUI import/runtime errors; 9 skipped; 0 FAIL assertions.",
+    "note": "User already reported the accepted Ver1.14 diff state as problem-free on Windows before canonicalization. Canonicalization itself does not alter runtime behavior."
+  },
+  "source_tree": {
+    "files_excluding_manifest": 1168,
+    "sha256_excluding_manifest": "270814b18012224734d640d2613c5d4c8e0f8ce4fe3997e8c1adb5ecdeb278c8",
+    "hash_method": "SHA-256 over sorted UTF-8 relative path, NUL, per-file SHA-256 hex, newline; SOURCE_MANIFEST.json excluded."
+  }
+}

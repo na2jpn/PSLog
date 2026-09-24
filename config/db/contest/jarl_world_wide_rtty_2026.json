@@ -1,0 +1,14 @@
+{
+  "source": "jarl_ww_rtty_2026.html",
+  "inside": [],
+  "outside": [],
+  "id": "jarl_world_wide_rtty",
+  "year": 2026,
+  "municipal_source_versions": {
+    "jcc": "2019-05-01",
+    "jcg": "2018-10-01",
+    "ward": "2024-01-01",
+    "history": "2024-01-01"
+  },
+  "sha256": "97d7972eac01e21d0bc8653b5b45985736064cf5efbec2168e3696a7f1925efb"
+}

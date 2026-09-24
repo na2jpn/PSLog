@@ -1,0 +1,532 @@
+{
+  "schema": 2,
+  "id": "toyama_emergency",
+  "name": "第49回富山県非常無線通信訓練コンテスト",
+  "year": 2026,
+  "url": "https://www.jarl.com/toyama/25ham/49OSO.pdf",
+  "organizer": "JARL富山県支部",
+  "sort_name": "第49回富山県非常無線通信訓練コンテスト",
+  "points": {
+    "cw": 1,
+    "phone": 1,
+    "digital": 1
+  },
+  "conditions": [],
+  "duplicate": {
+    "enabled": true,
+    "by_mode": false
+  },
+  "multi1": {
+    "kind": "off",
+    "start": 0,
+    "length": 2,
+    "per_band": true
+  },
+  "multi2": {
+    "kind": "off",
+    "value": 1,
+    "condition": {
+      "all": []
+    }
+  },
+  "formula": "total",
+  "scoring": {
+    "eligible": {
+      "all": []
+    },
+    "multipliers": [
+      {
+        "id": "region",
+        "source": "area",
+        "kind": "whole",
+        "start": 0,
+        "length": 2,
+        "per_band": true,
+        "when": {
+          "all": []
+        }
+      }
+    ],
+    "bonus": 0
+  },
+  "event": {
+    "timezone": "JST",
+    "windows": [
+      {
+        "start": "2026-01-10 19:00",
+        "end": "2026-01-10 23:00",
+        "bands": [
+          "21",
+          "28",
+          "50",
+          "144",
+          "430",
+          "1200",
+          "2400"
+        ]
+      }
+    ],
+    "categories": [
+      {
+        "id": "I-M",
+        "name": "県内シングルオペマルチバンド",
+        "bands": [
+          "21",
+          "28",
+          "50",
+          "144",
+          "430",
+          "1200",
+          "2400"
+        ],
+        "modes": [
+          "*"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 7,
+        "min_calls": 1,
+        "required_flags": [
+          "国内在住局。実際に交換した所在地と苗字を省略せず入力し、免許範囲内の型式・必要最小出力。ハンディー申告時は全交信FM・5W以下で無線機/電源/アンテナを携行した"
+        ],
+        "operator": "SO",
+        "submission_code": "県内シングルオペマルチバンド",
+        "mo_operators_in_comments": true,
+        "regional": {
+          "section": "NORMAL",
+          "required_declarations": [
+            "own_region",
+            "equipment",
+            "antenna"
+          ]
+        }
+      },
+      {
+        "id": "I-21",
+        "name": "県内シングルオペ21MHz",
+        "bands": [
+          "21"
+        ],
+        "modes": [
+          "*"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "国内在住局。実際に交換した所在地と苗字を省略せず入力し、免許範囲内の型式・必要最小出力。ハンディー申告時は全交信FM・5W以下で無線機/電源/アンテナを携行した"
+        ],
+        "operator": "SO",
+        "submission_code": "県内シングルオペ21MHz",
+        "mo_operators_in_comments": true,
+        "regional": {
+          "section": "NORMAL",
+          "required_declarations": [
+            "own_region",
+            "equipment",
+            "antenna"
+          ]
+        }
+      },
+      {
+        "id": "I-28",
+        "name": "県内シングルオペ28MHz",
+        "bands": [
+          "28"
+        ],
+        "modes": [
+          "*"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "国内在住局。実際に交換した所在地と苗字を省略せず入力し、免許範囲内の型式・必要最小出力。ハンディー申告時は全交信FM・5W以下で無線機/電源/アンテナを携行した"
+        ],
+        "operator": "SO",
+        "submission_code": "県内シングルオペ28MHz",
+        "mo_operators_in_comments": true,
+        "regional": {
+          "section": "NORMAL",
+          "required_declarations": [
+            "own_region",
+            "equipment",
+            "antenna"
+          ]
+        }
+      },
+      {
+        "id": "I-50",
+        "name": "県内シングルオペ50MHz",
+        "bands": [
+          "50"
+        ],
+        "modes": [
+          "*"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "国内在住局。実際に交換した所在地と苗字を省略せず入力し、免許範囲内の型式・必要最小出力。ハンディー申告時は全交信FM・5W以下で無線機/電源/アンテナを携行した"
+        ],
+        "operator": "SO",
+        "submission_code": "県内シングルオペ50MHz",
+        "mo_operators_in_comments": true,
+        "regional": {
+          "section": "NORMAL",
+          "required_declarations": [
+            "own_region",
+            "equipment",
+            "antenna"
+          ]
+        }
+      },
+      {
+        "id": "I-144",
+        "name": "県内シングルオペ144MHz",
+        "bands": [
+          "144"
+        ],
+        "modes": [
+          "*"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "国内在住局。実際に交換した所在地と苗字を省略せず入力し、免許範囲内の型式・必要最小出力。ハンディー申告時は全交信FM・5W以下で無線機/電源/アンテナを携行した"
+        ],
+        "operator": "SO",
+        "submission_code": "県内シングルオペ144MHz",
+        "mo_operators_in_comments": true,
+        "regional": {
+          "section": "NORMAL",
+          "required_declarations": [
+            "own_region",
+            "equipment",
+            "antenna"
+          ]
+        }
+      },
+      {
+        "id": "I-430",
+        "name": "県内シングルオペ430MHz",
+        "bands": [
+          "430"
+        ],
+        "modes": [
+          "*"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "国内在住局。実際に交換した所在地と苗字を省略せず入力し、免許範囲内の型式・必要最小出力。ハンディー申告時は全交信FM・5W以下で無線機/電源/アンテナを携行した"
+        ],
+        "operator": "SO",
+        "submission_code": "県内シングルオペ430MHz",
+        "mo_operators_in_comments": true,
+        "regional": {
+          "section": "NORMAL",
+          "required_declarations": [
+            "own_region",
+            "equipment",
+            "antenna"
+          ]
+        }
+      },
+      {
+        "id": "I-1200",
+        "name": "県内シングルオペ1200MHz",
+        "bands": [
+          "1200"
+        ],
+        "modes": [
+          "*"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "国内在住局。実際に交換した所在地と苗字を省略せず入力し、免許範囲内の型式・必要最小出力。ハンディー申告時は全交信FM・5W以下で無線機/電源/アンテナを携行した"
+        ],
+        "operator": "SO",
+        "submission_code": "県内シングルオペ1200MHz",
+        "mo_operators_in_comments": true,
+        "regional": {
+          "section": "NORMAL",
+          "required_declarations": [
+            "own_region",
+            "equipment",
+            "antenna"
+          ]
+        }
+      },
+      {
+        "id": "I-2400",
+        "name": "県内シングルオペ2400MHz",
+        "bands": [
+          "2400"
+        ],
+        "modes": [
+          "*"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "国内在住局。実際に交換した所在地と苗字を省略せず入力し、免許範囲内の型式・必要最小出力。ハンディー申告時は全交信FM・5W以下で無線機/電源/アンテナを携行した"
+        ],
+        "operator": "SO",
+        "submission_code": "県内シングルオペ2400MHz",
+        "mo_operators_in_comments": true,
+        "regional": {
+          "section": "NORMAL",
+          "required_declarations": [
+            "own_region",
+            "equipment",
+            "antenna"
+          ]
+        }
+      },
+      {
+        "id": "I-MM",
+        "name": "県内マルチオペマルチバンド",
+        "bands": [
+          "21",
+          "28",
+          "50",
+          "144",
+          "430",
+          "1200",
+          "2400"
+        ],
+        "modes": [
+          "*"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 7,
+        "min_calls": 1,
+        "required_flags": [
+          "国内在住局。実際に交換した所在地と苗字を省略せず入力し、免許範囲内の型式・必要最小出力。ハンディー申告時は全交信FM・5W以下で無線機/電源/アンテナを携行した"
+        ],
+        "operator": "MO",
+        "submission_code": "県内マルチオペマルチバンド",
+        "mo_operators_in_comments": true,
+        "regional": {
+          "section": "NORMAL",
+          "required_declarations": [
+            "own_region",
+            "equipment",
+            "antenna"
+          ]
+        }
+      },
+      {
+        "id": "O-M",
+        "name": "県外マルチバンド",
+        "bands": [
+          "21",
+          "28",
+          "50",
+          "144",
+          "430",
+          "1200",
+          "2400"
+        ],
+        "modes": [
+          "*"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 7,
+        "min_calls": 1,
+        "required_flags": [
+          "国内在住局。実際に交換した所在地と苗字を省略せず入力し、免許範囲内の型式・必要最小出力。ハンディー申告時は全交信FM・5W以下で無線機/電源/アンテナを携行した"
+        ],
+        "submission_code": "県外マルチバンド",
+        "mo_operators_in_comments": true,
+        "regional": {
+          "section": "NORMAL",
+          "required_declarations": [
+            "own_region",
+            "equipment",
+            "antenna"
+          ]
+        }
+      },
+      {
+        "id": "HANDY",
+        "name": "ハンディー",
+        "bands": [
+          "21",
+          "28",
+          "50",
+          "144",
+          "430",
+          "1200",
+          "2400"
+        ],
+        "modes": [
+          "*"
+        ],
+        "max_power": 5,
+        "min_bands": 1,
+        "max_bands": 7,
+        "min_calls": 1,
+        "required_flags": [
+          "国内在住局。実際に交換した所在地と苗字を省略せず入力し、免許範囲内の型式・必要最小出力。ハンディー申告時は全交信FM・5W以下で無線機/電源/アンテナを携行した"
+        ],
+        "submission_code": "ハンディー",
+        "mo_operators_in_comments": true,
+        "regional": {
+          "section": "HANDY",
+          "required_declarations": [
+            "own_region",
+            "equipment",
+            "antenna"
+          ]
+        }
+      }
+    ],
+    "required_flags": [
+      "国内の規約対象局として、実運用地・使用周波数・免許範囲・完全な番号交換を確認した",
+      "大会原典の運用制限と提出数を確認し、未受信番号を事後に補っていない（申告得点・審査前）"
+    ],
+    "duplicate_fields": [
+      "call",
+      "band"
+    ],
+    "prefer": "first",
+    "special": "none",
+    "entrant": {
+      "station_types": [
+        "individual",
+        "club"
+      ],
+      "guest_policy": "allowed"
+    },
+    "normalization": {
+      "bands": {
+        "21MHZ": "21",
+        "28MHZ": "28",
+        "50MHZ": "50",
+        "144MHZ": "144",
+        "430MHZ": "430",
+        "1200MHZ": "1200",
+        "2400MHZ": "2400",
+        "1.2G": "1200",
+        "1.2GHZ": "1200",
+        "2.4G": "2400",
+        "2.4GHZ": "2400"
+      },
+      "modes": {
+        "USB": "SSB",
+        "LSB": "SSB"
+      },
+      "mode_families": {}
+    },
+    "regional": {
+      "declarations": {
+        "own_region": "自局集計所在地（県内15市町村名、県外都道府県名）",
+        "equipment": "無線機の機種・電源（ハンディーは携行可能電源）",
+        "antenna": "アンテナ（ハンディーは身に付け携行可能）"
+      },
+      "profile": "toyama",
+      "local_a": [
+        "富山市",
+        "高岡市",
+        "魚津市",
+        "氷見市",
+        "滑川市",
+        "黒部市",
+        "砺波市",
+        "小矢部市",
+        "南砺市",
+        "射水市",
+        "舟橋村",
+        "上市町",
+        "立山町",
+        "入善町",
+        "朝日町"
+      ],
+      "local_b": [
+        "北海道",
+        "青森県",
+        "岩手県",
+        "宮城県",
+        "秋田県",
+        "山形県",
+        "福島県",
+        "茨城県",
+        "栃木県",
+        "群馬県",
+        "埼玉県",
+        "千葉県",
+        "東京都",
+        "神奈川県",
+        "新潟県",
+        "石川県",
+        "福井県",
+        "山梨県",
+        "長野県",
+        "岐阜県",
+        "静岡県",
+        "愛知県",
+        "三重県",
+        "滋賀県",
+        "京都府",
+        "大阪府",
+        "兵庫県",
+        "奈良県",
+        "和歌山県",
+        "鳥取県",
+        "島根県",
+        "岡山県",
+        "広島県",
+        "山口県",
+        "徳島県",
+        "香川県",
+        "愛媛県",
+        "高知県",
+        "福岡県",
+        "佐賀県",
+        "長崎県",
+        "熊本県",
+        "大分県",
+        "宮崎県",
+        "鹿児島県",
+        "沖縄県"
+      ],
+      "entry_set": {
+        "kind": "sections",
+        "max": 2
+      }
+    },
+    "submission": {
+      "formats": [
+        "所定様式PDF"
+      ],
+      "zone": "JST",
+      "contest": "第49回富山県非常無線通信訓練コンテスト",
+      "instructions": "2026。指定支部様式の記入済PDF、単帯参加帯赤枠・他帯サマリーとログ・50局超の重複チェック表を含む。実所在地+苗字は自由文字列、集計用所在地は別欄。jh9feh@jarl.com、1月26日到着。 原案・原典はdocs/contest-researchに保存。2026参考版であり2027へ自動更新しません。主催受付・Windows実機は未検証。自動提出しません。",
+      "row_scope": "category"
+    },
+    "rule_view": {
+      "call_method": "電信：CQ TEST または CQ TY TEST／電話：CQ コンテスト または CQ 富山コンテスト",
+      "points_display": "完全な交信は1点。県外局同士は無得点。同一バンドでは電波形式が異なっても1交信のみ有効。",
+      "power": "空中線電力は必要最小限。",
+      "counterparts": "県内局は国内のアマチュア局。県外局同士は得点にならず、県外局は富山県内局との交信が得点対象。"
+    }
+  }
+}
+

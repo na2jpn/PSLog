@@ -1,0 +1,107 @@
+{
+  "schema": 9,
+  "project": "PSLog",
+  "version": "1.13",
+  "status": "FINAL_CANONICAL_SOURCE",
+  "canonical_filename": "PSLog_1.13_CANONICAL_SOURCE.zip",
+  "finalized_at": "2026-09-25",
+  "next_development_line": "Ver1.13 series (first normal patch expected 1.131; next canonical number follows user instruction)",
+  "source_of_final_canonicalization": {
+    "baseline": {
+      "filename": "PSLog_1.10_CANONICAL_SOURCE.zip",
+      "uploaded_filename": "20260924_PSLog_1.10_CANONICAL_SOURCE(1).zip",
+      "sha256": "d2e94fcf86d9c8924520bfd88c2f76f4e1ac304d777ab63ef39d554f23c091d5",
+      "note": "Ver1.10 canonical baseline supplied by the user."
+    },
+    "applied_artifacts": [
+      {
+        "filename": "PSLog_1.11_PATCH01.zip",
+        "sha256": "573c082a785904aad1bdaaf7eb95b604cd818e3b3cebafffcc999fd781d4e4a7",
+        "note": "Initial free-radio implementation."
+      },
+      {
+        "filename": "PSLog_1.11_PATCH01_FIX1.zip",
+        "sha256": "b6ec4d2132352b25f03c436a51dc79753c3db5bbbc237d0b0034c011ec6f7282",
+        "note": "Stale regression-test expectation correction only."
+      },
+      {
+        "filename": "PSLog_1.12_PATCH01_FIX2.zip",
+        "sha256": "db4a63ac336fe9cf5dffb85e652c7d1f78994ef7b3b19a3c187ec96a7931aafb",
+        "note": "Version update and Windows release filename de-hardcoding."
+      },
+      {
+        "filename": "PSLog_1.12_FIX1.zip",
+        "sha256": "faea42afdc8a8d496ddbbc98730c11054627d74c2c2a1367fd2dafcc43aea562",
+        "note": "Keep free-radio create dialog open on validation errors and allow blank model names."
+      }
+    ],
+    "canonical_release_adjustments": [
+      "Release VERSION changed from 1.12 to canonical 1.13 by explicit user instruction.",
+      "Current-version regression expectations changed from 1.12 to 1.13.",
+      "Updater version-order regression verifies 1.13 > 1.12 and 1.131 > 1.13.",
+      "Entry/handoff/user/build/validation documentation refreshed for Ver1.13.",
+      "Ver1.11/1.12 PATCH/FIX README/manifest artifacts moved to docs/history/ver1.11-patches/.",
+      "No new business/UI behavior was added during 1.13 canonicalization beyond the accepted Ver1.12 FIX1 state."
+    ],
+    "rule": "Future development must start from this Ver1.13 canonical ZIP only. Do not reconstruct by replaying Ver1.10 plus Ver1.11/1.12 PATCH/FIX artifacts."
+  },
+  "canonicalization": {
+    "removed_generated": [
+      "build/",
+      "dist/",
+      "release/",
+      "__pycache__/",
+      "**/__pycache__/",
+      "*.pyc",
+      "*.pyo"
+    ],
+    "moved_history": [
+      "Ver1.11/1.12 PATCH/FIX READMEs and manifests -> docs/history/ver1.11-patches/",
+      "Ver1.10 SOURCE_MANIFEST snapshot -> docs/history/ver1.11-patches/SOURCE_MANIFEST_BASE_1.10.json"
+    ],
+    "updated_entry_docs": [
+      "README.md",
+      "START_HERE.md",
+      "HANDOFF.md",
+      "NEXT_CHAT_PROMPT.md",
+      "CHANGELOG.md",
+      "docs/INDEX.md",
+      "docs/IMPLEMENTATION_STATUS.md",
+      "docs/specs/development/PSLOG_1.13_BASELINE.md",
+      "docs/specs/development/PSLOG_1.13_NEXT_CHAT_PLAN.md",
+      "docs/specs/development/VALIDATION.md",
+      "docs/specs/data/FREE_RADIO_LOGGING.md",
+      "docs/specs/data/LOGBOOK_ROUTING.md",
+      "WINDOWS_BUILD.md",
+      "WINDOWS_CHECKLIST.txt",
+      "SAVE_LOCATION.md",
+      "USER_GUIDE.txt"
+    ]
+  },
+  "release_highlights": [
+    "Free-radio master logs are active under logbook_flr and remain separate from amateur logbook data.",
+    "Free-radio tabs support up to four simultaneous tabs, unlimited logbook creation, light-blue selected styling, recall, and duplicate-tab prevention.",
+    "Free-radio calls use hiragana plus ASCII letters/digits; Katakana is normalized to hiragana.",
+    "Free-radio log identity is call + type + optional model + year; model suggestions come from existing free-radio logbooks.",
+    "CB/LCR/DCR/UHFCB/特小/BLU/ETC map automatically to stored BAND/MODE values.",
+    "Free-radio LogSearch crosses types for the same own call and displays type instead of BAND/MODE.",
+    "Dedicated free-radio search/edit remains isolated from amateur search/edit.",
+    "Whole backup/restore includes logbook_flr.",
+    "Windows release package filenames derive version from storage.VERSION.",
+    "Free-radio create-dialog validation retains user input and model name is optional."
+  ],
+  "verification": {
+    "user_windows_observation": "2026-09-25: after the initial two stale-test failures were corrected, the user showed build-windows.ps1 completing through PyInstaller packaging. The hard-coded 1.10 release filename was then corrected in Ver1.12. The user subsequently reported two free-radio create-dialog UX defects; Ver1.12 FIX1 addressed them, after which the user requested Ver1.13 canonicalization.",
+    "canonicalization_compileall": "OK",
+    "targeted_regression": "38 tests OK: free-radio, full restore, Windows packaging, updater version order, Ver1.070 core, and Ver1.06 release regressions.",
+    "free_radio_regression": "8 tests OK.",
+    "updater_version_regression": "Includes 1.13 > 1.12, 1.131 > 1.13, and 1.12 < 1.13.",
+    "full_discovery_linux": "502 tests run; 422 passed; 69 errors are PySide6-not-installed GUI import/runtime errors; 9 skipped; 0 FAIL assertions.",
+    "note": "Final Ver1.13 Windows full-test/GUI/PyInstaller confirmation remains a Windows-side check."
+  },
+  "source_tree": {
+    "files_excluding_manifest": 1162,
+    "sha256_excluding_manifest": "34069092f4ea2bc3195c321b4d1d9fd64ba852395176642acb3b4b865216c891",
+    "hash_method": "SHA-256 over sorted UTF-8 relative path, NUL, per-file SHA-256 hex, newline; SOURCE_MANIFEST.json excluded."
+  }
+}

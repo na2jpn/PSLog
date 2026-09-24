@@ -1,0 +1,376 @@
+{
+  "schema": 2,
+  "id": "cq-vhf-ssbcw",
+  "name": "CQ World Wide VHF SSB/CW/FM",
+  "year": 2026,
+  "url": "https://cqww-vhf.com/rules.htm",
+  "organizer": "WWROF",
+  "sort_name": "CQ VHF",
+  "points": {
+    "cw": 1,
+    "phone": 1,
+    "digital": 0
+  },
+  "conditions": [],
+  "duplicate": {
+    "enabled": true,
+    "by_mode": false
+  },
+  "multi1": {
+    "kind": "off",
+    "start": 0,
+    "length": 2,
+    "per_band": true
+  },
+  "multi2": {
+    "kind": "off",
+    "value": 1,
+    "condition": {
+      "all": []
+    }
+  },
+  "formula": "total",
+  "scoring": {
+    "eligible": {
+      "all": []
+    },
+    "multipliers": [
+      {
+        "id": "region",
+        "source": "area",
+        "kind": "whole",
+        "start": 0,
+        "length": 2,
+        "per_band": true,
+        "when": {
+          "all": []
+        }
+      }
+    ],
+    "bonus": 0
+  },
+  "event": {
+    "timezone": "UTC",
+    "windows": [
+      {
+        "start": "2026-07-04 14:00",
+        "end": "2026-07-05 14:00",
+        "bands": [
+          "50",
+          "144"
+        ]
+      }
+    ],
+    "categories": [
+      {
+        "id": "SO_HIGH_ALL",
+        "name": "SO HIGH ALL",
+        "bands": [
+          "50",
+          "144"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "FM"
+        ],
+        "max_power": 1500,
+        "min_bands": 1,
+        "max_bands": 2,
+        "min_calls": 1,
+        "required_flags": [
+          "全設備500m径内・アンテナ有線接続・単一運用地、全運用と記録は1人"
+        ],
+        "operator": "SO"
+      },
+      {
+        "id": "SO_HIGH_6M",
+        "name": "SO HIGH 6M",
+        "bands": [
+          "50"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "FM"
+        ],
+        "max_power": 1500,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "全設備500m径内・アンテナ有線接続・単一運用地、全運用と記録は1人"
+        ],
+        "operator": "SO"
+      },
+      {
+        "id": "SO_HIGH_2M",
+        "name": "SO HIGH 2M",
+        "bands": [
+          "144"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "FM"
+        ],
+        "max_power": 1500,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "全設備500m径内・アンテナ有線接続・単一運用地、全運用と記録は1人"
+        ],
+        "operator": "SO"
+      },
+      {
+        "id": "SO_LOW_ALL",
+        "name": "SO LOW ALL",
+        "bands": [
+          "50",
+          "144"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "FM"
+        ],
+        "max_power": 100,
+        "min_bands": 1,
+        "max_bands": 2,
+        "min_calls": 1,
+        "required_flags": [
+          "全設備500m径内・アンテナ有線接続・単一運用地、全運用と記録は1人"
+        ],
+        "operator": "SO"
+      },
+      {
+        "id": "SO_LOW_6M",
+        "name": "SO LOW 6M",
+        "bands": [
+          "50"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "FM"
+        ],
+        "max_power": 100,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "全設備500m径内・アンテナ有線接続・単一運用地、全運用と記録は1人"
+        ],
+        "operator": "SO"
+      },
+      {
+        "id": "SO_LOW_2M",
+        "name": "SO LOW 2M",
+        "bands": [
+          "144"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "FM"
+        ],
+        "max_power": 100,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "全設備500m径内・アンテナ有線接続・単一運用地、全運用と記録は1人"
+        ],
+        "operator": "SO"
+      },
+      {
+        "id": "SO_QRP_ALL",
+        "name": "SO QRP ALL",
+        "bands": [
+          "50",
+          "144"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "FM"
+        ],
+        "max_power": 10,
+        "min_bands": 1,
+        "max_bands": 2,
+        "min_calls": 1,
+        "required_flags": [
+          "全設備500m径内・アンテナ有線接続・単一運用地、全運用と記録は1人"
+        ],
+        "operator": "SO"
+      },
+      {
+        "id": "SO_QRP_6M",
+        "name": "SO QRP 6M",
+        "bands": [
+          "50"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "FM"
+        ],
+        "max_power": 10,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "全設備500m径内・アンテナ有線接続・単一運用地、全運用と記録は1人"
+        ],
+        "operator": "SO"
+      },
+      {
+        "id": "SO_QRP_2M",
+        "name": "SO QRP 2M",
+        "bands": [
+          "144"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "FM"
+        ],
+        "max_power": 10,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "required_flags": [
+          "全設備500m径内・アンテナ有線接続・単一運用地、全運用と記録は1人"
+        ],
+        "operator": "SO"
+      },
+      {
+        "id": "HILLTOPPER",
+        "name": "HILLTOPPER",
+        "bands": [
+          "50",
+          "144"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "FM"
+        ],
+        "max_power": 100,
+        "min_bands": 1,
+        "max_bands": 2,
+        "min_calls": 1,
+        "required_flags": [
+          "単一移動運用地・全設備500m径内・SO、連続6時間以内のHilltopper運用"
+        ],
+        "operator": "SO",
+        "timing": {
+          "operating": {
+            "max_minutes": 360,
+            "min_off_minutes": 0
+          }
+        }
+      },
+      {
+        "id": "ROVER",
+        "name": "ROVER",
+        "bands": [
+          "50",
+          "144"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "FM"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 2,
+        "min_calls": 1,
+        "required_flags": [
+          "Rover運用は2人以下・1コールで/Rを明示。GL境界では1つだけ選び、新GLへ設備全体100m以上移動した"
+        ],
+        "regional": {
+          "required_declarations": [
+            "operator_count",
+            "rover_locations"
+          ]
+        }
+      },
+      {
+        "id": "MO",
+        "name": "MO",
+        "bands": [
+          "50",
+          "144"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "FM"
+        ],
+        "max_power": null,
+        "min_bands": 1,
+        "max_bands": 2,
+        "min_calls": 1,
+        "required_flags": [
+          "2人以上の実運用・全設備500m径内・アンテナ有線接続・単一運用地"
+        ],
+        "operator": "MO"
+      }
+    ],
+    "required_flags": [
+      "原典の許可周波数・実出力・免許範囲を確認した。各バンド1波、レピータ・衛星・航空移動の交信なし",
+      "実交換のGLを保持した。6桁記録の先頭4桁を採点・提出へ使用し、レポートは出力しない",
+      "援助を使って番号の受領・再送を要求していない。1人1コール、クラブ申告条件、公開と審査への同意を確認した"
+    ],
+    "duplicate_fields": [
+      "call",
+      "band",
+      "my_grid",
+      "his_grid"
+    ],
+    "prefer": "first",
+    "special": "none",
+    "entrant": {
+      "station_types": [
+        "individual",
+        "club"
+      ],
+      "guest_policy": "allowed"
+    },
+    "normalization": {
+      "bands": {
+        "50MHZ": "50",
+        "144MHZ": "144"
+      },
+      "modes": {
+        "USB": "SSB",
+        "LSB": "SSB"
+      },
+      "mode_families": {}
+    },
+    "regional": {
+      "profile": "cq_vhf",
+      "declarations": {
+        "operator_count": "Roverの実運用者数（1又は2）",
+        "rover_locations": "各GLの運用地と設備全体を100m以上移動した記録"
+      }
+    },
+    "submission": {
+      "formats": [
+        "Cabrillo"
+      ],
+      "zone": "UTC",
+      "contest": "CQ-VHF-SSBCW",
+      "instructions": "2026保存版。Cabrillo3をhttps://cqww-vhf.com/logcheck/へWeb提出。締切7月10日、時分の規定なし。レポートなしGL4。主催審査前の申告得点。デジタル初期対応はFT4/FT8/MSK144/Q65。他のデジタルモードは追加検証待ち。"
+    },
+    "rule_view": {
+      "counterparts": "世界中のアマチュア局。SSB/CW/FM開催はこれらアナログのモードのみ（デジタル開催は別大会）。",
+      "points_display": "50MHz帯1点、144MHz帯2点。ローバーは移動先グリッドで別交信として得点になる場合があります。",
+      "call_method": "公式規約に定型のCQ呼び出し指定なし。"
+    }
+  }
+}
+
