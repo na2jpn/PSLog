@@ -20,7 +20,7 @@ class Patch041064Tests(unittest.TestCase):
     def write(self,qsos):self.path.write_bytes(b'\xef\xbb\xbf'+(('\r\n'.join(q.to_ps() for q in qsos)+'\r\n').encode('utf-8')))
     def q(self,call='JA1AAA',his='Japan',code='',remarks=''):return QSO('2026-09-09','12:00','430','FM',call,'59','59',his,'Soka Saitama Japan',remarks,code)
     def test_version_and_labels_are_1064_a_to_e(self):
-        self.assertEqual(VERSION,'1.14');modes=(MODE_CODE_TO_QTH,MODE_RMKS_TO_BOTH,MODE_RMKS_TO_PREF,MODE_QTH_TO_CODE,MODE_MISMATCH)
+        self.assertEqual(VERSION,'1.15');modes=(MODE_CODE_TO_QTH,MODE_RMKS_TO_BOTH,MODE_RMKS_TO_PREF,MODE_QTH_TO_CODE,MODE_MISMATCH)
         self.assertEqual([MODE_LABELS[m][:3] for m in modes],['[A]','[B]','[C]','[D]','[E]'])
     def test_foreign_call_is_excluded_even_if_qth_blank_or_japan(self):
         self.write([self.q(call='HL1AAA',his='',code='1321'),self.q(call='K1ABC',his='Japan',code='1321')])

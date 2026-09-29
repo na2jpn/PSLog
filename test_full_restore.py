@@ -26,7 +26,7 @@ class FullRestoreTests(unittest.TestCase):
             with ZipFile(backup) as z:
                 self.assertIn(MANIFEST,z.namelist())
                 info=json.loads(z.read(MANIFEST));self.assertEqual(info['format_version'],1)
-                self.assertEqual(info['pslog_version'],'1.14')
+                self.assertEqual(info['pslog_version'],'1.15')
 
             save_settings(dst.root,{'own':'JH1NEW','backup_keep':30})
             current=self.make_log(dst,'JA1NEW','02')

@@ -156,7 +156,7 @@ def _runtime_self_check(target, timeout=45):
         )
 
 
-def _apply_staged(staged, target, managed_roots, verify_installed=None):
+def _apply_staged(staged, target, managed_roots, verify_installed=None, remove_roots=()):
     target = Path(target).resolve()
     if not target.is_dir():
         raise RuntimeError('PSLog本体フォルダーが見つかりません。')
@@ -168,8 +168,11 @@ def _apply_staged(staged, target, managed_roots, verify_installed=None):
     backup.mkdir(parents=True, exist_ok=False)
     moved_old = []
     installed = []
+    remove_roots=tuple(remove_roots or ())
     try:
-        for root in managed_roots:
+        # Move every to-be-replaced or explicitly removed root into the same-volume
+        # rollback area before installing anything.  This keeps the update atomic.
+        for root in tuple(managed_roots)+remove_roots:
             old = target / root
             if old.exists() or old.is_symlink():
                 saved = backup / root
@@ -240,7 +243,7 @@ def perform(session_path, token):
             def verify_installed(root):
                 _verify_tree(info, root, '更新後のPSLogファイル')
                 _runtime_self_check(root)
-            _apply_staged(staged, target, info.managed_roots, verify_installed)
+            _apply_staged(staged, target, info.managed_roots, verify_installed, info.remove_roots)
     except BaseException:
         # The old application has already exited.  If validation failed or the
         # transactional swap rolled back, clear the update gate before bringing

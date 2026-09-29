@@ -15,7 +15,7 @@ class Patch06V1066Tests(unittest.TestCase):
     def plan(self,text,method='hQSL.R'):
         self.source.write_text(text,encoding='utf-8');return prepare(self.repo,self.source,'JH1HST','JST',method)
 
-    def test_version(self):self.assertEqual(VERSION,'1.14')
+    def test_version(self):self.assertEqual(VERSION,'1.15')
 
     def test_nearby_clock_window_ignores_call_and_explains_call_difference(self):
         self.add(self.base)

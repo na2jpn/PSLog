@@ -19,7 +19,7 @@ class Patch07V1067Tests(unittest.TestCase):
         p=self.repo.path_for('JH1HST','',q.date);self.repo.open(p).append(q);return p
 
     def test_version(self):
-        self.assertEqual(VERSION,'1.14')
+        self.assertEqual(VERSION,'1.15')
 
     def test_result_report_ends_with_actual_updated_pslog_source_line(self):
         p=self.add();self.source.write_text('2026-09-13 06:29 JH7VTE\n',encoding='utf-8')

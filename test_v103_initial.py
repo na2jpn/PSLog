@@ -24,7 +24,7 @@ class V104InitialRegressionTests(unittest.TestCase):
         self.info = dict(contest='TEST',category='X',name='Test',address='Japan',power='5',date='2026-09-17',signature='Test',oath=True,licenseclass='第2級アマチュア無線技士')
 
     def test_version_and_default_contest_output_path(self):
-        self.assertEqual(VERSION,'1.14')
+        self.assertEqual(VERSION,'1.15')
         self.assertEqual(self.repo.contest_output,Path(self.tmp.name).resolve()/'output'/'contest')
         self.assertEqual(self.repo.export_output,Path(self.tmp.name).resolve()/'output'/'export')
         self.assertEqual(self.repo.pota_output,Path(self.tmp.name).resolve()/'output'/'pota')

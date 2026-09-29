@@ -8,7 +8,7 @@ from category_filters import classify_categories,category_facets
 
 class Patch09Tests(unittest.TestCase):
     def test_version(self):
-        self.assertEqual(VERSION,'1.14')
+        self.assertEqual(VERSION,'1.15')
 
     def test_category_classifier_never_drops_registered_categories(self):
         checked=0

@@ -1,16 +1,12 @@
-# Windows配布準備 — PSLog 1.14
+# Windows配布準備 — PSLog 1.15
 
-## 正本
+Windows側では `build-windows.ps1` を使用します。GPT/Linux側ではPyInstallerによるWindows EXE実機確認は行いません。
 
-基準ソースは `PSLog_1.14_CANONICAL_SOURCE.zip` のみです。Ver1.10正本やVer1.11/1.12のPATCH/FIXを積み直さないでください。
+## ビルド前
 
-## テスト
-
-```powershell
-python -m unittest discover -v
-```
-
-テスト成功後にビルドします。
+1. `python -m unittest discover -v` を実行し、Windows環境で全テストを確認。
+2. `storage.VERSION` が `1.15` であることを確認。
+3. `meta/UPDATE_HISTORY.txt` の先頭がVer1.15であることを確認。
 
 ## ビルド
 
@@ -18,32 +14,29 @@ python -m unittest discover -v
 .\build-windows.ps1
 ```
 
-通常配布ZIPは `release/PSLog_1.14_Windows_<timestamp>.zip` です。ファイル名の版数は `storage.VERSION` から自動取得します。
+配布ZIP名は `storage.VERSION` から自動取得し、`PSLog_1.15_Windows_<timestamp>.zip` となります。
 
-## Ver1.14重点確認
+## Ver1.15更新ZIPの構造
 
-- タイトルが `PSLog Ver1.14`。
-- 標準タブとコンテスト入力で相手コール欄が太字。
-- QSL処理ショートカットに `QRZ.R` / `CARD.R` がある。
-- JCC/JCG交信チェックがLoading表示付きで完了し、都道府県を展開した時だけ詳細行を生成する。
-- 都道府県行の全JCC/JCG達成表示とCFM残数が正しい。
-- EASYタブは最大2枚、`[E]CALL`表示。
-- EASYは2ページ構成、右側LogSearch常設、2ページ目のJST時刻修正と5分以上の時刻差選択が動く。
-- EASY登録後はBand/Mode/Sub/My QTHを保持し、相手側情報をクリアする。
-- EASYの `バンド（MHz）` 表示と緑枠を確認。
-- フリラタブは同時最大4枚で、選択色は水色。
-- 初回起動で「アマチュア無線のコールサイン」からフリラへ切替でき、フリラのみで開始できる。
-- フリラのみで開始してもアマチュア用 `own` がフリラコールで上書きされない。
-- フリラ新規作成で不正入力を警告しても作成ダイアログが閉じず、機種名空欄でも作成できる。
-- フリラタブ右側LogSearchが同じ自局コールの全種類を横断し、種類列を表示する。
-- メニュー「フリラ」の既存タブ呼び出し、ログ検索・編集が動く。
-- `logbook_flr/` が全体バックアップ/復元対象になっている。
+利用者が指定するZIPは常に1つです。ルート直下の通常ファイルはEXEだけとし、その他はフォルダーへ格納します。
 
-## 共通重点確認
+- `PSLog/pslog.exe`
+- `PSLog/exec/PSLogUpdater.exe`
+- `PSLog/_internal/...`
+- `PSLog/meta/BUILD_INFO.json`
+- `PSLog/meta/PSLOG_UPDATE_INFO.json` — Ver1.14からの移行互換
+- `PSLog/meta/versionup.json` — Ver1.15+の更新管理
+- `PSLog/meta/UPDATE_HISTORY.txt`
+- `PSLog/docs/`
 
-- PSLog TXT 11項目、UTF-8 BOM + CRLF、JSTを維持。
-- `logbook/` と `logbook_flr/` が必要時に生成される。
-- Updaterで `logbook_flr/` を含む利用者データを上書きしない。
-- 標準/コンテスト/QSOパーティ/アワードの既存画面が開く。
-- LogSearch編集・削除、RMKS2、通常エクスポート、バックアップ/復元が動く。
-- Updater用メタ情報のversionが1.14。
+`config/`, `logbook/`, `logbook_flr/`, `bak/`, `output/` は更新対象に含めません。
+
+## Windows実機確認
+
+`WINDOWS_CHECKLIST.txt` を使用し、特に次を確認します。
+
+- Ver1.14→Ver1.15の1-ZIP更新
+- 更新履歴メニュー
+- QSL処理画面の下書き→保存方式
+- 未保存変更で閉じる際の確認文言
+- PyInstallerビルド後の自己診断と自動再起動

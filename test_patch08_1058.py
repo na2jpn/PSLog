@@ -7,7 +7,7 @@ from storage import VERSION
 
 class Patch08Ver1058Tests(unittest.TestCase):
     def test_version(self):
-        self.assertEqual(VERSION,'1.14')
+        self.assertEqual(VERSION,'1.15')
 
     def test_amateur_callsign_entry_filters_and_normalizes(self):
         self.assertEqual(amateur_callsign_entry('ｊｈ１ｈｓｔ／１'),'JH1HST/1')

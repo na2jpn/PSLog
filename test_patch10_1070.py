@@ -20,7 +20,7 @@ class Patch1070Tests(ExportFixture):
         cls.app=QApplication.instance() or QApplication([])
 
     def test_version(self):
-        self.assertEqual(VERSION,'1.14')
+        self.assertEqual(VERSION,'1.15')
 
     def test_rule_manager_label_includes_start_month(self):
         # Source-tree tests do not seed bundled rules into an arbitrary temp

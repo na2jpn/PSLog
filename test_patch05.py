@@ -11,7 +11,7 @@ from storage import VERSION
 
 class Patch05RemarksTests(unittest.TestCase):
     def test_version(self):
-        self.assertEqual(VERSION,'1.14')
+        self.assertEqual(VERSION,'1.15')
 
     def test_legacy_rmks_is_unchanged(self):
         text='BURO OP:"Taro Yamada" ADIF_EXTRA:{"NAME":"Taro"}'

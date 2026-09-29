@@ -1,4 +1,4 @@
-"""PSLog 1.14 storage foundation. Standard library only.
+"""PSLog 1.15 storage foundation. Standard library only.
 
 Read legacy records without applying new-entry RST constraints. Preserve every
 unmodified line, BOM and newline. Never silently repair ambiguous source data.
@@ -17,7 +17,7 @@ import unicodedata
 import uuid
 from model import QSO, validate_station
 
-VERSION = '1.14'
+VERSION = '1.15'
 TERMINATOR = '\\' * 2
 
 class StorageError(Exception): pass

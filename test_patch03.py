@@ -10,7 +10,7 @@ ROOT=Path(__file__).resolve().parent
 
 class Patch03Tests(unittest.TestCase):
     def test_version(self):
-        self.assertEqual(VERSION,'1.14')
+        self.assertEqual(VERSION,'1.15')
 
     def test_rows_are_rebuilt_from_current_parsed_session_after_append(self):
         with tempfile.TemporaryDirectory() as tmp:

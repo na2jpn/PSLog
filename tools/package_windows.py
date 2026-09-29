@@ -10,6 +10,7 @@ if str(ROOT) not in sys.path:
 from storage import VERSION
 from update_package import (
     FORMAT_NAME, FORMAT_VERSION, MANIFEST_PATH, LEGACY_MANIFEST_PATH,
+    VERSIONUP_PATH, VERSIONUP_FORMAT_NAME, VERSIONUP_FORMAT_VERSION,
     REQUIRED_MANAGED_ROOTS, LEGACY_MANAGED_ROOTS_1042, LEGACY_MANAGED_ROOTS_1041,
 )
 
@@ -18,6 +19,7 @@ PDFS=('toyama_OSOSUMMARY.pdf','toyama_QSOLOG.pdf')
 FORBIDDEN={'conf.cfg','location_overrides.json','submit_profiles.json'}
 BUNDLED_DIRS=(Path('config/rules'),Path('config/db/contest'),Path('config/templates/cabrillo'))
 RETIRED_ROOT_DOCS=('USER_GUIDE.txt','SAVE_LOCATION.md','WINDOWS_CHECKLIST.txt')
+UPDATE_HISTORY=Path('meta/UPDATE_HISTORY.txt')
 
 
 def _source_assets(source):
@@ -44,7 +46,6 @@ def _base_payload(build, source):
             raise ValueError('配布に必要な初期データが不足しています: '+str(logical))
 
     payload={}
-    allowed_top={'_internal','exec','docs','meta'}
     for p in sorted(build.rglob('*')):
         if p.is_symlink():raise ValueError('配布ツリーにシンボリックリンクがあります。')
         if not p.is_file():continue
@@ -59,12 +60,14 @@ def _base_payload(build, source):
                 raise ValueError('初期データが配布用ソースと一致しません: '+str(rel))
         if any(part.lower() in {'logbook','bak','output'} for part in rel.parts) or p.name.lower() in FORBIDDEN:
             raise ValueError('利用者データが配布ツリーに含まれています: '+str(rel))
-        if len(rel.parts)==1 and rel.name!='pslog.exe':
-            raise ValueError('PSLogルートにはpslog.exe以外のファイルを置けません: '+str(rel))
-        if len(rel.parts)>1 and rel.parts[0] not in allowed_top:
-            raise ValueError('配布ルート直下に未定義のフォルダーがあります: '+rel.parts[0])
+        if len(rel.parts)==1 and rel.suffix.casefold()!='.exe':
+            raise ValueError('PSLogルート直下のファイルはEXEだけ使用できます: '+str(rel))
+        if len(rel.parts)>1:
+            top=rel.parts[0]
+            if top.casefold() in {'config','logbook','logbook_flr','bak','output'} or top.startswith('.'):
+                raise ValueError('配布ルート直下に利用できないフォルダーがあります: '+top)
         if rel.parts and rel.parts[0]=='meta':
-            raise ValueError('metaフォルダーのJSONはパッケージ作成時に生成します: '+str(rel))
+            raise ValueError('metaフォルダーの管理ファイルはパッケージ作成時に生成します: '+str(rel))
         payload[rel.as_posix()]=p.read_bytes()
     return payload, updater
 
@@ -94,6 +97,9 @@ def package(build,source,output,legacy_bridge=False,bridge_from=None):
         raise ValueError('bridge_from は 1.041 または 1.042 を指定してください。')
 
     payload,updater=_base_payload(build,source)
+    history=source/UPDATE_HISTORY
+    if not history.is_file():
+        raise ValueError('更新履歴がありません: '+str(UPDATE_HISTORY))
     # meta is generated below; docs/ may contain future packaged documents, but
     # it is intentionally empty in Ver1.043.  Old updaters cannot install the
     # new roots, so bridge payloads omit them and use their exact historical
@@ -114,6 +120,7 @@ def package(build,source,output,legacy_bridge=False,bridge_from=None):
         managed_roots=REQUIRED_MANAGED_ROOTS
         build_info_name='meta/BUILD_INFO.json'
         manifest_path=MANIFEST_PATH
+        payload[UPDATE_HISTORY.as_posix()]=history.read_bytes()
         # Keep docs visible in a freshly extracted Windows package even while it
         # contains no documents yet.
         directory_entries=('PSLog/docs/',)
@@ -128,6 +135,31 @@ def package(build,source,output,legacy_bridge=False,bridge_from=None):
         'files':{name:hashlib.sha256(data).hexdigest() for name,data in sorted(payload.items())},
     }
     payload[build_info_name]=json.dumps(build_info,ensure_ascii=False,indent=2).encode('utf-8')
+
+    # Ver1.15 transition: normal packages carry a forward-looking versionup
+    # manifest as ordinary payload, while the legacy manifest remains the outer
+    # compatibility contract so Ver1.14 can install Ver1.15.  Ver1.15+ prefers
+    # versionup.json and can manage new top-level EXEs/folders in future ZIPs.
+    if not bridge_from:
+        top_files={Path(name).parts[0] for name in payload}
+        managed_v2=[]
+        if 'pslog.exe' in top_files:managed_v2.append('pslog.exe')
+        for root_name in sorted(x for x in top_files if x!='pslog.exe'):
+            managed_v2.append(root_name)
+        if 'docs' not in managed_v2:managed_v2.append('docs')
+        v2_hashes={name:hashlib.sha256(data).hexdigest() for name,data in sorted(payload.items())}
+        versionup={
+            'format':VERSIONUP_FORMAT_NAME,
+            'format_version':VERSIONUP_FORMAT_VERSION,
+            'product':'PSLog',
+            'version':VERSION,
+            'packaged_utc':packaged_utc,
+            'managed_roots':managed_v2,
+            'remove_roots':[],
+            'preserve':['config/','logbook/','logbook_flr/','bak/','output/'],
+            'files':v2_hashes,
+        }
+        payload['meta/versionup.json']=json.dumps(versionup,ensure_ascii=False,indent=2).encode('utf-8')
 
     hashes={name:hashlib.sha256(data).hexdigest() for name,data in sorted(payload.items())}
     manifest={

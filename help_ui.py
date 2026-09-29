@@ -6,6 +6,7 @@ from PySide6.QtWidgets import QVBoxLayout,QPlainTextEdit,QWidget,QLabel,QScrollA
 from window_geometry import SafeDialog
 from search_ui import button
 from storage import VERSION
+from app_paths import data_directory
 
 TEXTS={
 '使い方':f'''PSLog {VERSION} — 基本操作
@@ -110,12 +111,23 @@ CTYの版・出典・配布条件はconfig/db/cty_meta.jsonとcty_LICENSE.txtに
 更新日時点の参照情報であり、過去の運用やアワードの有効性は別途確認が必要です。
 '''}
 from user_guide import GUIDE
-TEXTS['使い方']=GUIDE.replace('PSLog 1.05 操作案内',f'PSLog {VERSION} 操作案内',1)
+TEXTS['使い方']=GUIDE
 TEXTS['PSLogについて'] += '\n作者からの案内\nPSLogは、H.Tanakaが自身のアマチュア無線交信ログを管理するために私的に開発し、利用するソフトウェアです。\n作者自身の使いやすさを優先しており、第三者の要望への対応、サポート、不具合修正や継続提供を約束するものではありません。\n利用・改良は利用条件の範囲で自由ですが、利用者自身の判断と責任で行ってください。記録内容や提出ファイルの確認、必要なバックアップは利用者が行ってください。\n\nPSLog\nCopyright (c) 2026 H.Tanaka (JH1HST)\nOriginally developed by H.Tanaka (JH1HST)\nAKIHABARA-GIKEN\n\nBased on PSLog Format — established in 2013\n\n再配布について\n無改変版の再配布は認めていません。作者の配布元を案内してください。\n改良版を再配布する場合は、元となるPSLogの版、変更箇所・変更内容、改良版の名称と版、配布責任者を明示してください。\nまた、対応する改良版のソースコード全体と、ビルドに必要なスクリプト・設定を受領者が取得できるようにしてください。\n改良版の配布前に、作者へ改良内容、配布先、配布者本人の氏名と連絡先を通知してください。作者の個別承認を条件とするものではありません。\n元作者の表示を保持し、作者の公式版または作者が保証する版であると誤認させないでください。\nPython、PySide6/Qt、PyInstaller、CTY等の第三者のライブラリ・素材・参照データには、それぞれの利用条件が適用されます。'
 
 def _resource(relative):
     return Path(getattr(sys,'_MEIPASS',Path(__file__).resolve().parent))/relative
 
+
+def _history_text():
+    candidates=[data_directory()/'meta'/'UPDATE_HISTORY.txt',_resource('meta/UPDATE_HISTORY.txt')]
+    for path in candidates:
+        try:
+            if path.is_file():return path.read_text(encoding='utf-8-sig')
+        except (OSError,UnicodeError):
+            pass
+    return '更新履歴を読み込めません。PSLogの配布ファイルを確認してください。'
+
+TEXTS['PSLogの更新履歴']=_history_text()
 
 def _section(title,text,parent):
     box=QGroupBox(title,parent);layout=QVBoxLayout(box);label=QLabel(text,box);label.setWordWrap(True);label.setTextInteractionFlags(Qt.TextInteractionFlag.TextSelectableByMouse)

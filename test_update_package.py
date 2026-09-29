@@ -9,7 +9,8 @@ from storage import StorageError
 from update_package import (
     inspect_update,is_newer,REQUIRED_MANAGED_ROOTS,
     LEGACY_MANAGED_ROOTS_1042,LEGACY_MANAGED_ROOTS_1041,
-    MANIFEST_PATH,LEGACY_MANIFEST_PATH,
+    MANIFEST_PATH,LEGACY_MANIFEST_PATH,VERSIONUP_PATH,
+    VERSIONUP_FORMAT_NAME,VERSIONUP_FORMAT_VERSION,
 )
 
 
@@ -69,6 +70,7 @@ class UpdatePackageTests(unittest.TestCase):
         self.assertTrue(is_newer('1.101','1.10'))
         self.assertFalse(is_newer('1.078','1.10'))
         self.assertTrue(is_newer('1.13','1.12'))
+        self.assertTrue(is_newer('1.15','1.14'))
         self.assertTrue(is_newer('1.131','1.13'))
         self.assertFalse(is_newer('1.12','1.13'))
         self.assertFalse(is_newer('1.043','1.043'))
@@ -118,6 +120,56 @@ class UpdatePackageTests(unittest.TestCase):
             p=self.make_zip(d,extra={'logbook_flr/free.txt':b'private'})
             with self.assertRaisesRegex(StorageError,'利用者データ'):
                 inspect_update(p)
+
+    def test_versionup_manifest_allows_future_managed_folder_and_root_exe(self):
+        with tempfile.TemporaryDirectory() as d:
+            root=Path(d);path=root/'future.zip'
+            payload={
+                'pslog.exe':b'MZ pslog',
+                '_internal/a.dat':b'internal',
+                'exec/PSLogUpdater.exe':b'MZ updater',
+                'dll/helper.dll':b'dll bytes',
+                'ToolHelper.exe':b'MZ helper',
+                'meta/BUILD_INFO.json':b'{}',
+            }
+            hashes={k:hashlib.sha256(v).hexdigest() for k,v in payload.items()}
+            manifest={
+                'format':VERSIONUP_FORMAT_NAME,'format_version':VERSIONUP_FORMAT_VERSION,'product':'PSLog',
+                'version':'1.16','packaged_utc':'2026-09-30T00:00:00+00:00',
+                'managed_roots':['pslog.exe','_internal','exec','dll','ToolHelper.exe','meta'],
+                'remove_roots':['old_runtime'],'files':hashes,
+            }
+            with zipfile.ZipFile(path,'w',zipfile.ZIP_DEFLATED) as z:
+                for name,data in payload.items():z.writestr('PSLog/'+name,data)
+                z.writestr(VERSIONUP_PATH,json.dumps(manifest).encode())
+            info=inspect_update(path)
+            self.assertEqual(info.manifest_kind,'versionup')
+            self.assertIn('dll',info.managed_roots);self.assertIn('ToolHelper.exe',info.managed_roots)
+            self.assertEqual(info.remove_roots,('old_runtime',))
+
+    def test_versionup_rejects_user_data_and_non_exe_root_file(self):
+        def build(extra_name,managed):
+            root=Path(self._testMethodName+'-tmp')
+        with tempfile.TemporaryDirectory() as d:
+            root=Path(d);path=root/'bad.zip'
+            payload={'pslog.exe':b'MZ','_internal/a':b'a','meta/BUILD_INFO.json':b'{}','config/conf.cfg':b'private'}
+            hashes={k:hashlib.sha256(v).hexdigest() for k,v in payload.items()}
+            manifest={'format':VERSIONUP_FORMAT_NAME,'format_version':VERSIONUP_FORMAT_VERSION,'product':'PSLog','version':'1.16','packaged_utc':'x','managed_roots':['pslog.exe','_internal','meta','config'],'remove_roots':[],'files':hashes}
+            with zipfile.ZipFile(path,'w',zipfile.ZIP_DEFLATED) as z:
+                for name,data in payload.items():z.writestr('PSLog/'+name,data)
+                z.writestr(VERSIONUP_PATH,json.dumps(manifest).encode())
+            with self.assertRaisesRegex(StorageError,'利用者データ'):
+                inspect_update(path)
+        with tempfile.TemporaryDirectory() as d:
+            root=Path(d);path=root/'badroot.zip'
+            payload={'pslog.exe':b'MZ','_internal/a':b'a','meta/BUILD_INFO.json':b'{}','helper.dll':b'dll'}
+            hashes={k:hashlib.sha256(v).hexdigest() for k,v in payload.items()}
+            manifest={'format':VERSIONUP_FORMAT_NAME,'format_version':VERSIONUP_FORMAT_VERSION,'product':'PSLog','version':'1.16','packaged_utc':'x','managed_roots':['pslog.exe','_internal','meta','helper.dll'],'remove_roots':[],'files':hashes}
+            with zipfile.ZipFile(path,'w',zipfile.ZIP_DEFLATED) as z:
+                for name,data in payload.items():z.writestr('PSLog/'+name,data)
+                z.writestr(VERSIONUP_PATH,json.dumps(manifest).encode())
+            with self.assertRaisesRegex(StorageError,'EXE'):
+                inspect_update(path)
 
 
 if __name__=='__main__':unittest.main()

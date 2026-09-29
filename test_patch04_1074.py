@@ -28,7 +28,7 @@ class Patch041074CoreTests(unittest.TestCase):
         return p
 
     def test_version_and_reserved_free_radio_directory(self):
-        self.assertEqual(VERSION,'1.14')
+        self.assertEqual(VERSION,'1.15')
         self.assertTrue((self.root/'logbook').is_dir())
         self.assertTrue((self.root/'logbook_flr').is_dir())
         self.assertEqual(self.repo.free_book,self.root/'logbook_flr')
@@ -99,7 +99,11 @@ class Patch041074GuiTests(unittest.TestCase):
         expected=['LoTW.R','hQSL.R','eQSL.R','BURO.R','QRZ.R','CARD.R','Other.R']
         edit=EditDialog(self.hit);self.assertEqual(list(edit.qsl_buttons),expected);edit.close()
         quick=QSLQuickDialog(self.repo,self.hit);self.assertEqual(list(quick.qsl_buttons),expected)
-        quick.qsl_buttons['QRZ.R'].click();self.assertIn('QRZ.R',quick.hit.qso.remarks);self.assertTrue(quick.saved);quick.close()
+        quick.qsl_buttons['QRZ.R'].click()
+        # Ver1.15 QSL workbench keeps all edits local until 保存.
+        self.assertIn('QRZ.R',quick.remarks.text());self.assertNotIn('QRZ.R',quick.hit.qso.remarks);self.assertFalse(quick.saved)
+        quick.code.setText('1102');quick.his_qth.setText('Yokosuka Kanagawa Japan');quick.save()
+        self.assertTrue(quick.saved);self.assertIn('QRZ.R',quick.hit.qso.remarks);self.assertEqual(quick.hit.qso.code,'1102');self.assertEqual(quick.hit.qso.his_qth,'Yokosuka Kanagawa Japan')
 
     def test_search_has_separate_qsl_and_edit_buttons(self):
         from search_ui import SearchDialog

@@ -8,7 +8,7 @@ from storage import VERSION, save_settings
 
 class Patch081078CoreTests(unittest.TestCase):
     def test_version(self):
-        self.assertEqual(VERSION,'1.14')
+        self.assertEqual(VERSION,'1.15')
 
     def test_easy_band_label_and_green_groupbox_are_in_source(self):
         text=Path(__file__).with_name('main.py').read_text(encoding='utf-8')

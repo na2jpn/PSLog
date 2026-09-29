@@ -15,7 +15,7 @@ class Patch05V1065Tests(unittest.TestCase):
         q=q or self.q;self.repo.open(self.repo.path_for('JH1HST','',q.date)).append(q)
     def plan(self,line,method='hQSL.R'):
         self.source.write_text(line,encoding='utf-8');return prepare(self.repo,self.source,'JH1HST','JST',method)
-    def test_version(self):self.assertEqual(VERSION,'1.14')
+    def test_version(self):self.assertEqual(VERSION,'1.15')
     def test_five_minute_window_and_six_minute_reason(self):
         self.add();p=self.plan('2026-09-21 09:55 JA1AAA');self.assertEqual(p.entries[0].pick,0)
         p=self.plan('2026-09-21 09:54 JA1AAA');self.assertIsNone(p.entries[0].pick);self.assertIn('許容±5分超過',p.entries[0].reason)

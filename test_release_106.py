@@ -8,7 +8,7 @@ from contest_station import check_submission
 
 class Release106Tests(unittest.TestCase):
     def test_version(self):
-        self.assertEqual(VERSION, '1.14')
+        self.assertEqual(VERSION, '1.15')
 
     def test_submission_footer_actions_are_owned_by_wizard_footer(self):
         submit = Path('contest_submit_ui.py').read_text(encoding='utf-8')

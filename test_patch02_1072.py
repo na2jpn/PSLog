@@ -13,7 +13,7 @@ ROOT = Path(__file__).resolve().parent
 
 class Patch021072Tests(unittest.TestCase):
     def test_version(self):
-        self.assertEqual(VERSION, '1.14')
+        self.assertEqual(VERSION, '1.15')
 
     def test_jcc_batch_ignores_known_qsl_tokens_with_or_without_received_suffix(self):
         for token in ('BURO','BURO.R','CARD','CARD.R','1way','1way.R','Direct','Direct.R',

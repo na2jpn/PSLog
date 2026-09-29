@@ -7,7 +7,7 @@ from jccjcg_award_check import LocationStatus,PrefectureStatus,STATE_NONE,STATE_
 
 class Patch051075CoreTests(unittest.TestCase):
     def test_version(self):
-        self.assertEqual(VERSION,'1.14')
+        self.assertEqual(VERSION,'1.15')
 
     @staticmethod
     def loc(kind,code,state):

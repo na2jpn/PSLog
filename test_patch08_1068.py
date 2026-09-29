@@ -5,7 +5,7 @@ from storage import VERSION
 
 class Patch08V1068Tests(unittest.TestCase):
     def test_version(self):
-        self.assertEqual(VERSION,'1.14')
+        self.assertEqual(VERSION,'1.15')
 
     def test_qsl_detail_allows_multiple_checkbox_candidate_selection(self):
         src=Path('qsl_ui.py').read_text(encoding='utf-8')

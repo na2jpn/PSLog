@@ -25,7 +25,7 @@ class V103DocumentationStatusTests(unittest.TestCase):
         return [ROOT / value] if value else []
 
     def test_version_is_103(self):
-        self.assertEqual(VERSION, '1.14')
+        self.assertEqual(VERSION, '1.15')
 
     def test_final_audit_is_complete(self):
         self.assertEqual(self.audit['defined'], 87)

@@ -100,5 +100,25 @@ class UpdaterApplyTests(unittest.TestCase):
         self.assertTrue((target/'docs').is_dir())
 
 
+    def test_versionup_can_add_new_managed_root_and_remove_retired_root(self):
+        target=self.root/'target-v2';stage=self.root/'stage-v2'
+        self.make_tree(target,'old');self.make_tree(stage,'new')
+        (stage/'dll').mkdir();(stage/'dll/helper.dll').write_text('new dll')
+        (target/'old_runtime').mkdir();(target/'old_runtime/old.dll').write_text('old')
+        managed=tuple(REQUIRED_MANAGED_ROOTS)+('dll',)
+        _apply_staged(stage,target,managed,remove_roots=('old_runtime',))
+        self.assertEqual((target/'dll/helper.dll').read_text(),'new dll')
+        self.assertFalse((target/'old_runtime').exists())
+
+    def test_remove_root_is_restored_when_post_install_check_fails(self):
+        target=self.root/'target-v2-rollback';stage=self.root/'stage-v2-rollback'
+        self.make_tree(target,'old');self.make_tree(stage,'new')
+        (target/'old_runtime').mkdir();(target/'old_runtime/old.dll').write_text('keep')
+        def fail(_root):raise RuntimeError('post check failed')
+        with self.assertRaisesRegex(RuntimeError,'post check failed'):
+            _apply_staged(stage,target,REQUIRED_MANAGED_ROOTS,fail,('old_runtime',))
+        self.assertEqual((target/'old_runtime/old.dll').read_text(),'keep')
+        self.assertEqual((target/'pslog.exe').read_bytes(),b'old exe')
+
 
 if __name__=='__main__':unittest.main()

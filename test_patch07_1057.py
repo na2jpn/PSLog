@@ -10,7 +10,7 @@ JST=timezone(timedelta(hours=9))
 
 class Patch071057Tests(unittest.TestCase):
     def test_version(self):
-        self.assertEqual(VERSION,'1.14')
+        self.assertEqual(VERSION,'1.15')
 
     def test_record_time_threshold_is_three_minutes_or_more(self):
         now=datetime(2026,9,21,7,10,0,tzinfo=JST)

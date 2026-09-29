@@ -11,7 +11,7 @@ ROOT=Path(__file__).resolve().parent
 
 class Patch1070CoreTests(unittest.TestCase):
     def test_version(self):
-        self.assertEqual(VERSION,'1.14')
+        self.assertEqual(VERSION,'1.15')
 
     def test_management_label_adds_start_month(self):
         rule=json.loads((ROOT/'config/rules/ai_chikyu_2026.txt').read_text(encoding='utf-8-sig'))

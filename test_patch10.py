@@ -13,7 +13,7 @@ ROOT=Path(__file__).resolve().parent
 
 class Patch10Tests(unittest.TestCase):
     def test_version(self):
-        self.assertEqual(VERSION,'1.14')
+        self.assertEqual(VERSION,'1.15')
 
     def test_search_jccjcg_accepts_code_and_historical_prefix(self):
         with tempfile.TemporaryDirectory() as tmp:

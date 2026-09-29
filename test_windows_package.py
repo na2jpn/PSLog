@@ -36,19 +36,36 @@ class PackageTests(unittest.TestCase):
                 self.assertFalse(any(n.startswith('PSLog/docs/') and n!='PSLog/docs/' for n in names))
                 self.assertIn('PSLog/meta/BUILD_INFO.json',names)
                 self.assertIn('PSLog/meta/PSLOG_UPDATE_INFO.json',names)
+                self.assertIn('PSLog/meta/versionup.json',names)
+                self.assertIn('PSLog/meta/UPDATE_HISTORY.txt',names)
                 for retired in ('USER_GUIDE.txt','SAVE_LOCATION.md','WINDOWS_CHECKLIST.txt','BUILD_INFO.json','PSLOG_UPDATE_INFO.json','PSLogUpdater.exe'):
                     self.assertNotIn('PSLog/'+retired,names)
                 self.assertIn('PSLog/exec/PSLogUpdater.exe',names)
                 info=json.loads(z.read('PSLog/meta/BUILD_INFO.json'))
-                self.assertEqual(info['windows_manual_test'],'未確認');self.assertEqual(info['version'],'1.14')
+                self.assertEqual(info['windows_manual_test'],'未確認');self.assertEqual(info['version'],'1.15')
                 update=json.loads(z.read('PSLog/meta/PSLOG_UPDATE_INFO.json'))
-                self.assertEqual(update['version'],'1.14');self.assertEqual(update['product'],'PSLog')
-                self.assertIn('exec/PSLogUpdater.exe',update['files']);self.assertIn('meta/BUILD_INFO.json',update['files'])
-            self.assertEqual(inspect_update(out).version,'1.14')
+                self.assertEqual(update['version'],'1.15');self.assertEqual(update['product'],'PSLog')
+                self.assertIn('exec/PSLogUpdater.exe',update['files']);self.assertIn('meta/BUILD_INFO.json',update['files']);self.assertIn('meta/versionup.json',update['files'])
+                versionup=json.loads(z.read('PSLog/meta/versionup.json'))
+                self.assertEqual(versionup['version'],'1.15');self.assertIn('meta',versionup['managed_roots']);self.assertEqual(versionup['remove_roots'],[])
+            inspected=inspect_update(out);self.assertEqual(inspected.version,'1.15');self.assertEqual(inspected.manifest_kind,'versionup')
             with self.assertRaises(FileExistsError):package(build,source,out)
             (build/'config').mkdir(exist_ok=True);(build/'config/conf.cfg').write_text('private')
             with self.assertRaises(ValueError):package(build,source,root/'bad.zip')
             self.assertFalse((root/'bad.zip').exists())
+
+    def test_normal_package_versionup_discovers_future_root_folder_and_exe(self):
+        with tempfile.TemporaryDirectory() as folder:
+            root=Path(folder);source,build=self.fixture(root)
+            (build/'dll').mkdir();(build/'dll/helper.dll').write_bytes(b'future dll')
+            (build/'ToolHelper.exe').write_bytes(b'MZ helper')
+            out=root/'future.zip';package(build,source,out)
+            info=inspect_update(out)
+            self.assertIn('dll',info.managed_roots);self.assertIn('ToolHelper.exe',info.managed_roots)
+            with zipfile.ZipFile(out) as z:
+                versionup=json.loads(z.read('PSLog/meta/versionup.json'))
+                self.assertIn('dll',versionup['managed_roots']);self.assertIn('ToolHelper.exe',versionup['managed_roots'])
+                self.assertIn('dll/helper.dll',versionup['files']);self.assertIn('ToolHelper.exe',versionup['files'])
 
     def test_package_script_runs_directly_from_tools_path(self):
         with tempfile.TemporaryDirectory() as folder:
@@ -56,7 +73,7 @@ class PackageTests(unittest.TestCase):
             script=source/'tools/package_windows.py'
             result=subprocess.run([sys.executable,str(script),str(build),str(source),str(out)],cwd=root,stdout=subprocess.PIPE,stderr=subprocess.PIPE,text=True)
             self.assertEqual(result.returncode,0,result.stderr)
-            self.assertTrue(out.is_file());self.assertEqual(inspect_update(out).version,'1.14')
+            self.assertTrue(out.is_file());self.assertEqual(inspect_update(out).version,'1.15')
 
     def test_1042_bridge_uses_exact_old_root_layout(self):
         with tempfile.TemporaryDirectory() as folder:
@@ -67,7 +84,7 @@ class PackageTests(unittest.TestCase):
                 self.assertIn('PSLog/exec/PSLogUpdater.exe',names);self.assertNotIn('PSLog/PSLogUpdater.exe',names)
                 self.assertIn('PSLog/BUILD_INFO.json',names);self.assertNotIn('PSLog/meta/BUILD_INFO.json',names)
                 self.assertIn('PSLog/USER_GUIDE.txt',names)
-            self.assertEqual(inspect_update(out).version,'1.14')
+            self.assertEqual(inspect_update(out).version,'1.15')
 
     def test_1041_bridge_has_only_legacy_root_updater(self):
         with tempfile.TemporaryDirectory() as folder:
@@ -76,7 +93,7 @@ class PackageTests(unittest.TestCase):
                 names=z.namelist();update=json.loads(z.read('PSLog/PSLOG_UPDATE_INFO.json'))
                 self.assertEqual(tuple(update['managed_roots']),LEGACY_MANAGED_ROOTS_1041)
                 self.assertIn('PSLog/PSLogUpdater.exe',names);self.assertNotIn('PSLog/exec/PSLogUpdater.exe',names)
-            self.assertEqual(inspect_update(out).version,'1.14')
+            self.assertEqual(inspect_update(out).version,'1.15')
 
     def test_package_script_bridge_cli(self):
         with tempfile.TemporaryDirectory() as folder:
@@ -84,7 +101,7 @@ class PackageTests(unittest.TestCase):
             for old in ('1.041','1.042'):
                 out=root/f'bridge-{old}.zip'
                 result=subprocess.run([sys.executable,str(script),str(build),str(source),str(out),'--bridge-from',old],cwd=root,stdout=subprocess.PIPE,stderr=subprocess.PIPE,text=True)
-                self.assertEqual(result.returncode,0,result.stderr);self.assertEqual(inspect_update(out).version,'1.14')
+                self.assertEqual(result.returncode,0,result.stderr);self.assertEqual(inspect_update(out).version,'1.15')
 
     def test_build_script_emits_one_normal_windows_zip(self):
         text=(Path(__file__).parent/'build-windows.ps1').read_text(encoding='utf-8-sig')

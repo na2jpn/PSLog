@@ -11,7 +11,7 @@ ROOT=Path(__file__).resolve().parent
 
 class Patch04Tests(unittest.TestCase):
     def test_version(self):
-        self.assertEqual(VERSION,'1.14')
+        self.assertEqual(VERSION,'1.15')
 
     def test_reset_window_flag_ignores_saved_geometry_at_restore(self):
         source=(ROOT/'main.py').read_text(encoding='utf-8')

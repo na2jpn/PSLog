@@ -11,7 +11,7 @@ from exporting import prepare_rows
 
 class Patch06Tests(unittest.TestCase):
     def test_version(self):
-        self.assertEqual(VERSION,'1.14')
+        self.assertEqual(VERSION,'1.15')
 
     def test_new_workspace_defaults(self):
         self.assertEqual((standard_session(1,{})['band'],standard_session(1,{})['mode']),('430','FM'))

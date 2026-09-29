@@ -33,7 +33,7 @@ class Patch031073Tests(unittest.TestCase):
                    his, 'Soka Saitama Japan', remarks, code)
 
     def test_version(self):
-        self.assertEqual(VERSION, '1.14')
+        self.assertEqual(VERSION, '1.15')
 
     def test_bare_jcg_fills_county_only(self):
         # 11002 has several towns in Ashigarakami-gun.  A bare JCG must not

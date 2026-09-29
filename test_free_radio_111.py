@@ -10,7 +10,7 @@ class FreeRadio111Tests(unittest.TestCase):
         self.tmp=tempfile.TemporaryDirectory();self.root=Path(self.tmp.name);self.repo=Repository(self.root);self.repo.book.mkdir();self.repo.free_book.mkdir();self.repo.bak.mkdir()
     def tearDown(self):self.tmp.cleanup()
     def test_version_and_mapping(self):
-        self.assertEqual(VERSION,'1.14')
+        self.assertEqual(VERSION,'1.15')
         self.assertEqual(radio_values('CB'),('27','AM'))
         self.assertEqual(radio_values('DCR'),('351','DIGITAL'))
         self.assertEqual(radio_values('LCR'),('142/146','DIGITAL'))

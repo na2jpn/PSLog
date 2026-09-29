@@ -1,4 +1,4 @@
-"""PSLog 1.14 application entry point and main/session UI."""
+"""PSLog 1.15 application entry point and main/session UI."""
 import sys
 import ctypes
 import subprocess
@@ -1474,7 +1474,7 @@ class Window(QMainWindow):
           ('入出力',['インポート','エクスポート','特殊なエクスポート']),
           ('提出ログファイル作成',['コンテスト','アワード','QSOパーティ']),
           ('バックアップ',['今すぐバックアップ','全体バックアップから復元','ログバックアップから復元','バックアップ保存先を開く']),
-          ('設定',['設定','ブラックリスト管理']),('フリラ',['フリラタブを呼び出す…','フリラログ検索・編集']),('ヘルプ',['使い方','PSLogフォーマットについて','起動コマンドフラグについて','PSLogをバージョンアップ','PSLogについて'])]
+          ('設定',['設定','ブラックリスト管理']),('フリラ',['フリラタブを呼び出す…','フリラログ検索・編集']),('ヘルプ',['使い方','PSLogフォーマットについて','起動コマンドフラグについて','PSLogをバージョンアップ','PSLogの更新履歴','PSLogについて'])]
         for name,items in groups:
             menu=self.menuBar().addMenu(name)
             self.menu_refs.append(menu)
@@ -1522,7 +1522,7 @@ class Window(QMainWindow):
                 elif item=='設定':action.triggered.connect(self.open_settings)
                 elif item=='今すぐバックアップ':action.triggered.connect(self.full_backup)
                 elif item=='PSLogをバージョンアップ':action.triggered.connect(self.open_update)
-                elif item in ('使い方','PSLogフォーマットについて','起動コマンドフラグについて','PSLogについて'):
+                elif item in ('使い方','PSLogフォーマットについて','起動コマンドフラグについて','PSLogの更新履歴','PSLogについて'):
                     from help_ui import HelpDialog
                     action.triggered.connect(lambda checked=False,topic=item:HelpDialog(topic,self).exec())
                 elif item in ('本体の場所を開く','ログファイルの場所を開く','出力ファイルの場所を開く','レポートの場所を開く','バックアップ保存先を開く'):

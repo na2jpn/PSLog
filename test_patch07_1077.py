@@ -12,7 +12,7 @@ from record_time import needs_confirmation
 
 class Patch071077CoreTests(unittest.TestCase):
     def test_version(self):
-        self.assertEqual(VERSION,'1.14')
+        self.assertEqual(VERSION,'1.15')
 
     def test_easy_title_ignores_log_suffix_but_keeps_callsign_portable_part(self):
         self.assertEqual(session_title(easy_session(1,{'own':'JH1HST/1','suffix':'JP1220'})),'[E]JH1HST/1')

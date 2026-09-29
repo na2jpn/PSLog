@@ -19,7 +19,7 @@ ROOT=Path(__file__).resolve().parent
 
 class Patch011061Tests(unittest.TestCase):
     def test_version(self):
-        self.assertEqual(VERSION,'1.14')
+        self.assertEqual(VERSION,'1.15')
 
     def test_partial_datetime_boundaries(self):
         self.assertEqual(prefix_boundary('20260915',False),'20260915000000')

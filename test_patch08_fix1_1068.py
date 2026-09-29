@@ -16,7 +16,7 @@ class Patch08Fix1V1068Tests(unittest.TestCase):
         self.source.write_text(line,encoding='utf-8');return prepare(self.repo,self.source,'JH1HST','JST','hQSL.R')
 
     def test_version_stays_1068(self):
-        self.assertEqual(VERSION,'1.14')
+        self.assertEqual(VERSION,'1.15')
 
     def test_one_input_may_select_multiple_valid_qsos(self):
         self.add(self.base)

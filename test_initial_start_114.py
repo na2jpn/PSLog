@@ -9,7 +9,7 @@ class InitialStart114Tests(unittest.TestCase):
         self.text=(Path(__file__).with_name('main.py')).read_text(encoding='utf-8')
 
     def test_version(self):
-        self.assertEqual(VERSION,'1.14')
+        self.assertEqual(VERSION,'1.15')
 
     def test_first_start_can_switch_to_free_radio(self):
         self.assertIn("prompt=QLabel('アマチュア無線のコールサイン')",self.text)

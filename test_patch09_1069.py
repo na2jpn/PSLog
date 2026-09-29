@@ -6,7 +6,7 @@ from qsl_marks import change
 
 class Patch09Tests(unittest.TestCase):
     def test_version_and_qsl_quick_add_normalization(self):
-        self.assertEqual(VERSION,'1.14')
+        self.assertEqual(VERSION,'1.15')
         self.assertEqual(change('33','hQSL.R')[0],'33 hQSL.R')
         self.assertEqual(change('33 hQSL.R','hQSL.R')[0],'33 hQSL.R')
         self.assertEqual(change('33 BURO','BURO.R')[0],'33 BURO.R')

@@ -14,7 +14,7 @@ from storage import Repository, VERSION
 
 class Patch031063Tests(unittest.TestCase):
     def test_version_is_1063(self):
-        self.assertEqual(VERSION, '1.14')
+        self.assertEqual(VERSION, '1.15')
 
     def test_jccjcg_no_date_uses_latest_limit_but_explicit_date_does_not(self):
         with tempfile.TemporaryDirectory() as td:

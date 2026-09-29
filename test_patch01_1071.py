@@ -29,7 +29,7 @@ class Patch011071Tests(unittest.TestCase):
         return info
 
     def test_version(self):
-        self.assertEqual(VERSION, '1.14')
+        self.assertEqual(VERSION, '1.15')
 
     def test_jarl_interactive_required_fields_include_email(self):
         for format_name in ('JARL R1.0', 'JARL R2.1'):

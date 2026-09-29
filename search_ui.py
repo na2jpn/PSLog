@@ -229,44 +229,109 @@ class EditDialog(QDialog):
 
 
 class QSLQuickDialog(QDialog):
-    """Compact, read-only QSO view with receipt-mark buttons only."""
+    """Fast QSL workbench with only QSL/QTH/JCC fields editable.
+
+    Buttons and field edits change an in-memory draft only.  The source PSLog
+    record is touched exactly once, when the user presses 保存.  閉じる discards
+    the draft and leaves the original QSO unchanged.
+    """
     METHODS=('LoTW.R','hQSL.R','eQSL.R','BURO.R','QRZ.R','CARD.R','Other.R')
     def __init__(self,repo,hit,parent=None):
         super().__init__(parent);self.repo=repo;self.hit=hit;self.saved=False
-        self.setWindowTitle(f'PSLog Ver{VERSION} — QSL処理');self.resize(760,390);apply_window_tint(self,'edit')
+        self.original=hit.qso
+        self.setWindowTitle(f'PSLog Ver{VERSION} — QSL処理');self.resize(800,460);apply_window_tint(self,'edit')
         outer=QVBoxLayout(self)
-        guide=QLabel('選択した交信のQSL受領記録だけを処理します。QSO情報はここでは編集できません。')
+        guide=QLabel('QSL受領記録と、作業中に必要になりやすいJCC/JCG・HIS QTHだけを補正できます。\n変更は「保存」を押すまで元ログへ書き込みません。')
         guide.setWordWrap(True);outer.addWidget(guide)
+
         self.info=QGridLayout();outer.addLayout(self.info);self.info_values={}
-        labels=(('date','DATE'),('time','TIME（JST）'),('band','BAND'),('mode','MODE'),('call','相手コールサイン'),('his_qth','HIS QTH'),('code','JCC / JCG'))
+        labels=(('date','DATE'),('time','TIME（JST）'),('band','BAND'),('mode','MODE'),('call','相手コールサイン'))
         for i,(key,label) in enumerate(labels):
             row=i//2;col=(i%2)*2;self.info.addWidget(QLabel(label),row,col)
-            value=QLabel();value.setTextInteractionFlags(Qt.TextInteractionFlag.TextSelectableByMouse);value.setWordWrap(True);self.info.addWidget(value,row,col+1);self.info_values[key]=value
+            value=QLabel(getattr(hit.qso,key));value.setTextInteractionFlags(Qt.TextInteractionFlag.TextSelectableByMouse);value.setWordWrap(True)
+            self.info.addWidget(value,row,col+1);self.info_values[key]=value
         self.info.setColumnStretch(1,1);self.info.setColumnStretch(3,1)
-        outer.addWidget(QLabel('現在のRMKS'))
-        self.remarks=QLineEdit();self.remarks.setReadOnly(True);outer.addWidget(self.remarks)
+
+        edit=QGridLayout();outer.addLayout(edit)
+        edit.addWidget(QLabel('JCC / JCG'),0,0)
+        self.code=QLineEdit(hit.qso.code);edit.addWidget(self.code,0,1)
+        self.qth_button=button('HIS QTHへ反映',self.apply_qth_from_code);edit.addWidget(self.qth_button,0,2)
+        edit.addWidget(QLabel('HIS QTH'),1,0)
+        self.his_qth=QLineEdit(hit.qso.his_qth);edit.addWidget(self.his_qth,1,1,1,2)
+        edit.setColumnStretch(1,1)
+
+        outer.addWidget(QLabel('RMKS（QSL受領記録）'))
+        self.remarks=QLineEdit(hit.qso.remarks);self.remarks.setReadOnly(True);outer.addWidget(self.remarks)
         qsl=QHBoxLayout();self.qsl_buttons={}
         for method in self.METHODS:
             b=button('['+method+']',lambda checked=False,m=method:self.add_qsl_receipt(m));self.qsl_buttons[method]=b;qsl.addWidget(b)
         qsl.addStretch();outer.addLayout(qsl)
         self.status=QLabel();self.status.setWordWrap(True);outer.addWidget(self.status)
-        actions=QHBoxLayout();actions.addStretch();actions.addWidget(button('閉じる',self.accept));outer.addLayout(actions)
-        self.refresh()
-    def refresh(self):
-        q=self.hit.qso
-        for key,label in self.info_values.items():label.setText(getattr(q,key))
-        self.remarks.setText(q.remarks);self.remarks.setToolTip(q.remarks)
-        for b in self.qsl_buttons.values():b.setEnabled(bool(self.hit.editable))
+
+        actions=QHBoxLayout();actions.addStretch()
+        self.close_button=button('閉じる',self.reject)
+        self.save_button=button('保存',self.save)
+        actions.addWidget(self.close_button);actions.addWidget(self.save_button);outer.addLayout(actions)
+        self.code.textChanged.connect(self.changed);self.his_qth.textChanged.connect(self.changed);self.remarks.textChanged.connect(self.changed)
+        self._set_enabled();self.changed()
+
+    def _set_enabled(self):
+        editable=bool(self.hit.editable)
+        self.code.setEnabled(editable);self.his_qth.setEnabled(editable);self.qth_button.setEnabled(editable)
+        for b in self.qsl_buttons.values():b.setEnabled(editable)
+
+    def values(self):
+        return {'remarks':self.remarks.text(),'his_qth':self.his_qth.text(),'code':self.code.text()}
+
+    def changed(self):
+        self.save_button.setEnabled(bool(self.has_changes() and self.hit.editable))
+
     def add_qsl_receipt(self,method):
         if not self.hit.editable:return
         try:
-            updated,_,_=change_qsl_mark(self.hit.qso.remarks,method)
-            if updated==self.hit.qso.remarks:
-                self.status.setText(method+' はすでに記録されています。');return
-            q=replace(self.hit.qso,remarks=updated);q.validate();old=self.hit
-            old.apply(q);self.hit=_fresh_hit(self.repo,old,q);self.saved=True;self.refresh()
-            self.status.setText(method+' をRMKSへ反映しました。')
-        except (ValueError,StorageError,OSError) as e:self.status.setText(str(e))
+            updated,_,_=change_qsl_mark(self.remarks.text(),method)
+            if updated==self.remarks.text():
+                self.status.setText(method+' はすでに画面内へ反映されています。');return
+            self.remarks.setText(updated)
+            self.status.setText(method+' を画面内へ反映しました。「保存」で元ログへ反映します。')
+        except (ValueError,StorageError) as e:self.status.setText(str(e))
+
+    def apply_qth_from_code(self):
+        if not self.hit.editable:return
+        try:
+            from jccjcg_batch import qth_from_code
+            qth=qth_from_code(self.repo.root,self.code.text())
+        except (ValueError,StorageError,OSError) as e:
+            self.status.setText(str(e));return
+        self.his_qth.setText(qth);self.status.setText('JCC/JCGからHIS QTHを画面内へ反映しました。「保存」で元ログへ反映します。')
+
+    def save(self):
+        if not self.hit.editable:return
+        try:
+            q=replace(self.hit.qso,remarks=self.remarks.text(),his_qth=self.his_qth.text(),code=self.code.text())
+            q.validate()
+            self.hit.apply(q)
+            self.hit=_fresh_hit(self.repo,self.hit,q)
+        except (ValueError,StorageError,OSError) as e:
+            self.status.setText(str(e));return
+        self.saved=True;self.accept()
+
+    def has_changes(self):
+        return (self.remarks.text()!=self.original.remarks
+                or self.his_qth.text()!=self.original.his_qth
+                or self.code.text()!=self.original.code)
+
+    def reject(self):
+        if self.has_changes() and not self.saved:
+            answer=QMessageBox.question(self,'未保存の変更','変更内容を保存せず閉じますか？',
+                QMessageBox.StandardButton.Yes|QMessageBox.StandardButton.No,QMessageBox.StandardButton.No)
+            if answer!=QMessageBox.StandardButton.Yes:return
+        super().reject()
+
+    def closeEvent(self,event):
+        self.reject()
+        if self.isVisible():event.ignore()
+        else:event.accept()
 
 
 class DetailDialog(QDialog):
