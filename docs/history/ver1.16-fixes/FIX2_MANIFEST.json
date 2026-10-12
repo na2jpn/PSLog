@@ -1,0 +1,22 @@
+{
+  "patch": "PSLog Ver1.16 FIX2",
+  "base": "PSLog_1.16_FULL_SOURCE.zip + PSLog_1.16_FIX1_DIFF.zip",
+  "purpose": "Prevent unintended TX/PTT caused by serial DTR/RTS assertion on radio connection.",
+  "files": [
+    {
+      "path": "radio_control.py",
+      "sha256": "6b0756f34f9f849b63d0a6c10ce566f5da2acece700d432a5e1a141947a3216d",
+      "size": 26360
+    },
+    {
+      "path": "test_radio_safety_fix2.py",
+      "sha256": "16130b29bd85e713faba6960a0f463aa3f9d4e7f1a191a2a9f03efd9c56e2a5f",
+      "size": 2420
+    },
+    {
+      "path": "VER1.16_FIX2_README.md",
+      "sha256": "7967ba7bd079b8e3fc31cdcd3fab753ab9ddcf2dce8a050a336d6f0ed603c837",
+      "size": 1710
+    }
+  ]
+}

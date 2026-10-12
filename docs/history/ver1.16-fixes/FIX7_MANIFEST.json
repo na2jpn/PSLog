@@ -1,0 +1,31 @@
+{
+  "version": "1.16",
+  "fix": "FIX7",
+  "base": "PSLog_1.16 + FIX1-FIX6",
+  "files": {
+    "radio_control.py": {
+      "sha256": "0ca9def856a2eac4bc2960643c9b7b20f151048b46d6126fb2c135ea7cdde1d1",
+      "size": 36161
+    },
+    "settings_ui.py": {
+      "sha256": "d22afa34ce043fce0fcf80b6d9ae08ae696815c4337a3407f3e2c27753ef6386",
+      "size": 29423
+    },
+    "test_v116_core.py": {
+      "sha256": "43c46e9286b5860b269d0abfa6afea926f0dbbd97fbb4b523aed1a0189e8fb55",
+      "size": 2427
+    },
+    "test_radio_fix5.py": {
+      "sha256": "c23ef85852250f8f4206978692dbb3ac6593d78aeeeb5b6370b590061643c195",
+      "size": 4123
+    },
+    "test_radio_fix7.py": {
+      "sha256": "eb926285995fe9ca2fc45700c78131ccebd62ce525de5a5bcb98280b11fd77fc",
+      "size": 2668
+    },
+    "VER1.16_FIX7_README.md": {
+      "sha256": "1dbeba3713a522457fcc9ee13c8a7854780ac58efccaea7aee342077c073c94c",
+      "size": 2609
+    }
+  }
+}

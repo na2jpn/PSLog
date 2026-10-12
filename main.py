@@ -1,4 +1,4 @@
-"""PSLog 1.15 application entry point and main/session UI."""
+"""PSLog 1.16 application entry point and main/session UI."""
 import sys
 import ctypes
 import subprocess
@@ -18,8 +18,9 @@ from path_label import PathLabel
 from model import QSO, now_jst, default_rst, validate_station, LOCATIONS, preserve_grid
 from input_normalization import callsign as normalize_callsign, amateur_callsign_entry, date_text, machine_text, time_text
 from mode_text import split_mode_value, combine_mode_value
-from remarks_sections import compose as compose_remarks, validate_component as validate_remarks_component
+from remarks_sections import compose as compose_remarks, validate_component as validate_remarks_component, primary as primary_remarks
 from record_time import needs_confirmation as record_time_needs_confirmation
+from radio_control import RadioManager,cleanup_stale_virtual,frequency_text,band_for_frequency_hz,append_frequency
 from band_stats import band_badge,total_badge
 from search import session_rows,embedded_history_hit,file_identity,Hit
 from free_radio import (FREE_TYPES,radio_values,validate_free_call,validate_model,normalize_free_call,free_path,free_files,free_file_identity,free_models,free_profiles,ensure_free_logbook,FreeQSO)
@@ -145,6 +146,9 @@ class Window(QMainWindow):
         self.config_snapshot=Snapshot.read(self.config_path)
         self.settings=validate_preferences(load_settings(self.data_root))
         self.config_snapshot.check(self.config_path)
+        self.radio_start_warning=cleanup_stale_virtual(self.data_root)
+        self.radio_manager=RadioManager(self.data_root)
+        self._easy_radio_rmks2='';self._contest_radio_rmks2='' 
         self.repo.backup_keep=self.settings['backup_keep']
         self.workspace_sessions,self.active_workspace_index,self.recent_workspace_sessions=restore_workspace_state(self.settings,now_jst())
         self._workspace_loading=False;self._workspace_switching=False;self._country_db=None
@@ -217,6 +221,19 @@ class Window(QMainWindow):
         self.session_tabs=SessionTabBar();tr.addWidget(self.session_tabs,1)
         self.add_session_button=QPushButton('＋タブ');self.add_session_button.setObjectName('primary');self.add_session_button.setToolTip('タブを追加・再開')
         self.add_session_button.setFixedWidth(76);tr.addWidget(self.add_session_button,0,Qt.AlignmentFlag.AlignTop)
+        radio_box=QWidget();radio_layout=QGridLayout(radio_box);radio_layout.setContentsMargins(5,0,0,0);radio_layout.setHorizontalSpacing(5);radio_layout.setVerticalSpacing(0)
+        self.radio_frequency=QLabel('-.--MHz');self.radio_frequency.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        radio_freq_font=self.radio_frequency.font();radio_freq_font.setPointSize(max(1,radio_freq_font.pointSize()+2));radio_freq_font.setBold(True);self.radio_frequency.setFont(radio_freq_font)
+        self.radio_frequency.setFixedWidth(self.radio_frequency.fontMetrics().horizontalAdvance('10000.000MHz')+10);self.radio_frequency.setStyleSheet('color:#a4a9ad;')
+        radio_layout.addWidget(self.radio_frequency,0,0,1,3)
+        self.radio_connection_button=QPushButton('接続');self.radio_connection_button.setObjectName('compactBlue');self.radio_connection_button.setFixedHeight(21);self.radio_connection_button.setFixedWidth(54);self.radio_connection_button.setToolTip('保存済みの無線機設定で接続／切断します。')
+        self.radio_connection_button.clicked.connect(self._toggle_radio_connection);radio_layout.addWidget(self.radio_connection_button,0,3,Qt.AlignmentFlag.AlignRight)
+        radio_layout.addWidget(QLabel('自動セット'),1,0)
+        self.radio_rmks1=QCheckBox('RMKS1');self.radio_rmks2=QCheckBox('RMKS2');self.radio_band=QCheckBox('Band')
+        self._radio_rmks1_pref=bool(self.settings.get('radio_autoset_rmks1',False));self.radio_rmks1.setChecked(self._radio_rmks1_pref);self.radio_rmks2.setChecked(bool(self.settings.get('radio_autoset_rmks2',False)));self.radio_band.setChecked(bool(self.settings.get('radio_autoset_band',False)))
+        radio_layout.addWidget(self.radio_rmks1,1,1);radio_layout.addWidget(self.radio_rmks2,1,2);radio_layout.addWidget(self.radio_band,1,3)
+        for cb in (self.radio_rmks1,self.radio_rmks2,self.radio_band):cb.toggled.connect(self._radio_autoset_changed)
+        tr.addWidget(radio_box,0,Qt.AlignmentFlag.AlignTop)
         central_layout.addWidget(tabrow)
         self.page_stack=QStackedWidget();central_layout.addWidget(self.page_stack,1);self.setCentralWidget(central)
 
@@ -366,6 +383,69 @@ class Window(QMainWindow):
         app.screenRemoved.connect(self.screen_environment_changed)
         self._watched_screens=[]
         self.watch_screens()
+        self.radio_ui_timer=QTimer(self);self.radio_ui_timer.timeout.connect(self._refresh_radio_ui);self.radio_ui_timer.start(350)
+        self.radio_manager.configure(self.settings);self._update_radio_autoset_ui()
+
+    def _radio_autoset_changed(self,*_args):
+        if getattr(self,'_workspace_loading',False):return
+        if self.sender() is self.radio_rmks1 and self._active_workspace().get('type')!='contest':self._radio_rmks1_pref=self.radio_rmks1.isChecked()
+        try:self.persist_settings()
+        except (StorageError,OSError,ValueError):pass
+
+    def _update_radio_autoset_ui(self):
+        if not hasattr(self,'radio_rmks1'):return
+        kind=self._active_workspace().get('type');contest=kind=='contest';free=kind=='free'
+        self.radio_rmks1.blockSignals(True);self.radio_rmks1.setChecked(False if contest else self._radio_rmks1_pref);self.radio_rmks1.blockSignals(False)
+        self.radio_rmks1.setEnabled(not contest and not free);self.radio_rmks2.setEnabled(not free);self.radio_band.setEnabled(not free)
+        if free:
+            tip='フリラタブではアマチュア無線機の自動セットを使用しません。'
+        elif contest:
+            tip='コンテストタブではRMKS1（コンテストナンバー）へ周波数を自動追記しません。'
+        else:tip=''
+        self.radio_rmks1.setToolTip(tip);self.radio_rmks2.setToolTip(tip if free else '');self.radio_band.setToolTip(tip if free else '')
+
+    def _refresh_radio_ui(self):
+        if not hasattr(self,'radio_frequency'):return
+        state=self.radio_manager.state();text=frequency_text(state.frequency_hz)
+        self.radio_frequency.setText((text+'MHz') if text else '-.--MHz')
+        self.radio_frequency.setStyleSheet('color:#397e59;' if state.connected else 'color:#a4a9ad;')
+        if hasattr(self,'radio_connection_button'):
+            running=self.radio_manager.is_running();self.radio_connection_button.setText('切断' if running else '接続')
+            self.radio_connection_button.setToolTip(('無線機接続と仮想COM中継を停止します。' if running else '保存済みの無線機設定で接続します。'))
+        tip=[]
+        if state.virtual_port:tip.append('仮想COM: '+state.virtual_port)
+        if state.virtual_status:tip.append(state.virtual_status)
+        if state.error:tip.append(state.error)
+        if self.radio_start_warning:tip.append(self.radio_start_warning)
+        self.radio_frequency.setToolTip('\n'.join(tip))
+
+    def _toggle_radio_connection(self):
+        if self.radio_manager.is_running():
+            self.radio_manager.stop();self._refresh_radio_ui();return
+        from radio_control import infer_radio_model
+        if not self.settings.get('radio_enabled',False) or not infer_radio_model(self.settings):
+            QMessageBox.information(self,'無線機接続','設定 → 無線機設定で「無線機接続を使用する」と無線機を設定してください。')
+            return
+        self.radio_manager.configure(self.settings);self._refresh_radio_ui()
+
+    def _apply_radio_autoset(self,kind):
+        state=self.radio_manager.state();freq=state.frequency_hz
+        if not state.connected or freq is None or kind=='free':return
+        if self.radio_band.isChecked():
+            band=band_for_frequency_hz(freq)
+            if band:
+                if kind=='standard':self.set_text('band',band)
+                elif kind=='easy':self.e_band.setCurrentText(band)
+                elif kind=='contest':self.c_band.setCurrentText(band)
+        if kind=='standard':
+            if self.radio_rmks1.isChecked():self.fields['remarks'].setText(append_frequency(self.fields['remarks'].text(),freq))
+            if self.radio_rmks2.isChecked():self.rmks2.setText(append_frequency(self.rmks2.text(),freq))
+        elif kind=='easy':
+            if self.radio_rmks1.isChecked():self.e_remarks.setText(append_frequency(self.e_remarks.text(),freq))
+            if self.radio_rmks2.isChecked():self._easy_radio_rmks2=append_frequency(self._easy_radio_rmks2,freq)
+        elif kind=='contest':
+            # RMKS1 is the contest exchange/number and is deliberately untouched.
+            if self.radio_rmks2.isChecked():self._contest_radio_rmks2=append_frequency(self._contest_radio_rmks2,freq)
 
     def watch_screens(self):
         for screen in QApplication.screens():
@@ -601,13 +681,14 @@ class Window(QMainWindow):
         new_station=q.call!=self._easy_prepared_call
         if new_station:
             self._easy_prepared_call=q.call;self._easy_qso_date=now.strftime('%Y-%m-%d');self.e_time.setText(now.strftime('%H:%M'))
-            self.e_his_qth.clear();self.e_code.clear();self.e_remarks.clear()
+            self.e_his_qth.clear();self.e_code.clear();self.e_remarks.clear();self._easy_radio_rmks2=''
             try:
                 hint=self._country_hint(q.call)
                 if hint:self.e_his_qth.setText(hint['country'])
             except (StorageError,OSError):pass
         elif not self._easy_qso_date:
             self._easy_qso_date=now.strftime('%Y-%m-%d');self.e_time.setText(now.strftime('%H:%M'))
+        self._apply_radio_autoset('easy')
         self.e_date_label.setText('日付：'+self._easy_qso_date)
         self.e_page1_summary.setText(f'相手：{q.call}\nバンド：{q.band} MHz　　モード：{q.mode}\nRST：送信 {q.sent or "—"} ／ 受信 {q.received or "—"}')
         self.easy_update_path();self.e_pages.setCurrentIndex(1);self.e_code.setFocus()
@@ -655,9 +736,10 @@ class Window(QMainWindow):
         if self.e_pages.currentIndex()!=1:return
         date=self._easy_qso_date or now_jst().strftime('%Y-%m-%d')
         try:
-            validate_remarks_component(self.e_remarks.text(),'RMKS')
+            validate_remarks_component(self.e_remarks.text(),'RMKS');validate_remarks_component(self._easy_radio_rmks2,'RMKS2')
+            remarks=compose_remarks(self.e_remarks.text(),self._easy_radio_rmks2)
             q=QSO(date,self.e_time.text().strip(),self.e_band.currentText().strip(),self.easy_mode_value(),normalize_callsign(self.e_call.text()),
-                self.e_sent.text().strip(),self.e_received.text().strip(),self.e_his_qth.text(),self.e_my_qth.text(),self.e_remarks.text(),self.e_code.text());q.validate()
+                self.e_sent.text().strip(),self.e_received.text().strip(),self.e_his_qth.text(),self.e_my_qth.text(),remarks,self.e_code.text());q.validate()
         except ValueError as e:
             QMessageBox.warning(self,'入力確認',str(e));return
         time_choice=self._easy_time_choice(q)
@@ -672,7 +754,7 @@ class Window(QMainWindow):
         except (StorageError,OSError,ValueError) as e:settings_error=' ／ 交信は保存済みですが、タブ状態の保存に失敗しました: '+str(e)
         self.e_status.setText(q.call+' を保存しました：'+str(path)+settings_error);self.easy_search()
         # EASY intentionally keeps only Band, Mode and My QTH for the next QSO.
-        self.e_call.clear();self.e_his_qth.clear();self.e_code.clear();self.e_remarks.clear();self._easy_qso_date='';self._easy_prepared_call='';self.e_time.clear();self.e_date_label.setText('日付：----/--/--')
+        self.e_call.clear();self.e_his_qth.clear();self.e_code.clear();self.e_remarks.clear();self._easy_radio_rmks2='';self._easy_qso_date='';self._easy_prepared_call='';self.e_time.clear();self.e_date_label.setText('日付：----/--/--')
         self.easy_mode_changed();self.e_pages.setCurrentIndex(0);self.easy_update_path();self.e_call.setFocus()
 
     def _build_free_page(self):
@@ -1033,7 +1115,7 @@ class Window(QMainWindow):
     def _on_workspace_changed(self,index):
         if self._workspace_switching or index<0 or index>=len(self.workspace_sessions) or index==self.active_workspace_index:return
         self._save_active_workspace_state();self.active_workspace_index=index;self._load_workspace(index)
-        self._persist_workspace_quiet()
+        self._update_radio_autoset_ui();self._persist_workspace_quiet()
 
     def _workspace_moved(self,old,new):
         if self._workspace_switching or old==new or not (0<=old<len(self.workspace_sessions) and 0<=new<len(self.workspace_sessions)):return
@@ -1345,7 +1427,9 @@ class Window(QMainWindow):
         if self._active_workspace().get('type')!='contest':return
         call=normalize_callsign(self.c_call.text())
         if not call:self.c_call.setFocus();return
+        new_call=call!=self._contest_prepared_call
         self.c_call.setText(call);self._contest_prepared_call=call;self.blacklist_ack=None;self.warn_blacklist(call);now=now_jst()
+        if new_call:self._contest_radio_rmks2=''
         self.c_date.setText(now.strftime('%Y-%m-%d'));self.c_time.setText(now.strftime('%H:%M'))
         if not self.c_sent.text().strip() and not self.c_received.text().strip():self.contest_mode_changed(self.c_mode.currentText())
         self.c_entry_country='';country_note=''
@@ -1353,6 +1437,7 @@ class Window(QMainWindow):
             hint=self._country_hint(call)
             if hint:self.c_entry_country=hint['country'];country_note=' 国名は参照DBから記録します。'
         except (StorageError,OSError) as e:country_note=' 国名補助: '+str(e)
+        self._apply_radio_autoset('contest')
         self.update_contest_path();self.contest_search();self.c_exchange.setFocus();self.c_exchange.selectAll()
         self.c_status.setText(call+' をセットしました。コンテストナンバーを入力してRETURN。'+country_note)
 
@@ -1430,7 +1515,7 @@ class Window(QMainWindow):
         try:
             q=QSO(self.c_date.text().strip(),self.c_time.text().strip(),self.c_band.currentText().strip(),self.c_mode.currentText().strip(),
                 self.c_call.text(),self.c_sent.text().strip(),self.c_received.text().strip(),self.c_entry_country,
-                self.c_my_qth.text(),self.c_exchange.text().strip(),'');q.validate()
+                self.c_my_qth.text(),compose_remarks(self.c_exchange.text().strip(),self._contest_radio_rmks2),'');q.validate(allow_nonstandard_rst=True)
             self.c_date.setText(q.date);self.c_time.setText(q.time);self.c_band.setCurrentText(q.band);self.c_mode.setCurrentText(q.mode)
             self.c_sent.setText(q.sent);self.c_received.setText(q.received)
         except ValueError as e:
@@ -1442,7 +1527,7 @@ class Window(QMainWindow):
             self.c_time.setFocus();self.c_time.selectAll();return
         if time_choice=='current':
             self.c_date.setText(q.date);self.c_time.setText(q.time);self.update_contest_path()
-        if not q.remarks.strip():
+        if not primary_remarks(q.remarks).strip():
             warning=QMessageBox(self)
             warning.setIcon(QMessageBox.Icon.Warning);warning.setWindowTitle('コンテストナンバー未入力')
             warning.setTextFormat(Qt.TextFormat.RichText)
@@ -1461,7 +1546,7 @@ class Window(QMainWindow):
         try:self.persist_settings()
         except (StorageError,OSError,ValueError) as e:settings_error=' ／ 交信は保存済みですが、タブ状態の保存に失敗しました: '+str(e)
         self.c_status.setText(q.call+' を保存しました：'+str(path)+settings_error);self.contest_search();self.update_contest_band_counts()
-        self._contest_prepared_call='';self.c_call.clear();self.c_exchange.clear();self.c_entry_country=''
+        self._contest_prepared_call='';self._contest_radio_rmks2='';self.c_call.clear();self.c_exchange.clear();self.c_entry_country=''
         self.contest_mode_changed(self.c_mode.currentText());self.c_call.setFocus()
     def tick(self):self.clock.setText(now_jst().strftime('%Y-%m-%d %H:%M:%S JST'))
     def _visible_status(self):
@@ -1474,7 +1559,7 @@ class Window(QMainWindow):
           ('入出力',['インポート','エクスポート','特殊なエクスポート']),
           ('提出ログファイル作成',['コンテスト','アワード','QSOパーティ']),
           ('バックアップ',['今すぐバックアップ','全体バックアップから復元','ログバックアップから復元','バックアップ保存先を開く']),
-          ('設定',['設定','ブラックリスト管理']),('フリラ',['フリラタブを呼び出す…','フリラログ検索・編集']),('ヘルプ',['使い方','PSLogフォーマットについて','起動コマンドフラグについて','PSLogをバージョンアップ','PSLogの更新履歴','PSLogについて'])]
+          ('設定',['設定','無線機設定','ブラックリスト管理']),('フリラ',['フリラタブを呼び出す…','フリラログ検索・編集']),('ヘルプ',['使い方','PSLogフォーマットについて','起動コマンドフラグについて','PSLogをバージョンアップ','PSLogの更新履歴','PSLogについて'])]
         for name,items in groups:
             menu=self.menuBar().addMenu(name)
             self.menu_refs.append(menu)
@@ -1520,6 +1605,7 @@ class Window(QMainWindow):
                 elif item=='エクスポート':action.triggered.connect(self.open_export)
                 elif item=='ブラックリスト管理':action.triggered.connect(self.open_blacklist)
                 elif item=='設定':action.triggered.connect(self.open_settings)
+                elif item=='無線機設定':action.triggered.connect(self.open_radio_settings)
                 elif item=='今すぐバックアップ':action.triggered.connect(self.full_backup)
                 elif item=='PSLogをバージョンアップ':action.triggered.connect(self.open_update)
                 elif item in ('使い方','PSLogフォーマットについて','起動コマンドフラグについて','PSLogの更新履歴','PSLogについて'):
@@ -1556,6 +1642,7 @@ class Window(QMainWindow):
             band=primary.get('band','');mode=primary.get('mode','');my_qth=primary.get('my_qth','')
         values.update({'version':VERSION,'own':own,'suffix':suffix,'my_qth':my_qth,
             'band':band,'mode':mode,
+            'radio_autoset_rmks1':self._radio_rmks1_pref,'radio_autoset_rmks2':self.radio_rmks2.isChecked(),'radio_autoset_band':self.radio_band.isChecked(),
             'keep_band':self.keep_band.isChecked(),'keep_mode':self.keep_mode.isChecked(),'auto_rst':self.auto_rst.isChecked(),'location_assist':self.location_on.isChecked(),
             'workspace_sessions':[serializable(session) for session in self.workspace_sessions],
             'active_workspace_id':self._active_workspace().get('id',''),
@@ -1572,9 +1659,13 @@ class Window(QMainWindow):
         self.repo.backup_keep=self.settings['backup_keep']
         self.location_on.setChecked(self.settings['location_assist'])
         for key in ('keep_band','keep_mode','auto_rst'):getattr(self,key).setChecked(self.settings[key])
+        self.radio_manager.configure(self.settings);self._refresh_radio_ui()
     def open_settings(self):
         from settings_ui import SettingsDialog
         SettingsDialog(self.current_settings(),self.apply_preferences,self,repo=self.repo).exec()
+    def open_radio_settings(self):
+        from settings_ui import SettingsDialog
+        SettingsDialog(self.current_settings(),self.apply_preferences,self,repo=self.repo,initial_tab='無線機設定').exec()
     def full_backup(self):
         from full_backup import create
         suggested='PSLog_backup_'+now_jst().strftime('%Y%m%d-%H%M%S')+'.zip'
@@ -1944,8 +2035,9 @@ class Window(QMainWindow):
         # A full restore has already written the selected config/logbook state.
         # Do not let the still-running pre-restore UI write its old settings back.
         if getattr(self,'_full_restore_exit',False) or getattr(self,'_update_exit',False):
-            event.accept();return
+            self.radio_manager.stop();event.accept();return
         try:
+            self.radio_manager.stop()
             errors=self.repo.close()
             if errors:raise StorageError('終了時バックアップに失敗しました。'+str(errors))
             self.persist_settings()
@@ -2036,6 +2128,7 @@ class Window(QMainWindow):
         if not self.keep_band.isChecked():self.set_text('band','')
         if not self.keep_mode.isChecked():self.set_text('mode','')
         if self.auto_rst.isChecked():self.mode_changed(self.text('mode'))
+        self._apply_radio_autoset('standard')
         country_note=''
         if self.location_on.isChecked():
             try:
@@ -2118,7 +2211,7 @@ class Window(QMainWindow):
     def record(self):
         try:
             values={k:self.text(k) for k in self.fields};validate_remarks_component(values['remarks'],'RMKS');validate_remarks_component(self.rmks2.text(),'RMKS2')
-            values['remarks']=compose_remarks(values['remarks'],self.rmks2.text() if self.rmks2_toggle.isChecked() else '')
+            values['remarks']=compose_remarks(values['remarks'],self.rmks2.text() if (self.rmks2_toggle.isChecked() or self.rmks2.text()) else '')
             values['call']=normalize_callsign(self.call.text());q=QSO(**values);q.validate()
             self.call.setText(q.call)
             for key in ('date','time','band','mode','sent','received','code'):self.set_text(key,getattr(q,key))

@@ -1,0 +1,43 @@
+{
+  "name": "PSLog Ver1.16 FIX5 differential package",
+  "version": "1.16",
+  "fix": "FIX5",
+  "base_required": "PSLog Ver1.16 + FIX1 + FIX2 + FIX3 + FIX4",
+  "files": [
+    {
+      "path": "radio_control.py",
+      "size": 32400,
+      "sha256": "f0286e399f9bf59c8b4d47cae3b5f77017234a410f9b48e1c85987322f479f5a"
+    },
+    {
+      "path": "settings_ui.py",
+      "size": 27620,
+      "sha256": "49083bda55b9832b430be57771e7e9c54b9b64d531fb1e6fb8c25b2c96c22888"
+    },
+    {
+      "path": "main.py",
+      "size": 169786,
+      "sha256": "564b5d77f933d686453b9881d2adb675bef3a6274b85748a2c41d33077786129"
+    },
+    {
+      "path": "test_radio_fix4.py",
+      "size": 2916,
+      "sha256": "125e060bbaebead267e0dfb4e1ec6dc29d3ec9696623a043142f7dc3284dc71d"
+    },
+    {
+      "path": "test_v116_core.py",
+      "size": 2513,
+      "sha256": "28ff4a72a6a3873604d5cf25a888d19c4ec80bb7597470ae621cfdc44d8a5de4"
+    },
+    {
+      "path": "test_radio_fix5.py",
+      "size": 4191,
+      "sha256": "1221f53533c9138b27177e68ef31b614f917995077137a9c5d1f7ea5300e6aa2"
+    },
+    {
+      "path": "VER1.16_FIX5_README.md",
+      "size": 3073,
+      "sha256": "0aae77c8909cebf899636d4450331e1b884d5ade99932c288c16fe829b76cef1"
+    }
+  ]
+}

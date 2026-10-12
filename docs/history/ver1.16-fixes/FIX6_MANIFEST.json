@@ -1,0 +1,23 @@
+{
+  "name": "PSLog Ver1.16 FIX6 differential package",
+  "version": "1.16",
+  "fix": "FIX6",
+  "base_required": "PSLog Ver1.16 + FIX1 + FIX2 + FIX3 + FIX4 + FIX5",
+  "files": [
+    {
+      "path": "storage.py",
+      "size": 18227,
+      "sha256": "b094fd475d0f436ba6701cf503e93936fc6296184adb9b3d1b4c23ca5234656a"
+    },
+    {
+      "path": "test_storage_replace_retry_fix6.py",
+      "size": 2440,
+      "sha256": "ba875f6aa17ca0d02799cdc4bb69431ac2da5cfe4a446bc28be62f65936d598b"
+    },
+    {
+      "path": "VER1.16_FIX6_README.md",
+      "size": 2432,
+      "sha256": "3b9791cd59b2195cc027fcfaa6b6663af83386c87173b386515802b70c4e04de"
+    }
+  ]
+}

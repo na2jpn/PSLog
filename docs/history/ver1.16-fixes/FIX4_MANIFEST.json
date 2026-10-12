@@ -1,0 +1,33 @@
+{
+  "name": "PSLog Ver1.16 FIX4 differential package",
+  "version": "1.16",
+  "fix": "FIX4",
+  "base_required": "PSLog Ver1.16 + FIX1 + FIX2 + FIX3",
+  "files": [
+    {
+      "path": "radio_control.py",
+      "size": 30761,
+      "sha256": "d99886472585b1b91ab75943b9bd6c17bcb5eb1b8e0df663c5087b0db455a2c8"
+    },
+    {
+      "path": "settings_ui.py",
+      "size": 22834,
+      "sha256": "0d02f0d98671b5a89f269fd0c18c6c424488f6440a80d8d34720430e24006c27"
+    },
+    {
+      "path": "main.py",
+      "size": 169585,
+      "sha256": "0adeda0ca4eb41f36b882feda536311ebe1d6e4ba63924731b538a72fe6fe318"
+    },
+    {
+      "path": "test_radio_fix4.py",
+      "size": 2947,
+      "sha256": "105a576fe2c2343b6243f4ec03e2212fd22789b42f6ba2aea8e5fbbadc5db5d4"
+    },
+    {
+      "path": "VER1.16_FIX4_README.md",
+      "size": 2467,
+      "sha256": "39200c781f8dcaa462e2aaf44dbaf4d2a9b21bd72cec5fdfa8c9b03798196324"
+    }
+  ]
+}

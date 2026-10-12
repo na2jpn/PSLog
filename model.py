@@ -51,7 +51,7 @@ class QSO:
         from qsl_marks import tokens
         return bool(tokens(self.remarks) & {x.casefold() for x in QSL_FLAGS})
 
-    def validate(self):
+    def validate(self, allow_nonstandard_rst=False):
         try:self.date = date_text(self.date)
         except ValueError as e:raise InputError('date',str(e)) from e
         try:self.time = time_text(self.time)
@@ -76,17 +76,17 @@ class QSO:
         pattern = (r'[1-5][1-9]' if mode in ('SSB','FM','AM') else
                    r'[1-5][1-9][1-9]' if mode in ('CW','RTTY') else
                    r'[1-5][1-9][1-5]' if mode == 'SSTV' else None)
-        if pattern:
+        if pattern and not allow_nonstandard_rst:
             for field,label in (('sent','送信RST'),('received','受信RST')):
                 if not re.fullmatch(pattern,getattr(self,field)):raise InputError(field,label+': Modeに合うレポートを入力してください。')
-        if mode in ('FT8','FT4','FT2','FREEDV'):
+        if mode in ('FT8','FT4','FT2','FREEDV') and not allow_nonstandard_rst:
             self.sent = '+00' if self.sent in ('00','0','-00') else self.sent
             self.received = '+00' if self.received in ('00','0','-00') else self.received
             for field,label in (('sent','送信RST'),('received','受信RST')):
                 if not re.fullmatch(r'[+-][0-9]{2}',getattr(self,field)):raise InputError(field,label+': デジタルレポートは +00 や -12 の形式で入力してください。')
 
-    def to_ps(self):
-        self.validate()
+    def to_ps(self, allow_nonstandard_rst=False):
+        self.validate(allow_nonstandard_rst=allow_nonstandard_rst)
         values = list(vars(self).values())
         values[1] += ' JST'
         return ' | '.join(values) + ' ' + chr(92)*2

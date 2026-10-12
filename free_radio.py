@@ -1,4 +1,4 @@
-"""Free-radio (フリラ) log identity, validation, and discovery for PSLog 1.15."""
+"""Free-radio (フリラ) log identity, validation, and discovery for PSLog 1.16."""
 from __future__ import annotations
 
 from dataclasses import dataclass

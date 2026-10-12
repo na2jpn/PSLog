@@ -12,6 +12,7 @@ from remarks_sections import primary as primary_remarks,split_for_ui,compose as 
 from storage import StorageError,VERSION
 from window_tint import apply_window_tint
 from search import Criteria,search,normalize_time,delete_hits,station_call_candidates,Hit
+from logbook_sources import file_identity
 
 LABELS=[('date','DATE'),('time','TIME（JST）'),('band','BAND'),('mode','MODE'),
     ('call','相手コールサイン'),('sent','RSTs（送信）'),('received','RSTr（受信）'),
@@ -193,7 +194,9 @@ class EditDialog(QDialog):
     def save(self):
         try:
             validate_remarks_component(self.inputs['remarks'].text(),'RMKS');validate_remarks_component(self.rmks2.text(),'RMKS2')
-            q=QSO(**self.values());q.validate()
+            q=QSO(**self.values())
+            from logbook_sources import is_contest_log_file
+            q.validate(allow_nonstandard_rst=is_contest_log_file(self.hit.path))
             if q.date[:4]!=self.hit.path.name[:4]:
                 target=self.hit.path.with_name(q.date[:4]+self.hit.path.name[4:])
                 if QMessageBox.question(self,'保存年の変更','この交信を次のログへ移します。\n'+str(target)+'\n両方のログを保護してから保存します。',QMessageBox.Yes|QMessageBox.No,QMessageBox.No)!=QMessageBox.Yes:return
@@ -309,7 +312,8 @@ class QSLQuickDialog(QDialog):
         if not self.hit.editable:return
         try:
             q=replace(self.hit.qso,remarks=self.remarks.text(),his_qth=self.his_qth.text(),code=self.code.text())
-            q.validate()
+            from logbook_sources import is_contest_log_file
+            q.validate(allow_nonstandard_rst=is_contest_log_file(self.hit.path))
             self.hit.apply(q)
             self.hit=_fresh_hit(self.repo,self.hit,q)
         except (ValueError,StorageError,OSError) as e:

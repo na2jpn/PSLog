@@ -1,4 +1,4 @@
-"""PSLog 1.15 storage foundation. Standard library only.
+"""PSLog 1.16 storage foundation. Standard library only.
 
 Read legacy records without applying new-entry RST constraints. Preserve every
 unmodified line, BOM and newline. Never silently repair ambiguous source data.
@@ -13,16 +13,26 @@ import json
 import os
 import re
 import tempfile
+import time
 import unicodedata
 import uuid
 from model import QSO, validate_station
 
-VERSION = '1.15'
+VERSION = '1.16'
 TERMINATOR = '\\' * 2
 
 class StorageError(Exception): pass
 class ExternalChange(StorageError): pass
 class InvalidLog(StorageError): pass
+
+def serialize_qso(qso, allow_nonstandard_rst=False):
+    """Serialize an amateur QSO with optional contest RST tolerance.
+
+    FreeQSO keeps its own serializer and is intentionally unaffected.
+    """
+    if allow_nonstandard_rst and isinstance(qso,QSO):
+        return qso.to_ps(allow_nonstandard_rst=True)
+    return qso.to_ps()
 
 @dataclass(frozen=True)
 class Issue:
@@ -153,6 +163,31 @@ def operation_lock(directory: Path):
             yield
         finally: os.close(fd)
 
+_REPLACE_RETRY_DELAYS = (0.05, 0.10, 0.20, 0.40)
+
+def _replace_existing_with_retry(temp: str, path: Path, expected: Snapshot):
+    """Replace an existing file, tolerating brief Windows sharing/AV locks.
+
+    Some Windows scanners/indexers briefly open a freshly-written log between
+    fsync and os.replace().  Those transient WinError 5/32 failures must not
+    turn a valid QSO save into a false failure.  Before every retry we re-check
+    the snapshot so an actual external edit is still rejected.
+    """
+    for attempt in range(len(_REPLACE_RETRY_DELAYS) + 1):
+        expected.check(path)
+        try:
+            os.replace(temp, path)
+            return
+        except PermissionError:
+            if attempt >= len(_REPLACE_RETRY_DELAYS):
+                raise
+            time.sleep(_REPLACE_RETRY_DELAYS[attempt])
+        except OSError as e:
+            # Windows may surface sharing/access violations as a plain OSError.
+            if getattr(e, 'winerror', None) not in (5, 32) or attempt >= len(_REPLACE_RETRY_DELAYS):
+                raise
+            time.sleep(_REPLACE_RETRY_DELAYS[attempt])
+
 def replace_bytes(path: Path, data: bytes, expected: Snapshot):
     """Temp + fsync + atomic replace. New files use exclusive hard-link creation."""
     path.parent.mkdir(parents=True, exist_ok=True)
@@ -165,7 +200,8 @@ def replace_bytes(path: Path, data: bytes, expected: Snapshot):
         if expected.data is None:
             try: os.link(temp, path)  # Fails rather than overwriting a new competing file.
             except FileExistsError as e: raise ExternalChange('保存先が新たに作成されました。再読込してください。') from e
-        else: os.replace(temp, path)
+        else:
+            _replace_existing_with_retry(temp, path, expected)
     finally:
         Path(temp).unlink(missing_ok=True)
 
@@ -275,17 +311,17 @@ class Session:
             data = existing + sep + (line + self.log.newline).encode('utf-8')
         self._commit(data)
 
-    def edit(self, line_number, qso=None):
+    def edit(self, line_number, qso=None, allow_nonstandard_rst=False):
         self._editable()
         if not 1 <= line_number <= len(self.log.lines) or not self.log.lines[line_number-1].qso:
             raise StorageError('交信行を選択してください。')
         if qso and qso.date[:4] != self.path.name[:4]:
             from year_move import move
-            return move(self,line_number,qso)
+            return move(self,line_number,qso,allow_nonstandard_rst=allow_nonstandard_rst)
         new = list(self.log.lines)
         old = new[line_number-1].raw
         ending = '\r\n' if old.endswith('\r\n') else '\n' if old.endswith('\n') else '\r' if old.endswith('\r') else ''
-        new[line_number-1] = ParsedLine(qso.to_ps() + ending if qso else '')
+        new[line_number-1] = ParsedLine(serialize_qso(qso,allow_nonstandard_rst) + ending if qso else '')
         body = ''.join(l.raw for l in new).encode('utf-8')
         self._commit((b'\xef\xbb\xbf' if self.log.bom else b'') + body, destructive=True)
 

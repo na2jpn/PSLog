@@ -1,0 +1,33 @@
+{
+  "patch": "PSLog Ver1.16 FIX1",
+  "base": "PSLog_1.16_FULL_SOURCE.zip",
+  "base_sha256": "561a669e8c6963768d4b9c60411e91aba36bdc0bdb2dec0781e0519e0e07c16b",
+  "version": "1.16",
+  "files": [
+    {
+      "path": "preferences.py",
+      "size": 2064,
+      "sha256": "c4f000021b1c869f0258caf4ba64ea49b81cea18750b4754f3f6953e48759373"
+    },
+    {
+      "path": "radio_control.py",
+      "size": 24605,
+      "sha256": "b943bde262c69b3767f76c34550ae0edf823d1a2a2e852d802969a2e8cb63cd0"
+    },
+    {
+      "path": "settings_ui.py",
+      "size": 18913,
+      "sha256": "c54c60f669b0c5faa7feb3f6834d0afdfe05ff9adf4b56bffb52dfd54bf645aa"
+    },
+    {
+      "path": "test_radio_settings_fix1.py",
+      "size": 2577,
+      "sha256": "d07dbfda502c6cd0686062add4528e6004f5520e626daabca4ae6e0e6bed4532"
+    },
+    {
+      "path": "VER1.16_FIX1_README.md",
+      "size": 2194,
+      "sha256": "9b10b19c52e12a2c5b4e401309db0b30a795caf3587bb2a32ab01691ed9dcb02"
+    }
+  ]
+}

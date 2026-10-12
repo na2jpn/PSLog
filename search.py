@@ -7,7 +7,7 @@ from model import validate_station
 from input_normalization import jccjcg_code
 from storage import ExternalChange, StorageError, operation_lock, replace_bytes
 from time_range import prefix_boundary
-from logbook_sources import file_identity,base_station_call,amateur_station_calls,amateur_log_files
+from logbook_sources import file_identity,is_contest_log_file,base_station_call,amateur_station_calls,amateur_log_files
 
 @dataclass(frozen=True)
 class Criteria:
@@ -69,7 +69,7 @@ class Hit:
         self.snapshot.check(self.path)
         if self.session.log.lines[self.line-1].raw != self.raw:
             raise ExternalChange('対象行が変わりました。再検索してください。')
-        self.session.edit(self.line, qso)
+        self.session.edit(self.line, qso, allow_nonstandard_rst=is_contest_log_file(self.path))
 
 
 

@@ -1,31 +1,23 @@
-# 検証範囲 — PSLog 1.15
+# 検証範囲 — PSLog 1.16 正本
 
-## GPT/Linux側
+## 系譜
+- `PSLog_1.16_FULL_SOURCE.zip` を基準にFIX1～FIX9を順に統合。
+- 利用者のWindows実機でFIX9のcom0com仮想COM作成成功を確認し、正本化を指示。
+- FIX1～FIX9は `docs/history/ver1.16-fixes/` に履歴保存し、今後は再適用しない。
 
-- `PSLog_1.14_CANONICAL_SOURCE.zip` を新規展開し、Ver1.15を直接実装。古いPATCH/FIXから再構成していない。
-- Python `compileall`：OK。
-- Ver1.15重点回帰（Updater/versionup、Windows package、フリラ、全体復元、初回起動、主要リリース回帰）：**58 tests OK**。
-- Ver1.15更新系重点回帰（Updater/versionup、Windows package、更新履歴、QSL作業画面）：**30 tests OK**。
-- `python -m unittest discover -v`：**515 tests run / 0 FAIL / 69 ERROR / 9 skipped**。
-- 上記69 ERRORは、このLinux検証環境にPySide6が入っていないためのGUI import/runtime error。FAIL assertionは0件。
-- `SOURCE_MANIFEST.json` は生成物除去後の全ソースツリーSHA-256を記録する。
-- 全装ZIP作成後にZIP CRC、全装内 `SOURCE_MANIFEST.json`、source tree hashを再確認する。
+## GPT側確認
+- canonicalization時の `compileall`: OK。
+- PySide6不要の無線機/仮想COM/保存リトライ関連回帰を実行。
+- ZIP作成後にCRCを全件確認。
+- `SOURCE_MANIFEST.json` にソースツリーhashと適用FIXのSHA-256を記録。
 
-## Windows側で必要
+## Windows実機で確認された重要点
+- CI-V物理接続と周波数取得。
+- DTR/RTS安全化後、接続によるTX張り付き対策を実装。
+- com0com作成時のUACとsetupc作業ディレクトリ問題をFIX9で解消。
+- 利用者よりFIX9適用後「うまくいきました」と報告され、仮想COM作成成功を確認。
 
-- `python -m unittest discover -v`
-- QSL処理画面のGUI確認
-  - QSLタグ・JCC/JCG・HIS QTHが「保存」まで元ログへ書かれないこと
-  - `HIS QTHへ反映` の動作
-  - `保存` で一括保存後に閉じること
-  - 未保存変更ありで `閉じる` → **「変更内容を保存せず閉じますか？」** が出ること
-  - 未変更なら確認なしで閉じること
-- Ver1.14 → Ver1.15の実Windows ZIPアップデート確認
-  - 指定ZIPは1個だけ
-  - `meta/versionup.json` とVer1.14移行互換manifestを確認
-  - `config/`、`logbook/`、`logbook_flr/`、`bak/`、`output/` が保護されること
-- `build-windows.ps1`
-- 生成Windows ZIPの起動・自己診断・更新後自動再起動
-- ヘルプ → `PSLogの更新履歴` と `PSLogについて` のVersion表示確認
-
-問題がなければ、**同一 `PSLog_1.15_FULL_SOURCE.zip` を再構成・再パックせずVer1.15正本として扱う。**
+## 継続確認
+- WSJT-X等の外部ソフトから仮想COM経由の長時間双方向運用。
+- Hamlib各機種の実機差。
+- Windows 10/11や異なるcom0com版での導入差。

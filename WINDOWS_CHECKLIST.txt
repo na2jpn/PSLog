@@ -1,47 +1,50 @@
-﻿PSLog 1.15 Windows配布確認票
+﻿PSLog 1.16 Windows配布確認票
 
 [配布構成]
 [ ] ルート直下の通常ファイルはEXEのみ。
-[ ] pslog.exe が存在する。
-[ ] exec\PSLogUpdater.exe が存在する。
+[ ] pslog.exe / exec\PSLogUpdater.exe が存在する。
 [ ] meta\BUILD_INFO.json / meta\PSLOG_UPDATE_INFO.json / meta\versionup.json / meta\UPDATE_HISTORY.txt が存在する。
 [ ] config / logbook / logbook_flr / bak / output の利用者データを配布ZIPに含めていない。
 
 [起動]
-[ ] PSLog Ver1.15 と表示される。
-[ ] 初回起動のアマチュア無線/フリラ切替が従来どおり動作する。
-[ ] logbook / logbook_flr が不足時に生成される。
+[ ] PSLog Ver1.16 と表示される。
+[ ] 初回起動のアマチュア無線/フリラ切替が従来どおり動く。
+[ ] 無線機未設定/接続失敗でもPSLog本体は普通に起動・使用できる。
 
-[Ver1.15重点 — 更新]
-[ ] 通常の PSLog_1.15_Windows_*.zip を新規配布/アップデートの両方に使える。
-[ ] PSLog Ver1.14 から、展開せず1つのVer1.15 Windows ZIPを指定して更新できる。
-[ ] meta\versionup.json がVer1.15+側で認識される。
-[ ] meta\PSLOG_UPDATE_INFO.json 互換情報によりVer1.14側UpdaterでもVer1.15 ZIPを認識できる。
-[ ] config / logbook / logbook_flr / bak / output を保持する。
-[ ] 更新後の自己診断、完了画面、自動起動、更新ロック解除が正常。
-[ ] 追加フォルダー/補助EXEを含む将来構成を想定したversionupテストが通る。
+[Ver1.16重点 — 無線機]
+[ ] 設定に「無線機設定」がある。
+[ ] CI-Vで物理COMへ接続し周波数を取得できる。
+[ ] Hamlibでrigctldを使用し周波数を取得できる。
+[ ] 設定済みなら次回起動時に自動接続する。
+[ ] ＋タブ右: 未接続 -.--MHz 薄灰 / 接続 7.012MHz 等 緑。
+[ ] 自動セット3チェックは初期OFF。
+[ ] 標準: RETURNで選択したRMKS1/RMKS2/Bandだけ反映。MODE不変。
+[ ] RMKS周波数は単位なし（例 7.012）＋末尾半角スペース。同値連続RETURNで重複しない。
+[ ] EASY: RMKS2が非表示でもチェックONなら保存後のRMKS2に入る。
+[ ] コンテスト: RMKS1チェックはOFF固定/無効。RMKS2/Bandは利用可。
+[ ] フリラ: RMKS1/RMKS2/Band自動セットは無効。
 
-[Ver1.15重点 — 更新履歴]
-[ ] ヘルプに「PSLogの更新履歴」があり、「PSLogについて」の直前に表示される。
-[ ] Ver1.01～Ver1.15の履歴が表示される。
-[ ] 「PSLogについて」のVersion表示がVer1.15になる。
-[ ] 操作案内のVersion表示もVer1.15になる。
+[Ver1.16重点 — 仮想COM中継]
+[ ] 初期OFF。OFF時は仮想COM中継を開始しない。
+[ ] com0com未導入/権限不足でも物理無線機接続とPSLog本体は継続使用できる。
+[ ] 仮想COM作成/削除時だけUACが出る。通常の接続/切断やPSLog終了ではUAC不要。
+[ ] 物理COM8ならCOM208（外部）⇔COM209（PSLog内部）を作成。競合時はCOM308/309、COM408/409…と+100。
+[ ] 作成後にPSLogを終了しても仮想COMペアがWindows上へ残り、再起動後UACなしで再利用できる。
+[ ] WSJT-Xまたはリグコントロールソフト1本→外部COM→PSLog→無線機でCI-V双方向通信できる。
+[ ] 外部ソフトから周波数変更したときPSLog表示も追従する。
+[ ] 設定で仮想COM中継をOFFにして接続を組み直せる（PSLog再起動不要）。
+[ ] 「仮想COMを削除」でUAC後にPSLog管理ペアだけ削除できる。
+[ ] setupc.exeがProgram Files (x86)にある環境でも自動検出/手動指定できる。
+[ ] setupc管理者実行でSystem32のcom0com.infを誤参照せず、setupc.exeのフォルダーから作成できる。
+[ ] Hamlib選択時は仮想COM中継を使用しない。
 
-[Ver1.15重点 — QSL処理]
-[ ] ログ検索・編集からQSL処理画面を開ける。
-[ ] JCC/JCGを編集できる。
-[ ] HIS QTHを編集できる。
-[ ] 「HIS QTHへ反映」で既存JCC/JCG→所在地処理が働く。
-[ ] QSL受領ボタンを押しても、その時点では元ログを書き換えない。
-[ ] JCC/JCG/HIS QTH変更も、その時点では元ログを書き換えない。
-[ ] 「保存」でQSLタグ・JCC/JCG・HIS QTHをまとめて保存し、画面が閉じる。
-[ ] 変更なしで「閉じる」は即終了する。
-[ ] 変更ありで「閉じる」は「変更内容を保存せず閉じますか？」と確認する。
-[ ] 確認で保存せず閉じた場合、元ログに変更がない。
-[ ] 確認でキャンセルした場合、QSL処理画面へ戻る。
+[Ver1.16重点 — コンテスト編集]
+[ ] FT8等のコンテストログでRST欄に英数字交換情報があっても「交信を編集」で保存できる。
+[ ] 同じログをQSL処理画面で補正しても非数値RSTを理由に保存失敗しない。
+[ ] 通常ログのFT8新規入力/通常編集では従来の +00 / -12 形式検証が維持される。
 
 [既存重点]
+[ ] Ver1.15の更新履歴/QSL作業場/1-ZIP updaterが従来どおり動く。
 [ ] EASY、フリラ、コンテスト、QSL一括、JCC/JCG交信チェックが従来どおり動く。
-[ ] フリラタブは同時最大4枚、水色選択色、logbook_flr分離を維持。
 [ ] 全体バックアップ/復元にlogbook_flrが含まれる。
 [ ] PSLog TXT 11項目、UTF-8 BOM + CRLF、JSTを維持。

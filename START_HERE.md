@@ -1,30 +1,31 @@
-# PSLog Ver1.15 — Full Source / Canonical Candidate
+# PSLog Ver1.16 — Canonical Source
 
-全装ZIP: `PSLog_1.15_FULL_SOURCE.zip`  
-作成日: 2026-09-29 / VERSION: **1.15**
+基準ZIP: `PSLog_1.16_CANONICAL_SOURCE.zip`  
+正本化日: 2026-10-13 / VERSION: **1.16**
 
-このZIPはVer1.14正本から直接作成したVer1.15全装（正本候補）です。Windows全テスト・GUI・ビルド確認で問題がなければ、この同一ZIPをそのままVer1.15正本として扱います。再構成・再パックは不要です。
+このZIPがVer1.16の唯一の正本です。Ver1.16初期全装へFIX1～FIX9を積み直さず、今後は必ずこのZIPから開始してください。
 
 ## 読む順序
 
 1. `START_HERE.md`
 2. `HANDOFF.md`
 3. `NEXT_CHAT_PROMPT.md`
-4. `docs/specs/development/PSLOG_1.15_BASELINE.md`
+4. `docs/specs/development/PSLOG_1.16_BASELINE.md`
 5. `docs/specs/data/FREE_RADIO_LOGGING.md`
 6. 必要に応じて `docs/INDEX.md`
 
-## Ver1.15までに統合された主な内容
+## Ver1.16で確定した主な内容
 
-- Ver1.14までのアマチュア無線、EASY、コンテスト、QSL/JCC-JCG、フリラ、初回起動切替を維持。
-- バージョンアップは従来どおり利用者が**1つのWindows ZIP**を指定する。
-- `meta/versionup.json` をVer1.15+の更新管理情報として追加。将来DLL用フォルダー、補助EXE、追加アプリフォルダー等が増えても、同じ1つのZIPから更新できる土台を用意。
-- 配布ルート直下はEXEとフォルダーのみ。JSON/TXT等の管理情報は `meta/` 配下に置く。
-- `config/`、`logbook/`、`logbook_flr/`、`bak/`、`output/` はUpdaterの保護対象で、versionup情報からも更新・削除できない。
-- Ver1.15 Windows ZIPはVer1.14から更新できるよう旧 `meta/PSLOG_UPDATE_INFO.json` も併載し、Ver1.15+は `meta/versionup.json` を優先する。
-- ヘルプに「PSLogの更新履歴」を追加し、「PSLogについて」の上へ配置。履歴本体は `meta/UPDATE_HISTORY.txt`。
-- 画面に出す現行Versionは `storage.VERSION` を共通参照し、操作案内タイトルも直書きを廃止。
-- ログ検索・編集のQSL処理画面へJCC/JCG、HIS QTH、`HIS QTHへ反映` を追加。
-- QSL処理画面内のQSLタグ/JCC-JCG/HIS QTH変更は下書きで、`保存` でまとめて原本反映後に閉じる。`閉じる` は保存しない。
+- 1台分の無線機情報取得を追加。通常は機種名、COMポート、通信速度を選択し、ICOMはCI-V、対応Yaesu/Kenwood等はHamlib (`rigctld`) を内部で選択する。
+- 設定済みなら起動時自動接続。失敗してもPSLog本体は通常利用可能。接続テスト、通常接続/切断、メイン画面からの接続/切断に対応。
+- `＋タブ`右に周波数表示。接続時は `7.012MHz` 等を緑・ボールド・従来比+2pt、未接続は `-.--MHz` を薄灰で表示。
+- HIS CALLSIGN RETURN時の自動セット: RMKS1 / RMKS2 / Band（初期OFF）。MODEは変更しない。コンテストではRMKS1を保護し、フリラでは自動セットを使わない。
+- CI-V用の1系統仮想COM中継を追加。外部ソフト → 常設仮想COM → PSLog → 物理COM → 無線機。Ver1.16ではHamlib経由の仮想中継は行わない。
+- 仮想COMは既に導入済みのcom0comを使用。例: 物理COM8なら外部 `COM208` / PSLog内部 `COM209`、競合時は `COM308/309` のように+100。
+- 仮想COMは**常設方式**。作成/削除時だけUACを要求し、通常の接続/切断やPSLog終了ではCOMデバイス自体を削除しない。
+- `setupc.exe` はProgram Files / Program Files (x86) / PATH等から検出し、管理者実行時も必ずsetupc.exeのフォルダーを作業ディレクトリにしてcom0com INFを正しく参照する。
+- COMオープンではDTR/RTSを事前にOFF、ハンドシェイクも無効にし、情報取得だけで意図せず送信状態へ入らないよう安全化。
+- Windowsの一時的なファイルロックに対し、原本更新の `os.replace` を短いバックオフ付きで再試行する。永続権限エラーや外部変更は握りつぶさない。
+- コンテスト由来の既存交信編集では、RST欄相当へ非数値の交換情報が入るケースを保持して保存可能。通常QSOの入力検証は維持。
 
-以後の変更は差分ZIPを基本とします。要望列挙中は実装せず、利用者から明確な「実装」指示を受けてからまとめて変更してください。
+FIX1～FIX9の履歴は `docs/history/ver1.16-fixes/` に保存しています。適用済みであり、今後の再適用対象ではありません。

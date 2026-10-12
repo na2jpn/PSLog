@@ -1,0 +1,45 @@
+{
+  "schema": 12,
+  "project": "PSLog",
+  "version": "1.16",
+  "status": "FULL_SOURCE_PENDING_WINDOWS_ACCEPTANCE",
+  "full_source_filename": "PSLog_1.16_FULL_SOURCE.zip",
+  "created_at": "2026-10-12",
+  "canonical_if_accepted": true,
+  "canonicalization_rule": "If Windows acceptance passes, this exact full-source ZIP becomes the Ver1.16 canonical source without rebuilding or repacking.",
+  "next_development_line_if_accepted": "Ver1.16 series (first normal patch expected 1.161; next canonical number follows user instruction)",
+  "source_of_full_source": {
+    "baseline": {
+      "filename": "PSLog_1.15_FULL_SOURCE.zip",
+      "sha256": "3b0aecd4c111b9ee714779641a00d3c51ffc92f0083c89c20047aadde92a27cf",
+      "note": "The accepted Ver1.15 full source used as the sole baseline for PSLOG116."
+    },
+    "rule": "Ver1.16 was implemented directly on a fresh extraction of the Ver1.15 full source. Older canonical sources and PATCH/FIX chains were not replayed."
+  },
+  "release_highlights": [
+    "Adds one-radio frequency information with direct CI-V or Hamlib/rigctld; configured radio auto-connect is non-fatal on failure.",
+    "Adds a compact MHz frequency display and opt-in RMKS1/RMKS2/Band auto-set on callsign RETURN; MODE is never changed.",
+    "Contest RMKS1 is protected from frequency auto-set; free-radio tabs do not consume amateur-radio auto-set.",
+    "Adds an experimental single-client CI-V virtual COM relay using an already-installed com0com setupc.exe; preferred port is physical+200 then +100 on conflict.",
+    "PSLog-created virtual pairs are removed on normal shutdown and stale-state cleanup is attempted at the next startup after an abnormal exit.",
+    "Hamlib frequency acquisition is supported via rigctld; Ver1.16 virtual COM relay is intentionally CI-V only.",
+    "Existing contest log edits and QSL workbench saves preserve nonnumeric contest exchange values in RST fields while ordinary QSO validation remains strict."
+  ],
+  "verification": {
+    "compileall": "OK",
+    "targeted_regression": "65 tests OK: Ver1.16 radio/virtual COM/contest RST plus update/package/free-radio/full-restore/release regressions.",
+    "package_core_recheck": "37 tests OK: Windows package/updater/Ver1.16 radio core.",
+    "full_discovery_linux": "522 tests run; 0 FAIL assertions; 69 ERROR are exclusively PySide6-not-installed ModuleNotFoundError; 9 skipped.",
+    "windows_acceptance": "PENDING USER: full unittest, GUI, CI-V/Hamlib hardware, com0com relay, PyInstaller build and packaged executable checks."
+  },
+  "external_runtime_notes": {
+    "pyserial": "Python dependency included by the Windows build.",
+    "hamlib": "rigctld.exe is external and not bundled.",
+    "virtual_com": "Requires an already-installed compatible com0com driver/setupc.exe. PSLog does not install or bundle the kernel driver."
+  },
+  "source_tree": {
+    "files_excluding_manifest": 1176,
+    "sha256_excluding_manifest": "a8a4cc26acb62adc690218afdb19c0ba9173c7cf5bfe6fe9b07ef17d7c3b862f",
+    "hash_method": "SHA-256 over sorted UTF-8 relative path, NUL, per-file SHA-256 hex, newline; only root SOURCE_MANIFEST.json excluded."
+  }
+}

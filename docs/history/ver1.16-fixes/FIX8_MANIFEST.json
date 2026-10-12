@@ -1,0 +1,19 @@
+{
+  "version": "1.16",
+  "fix": "FIX8",
+  "base": "PSLog_1.16 + FIX1-FIX7",
+  "files": {
+    "settings_ui.py": {
+      "sha256": "e90a2bc62deb4c7684bd5253c70fa9b0dbfee77ecda8e24a27a2c6bc524437a3",
+      "size": 29199
+    },
+    "test_radio_fix7.py": {
+      "sha256": "f9e097378ee0c3697cf3057054f82ed521c749448ef3f787e4d2f6170e13db51",
+      "size": 2790
+    },
+    "VER1.16_FIX8_README.md": {
+      "sha256": "4c10284e89f4cc8e2397702869979ec8b31cc7508b0e765d4d03afd2a591bb42",
+      "size": 1378
+    }
+  }
+}

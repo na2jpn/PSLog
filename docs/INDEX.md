@@ -58,8 +58,10 @@ Use this file as the documentation entry point. Files under `history/` are not c
 - [specs/storage/YEAR_MOVE.md](specs/storage/YEAR_MOVE.md)
 
 ### Development / UI
-- [specs/development/PSLOG_1.15_BASELINE.md](specs/development/PSLOG_1.15_BASELINE.md) — **current Ver1.15 full-source baseline.**
-- [specs/development/PSLOG_1.15_NEXT_CHAT_PLAN.md](specs/development/PSLOG_1.15_NEXT_CHAT_PLAN.md) — continuation plan after Ver1.15 acceptance.
+- [specs/development/PSLOG_1.16_BASELINE.md](specs/development/PSLOG_1.16_BASELINE.md) — **current Ver1.16 canonical baseline.**
+- [specs/development/PSLOG_1.16_NEXT_CHAT_PLAN.md](specs/development/PSLOG_1.16_NEXT_CHAT_PLAN.md) — continuation plan from the accepted Ver1.16 canonical source.
+- [specs/development/PSLOG_1.15_BASELINE.md](specs/development/PSLOG_1.15_BASELINE.md) — Ver1.15 baseline history.
+- [specs/development/PSLOG_1.15_NEXT_CHAT_PLAN.md](specs/development/PSLOG_1.15_NEXT_CHAT_PLAN.md) — Ver1.15 continuation history.
 - [specs/development/PSLOG_1.14_BASELINE.md](specs/development/PSLOG_1.14_BASELINE.md) — **current Ver1.14 canonical baseline.**
 - [specs/development/PSLOG_1.14_NEXT_CHAT_PLAN.md](specs/development/PSLOG_1.14_NEXT_CHAT_PLAN.md) — current continuation plan from Ver1.14.
 - [specs/development/PSLOG_1.13_BASELINE.md](specs/development/PSLOG_1.13_BASELINE.md) — retained Ver1.13 baseline history.

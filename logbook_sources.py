@@ -31,6 +31,12 @@ def file_identity(path):
     return match[1], match[2].replace('-', '/').upper(), match[3]
 
 
+def is_contest_log_file(path):
+    """Return True for PSLog contest log filenames (NAME + YYYYMM suffix)."""
+    identity=file_identity(path)
+    return bool(identity and re.fullmatch(r'[A-Z0-9]+[0-9]{6}', identity[2] or ''))
+
+
 def base_station_call(value):
     """Strip portable/area suffixes from a station callsign."""
     return str(value or '').strip().upper().split('/', 1)[0]

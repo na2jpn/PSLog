@@ -1,27 +1,23 @@
-# PSLog Ver1.15 Full Source / Canonical Candidate
+# PSLog Ver1.16 Canonical Source
 
-このツリーは `PSLog_1.14_CANONICAL_SOURCE.zip` から直接作成したVer1.15全装です。Windows側の全テスト・GUI確認・PyInstallerビルド確認で問題がなければ、**この同一ZIPをそのままVer1.15正本として扱います**。PATCH/FIXの再適用や正本化のための再構成は不要です。
+このツリーはVer1.16初期全装へFIX1～FIX9を統合した**Ver1.16正本**です。今後の開発は `PSLog_1.16_CANONICAL_SOURCE.zip` から開始してください。過去FIXの再適用は不要です。
 
-## Read first
+## 最初に読む
 
 1. `START_HERE.md`
 2. `HANDOFF.md`
 3. `NEXT_CHAT_PROMPT.md`
-4. `docs/specs/development/PSLOG_1.15_BASELINE.md`
-5. `docs/specs/data/FREE_RADIO_LOGGING.md`
-6. `meta/UPDATE_HISTORY.txt`
+4. `docs/specs/development/PSLOG_1.16_BASELINE.md`
 
-## Ver1.15 highlights
+## Ver1.16 highlights
 
-- 更新時に指定するZIPは従来どおり1つだけ。`meta/versionup.json` を追加し、将来の追加DLLフォルダー、補助EXE、追加アプリフォルダーを1つのZIPで更新できる土台を実装。
-- 配布ルート直下はEXEとフォルダーのみ。`config/`, `logbook/`, `logbook_flr/`, `bak/`, `output/` はUpdater保護対象。
-- `ヘルプ → PSLogの更新履歴` を追加。履歴は `meta/UPDATE_HISTORY.txt` で管理。
-- 現行Version表示は `storage.VERSION` を共通参照。
-- ログ検索・編集のQSL処理画面でJCC/JCGとHIS QTHを素早く補正可能。QSLタグも含めて下書きし、`保存` で一括反映。変更後に `閉じる` を選ぶと「変更内容を保存せず閉じますか？」と確認。
+- 1台分の無線機周波数情報取得（ICOM CI-V / Hamlib rigctld）。
+- 機種選択、AUTO COM/baud、接続テスト、接続/切断、起動時自動接続。
+- メイン画面にMHz小数3桁の周波数表示とRMKS1/RMKS2/Band自動セット。MODEは変更しない。
+- CI-Vの1系統仮想COM中継。com0comで外部/内部とも通常COM番号を持つ常設ペアを作り、作成/削除だけUACを使用。
+- 物理COM8ならCOM208/COM209、競合時はCOM308/309…と+100。
+- DTR/RTSを安全側へ固定し、情報取得だけで意図せず送信状態へ入らないようにした。
+- Windows一時ファイルロック時の原本置換リトライを追加。
+- コンテスト既存交信編集で非数値RST/交換情報を保持可能。
 
-## Invariants
-
-- PSLog TXTは11固定項目、JST、UTF-8 BOM + CRLFを維持。
-- アマチュア原本は `logbook/`、フリラ原本は `logbook_flr/` で分離。
-- コンテストルール表示を理由に採点・提出拒否条件を勝手に増やさない。
-- 登録87ルール = コンテスト86件 + QSOパーティ1件。
+仮想COMはVer1.16ではCI-Vのみです。PSLogはcom0comやHamlibを同梱しません。FIX1～FIX9の履歴は `docs/history/ver1.16-fixes/` を参照してください。

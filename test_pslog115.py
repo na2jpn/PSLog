@@ -7,9 +7,9 @@ ROOT=Path(__file__).resolve().parent
 
 class PSLog115CoreTests(unittest.TestCase):
     def test_version_and_history_file(self):
-        self.assertEqual(VERSION,'1.15')
+        self.assertEqual(VERSION,'1.16')
         history=(ROOT/'meta/UPDATE_HISTORY.txt').read_text(encoding='utf-8-sig')
-        self.assertIn('2026-09-29\u3000Ver1.15',history)
+        self.assertIn('2026-10-12\u3000Ver1.16',history)
         self.assertIn('2026-09-25\u3000Ver1.14',history)
         self.assertIn('2026-09-15\u3000Ver1.01',history)
         self.assertNotIn('Ver1.00',history)

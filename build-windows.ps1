@@ -2,7 +2,7 @@
 $ErrorActionPreference = 'Stop'
 Push-Location $PSScriptRoot
 try {
-    python -c "import sys, struct, PySide6, PyInstaller; assert sys.platform == 'win32', 'Windows build required'; assert struct.calcsize('P') == 8, '64-bit Python required'; print(sys.version); print(PySide6.__version__); print(PyInstaller.__version__)"
+    python -c "import sys, struct, PySide6, PyInstaller, serial; assert sys.platform == 'win32', 'Windows build required'; assert struct.calcsize('P') == 8, '64-bit Python required'; print(sys.version); print(PySide6.__version__); print(PyInstaller.__version__); print(serial.__version__)"
     if ($LASTEXITCODE -ne 0) { throw 'Build dependencies are missing. Check the existing environment first.' }
     if (-not (Test-Path "assets/pslog.ico")) { throw 'Missing icon: assets/pslog.ico' }
     if (-not (Test-Path "assets/pslog_icon.png")) { throw 'Missing icon: assets/pslog_icon.png' }

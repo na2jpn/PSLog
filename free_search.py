@@ -1,4 +1,4 @@
-"""Free-radio cross-kind search for PSLog 1.15."""
+"""Free-radio cross-kind search for PSLog 1.16."""
 from dataclasses import dataclass,replace
 from input_normalization import jccjcg_code
 from time_range import prefix_boundary

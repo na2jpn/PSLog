@@ -1,13 +1,11 @@
-PSLogの継続開発です。添付の `PSLog_1.15_FULL_SOURCE.zip` をWindows受入済みの場合は現在の唯一の基準ソースとして使ってください。
+PSLogの継続開発です。添付する `PSLog_1.16_CANONICAL_SOURCE.zip` を現在の唯一の基準ソースとして使ってください。
 
-最初に `START_HERE.md`、`HANDOFF.md`、`NEXT_CHAT_PROMPT.md`、`docs/specs/development/PSLOG_1.15_BASELINE.md`、`docs/specs/data/FREE_RADIO_LOGGING.md` を読んでください。Ver1.14正本やそれ以前のPATCH/FIXから再構成せず、このZIPから開始してください。VERSIONは1.15です。
+最初に `START_HERE.md`、`HANDOFF.md`、`NEXT_CHAT_PROMPT.md`、`docs/specs/development/PSLOG_1.16_BASELINE.md`、`docs/specs/data/FREE_RADIO_LOGGING.md` を読んでください。Ver1.16初期全装やFIX1～FIX9、Ver1.15以前の正本から再構成せず、このZIPから開始してください。VERSIONは1.16です。
 
-Ver1.15では、将来の複数アプリファイル更新に備え `meta/versionup.json` を追加しました。利用者が指定する更新ZIPは従来どおり1つだけです。配布ルート直下はEXEとフォルダーのみ、`config/logbook/logbook_flr/bak/output` はUpdater保護対象です。Ver1.15配布ZIPはVer1.14から導入できるよう旧manifestも併載します。
+Ver1.16では1台分の無線機情報取得を追加し、機種選択からCI-VまたはHamlibを内部選択します。起動時自動接続、接続テスト、接続/切断、メイン周波数表示、RMKS1/RMKS2/Band自動セットがあります。MODEは変更しません。コンテストではRMKS1を保護し、フリラは自動セット対象外です。
 
-ヘルプには「PSLogの更新履歴」を追加し、履歴は `meta/UPDATE_HISTORY.txt` で管理します。現行Version表示は `storage.VERSION` を共通参照します。
+CI-Vでは、外部ソフト→常設仮想COM→PSLog→物理COM→無線機の1系統中継を使用できます。com0comは外部導入済みのものを利用し、物理COM8ならCOM208/COM209、競合時は+100でペアを作ります。作成/削除時だけUACを要求し、通常のPSLog終了では仮想COMを削除しません。setupc.exeの管理者実行では必ずsetupc.exeのフォルダーを作業ディレクトリにしてください。DTR/RTSは送信事故防止のためopen前からOFFにします。
 
-ログ検索・編集のQSL処理画面では、QSL受領タグに加えてJCC/JCGとHIS QTHを補正できます。ただし画面操作は下書きで、`保存` を押した時だけまとめて元ログへ反映して閉じます。`閉じる` は保存しません。変更がある場合は「変更内容を保存せず閉じますか？」と確認します。フル編集項目をこの画面へむやみに増やさないでください。
+Windowsの一時的なファイルロックには安全な短時間リトライを入れています。外部変更や永続権限エラーを握りつぶさないでください。コンテスト既存交信編集では非数値RST/交換情報を許容しますが、通常QSOのRST検証は緩めません。
 
-コンテストルール表示は人間向け確認機能であり、表示追加を理由に提出確認チェックや拒否条件を増やさないでください。登録87ルールはコンテスト86件＋QSOパーティ1件です。
-
-今後は変更ファイルのみの差分ZIPで渡してください。要望を集めている段階では実装せず、私が「実装」と依頼してからまとめて対応してください。「まとめ」は確認だけで実装しないでください。次の通常開発番号は原則1.151です。まず引継ぎ内容を確認し、次の指示を待ってください。
+今後は要望を集めている段階では実装せず、私が「実装」と依頼してからまとめて対応してください。「まとめ」は確認だけです。次の通常開発番号は原則1.161です。まず引継ぎ内容を確認し、次の指示を待ってください。

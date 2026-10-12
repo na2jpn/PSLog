@@ -5,7 +5,7 @@ when both files still match a recorded before/after image.
 """
 import base64,json,os,re,uuid
 from pathlib import Path
-from storage import Snapshot,StorageError,ExternalChange,parse,replace_bytes,operation_lock
+from storage import Snapshot,StorageError,ExternalChange,parse,replace_bytes,operation_lock,serialize_qso
 
 def sync_directory(path):
     if os.name!='nt':
@@ -57,9 +57,9 @@ def recover_locked(book):
             raise StorageError('年変更の回復記録を読み込めません。原本を変更せず確認してください: '+str(journal)) from e
     return completed
 
-def move(session,line_number,qso):
+def move(session,line_number,qso,allow_nonstandard_rst=False):
     # Validate the new QSO before creating any intent or modifying either log.
-    line=qso.to_ps();repo=session.repo
+    line=serialize_qso(qso,allow_nonstandard_rst);repo=session.repo
     book=session.path.parent
     if book not in (repo.book,repo.free_book):raise StorageError("年変更できないログ保存先です。")
     target=book/(qso.date[:4]+session.path.name[4:])
