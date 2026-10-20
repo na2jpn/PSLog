@@ -120,7 +120,7 @@ class QSLDetailDialog(SafeDialog):
         self.setWindowTitle(f'PSLog Ver{VERSION} — QSL受領一括処理 / 処理の詳細');self.resize(1260,760);apply_window_tint(self,'edit')
         layout=QVBoxLayout(self)
         title=QLabel('処理の詳細　—　一意一致は選択済みです。未一致・複数候補は赤字で表示します。');title.setStyleSheet('font-weight:600;');layout.addWidget(title)
-        note=QLabel('一意一致は選択済みです。複数候補・手動候補はチェックボックスで必要なQSOを複数選べます。既に同じ受領方法が記録済みのQSOはスキップします。');note.setWordWrap(True);layout.addWidget(note)
+        note=QLabel('一意一致は選択済みです。複数候補・手動候補はチェックボックスで必要なQSOを複数選べます。既受領でも確認済みJCC/JCG・HIS QTHの補完があれば更新対象です。既存の詳細所在地・コードは上書きしません。');note.setWordWrap(True);layout.addWidget(note)
         self.summary=QLabel();layout.addWidget(self.summary)
         self.table=QTableWidget(0,9);self.table.setHorizontalHeaderLabels(['選択','入力行','相手コール','ログ日時','BAND / MODE','照合状態','時刻差','BURO判定','更新内容'])
         self.table.setSelectionBehavior(QAbstractItemView.SelectionBehavior.SelectRows);self.table.setSelectionMode(QAbstractItemView.SelectionMode.SingleSelection);self.table.setEditTriggers(QAbstractItemView.EditTrigger.NoEditTriggers)
@@ -140,10 +140,12 @@ class QSLDetailDialog(SafeDialog):
     def _candidate_state(self,entry,hit,manual=False):
         current=receipt_state(hit.qso.remarks,self.plan.method);after,_,_=change(hit.qso.remarks,self.plan.method)
         received=current['received'] and not current['sent'] and after==hit.qso.remarks
-        if received:return '既受領スキップ',f'既に {self.plan.method} 受領済み',after,False
+        from qsl_batch import _decision_for_hit
+        preview=_decision_for_hit(self.plan,entry,hit,{})
+        if received and preview['state']!='更新予定':return '既受領スキップ',preview['reason'],after,False
         if manual:return '手動候補',f'{entry.reason} / 手動割当候補: {call_difference(entry.call,hit.qso.call)}',after,True
         if len(entry.candidates)>1:return '複数候補',entry.reason,after,True
-        return '更新予定',entry.reason,after,True
+        return '更新予定',preview['reason'],after,True
 
     def render(self):
         self.busy=True
@@ -158,6 +160,12 @@ class QSLDetailDialog(SafeDialog):
                         state,reason,after,enabled=self._candidate_state(entry,hit,manual)
                         row=self.table.rowCount();self.table.insertRow(row)
                         values=[str(entry.number),entry.call,f'{hit.qso.date} {hit.qso.time}',f'{hit.qso.band} / {hit.qso.mode}',state,f'{_delta_minutes(entry,hit):+d}分',buro_judgement(hit.qso.remarks),f'{hit.qso.remarks or "(空欄)"} → {after or "(空欄)"}']
+                        if entry.code:
+                            from qsl_batch import _decision_for_hit
+                            planned=_decision_for_hit(self.plan,entry,hit,{})
+                            new=planned.get('qso_after',hit.qso)
+                            values[-1]+=' / HIS QTH: '+(hit.qso.his_qth or '(空欄)')+' → '+(new.his_qth or '(空欄)')+' / JCC/JCG: '+(hit.qso.code or '(空欄)')+' → '+(new.code or '(空欄)')
+                            values[-1]+=' / '+planned['reason']
                         for col,value in enumerate(values,1):self.table.setItem(row,col,QTableWidgetItem(value))
                         selector=self._make_selector(entry,hit,row,enabled)
                         self.table.setCellWidget(row,0,selector)

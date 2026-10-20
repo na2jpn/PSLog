@@ -130,7 +130,7 @@ class TokyoCWTests(ExportFixture):
   r=rule('tokyo_cw');self.assertEqual({c['id'] for c in r['event']['categories']},{p+'C'+b for p in '12' for b in ['A','35','7','14','21','28','50','144','430']})
   for c in r['event']['categories']:
    with self.subTest(category=c['id']):
-    ctx=context(r,c['id']);v=trow(band=c['bands'][0],sent='002' if c['id'].startswith('2') else '13');s=score(r,[v],ctx);self.assertEqual(s.total,2,s.problems)
+    ctx=context(r,c['id']);v=trow(band=c['bands'][0],sent='002' if c['id'].startswith('1') else '13');s=score(r,[v],ctx);self.assertEqual(s.total,2,s.problems)
     p,before,sel,draft,info=self.fixture(r,[v],ctx);out=plan(sel,r,draft,'JARL R1.0',info,context=ctx).preview();self.assertIn('<TOTALSCORE>2</TOTALSCORE>',out);self.assertIn(' 101 101 2',out);self.assertNotIn('申請します',out)
     with self.assertRaises(ValueError):plan(sel,r,draft,'JARL R2.1',info,context=ctx)
     self.assertEqual(p.read_bytes(),before)
@@ -138,14 +138,14 @@ class TokyoCWTests(ExportFixture):
   import json
   r=rule('tokyo_cw');db=json.loads((ROOT/'config/db/contest/tokyo_cw_2026.json').read_text(encoding='utf-8'));groups=db['groups'];self.assertEqual([len(groups[k]) for k in ['city','ward','town','island','outside']],[26,23,4,9,46])
   self.assertEqual(groups['ward']['101'],'千代田区');self.assertEqual(groups['island']['431'],'小笠原村');self.assertEqual(groups['outside']['01'],'北海道')
-  codes=r['event']['exchange']['codes'];s=score(r,tcalls(codes),context(r,'1CA'));self.assertEqual((s.points,s.multi1,s.total),(170,108,18360))
-  self.assertEqual(score(r,[trow(exchange='11'),trow(exchange='16',call='JA1BBB')],context(r,'1CA')).total,4)
+  codes=r['event']['exchange']['codes'];s=score(r,tcalls(codes),context(r,'2CA'));self.assertEqual((s.points,s.multi1,s.total),(170,108,18360))
+  self.assertEqual(score(r,[trow(exchange='11'),trow(exchange='16',call='JA1BBB')],context(r,'2CA')).total,4)
   for value in ('10','48','017','018','027','100101','1001','2','101M','1140'):
-   with self.subTest(value=value):self.assertIsNone(score(r,[trow(exchange=value)],context(r,'1CA')).total)
+   with self.subTest(value=value):self.assertIsNone(score(r,[trow(exchange=value)],context(r,'2CA')).total)
  def test_self_location_and_entrant_differ_from_opponent(self):
-  r=rule('tokyo_cw');ctx=context(r,'1CA')
+  r=rule('tokyo_cw');ctx=context(r,'2CA')
   self.assertIsNone(score(r,[trow(sent='002')],ctx).total)
-  self.assertIsNone(score(r,[trow(sent='13')],context(r,'2CA')).total)
+  self.assertIsNone(score(r,[trow(sent='13')],context(r,'1CA')).total)
   self.assertEqual(score(r,[trow(call='JA1RL'),trow(call='8J1AAA')],ctx).total,4)
   for kind in ('club','special',''):
    v=dict(ctx,station_type=kind);self.assertIsNone(score(r,[trow()],v).total)
@@ -156,10 +156,10 @@ class TokyoCWTests(ExportFixture):
   with self.assertRaisesRegex(ValueError,'ゲスト'):plan(sel,r,draft,'JARL R1.0',info,context=ctx)
  def test_bounds_duplicate_and_actual_band_multis(self):
   r=rule('tokyo_cw');rows=[trow(time='05:59'),trow(),trow(),trow(band='144'),trow(band='1200'),trow(time='12:00'),trow(mode='SSB')]
-  s=score(r,rows,context(r,'1CA'));self.assertEqual([v['points'] for v in s.rows],[0,2,0,2,0,0,0]);self.assertEqual(s.total,8)
+  s=score(r,rows,context(r,'2CA'));self.assertEqual([v['points'] for v in s.rows],[0,2,0,2,0,0,0]);self.assertEqual(s.total,8)
  def test_awards_band_independent_and_missing_codes(self):
   from contest_awards import candidates
-  r=rule('tokyo_cw');ctx=context(r,'1C7');spec=r['event']['awards'];city=spec[0]['groups'][0]['codes'];rows=tcalls(city)
+  r=rule('tokyo_cw');ctx=context(r,'2C7');spec=r['event']['awards'];city=spec[0]['groups'][0]['codes'];rows=tcalls(city)
   for i,v in enumerate(rows):v['band']='7' if i%2 else '144'
   self.assertTrue(candidates(r,rows,ctx)[0]['eligible']);self.assertFalse(candidates(r,rows[:-1],ctx)[0]['eligible'])
   rows[-1]['checklog']=True;self.assertFalse(candidates(r,rows,ctx)[0]['eligible'])
@@ -169,7 +169,7 @@ class TokyoCWTests(ExportFixture):
   rows[-1]['time']='12:00';self.assertFalse(candidates(r,rows,ctx)[2]['eligible'])
  def test_award_optional_output_and_stale_request_block(self):
   from contest_awards import submission_info
-  r=rule('tokyo_cw');ctx=context(r,'1C7');rows=tcalls(['201','202','203','204','431']);rows[0]['band']='144';p,before,sel,draft,info=self.fixture(r,rows,ctx,comments='元の意見',award_requests=['towns_island'])
+  r=rule('tokyo_cw');ctx=context(r,'2C7');rows=tcalls(['201','202','203','204','431']);rows[0]['band']='144';p,before,sel,draft,info=self.fixture(r,rows,ctx,comments='元の意見',award_requests=['towns_island'])
   original=deepcopy(info);out=plan(sel,r,draft,'JARL R1.0',info,context=ctx).preview();self.assertIn('<COMMENTS>元の意見 全郡・島賞を申請します。</COMMENTS>',out);self.assertEqual(info,original);self.assertEqual(p.read_bytes(),before)
   self.assertIn('<TOTALSCORE>32</TOTALSCORE>',out)  # 7MHz only; 144MHz counts for the award, not score.
   draft[key(sel.rows[-1])]['received']='401';self.assertIn('全郡・島賞を申請',plan(sel,r,draft,'JARL R1.0',info,context=ctx).preview())
@@ -179,7 +179,7 @@ class TokyoCWTests(ExportFixture):
    with self.assertRaises(ValueError):submission_info(r,rows,ctx,dict(award_requests=bad))
  def test_award_panel_and_schema(self):
   from contest_award_ui import AwardPane
-  r=rule('tokyo_cw');ctx=context(r,'1CA');rows=tcalls(['201','202','203','204','431']);p,before,sel,draft,info=self.fixture(r,rows,ctx);changed=[]
+  r=rule('tokyo_cw');ctx=context(r,'2CA');rows=tcalls(['201','202','203','204','431']);p,before,sel,draft,info=self.fixture(r,rows,ctx);changed=[]
   pane=AwardPane(lambda:changed.append(True));pane.refresh(r,sel,draft,ctx,'scope');self.assertEqual(pane.requests(),[]);self.assertTrue(pane.checks['towns_island'].isEnabled());self.assertFalse(pane.checks['all_cities'].isEnabled());pane.checks['towns_island'].setChecked(True);self.assertEqual(pane.requests(),['towns_island']);self.assertTrue(changed)
   pane.refresh(r,sel,draft,ctx,'scope');self.assertEqual(pane.requests(),['towns_island']);pane.refresh(r,sel,draft,ctx,'new-scope');self.assertEqual(pane.requests(),[]);self.assertLessEqual(pane.maximumHeight(),180);pane.deleteLater()
   d=EventDialog(r['event'],ctx);self.assertEqual(d.station_type.currentData(),'individual');self.assertEqual(d.category.count(),18);self.assertIn('ゲスト',d.summary.text());d.deleteLater()
@@ -190,7 +190,7 @@ class TokyoCWTests(ExportFixture):
   from types import SimpleNamespace
   from PySide6.QtWidgets import QComboBox
   from contest_submit_ui import SubmissionPane
-  r=rule('tokyo_cw');ctx=context(r,'1C7');rows=tcalls(['201','202','203','204','431']);p,before,sel,draft,info=self.fixture(r,rows,ctx)
+  r=rule('tokyo_cw');ctx=context(r,'2C7');rows=tcalls(['201','202','203','204','431']);p,before,sel,draft,info=self.fixture(r,rows,ctx)
   tmp=tempfile.TemporaryDirectory();self.addCleanup(tmp.cleanup);fmt=QComboBox();fmt.addItem('JARL R1.0')
   wizard=SimpleNamespace(repo=Repository(tmp.name),format=fmt,selection=sel,draft=draft,loaded_scope=('JH1HST',),rule=r,result=score(r,rows,ctx),event_context=lambda:ctx,activity_name='コンテスト')
   pane=SubmissionPane(wizard);pane.set_context()
@@ -216,6 +216,6 @@ class BatchPackTests(unittest.TestCase):
     proposal=rule_pack.preview(store,base/name);self.assertTrue(all(i.status=='変更なし' for i in proposal.items));self.assertEqual(rule_pack.install(store,proposal),0)
    self.assertEqual(len(store.files()),3)
    # Tokyo scoring is self-contained: installation does not require a side DB.
-   self.assertEqual(score(loaded['tokyo_cw'],[trow()],context(loaded['tokyo_cw'],'1CA')).total,2)
+   self.assertEqual(score(loaded['tokyo_cw'],[trow()],context(loaded['tokyo_cw'],'2CA')).total,2)
 
 if __name__=='__main__':unittest.main()

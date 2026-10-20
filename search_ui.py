@@ -407,7 +407,7 @@ class CheckedDeleteDialog(QDialog):
 
 class SearchDialog(QDialog):
     logs_changed=Signal()
-    def __init__(self,repo,own='',parent=None,*,filename='',autorun=False):
+    def __init__(self,repo,own='',parent=None,*,filename='',autorun=False,exact_target=False):
         super().__init__(parent);self.repo=repo;self.result_hits=[];self.search_status_base='';self.setWindowTitle(f'PSLog Ver{VERSION} — ログ検索・編集');self.resize(1180,740);apply_window_tint(self,'edit')
         outer=QVBoxLayout(self);form=QGridLayout();outer.addLayout(form)
         self.filters={}
@@ -480,8 +480,11 @@ class SearchDialog(QDialog):
             (e.currentTextChanged if isinstance(e,QComboBox) else e.textChanged).connect(self.invalidate)
         self.portable.toggled.connect(self.invalidate)
         self.max_results.textChanged.connect(self.invalidate)
+        from logbook_sources import base_station_call
+        own=base_station_call(own)
         if own and own_box.findText(own)>=0:own_box.setCurrentText(own)
         else:own_box.setCurrentText('選択してください')
+        self.exact_target=exact_target;self.target_filename=filename
         if filename:self.filters['filename'].setText(filename)
         if autorun:QTimer.singleShot(0,self.run_search)
     def browse_log_file(self):
@@ -511,6 +514,15 @@ class SearchDialog(QDialog):
     def run_search(self):
         self.result_hits=[];self.model.reset([]);self.selection_changed();self.problems.hide()
         try:
+            # Discover logs added while this dialog is open as well. Preserve
+            # the user's selection and require one when it was not set.
+            box=self.filters['own'];selected=box.currentText()
+            candidates=station_call_candidates(self.repo,selected if selected!='選択してください' else '')
+            box.blockSignals(True)
+            try:
+                box.clear();box.addItem('選択してください');box.addItems(candidates)
+                if box.findText(selected)>=0:box.setCurrentText(selected)
+            finally:box.blockSignals(False)
             limit_text=normalize_time(self.max_results.text())
             if not limit_text.isdigit() or int(limit_text)<1:
                 raise ValueError('最大表示件数は1以上の数字で入力してください。')
@@ -518,7 +530,7 @@ class SearchDialog(QDialog):
             values={k:(e.currentText() if isinstance(e,QComboBox) else e.text()).strip() for k,e in self.filters.items()}
             if values.get('own')=='選択してください':raise ValueError('対象自局を選択してください。')
             values['start']=normalize_time(values['start']);values['end']=normalize_time(values['end'])
-            result=search(self.repo,Criteria(**values,portable=self.portable.isChecked()))
+            result=search(self.repo,Criteria(**values,portable=self.portable.isChecked(),exact_filename=bool(self.exact_target and values.get('filename')==self.target_filename),exact_call=bool(self.exact_target)))
         except (ValueError,StorageError,OSError) as e:self.status.setText(str(e));return
         self.result_hits=list(result.hits);total=len(self.result_hits);shown=self.result_hits[:limit]
         self.model.reset(shown);self.selection_changed()

@@ -1,4 +1,4 @@
-"""PSLog 1.16 storage foundation. Standard library only.
+"""PSLog 1.18 storage foundation. Standard library only.
 
 Read legacy records without applying new-entry RST constraints. Preserve every
 unmodified line, BOM and newline. Never silently repair ambiguous source data.
@@ -18,7 +18,7 @@ import unicodedata
 import uuid
 from model import QSO, validate_station
 
-VERSION = '1.16'
+VERSION = '1.20'
 TERMINATOR = '\\' * 2
 
 class StorageError(Exception): pass
@@ -287,10 +287,26 @@ class Session:
 
     def _commit(self, data, destructive=False):
         with operation_lock(self.path.parent):
-            self.snapshot.check(self.path)
-            if destructive or self.path not in self.repo.started:
-                self.repo.backup(self.path, self.snapshot.data)
-            replace_bytes(self.path, data, self.snapshot)
+            try:
+                self.snapshot.check(self.path)
+            except ExternalChange:
+                # Preserve the actual external bytes, including unparseable
+                # lines. Never adopt a new snapshot for an old serialized body.
+                current = Snapshot.read(self.path)
+                self.repo.backup(self.path, current.data)
+                raise
+            # Every replacement gets a recoverable pre-save image, even when
+            # this process has already appended to the same log. External
+            # additions loaded by a later SET/reload must also be protected.
+            self.repo.backup(self.path, self.snapshot.data)
+            try:
+                replace_bytes(self.path, data, self.snapshot)
+            except ExternalChange:
+                # An editor can change the file after the initial check or
+                # during a Windows sharing-violation retry. Keep those bytes
+                # too; never refresh only the snapshot and retry old data.
+                self.repo.backup(self.path, Snapshot.read(self.path).data)
+                raise
             self.repo.started.add(self.path); self.repo.changed.add(self.path)
             self.snapshot = Snapshot.read(self.path); self.log = parse(self.snapshot.data or b'')
             # Retention cleanup is secondary: a failure must not report the QSO as unsaved.

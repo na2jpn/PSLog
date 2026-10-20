@@ -325,15 +325,9 @@ def collect(repo,paths,own,mode,start='',end='',force=False):
 
 
 def _edited_bytes(session,changes):
-    new=[]
-    for number,row in enumerate(session.log.lines,1):
-        if number not in changes:new.append(row.raw);continue
-        q=changes[number];q.validate()
-        old=row.raw
-        ending='\r\n' if old.endswith('\r\n') else '\n' if old.endswith('\n') else '\r' if old.endswith('\r') else ''
-        new.append(q.to_ps()+ending)
-    body=''.join(new).encode('utf-8')
-    return (b'\xef\xbb\xbf' if session.log.bom else b'')+body
+    from log_fields import patched_bytes
+    patches={n:{name:getattr(q,name) for name in ('his_qth','code') if getattr(q,name)!=getattr(session.log.lines[n-1].qso,name)} for n,q in changes.items()}
+    return patched_bytes(session,patches)
 
 
 def commit(repo,selections):

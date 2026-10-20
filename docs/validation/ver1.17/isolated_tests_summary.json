@@ -1,0 +1,1024 @@
+{
+  "modules": 160,
+  "tests": 986,
+  "passed_modules": 151,
+  "problems": [
+    {
+      "module": "test_final9",
+      "returncode": -7,
+      "tests": 6,
+      "ok": false
+    },
+    {
+      "module": "test_final9_completion",
+      "returncode": -11,
+      "tests": 8,
+      "ok": false
+    },
+    {
+      "module": "test_patch04_1074",
+      "returncode": -11,
+      "tests": 8,
+      "ok": false
+    },
+    {
+      "module": "test_pota_gui",
+      "returncode": -11,
+      "tests": 2,
+      "ok": false
+    },
+    {
+      "module": "test_remaining9",
+      "returncode": -11,
+      "tests": 16,
+      "ok": false
+    },
+    {
+      "module": "test_regional_2026",
+      "returncode": -11,
+      "tests": 27,
+      "ok": false
+    },
+    {
+      "module": "test_search_special_handoff_gui",
+      "returncode": -11,
+      "tests": 2,
+      "ok": false
+    },
+    {
+      "module": "test_sota",
+      "returncode": -11,
+      "tests": 6,
+      "ok": false
+    },
+    {
+      "module": "test_remaining28",
+      "returncode": -11,
+      "tests": 24,
+      "ok": false
+    }
+  ],
+  "elapsed_seconds": 32.55,
+  "results": [
+    {
+      "module": "test_activity_stage8",
+      "returncode": 0,
+      "tests": 15,
+      "ok": true
+    },
+    {
+      "module": "test_adif_band_consistency",
+      "returncode": 0,
+      "tests": 4,
+      "ok": true
+    },
+    {
+      "module": "test_adif_bureau_import",
+      "returncode": 0,
+      "tests": 4,
+      "ok": true
+    },
+    {
+      "module": "test_adif_countries",
+      "returncode": 0,
+      "tests": 3,
+      "ok": true
+    },
+    {
+      "module": "test_adif_gui",
+      "returncode": 0,
+      "tests": 1,
+      "ok": true
+    },
+    {
+      "module": "test_adif_import",
+      "returncode": 0,
+      "tests": 7,
+      "ok": true
+    },
+    {
+      "module": "test_adif_locations",
+      "returncode": 0,
+      "tests": 3,
+      "ok": true
+    },
+    {
+      "module": "test_adif_modes",
+      "returncode": 0,
+      "tests": 4,
+      "ok": true
+    },
+    {
+      "module": "test_adif_names",
+      "returncode": 0,
+      "tests": 4,
+      "ok": true
+    },
+    {
+      "module": "test_adif_paper_qsl",
+      "returncode": 0,
+      "tests": 4,
+      "ok": true
+    },
+    {
+      "module": "test_adif_qsl",
+      "returncode": 0,
+      "tests": 4,
+      "ok": true
+    },
+    {
+      "module": "test_ai_chikyu_2026",
+      "returncode": 0,
+      "tests": 14,
+      "ok": true
+    },
+    {
+      "module": "test_aja_stage9",
+      "returncode": 0,
+      "tests": 9,
+      "ok": true
+    },
+    {
+      "module": "test_all_chiba_2026",
+      "returncode": 0,
+      "tests": 10,
+      "ok": true
+    },
+    {
+      "module": "test_all_ja_2tx",
+      "returncode": 0,
+      "tests": 11,
+      "ok": true
+    },
+    {
+      "module": "test_all_ja_categories",
+      "returncode": 0,
+      "tests": 13,
+      "ok": true
+    },
+    {
+      "module": "test_all_okayama_2026",
+      "returncode": 0,
+      "tests": 10,
+      "ok": true
+    },
+    {
+      "module": "test_all_osaka_2026",
+      "returncode": 0,
+      "tests": 10,
+      "ok": true
+    },
+    {
+      "module": "test_app_paths",
+      "returncode": 0,
+      "tests": 3,
+      "ok": true
+    },
+    {
+      "module": "test_batch_recovery",
+      "returncode": 0,
+      "tests": 3,
+      "ok": true
+    },
+    {
+      "module": "test_blacklist",
+      "returncode": 0,
+      "tests": 3,
+      "ok": true
+    },
+    {
+      "module": "test_blacklist_gui",
+      "returncode": 0,
+      "tests": 3,
+      "ok": true
+    },
+    {
+      "module": "test_contest",
+      "returncode": 0,
+      "tests": 13,
+      "ok": true
+    },
+    {
+      "module": "test_contest_areas",
+      "returncode": 0,
+      "tests": 3,
+      "ok": true
+    },
+    {
+      "module": "test_contest_band_exchange",
+      "returncode": 0,
+      "tests": 10,
+      "ok": true
+    },
+    {
+      "module": "test_contest_batch10",
+      "returncode": 0,
+      "tests": 20,
+      "ok": true
+    },
+    {
+      "module": "test_contest_countries",
+      "returncode": 0,
+      "tests": 2,
+      "ok": true
+    },
+    {
+      "module": "test_contest_event",
+      "returncode": 0,
+      "tests": 7,
+      "ok": true
+    },
+    {
+      "module": "test_contest_export",
+      "returncode": 0,
+      "tests": 17,
+      "ok": true
+    },
+    {
+      "module": "test_contest_rule_view_audit_87",
+      "returncode": 0,
+      "tests": 4,
+      "ok": true
+    },
+    {
+      "module": "test_contest_rule_view_remaining71",
+      "returncode": 0,
+      "tests": 4,
+      "ok": true
+    },
+    {
+      "module": "test_contest_rule_view_verified_15",
+      "returncode": 0,
+      "tests": 5,
+      "ok": true
+    },
+    {
+      "module": "test_contest_score_ui",
+      "returncode": 0,
+      "tests": 3,
+      "ok": true
+    },
+    {
+      "module": "test_contest_submission_import",
+      "returncode": 0,
+      "tests": 4,
+      "ok": true
+    },
+    {
+      "module": "test_contest_tasks",
+      "returncode": 0,
+      "tests": 2,
+      "ok": true
+    },
+    {
+      "module": "test_contest_timing",
+      "returncode": 0,
+      "tests": 21,
+      "ok": true
+    },
+    {
+      "module": "test_contest_workflow",
+      "returncode": 0,
+      "tests": 3,
+      "ok": true
+    },
+    {
+      "module": "test_countries",
+      "returncode": 0,
+      "tests": 4,
+      "ok": true
+    },
+    {
+      "module": "test_dialog_access",
+      "returncode": 0,
+      "tests": 1,
+      "ok": true
+    },
+    {
+      "module": "test_export_gui",
+      "returncode": 0,
+      "tests": 1,
+      "ok": true
+    },
+    {
+      "module": "test_export_search_handoff",
+      "returncode": 0,
+      "tests": 1,
+      "ok": true
+    },
+    {
+      "module": "test_exporting",
+      "returncode": 0,
+      "tests": 8,
+      "ok": true
+    },
+    {
+      "module": "test_field_day_categories",
+      "returncode": 0,
+      "tests": 13,
+      "ok": true
+    },
+    {
+      "module": "test_final9",
+      "returncode": -7,
+      "tests": 6,
+      "ok": false
+    },
+    {
+      "module": "test_final9_completion",
+      "returncode": -11,
+      "tests": 8,
+      "ok": false
+    },
+    {
+      "module": "test_free_radio_111",
+      "returncode": 0,
+      "tests": 8,
+      "ok": true
+    },
+    {
+      "module": "test_fukuoka_2026",
+      "returncode": 0,
+      "tests": 10,
+      "ok": true
+    },
+    {
+      "module": "test_full_restore",
+      "returncode": 0,
+      "tests": 6,
+      "ok": true
+    },
+    {
+      "module": "test_gui",
+      "returncode": 0,
+      "tests": 1,
+      "ok": true
+    },
+    {
+      "module": "test_hamlog_export_fields",
+      "returncode": 0,
+      "tests": 3,
+      "ok": true
+    },
+    {
+      "module": "test_hamlog_gui",
+      "returncode": 0,
+      "tests": 1,
+      "ok": true
+    },
+    {
+      "module": "test_hamlog_import",
+      "returncode": 0,
+      "tests": 7,
+      "ok": true
+    },
+    {
+      "module": "test_import_gui",
+      "returncode": 0,
+      "tests": 1,
+      "ok": true
+    },
+    {
+      "module": "test_importing",
+      "returncode": 0,
+      "tests": 10,
+      "ok": true
+    },
+    {
+      "module": "test_initial_start_114",
+      "returncode": 0,
+      "tests": 5,
+      "ok": true
+    },
+    {
+      "module": "test_input_feedback",
+      "returncode": 0,
+      "tests": 2,
+      "ok": true
+    },
+    {
+      "module": "test_input_normalization",
+      "returncode": 0,
+      "tests": 6,
+      "ok": true
+    },
+    {
+      "module": "test_jarl_station_fd",
+      "returncode": 0,
+      "tests": 11,
+      "ok": true
+    },
+    {
+      "module": "test_jarl_summary_required",
+      "returncode": 0,
+      "tests": 4,
+      "ok": true
+    },
+    {
+      "module": "test_last6",
+      "returncode": 0,
+      "tests": 8,
+      "ok": true
+    },
+    {
+      "module": "test_locations",
+      "returncode": 0,
+      "tests": 5,
+      "ok": true
+    },
+    {
+      "module": "test_log_merge",
+      "returncode": 0,
+      "tests": 6,
+      "ok": true
+    },
+    {
+      "module": "test_log_merge_gui",
+      "returncode": 0,
+      "tests": 2,
+      "ok": true
+    },
+    {
+      "module": "test_mode_text",
+      "returncode": 0,
+      "tests": 3,
+      "ok": true
+    },
+    {
+      "module": "test_multi_extract",
+      "returncode": 0,
+      "tests": 3,
+      "ok": true
+    },
+    {
+      "module": "test_patch01_1061",
+      "returncode": 0,
+      "tests": 11,
+      "ok": true
+    },
+    {
+      "module": "test_patch01_1071",
+      "returncode": 0,
+      "tests": 5,
+      "ok": true
+    },
+    {
+      "module": "test_patch02_1061",
+      "returncode": 0,
+      "tests": 9,
+      "ok": true
+    },
+    {
+      "module": "test_patch02_1072",
+      "returncode": 0,
+      "tests": 9,
+      "ok": true
+    },
+    {
+      "module": "test_patch03",
+      "returncode": 0,
+      "tests": 4,
+      "ok": true
+    },
+    {
+      "module": "test_patch03_1063",
+      "returncode": 0,
+      "tests": 6,
+      "ok": true
+    },
+    {
+      "module": "test_patch03_1073",
+      "returncode": 0,
+      "tests": 6,
+      "ok": true
+    },
+    {
+      "module": "test_patch04",
+      "returncode": 0,
+      "tests": 5,
+      "ok": true
+    },
+    {
+      "module": "test_patch04_1064",
+      "returncode": 0,
+      "tests": 7,
+      "ok": true
+    },
+    {
+      "module": "test_patch04_1074",
+      "returncode": -11,
+      "tests": 8,
+      "ok": false
+    },
+    {
+      "module": "test_patch05",
+      "returncode": 0,
+      "tests": 9,
+      "ok": true
+    },
+    {
+      "module": "test_patch05_1065",
+      "returncode": 0,
+      "tests": 7,
+      "ok": true
+    },
+    {
+      "module": "test_patch05_1075",
+      "returncode": 0,
+      "tests": 6,
+      "ok": true
+    },
+    {
+      "module": "test_patch06",
+      "returncode": 0,
+      "tests": 5,
+      "ok": true
+    },
+    {
+      "module": "test_patch06_1066",
+      "returncode": 0,
+      "tests": 5,
+      "ok": true
+    },
+    {
+      "module": "test_patch06_1076",
+      "returncode": 0,
+      "tests": 6,
+      "ok": true
+    },
+    {
+      "module": "test_patch06_fix1",
+      "returncode": 0,
+      "tests": 2,
+      "ok": true
+    },
+    {
+      "module": "test_patch07",
+      "returncode": 0,
+      "tests": 6,
+      "ok": true
+    },
+    {
+      "module": "test_patch07_1057",
+      "returncode": 0,
+      "tests": 3,
+      "ok": true
+    },
+    {
+      "module": "test_patch07_1067",
+      "returncode": 0,
+      "tests": 4,
+      "ok": true
+    },
+    {
+      "module": "test_patch07_1077",
+      "returncode": 0,
+      "tests": 7,
+      "ok": true
+    },
+    {
+      "module": "test_patch07_embedded_logsearch",
+      "returncode": 0,
+      "tests": 1,
+      "ok": true
+    },
+    {
+      "module": "test_patch07_fix2",
+      "returncode": 0,
+      "tests": 1,
+      "ok": true
+    },
+    {
+      "module": "test_patch08",
+      "returncode": 0,
+      "tests": 8,
+      "ok": true
+    },
+    {
+      "module": "test_patch08_1058",
+      "returncode": 0,
+      "tests": 5,
+      "ok": true
+    },
+    {
+      "module": "test_patch08_1068",
+      "returncode": 0,
+      "tests": 3,
+      "ok": true
+    },
+    {
+      "module": "test_patch08_1078",
+      "returncode": 0,
+      "tests": 3,
+      "ok": true
+    },
+    {
+      "module": "test_patch08_fix1_1068",
+      "returncode": 0,
+      "tests": 4,
+      "ok": true
+    },
+    {
+      "module": "test_patch09",
+      "returncode": 0,
+      "tests": 5,
+      "ok": true
+    },
+    {
+      "module": "test_patch09_1059",
+      "returncode": 0,
+      "tests": 8,
+      "ok": true
+    },
+    {
+      "module": "test_patch09_1069",
+      "returncode": 0,
+      "tests": 2,
+      "ok": true
+    },
+    {
+      "module": "test_patch09_fix1",
+      "returncode": 0,
+      "tests": 5,
+      "ok": true
+    },
+    {
+      "module": "test_patch09_gui",
+      "returncode": 0,
+      "tests": 2,
+      "ok": true
+    },
+    {
+      "module": "test_patch10",
+      "returncode": 0,
+      "tests": 5,
+      "ok": true
+    },
+    {
+      "module": "test_patch10_1070",
+      "returncode": 0,
+      "tests": 3,
+      "ok": true
+    },
+    {
+      "module": "test_patch10_1070_core",
+      "returncode": 0,
+      "tests": 4,
+      "ok": true
+    },
+    {
+      "module": "test_postal_locations",
+      "returncode": 0,
+      "tests": 4,
+      "ok": true
+    },
+    {
+      "module": "test_pota",
+      "returncode": 0,
+      "tests": 7,
+      "ok": true
+    },
+    {
+      "module": "test_pota_gui",
+      "returncode": -11,
+      "tests": 2,
+      "ok": false
+    },
+    {
+      "module": "test_pslog115",
+      "returncode": 0,
+      "tests": 3,
+      "ok": true
+    },
+    {
+      "module": "test_qsl_batch",
+      "returncode": 0,
+      "tests": 11,
+      "ok": true
+    },
+    {
+      "module": "test_qsl_gui",
+      "returncode": 0,
+      "tests": 4,
+      "ok": true
+    },
+    {
+      "module": "test_radio_control_116",
+      "returncode": 0,
+      "tests": 4,
+      "ok": true
+    },
+    {
+      "module": "test_radio_fix3",
+      "returncode": 0,
+      "tests": 3,
+      "ok": true
+    },
+    {
+      "module": "test_radio_fix4",
+      "returncode": 0,
+      "tests": 3,
+      "ok": true
+    },
+    {
+      "module": "test_radio_fix5",
+      "returncode": 0,
+      "tests": 4,
+      "ok": true
+    },
+    {
+      "module": "test_radio_fix7",
+      "returncode": 0,
+      "tests": 5,
+      "ok": true
+    },
+    {
+      "module": "test_radio_fix9",
+      "returncode": 0,
+      "tests": 2,
+      "ok": true
+    },
+    {
+      "module": "test_radio_safety_fix2",
+      "returncode": 0,
+      "tests": 2,
+      "ok": true
+    },
+    {
+      "module": "test_radio_settings_fix1",
+      "returncode": 0,
+      "tests": 5,
+      "ok": true
+    },
+    {
+      "module": "test_reference_db",
+      "returncode": 0,
+      "tests": 10,
+      "ok": true
+    },
+    {
+      "module": "test_regional_2026",
+      "returncode": -11,
+      "tests": 27,
+      "ok": false
+    },
+    {
+      "module": "test_release_106",
+      "returncode": 0,
+      "tests": 5,
+      "ok": true
+    },
+    {
+      "module": "test_remaining28",
+      "returncode": -11,
+      "tests": 24,
+      "ok": false
+    },
+    {
+      "module": "test_remaining9",
+      "returncode": -11,
+      "tests": 16,
+      "ok": false
+    },
+    {
+      "module": "test_restore_gui",
+      "returncode": 0,
+      "tests": 7,
+      "ok": true
+    },
+    {
+      "module": "test_rule_catalog",
+      "returncode": 0,
+      "tests": 3,
+      "ok": true
+    },
+    {
+      "module": "test_rule_pack",
+      "returncode": 0,
+      "tests": 12,
+      "ok": true
+    },
+    {
+      "module": "test_rule_pack_ui",
+      "returncode": 0,
+      "tests": 2,
+      "ok": true
+    },
+    {
+      "module": "test_saga_rule",
+      "returncode": 0,
+      "tests": 6,
+      "ok": true
+    },
+    {
+      "module": "test_scoring_progress",
+      "returncode": 0,
+      "tests": 3,
+      "ok": true
+    },
+    {
+      "module": "test_search",
+      "returncode": 0,
+      "tests": 10,
+      "ok": true
+    },
+    {
+      "module": "test_search_gui",
+      "returncode": 0,
+      "tests": 10,
+      "ok": true
+    },
+    {
+      "module": "test_search_special_handoff_gui",
+      "returncode": -11,
+      "tests": 2,
+      "ok": false
+    },
+    {
+      "module": "test_session_state",
+      "returncode": 0,
+      "tests": 8,
+      "ok": true
+    },
+    {
+      "module": "test_session_tabs_gui",
+      "returncode": 0,
+      "tests": 4,
+      "ok": true
+    },
+    {
+      "module": "test_settings",
+      "returncode": 0,
+      "tests": 7,
+      "ok": true
+    },
+    {
+      "module": "test_six_meter_2026",
+      "returncode": 0,
+      "tests": 12,
+      "ok": true
+    },
+    {
+      "module": "test_sota",
+      "returncode": -11,
+      "tests": 6,
+      "ok": false
+    },
+    {
+      "module": "test_special_awards_stage1011",
+      "returncode": 0,
+      "tests": 11,
+      "ok": true
+    },
+    {
+      "module": "test_storage",
+      "returncode": 0,
+      "tests": 17,
+      "ok": true
+    },
+    {
+      "module": "test_storage_replace_retry_fix6",
+      "returncode": 0,
+      "tests": 3,
+      "ok": true
+    },
+    {
+      "module": "test_tokyo_uhf_spring_2026",
+      "returncode": 0,
+      "tests": 14,
+      "ok": true
+    },
+    {
+      "module": "test_tottori_gigahertz_2026",
+      "returncode": 0,
+      "tests": 22,
+      "ok": true
+    },
+    {
+      "module": "test_update_package",
+      "returncode": 0,
+      "tests": 7,
+      "ok": true
+    },
+    {
+      "module": "test_updater",
+      "returncode": 0,
+      "tests": 9,
+      "ok": true
+    },
+    {
+      "module": "test_user_policy",
+      "returncode": 0,
+      "tests": 6,
+      "ok": true
+    },
+    {
+      "module": "test_v101",
+      "returncode": 0,
+      "tests": 3,
+      "ok": true
+    },
+    {
+      "module": "test_v102",
+      "returncode": 0,
+      "tests": 6,
+      "ok": true
+    },
+    {
+      "module": "test_v103_initial",
+      "returncode": 0,
+      "tests": 3,
+      "ok": true
+    },
+    {
+      "module": "test_v116_core",
+      "returncode": 0,
+      "tests": 3,
+      "ok": true
+    },
+    {
+      "module": "test_v117_gui",
+      "returncode": 0,
+      "tests": 10,
+      "ok": true
+    },
+    {
+      "module": "test_v117_storage",
+      "returncode": 0,
+      "tests": 10,
+      "ok": true
+    },
+    {
+      "module": "test_v22",
+      "returncode": 0,
+      "tests": 2,
+      "ok": true
+    },
+    {
+      "module": "test_v23",
+      "returncode": 0,
+      "tests": 2,
+      "ok": true
+    },
+    {
+      "module": "test_v25",
+      "returncode": 0,
+      "tests": 2,
+      "ok": true
+    },
+    {
+      "module": "test_v29",
+      "returncode": 0,
+      "tests": 1,
+      "ok": true
+    },
+    {
+      "module": "test_v33",
+      "returncode": 0,
+      "tests": 1,
+      "ok": true
+    },
+    {
+      "module": "test_v36",
+      "returncode": 0,
+      "tests": 1,
+      "ok": true
+    },
+    {
+      "module": "test_v39",
+      "returncode": 0,
+      "tests": 1,
+      "ok": true
+    },
+    {
+      "module": "test_v40",
+      "returncode": 0,
+      "tests": 1,
+      "ok": true
+    },
+    {
+      "module": "test_v42",
+      "returncode": 0,
+      "tests": 1,
+      "ok": true
+    },
+    {
+      "module": "test_window_geometry",
+      "returncode": 0,
+      "tests": 5,
+      "ok": true
+    },
+    {
+      "module": "test_windows_package",
+      "returncode": 0,
+      "tests": 11,
+      "ok": true
+    },
+    {
+      "module": "test_year_move",
+      "returncode": 0,
+      "tests": 8,
+      "ok": true
+    }
+  ]
+}

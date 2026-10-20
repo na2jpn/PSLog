@@ -1,5 +1,5 @@
 """QSL receipt matching and guarded TXT updates with mandatory result files."""
-from dataclasses import dataclass, field
+from dataclasses import dataclass, field, replace
 from datetime import datetime, timedelta
 from pathlib import Path
 from bisect import bisect_left
@@ -218,7 +218,16 @@ def _decision_for_hit(plan,entry,hit,seen):
     if manual and not received:
         diff=call_difference(entry.call,hit.qso.call)
         reason=f'{entry.reason} / 手動割当: {diff}'
-    row={'entry':entry,'hit':hit,'state':state,'reason':reason,'first':first,'buro':buro,'buro_status':buro_judgement(hit.qso.remarks),'after':after,'duplicate_of':'','received':received,'manual':manual}
+    proposed=replace(hit.qso,remarks=after)
+    location_note=''
+    if entry.code:
+        from his_qth_batch import supplied_location
+        location_qso,location_note=supplied_location(hit.session.repo.root,proposed,entry.code)
+        if location_qso is not None:proposed=location_qso
+        if proposed!=replace(hit.qso,remarks=after):
+            state='更新予定';reason+=' / 確認済みJCC/JCG・HIS QTHを補完'
+        if location_note:reason+=' / '+location_note
+    row={'entry':entry,'hit':hit,'state':state,'reason':reason,'first':first,'buro':buro,'buro_status':buro_judgement(hit.qso.remarks),'after':after,'duplicate_of':'','received':received,'manual':manual,'qso_after':proposed}
     if key in seen:row.update(state='同一交信の重複入力',reason=f'入力行{seen[key]}と同じQSOです',duplicate_of=seen[key])
     else:seen[key]=entry.number
     return row
@@ -241,19 +250,16 @@ def decisions(plan):
     return rows
 
 def edited_bytes(session,changes):
-    # Only the RMKS substring changes: preserve historical RST, whitespace and BOM.
-    lines=[line.raw for line in session.log.lines]
-    for number,remarks in changes.items():
-        raw=lines[number-1];pipes=[m.start() for m in re.finditer(r'\|',raw)]
-        start=pipes[8]+1;end=pipes[9] if len(pipes)>9 else raw.rfind('\\\\')
-        field=raw[start:end];leading=field[:len(field)-len(field.lstrip())];trailing=field[len(field.rstrip()):]
-        lines[number-1]=raw[:start]+leading+remarks+trailing+raw[end:]
-    data=(b'\xef\xbb\xbf' if session.log.bom else b'')+''.join(lines).encode('utf-8')
-    check=parse(data)
-    if check.issues or any(check.lines[n-1].qso.remarks!=value for n,value in changes.items()):raise StorageError('更新用データの照合に失敗しました。')
-    return data
+    from log_fields import patched_bytes
+    updates={}
+    for number,value in changes.items():
+        old=session.log.lines[number-1].qso
+        if isinstance(value,str):updates[number]={'remarks':value}
+        else:updates[number]={name:getattr(value,name) for name in ('remarks','his_qth','code') if getattr(value,name)!=getattr(old,name)}
+    return patched_bytes(session,updates)
 
-COLUMNS=['処理ID','入力行','入力原文','入力時刻基準','入力日時JST','照合状態','候補一覧JSON','選択候補','時刻差秒_ログ引く一覧','初回QSL確認','BURO発送記録なし','確認理由','実自局コール','相手コール','DATE_JST','TIME_JST','日時UTC','BAND','MODE','RST送信','RST受信','HIS_QTH','MY_QTH','JCCJCG','RMKS更新前','RMKS更新予定','受領方法','原本パス','原本行','重複元入力行','更新状態','バックアップ','原本SHA256更新前','原本SHA256更新予定']
+
+COLUMNS=['処理ID','入力行','入力原文','入力時刻基準','入力日時JST','照合状態','候補一覧JSON','選択候補','時刻差秒_ログ引く一覧','初回QSL確認','BURO発送記録なし','確認理由','実自局コール','相手コール','DATE_JST','TIME_JST','日時UTC','BAND','MODE','RST送信','RST受信','HIS_QTH','MY_QTH','JCCJCG','RMKS更新前','RMKS更新予定','受領方法','原本パス','原本行','重複元入力行','更新状態','バックアップ','原本SHA256更新前','原本SHA256更新予定','HIS_QTH更新予定','JCCJCG更新予定']
 
 def candidate_data(hit):
     q=hit.qso
@@ -281,6 +287,8 @@ def csv_bytes(plan,rows,state):
         if row['state']=='同一交信の重複入力':status='重複元に従う：'+f.get('status','変更なし')
         all_candidates=list(e.candidates)+list(getattr(e,'manual_candidates',[]))
         values=[state['id'],e.number,e.raw,plan.zone,e.stamp.isoformat(' ',timespec='minutes') if e.stamp else '',row['state'],json.dumps([candidate_data(x) for x in all_candidates],ensure_ascii=False),_selection_label(e,h),int((stamp-e.stamp).total_seconds()) if h else '',int(row['first']),int(row['buro']),' / '.join(x for x in [row.get('reason',''), '更新前に既知の受領記録なし' if row['first'] else '', '更新前にBURO発送・受領記録なし' if row['buro'] else ''] if x),h.own if h else '',q.call if h else e.call,q.date if h else '',q.time if h else '',utc_text(stamp) if h else '',q.band if h else '',q.mode if h else '',q.sent if h else '',q.received if h else '',q.his_qth if h else '',q.my_qth if h else '',q.code if h else '',q.remarks if h else '',row['after'],plan.method,str(h.path) if h else '',h.line if h else '',row['duplicate_of'],status,f.get('backup',''),f.get('before',''),f.get('after','')]
+        planned=row.get('qso_after')
+        values.extend([planned.his_qth if planned else '',planned.code if planned else ''])
         writer.writerow(dict(zip(COLUMNS,values)))
     return b'\xef\xbb\xbf'+out.getvalue().encode('utf-8')
 
@@ -436,9 +444,19 @@ def commit(repo,plan,folder):
     rows=decisions(plan)
     if not rows:raise StorageError('入力行がありません。')
     targets={}
+    supplied={}
+    for row in rows:
+        h=row.get('hit');q=row.get('qso_after')
+        if h is not None and row['entry'].code and q is not None:
+            key=(h.path,h.line);values=(q.his_qth,q.code)
+            if key in supplied and supplied[key]!=values:raise StorageError('同じ交信への所在地補完が競合しています。入力一覧を確認してください。')
+            supplied[key]=values
     for row in rows:
         if row['state']!='更新予定':continue
-        h=row['hit'];targets.setdefault(h.path,{'session':h.session,'changes':{}})['changes'][h.line]=row['after']
+        h=row['hit'];changes=targets.setdefault(h.path,{'session':h.session,'changes':{}})['changes']
+        value=row.get('qso_after',replace(h.qso,remarks=row['after']))
+        if h.line in changes and changes[h.line]!=value:raise StorageError('同じ交信への補完内容が競合しています。入力一覧を確認してください。')
+        changes[h.line]=value
     for t in targets.values():t['data']=edited_bytes(t['session'],t['changes'])
     ident=datetime.now().strftime('%Y%m%d-%H%M%S')+'-'+uuid.uuid4().hex
     directory=folder/('qsl-'+ident);csv_path=directory/'result.csv';journal=directory/'journal.json'

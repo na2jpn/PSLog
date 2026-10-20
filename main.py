@@ -1,10 +1,10 @@
-"""PSLog 1.16 application entry point and main/session UI."""
+"""PSLog 1.19 application entry point and main/session UI."""
 import sys
 import ctypes
 import subprocess
 from ctypes import wintypes
 from pathlib import Path
-from storage import Repository, StorageError, Snapshot, load_settings, save_settings, VERSION
+from storage import Repository, StorageError, ExternalChange, Snapshot, load_settings, save_settings, VERSION
 from preferences import validate as validate_preferences
 from PySide6.QtCore import Qt, QTimer, QEvent, Signal
 from window_geometry import fitted,fit_widget,state as window_state,areas as window_areas
@@ -651,6 +651,7 @@ class Window(QMainWindow):
 
     def easy_search(self):
         if not self.station:return
+        if not self._refresh_amateur_history():return
         call=self.e_call.text().strip().upper();base=call.split('/',1)[0] if call else ''
         def same_history_station(value):
             value=(value or '').strip().upper();return bool(base) and (value==base or value.startswith(base+'/'))
@@ -747,7 +748,8 @@ class Window(QMainWindow):
         if time_choice=='normal' and not self._easy_confirm_record(q):return
         try:
             if not self.station:raise StorageError('自局をSETしてください。')
-            path=self.repo.path_for(*self.station,q.date);session=self.sessions.get(path) or self.repo.open(path);session.append(q);self.sessions[path]=session
+            path=self.repo.path_for(*self.station,q.date)
+            if not self._append_record_safely(path,q):return
         except (StorageError,OSError) as e:QMessageBox.warning(self,'保存できません',str(e));return
         self.rows=session_rows(self.sessions,self.station[0]);self._save_active_workspace_state();settings_error=''
         try:self.persist_settings()
@@ -867,7 +869,8 @@ class Window(QMainWindow):
         call,kind,model=self.free_station;band,mode=radio_values(kind)
         try:
             q=FreeQSO(self.f_date.text(),self.f_time.text(),band,mode,self.f_call.text(),self.f_sent.text(),self.f_received.text(),self.f_his_qth.text(),self.f_my_qth.text(),self.f_remarks.text(),self.f_code.text());q.validate()
-            path=free_path(self.repo,call,kind,model,q.date);session=self.sessions.get(path) or self.repo.open(path);session.append(q);self.sessions[path]=session
+            path=free_path(self.repo,call,kind,model,q.date)
+            if not self._append_record_safely(path,q):return
         except (ValueError,StorageError,OSError) as e:QMessageBox.warning(self,'保存できません',str(e));return
         self._save_active_workspace_state();settings_error=''
         try:self.persist_settings()
@@ -934,8 +937,14 @@ class Window(QMainWindow):
         callrow=QHBoxLayout();self.c_call=QLineEdit();self.c_call.setPlaceholderText('JX1XXX')
         c_call_font=self.c_call.font();c_call_font.setBold(True);self.c_call.setFont(c_call_font);callrow.addWidget(self.c_call)
         callrow.addWidget(self.button('RETURN',self.contest_start_qso,True));form.addLayout(callrow)
-        form.addWidget(QLabel('コンテストナンバー（RMKS）'))
-        self.c_exchange=QLineEdit();self.c_exchange.setPlaceholderText('受信したコンテストナンバー');form.addWidget(self.c_exchange)
+        exchanges=QGridLayout()
+        for col,text in enumerate(('自分のコンテストナンバー（RMKS2）','相手のコンテストナンバー（RMKS）')):
+            label=QLabel(text);label.setWordWrap(True);exchanges.addWidget(label,0,col)
+        self.c_own_exchange=QLineEdit();self.c_own_exchange.setPlaceholderText('送信するコンテストナンバー（記録後も保持）')
+        self.c_own_exchange.setToolTip('このコンテストタブ専用です。記録後・タブ切替・再起動後も保持します。周波数のRMKS2自動セットがONの場合、保存時に周波数を末尾へ追記します。')
+        self.c_exchange=QLineEdit();self.c_exchange.setPlaceholderText('受信したコンテストナンバー')
+        exchanges.addWidget(self.c_own_exchange,1,0);exchanges.addWidget(self.c_exchange,1,1)
+        exchanges.setColumnStretch(0,1);exchanges.setColumnStretch(1,1);form.addLayout(exchanges)
         detail=QGridLayout()
         self.c_date=QLineEdit();self.c_time=QLineEdit();self.c_sent=QLineEdit();self.c_received=QLineEdit()
         for col,(label,widget) in enumerate((('Date',self.c_date),('Time · JST',self.c_time),('His RST（送信）',self.c_sent),('My RST（受信）',self.c_received))):
@@ -968,6 +977,8 @@ class Window(QMainWindow):
         self.c_call.editingFinished.connect(lambda:self.contest_start_qso() if normalize_callsign(self.c_call.text())!=self._contest_prepared_call else None)
         self.c_exchange.returnPressed.connect(self.contest_record);self.c_mode.currentTextChanged.connect(self.contest_mode_changed)
         self.c_exchange.editingFinished.connect(lambda:self.c_exchange.setText(machine_text(self.c_exchange.text(),upper=True)))
+        self.c_own_exchange.editingFinished.connect(self._save_contest_own_exchange)
+        self.c_own_exchange.returnPressed.connect(lambda:self.c_exchange.setFocus())
         for widget,kind in ((self.c_date,'date'),(self.c_time,'time'),(self.c_sent,'machine'),(self.c_received,'machine')):
             widget.editingFinished.connect(lambda widget=widget,kind=kind:self._normalize_contest_line(widget,kind))
         self.c_band.lineEdit().editingFinished.connect(lambda:self.c_band.setCurrentText(machine_text(self.c_band.currentText())))
@@ -996,6 +1007,57 @@ class Window(QMainWindow):
             self.workspace_sessions=[standard_session(1,self.settings)];self.active_workspace_index=0
         self.active_workspace_index=max(0,min(self.active_workspace_index,len(self.workspace_sessions)-1))
         return self.workspace_sessions[self.active_workspace_index]
+
+    def _save_contest_own_exchange(self):
+        if self._workspace_loading or self._active_workspace().get('type')!='contest':return
+        self.c_own_exchange.setText(machine_text(self.c_own_exchange.text(),upper=True))
+        self._active_workspace()['own_exchange']=self.c_own_exchange.text()
+        self._persist_workspace_quiet()
+
+    def _refresh_amateur_history(self):
+        """Read history from disk without rebasing a pending writer snapshot.
+
+        A search may discover external additions, but must not make stale
+        pending writes appear current. SET/reload explicitly replaces writers.
+        """
+        try:
+            current={p:self.repo.open(p) for p in self.repo.files(self.station[0])}
+            self.rows=session_rows(current,self.station[0])
+            issues=sum(len(s.log.issues) for s in current.values())
+            if issues:self._visible_status().setText(f'ログに要確認行 {issues}件があります。「全件表示」で理由を確認してください。元のTXTは保持しています。')
+            return True
+        except (StorageError,OSError) as e:
+            self.rows=[];self._visible_status().setText('ログを再読込できません：'+str(e));return False
+
+    def _append_record_safely(self,path,qso):
+        """One save/reload policy for standard, EASY, contest and free radio.
+
+        Never silently retry a stale body or clear the user's unsaved entry.
+        A second explicit Record after reload uses the current TXT contents.
+        """
+        session=self.sessions.get(path) or self.repo.open(path)
+        try:
+            session.append(qso)
+        except ExternalChange:
+            answer=QMessageBox.question(self,'ログが外部で変更されています',
+                'TXTが外部で変更・追加・削除されたため、今回の交信は記録していません。\n'
+                '入力内容はそのまま残しています。古い内容で上書きしません。\n\n'
+                '現在のTXTを再読み込みしますか？\n'
+                '再読み込み後、内容を確認してもう一度「記録」を押してください。\n'
+                '削除されたTXTでは、次の記録から新規作成し、削除前の交信を勝手に復元しません。',
+                QMessageBox.StandardButton.Yes|QMessageBox.StandardButton.No,QMessageBox.StandardButton.Yes)
+            if answer==QMessageBox.StandardButton.Yes:
+                fresh=self.repo.open(path)
+                if fresh.log.issues:
+                    raise StorageError('解釈できない行があります。TXTを確認・修正してから再読込してください。入力中の交信は未記録です。')
+                self.sessions[path]=fresh
+                self.reload_logs()
+                self._visible_status().setText('現在のTXTを再読込しました。入力中の交信は未記録です。内容を確認してもう一度「記録」を押してください。')
+            else:
+                self._visible_status().setText('外部変更のため記録を中止しました。入力は保持しています。TXTを確認して「ログを再読込」してください。')
+            return False
+        self.sessions[path]=session
+        return True
 
     def _active_own_text(self):
         kind=self._active_workspace().get('type')
@@ -1060,7 +1122,8 @@ class Window(QMainWindow):
             except ValueError:name=session.get('contest_name','')
             if name:session['contest_name']=name
             session.update(call=self.c_own.text().strip().upper(),band=self.c_band.currentText().strip(),
-                mode=self.c_mode.currentText().strip(),my_qth=self.c_my_qth.text(),limited=self.c_limited.isChecked())
+                mode=self.c_mode.currentText().strip(),my_qth=self.c_my_qth.text(),limited=self.c_limited.isChecked(),
+                own_exchange=machine_text(self.c_own_exchange.text(),upper=True))
 
     def _load_workspace(self,index,initial=False):
         if not self.workspace_sessions:
@@ -1102,6 +1165,7 @@ class Window(QMainWindow):
                 self.page_stack.setCurrentWidget(self.contest_scroll)
                 self.c_own.setText(session.get('call',''));self.c_name.setText(session.get('contest_name',''))
                 self.c_band.setCurrentText(session.get('band','7'));self.c_mode.setCurrentText(session.get('mode','SSB'));self.c_my_qth.setText(session.get('my_qth',''))
+                self.c_own_exchange.setText(session.get('own_exchange',''));self._contest_radio_rmks2=''
                 self.c_call.clear();self.c_exchange.clear();self.c_date.clear();self.c_time.clear();self.c_entry_country='';self._contest_prepared_call=''
                 self.c_limited.setChecked(bool(session.get('limited',True)));self.contest_mode_changed(self.c_mode.currentText())
                 if self.c_own.text().strip() and self.c_name.text().strip():self._activate_contest_station(False)
@@ -1472,6 +1536,7 @@ class Window(QMainWindow):
 
     def contest_search(self):
         if self._active_workspace().get('type')!='contest' or not self.station:return
+        if not self._refresh_amateur_history():return
         call=self.c_call.text().strip().upper();base=call.split('/',1)[0] if call else ''
         def same(value):
             value=(value or '').strip().upper();return bool(base) and (value==base or value.startswith(base+'/'))
@@ -1511,11 +1576,18 @@ class Window(QMainWindow):
         if not self.c_date.text().strip() or not self.c_time.text().strip():
             now=now_jst();self.c_date.setText(now.strftime('%Y-%m-%d'));self.c_time.setText(now.strftime('%H:%M'))
         self.c_exchange.setText(machine_text(self.c_exchange.text(),upper=True))
+        self.c_own_exchange.setText(machine_text(self.c_own_exchange.text(),upper=True))
         self.c_call.setText(normalize_callsign(self.c_call.text()))
         try:
+            from remarks_sections import validate_component
+            validate_component(self.c_own_exchange.text(),'自分のコンテストナンバー')
+            validate_component(self.c_exchange.text(),'相手のコンテストナンバー')
+            own_number=self.c_own_exchange.text().strip()
+            frequency=self._contest_radio_rmks2
+            rmks2=own_number+(' ' if own_number and frequency else '')+frequency
             q=QSO(self.c_date.text().strip(),self.c_time.text().strip(),self.c_band.currentText().strip(),self.c_mode.currentText().strip(),
                 self.c_call.text(),self.c_sent.text().strip(),self.c_received.text().strip(),self.c_entry_country,
-                self.c_my_qth.text(),compose_remarks(self.c_exchange.text().strip(),self._contest_radio_rmks2),'');q.validate(allow_nonstandard_rst=True)
+                self.c_my_qth.text(),compose_remarks(self.c_exchange.text().strip(),rmks2),'');q.validate(allow_nonstandard_rst=True)
             self.c_date.setText(q.date);self.c_time.setText(q.time);self.c_band.setCurrentText(q.band);self.c_mode.setCurrentText(q.mode)
             self.c_sent.setText(q.sent);self.c_received.setText(q.received)
         except ValueError as e:
@@ -1538,7 +1610,8 @@ class Window(QMainWindow):
                 self.c_status.setText('コンテストナンバーが未入力のため記録を中止しました。')
                 self.c_exchange.setFocus();self.c_exchange.selectAll();return
         try:
-            path=self.repo.path_for(*self.station,q.date);session=self.sessions.get(path) or self.repo.open(path);session.append(q);self.sessions[path]=session
+            path=self.repo.path_for(*self.station,q.date)
+            if not self._append_record_safely(path,q):return
         except (StorageError,OSError) as e:
             QMessageBox.warning(self,'保存できません',str(e));return
         self.rows=session_rows(self.sessions,self.station[0]);self._save_active_workspace_state()
@@ -1555,9 +1628,10 @@ class Window(QMainWindow):
     def menus(self):
         self.menu_refs=[];self.action_refs=[]
         groups=[('ファイル',FILE_MENU_ITEMS),
-          ('編集',['ログ検索・編集','ログ一括処理','QSL受領一括処理','ログファイル統合']),
+          ('ログ',['ログ検索・編集','ログ一括処理','ログファイル統合']),
           ('入出力',['インポート','エクスポート','特殊なエクスポート']),
           ('提出ログファイル作成',['コンテスト','アワード','QSOパーティ']),
+          ('ツール',['QSL受領一括処理','総務省DB参照','ターゲットアラート','バンドサイト']),
           ('バックアップ',['今すぐバックアップ','全体バックアップから復元','ログバックアップから復元','バックアップ保存先を開く']),
           ('設定',['設定','無線機設定','ブラックリスト管理']),('フリラ',['フリラタブを呼び出す…','フリラログ検索・編集']),('ヘルプ',['使い方','PSLogフォーマットについて','起動コマンドフラグについて','PSLogをバージョンアップ','PSLogの更新履歴','PSLogについて'])]
         for name,items in groups:
@@ -1571,14 +1645,15 @@ class Window(QMainWindow):
                     if item=='コンテスト':
                         entries=[('コンテスト提出ログ作成…',self.open_contest),('コンテストルール表示…',self.open_contest_rule_view),('コンテストルール管理・編集…',self.open_rules),('Cabrillo出力テンプレート管理・編集…',self.open_templates)]
                     elif item=='アワード':
-                        entries=[('アワード申請用ログ作成…',self.open_award),('アワード条件表示…',self.open_award_condition_view),('JCC/JCG交信チェック…',self.open_jccjcg_award_check)]
+                        entries=[('アワード申請用ログ作成…',self.open_award),('アワード条件表示…',self.open_award_condition_view),('JCC/JCG交信チェック…',self.open_jccjcg_award_check),('DXCCチェック…',self.open_dxcc_check)]
                     else:
                         entries=[('QSOパーティ提出ログ作成…',self.open_qso_party),('QSOパーティルール表示…',self.open_party_rule_view)]
                     for label,callback in entries:
                         action=submenu.addAction(label);action.triggered.connect(callback);self.action_refs.append(action)
                     continue
-                if name=='編集' and item=='ログ一括処理':
+                if name=='ログ' and item=='ログ一括処理':
                     batch_menu=menu.addMenu(item);self.menu_refs.append(batch_menu)
+                    action=batch_menu.addAction('HIS QTH作成…');action.triggered.connect(self.open_his_qth_batch);self.action_refs.append(action)
                     action=batch_menu.addAction('JCC/JCG…');action.triggered.connect(self.open_jccjcg_batch);self.action_refs.append(action)
                     continue
                 if item=='特殊なエクスポート':
@@ -1595,6 +1670,9 @@ class Window(QMainWindow):
                 elif item=='フリラタブを呼び出す…':action.triggered.connect(self.recall_free_workspace)
                 elif item=='フリラログ検索・編集':action.triggered.connect(self.open_free_search)
                 elif item=='QSL受領一括処理':action.triggered.connect(self.open_qsl)
+                elif item=='総務省DB参照':action.triggered.connect(self.open_mic_lookup)
+                elif item=='ターゲットアラート':action.triggered.connect(self.open_cluster_monitor)
+                elif item=='バンドサイト':action.triggered.connect(self.open_band_site)
                 elif item=='ログファイル統合':action.triggered.connect(self.open_log_merge)
                 elif item=='コンテスト提出ログ作成':action.triggered.connect(self.open_contest)
                 elif item=='コンテストルール管理・編集':action.triggered.connect(self.open_rules)
@@ -1845,6 +1923,36 @@ class Window(QMainWindow):
     def open_award_condition_view(self):
         from rule_view_ui import AwardConditionViewDialog
         AwardConditionViewDialog(self.data_root,self).exec()
+    def open_mic_lookup(self):
+        from internet_tools_ui import MicLookupDialog
+        MicLookupDialog(self.repo,self).exec()
+    def open_cluster_monitor(self):
+        from cluster_monitor_ui import ClusterMonitorDialog
+        dialog=getattr(self,'_target_alert_dialog',None)
+        if dialog is None or dialog.closing:
+            dialog=ClusterMonitorDialog(self.repo,self);self._target_alert_dialog=dialog
+            dialog.setAttribute(Qt.WidgetAttribute.WA_DeleteOnClose)
+            dialog.finished.connect(lambda: setattr(self,'_target_alert_dialog',None))
+        dialog.show();dialog.raise_();dialog.activateWindow()
+
+    def open_band_site(self):
+        from band_site_ui import BandSiteDialog
+        dialog=getattr(self,'_band_site_dialog',None)
+        if dialog is None or dialog.closing:
+            dialog=BandSiteDialog(self.repo,self);self._band_site_dialog=dialog
+            dialog.setAttribute(Qt.WidgetAttribute.WA_DeleteOnClose)
+            dialog.finished.connect(lambda: setattr(self,'_band_site_dialog',None))
+        dialog.show();dialog.raise_();dialog.activateWindow()
+    def open_dxcc_check(self):
+        from dxcc_check_ui import DxccCheckDialog
+        dialog=DxccCheckDialog(self.repo,self)
+        dialog.exec()
+        self.reload_logs()
+    def open_his_qth_batch(self):
+        from his_qth_batch_ui import HisQthBatchDialog
+        dialog=HisQthBatchDialog(self.repo,self.station[0] if self.station else '',self)
+        dialog.exec()
+        if dialog.saved:self.reload_logs()
     def open_jccjcg_award_check(self):
         from jccjcg_award_check_ui import JccJcgAwardCheckDialog
         JccJcgAwardCheckDialog(self.repo,self.station[0] if self.station else self._active_own_text(),self).exec()
@@ -2031,11 +2139,18 @@ class Window(QMainWindow):
             if issues:QMessageBox.warning(self,'ログの確認','解釈できない行のあるファイルは保存できません。audit.pyで行番号と理由を確認できます。')
             self.update_path();self.search()
         except (StorageError,OSError) as e:QMessageBox.warning(self,'読み込み',str(e))
+    def _close_spot_tools(self,save=True):
+        for name in ('_target_alert_dialog','_band_site_dialog'):
+            dialog=getattr(self,name,None)
+            if dialog is not None:
+                if not save:dialog.settings_error=True
+                dialog.close()
+
     def closeEvent(self,event):
         # A full restore has already written the selected config/logbook state.
         # Do not let the still-running pre-restore UI write its old settings back.
         if getattr(self,'_full_restore_exit',False) or getattr(self,'_update_exit',False):
-            self.radio_manager.stop();event.accept();return
+            self._close_spot_tools(save=False);self.radio_manager.stop();event.accept();return
         try:
             self.radio_manager.stop()
             errors=self.repo.close()
@@ -2043,6 +2158,7 @@ class Window(QMainWindow):
             self.persist_settings()
         except (StorageError,OSError,ValueError) as e:
             QMessageBox.warning(self,'終了前の保存',str(e));event.ignore();return
+        self._close_spot_tools()
         event.accept()
     def _normalize_standard_field(self,key):
         try:
@@ -2146,6 +2262,7 @@ class Window(QMainWindow):
         for key in ('sent','received'):self.set_text(key,value or '')
     def search(self):
         if not self.station:return
+        if not self._refresh_amateur_history():return
         call=self.call.text().strip().upper()
         # Portable suffixes (/P, /1, /JD1, etc.) are the same station for
         # previous-QSO history.  Keep the entered callsign itself unchanged;
@@ -2230,8 +2347,7 @@ class Window(QMainWindow):
         try:
             if not self.station: raise StorageError('自局をSETしてください。')
             path=self.repo.path_for(*self.station,q.date)
-            session=self.sessions.get(path) or self.repo.open(path)
-            session.append(q);self.sessions[path]=session
+            if not self._append_record_safely(path,q):return
         except (StorageError,OSError) as e:QMessageBox.warning(self,'保存できません',str(e));return
         settings_error=''
         try:self.persist_settings()

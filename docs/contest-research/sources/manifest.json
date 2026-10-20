@@ -407,13 +407,6 @@
     "sha256": "740ab32635b7a258ec4fc258f5c540992d9766d600b30deb88e0f51e3d0e8ab7"
   },
   {
-    "file": "tokyo_cw_2026.pdf",
-    "url": "https://jarltokyo.com/_media/contest/contest_rules_cw_ver20260826.pdf",
-    "checked": "2026-09-14",
-    "bytes": 969045,
-    "sha256": "98fc3f07c31d05d60cec8b0c6c6b2046fce51acb4bbd4f9863bc43f4f66e61c6"
-  },
-  {
     "file": "all_osaka_2026.pdf",
     "url": "https://ja3ujr.sakura.ne.jp/jarlosaka/contest/2026-kiyaku.pdf",
     "checked": "2026-09-14",
@@ -1077,5 +1070,34 @@
     "checked": "2026-09-14",
     "sha256": "518e6f93a4faa440fa84c719f5447ec09dde36224294757c1cbd57cde6c27c02",
     "bytes": 24211
+  },
+  {
+    "file": "tokyo_cw_2026.pdf",
+    "url": "https://jarltokyo.com/_media/contest/contest_rules_cw_ver20261003.pdf",
+    "checked": "2026-10-20",
+    "sha256": "194f87fa2edd33c45616880abe5a51d0cec57125e9cb723bc5a982488c0fff33",
+    "bytes": 969045
+  },
+  {
+    "file": "kcwa_2026.html",
+    "url": "https://kcwa.sakura.ne.jp/2026/contest43/20261206CONTEST.html",
+    "checked": "2026-10-20",
+    "sha256": "6689661421e3fda7ea2f377c2e31b6864bbfbe266dc4e881b9de0ddaf638b8ed",
+    "bytes": 6475
+  },
+  {
+    "file": "all_ja0_18_2026.html",
+    "url": "https://jarl-nn.asama-net.com/index.php?html_id=00000528",
+    "checked": "2026-10-20",
+    "sha256": "2f76cef8e3bc82cebd9cb4af5a3c78c638d24552ad2ee26b290566121947291a",
+    "bytes": 10435
+  },
+  {
+    "file": "cqww_rules_2026.html",
+    "url": "https://cqww.com/rules/",
+    "checked": "2026-10-20",
+    "sha256": "638d84f98508298c8e24b6038211db8cb98231d72d086ccc2be454d86939be81",
+    "bytes": 189,
+    "note": "URL memo only; verified via web retrieval. Direct HTML download unavailable."
   }
 ]

@@ -20,7 +20,7 @@ class Remaining71ViewTests(unittest.TestCase):
     def setUpClass(cls):
         cls.items=json.loads(DATA.read_text(encoding='utf-8'))
         cls.rules={rule['id']:rule for rule in
-                   (loads(p.read_text(encoding='utf-8-sig')) for p in RULES.glob('*.txt'))}
+                   sorted((loads(p.read_text(encoding='utf-8-sig')) for p in RULES.glob('*.txt')),key=lambda r:r['year'])}
 
     def test_all_rules_render_with_core_on_air_facts(self):
         self.assertEqual(len(self.rules),87)
@@ -61,7 +61,7 @@ class Remaining71ViewTests(unittest.TestCase):
         self.assertIn('県外局同士の交信も1点',view('fukuoka')['交信対象'])
         self.assertEqual(self.rules['toyama_emergency']['url'],
                          'https://www.jarl.com/toyama/25ham/49OSO.pdf')
-        self.assertEqual(self.rules['kcwa_cw']['year'],2025)
+        self.assertEqual(self.rules['kcwa_cw']['year'],2026)
         self.assertEqual(view('all_akita')['送信出力'],'制限なし')
         self.assertEqual(view('xpo')['送信出力'],'制限なし')
         self.assertNotIn('QRP',view('ai_chikyu')['送信出力'])

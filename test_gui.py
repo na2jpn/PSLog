@@ -26,9 +26,14 @@ class GuiTests(unittest.TestCase):
             w=Window(tmp);self.assertEqual(len(w.rows),1)
             w.call.setText('JA1YYY');w.start_qso();w.set_text('date','2025-12-31');w.set_text('time','23:59')
             raw=p.read_bytes()+b'\r\n';p.write_bytes(raw)
-            with patch.object(w,'_confirm_record_time',return_value='normal'),patch.object(QMessageBox,'question',return_value=QMessageBox.StandardButton.Yes),patch.object(QMessageBox,'warning') as warning:
-                w.record();self.assertTrue(warning.called)
+            with patch.object(w,'_confirm_record_time',return_value='normal'),patch.object(QMessageBox,'question',return_value=QMessageBox.StandardButton.Yes) as question:
+                w.record()
+                self.assertTrue(any('外部で変更' in str(c.args[1]) for c in question.call_args_list))
             self.assertEqual(p.read_bytes(),raw)
+            self.assertEqual(w.call.text(),'JA1YYY')
+            self.assertEqual(w.text('time'),'23:59')
+            self.assertIn('未記録',w.status.text())
+            self.assertEqual(w.repo.backups(p)[-1].read_bytes(),raw)
             w.close();self.app.processEvents()
 
 if __name__=='__main__':unittest.main()

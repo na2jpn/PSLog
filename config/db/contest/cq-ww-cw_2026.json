@@ -1,0 +1,14 @@
+{
+  "source": "cqww_rules_2026.html",
+  "inside": [],
+  "outside": [],
+  "id": "cq-ww-cw",
+  "year": 2026,
+  "municipal_source_versions": {
+    "jcc": "2019-05-01",
+    "jcg": "2018-10-01",
+    "ward": "2024-01-01",
+    "history": "2024-01-01"
+  },
+  "sha256": "638d84f98508298c8e24b6038211db8cb98231d72d086ccc2be454d86939be81"
+}

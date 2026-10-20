@@ -469,9 +469,9 @@
       "listed_name": "東京CW",
       "year": 2026,
       "rule_file": "tokyo_cw_2026.txt",
-      "rules_url": "https://jarltokyo.com/_media/contest/contest_rules_cw_ver20260826.pdf",
-      "status": "SWL除外18種目実装・独自108番号・全種目・任意アワード・R1.0出力自動試験済み／Windows実機・主催受付未検証",
-      "implementation_note": "docs/contest-research/039_tokyo_cw_2026.md"
+      "rules_url": "https://jarltokyo.com/_media/contest/contest_rules_cw_ver20261003.pdf",
+      "status": "2026年公式規約反映・1.19自動試験済み（Windows実機未検証）",
+      "implementation_note": "docs/contest-research/PSLOG119_RULE_CHANGES.md"
     },
     {
       "no": 40,
@@ -529,11 +529,11 @@
       "no": 45,
       "id": "kcwa_cw",
       "listed_name": "KCWA CW",
-      "year": 2025,
-      "rule_file": "kcwa_cw_2025.txt",
-      "rules_url": "https://kcwa.sakura.ne.jp/2025/contest42/20251207CONTEST.html",
-      "status": "2025定義・自動試験済み",
-      "implementation_note": "docs/contest-research/045_kcwa_2025_reference.md",
+      "year": 2026,
+      "rule_file": "kcwa_cw_2026.txt",
+      "rules_url": "https://kcwa.sakura.ne.jp/2026/contest43/20261206CONTEST.html",
+      "status": "2026年公式規約反映・1.19自動試験済み（Windows実機未検証）",
+      "implementation_note": "docs/contest-research/PSLOG119_RULE_CHANGES.md",
       "rule_files": [
         "kcwa_cw_2025.txt"
       ],
@@ -543,11 +543,11 @@
       "no": 46,
       "id": "all_ja0_160m",
       "listed_name": "ALL JA0 1.8MHz",
-      "year": 2025,
-      "rule_file": "all_ja0_160m_2025.txt",
-      "rules_url": "https://jarl-nn.asama-net.com/index.php?html_id=00000503",
-      "status": "定義・自動試験済み（2025保存版、主催受付・Windows実機未検証）",
-      "implementation_note": "docs/contest-research/046_all_ja0_18_2025_reference.md",
+      "year": 2026,
+      "rule_file": "all_ja0_160m_2026.txt",
+      "rules_url": "https://jarl-nn.asama-net.com/index.php?html_id=00000528",
+      "status": "2026年公式規約反映・1.19自動試験済み（Windows実機未検証）",
+      "implementation_note": "docs/contest-research/PSLOG119_RULE_CHANGES.md",
       "rule_files": [
         "all_ja0_160m_2025.txt"
       ],

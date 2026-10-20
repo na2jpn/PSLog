@@ -58,7 +58,7 @@ Use this file as the documentation entry point. Files under `history/` are not c
 - [specs/storage/YEAR_MOVE.md](specs/storage/YEAR_MOVE.md)
 
 ### Development / UI
-- [specs/development/PSLOG_1.16_BASELINE.md](specs/development/PSLOG_1.16_BASELINE.md) — **current Ver1.16 canonical baseline.**
+- [specs/development/PSLOG_1.16_BASELINE.md](specs/development/PSLOG_1.16_BASELINE.md) — historical Ver1.16 baseline; FIX1–FIX9 remain integrated.
 - [specs/development/PSLOG_1.16_NEXT_CHAT_PLAN.md](specs/development/PSLOG_1.16_NEXT_CHAT_PLAN.md) — continuation plan from the accepted Ver1.16 canonical source.
 - [specs/development/PSLOG_1.15_BASELINE.md](specs/development/PSLOG_1.15_BASELINE.md) — Ver1.15 baseline history.
 - [specs/development/PSLOG_1.15_NEXT_CHAT_PLAN.md](specs/development/PSLOG_1.15_NEXT_CHAT_PLAN.md) — Ver1.15 continuation history.
@@ -99,3 +99,6 @@ Use this file as the documentation entry point. Files under `history/` are not c
 - `history/ver1.14-diff/` — accepted Ver1.14 diff metadata retained only as history; do not replay it onto Ver1.14.
 - `history/ver1.07-patches/` — Ver1.071–1.078 patch/FIX artifacts retained only as history; do not replay them onto Ver1.10.
 - `history/ver1.06-patches/` — Ver1.061–1.070 patch/FIX/Work handoff artifacts retained only as history.
+
+- [specs/development/PSLOG_1.17_BASELINE.md](specs/development/PSLOG_1.17_BASELINE.md) — **current Ver1.17 baseline.**
+- [VALIDATION_1.17.md](VALIDATION_1.17.md) — validation and Windows acceptance scope.

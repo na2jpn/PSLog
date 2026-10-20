@@ -28,7 +28,7 @@ class Patch041074CoreTests(unittest.TestCase):
         return p
 
     def test_version_and_reserved_free_radio_directory(self):
-        self.assertEqual(VERSION,'1.16')
+        self.assertEqual(VERSION,'1.20')
         self.assertTrue((self.root/'logbook').is_dir())
         self.assertTrue((self.root/'logbook_flr').is_dir())
         self.assertEqual(self.repo.free_book,self.root/'logbook_flr')

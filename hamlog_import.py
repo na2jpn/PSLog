@@ -77,7 +77,7 @@ def convert(data,encoding='cp932',timezone='',century=2000,location_data=None,co
                     remarks=append_primary(remarks,'QTH:'+qth);qth=roman or ('Japan' if domestic else '')
                     notices.append(Issue(number,'日本語所在地はRMKSへ保持。'+('確認済み所在地DBのローマ字を使用します。' if roman else '確認済み表記がないため国名またはGLのみとします。'),'') )
                 if not qth and country_data:
-                    hint=country_data.lookup(call)
+                    hint=country_data.lookup(call,dt.strftime("%Y-%m-%d"))
                     if hint:
                         qth=hint['country'];notices.append(Issue(number,'国名参照DBの候補を補完します。運用地を確認してください。',qth))
                 grid=f['GL']

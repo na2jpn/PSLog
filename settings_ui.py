@@ -1,6 +1,6 @@
 from PySide6.QtCore import QTimer
 import queue, threading
-from PySide6.QtWidgets import QDialog,QVBoxLayout,QHBoxLayout,QTabWidget,QWidget,QCheckBox,QLabel,QComboBox,QFormLayout,QLineEdit,QPushButton,QFileDialog,QGroupBox
+from PySide6.QtWidgets import QDialog,QVBoxLayout,QHBoxLayout,QTabWidget,QWidget,QCheckBox,QLabel,QComboBox,QFormLayout,QLineEdit,QPushButton,QFileDialog,QGroupBox,QSpinBox
 from preferences import DEFAULTS,validate
 from search_ui import button
 from storage import StorageError, VERSION
@@ -88,6 +88,15 @@ class SettingsDialog(QDialog):
             current.setWordWrap(True);form.addRow('現在の状態',current)
         cb=QCheckBox('月が替わったら全体バックアップを案内する');cb.setChecked(self.values['monthly_backup']);self.checks['monthly_backup']=cb;form.addRow(cb)
         text=QLabel('月替わりの案内は、自動で全体バックアップを作る機能ではありません。\n案内から「今すぐ作成」を選ぶと、logbook と config を1つのZIPにまとめ、別ドライブやUSBメモリーなど、任意の場所へ保存できます。');text.setWordWrap(True);form.addRow(text)
+        from alert_audio import AlertPlayer,SOUNDS
+        self.alert_player=AlertPlayer(self)
+        audio=QWidget();af=QFormLayout(audio);tabs.addTab(audio,'通知音')
+        self.alert_volume=QSpinBox();self.alert_volume.setRange(0,100);self.alert_volume.setSuffix(' %');self.alert_volume.setValue(self.values['alert_volume']);af.addRow('アプリの通知音量',self.alert_volume)
+        self.alert_sound=QComboBox()
+        for ident,label in SOUNDS:self.alert_sound.addItem(label,ident)
+        self.alert_sound.setCurrentIndex(self.alert_sound.findData(self.values['alert_sound']));af.addRow('アラート音',self.alert_sound)
+        preview=QPushButton('音を確認');preview.clicked.connect(self._preview_alert);af.addRow(preview)
+        af.addRow(QLabel('0%で消音。PC本体の音量・消音設定も反映されます。\nクラスタ監視の音ON/OFFは監視画面で切り替えます。'))
         self.error=QLabel();self.error.setWordWrap(True);outer.addWidget(self.error)
         row=QHBoxLayout();row.addStretch();row.addWidget(button('保存',self.save));row.addWidget(button('キャンセル',self.reject));outer.addLayout(row)
         if initial_tab:
@@ -277,13 +286,18 @@ class SettingsDialog(QDialog):
             self.radio_test_status.setText(str(e));return
         self.radio_test_status.setText('接続中…');self._refresh_connection_status()
 
+    def _preview_alert(self):
+        self.alert_player.stop();self.alert_player.play(self.alert_volume.value(),self.alert_sound.currentData())
+
     def done(self,result):
+        self.alert_player.stop()
         if getattr(self,'_radio_test_manager',None) is not None:self._finish_radio_test('')
         if getattr(self,'_virtual_op_timer',None) is not None:self._virtual_op_timer.stop()
         super().done(result)
 
     def save(self):
         values=dict(self.values);values.update({k:cb.isChecked() for k,cb in self.checks.items()});values['backup_keep']=int(self.keep.currentText());values.update(self._radio_values())
+        values.update(alert_volume=self.alert_volume.value(),alert_sound=self.alert_sound.currentData())
         if values['radio_enabled'] and not values['radio_model']:
             self.error.setText('無線機接続を使用する場合は無線機を選択してください。');return
         from radio_control import CUSTOM_ICOM,CUSTOM_HAMLIB

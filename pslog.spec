@@ -5,7 +5,7 @@ a = Analysis(
     ['main.py'],
     pathex=[],
     binaries=[],
-    datas=[('assets/pslog_icon.png', 'assets'), ('config/db/locations.json', 'config/db'), ('config/db/aja_locations.json', 'config/db'), ('config/db/club_db.csv', 'config/db'), ('config/db/club_db_meta.json', 'config/db'), ('config/db/cty.dat', 'config/db'), ('config/db/cty_meta.json', 'config/db'), ('config/db/cty_LICENSE.txt', 'config/db'), ('config/templates/pdf', 'config/templates/pdf'), ('config/rules', 'config/rules'), ('config/db/contest', 'config/db/contest'), ('config/templates/cabrillo', 'config/templates/cabrillo')],
+    datas=[('assets/sounds', 'assets/sounds'),('assets/pslog_icon.png', 'assets'), ('config/db/locations.json', 'config/db'), ('config/db/aja_locations.json', 'config/db'), ('config/db/club_db.csv', 'config/db'), ('config/db/club_db_meta.json', 'config/db'), ('config/db/cty.dat', 'config/db'), ('config/db/country_history.json', 'config/db'), ('config/db/cty_meta.json', 'config/db'), ('config/db/cty_LICENSE.txt', 'config/db'), ('config/templates/pdf', 'config/templates/pdf'), ('config/rules', 'config/rules'), ('config/db/contest', 'config/db/contest'), ('config/templates/cabrillo', 'config/templates/cabrillo')],
     hiddenimports=['xlrd','serial','serial.tools.list_ports'],
     hookspath=[],
     hooksconfig={},

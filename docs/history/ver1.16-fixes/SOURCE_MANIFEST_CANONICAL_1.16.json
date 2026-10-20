@@ -1,0 +1,97 @@
+{
+  "schema": 13,
+  "project": "PSLog",
+  "version": "1.16",
+  "status": "FINAL_CANONICAL_SOURCE",
+  "canonical_filename": "PSLog_1.16_CANONICAL_SOURCE.zip",
+  "finalized_at": "2026-10-13",
+  "next_development_line": "Ver1.16 series (first normal patch expected 1.161; next canonical number follows user instruction)",
+  "source_of_final_canonicalization": {
+    "baseline": {
+      "filename": "PSLog_1.16_FULL_SOURCE.zip",
+      "sha256": "561a669e8c6963768d4b9c60411e91aba36bdc0bdb2dec0781e0519e0e07c16b",
+      "note": "Original Ver1.16 full-source candidate built directly from accepted Ver1.15 full source."
+    },
+    "applied_artifacts": [
+      {
+        "filename": "PSLog_1.16_FIX1_DIFF.zip",
+        "sha256": "697a5071844262cf3a2f27527acbd467c3be0b0785339ce9b54034cbdc66af7c",
+        "note": "Radio settings redesigned around model selection, AUTO COM/baud and connection test."
+      },
+      {
+        "filename": "PSLog_1.16_FIX2_DIFF.zip",
+        "sha256": "9343075779e7c2ec1b094daa475fb175362350b4122064f126ed9c5b764a1c40",
+        "note": "Serial safety: DTR/RTS off before open; Hamlib PTT/DTR/RTS safety."
+      },
+      {
+        "filename": "PSLog_1.16_FIX3_DIFF.zip",
+        "sha256": "a4a64195385a3b8c8abe24da2d397649af51ddeda8e6a25f2afce4e633484e74",
+        "note": "Direct radio settings menu, normal connect/disconnect controls, com0com help and discovery."
+      },
+      {
+        "filename": "PSLog_1.16_FIX4_DIFF.zip",
+        "sha256": "d033dcc4cb5d9c77ca9862f4e21a310dafe1d8adfd40f04f3a1e2ff17b279703",
+        "note": "Physical radio connection decoupled from virtual COM startup failures."
+      },
+      {
+        "filename": "PSLog_1.16_FIX5_DIFF.zip",
+        "sha256": "a798c434e00ffb217d5e1b7a38ac1c42a2ae724a83ce3b3db0604417a5028b4a",
+        "note": "Persistent virtual COM model; explicit create/delete; larger bold frequency display."
+      },
+      {
+        "filename": "PSLog_1.16_FIX6_DIFF.zip",
+        "sha256": "a2a15e6eac3049928cc300db14bdf3697fbaaffcdd3bec7e63b27af1a52b592a",
+        "note": "Transient Windows file replacement retry with external-change protection."
+      },
+      {
+        "filename": "PSLog_1.16_FIX7_DIFF.zip",
+        "sha256": "00dac9e1bca186d3dd5f68aa07cbbe0e9c869ce4d2aebd73e26657257415686e",
+        "note": "Virtual COM redesign to external/internal real COM pair and separate settings tab."
+      },
+      {
+        "filename": "PSLog_1.16_FIX8_DIFF.zip",
+        "sha256": "f86e73b02f3d05cb2c4e0968d947e7fadffc207535d145b2cdc316afcedb52c8",
+        "note": "Small-screen SettingsDialog scroll/layout fix."
+      },
+      {
+        "filename": "PSLog_1.16_FIX9_DIFF.zip",
+        "sha256": "e352057d8bff81e475a92b2d9a37f8b0203f40ce85015e36c5c595d3b2dc95a4",
+        "note": "Elevated setupc working-directory fix; verified by user on Windows."
+      }
+    ],
+    "canonical_release_adjustments": [
+      "Integrated accepted FIX1 through FIX9 in order.",
+      "Moved FIX1-FIX9 README/manifest artifacts to docs/history/ver1.16-fixes/.",
+      "Updated entry, baseline, validation, Windows checklist, user guide and update-history documentation to the final persistent virtual-COM design.",
+      "No new runtime behavior was added during canonicalization beyond the accepted FIX9 state."
+    ],
+    "rule": "Future development must start from this Ver1.16 canonical ZIP only. Do not reconstruct by replaying PSLog_1.16_FULL_SOURCE.zip plus FIX1-FIX9."
+  },
+  "release_highlights": [
+    "One-radio frequency information with model-based Icom CI-V or Hamlib/rigctld configuration, AUTO COM/baud, startup auto-connect, connection test and direct connect/disconnect.",
+    "Compact main frequency display and opt-in RMKS1/RMKS2/Band auto-set on callsign RETURN; MODE is never changed.",
+    "Serial safety forces DTR/RTS off before opening CI-V/virtual ports and disables modem PTT lines for Hamlib.",
+    "Persistent one-client CI-V virtual COM relay using an already-installed com0com: COM8 prefers COM208 external / COM209 internal, then +100 on conflict.",
+    "Virtual COM devices are created/deleted only on explicit user action with UAC and persist across ordinary PSLog shutdown; normal connect/disconnect only controls relay handles.",
+    "Elevated setupc operations run from the setupc.exe directory so com0com INF files resolve correctly; user confirmed successful creation after FIX9.",
+    "Transient Windows file replacement locks are retried safely while external-change detection remains authoritative.",
+    "Existing contest log edits/QSL workbench saves preserve nonnumeric contest exchange values in RST fields while ordinary QSO validation remains strict."
+  ],
+  "verification": {
+    "canonicalization_compileall": "OK",
+    "targeted_regression": "30 tests OK: FIX1/FIX2/FIX3/FIX4/FIX5/FIX7/FIX9 radio/virtual-COM plus FIX6 storage retry and Ver1.16 core.",
+    "full_discovery_linux": "549 tests run; 0 FAIL assertions; 69 ERROR are PySide6-not-installed ModuleNotFoundError paths; 9 skipped.",
+    "user_windows_acceptance": "2026-10-13: after FIX9, user reported virtual COM creation succeeded (\"うまくいきました。これを今後ベースにできるはずです\") and explicitly requested Ver1.16 canonicalization including FIX9.",
+    "known_scope": "Long-duration external-client relay and broader Hamlib/com0com environment variation remain future operational validation items."
+  },
+  "external_runtime_notes": {
+    "pyserial": "Python dependency included by the Windows build.",
+    "hamlib": "rigctld.exe is external and not bundled.",
+    "virtual_com": "Requires a compatible installed com0com driver/setupc.exe. PSLog does not bundle or install the kernel driver."
+  },
+  "source_tree": {
+    "files_excluding_manifest": 1204,
+    "sha256_excluding_manifest": "ee57f42eba00d1b4163cdfc78be129e26e80eff5d6c717fd3d5674aee804d891",
+    "hash_method": "SHA-256 over sorted UTF-8 relative path, NUL, per-file SHA-256 hex, newline; only root SOURCE_MANIFEST.json excluded."
+  }
+}

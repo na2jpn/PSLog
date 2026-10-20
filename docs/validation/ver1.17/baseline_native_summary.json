@@ -1,0 +1,47 @@
+[
+  {
+    "module": "test_final9",
+    "returncode": -7,
+    "summary_ok": true
+  },
+  {
+    "module": "test_final9_completion",
+    "returncode": -11,
+    "summary_ok": true
+  },
+  {
+    "module": "test_patch04_1074",
+    "returncode": 0,
+    "summary_ok": true
+  },
+  {
+    "module": "test_pota_gui",
+    "returncode": 0,
+    "summary_ok": true
+  },
+  {
+    "module": "test_remaining9",
+    "returncode": -11,
+    "summary_ok": true
+  },
+  {
+    "module": "test_regional_2026",
+    "returncode": -11,
+    "summary_ok": true
+  },
+  {
+    "module": "test_search_special_handoff_gui",
+    "returncode": -11,
+    "summary_ok": true
+  },
+  {
+    "module": "test_sota",
+    "returncode": -11,
+    "summary_ok": true
+  },
+  {
+    "module": "test_remaining28",
+    "returncode": -11,
+    "summary_ok": true
+  }
+]

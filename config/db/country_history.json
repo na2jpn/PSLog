@@ -1,0 +1,205 @@
+{
+  "schema": 1,
+  "updated": "2026-10-20",
+  "names": [
+    {
+      "canonical": "Nauru",
+      "aliases": [
+        "Nauru",
+        "Naoero",
+        "Republic of Naoero"
+      ],
+      "source": "https://metadata.un.org/skosmos/thesaurus/en/page/1004349",
+      "boundary_basis": "source calendar date; exact instant unspecified",
+      "periods": [
+        {
+          "from": "0001-01-01",
+          "until": "2026-06-26",
+          "name": "Nauru"
+        },
+        {
+          "from": "2026-06-26",
+          "name": "Naoero"
+        }
+      ]
+    },
+    {
+      "canonical": "Eswatini",
+      "aliases": [
+        "Eswatini",
+        "Swaziland"
+      ],
+      "source": "https://metadata.un.org/skosmos/thesaurus/en/page/1006325",
+      "boundary_basis": "source calendar date; exact instant unspecified",
+      "periods": [
+        {
+          "from": "0001-01-01",
+          "until": "2018-04-19",
+          "name": "Swaziland"
+        },
+        {
+          "from": "2018-04-19",
+          "name": "Eswatini"
+        }
+      ]
+    },
+    {
+      "canonical": "North Macedonia",
+      "aliases": [
+        "Macedonia",
+        "N.Macedonia"
+      ],
+      "source": "https://press.un.org/en/2019/sgsm19460.doc.htm",
+      "boundary_basis": "source calendar date; exact instant unspecified",
+      "periods": [
+        {
+          "from": "0001-01-01",
+          "until": "2019-02-12",
+          "name": "Macedonia"
+        },
+        {
+          "from": "2019-02-12",
+          "name": "North Macedonia"
+        }
+      ]
+    },
+    {
+      "canonical": "Asiatic Turkey",
+      "aliases": [
+        "Turkey",
+        "Türkiye",
+        "Asiatic Türkiye",
+        "European Turkey"
+      ],
+      "source": "https://metadata.un.org/skosmos/thesaurus/en/page/1006742",
+      "boundary_basis": "source calendar date; exact instant unspecified",
+      "periods": [
+        {
+          "from": "0001-01-01",
+          "until": "2022-05-26",
+          "name": "Asiatic Turkey"
+        },
+        {
+          "from": "2022-05-26",
+          "name": "Asiatic Türkiye"
+        }
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "id": "PJ2",
+      "name": "Curacao",
+      "from_utc": "2010-10-10T04:00:00Z"
+    },
+    {
+      "id": "PJ4",
+      "name": "Bonaire",
+      "from_utc": "2010-10-10T04:00:00Z"
+    },
+    {
+      "id": "PJ5",
+      "name": "Saba & St. Eustatius",
+      "from_utc": "2010-10-10T04:00:00Z"
+    },
+    {
+      "id": "PJ7",
+      "name": "Sint Maarten",
+      "from_utc": "2010-10-10T04:00:00Z"
+    },
+    {
+      "id": "deleted:85",
+      "name": "Bonaire, Curacao",
+      "aliases": [
+        "Bonaire Curacao",
+        "Netherlands Antilles South"
+      ],
+      "deleted": true,
+      "until_utc": "2010-10-10T04:00:00Z"
+    },
+    {
+      "id": "deleted:255",
+      "name": "St. Maarten, Saba, St. Eustatius",
+      "aliases": [
+        "Netherlands Antilles North"
+      ],
+      "deleted": true,
+      "until_utc": "2010-10-10T04:00:00Z"
+    },
+    {
+      "id": "deleted:134",
+      "name": "Kingman Reef",
+      "aliases": [
+        "Kingman"
+      ],
+      "deleted": true,
+      "through_date": "2016-03-29",
+      "boundary_basis": "ARRL deleted list footnote includes contacts through March 29; dates only"
+    },
+    {
+      "id": "deleted:151",
+      "name": "Malyj Vysotskij Island",
+      "aliases": [
+        "Malyj Vysotskij I."
+      ],
+      "deleted": true,
+      "through_date": "2012-02-16"
+    },
+    {
+      "id": "deleted:229",
+      "name": "German Democratic Republic",
+      "aliases": [
+        "East Germany",
+        "GDR"
+      ],
+      "deleted": true,
+      "from_date": "1973-09-17",
+      "through_date": "1990-10-02"
+    },
+    {
+      "id": "deleted:218",
+      "name": "Czechoslovakia",
+      "deleted": true,
+      "through_date": "1992-12-31"
+    },
+    {
+      "id": "deleted:193",
+      "name": "Okinawa (Ryukyu Is.)",
+      "aliases": [
+        "Ryukyu Islands"
+      ],
+      "deleted": true,
+      "through_date": "1972-05-14"
+    },
+    {
+      "id": "Z6",
+      "name": "Republic of Kosovo",
+      "aliases": [
+        "Kosovo"
+      ],
+      "from_utc": "2018-01-21T00:00:00Z"
+    }
+  ],
+  "aliases": {
+    "U.S.A.": "United States",
+    "USA": "United States",
+    "Germany": "Fed. Rep. of Germany",
+    "CzechRep": "Czech Republic",
+    "SlovakRep": "Slovak Republic",
+    "South-Korea": "Republic of Korea",
+    "RussiaAS": "Asiatic Russia",
+    "RussiaEU": "European Russia",
+    "N.Macedonia": "North Macedonia",
+    "UAE": "United Arab Emirates",
+    "Taiwan": "Taiwan",
+    "FijiRotumaIs": "Rotuma Island"
+  },
+  "sources": [
+    "https://www.arrl.org/country-lists-prefixes",
+    "https://www.arrl.org/files/file/DXCC/2019_DXCC_Deleted_June.pdf",
+    "https://www.arrl.org/news/dissolution-of-netherlands-antilles-creates-four-new-dxcc-entities",
+    "https://www.arrl.org/news/view/kingman-reef-kh5-deleted-from-dxcc-list",
+    "https://www.arrl.org/news/view/amendment-to-arrl-dxcc-rules-will-expand-dxcc-list"
+  ],
+  "coverage_note": "Reviewed name changes and selected historical entity periods; not a complete historical prefix/expedition database. Unknown written QTH or pre-1991 prefix-only hints require review. CTY primary prefix is the stable internal entity key; deleted entity keys include the ADIF code."
+}

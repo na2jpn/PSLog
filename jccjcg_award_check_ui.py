@@ -7,10 +7,11 @@ prefecture.  The award aggregation itself stays read-only.
 from PySide6.QtCore import Qt,QObject,QThread,Signal,Slot
 from PySide6.QtWidgets import (
     QDialog,QVBoxLayout,QHBoxLayout,QLabel,QComboBox,QCheckBox,QPushButton,
-    QTreeWidget,QTreeWidgetItem,QHeaderView,QAbstractItemView,QProgressBar,
+    QTreeWidget,QTreeWidgetItem,QHeaderView,QAbstractItemView,QProgressBar,QWidget,QMessageBox,
 )
 
 from storage import VERSION,StorageError
+from award_applications import Applications
 from logbook_sources import amateur_station_calls,base_station_call
 from jccjcg_award_check import aggregate,STATE_NONE,STATE_TEXT,BAND_LABEL
 from window_tint import apply_window_tint
@@ -44,10 +45,12 @@ class JccJcgAwardCheckDialog(QDialog):
     def __init__(self,repo,preferred='',parent=None):
         super().__init__(parent);self.repo=repo;self.result=None
         self._thread=None;self._worker=None
+        self.applications=Applications(repo.root);self.application_entries={}
         self.setWindowTitle(f'PSLog Ver{VERSION} — JCC/JCG交信チェック');self.resize(1220,760);apply_window_tint(self,'award')
         outer=QVBoxLayout(self)
         note=QLabel('※「集計」を押すと対象のアマチュア無線ログ全体を確認します。ログ件数・交信件数によっては処理に時間がかかる場合があります。')
         note.setWordWrap(True);outer.addWidget(note)
+        outer.addWidget(QLabel("チェックはアワード申請済を表します（QSL請求済ではありません）。全バンド・各バンドは独立して保存します。"))
         row=QHBoxLayout();row.addWidget(QLabel('対象自局コール'))
         self.own=QComboBox();calls=amateur_station_calls(repo)
         if calls:
@@ -74,7 +77,7 @@ class JccJcgAwardCheckDialog(QDialog):
     def _empty_tree(self):
         self.tree.clear();self.tree.setColumnCount(4);self.tree.setHeaderLabels(['区分','コード','地域名','全バンド'])
         self.tree.header().setSectionResizeMode(QHeaderView.ResizeMode.Interactive)
-        self.tree.setColumnWidth(0,120);self.tree.setColumnWidth(1,90);self.tree.setColumnWidth(2,240);self.tree.setColumnWidth(3,90)
+        self.tree.setColumnWidth(0,240);self.tree.setColumnWidth(1,90);self.tree.setColumnWidth(2,240);self.tree.setColumnWidth(3,165)
 
     @staticmethod
     def _state_text(value):return STATE_TEXT.get(value,'—')
@@ -102,6 +105,9 @@ class JccJcgAwardCheckDialog(QDialog):
 
     @Slot(object)
     def _aggregate_completed(self,result):
+        try:self.application_entries=self.applications.entries()
+        except (StorageError,OSError) as e:
+            self._aggregate_failed(str(e));return
         self.result=result;self._render(result)
         problem=f'／要確認 {len(result.problems):,}件' if result.problems else ''
         self.status.setText(f'{result.files:,}ファイル・{result.qsos:,}交信を確認、JCC/JCGコード一致 {result.matched:,}交信{problem}。都道府県は折りたたみ表示で、開いた県だけ詳細を読み込みます。')
@@ -119,19 +125,22 @@ class JccJcgAwardCheckDialog(QDialog):
 
     def _render(self,result):
         """Render only the 47 prefecture rows; children are created on demand."""
+        self.result=result
         self.tree.setUpdatesEnabled(False)
         try:
             self.tree.clear();headers=['区分','コード','地域名','全バンド']+[BAND_LABEL.get(b,b) for b in result.bands]
             self.tree.setColumnCount(len(headers));self.tree.setHeaderLabels(headers)
             header=self.tree.header();header.setSectionResizeMode(QHeaderView.ResizeMode.Interactive)
-            self.tree.setColumnWidth(0,120);self.tree.setColumnWidth(1,90);self.tree.setColumnWidth(2,240);self.tree.setColumnWidth(3,90)
-            for col in range(4,len(headers)):self.tree.setColumnWidth(col,78)
+            self.tree.setColumnWidth(0,240);self.tree.setColumnWidth(1,90);self.tree.setColumnWidth(2,240);self.tree.setColumnWidth(3,165)
+            for col in range(4,len(headers)):self.tree.setColumnWidth(col,165)
             for index,pref in enumerate(result.prefectures):
                 summary=pref.folded_summary();title=f'{pref.code}.{pref.name}'+(('　'+summary) if summary else '')
                 parent=QTreeWidgetItem([title]+['']*(len(headers)-1));parent.setExpanded(False)
+                parent.setToolTip(0,title)
                 parent.setData(0,Qt.ItemDataRole.UserRole,index)
                 parent.setChildIndicatorPolicy(QTreeWidgetItem.ChildIndicatorPolicy.ShowIndicator)
-                font=parent.font(0);font.setBold(True);parent.setFont(0,font);self.tree.addTopLevelItem(parent);parent.setFirstColumnSpanned(True)
+                font=parent.font(0);font.setBold(True);parent.setFont(0,font);self.tree.addTopLevelItem(parent)
+                for col,band in enumerate(('*',)+result.bands,3):self._pref_counts(parent,pref,col,band)
         finally:self.tree.setUpdatesEnabled(True)
 
     @Slot(QTreeWidgetItem)
@@ -148,9 +157,31 @@ class JccJcgAwardCheckDialog(QDialog):
                 values=[loc.kind,loc.code,loc.name,self._state_text(loc.all_state)]+[self._state_text(loc.states.get(b,STATE_NONE)) for b in self.result.bands]
                 item=QTreeWidgetItem(values);parent.addChild(item)
                 for col,value in enumerate(values[3:],3):
+                    band=(('*',)+self.result.bands)[col-3]
+                    cell=QWidget();layout=QHBoxLayout(cell);layout.setContentsMargins(2,0,2,0)
+                    check=QCheckBox();check.setToolTip('アワード申請済')
+                    check.setChecked(self.applications.checked(self.result.own,loc.kind,loc.code,band,self.application_entries))
+                    check.toggled.connect(lambda checked,l=loc,b=band,c=check,p=parent:self._application_changed(l,b,checked,c,p))
+                    layout.addWidget(check);layout.addWidget(QLabel(value));layout.addStretch();item.setText(col,'');self.tree.setItemWidget(item,col,cell)
                     if value=='QSL済':item.setToolTip(col,'QSL受領済')
                     elif value=='交信済':item.setToolTip(col,'交信済・QSL未受領')
         finally:self.tree.setUpdatesEnabled(True)
+
+    def _pref_counts(self,parent,pref,col,band):
+        confirmed=sum((loc.all_state if band=='*' else loc.states.get(band,0))>=2 for loc in pref.locations)
+        applied=sum(self.applications.checked(self.result.own,loc.kind,loc.code,band,self.application_entries) for loc in pref.locations)
+        parent.setText(col,f'QSL済 {confirmed}  申請済 {applied}')
+        font=parent.font(col);font.setPointSize(max(7,font.pointSize()-1));parent.setFont(col,font)
+
+    def _application_changed(self,loc,band,checked,check,parent):
+        try:
+            self.applications.set(self.result.own,loc.kind,loc.code,band,checked)
+            self.application_entries=self.applications.entries()
+        except (StorageError,OSError,ValueError) as e:
+            check.blockSignals(True);check.setChecked(not checked);check.blockSignals(False)
+            QMessageBox.warning(self,'保存できません',str(e));return
+        pref=self.result.prefectures[int(parent.data(0,Qt.ItemDataRole.UserRole))]
+        for col,b in enumerate(('*',)+self.result.bands,3):self._pref_counts(parent,pref,col,b)
 
     def reject(self):
         if self._thread is not None and self._thread.isRunning():

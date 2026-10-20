@@ -23,6 +23,8 @@ class Criteria:
     mode: str = ''
     start: str = ''
     end: str = ''
+    exact_filename: bool = False
+    exact_call: bool = False
 
     def validate(self):
         validate_station(self.own, '')
@@ -215,6 +217,7 @@ def search(repo, criteria):
         if not identity: continue
         actual = identity[1]
         if not (actual == own or (criteria.portable and actual.startswith(own+'/'))): continue
+        if criteria.exact_filename and criteria.filename.casefold()!=path.name.casefold():continue
         if criteria.filename.casefold() not in path.name.casefold(): continue
         count += 1
         try: session = repo.open(path)
@@ -222,6 +225,7 @@ def search(repo, criteria):
             problems.append(f'{path.name}: {e}'); continue
         problems.extend(f'{path.name}:{i.line} {i.reason}' for i in session.log.issues)
         for line,q in session.log.records:
+            if criteria.exact_call and criteria.call.casefold()!=q.call.casefold():continue
             stamp = q.date.replace('-','') + q.time.replace(':','') + '00'
             if start_key and stamp < start_key: continue
             if end_key and stamp > end_key: continue

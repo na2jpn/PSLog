@@ -13,7 +13,7 @@ from locations import load,find,candidates
 
 class Patch061076CoreTests(unittest.TestCase):
     def test_version(self):
-        self.assertEqual(VERSION,'1.16')
+        self.assertEqual(VERSION,'1.20')
 
     def test_easy_title_slots_limit_and_restore(self):
         empty=easy_session(1,{'own':''})

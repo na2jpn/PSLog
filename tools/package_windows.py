@@ -14,10 +14,10 @@ from update_package import (
     REQUIRED_MANAGED_ROOTS, LEGACY_MANAGED_ROOTS_1042, LEGACY_MANAGED_ROOTS_1041,
 )
 
-REQUIRED=('locations.json','aja_locations.json','club_db.csv','club_db_meta.json','cty.dat','cty_meta.json','cty_LICENSE.txt')
+REQUIRED=('locations.json','aja_locations.json','club_db.csv','club_db_meta.json','cty.dat','cty_meta.json','country_history.json','cty_LICENSE.txt')
 PDFS=('toyama_OSOSUMMARY.pdf','toyama_QSOLOG.pdf')
 FORBIDDEN={'conf.cfg','location_overrides.json','submit_profiles.json'}
-BUNDLED_DIRS=(Path('config/rules'),Path('config/db/contest'),Path('config/templates/cabrillo'))
+BUNDLED_DIRS=(Path('assets/sounds'),Path('config/rules'),Path('config/db/contest'),Path('config/templates/cabrillo'))
 RETIRED_ROOT_DOCS=('USER_GUIDE.txt','SAVE_LOCATION.md','WINDOWS_CHECKLIST.txt')
 UPDATE_HISTORY=Path('meta/UPDATE_HISTORY.txt')
 

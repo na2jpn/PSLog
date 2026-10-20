@@ -136,7 +136,7 @@ def contest_session(name, event_ym, call='', band='7', mode='SSB', my_qth=''):
         'contest_name':clean_contest_name(name),
         'event_ym':clean_event_ym(event_ym),
         'band':machine_text(band or '7'), 'mode':machine_text(mode or 'SSB',upper=True),
-        'my_qth':str(my_qth or ''), 'limited':True,
+        'my_qth':str(my_qth or ''), 'limited':True, 'own_exchange':'',
     }
 
 
@@ -244,6 +244,7 @@ def _normal_contest(raw, fallback, now_ym):
         _text(raw.get('my_qth'),fallback.get('my_qth','')))
     s['id']=_text(raw.get('id')) or _id()
     s['limited']=bool(raw.get('limited',True))
+    s['own_exchange']=machine_text(_text(raw.get('own_exchange')),upper=True)
     return s
 
 
@@ -325,7 +326,7 @@ def restore(settings, now=None):
 
 
 def serializable(session):
-    allowed=('id','type','slot','call','suffix','band','mode','my_qth','limited','rmks2_visible','contest_name','event_ym','free_type','model')
+    allowed=('id','type','slot','call','suffix','band','mode','my_qth','limited','rmks2_visible','contest_name','event_ym','free_type','model','own_exchange')
     return {k:deepcopy(session[k]) for k in allowed if k in session}
 
 

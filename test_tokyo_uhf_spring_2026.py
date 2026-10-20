@@ -66,7 +66,7 @@ class TokyoNewTests(ExportFixture):
   r=urule();v=ctx(r,'2XA');rows=[row(mode=m,call='JA1AA'+chr(65+i)) for i,m in enumerate(['CW','FM','SSB','RTTY','FT8','FT4','DV','C4FM','FUTUREMODE'])];s=score(r,rows,v);self.assertEqual(s.total,18,s.problems)
   rows=[row(mode=m) for m in ['CW','SSB','FT8','FUTUREMODE']];self.assertEqual([x['points'] for x in score(r,rows,v).rows],[2,0,0,0])
   # A different event with a fixed mode list still excludes non-CW modes.
-  cw=rule('tokyo_cw');self.assertEqual(score(cw,[row(date='2026-10-25',time='06:00',mode='FT8')],context(cw,'1CA')).points,0)
+  cw=rule('tokyo_cw');self.assertEqual(score(cw,[row(date='2026-10-25',time='06:00',mode='FT8')],context(cw,'2CA')).points,0)
  def test_youth_age_source_and_legacy_r21_unchanged(self):
   for r,q,code in [(urule(),row(),'2YA'),(srule(),srow(mode='SSB'),'2YA')]:
    v=ctx(r,code);p,before,sel,draft,info=self.fixture(r,[q],v,comments='試験')
@@ -83,7 +83,7 @@ class TokyoNewTests(ExportFixture):
   rows=[srow(mode='SSB'),srow(mode='SSB',band='430'),srow(mode='SSB',time='15:00'),srow(mode='SSB',date='2027-05-03')];s=score(r,rows,v);self.assertEqual([x['points'] for x in s.rows],[2,0,0,0])
   self.assertNotIn('tokyo-contest@',r['event']['submission']['instructions']);db=json.loads((ROOT/'config/db/contest/tokyo_2026.json').read_text(encoding='utf-8'));self.assertEqual((db['year'],db['version']),(2026,'20240331'));self.assertIn('01',r['event']['exchange']['codes']);self.assertNotIn('48',r['event']['exchange']['codes'])
  def test_contest_code_directions_and_participant_distinct_from_opponent(self):
-  cw=rule('tokyo_cw');self.assertEqual(score(cw,[row(date='2026-10-25',time='06:00')],context(cw,'1CA')).total,2)
+  cw=rule('tokyo_cw');self.assertEqual(score(cw,[row(date='2026-10-25',time='06:00')],context(cw,'2CA')).total,2)
   for r,q,code in [(urule(),row(),'2XA'),(srule(),srow(),'2CA')]:
    v=ctx(r,code);self.assertEqual(score(r,[dict(q,call='JA1RL')],v).total,2)
    self.assertIsNone(score(r,[dict(q,sent='002')],v).total);v['station_type']='club';self.assertIsNone(score(r,[q],v).total);v['submission_mode']='checklog';self.assertIsNone(score(r,[q],v).total)

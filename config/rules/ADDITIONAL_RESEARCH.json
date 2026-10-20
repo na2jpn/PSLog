@@ -44,13 +44,13 @@
     },
     {
       "id": "cq-ww-ssb",
-      "year": 2025,
+      "year": 2026,
       "name": "CQ WW DX SSB",
       "organizer": "CQ WW DX Contest Committee",
-      "rules_url": "https://cqww.com/rules.htm",
-      "status": "2025定義・自動試験済み（主催受付・Windows実機未検証）",
-      "implementation_note": "docs/contest-research/extra_cqww_dx_2025_reference.md",
-      "rule_file": "cq-ww-ssb_2025.txt",
+      "rules_url": "https://cqww.com/rules/",
+      "status": "2026年公式規約反映・1.19自動試験済み（Windows実機未検証）",
+      "implementation_note": "docs/contest-research/PSLOG119_RULE_CHANGES.md",
+      "rule_file": "cq-ww-ssb_2026.txt",
       "rule_files": [
         "cq-ww-ssb_2025.txt"
       ],
@@ -58,13 +58,13 @@
     },
     {
       "id": "cq-ww-cw",
-      "year": 2025,
+      "year": 2026,
       "name": "CQ WW DX CW",
       "organizer": "CQ WW DX Contest Committee",
-      "rules_url": "https://cqww.com/rules.htm",
-      "status": "2025定義・自動試験済み（主催受付・Windows実機未検証）",
-      "implementation_note": "docs/contest-research/extra_cqww_dx_2025_reference.md",
-      "rule_file": "cq-ww-cw_2025.txt",
+      "rules_url": "https://cqww.com/rules/",
+      "status": "2026年公式規約反映・1.19自動試験済み（Windows実機未検証）",
+      "implementation_note": "docs/contest-research/PSLOG119_RULE_CHANGES.md",
+      "rule_file": "cq-ww-cw_2026.txt",
       "rule_files": [
         "cq-ww-cw_2025.txt"
       ],

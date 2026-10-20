@@ -1,0 +1,1136 @@
+[
+  {
+    "module": "test_activity_stage8",
+    "exit": 0,
+    "tests": 15,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_adif_band_consistency",
+    "exit": 0,
+    "tests": 4,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_adif_bureau_import",
+    "exit": 0,
+    "tests": 4,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_adif_countries",
+    "exit": 0,
+    "tests": 3,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_adif_gui",
+    "exit": 0,
+    "tests": 1,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_adif_import",
+    "exit": 0,
+    "tests": 7,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_adif_locations",
+    "exit": 0,
+    "tests": 3,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_adif_modes",
+    "exit": 0,
+    "tests": 4,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_adif_names",
+    "exit": 0,
+    "tests": 4,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_adif_paper_qsl",
+    "exit": 0,
+    "tests": 4,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_adif_qsl",
+    "exit": 0,
+    "tests": 4,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_ai_chikyu_2026",
+    "exit": 0,
+    "tests": 14,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_aja_stage9",
+    "exit": 0,
+    "tests": 9,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_all_chiba_2026",
+    "exit": 0,
+    "tests": 10,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_all_ja_2tx",
+    "exit": 0,
+    "tests": 11,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_all_ja_categories",
+    "exit": 0,
+    "tests": 13,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_all_okayama_2026",
+    "exit": 0,
+    "tests": 10,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_all_osaka_2026",
+    "exit": 0,
+    "tests": 10,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_app_paths",
+    "exit": 0,
+    "tests": 3,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_batch_recovery",
+    "exit": 0,
+    "tests": 3,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_blacklist",
+    "exit": 0,
+    "tests": 3,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_blacklist_gui",
+    "exit": 0,
+    "tests": 3,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_contest",
+    "exit": 0,
+    "tests": 13,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_contest_areas",
+    "exit": 0,
+    "tests": 3,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_contest_band_exchange",
+    "exit": 0,
+    "tests": 10,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_contest_batch10",
+    "exit": 0,
+    "tests": 20,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_contest_countries",
+    "exit": 0,
+    "tests": 2,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_contest_event",
+    "exit": 0,
+    "tests": 7,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_contest_export",
+    "exit": 0,
+    "tests": 17,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_contest_rule_view_audit_87",
+    "exit": 0,
+    "tests": 4,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_contest_rule_view_remaining71",
+    "exit": 0,
+    "tests": 4,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_contest_rule_view_verified_15",
+    "exit": 0,
+    "tests": 5,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_contest_score_ui",
+    "exit": 0,
+    "tests": 3,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_contest_submission_import",
+    "exit": 0,
+    "tests": 4,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_contest_tasks",
+    "exit": 0,
+    "tests": 2,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_contest_timing",
+    "exit": 0,
+    "tests": 21,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_contest_workflow",
+    "exit": 0,
+    "tests": 3,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_countries",
+    "exit": 0,
+    "tests": 4,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_dialog_access",
+    "exit": 0,
+    "tests": 1,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_export_gui",
+    "exit": 0,
+    "tests": 1,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_export_search_handoff",
+    "exit": 0,
+    "tests": 1,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_exporting",
+    "exit": 0,
+    "tests": 8,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_field_day_categories",
+    "exit": 0,
+    "tests": 13,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_final9",
+    "exit": -7,
+    "tests": 6,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_final9_completion",
+    "exit": -11,
+    "tests": 8,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_free_radio_111",
+    "exit": 0,
+    "tests": 8,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_fukuoka_2026",
+    "exit": 0,
+    "tests": 10,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_full_restore",
+    "exit": 0,
+    "tests": 6,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_gui",
+    "exit": 0,
+    "tests": 1,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_hamlog_export_fields",
+    "exit": 0,
+    "tests": 3,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_hamlog_gui",
+    "exit": 0,
+    "tests": 1,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_hamlog_import",
+    "exit": 0,
+    "tests": 7,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_import_gui",
+    "exit": 0,
+    "tests": 1,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_importing",
+    "exit": 0,
+    "tests": 10,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_initial_start_114",
+    "exit": 0,
+    "tests": 5,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_input_feedback",
+    "exit": 0,
+    "tests": 2,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_input_normalization",
+    "exit": 0,
+    "tests": 6,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_jarl_station_fd",
+    "exit": 0,
+    "tests": 11,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_jarl_summary_required",
+    "exit": 0,
+    "tests": 4,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_last6",
+    "exit": 0,
+    "tests": 8,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_locations",
+    "exit": 0,
+    "tests": 5,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_log_merge",
+    "exit": 0,
+    "tests": 6,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_log_merge_gui",
+    "exit": 0,
+    "tests": 2,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_mode_text",
+    "exit": 0,
+    "tests": 3,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_multi_extract",
+    "exit": 0,
+    "tests": 3,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_patch01_1061",
+    "exit": 0,
+    "tests": 11,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_patch01_1071",
+    "exit": 0,
+    "tests": 5,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_patch02_1061",
+    "exit": 0,
+    "tests": 9,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_patch02_1072",
+    "exit": 0,
+    "tests": 9,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_patch03",
+    "exit": 0,
+    "tests": 4,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_patch03_1063",
+    "exit": 0,
+    "tests": 6,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_patch03_1073",
+    "exit": 0,
+    "tests": 6,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_patch04",
+    "exit": 0,
+    "tests": 5,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_patch04_1064",
+    "exit": 0,
+    "tests": 7,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_patch04_1074",
+    "exit": 0,
+    "tests": 8,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_patch05",
+    "exit": 0,
+    "tests": 9,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_patch05_1065",
+    "exit": 0,
+    "tests": 7,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_patch05_1075",
+    "exit": 0,
+    "tests": 6,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_patch06",
+    "exit": 0,
+    "tests": 5,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_patch06_1066",
+    "exit": 0,
+    "tests": 5,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_patch06_1076",
+    "exit": 0,
+    "tests": 6,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_patch06_fix1",
+    "exit": 0,
+    "tests": 2,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_patch07",
+    "exit": 0,
+    "tests": 6,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_patch07_1057",
+    "exit": 0,
+    "tests": 3,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_patch07_1067",
+    "exit": 0,
+    "tests": 4,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_patch07_1077",
+    "exit": 0,
+    "tests": 7,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_patch07_embedded_logsearch",
+    "exit": 0,
+    "tests": 1,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_patch07_fix2",
+    "exit": 0,
+    "tests": 1,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_patch08",
+    "exit": 0,
+    "tests": 8,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_patch08_1058",
+    "exit": 0,
+    "tests": 5,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_patch08_1068",
+    "exit": 0,
+    "tests": 3,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_patch08_1078",
+    "exit": 0,
+    "tests": 3,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_patch08_fix1_1068",
+    "exit": 0,
+    "tests": 4,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_patch09",
+    "exit": 0,
+    "tests": 5,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_patch09_1059",
+    "exit": 0,
+    "tests": 8,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_patch09_1069",
+    "exit": 0,
+    "tests": 2,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_patch09_fix1",
+    "exit": 0,
+    "tests": 5,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_patch09_gui",
+    "exit": 0,
+    "tests": 2,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_patch10",
+    "exit": 0,
+    "tests": 5,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_patch10_1070",
+    "exit": 0,
+    "tests": 3,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_patch10_1070_core",
+    "exit": 0,
+    "tests": 4,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_postal_locations",
+    "exit": 0,
+    "tests": 4,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_pota",
+    "exit": 0,
+    "tests": 7,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_pota_gui",
+    "exit": 0,
+    "tests": 2,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_pslog115",
+    "exit": 0,
+    "tests": 3,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_qsl_batch",
+    "exit": 0,
+    "tests": 11,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_qsl_gui",
+    "exit": 0,
+    "tests": 4,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_radio_control_116",
+    "exit": 0,
+    "tests": 4,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_radio_fix3",
+    "exit": 0,
+    "tests": 3,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_radio_fix4",
+    "exit": 0,
+    "tests": 3,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_radio_fix5",
+    "exit": 0,
+    "tests": 4,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_radio_fix7",
+    "exit": 0,
+    "tests": 5,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_radio_fix9",
+    "exit": 0,
+    "tests": 2,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_radio_safety_fix2",
+    "exit": 0,
+    "tests": 2,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_radio_settings_fix1",
+    "exit": 0,
+    "tests": 5,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_reference_db",
+    "exit": 0,
+    "tests": 10,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_regional_2026",
+    "exit": -11,
+    "tests": 27,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_release_106",
+    "exit": 0,
+    "tests": 5,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_remaining28",
+    "exit": 0,
+    "tests": 24,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_remaining9",
+    "exit": -11,
+    "tests": 16,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_restore_gui",
+    "exit": 0,
+    "tests": 7,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_rule_catalog",
+    "exit": 0,
+    "tests": 3,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_rule_pack",
+    "exit": 0,
+    "tests": 12,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_rule_pack_ui",
+    "exit": 0,
+    "tests": 2,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_saga_rule",
+    "exit": 0,
+    "tests": 6,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_scoring_progress",
+    "exit": 0,
+    "tests": 3,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_search",
+    "exit": 0,
+    "tests": 10,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_search_gui",
+    "exit": 0,
+    "tests": 10,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_search_special_handoff_gui",
+    "exit": -11,
+    "tests": 2,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_session_state",
+    "exit": 0,
+    "tests": 8,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_session_tabs_gui",
+    "exit": 0,
+    "tests": 4,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_settings",
+    "exit": 0,
+    "tests": 7,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_six_meter_2026",
+    "exit": 0,
+    "tests": 12,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_sota",
+    "exit": -11,
+    "tests": 6,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_special_awards_stage1011",
+    "exit": 0,
+    "tests": 11,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_storage",
+    "exit": 0,
+    "tests": 17,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_storage_replace_retry_fix6",
+    "exit": 0,
+    "tests": 3,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_tokyo_uhf_spring_2026",
+    "exit": 0,
+    "tests": 14,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_tottori_gigahertz_2026",
+    "exit": 0,
+    "tests": 22,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_update_package",
+    "exit": 0,
+    "tests": 7,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_updater",
+    "exit": 0,
+    "tests": 9,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_user_policy",
+    "exit": 0,
+    "tests": 6,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_v101",
+    "exit": 0,
+    "tests": 3,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_v102",
+    "exit": 0,
+    "tests": 6,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_v103_initial",
+    "exit": 0,
+    "tests": 3,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_v116_core",
+    "exit": 0,
+    "tests": 3,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_v117_gui",
+    "exit": 0,
+    "tests": 10,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_v117_storage",
+    "exit": 0,
+    "tests": 10,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_v118",
+    "exit": 0,
+    "tests": 18,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_v118_gui",
+    "exit": 0,
+    "tests": 3,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_v22",
+    "exit": 0,
+    "tests": 2,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_v23",
+    "exit": 0,
+    "tests": 2,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_v25",
+    "exit": 0,
+    "tests": 2,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_v29",
+    "exit": 0,
+    "tests": 1,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_v33",
+    "exit": 0,
+    "tests": 1,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_v36",
+    "exit": 0,
+    "tests": 1,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_v39",
+    "exit": 0,
+    "tests": 1,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_v40",
+    "exit": 0,
+    "tests": 1,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_v42",
+    "exit": 0,
+    "tests": 1,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_window_geometry",
+    "exit": 0,
+    "tests": 5,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_windows_package",
+    "exit": 0,
+    "tests": 11,
+    "ok": true,
+    "failed": false
+  },
+  {
+    "module": "test_year_move",
+    "exit": 0,
+    "tests": 8,
+    "ok": true,
+    "failed": false
+  }
+]

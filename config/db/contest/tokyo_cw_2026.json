@@ -1,10 +1,10 @@
 {
   "id": "tokyo_cw_numbers",
   "year": 2026,
-  "version": "20260826",
+  "version": "20261003",
   "organizer": "JARL東京都支部",
-  "source": "https://jarltokyo.com/_media/contest/contest_rules_cw_ver20260826.pdf",
-  "sha256": "98fc3f07c31d05d60cec8b0c6c6b2046fce51acb4bbd4f9863bc43f4f66e61c6",
+  "source": "https://jarltokyo.com/_media/contest/contest_rules_cw_ver20261003.pdf",
+  "sha256": "194f87fa2edd33c45616880abe5a51d0cec57125e9cb723bc5a982488c0fff33",
   "groups": {
     "city": {
       "002": "八王子市",

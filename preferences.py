@@ -1,5 +1,5 @@
 """Settings values shared by the main window and settings dialog."""
-DEFAULTS={'keep_band':True,'keep_mode':True,'auto_rst':True,'confirm_record':True,
+DEFAULTS={'alert_volume':50,'alert_sound':'standard','keep_band':True,'keep_mode':True,'auto_rst':True,'confirm_record':True,
           'location_assist':True,'monthly_backup':True,'backup_keep':30,
           'radio_enabled':False,'radio_model':'','radio_method':'CI-V','radio_port':'AUTO','radio_baud':'AUTO',
           'radio_civ_address':'94','radio_hamlib_model':'','radio_hamlib_path':'',
@@ -12,7 +12,11 @@ def validate(values):
     result=dict(values)
     for key,default in DEFAULTS.items():
         value=result.get(key,default)
-        if key=='backup_keep':
+        if key=='alert_volume':
+            if type(value) is not int or not 0<=value<=100:raise ValueError('通知音量は0〜100で指定してください。')
+        elif key=='alert_sound':
+            if value not in ('standard','terere'):raise ValueError('通知音の種類が不正です。')
+        elif key=='backup_keep':
             if type(value) is not int or value not in (10,30,60,100):raise ValueError('バックアップ保持数は10・30・60・100から選択してください。')
         elif key in ('radio_model','radio_method','radio_port','radio_civ_address','radio_hamlib_model','radio_hamlib_path','radio_setupc_path'):
             if not isinstance(value,str):raise ValueError(key+'の設定値が不正です。')

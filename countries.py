@@ -27,7 +27,13 @@ class Countries:
                 table=self.exact if token.startswith('=') else self.prefixes
                 table.setdefault(token.lstrip('='),row)
         if not self.prefixes:raise ValueError('empty CTY')
-    def lookup(self,call):
+    def lookup(self,call,when=None):
+        result=self._lookup(call)
+        if result is not None and hasattr(self,"history"):
+            from country_history import historic_name
+            result["country"]=historic_name(result["country"],when,self.history)
+        return result
+    def _lookup(self,call):
         call=call.strip().upper()
         if not re.fullmatch(r'[A-Z0-9]+(?:/[A-Z0-9]+)*',call):return None
         # Explicit uncertain operation locations must not fall back to home country.
@@ -49,5 +55,8 @@ def load(root):
     try:
         raw=path.read_bytes();meta=json.loads(path.with_name('cty_meta.json').read_text('utf-8'))
         if hashlib.sha256(raw).hexdigest()!=meta['sha256']:raise ValueError('DBと更新情報が一致しません。')
-        data=Countries(raw.decode('ascii'));data.version=meta['version'];return data
+        data=Countries(raw.decode('ascii'));data.version=meta['version']
+        from country_history import load_history
+        data.history=load_history(root)
+        return data
     except (OSError,ValueError,UnicodeError,KeyError,TypeError) as e:raise StorageError('国名参照DBを読み込めません: '+str(e)) from e

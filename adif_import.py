@@ -143,7 +143,7 @@ def convert(data,kind,own,override=False,country_data=None,location_data=None):
                 from locations import confirmed
                 original_his=his
                 supplied_country=(f.get('COUNTRY_INTL') or f.get('COUNTRY') or '').strip()
-                hint=country_data.lookup(call) if country_data is not None else None
+                hint=country_data.lookup(call,dt.strftime("%Y-%m-%d")) if country_data is not None else None
                 domestic=supplied_country.casefold() in ('japan','日本') if supplied_country else bool(hint and hint['country']=='Japan')
                 roman=confirmed(location_data,his,code) if domestic else None
                 remarks=append_primary(remarks,'QTH:'+original_his)
@@ -156,7 +156,7 @@ def convert(data,kind,own,override=False,country_data=None,location_data=None):
                     his=supplied
                     notices.append(Issue(number,'QTHが空欄のため入力ファイルの国名を使用します。',supplied))
                 else:
-                    hint=country_data.lookup(call)
+                    hint=country_data.lookup(call,dt.strftime("%Y-%m-%d"))
                     if hint:
                         his=hint['country']
                         notices.append(Issue(number,'QTHが空欄のため参照DBの国名候補を補完します。交信当時の運用地を確認してください。',his))

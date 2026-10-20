@@ -1,0 +1,37 @@
+[
+  {
+    "module": "test_final9",
+    "baseline_exit": -7,
+    "unittest_ok": true
+  },
+  {
+    "module": "test_final9_completion",
+    "baseline_exit": -6,
+    "unittest_ok": true
+  },
+  {
+    "module": "test_regional_2026",
+    "baseline_exit": 0,
+    "unittest_ok": true
+  },
+  {
+    "module": "test_remaining28",
+    "baseline_exit": -11,
+    "unittest_ok": true
+  },
+  {
+    "module": "test_remaining9",
+    "baseline_exit": -7,
+    "unittest_ok": true
+  },
+  {
+    "module": "test_search_special_handoff_gui",
+    "baseline_exit": -11,
+    "unittest_ok": true
+  },
+  {
+    "module": "test_sota",
+    "baseline_exit": 0,
+    "unittest_ok": true
+  }
+]

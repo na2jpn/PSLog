@@ -21,7 +21,7 @@ def rows(rule):
 class ReviewedRuleViewTests(unittest.TestCase):
     def test_all_registered_rules_load_and_render(self):
         paths=list(RULES.glob('*.txt'))
-        self.assertEqual(len(paths),87)
+        self.assertEqual(len(paths),91)
         for path in paths:
             with self.subTest(path=path.name):
                 rule=loads(path.read_text(encoding='utf-8-sig'))
@@ -29,7 +29,7 @@ class ReviewedRuleViewTests(unittest.TestCase):
 
     def test_qso_party_is_only_in_its_dedicated_view(self):
         rules=[loads(path.read_text(encoding='utf-8-sig')) for path in RULES.glob('*.txt')]
-        self.assertEqual(sum(is_contest_rule(rule) for rule in rules),86)
+        self.assertEqual(sum(is_contest_rule(rule) for rule in rules),90)
         self.assertFalse(is_contest_rule(next(rule for rule in rules if rule['id']=='qso_party')))
 
     def test_fifteen_display_records_are_independent_and_complete(self):

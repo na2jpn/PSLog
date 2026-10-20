@@ -15,7 +15,7 @@ FIELDS = ('participants', 'power', 'movement', 'call_method', 'counterparts',
 class ContestRuleViewAuditTests(unittest.TestCase):
     def test_all_87_rules_parse_and_render(self):
         paths = sorted(RULES.glob('*.txt'))
-        self.assertEqual(len(paths), 87)
+        self.assertEqual(len(paths), 91)
         for path in paths:
             with self.subTest(path=path.name):
                 rule = loads(path.read_text(encoding='utf-8-sig'))

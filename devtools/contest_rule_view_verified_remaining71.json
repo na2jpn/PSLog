@@ -104,14 +104,15 @@
     }
   },
   "kcwa_cw": {
-    "year": 2025,
-    "source_file": "kcwa_2025.html",
-    "source_url": "https://kcwa.sakura.ne.jp/2025/contest42/20251207CONTEST.html",
-    "source_checked": "2026-09-14",
+    "year": 2026,
+    "source_file": "kcwa_2026.html",
+    "source_url": "https://kcwa.sakura.ne.jp/2026/contest43/20261206CONTEST.html",
+    "source_checked": "2026-10-20",
     "rule_view": {
       "call_method": "電信：CQ KT TEST",
-      "points_display": "完全な交信1点。ただし提出ログ相互の照合が成立した交信のみ得点となり、ログ未提出局との交信は無得点。2025年第42回の規約です。",
-      "counterparts": "日本国内で運用する個人アマチュア局との電信交信。"
+      "points_display": "完全な交信1点。ただし提出ログ相互の照合が成立した交信のみ得点となり、ログ未提出局との交信は無得点。2026年第43回の規約です。",
+      "counterparts": "日本国内で運用する個人アマチュア局との電信交信。",
+      "submission_deadline": "2026年12月31日（当日送信・消印有効）"
     }
   },
   "kyoto": {
@@ -383,8 +384,8 @@
   "tokyo_cw": {
     "year": 2026,
     "source_file": "tokyo_cw_2026.pdf",
-    "source_url": "https://jarltokyo.com/_media/contest/contest_rules_cw_ver20260826.pdf",
-    "source_checked": "2026-09-14",
+    "source_url": "https://jarltokyo.com/_media/contest/contest_rules_cw_ver20261003.pdf",
+    "source_checked": "2026-10-20",
     "rule_view": {
       "call_method": "電信：CQ TK TEST",
       "points_display": "相手が東京都内局なら2点、都外局なら1点。電信部門のみ。",
@@ -576,14 +577,15 @@
     }
   },
   "all_ja0_160m": {
-    "year": 2025,
-    "source_file": "all_ja0_18_2025.html",
-    "source_url": "https://jarl-nn.asama-net.com/index.php?html_id=00000503",
-    "source_checked": "2026-09-14",
+    "year": 2026,
+    "source_file": "all_ja0_18_2026.html",
+    "source_url": "https://jarl-nn.asama-net.com/index.php?html_id=00000528",
+    "source_checked": "2026-10-20",
     "rule_view": {
-      "points_display": "0エリア管内局との交信3点、管外局との交信1点。登録大会は2025年の1.8MHz部門です。",
+      "points_display": "0エリア管内局との交信3点、管外局との交信1点。登録大会は2026年の1.8MHz部門です。",
       "counterparts": "国内局同士の交信が有効。",
-      "call_method": "公式規約に定型のCQ呼び出し指定なし。"
+      "call_method": "公式規約に定型のCQ呼び出し指定なし。",
+      "submission_deadline": "2026年12月31日（紙は消印有効）"
     }
   },
   "all_ja0_35": {
@@ -721,25 +723,27 @@
     }
   },
   "cq-ww-cw": {
-    "year": 2025,
-    "source_file": "cqww_rules_2025.txt",
-    "source_url": "https://cqww.com/rules.htm",
-    "source_checked": "2026-09-14",
+    "year": 2026,
+    "source_file": "cqww_rules_2026.html",
+    "source_url": "https://cqww.com/rules/",
+    "source_checked": "2026-10-20",
     "rule_view": {
       "counterparts": "世界中のアマチュア局。CWで交信。",
-      "points_display": "異なる大陸3点、同大陸の異なる国1点（北米局の例外あり）、同一国内0点（ゾーン・国マルチには算入可）。登録大会は2025年。",
-      "call_method": "公式規約に定型のCQ呼び出し指定なし。"
+      "points_display": "異なる大陸3点、同大陸の異なる国1点（北米局の例外あり）、同一国内0点（ゾーン・国マルチには算入可）。登録大会は2026年。",
+      "call_method": "公式規約に定型のCQ呼び出し指定なし。",
+      "submission_deadline": "2026年12月1日23:59 UTC（終了後48時間以内）"
     }
   },
   "cq-ww-ssb": {
-    "year": 2025,
-    "source_file": "cqww_rules_2025.txt",
-    "source_url": "https://cqww.com/rules.htm",
-    "source_checked": "2026-09-14",
+    "year": 2026,
+    "source_file": "cqww_rules_2026.html",
+    "source_url": "https://cqww.com/rules/",
+    "source_checked": "2026-10-20",
     "rule_view": {
       "counterparts": "世界中のアマチュア局。SSBで交信。",
-      "points_display": "異なる大陸3点、同大陸の異なる国1点（北米局の例外あり）、同一国内0点（ゾーン・国マルチには算入可）。登録大会は2025年。",
-      "call_method": "公式規約に定型のCQ呼び出し指定なし。"
+      "points_display": "異なる大陸3点、同大陸の異なる国1点（北米局の例外あり）、同一国内0点（ゾーン・国マルチには算入可）。登録大会は2026年。",
+      "call_method": "公式規約に定型のCQ呼び出し指定なし。",
+      "submission_deadline": "2026年10月27日23:59 UTC（終了後48時間以内）"
     }
   },
   "cq-ww-rtty": {
