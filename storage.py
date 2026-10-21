@@ -18,7 +18,7 @@ import unicodedata
 import uuid
 from model import QSO, validate_station
 
-VERSION = '1.20'
+VERSION = '1.21'
 TERMINATOR = '\\' * 2
 
 class StorageError(Exception): pass
@@ -145,6 +145,8 @@ def operation_lock(directory: Path):
                     from batch_recovery import recover_locked as recover_batch
                     recover_batch(directory)
             yield
+            from backup_retention import after_operation
+            after_operation(directory)
         finally:
             if acquired: k.ReleaseMutex(handle)
             k.CloseHandle(handle)
@@ -161,6 +163,8 @@ def operation_lock(directory: Path):
                     from batch_recovery import recover_locked as recover_batch
                     recover_batch(directory)
             yield
+            from backup_retention import after_operation
+            after_operation(directory)
         finally: os.close(fd)
 
 _REPLACE_RETRY_DELAYS = (0.05, 0.10, 0.20, 0.40)
@@ -279,6 +283,8 @@ class Repository:
                 for p in paths:
                     try: self.backup(p, Snapshot.read(p).data); self.prune(p)
                     except OSError as e: errors.append(f'{p.name}: {e}')
+        from backup_retention import maintain
+        errors.extend(maintain(self.root,self.backup_keep))
         return errors
 
 class Session:

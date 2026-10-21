@@ -36,7 +36,7 @@ class RbnSettingsDialog(SafeDialog):
   for i,node in enumerate(self.store.data['nodes'],1):
    enabled=QCheckBox();enabled.setChecked(node['enabled']);name=QLineEdit(node['name']);host=QLineEdit(node['host']);port=QSpinBox();port.setRange(1,65535);port.setValue(node['port']);profile=QComboBox();profile.addItems(PROFILES);profile.setCurrentText(node['profile']);test=QPushButton(node['slot']+' 接続テスト');test.clicked.connect(lambda checked,index=i-1:self.test_node(index));widgets=(enabled,name,host,port,profile,test);self.rows.append(widgets)
    for col,w in enumerate(widgets):grid.addWidget(w,i,col)
-  hint=QLabel('各接続先の通信状態は接続テストで確認できます。約20秒受信して接続成功とRBN受信確認を分けて表示します。テストは両ツールのRBN受信を停止してから実行してください。');hint.setWordWrap(True);v.addWidget(hint)
+  hint=QLabel('各接続先の通信状態は接続テストで確認できます。telnet.reversebeacon.netの7000番はCW・RTTY用です。約20秒受信して接続成功とRBN受信確認を分けて表示します。テストは両ツールのRBN受信を停止してから実行してください。');hint.setWordWrap(True);v.addWidget(hint)
   commands=QLabel('ソフト種別に応じてログイン後にRBN有効化コマンドを送ります。AR-Cluster：set dx filt ／ CC Cluster：set/skimmer と各MODE ON ／ DXSpider：set/skimmer。設定なしはコマンドを送りません。');commands.setWordWrap(True);v.addWidget(commands)
   self.details=QTextEdit();self.details.setAcceptRichText(False);self.details.setReadOnly(True);self.details.document().setMaximumBlockCount(150);v.addWidget(self.details,1)
   if self.store.error:self.details.setPlainText(self.store.error)

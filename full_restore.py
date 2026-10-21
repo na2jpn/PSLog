@@ -175,7 +175,7 @@ def restore(repo,plan):
     fresh=inspect_backup(repo,plan.path)
     if fresh.files!=plan.files or fresh.roles!=plan.roles:raise StorageError('確認後にバックアップZIPが変更されました。選び直してください。')
 
-    safety,_=create_restore_safety(repo)
+    safety,_=create_restore_safety(repo,protect=True)
     stamp=now_jst().strftime('%Y%m%d-%H%M%S')
     staged=[]
     try:
@@ -204,7 +204,18 @@ def restore(repo,plan):
                 for d in sorted((p for p in book.rglob('*') if p.is_dir()),reverse=True):
                     try:d.rmdir()
                     except OSError:pass
+            if safety:
+                try:
+                    safety.with_name(safety.name+'.keep').unlink(missing_ok=True)
+                    from backup_retention import prune_safety
+                    prune_safety(repo.root,safety.parent)
+                except OSError:
+                    import logging
+                    logging.getLogger(__name__).warning('復元後のバックアップ整理を完了できません。',exc_info=True)
     except (StorageError,OSError) as e:
+        if safety:
+            try:safety.with_name(safety.name+'.keep').write_text('Restore failed; preserve recovery ZIP.',encoding='utf-8')
+            except OSError:pass
         note=str(safety) if safety else '復元前の利用者データなし'
         raise StorageError(str(e)+'\n復元直前の安全バックアップ: '+note) from e
     return {

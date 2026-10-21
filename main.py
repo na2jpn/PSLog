@@ -1,4 +1,4 @@
-"""PSLog 1.19 application entry point and main/session UI."""
+"""PSLog 1.21 application entry point and main/session UI."""
 import sys
 import ctypes
 import subprocess
@@ -150,6 +150,9 @@ class Window(QMainWindow):
         self.radio_manager=RadioManager(self.data_root)
         self._easy_radio_rmks2='';self._contest_radio_rmks2='' 
         self.repo.backup_keep=self.settings['backup_keep']
+        from backup_retention import maintain
+        cleanup_errors=maintain(self.data_root,self.repo.backup_keep)
+        if cleanup_errors:self.asset_sync_warning+='\nバックアップ整理: '+' / '.join(cleanup_errors)
         self.workspace_sessions,self.active_workspace_index,self.recent_workspace_sessions=restore_workspace_state(self.settings,now_jst())
         self._workspace_loading=False;self._workspace_switching=False;self._country_db=None
         self.resize(1360, 850)

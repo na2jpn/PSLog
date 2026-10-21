@@ -85,6 +85,9 @@ class Ledger:
    if not isinstance(a,dict) or a.get('status') not in ('候補','提出済み','認定済み') or not isinstance(a.get('records'),list):raise ValueError('申請履歴の形式が不正です。')
    if any(not isinstance(r,dict) or not isinstance(r.get('unit'),str) or not r['unit'] for r in a['records']):raise ValueError('申請履歴の単位を確認してください。')
  def save(self):
+  from storage import operation_lock
+  with operation_lock(self.path.parent):self._save_locked()
+ def _save_locked(self):
   self.validate(self.data)
   if self.snap.data:
    backup=self.path.parent/(self.path.stem+'.'+datetime.now().strftime('%Y%m%d%H%M%S%f')+'.bak')

@@ -70,8 +70,8 @@ class SettingsDialog(QDialog):
         backup_page=QWidget();form=QFormLayout(backup_page);form.setVerticalSpacing(9);tabs.addTab(backup_page,'バックアップ')
         text=QLabel('自動バックアップ：有効\nログを書き換える前、編集・削除・復元の前、変更がある状態で終了するときに、元のログを自動で保護します。\n前回と内容が同じ場合は、同じバックアップを重複して作成しません。');text.setWordWrap(True);form.addRow(text)
         self.keep=QComboBox();self.keep.addItems(['10','30','60','100']);self.keep.setCurrentText(str(self.values['backup_keep']))
-        keep_row=QWidget();kr=QHBoxLayout(keep_row);kr.setContentsMargins(0,0,0,0);kr.addWidget(self.keep);kr.addWidget(QLabel('件'));kr.addStretch();form.addRow('バックアップ保持数（ログファイルごと）',keep_row)
-        keep_help=QLabel('各ログファイルについて、古い世代を含め最大この件数まで保持します。保持数を減らしても、この画面を保存しただけでは削除せず、そのログを次回正常に保存・整理したときに新しい上限を適用します。');keep_help.setWordWrap(True);keep_help.setStyleSheet('color:#55636c;');form.addRow('',keep_help)
+        keep_row=QWidget();kr=QHBoxLayout(keep_row);kr.setContentsMargins(0,0,0,0);kr.addWidget(self.keep);kr.addWidget(QLabel('件'));kr.addStretch();form.addRow('バックアップ保持数（ログ・履歴）',keep_row)
+        keep_help=QLabel('ログごと、および完了済み回復記録・変更履歴の種類ごとにこの件数を保持します。起動・終了時と正常な保存後に古いものを整理します。全体復元前の安全ZIPは直近2世代。未完了記録・復旧失敗の記録・任意の場所へ手動保存した全体バックアップZIPは自動削除しません。');keep_help.setWordWrap(True);keep_help.setStyleSheet('color:#55636c;');form.addRow('',keep_help)
         if self.repo is not None:
             path=QLineEdit(str(self.repo.bak));path.setReadOnly(True);path.setToolTip(str(self.repo.bak));form.addRow('自動バックアップ保存先',path)
             files=sorted(self.repo.bak.glob('*.bak')) if self.repo.bak.exists() else []

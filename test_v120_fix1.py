@@ -49,7 +49,7 @@ class Fix1Tests(unittest.TestCase):
   self.assertEqual(store.path.read_text(encoding='utf-8'),'{}')
  def test_legacy_migration_and_shanghai_default(self):
   conf=Path(self.repo.root)/'config';conf.mkdir(exist_ok=True);(conf/'cluster_monitor.json').write_text(json.dumps(dict(own='JX1XXX',host='old.example',port=7373)),encoding='utf-8');store=RbnSettings(self.repo)
-  self.assertEqual(store.data['nodes'][0]['host'],'old.example');self.assertEqual(store.data['own'],'JX1XXX');self.assertTrue(store.data['nodes'][2]['enabled']);self.assertEqual(store.data['nodes'][2]['host'],'spots.bh4hkz.com')
+  self.assertEqual(store.data['nodes'][0]['host'],'old.example');self.assertEqual(store.data['own'],'JX1XXX');self.assertTrue(store.data['nodes'][2]['enabled']);self.assertEqual(store.data['nodes'][2]['host'],'telnet.reversebeacon.net')
  def test_buttons_open_same_settings_and_update_both_summaries(self):
   a=SpotConnection(self.repo);b=SpotConnection(self.repo);self.widgets.extend((a,b));self.assertIs(a.store,b.store)
   with patch('spot_connection_ui.RbnSettingsDialog') as dialog:a.button.click();b.button.click();self.assertEqual(dialog.call_count,2)

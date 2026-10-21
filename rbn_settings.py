@@ -15,7 +15,7 @@ PROFILES={
 DEFAULT_NODES=[
  dict(slot='A',name='日本① JG1VGX-8',host='arc.jg1vgx.net',port=7000,profile='AR-Cluster',enabled=True),
  dict(slot='B',name='日本② JG1VGX-7',host='ccc.jg1vgx.net',port=7373,profile='CC Cluster',enabled=True),
- dict(slot='C',name='中国（上海） BH4HKZ',host='spots.bh4hkz.com',port=7373,profile='AR-Cluster',enabled=True),
+ dict(slot='C',name='RBN CW・RTTY',host='telnet.reversebeacon.net',port=7000,profile='設定なし',enabled=True),
  dict(slot='D',name='ロシア UA0APV-1',host='ua0apv.i234.me',port=7300,profile='DXSpider',enabled=True),
  dict(slot='E',name='米国 W3LPL-1',host='dxc.w3lpl.net',port=7373,profile='AR-Cluster',enabled=True),
 ]
@@ -31,6 +31,7 @@ def validate(data):
   if profile not in PROFILES:raise ValueError(f'{slot}のソフト種別が不正です。')
   if not 1<=port<=65535:raise ValueError(f'{slot}のポートは1〜65535です。')
   if host and not re.fullmatch(r'[a-z0-9][a-z0-9.-]{0,252}',host):raise ValueError(f'{slot}の接続先が不正です。')
+  if host=='telnet.reversebeacon.net':profile='設定なし'
   if enabled:
    if not host:raise ValueError(f'{slot}の接続先を入力してください。')
    if (host,port) in seen:raise ValueError('有効な接続先のホスト・ポートが重複しています。')
@@ -49,7 +50,9 @@ class RbnSettings(QObject):
     self.data=validate(json.loads(self.snapshot.data.decode('utf-8')))
     node=self.data['nodes'][2]
     # Replace only the untouched FIX1 Korean preset; keep custom endpoints.
-    if node['host']=='dxc.dx.or.kr' and node['port']==23 and node['profile']=='設定なし':self.data['nodes'][2]=copy.deepcopy(DEFAULT_NODES[2])
+    if ((node['host']=='dxc.dx.or.kr' and node['port']==23 and node['profile']=='設定なし') or
+        (node['host']=='spots.bh4hkz.com' and node['port']==7373 and node['profile']=='AR-Cluster' and node['name']=='中国（上海） BH4HKZ')):
+     enabled=node['enabled'];self.data['nodes'][2]=copy.deepcopy(DEFAULT_NODES[2]);self.data['nodes'][2]['enabled']=enabled
    else:
     own_migrated=False
     for name in ('cluster_monitor.json','band_site.json'):
@@ -63,7 +66,10 @@ class RbnSettings(QObject):
   except Exception as e:self.error='RBN設定を読めません。元ファイルを保持します：'+str(e)
  def save(self,data):
   if self.error:raise ValueError(self.error)
-  data=validate(data);self.path.parent.mkdir(parents=True,exist_ok=True)
+  data=validate(data)
+  for node in data['nodes']:
+   if node['host']=='telnet.reversebeacon.net':node['profile']='設定なし'
+  self.path.parent.mkdir(parents=True,exist_ok=True)
   with operation_lock(self.path.parent):replace_bytes(self.path,(json.dumps(data,ensure_ascii=False,indent=2)+'\n').encode('utf-8'),self.snapshot)
   self.snapshot=Snapshot.read(self.path);self.data=data;self.changed.emit()
  def validate_start(self):

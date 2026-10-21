@@ -43,13 +43,13 @@ class PackageTests(unittest.TestCase):
                     self.assertNotIn('PSLog/'+retired,names)
                 self.assertIn('PSLog/exec/PSLogUpdater.exe',names)
                 info=json.loads(z.read('PSLog/meta/BUILD_INFO.json'))
-                self.assertEqual(info['windows_manual_test'],'未確認');self.assertEqual(info['version'],'1.20')
+                self.assertEqual(info['windows_manual_test'],'未確認');self.assertEqual(info['version'],'1.21')
                 update=json.loads(z.read('PSLog/meta/PSLOG_UPDATE_INFO.json'))
-                self.assertEqual(update['version'],'1.20');self.assertEqual(update['product'],'PSLog')
+                self.assertEqual(update['version'],'1.21');self.assertEqual(update['product'],'PSLog')
                 self.assertIn('exec/PSLogUpdater.exe',update['files']);self.assertIn('meta/BUILD_INFO.json',update['files']);self.assertIn('meta/versionup.json',update['files'])
                 versionup=json.loads(z.read('PSLog/meta/versionup.json'))
-                self.assertEqual(versionup['version'],'1.20');self.assertIn('meta',versionup['managed_roots']);self.assertEqual(versionup['remove_roots'],[])
-            inspected=inspect_update(out);self.assertEqual(inspected.version,'1.20');self.assertEqual(inspected.manifest_kind,'versionup')
+                self.assertEqual(versionup['version'],'1.21');self.assertIn('meta',versionup['managed_roots']);self.assertEqual(versionup['remove_roots'],[])
+            inspected=inspect_update(out);self.assertEqual(inspected.version,'1.21');self.assertEqual(inspected.manifest_kind,'versionup')
             with self.assertRaises(FileExistsError):package(build,source,out)
             (build/'config').mkdir(exist_ok=True);(build/'config/conf.cfg').write_text('private')
             with self.assertRaises(ValueError):package(build,source,root/'bad.zip')
@@ -74,7 +74,7 @@ class PackageTests(unittest.TestCase):
             script=source/'tools/package_windows.py'
             result=subprocess.run([sys.executable,str(script),str(build),str(source),str(out)],cwd=root,stdout=subprocess.PIPE,stderr=subprocess.PIPE,text=True)
             self.assertEqual(result.returncode,0,result.stderr)
-            self.assertTrue(out.is_file());self.assertEqual(inspect_update(out).version,'1.20')
+            self.assertTrue(out.is_file());self.assertEqual(inspect_update(out).version,'1.21')
 
     def test_1042_bridge_uses_exact_old_root_layout(self):
         with tempfile.TemporaryDirectory() as folder:
@@ -85,7 +85,7 @@ class PackageTests(unittest.TestCase):
                 self.assertIn('PSLog/exec/PSLogUpdater.exe',names);self.assertNotIn('PSLog/PSLogUpdater.exe',names)
                 self.assertIn('PSLog/BUILD_INFO.json',names);self.assertNotIn('PSLog/meta/BUILD_INFO.json',names)
                 self.assertIn('PSLog/USER_GUIDE.txt',names)
-            self.assertEqual(inspect_update(out).version,'1.20')
+            self.assertEqual(inspect_update(out).version,'1.21')
 
     def test_1041_bridge_has_only_legacy_root_updater(self):
         with tempfile.TemporaryDirectory() as folder:
@@ -94,7 +94,7 @@ class PackageTests(unittest.TestCase):
                 names=z.namelist();update=json.loads(z.read('PSLog/PSLOG_UPDATE_INFO.json'))
                 self.assertEqual(tuple(update['managed_roots']),LEGACY_MANAGED_ROOTS_1041)
                 self.assertIn('PSLog/PSLogUpdater.exe',names);self.assertNotIn('PSLog/exec/PSLogUpdater.exe',names)
-            self.assertEqual(inspect_update(out).version,'1.20')
+            self.assertEqual(inspect_update(out).version,'1.21')
 
     def test_package_script_bridge_cli(self):
         with tempfile.TemporaryDirectory() as folder:
@@ -102,7 +102,7 @@ class PackageTests(unittest.TestCase):
             for old in ('1.041','1.042'):
                 out=root/f'bridge-{old}.zip'
                 result=subprocess.run([sys.executable,str(script),str(build),str(source),str(out),'--bridge-from',old],cwd=root,stdout=subprocess.PIPE,stderr=subprocess.PIPE,text=True)
-                self.assertEqual(result.returncode,0,result.stderr);self.assertEqual(inspect_update(out).version,'1.20')
+                self.assertEqual(result.returncode,0,result.stderr);self.assertEqual(inspect_update(out).version,'1.21')
 
     def test_build_script_emits_one_normal_windows_zip(self):
         text=(Path(__file__).parent/'build-windows.ps1').read_text(encoding='utf-8-sig')

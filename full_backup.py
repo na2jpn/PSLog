@@ -119,7 +119,7 @@ def create(repo,destination):
     return target,count
 
 
-def create_restore_safety(repo):
+def create_restore_safety(repo,protect=False):
     """Create a durable pre-restore snapshot under bak/ (not nested in full backups)."""
     folder=repo.bak/'full-restore-safety';folder.mkdir(parents=True,exist_ok=True)
     target=folder/('PSLog_before_full_restore_'+now_jst().strftime('%Y%m%d-%H%M%S')+'_'+uuid.uuid4().hex[:8]+'.zip')
@@ -128,6 +128,14 @@ def create_restore_safety(repo):
         if not files(repo.root):return None,0
         payload,count=_payload(repo)
         replace_bytes(target,payload,Snapshot(None,None))
+        if protect:
+            marker=target.with_name(target.name+'.keep')
+            replace_bytes(marker,b'Restore in progress; preserve recovery ZIP.',Snapshot(None,None))
+        from backup_retention import prune_safety
+        try:prune_safety(repo.root,target.parent)
+        except OSError:
+            import logging
+            logging.getLogger(__name__).warning('安全バックアップの整理を完了できません。',exc_info=True)
     return target,count
 
 
@@ -139,4 +147,9 @@ def create_update_safety(repo):
         if not files(repo.root):return None,0
         payload,count=_payload(repo)
         replace_bytes(target,payload,Snapshot(None,None))
+        from backup_retention import prune_safety
+        try:prune_safety(repo.root,target.parent)
+        except OSError:
+            import logging
+            logging.getLogger(__name__).warning('安全バックアップの整理を完了できません。',exc_info=True)
     return target,count
