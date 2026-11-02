@@ -34,7 +34,7 @@ for tail,label,sent in [('-O','府内',inside),('','府外',outside)]:
   cats.append(c)
 assert len(cats)==58
 e['categories']=cats
-e['submission']=dict(formats=['JARL R1.0'],zone='JST',contest='第33回オール大阪コンテスト',required_fields=[],instructions='2026年・58種目。電話1.9MHzのF19/F19-OはHTML表と利用者確認に基づき有効。CW/電話/RTTY/SSTVは別提出。R1.0出力（Ver2の案内からR2.1受理を推定しません）。MOは全OPコール・氏名・資格を意見欄へ。YLは性別、若年は生年月日を意見欄へ。メール本文へサマリーとログを貼付、添付不可。件名はコール＋種目コード。2026宛先allosaka-33@jr3yrl.net、毎年変更。締切2026-11-16 23:59、郵送同日消印有効。自動送信しません。')
+e['submission']=dict(formats=['JARL R1.0'],zone='JST',contest='第32回オール大阪コンテスト',required_fields=[],instructions='2026年・58種目。電話1.9MHzのF19/F19-OはHTML表と利用者確認に基づき有効。CW/電話/RTTY/SSTVは別提出。R1.0出力（Ver2の案内からR2.1受理を推定しません）。MOは全OPコール・氏名・資格を意見欄へ。YLは性別、若年は生年月日を意見欄へ。メール本文へサマリーとログを貼付、添付不可。件名はコール＋種目コード。2026宛先allosaka-33@jr3yrl.net、毎年変更。締切2026-11-16 23:59、郵送同日消印有効。自動送信しません。')
 apply_remaining_view(r)
 (root/'config/rules/all_osaka_2026.txt').write_text(json.dumps(r,ensure_ascii=False,indent=2)+'\n')
 db=dict(id='all_osaka_numbers',year=2026,organizer=r['organizer'],source=url,sources=[dict(file=n,sha256=hashlib.sha256((root/'docs/contest-research/sources'/n).read_bytes()).hexdigest()) for n in ['all_osaka_2026.pdf','all_osaka_2026.html']],municipal_source_versions=municipal['source_versions'],inside=local,outside=[v for v in areas['areas'] if v['code']!='25'],special_calls=e['exchange']['special_calls'])

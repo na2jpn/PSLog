@@ -1,0 +1,32 @@
+[
+  {
+    "module": "test_all_osaka_2026",
+    "exit": 0,
+    "tests": 10,
+    "ok": true
+  },
+  {
+    "module": "test_rule_catalog",
+    "exit": 0,
+    "tests": 3,
+    "ok": true
+  },
+  {
+    "module": "test_rule_pack",
+    "exit": 0,
+    "tests": 12,
+    "ok": true
+  },
+  {
+    "module": "test_v121_fix1",
+    "exit": 0,
+    "tests": 7,
+    "ok": true
+  },
+  {
+    "module": "test_v122_fix1",
+    "exit": 0,
+    "tests": 9,
+    "ok": true
+  }
+]

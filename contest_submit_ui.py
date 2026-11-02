@@ -229,8 +229,9 @@ class SubmissionPane(QWidget):
                 self.fields['portable'].setChecked(ctx.get('operation_kind')=='portable')
                 self.overview.setText(self.overview.text()+'\n電力条件の運用形態と提出の移動指定を照合します。')
             if category.get('location_group'):
-                self.fields['opplace'].setText(ctx.get('operating_locations',{}).get(category['location_group'],''))
-                self.overview.setText(self.overview.text()+'\n運用地は部門別の確認値と一致する必要があります。')
+                declared=ctx.get('operating_locations',{}).get(category['location_group'],'')
+                if declared:self.fields['opplace'].setText(declared)
+                self.overview.setText(self.overview.text()+'\n部門別の運用地を入力した場合は提出運用地と照合します。空欄の場合、移動運用の運用地はここで入力してください。')
             if 'yl_or_younger_than' in q:self.overview.setText(self.overview.text()+'\nYL／若年資格を意見欄に記載します。Y送信行は交信情報補完で実運用者を確認してください。')
             if ('min_age' in q or 'max_age' in q) and 'age' in self.fields:self.fields['age'].setText(str(ctx.get('age','')))
             if 'license_since' in q and 'licensedate' in self.fields:self.fields['licensedate'].setText(ctx.get('licensedate',''))
@@ -287,6 +288,7 @@ class SubmissionPane(QWidget):
         self.select(f,'zone','ログ時刻',['JST','UTC'],value=values.get('zone','JST'));f.addRow(QLabel('JARL国内はJST、ALL ASIAN DXはUTCを選択。'))
         rule_band_sort=submission_band_sort_default(self.wizard.rule)
         self.checkbox(f,'sort_band_time','ログをバンド順に並べる（同一バンド内は時刻順）').setChecked(bool(values.get('sort_band_time',rule_band_sort)))
+        self.checkbox(f,'fd_location_confirmed','FD：ホーム／移動の区分と、常置場所等と異なる場合の運用地記載を確認した') if self.wizard.rule.get('event',{}).get('station_factor')=='jarl_fd' else None
         self.checkbox(f,'fd','フィールドデー（第二マルチをFDCOEFFへ記載）').setChecked(values.get('fd',False));self.checkbox(f,'multiop','マルチオペ部門').setChecked(values.get('multiop',False));self.checkbox(f,'portable','移動運用（運用地の記載が必須）');self.checkbox(f,'guest','ゲストSO（運用者コールの記載が必須）')
         f=self.tab('任意・部門別情報')
         for k,label in [('opcall','ゲストOPコール'),('tel','電話'),('email','メールアドレス *'),('opplace','運用地'),('multioplist','マルチOP一覧'),('clubnumber','登録クラブ番号')]:self.field(f,k,label,values)
@@ -391,6 +393,13 @@ class SubmissionPane(QWidget):
                 if self.template_path is None:raise ValueError('テンプレートを選択してください。')
                 self.template_snapshot.check(Path(self.template_path));guards.append((self.template_path,self.template_snapshot))
             info=self.info()
+            if self.current_format.startswith('JARL'):
+                import re
+                own=self.wizard.selection.rows[0][0]
+                if (info.get('portable') or re.search(r'/(?:[0-9]|JD1|P)$',own.upper())) and not str(info.get('opplace','')).strip():
+                    raise ValueError('移動運用の提出には運用地を入力してください。')
+            if self.current_format.startswith('JARL') and self.wizard.rule.get('event',{}).get('station_factor')=='jarl_fd' and not info.get('fd_location_confirmed'):
+                raise ValueError('FDのホーム／移動の区分と運用地記載を確認し、確認チェックを入れてください。')
             # Match the official JARL summary-maker required fields in the
             # interactive workflow.  Keep this at the UI boundary so old R1.0
             # files that omitted fields can still be reopened/read by the

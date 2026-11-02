@@ -1,0 +1,134 @@
+[
+  {
+    "module": "test_contest",
+    "exit": 0,
+    "tests": 13,
+    "ok": true
+  },
+  {
+    "module": "test_contest_areas",
+    "exit": 0,
+    "tests": 3,
+    "ok": true
+  },
+  {
+    "module": "test_contest_band_exchange",
+    "exit": 0,
+    "tests": 10,
+    "ok": true
+  },
+  {
+    "module": "test_contest_batch10",
+    "exit": 0,
+    "tests": 20,
+    "ok": true
+  },
+  {
+    "module": "test_contest_countries",
+    "exit": 0,
+    "tests": 2,
+    "ok": true
+  },
+  {
+    "module": "test_contest_event",
+    "exit": 0,
+    "tests": 7,
+    "ok": true
+  },
+  {
+    "module": "test_contest_export",
+    "exit": 0,
+    "tests": 17,
+    "ok": true
+  },
+  {
+    "module": "test_contest_rule_view_audit_87",
+    "exit": 0,
+    "tests": 4,
+    "ok": true
+  },
+  {
+    "module": "test_contest_rule_view_remaining71",
+    "exit": 0,
+    "tests": 4,
+    "ok": true
+  },
+  {
+    "module": "test_contest_rule_view_verified_15",
+    "exit": 0,
+    "tests": 5,
+    "ok": true
+  },
+  {
+    "module": "test_contest_score_ui",
+    "exit": 0,
+    "tests": 3,
+    "ok": true
+  },
+  {
+    "module": "test_contest_submission_import",
+    "exit": 0,
+    "tests": 4,
+    "ok": true
+  },
+  {
+    "module": "test_contest_tasks",
+    "exit": 0,
+    "tests": 2,
+    "ok": true
+  },
+  {
+    "module": "test_contest_timing",
+    "exit": 0,
+    "tests": 21,
+    "ok": true
+  },
+  {
+    "module": "test_contest_workflow",
+    "exit": 0,
+    "tests": 3,
+    "ok": true
+  },
+  {
+    "module": "test_export_search_handoff",
+    "exit": 0,
+    "tests": 1,
+    "ok": true
+  },
+  {
+    "module": "test_patch07_embedded_logsearch",
+    "exit": 0,
+    "tests": 1,
+    "ok": true
+  },
+  {
+    "module": "test_search",
+    "exit": 0,
+    "tests": 10,
+    "ok": true
+  },
+  {
+    "module": "test_search_gui",
+    "exit": 0,
+    "tests": 10,
+    "ok": true
+  },
+  {
+    "module": "test_search_special_handoff_gui",
+    "exit": 0,
+    "tests": 2,
+    "ok": true
+  },
+  {
+    "module": "test_v121_fix1",
+    "exit": 0,
+    "tests": 7,
+    "ok": true
+  },
+  {
+    "module": "test_all_osaka_2026",
+    "exit": 0,
+    "tests": 10,
+    "ok": true
+  }
+]

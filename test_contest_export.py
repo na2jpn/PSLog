@@ -89,7 +89,7 @@ class ExportTests(unittest.TestCase):
             if k=='oath':p.fields[k].setChecked(v)
             else:p.fields[k].setText(v)
         p.fields['email'].setText('test@example.com')
-        p.prepare();self.assertIsNotNone(p.prepared,p.status.text());p.fields['name'].setText('別の氏名');self.assertIsNone(p.prepared);p.prepare();p.write();self.assertTrue((Path(self.tmp.name)/'output'/'contest'/'JH1HST-1.txt').exists());self.assertTrue((Path(self.tmp.name)/'config'/'contest_submit.cfg').exists());d.deleteLater()
+        p.fields['opplace'].setText('埼玉県草加市');p.prepare();self.assertIsNotNone(p.prepared,p.status.text());p.fields['name'].setText('別の氏名');self.assertIsNone(p.prepared);p.prepare();p.write();self.assertTrue((Path(self.tmp.name)/'output'/'contest'/'JH1HST-1.txt').exists());self.assertTrue((Path(self.tmp.name)/'config'/'contest_submit.cfg').exists());d.deleteLater()
     def test_details_cancel_leaves_original_working_values(self):
         d=DetailsDialog(self.selection,self.draft);d.table.item(0,4).setText('7005');d.reject();self.assertNotIn('frequency',self.draft[key(self.selection.rows[0])]);self.assertEqual(d.draft[key(self.selection.rows[0])]['frequency'],'7005');d.deleteLater()
 

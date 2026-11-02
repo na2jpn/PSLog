@@ -94,9 +94,9 @@ class EventDialog(SafeDialog):
         if event.get('power_by_operation'):form.addRow('今回の運用形態',self.operation_kind)
         self.locations={}
         for ident,label in event.get('operating_locations',{}).get('groups',{}).items():
-            w=QLineEdit(context.get('operating_locations',{}).get(ident,''));w.setPlaceholderText('具体的な運用場所。未運用の部門は空欄');form.addRow(label+'の運用地',w);self.locations[ident]=w
+            w=QLineEdit(context.get('operating_locations',{}).get(ident,''));w.setPlaceholderText('任意。移動運用の運用地は提出画面で必ず確認');form.addRow(label+'の運用地',w);self.locations[ident]=w
         if self.locations:
-            note=QLabel('同一部門内の場所変更は禁止。デジタルは電信・電話のいずれかの運用地と同じにしてください。文字列は本人申告で、実際の同一地点を証明するものではありません。');note.setWordWrap(True);form.addRow(note)
+            note=QLabel('部門別の運用地は任意入力です。移動運用の場合は提出画面の運用地が必須です。同一部門内の場所変更など、参照年の規約を確認してください。'+(' デジタルは電信・電話のいずれかの運用地と同じにしてください。' if event.get('operating_locations',{}).get('matches') else ''));note.setWordWrap(True);form.addRow(note)
         self.newcomer_requested=QCheckBox('ニューカマー記念品の対象として申告する（任意）');self.newcomer_requested.setChecked(context.get('newcomer_requested',False))
         self.newcomer_date=QLineEdit(context.get('newcomer_licensedate',''));self.newcomer_date.setPlaceholderText('YYYY-MM-DD（実運用者の初開局日）')
         self.newcomer_first=QCheckBox('初開局であり、再開局ではない');self.newcomer_first.setChecked(context.get('newcomer_first_license',False))

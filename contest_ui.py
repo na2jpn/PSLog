@@ -58,7 +58,7 @@ class ContestDialog(SafeDialog):
         overview_font=self.overview_label.font();overview_font.setPointSize(max(7,overview_font.pointSize()-1));self.overview_label.setFont(overview_font)
         self.overview_scroll.setWidget(self.overview_label);overview_layout.addWidget(self.overview_scroll);self.overview_group.setMinimumHeight(285);self.overview_group.setVisible(False);f.addRow(self.overview_group)
         self._set_stage1_rows(False,False)
-        w=QWidget();v=QVBoxLayout(w);self.stack.addWidget(w);source_form=QWidget();source_form.setSizePolicy(QSizePolicy.Policy.Preferred,QSizePolicy.Policy.Fixed);f=QFormLayout(source_form);f.setContentsMargins(0,0,0,0);v.addWidget(source_form,0,Qt.AlignmentFlag.AlignTop);self.search=QLineEdit(own);self.own=QComboBox();f.addRow('自局コールで検索',self.search);f.addRow('対象の自局（運用サフィックスを区別）',self.own)
+        w=QWidget();source_outer=QVBoxLayout(w);self.stack.addWidget(w);self.source_panel=QWidget();v=QVBoxLayout(self.source_panel);v.setContentsMargins(0,0,0,0);source_outer.addWidget(self.source_panel);source_form=QWidget();source_form.setSizePolicy(QSizePolicy.Policy.Preferred,QSizePolicy.Policy.Fixed);f=QFormLayout(source_form);f.setContentsMargins(0,0,0,0);v.addWidget(source_form,0,Qt.AlignmentFlag.AlignTop);self.search=QLineEdit(own);self.own=QComboBox();f.addRow('自局コールで検索',self.search);f.addRow('対象の自局（運用サフィックスを区別）',self.own)
         self.joint=QCheckBox('胆振日高：常置と同じ基本コール/8のログを一緒に選ぶ');f.addRow(self.joint);self.joint.setVisible(False);self.joint.toggled.connect(self.find_logs)
         self.logs=QListWidget();self.logs.setMinimumHeight(120);self.logs.setMaximumHeight(180);v.addWidget(self.logs)
         row=QHBoxLayout();row.addWidget(button('すべて選択',lambda:self.check_all(True)));row.addWidget(button('選択解除',lambda:self.check_all(False)));row.addWidget(button('対象を再読込',self.reload_target));v.addLayout(row)
@@ -67,8 +67,10 @@ class ContestDialog(SafeDialog):
         f.addRow('開始（JST）',self.start);f.addRow('終了（JST・含む）',self.end)
         period_note=QLabel('空欄は制限なし。開始は指定期間の先頭、終了は指定期間の末尾として扱います。例：終了 20260917 → 2026/09/17 23:59');period_note.setWordWrap(True);f.addRow(period_note)
         self.rmks=QLineEdit();f.addRow('RMKSに含む文字（任意）',self.rmks);from activity_filters import FilterPane;self.filters=FilterPane();v.addWidget(self.filters)
-        self.imported_note=QLabel();self.imported_note.setWordWrap(True);v.addWidget(self.imported_note);self.imported_note.setVisible(bool(self.imported_hits))
-        if self.imported_hits:self.imported_note.setText(f'【ログ検索結果を使用中】 チェック済み {len(self.imported_hits):,}交信をそのまま提出候補に使用します。対象ログ・期間・RMKS・バンド/モードの再指定は行いません。')
+        self.imported_note=QLabel();self.imported_note.setWordWrap(True);source_outer.addWidget(self.imported_note);self.imported_note.setVisible(bool(self.imported_hits));self.source_panel.setVisible(not self.imported_hits)
+        if self.imported_hits:
+            self.imported_note.setText(f'【ログ検索結果を使用中】 チェック済み {len(self.imported_hits):,}交信をそのまま提出候補に使用します。対象ログ・期間・RMKS・バンド/モードの再指定は行いません。\n右下の「対象を読み込んで次へ」で交信ナンバーの確認へ進んでください。')
+            self.imported_note.setStyleSheet('color:#0b5fa5; font-weight:600;');source_outer.addStretch(1)
         w=QWidget();v=QVBoxLayout(w);self.stack.addWidget(w)
         send_note=QLabel('同じ送信ナンバーを全交信で使うコンテストは、ここへ入力して一括設定します。\n交信ごとに送信ナンバーが変わる場合は、下の「送信番号」を個別に確認・修正してください。')
         send_note.setWordWrap(True);send_note.setStyleSheet('color:#44515a; padding-bottom:1px;');v.addWidget(send_note)
@@ -292,7 +294,11 @@ class ContestDialog(SafeDialog):
             if not rows:raise ValueError('チェック済みの交信がありません。')
             owns={row[0] for row in rows}
             if len(owns)!=1:raise ValueError('チェック済み交信に複数の自局コールが含まれています。')
-            marker=('__search_checked__',tuple((str(h.path),h.line) for h in self.imported_hits))
+            # Submission and exchange extraction share the normal scope's own/RMKS
+            # positions. Keep that contract for search hits as well; append the
+            # exact row identity only for cache validation, never broaden to files.
+            marker=(next(iter(owns)),tuple(str(s.path) for s in sessions),'','','',False,self.filters.state(),
+                    ('__search_checked__',tuple((str(h.path),h.line) for h in self.imported_hits)))
             if not force and self.selection and self.loaded_scope==marker:
                 for session in self.selection.sessions:session.snapshot.check(session.path)
                 return True

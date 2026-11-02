@@ -46,7 +46,7 @@ class ContestWorkflowTests(unittest.TestCase):
                 d,p=self.wizard(fmt)
                 p.prepare();self.assertIsNone(p.prepared)
                 if fmt.startswith('JARL'):
-                    values=dict(contest='試験コンテスト',category='X',name='試験 太郎',address='東京都',power='5',date='2026-01-02',signature='試験 太郎',email='test@example.com',oath=True)
+                    values=dict(contest='試験コンテスト',category='X',name='試験 太郎',address='東京都',opplace='埼玉県草加市',power='5',date='2026-01-02',signature='試験 太郎',email='test@example.com',oath=True)
                     if fmt=='JARL R1.0':values.update(licenseclass='第2級アマチュア無線技士',powertype='定格出力')
                 elif fmt=='Cabrillo':
                     values={'CONTEST':'TEST','NAME':'Test Operator','ADDRESS':'Test address','CATEGORY-OPERATOR':'SINGLE-OP','CATEGORY-BAND':'ALL','CATEGORY-POWER':'LOW','CATEGORY-MODE':'CW'}
@@ -67,7 +67,7 @@ class ContestWorkflowTests(unittest.TestCase):
                 d.timer.stop();d.cancel_score()
     def test_jarl_r10_requires_licenseclass_in_ui_but_r21_does_not(self):
         d,p=self.wizard('JARL R1.0')
-        base=dict(contest='試験コンテスト',category='X',name='試験 太郎',address='東京都',power='5',date='2026-01-02',signature='試験 太郎',email='test@example.com',oath=True)
+        base=dict(contest='試験コンテスト',category='X',name='試験 太郎',address='東京都',opplace='埼玉県草加市',power='5',date='2026-01-02',signature='試験 太郎',email='test@example.com',oath=True)
         self.fill(p,base);p.prepare();self.assertIsNone(p.prepared);self.assertIn('従事者資格',p.status.text())
         self.fill(p,{'licenseclass':'第2級アマチュア無線技士'});p.prepare();self.assertIsNone(p.prepared);self.assertIn('出力の記載区分',p.status.text())
         self.fill(p,{'powertype':'定格出力'});p.prepare();self.assertIsNotNone(p.prepared,p.status.text())

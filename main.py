@@ -1,4 +1,4 @@
-"""PSLog 1.21 application entry point and main/session UI."""
+"""PSLog 1.22 application entry point and main/session UI."""
 import sys
 import ctypes
 import subprocess
