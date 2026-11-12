@@ -6,7 +6,7 @@ import unittest
 import zipfile
 from pathlib import Path
 
-from tools.package_windows import package,REQUIRED,PDFS,BUNDLED_DIRS
+from tools.package_windows import package,REQUIRED,PDFS,BUNDLED_DIRS,LICENSE_DOCUMENTS
 from update_package import inspect_update,LEGACY_MANAGED_ROOTS_1042,LEGACY_MANAGED_ROOTS_1041
 
 
@@ -25,7 +25,7 @@ class PackageTests(unittest.TestCase):
                     dst=build/'_internal'/src.relative_to(source);dst.parent.mkdir(parents=True,exist_ok=True);dst.write_bytes(src.read_bytes())
         return source,build
 
-    def test_normal_package_has_clean_root_meta_and_empty_docs(self):
+    def test_normal_package_has_clean_root_meta_and_current_licenses(self):
         with tempfile.TemporaryDirectory() as folder:
             root=Path(folder);source,build=self.fixture(root);out=root/'delivery.zip';package(build,source,out)
             with zipfile.ZipFile(out) as z:
@@ -33,7 +33,9 @@ class PackageTests(unittest.TestCase):
                 root_files={n[len('PSLog/'):] for n in names if n.startswith('PSLog/') and not n.endswith('/') and '/' not in n[len('PSLog/'): ]}
                 self.assertEqual(root_files,{'pslog.exe'})
                 self.assertIn('PSLog/docs/',names)
-                self.assertFalse(any(n.startswith('PSLog/docs/') and n!='PSLog/docs/' for n in names))
+                for name in LICENSE_DOCUMENTS:
+                    path='docs/'+name
+                    self.assertEqual(z.read('PSLog/'+path),(source/name).read_bytes())
                 self.assertIn('PSLog/meta/BUILD_INFO.json',names)
                 self.assertIn('PSLog/meta/PSLOG_UPDATE_INFO.json',names)
                 self.assertIn('PSLog/meta/versionup.json',names)
@@ -45,6 +47,8 @@ class PackageTests(unittest.TestCase):
                 info=json.loads(z.read('PSLog/meta/BUILD_INFO.json'))
                 self.assertEqual(info['windows_manual_test'],'未確認');self.assertEqual(info['version'],'1.23')
                 update=json.loads(z.read('PSLog/meta/PSLOG_UPDATE_INFO.json'))
+                for name in LICENSE_DOCUMENTS:
+                    self.assertIn('docs/'+name,update['files'])
                 self.assertEqual(update['version'],'1.23');self.assertEqual(update['product'],'PSLog')
                 self.assertIn('exec/PSLogUpdater.exe',update['files']);self.assertIn('meta/BUILD_INFO.json',update['files']);self.assertIn('meta/versionup.json',update['files'])
                 versionup=json.loads(z.read('PSLog/meta/versionup.json'))
@@ -85,6 +89,8 @@ class PackageTests(unittest.TestCase):
                 self.assertIn('PSLog/exec/PSLogUpdater.exe',names);self.assertNotIn('PSLog/PSLogUpdater.exe',names)
                 self.assertIn('PSLog/BUILD_INFO.json',names);self.assertNotIn('PSLog/meta/BUILD_INFO.json',names)
                 self.assertIn('PSLog/USER_GUIDE.txt',names)
+                for name in LICENSE_DOCUMENTS:
+                    self.assertEqual(z.read('PSLog/_internal/licenses/'+name),(source/name).read_bytes())
             self.assertEqual(inspect_update(out).version,'1.23')
 
     def test_1041_bridge_has_only_legacy_root_updater(self):
@@ -94,6 +100,8 @@ class PackageTests(unittest.TestCase):
                 names=z.namelist();update=json.loads(z.read('PSLog/PSLOG_UPDATE_INFO.json'))
                 self.assertEqual(tuple(update['managed_roots']),LEGACY_MANAGED_ROOTS_1041)
                 self.assertIn('PSLog/PSLogUpdater.exe',names);self.assertNotIn('PSLog/exec/PSLogUpdater.exe',names)
+                for name in LICENSE_DOCUMENTS:
+                    self.assertEqual(z.read('PSLog/_internal/licenses/'+name),(source/name).read_bytes())
             self.assertEqual(inspect_update(out).version,'1.23')
 
     def test_package_script_bridge_cli(self):
@@ -142,6 +150,19 @@ class PackageTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as folder:
             root=Path(folder)
             with self.assertRaisesRegex(ValueError,'外に指定'):package(root,Path(__file__).parent,root/'release.zip')
+
+    def test_stale_license_copies_in_build_are_replaced(self):
+        with tempfile.TemporaryDirectory() as folder:
+            root=Path(folder);source,build=self.fixture(root)
+            for prefix in ('docs','_internal/licenses'):
+                for name in LICENSE_DOCUMENTS:
+                    p=build/prefix/name;p.parent.mkdir(parents=True,exist_ok=True);p.write_bytes(b'obsolete terms')
+            out=root/'licenses.zip';package(build,source,out)
+            with zipfile.ZipFile(out) as z:
+                for prefix in ('docs','_internal/licenses'):
+                    for name in LICENSE_DOCUMENTS:
+                        self.assertEqual(z.read('PSLog/'+prefix+'/'+name),(source/name).read_bytes())
+            self.assertEqual(inspect_update(out).version,'1.23')
 
 
 if __name__=='__main__':unittest.main()

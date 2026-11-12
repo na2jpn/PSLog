@@ -1,5 +1,25 @@
 # PSLog 1.23
 
+## ライセンス / License
+
+Copyright (c) 2026 Hiroshi Tanaka (JH1HST)
+
+PS Ham-ware / AKIHABARA-GIKEN — [開発者 / na2jpn](https://github.com/na2jpn)
+
+PSLog本体は **GNU GPL v3以降（GPL-3.0-or-later）** で提供します。営利・非営利を問わず利用・改変・再配布でき、配布時はGPLに従って必要な表示を保持し、対応するソースを提供してください。改良版の公開連絡は任意です。
+
+- [ライセンス全文 / Full license](LICENSE.md)
+- [共通方針・日英説明 / Licensing guide](LICENSING.md)
+- [作者からの案内 / Author notice](AUTHOR_NOTICE.txt)
+- 公式サイト / Website: https://2jp.org/ps/pslog/
+- ソースコード / Source code: https://github.com/na2jpn/PSLog
+
+PSLog is free software licensed under **GPL-3.0-or-later**. Third-party components and reference materials retain their respective licenses and notices. The common license does not relicense third-party works.
+
+Windows配布ZIPにもライセンスを同梱します。Python、PySide6/Qt、PyInstaller、xlrd、pyserial、CTY等の第三者コンポーネント・参照資料の条件は個別に適用されます。
+
+## Ver1.23 の変更
+
 - JARL QRP CLUB 2026年 QRP コンテストを標準収録。一般／自作機の16種目に対応し、表示・提出用大会名を正式名称に統一しました。追加パックの取込みは不要です。
 - 参加部門・運用条件画面の長い確認文を折り返し、画面を横に押し広げないよう修正しました。
 - 標準ログ入力で手入力した過去年のDate・Timeをコール確定時にも保持。Dateの年に応じたログへ保存し、保存先表示も追従します。日付はYYYY/MM/DD等でも入力できます。現在時刻との差の確認では「入力日時で記録」を選びます。

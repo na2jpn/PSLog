@@ -112,7 +112,26 @@ CTYの版・出典・配布条件はconfig/db/cty_meta.jsonとcty_LICENSE.txtに
 '''}
 from user_guide import GUIDE
 TEXTS['使い方']=GUIDE
-TEXTS['PSLogについて'] += '\n作者からの案内\nPSLogは、H.Tanakaが自身のアマチュア無線交信ログを管理するために私的に開発し、利用するソフトウェアです。\n作者自身の使いやすさを優先しており、第三者の要望への対応、サポート、不具合修正や継続提供を約束するものではありません。\n利用・改良は利用条件の範囲で自由ですが、利用者自身の判断と責任で行ってください。記録内容や提出ファイルの確認、必要なバックアップは利用者が行ってください。\n\nPSLog\nCopyright (c) 2026 H.Tanaka (JH1HST)\nOriginally developed by H.Tanaka (JH1HST)\nAKIHABARA-GIKEN\n\nBased on PSLog Format — established in 2013\n\n再配布について\n無改変版の再配布は認めていません。作者の配布元を案内してください。\n改良版を再配布する場合は、元となるPSLogの版、変更箇所・変更内容、改良版の名称と版、配布責任者を明示してください。\nまた、対応する改良版のソースコード全体と、ビルドに必要なスクリプト・設定を受領者が取得できるようにしてください。\n改良版の配布前に、作者へ改良内容、配布先、配布者本人の氏名と連絡先を通知してください。作者の個別承認を条件とするものではありません。\n元作者の表示を保持し、作者の公式版または作者が保証する版であると誤認させないでください。\nPython、PySide6/Qt、PyInstaller、CTY等の第三者のライブラリ・素材・参照データには、それぞれの利用条件が適用されます。'
+LICENSE_NOTICE = (
+    'PSLog本体: GNU GPL v3以降（GPL-3.0-or-later）\n'
+    '営利・非営利を問わず利用・改変・再配布できます。配布時はGPLに従って作者表示等を保持し、対応するソースを提供してください。\n'
+    '改変版は改変と日付を明示してください。改良版の公開連絡は任意で、通知・実名等の提出・事前承認は条件ではありません。\n'
+    '本ソフトウェアはGPLの定めと適用法令で認められる範囲で無保証です。\n'
+    'ライセンス本文と共通方針は下のボタン、または配布版のdocs/LICENSE.mdとdocs/LICENSING.mdで確認できます。\n'
+    'ソース: https://github.com/na2jpn/PSLog\n'
+    'Python、PySide6/Qt、PyInstaller、CTY等の第三者ライブラリ・素材・参照データには、それぞれの利用条件が適用されます。'
+)
+TEXTS['PSLogについて'] += (
+    '\n作者からの案内\n'
+    'PSLogは、Hiroshi Tanakaが自身のアマチュア無線交信ログを管理するために開発したソフトウェアです。\n'
+    '第三者の要望への対応、サポート、不具合修正や継続提供を約束するものではありません。\n'
+    '記録内容や提出ファイルの確認、必要なバックアップは利用者自身で行ってください。\n\n'
+    'Copyright (c) 2026 Hiroshi Tanaka (JH1HST)\n'
+    'Originally developed by Hiroshi Tanaka (JH1HST)\n'
+    'PS Ham-ware / AKIHABARA-GIKEN\n'
+    'Based on PSLog Format — established in 2013\n\n'
+    + LICENSE_NOTICE
+)
 
 def _resource(relative):
     return Path(getattr(sys,'_MEIPASS',Path(__file__).resolve().parent))/relative
@@ -162,7 +181,24 @@ class HelpDialog(SafeDialog):
             '利用者提供のJCC/JCG資料、JARL登録クラブ資料、Jim Reisert AD1CのAmateur Radio Country Filesを参照しています。\n'
             'CTYの版・出典・配布条件は config/db/cty_meta.json と cty_LICENSE.txt に記載しています。\n'
             '更新日時点の参照情報であり、過去の運用やアワードの有効性は別途確認が必要です。',body))
-        author='H.Tanakaが自身のアマチュア無線交信ログを管理するために開発したソフトウェアです。\n'
+        author='Hiroshi Tanakaが自身のアマチュア無線交信ログを管理するために開発したソフトウェアです。\n'
         author+='記録内容や提出ファイルの確認、必要なバックアップは利用者自身で行ってください。\n\n'
-        author+='Copyright (c) 2026 H.Tanaka (JH1HST)\nAKIHABARA-GIKEN\nBased on PSLog Format — established in 2013'
-        v.addWidget(_section('作者からの案内',author,body));v.addStretch(1);scroll.setWidget(body);outer.addWidget(scroll,1);outer.addWidget(button('閉じる',self.accept))
+        author+='Copyright (c) 2026 Hiroshi Tanaka (JH1HST)\nPS Ham-ware / AKIHABARA-GIKEN\nBased on PSLog Format — established in 2013'
+        v.addWidget(_section('作者からの案内',author,body))
+        v.addWidget(_section('ライセンス',LICENSE_NOTICE,body))
+        v.addWidget(button('ライセンス全文（GPL v3）',lambda:self._show_license('LICENSE.md')))
+        v.addWidget(button('共通方針・日英説明',lambda:self._show_license('LICENSING.md')))
+        v.addStretch(1);scroll.setWidget(body);outer.addWidget(scroll,1);outer.addWidget(button('閉じる',self.accept))
+
+    def _show_license(self,name):
+        candidates=(data_directory()/'docs'/name,_resource('licenses/'+name),Path(__file__).resolve().parent/name)
+        text='ライセンス文書を読み込めません。PSLogの配布ファイルを確認してください。'
+        for path in candidates:
+            try:
+                if path.is_file():
+                    text=path.read_text(encoding='utf-8-sig');break
+            except (OSError,UnicodeError):
+                pass
+        dialog=SafeDialog(self);dialog.setWindowTitle(name+' — PSLog');dialog.resize(800,650)
+        layout=QVBoxLayout(dialog);view=QPlainTextEdit(dialog);view.setReadOnly(True);view.setPlainText(text)
+        layout.addWidget(view,1);layout.addWidget(button('閉じる',dialog.accept));dialog.exec()

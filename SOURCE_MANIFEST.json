@@ -9,7 +9,8 @@
     "QRP Club 2026 r2 official name",
     "responsive contest conditions",
     "historical Date entry",
-    "No QSL list"
+    "No QSL list",
+    "GPL-3.0-or-later common license and Hiroshi Tanaka author notice (2026-11-12)"
   ],
   "verification": {
     "isolated_modules": 182,
@@ -17,7 +18,18 @@
     "all_isolated_modules_exit0": true,
     "python_syntax_files": 385,
     "windows_build": false,
-    "live_rbn_verified": false
+    "live_rbn_verified": false,
+    "license_update_20261112": {
+      "base_commit": "e9bd2753f61e25d9b6ead31e2f71b32e2966a449",
+      "targeted_unit_tests": 24,
+      "targeted_unit_tests_passed": true,
+      "offscreen_about_and_both_license_views": true,
+      "canonical_license_documents_match": true,
+      "full_suite_rerun": false,
+      "windows_exe_build": false,
+      "third_party_full_rights_audit": false,
+      "note": "Other verification fields are historical results from the base canonical source."
+    }
   },
   "files": {
     ".gitignore": {
@@ -25,8 +37,8 @@
       "sha256": "c0e3ad4f1b99c97dabb5cc0457de0669a4a27be7481697b63540d66ffdc208c7"
     },
     "AUTHOR_NOTICE.txt": {
-      "bytes": 793,
-      "sha256": "5570f0b27e37b7b3b08ceda780527dc7113310ca4bc35bcb2b4f494499a9d2ae"
+      "bytes": 2537,
+      "sha256": "16322d71a1d36795a707cd063d270b8e8a6afa87fb1d56aee06a7b9a9fc08f2b"
     },
     "CANONICAL_README.md": {
       "bytes": 1456,
@@ -76,13 +88,25 @@
       "bytes": 1456,
       "sha256": "03d5877a7cb8304047d4316303b8f791f8c36932843f837f6c4f17fe6403b61d"
     },
+    "LICENSE.md": {
+      "bytes": 35149,
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+    },
+    "LICENSE_UPDATE_20261112.md": {
+      "bytes": 3335,
+      "sha256": "ca1e5a725c4e26c70a16f949c3f2024c2eea612d029bd2bf64b2dab38b22e77a"
+    },
+    "LICENSING.md": {
+      "bytes": 8849,
+      "sha256": "1b231742c04121c2def69459d7c5049b212819a586614529d0e0a831b9ff7cf7"
+    },
     "NEXT_CHAT_PROMPT.md": {
       "bytes": 1456,
       "sha256": "03d5877a7cb8304047d4316303b8f791f8c36932843f837f6c4f17fe6403b61d"
     },
     "README.md": {
-      "bytes": 11202,
-      "sha256": "b5d8687a7a555eee3569d1cacbfa2c3c2f0509c1871189fa0e21ab2672e22560"
+      "bytes": 12401,
+      "sha256": "d14ecca736b53e1d9ec1328f419877856f100250e7bb7afa9dc7081f2226bedb"
     },
     "RELEASE_NOTES_1.20.md": {
       "bytes": 2664,
@@ -217,8 +241,8 @@
       "sha256": "791cba35e8e85a09499fbd16c16fb3cc669dea2aefd05c61225268d7018e9a60"
     },
     "build-windows.ps1": {
-      "bytes": 3737,
-      "sha256": "52006cd9c19333ecf0175f62d3d593297b109be61a92a4564ed7dfce8702fb4a"
+      "bytes": 3842,
+      "sha256": "9cfc652ea1bbabbf85087d4706425f9761604f95130afbb3dbff3f576b238938"
     },
     "bundled_sync.py": {
       "bytes": 4729,
@@ -265,8 +289,8 @@
       "sha256": "4b12221b737b13390b1bfe411dad859ce0b120423e2114491c368a7e72cec58f"
     },
     "config/db/club_db.csv": {
-      "bytes": 40538,
-      "sha256": "de93a27e81010282514be9b26da2888dc7c190f3a63e55abe4a7b959a446d86a"
+      "bytes": 39650,
+      "sha256": "f5ac43827ce33e8b46994d502b210bca9a7e10d61f7ee1f56f526c1d1aad56d8"
     },
     "config/db/club_db_meta.json": {
       "bytes": 440,
@@ -621,8 +645,8 @@
       "sha256": "d05923d44ab48e161b88fcb11e99184b19c58d0410e6f163ed22426a4355eb3d"
     },
     "config/db/cty.dat": {
-      "bytes": 105954,
-      "sha256": "69359cd679fac2b5c8df6d2b8debc152f510718c3c7581af6c21f33e928cb4c3"
+      "bytes": 104279,
+      "sha256": "37334a228568855fc8754977a3b0d8be9c6c8c39858d8852b90d811c5b86f315"
     },
     "config/db/cty_LICENSE.txt": {
       "bytes": 1204,
@@ -2429,16 +2453,16 @@
       "sha256": "92974feb7c068538c77ebb0454ab1c377ce8e673ac1b388d92e92cdd734e37a0"
     },
     "docs/contest-research/sources/all_ja0_18_2025.html": {
-      "bytes": 10432,
-      "sha256": "ddd81bde024a2073977316126d00ae0b2a665cf21eaa4569f20aa2f48d68935d"
+      "bytes": 10327,
+      "sha256": "7d78f2d8b0cc41a3daca17c0dd2eb6a921f630ad41abc61f2a1af75e51fec182"
     },
     "docs/contest-research/sources/all_ja0_18_2026.html": {
-      "bytes": 10435,
-      "sha256": "2f76cef8e3bc82cebd9cb4af5a3c78c638d24552ad2ee26b290566121947291a"
+      "bytes": 10329,
+      "sha256": "f068cba391f4e66defbafee028d89e46374c9effa78220c8ab80c9acd81129d4"
     },
     "docs/contest-research/sources/all_ja0_35_7_2026.html": {
-      "bytes": 11363,
-      "sha256": "41d8c7dc81f8b611d5f7b191ef695780cb7304a02aa073863adb033e76f298df"
+      "bytes": 11243,
+      "sha256": "07d10bf4aab0ddf3c609fc49957547436c11c6b3e405c6993af54ec94d4e152c"
     },
     "docs/contest-research/sources/all_ja4_2026.html": {
       "bytes": 32065,
@@ -2457,8 +2481,8 @@
       "sha256": "600665c6d6a3f055edffac572416cad3da25a1c182ddf7b575b213b9e4318967"
     },
     "docs/contest-research/sources/all_ja5_2026.html": {
-      "bytes": 20133,
-      "sha256": "bedbcc0c0a520ce9d4288108f076f2b7d329a507ace6fb0d0aaf2b8c6eb3bc45"
+      "bytes": 19636,
+      "sha256": "d8f4416e7a107858742677f491ab0e1747cd32e84e08514fbe9b292aae63fb0f"
     },
     "docs/contest-research/sources/all_ja8_2026.pdf": {
       "bytes": 351254,
@@ -2505,8 +2529,8 @@
       "sha256": "aa3472f4d605b6226b03afa0885d638b649ae8a0f186ed8e37ce109b9ab15c8b"
     },
     "docs/contest-research/sources/all_okayama_2026.html": {
-      "bytes": 23038,
-      "sha256": "030f284dc0977cb12455d30e5384cf94c1e056b12147254158acbb6f28154c8c"
+      "bytes": 22482,
+      "sha256": "43da9d977cc29fa02a70df6be8c090097a3656f14387d9df7e756337acbb86e4"
     },
     "docs/contest-research/sources/all_osaka_2026.html": {
       "bytes": 24754,
@@ -2557,68 +2581,68 @@
       "sha256": "d42e07a28fdc8ad502030a590c1f309bb566f1caf1b17fabb0cff6d3f11f97e0"
     },
     "docs/contest-research/sources/cq160_cabrillo.html": {
-      "bytes": 20584,
-      "sha256": "b5a02a3db183aa426136d70adf0708d42b2ba54f096f8d613740b1125c6c9e56"
+      "bytes": 20125,
+      "sha256": "961917118545a70fac541d410f7d57243161c00ce2b50c587790bfcb0ede1ead"
     },
     "docs/contest-research/sources/cq160_cabrillo.txt": {
-      "bytes": 11866,
-      "sha256": "fdacd0500ffd61d7278e4606303b1bee995a741a8b27b21787ac5bc626e8dab2"
+      "bytes": 11741,
+      "sha256": "ae0281eb2d01651a555eb1c2abea3c9a097e13d61dde5e28c6fde84c5aac037b"
     },
     "docs/contest-research/sources/cq160_rules_2026.html": {
-      "bytes": 18942,
-      "sha256": "9224cd98cd79f012be60e18c30b97caebaaaf582b2754c90a3a58f9811fce82c"
+      "bytes": 18609,
+      "sha256": "585c6972f7d6b522a32eeb26d4231e0b52739374c57aa4270ba77e5b70b284c6"
     },
     "docs/contest-research/sources/cq160_rules_2026.txt": {
-      "bytes": 11992,
-      "sha256": "5e971b7bdfa34ddad3255b34d11b6c83af51ebf758f188fa3f2de6a1b90a8fee"
+      "bytes": 11893,
+      "sha256": "caa47369dc1307e704342a04b4b645c19d72f15bbbc891f5d9aab0d8f2c4cac0"
     },
     "docs/contest-research/sources/cqvhf_cabrillo.html": {
-      "bytes": 12800,
-      "sha256": "8fab7890cd5879a1c0fc8b3e899a2371ea30aee421d8c5188feed13c1e7e963d"
+      "bytes": 12492,
+      "sha256": "fa782f1241db4a0e6893164fc156eb3adad477367ffcf85253b783e7d119d457"
     },
     "docs/contest-research/sources/cqvhf_cabrillo.txt": {
-      "bytes": 6139,
-      "sha256": "50772a3de4c92f813ef0a1b556539b433b81d79eaa1836edadc7ffc4647e3805"
+      "bytes": 6081,
+      "sha256": "84f5041e73ce8f816bc88b1c26f591875e6afb178734a8b88061e987a7a098d4"
     },
     "docs/contest-research/sources/cqvhf_rules_2026.html": {
-      "bytes": 17535,
-      "sha256": "436fdc726128241b6d72673cf552ca7fc6ea56c1385821a08acf4e2d43f538da"
+      "bytes": 17219,
+      "sha256": "d1cb4c8d90296ac55039e8b6eaf00c3747a7b355d6f7eecd31c98c3e6d5c0944"
     },
     "docs/contest-research/sources/cqvhf_rules_2026.txt": {
-      "bytes": 10358,
-      "sha256": "4c5f606734741a80b8434cbe7fc051207eefcd3392d2b80508fc77817fb99bf4"
+      "bytes": 10293,
+      "sha256": "433d516319c2ab42cc7a6fa127a30d06976d468fa8e669b3659b79f011bb7241"
     },
     "docs/contest-research/sources/cqww_cabrillo.html": {
-      "bytes": 24710,
-      "sha256": "dac58b4f86a32d482a05f53cdf899dd12637ba1b42cb26fe3839547ed770093c"
+      "bytes": 24142,
+      "sha256": "d50feb0b511269168c958a0c62830af6cf65318af84ef5bb648d52b48450f4ee"
     },
     "docs/contest-research/sources/cqww_cabrillo.txt": {
-      "bytes": 14872,
-      "sha256": "1a1a58f41fdd334c89a0d2c9e1712eb23411e1e58ec77eef96a6d526c425b2b0"
+      "bytes": 14705,
+      "sha256": "9914c89859d27cac7eb0a21f387d74e10fb50af1c246e755df9cca69b877c388"
     },
     "docs/contest-research/sources/cqww_rtty_cabrillo.html": {
-      "bytes": 14943,
-      "sha256": "16a31037e27540ce3e7975798ab6e5726bbcd7eac05b196177b826f768dd72f9"
+      "bytes": 14581,
+      "sha256": "7366db4860e51021d294945cb2f8f96d55df8519328277d0ff3ddd7505aeff92"
     },
     "docs/contest-research/sources/cqww_rtty_cabrillo.txt": {
-      "bytes": 7796,
-      "sha256": "955e5b3719f2be95cc1150cfd0df854a2771b7d08fb5c58f34c89bc1c6640291"
+      "bytes": 7716,
+      "sha256": "0be4ca029d611106f65109dd5c02dc73b9ccca80f7cea1232430e90cc2843f33"
     },
     "docs/contest-research/sources/cqww_rtty_rules_2026.html": {
-      "bytes": 35593,
-      "sha256": "9539b2d4fa06f4ebb79e9688ff8df47fd9bd0eb163c6de86a336a5312d654145"
+      "bytes": 35035,
+      "sha256": "c3a4361d1b3a27f555428ec875e92f57e92cf0814d1a74c4a403b91a98639d49"
     },
     "docs/contest-research/sources/cqww_rtty_rules_2026.txt": {
-      "bytes": 20488,
-      "sha256": "a4235060988d6c2d3e9b2d0fe7390157eb37d4dc7c22432a8f0e0b0f97a5141e"
+      "bytes": 20292,
+      "sha256": "2631452c40b8645004184177a3bbe3e760eecad874c164587c15c3d48824af54"
     },
     "docs/contest-research/sources/cqww_rules_2025.html": {
-      "bytes": 29845,
-      "sha256": "6b36ef3fedce125f75e1ac62c1dd931ee52236594f3f13d59ddf9563c8b1b900"
+      "bytes": 29485,
+      "sha256": "16a86eda99ec9ba9bcc5ae5149e67b4a7e670ebf96a0d1776bf9031bf36d35fb"
     },
     "docs/contest-research/sources/cqww_rules_2025.txt": {
-      "bytes": 18757,
-      "sha256": "77198b6234e92e6dc1ffe4e118dd6769df48c8240e652ef5a6bcc1fed2819f2c"
+      "bytes": 18721,
+      "sha256": "37cc7cc44665c650b73ce6156bc301d22fc93c3486f7faa717facddc975038f2"
     },
     "docs/contest-research/sources/cqww_rules_2026.html": {
       "bytes": 189,
@@ -2633,8 +2657,8 @@
       "sha256": "e21464fc70797184509b44eeb66040bfc64275606b5651de6f122eae46e8cb00"
     },
     "docs/contest-research/sources/gigahertz_2026.html": {
-      "bytes": 9720,
-      "sha256": "bd0d9ea9bdfbca475c6aebbf6fc665fda492e939030c6ed0aed36bfb7c872982"
+      "bytes": 9532,
+      "sha256": "345aed38af69a939137f1a91141d2e281e5c2c8717930de2ed316882a19bb67b"
     },
     "docs/contest-research/sources/hiroshima_was_2026.html": {
       "bytes": 56686,
@@ -2677,8 +2701,8 @@
       "sha256": "6d34e4bbfd7eaf1911c57981061149b7d62d00222540a2cd4db7691389e07975"
     },
     "docs/contest-research/sources/ja0_elog_instructions.html": {
-      "bytes": 16148,
-      "sha256": "3a760c46eb246f13a6f9417083a1788596c1f4b8c78f2bbc6ca9617e2d7f8aff"
+      "bytes": 15986,
+      "sha256": "5ea83fbb063dee2ba313e883b06fc146208909976ec4378bb80a2b7bc5a5b3cc"
     },
     "docs/contest-research/sources/ja0_vhf_2026.pdf": {
       "bytes": 206362,
@@ -2809,12 +2833,12 @@
       "sha256": "eca0dbe6c89997077710e1053c0ba235c1c2843c211461b0cc48647dc2ae693d"
     },
     "docs/contest-research/sources/kyoto_elog.html": {
-      "bytes": 61331,
-      "sha256": "942e30ce850dbbb4800e959a9eec6bfdb4b669b8b8556b62b5b6c0eb653825c6"
+      "bytes": 60284,
+      "sha256": "e6e1830e0bbc3b40bad0e24d40e134208ec2024c49553ee9e5900447c04ea725"
     },
     "docs/contest-research/sources/kyushu_index_2026.html": {
-      "bytes": 38482,
-      "sha256": "3c41d2a8c0f5c729755ab1c084f4ff7cbcac8a7aa41e110bde8fc8bc478562f2"
+      "bytes": 38003,
+      "sha256": "1f399c5922b0e33c1b4e03fb62f3b2d53c71c4718574c5218163817a91fefc8b"
     },
     "docs/contest-research/sources/kyushu_jcc_40.html": {
       "bytes": 12111,
@@ -2885,12 +2909,12 @@
       "sha256": "91c836b9c54911092056352037c3c697855fb4f8d0e94ee053a2ada2cc3af2b1"
     },
     "docs/contest-research/sources/miyazaki_2026.html": {
-      "bytes": 37608,
-      "sha256": "34003f57fe360b6a40c164a19b429c7aab963bb925b3a18a9fa99000623e9f24"
+      "bytes": 37033,
+      "sha256": "5adb4d979a5d14f2355a98fe051319cef3aa38e28c69d2107449d6e9e1261e15"
     },
     "docs/contest-research/sources/miyazaki_faq.html": {
-      "bytes": 11909,
-      "sha256": "d9c83d18ffa9e26f2a4574c1284e5842b67b4fd612505e81664df778e128776f"
+      "bytes": 11579,
+      "sha256": "9b25fbf74c610cd3f7b10deef074d9b0197314a4a2503d342ae16f7a676c1424"
     },
     "docs/contest-research/sources/nagasaki_2026.pdf": {
       "bytes": 137191,
@@ -2917,8 +2941,8 @@
       "sha256": "4c3e4e8fdbfcd11da0af78c33f9cb343d7131f11b7b6179bb8dff6a5225662dc"
     },
     "docs/contest-research/sources/niigata_2026.html": {
-      "bytes": 9858,
-      "sha256": "db73169b364d43e092b7e6cff799a21aab3a94dda87691b7991350c411868a14"
+      "bytes": 9668,
+      "sha256": "d94d4da3d86121824ce38c6fc5277f89116dbdd29f0985f28f2616bbb605f700"
     },
     "docs/contest-research/sources/oita_2026.html": {
       "bytes": 101061,
@@ -2933,8 +2957,8 @@
       "sha256": "eae0d63edd5cfea4c9f4ccd8000d05e5c187513367d830148c101d36a3a5e9d9"
     },
     "docs/contest-research/sources/okayama_ft8_2026.html": {
-      "bytes": 14608,
-      "sha256": "ce99b84fc30c2a61319fcc347770a6610d424bdff7c0f775a44e827be8288b88"
+      "bytes": 14372,
+      "sha256": "9924186897de8cad4b9442f95baa7850125057cfff4420c2e23669dac02fdfdd"
     },
     "docs/contest-research/sources/okayama_ft8_common.js": {
       "bytes": 2427,
@@ -2957,8 +2981,8 @@
       "sha256": "6c784fe1b3ca0917396741da7529c37099251962fb4824f67305e2bc17ac0950"
     },
     "docs/contest-research/sources/okhotsk_home_20260913.html": {
-      "bytes": 14589,
-      "sha256": "057426138db553b787c538d69d5bb3c443ec257b149e9ac476a002316ad6cec7"
+      "bytes": 14385,
+      "sha256": "51662b73bfd86ca50e77f4c35a39b0637ce39beb486028a791ef73c1864ef9a9"
     },
     "docs/contest-research/sources/oshima_hiyama_2026.pdf": {
       "bytes": 205070,
@@ -2981,8 +3005,8 @@
       "sha256": "16a90c7cdb4860d9dfcb1592ca5ad89535358fa9794e8653581dad228f608d33"
     },
     "docs/contest-research/sources/shiga_2026.html": {
-      "bytes": 41311,
-      "sha256": "178da3d4fec16dd1da585b5d4ff99238cb6d013ba5e2e4ed9b54878d34668a6e"
+      "bytes": 40894,
+      "sha256": "831da443321f56e618655d3c3d7761bbc99d4f6e8e7d74c830c53cd772cac971"
     },
     "docs/contest-research/sources/shimane_2026.pdf": {
       "bytes": 122774,
@@ -2993,8 +3017,8 @@
       "sha256": "ee25ce0ad432d1b7e6cfe158df125c6597d8119cd2f8cce6054c34d9e19868c3"
     },
     "docs/contest-research/sources/shizuoka_2026_notices.html": {
-      "bytes": 39561,
-      "sha256": "6ed8a5668cc9e31be99db3a23391c356a0ee949750af1af2e95a3f2a329abb71"
+      "bytes": 39186,
+      "sha256": "2d59db14b0190429ac28f4b635518cc5e79eec87bc4da14a801f4140d611e57a"
     },
     "docs/contest-research/sources/shizuoka_35_2026.pdf": {
       "bytes": 157974,
@@ -3025,8 +3049,8 @@
       "sha256": "0f06329bb2b8e4c60772fdb80bd3e0ddc006e9442e8c19be8e508a1bee47c981"
     },
     "docs/contest-research/sources/tochigi_2026.html": {
-      "bytes": 13705,
-      "sha256": "d8c475bdf07f1b6fe04820711dfbf06a5e51218dd085ebde848bd6d38fecba52"
+      "bytes": 13402,
+      "sha256": "c567370c8ea05523d1e484107a0375517076f050438f05f82a9ebca37b9cbff5"
     },
     "docs/contest-research/sources/tochigi_2026.pdf": {
       "bytes": 191532,
@@ -3097,40 +3121,40 @@
       "sha256": "a4f2cf6ddfe9ed07459a0aeae4263ef0908833dfc4d2295d225dc2e87d8df509"
     },
     "docs/contest-research/sources/wpx_cabrillo.html": {
-      "bytes": 24211,
-      "sha256": "518e6f93a4faa440fa84c719f5447ec09dde36224294757c1cbd57cde6c27c02"
+      "bytes": 23648,
+      "sha256": "131cfe9dbbaa11936ed69bc4f9ca0451d5ef9fdd7ce4a86d0d9a2f6eb3f5fa72"
     },
     "docs/contest-research/sources/wpx_cabrillo.txt": {
-      "bytes": 14258,
-      "sha256": "ab9718356942aad595c26ee7abffb2ba199739d8c75ff089027b1c20f9537f6d"
+      "bytes": 14101,
+      "sha256": "06880b796589b8dd829d31f7b13acec803b8a153e6e862c7593eb042a23e5ec9"
     },
     "docs/contest-research/sources/wpx_home_date_confirmation_2026.html": {
-      "bytes": 12522,
-      "sha256": "7a23e63a7b526b74e36c438308ee20cb7c9a5b60d39d2dd5944d9fcaf63596a8"
+      "bytes": 12248,
+      "sha256": "5209b94ea65d9d4adb329681f42fafb373641521f2e3b01b798dbe6eb72b91af"
     },
     "docs/contest-research/sources/wpx_rtty_cabrillo.html": {
-      "bytes": 13385,
-      "sha256": "a6604b070b4bb3af36cd3682edd6f0459160c0a5330f05efed2709a255ff3d54"
+      "bytes": 13044,
+      "sha256": "09037e8dac8f92c1d80bfa0ca2d08aaf9394b6b0886731187f82989847b09827"
     },
     "docs/contest-research/sources/wpx_rtty_cabrillo.txt": {
-      "bytes": 6649,
-      "sha256": "ff66bacb728fd3f8c7b49fbf184e2b45cca703b7a4dd146c76aef1689a643934"
+      "bytes": 6572,
+      "sha256": "17540042d733d365c54f5170ad0621102b3eff29c4332d5b48e67024a1f1f539"
     },
     "docs/contest-research/sources/wpx_rtty_rules_2026.html": {
-      "bytes": 31921,
-      "sha256": "6b8d012b48fe6a1533650044e7ff1cd1ede5b3071ae6aba5ed22fa1bc9b7b0d8"
+      "bytes": 31402,
+      "sha256": "8af5e91feaa13ea40b1a5a94481fb3ec430ded0f087db5c6aa1320c55323b46e"
     },
     "docs/contest-research/sources/wpx_rtty_rules_2026.txt": {
-      "bytes": 19347,
-      "sha256": "f0c3ef8f07984d954ce79bd698ee8f0ee0b5440fc793d58a4a88a655e0c37b84"
+      "bytes": 19131,
+      "sha256": "8a19e57cf44e907a44f3a61eaa22847b8ec8fafce7ac594e89cdf4337157f6f4"
     },
     "docs/contest-research/sources/wpx_rules_2026.html": {
-      "bytes": 31534,
-      "sha256": "1b2462754d2543c2525fc962f3f282f379cee73b739e5b3b7536450803aabfe6"
+      "bytes": 30973,
+      "sha256": "867befb858e3c03d6176fe956ee0e3a76c84228392a1498cf5705bd6eba0e284"
     },
     "docs/contest-research/sources/wpx_rules_2026.txt": {
-      "bytes": 20319,
-      "sha256": "cdd9da26b715f423cffb81a4b93c626200f93f991e345c82923baa2862c61190"
+      "bytes": 20127,
+      "sha256": "f33236dce3b9107427f60ca01eb8a91a190767b245a1fa36f7c387a32b6215a2"
     },
     "docs/contest-research/sources/wpx_rules_2026_jp_datecheck.pdf": {
       "bytes": 411537,
@@ -3173,16 +3197,16 @@
       "sha256": "af8d89d1b729fb6c0c398024fb9a6b5da576fba608d861ab014c66a1d8b1e6fe"
     },
     "docs/development/contest_rule_display_audit_87/PSLog_1.069_CONTEST_RULE_DISPLAY_AUDIT_87.csv": {
-      "bytes": 46135,
-      "sha256": "7c3d2adb04d3dab6752857d6f57817ef2ae13fece909878540f0c95cdaa4a2a4"
+      "bytes": 46047,
+      "sha256": "34bfe6ca9dc7f866471a28ee0f46f2d60bb1a814768b9a141cbb9d1bddfe9a55"
     },
     "docs/development/contest_rule_display_audit_87/PSLog_1.069_CONTEST_RULE_DISPLAY_AUDIT_87.md": {
       "bytes": 18161,
       "sha256": "06a8c8bca47ee2e75531f84b6f5c8b3c4bf6723ae221a092ab801ad5dc27bd5f"
     },
     "docs/development/contest_rule_display_audit_87/REVIEWED_REMAINING71.csv": {
-      "bytes": 41683,
-      "sha256": "9bdf177203b8b848c0affc7e4b79192d11cc0dd7e0951dbe73194444e256ee8b"
+      "bytes": 41611,
+      "sha256": "d3a0606ea7124c4f153309021c015b1eb46d6a6d3b24315424b389ed5ca9f8ed"
     },
     "docs/history/20260912_before_cleanup_README.md": {
       "bytes": 15869,
@@ -3335,14 +3359,6 @@
     "docs/history/pre-windows-handoff/MANIFEST.json": {
       "bytes": 142085,
       "sha256": "bf4392390ba859ef5bb0642f0aad946522c88ca23749ab1d62b9dc926e42e647"
-    },
-    "docs/history/pre-windows-handoff/tests_extracted.log": {
-      "bytes": 82858,
-      "sha256": "e09928ae5765104066b708e9317756eeeb3ef8f84e8c9596b243e995a254b81e"
-    },
-    "docs/history/pre-windows-handoff/tests_source.log": {
-      "bytes": 82858,
-      "sha256": "c5096c1a1eb4380ba80cae4daa94981a3cb3b16ce9435d404cb56ed784479401"
     },
     "docs/history/ver1.04-patches/PATCH_01_README.md": {
       "bytes": 2479,
@@ -3665,8 +3681,8 @@
       "sha256": "5f0ad0a3cd47999a596f4169f875581252a94a5f080afda3ca89c833e735c798"
     },
     "docs/history/ver1.06-patches/final_1.069_1.070_handoff/WINDOWS_CHECKLIST.txt": {
-      "bytes": 4048,
-      "sha256": "529d596e1addc9065cc989fe1d7497ad929fa97d401c877728898ab9ece6230a"
+      "bytes": 3982,
+      "sha256": "098f3ce7ee0289ead917d52c54c4066bc40e47d5ffe1e897bb8e55962b20c503"
     },
     "docs/history/ver1.07-patches/PATCH01_MANIFEST.json": {
       "bytes": 6175,
@@ -4260,10 +4276,6 @@
       "bytes": 18490,
       "sha256": "a8a8998076e406851058f87021d63f9a9fb92d4b1c856bfdf59b5ed7de842079"
     },
-    "docs/validation/ver1.17/targeted_94_tests.log": {
-      "bytes": 593,
-      "sha256": "9d34aabf1c45f00915485e251943c897a9846df7c38d6c21e973f6074852e13e"
-    },
     "dxcc_check.py": {
       "bytes": 5140,
       "sha256": "b65ee5a2688945df9327339c00c499890312802d6976444498a34b969c558f3f"
@@ -4309,8 +4321,8 @@
       "sha256": "279230fd2215133df829ec27bf131335d4833d59d1700719f9c7ac600e0b4b52"
     },
     "help_ui.py": {
-      "bytes": 12461,
-      "sha256": "a6ed966d6cdac8ba311a4e62d3bda830cea354d35e9fbb4284cd5bbcc6117970"
+      "bytes": 13432,
+      "sha256": "94bea5a491a402f2414ddfe8ea438aa380e5c6aa2a4abecd2d0446628405874a"
     },
     "his_qth_batch.py": {
       "bytes": 12925,
@@ -4441,8 +4453,8 @@
       "sha256": "25a90b6e9cc2356c9d8b0711a9cd794b0cc87849c89c4af94818a457058a3a87"
     },
     "pslog.spec": {
-      "bytes": 1414,
-      "sha256": "0cd301eb6559b77448a54c977f6956c9f3a2b737c6060cfb7652588c1fabe5f3"
+      "bytes": 1504,
+      "sha256": "f31028fff92e5c55ed479f25c2300bc2b643940227a412748b5332766976a0fb"
     },
     "publish_rule_pack.py": {
       "bytes": 716,
@@ -5277,8 +5289,8 @@
       "sha256": "9912bf723bac43fae76f88f9296cd6c95d701f5582f1cdd038fe664887dbef0e"
     },
     "test_windows_package.py": {
-      "bytes": 9970,
-      "sha256": "383312b14e9f35b584a8e3debbc3d78d0d897c4d5f4ea8d2e08d04d5f35500db"
+      "bytes": 11265,
+      "sha256": "6b279a4a966c11beffc4cbe35e0a2cf13cba4ba874d2a614595d21c7677e3452"
     },
     "test_year_move.py": {
       "bytes": 5042,
@@ -5301,8 +5313,8 @@
       "sha256": "81b9ff490d0bcb750370ab3d430e4e0455952d01a9e6e80504dba71ff95ae2ce"
     },
     "tools/package_windows.py": {
-      "bytes": 10198,
-      "sha256": "ffdd494f741bfe0204a6a2315a3494f561ef39c6b920c83a10484dfa594fd813"
+      "bytes": 10829,
+      "sha256": "673721205e23171b84384dc247ba0d62562f670266dd78b336c9efb660d2accd"
     },
     "tools/postal_exceptions.py": {
       "bytes": 2443,

@@ -20,6 +20,7 @@ FORBIDDEN={'conf.cfg','location_overrides.json','submit_profiles.json'}
 BUNDLED_DIRS=(Path('assets/sounds'),Path('config/rules'),Path('config/db/contest'),Path('config/templates/cabrillo'))
 RETIRED_ROOT_DOCS=('USER_GUIDE.txt','SAVE_LOCATION.md','WINDOWS_CHECKLIST.txt')
 UPDATE_HISTORY=Path('meta/UPDATE_HISTORY.txt')
+LICENSE_DOCUMENTS=('LICENSE.md','LICENSING.md','AUTHOR_NOTICE.txt')
 
 
 def _source_assets(source):
@@ -80,6 +81,15 @@ def _legacy_docs(source, payload):
         payload[name]=p.read_bytes()
 
 
+def _license_documents(source, payload, prefix):
+    """Always use the current source notices rather than stale build copies."""
+    for name in LICENSE_DOCUMENTS:
+        document=Path(source)/name
+        if document.is_symlink() or not document.is_file():
+            raise ValueError('配布に必要なライセンス文書がありません: '+name)
+        payload[prefix+'/'+name]=document.read_bytes()
+
+
 def package(build,source,output,legacy_bridge=False,bridge_from=None):
     """Create a Windows ZIP.
 
@@ -100,13 +110,12 @@ def package(build,source,output,legacy_bridge=False,bridge_from=None):
     history=source/UPDATE_HISTORY
     if not history.is_file():
         raise ValueError('更新履歴がありません: '+str(UPDATE_HISTORY))
-    # meta is generated below; docs/ may contain future packaged documents, but
-    # it is intentionally empty in Ver1.043.  Old updaters cannot install the
-    # new roots, so bridge payloads omit them and use their exact historical
-    # root layout instead.
+    # Old updaters cannot install docs/ or meta/. Keep their exact historical
+    # root layout and carry notices under the already-managed _internal tree.
     if bridge_from:
         payload={k:v for k,v in payload.items() if not (k=='docs' or k.startswith('docs/') or k=='meta' or k.startswith('meta/'))}
         _legacy_docs(source,payload)
+        _license_documents(source,payload,'_internal/licenses')
         if bridge_from=='1.041':
             payload.pop('exec/PSLogUpdater.exe',None)
             payload['PSLogUpdater.exe']=updater.read_bytes()
@@ -121,8 +130,11 @@ def package(build,source,output,legacy_bridge=False,bridge_from=None):
         build_info_name='meta/BUILD_INFO.json'
         manifest_path=MANIFEST_PATH
         payload[UPDATE_HISTORY.as_posix()]=history.read_bytes()
-        # Keep docs visible in a freshly extracted Windows package even while it
-        # contains no documents yet.
+        _license_documents(source,payload,'docs')
+        # Also refresh the embedded copies used by the about-dialog fallback.
+        embedded_prefix='_internal/licenses'
+        if any(name.startswith(embedded_prefix+'/') for name in payload):
+            _license_documents(source,payload,embedded_prefix)
         directory_entries=('PSLog/docs/',)
 
     packaged_utc=datetime.now(timezone.utc).isoformat()
