@@ -111,95 +111,100 @@
 
 | 大会ID | 正式名 | 年度 | 読み | ファイル名 | 規約URL | ファイル更新日時（UTC） | 状態 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| all_ja8 | 2026 ALL JA8コンテスト | 2026 | 2026 ALL JA8コンテスト | all_ja8_2026.txt | https://jarl.hokkaido.jp/wp-content/uploads/2026/04/6983fec72be466a5b0f356b6234f10b2.pdf | 2026-09-14T23:55:37+00:00 | 登録済み（規約確認済みを意味しません） |
-| all_kumamoto | 2026オール熊本コンテスト | 2026 | 2026オール熊本コンテスト | all_kumamoto_2026.txt | https://www.jarl.com/kmtest/2026allkumamotoreg.pdf | 2026-09-14T22:07:19+00:00 | 登録済み（規約確認済みを意味しません） |
-| ishikari | 2026石狩後志支部コンテスト | 2026 | 2026石狩後志支部コンテスト | ishikari_2026.txt | https://isb.jarl.pro/2026/05/12/post-1624/ | 2026-09-14T23:55:36+00:00 | 登録済み（規約確認済みを意味しません） |
-| nagasaki | 2026長崎県コンテスト | 2026 | 2026長崎県コンテスト | nagasaki_2026.txt | https://www.jarl.com/nagasaki/nstest/2026ntst.pdf | 2026-09-14T22:07:19+00:00 | 登録済み（規約確認済みを意味しません） |
-| all_asian_dx_cw | ALL ASIAN DX CW | 2026 | ALL ASIAN DX CW | all_asian_dx_cw_2026.txt | https://www.jarl.org/Japanese/1_Tanoshimo/1-1_Contest/aadx_rules.html | 2026-09-15T04:28:27+00:00 | 登録済み（規約確認済みを意味しません） |
-| all_asian_dx_phone | ALL ASIAN DX Phone | 2026 | ALL ASIAN DX Phone | all_asian_dx_phone_2026.txt | https://www.jarl.org/Japanese/1_Tanoshimo/1-1_Contest/aadx_rules.html | 2026-09-15T04:28:27+00:00 | 登録済み（規約確認済みを意味しません） |
-| all_ja0_160m | ALL JA0 1.8MHzコンテスト | 2025 | ALL JA0 1.8MHzコンテスト | all_ja0_160m_2025.txt | https://jarl-nn.asama-net.com/index.php?html_id=00000503 | 2026-09-14T23:55:37+00:00 | 登録済み（規約確認済みを意味しません） |
-| all_ja0_35 | ALL JA0 3.5MHzコンテスト | 2026 | ALL JA0 3.5MHzコンテスト | all_ja0_35_2026.txt | https://jarl-nn.asama-net.com/index.php?html_id=00000510 | 2026-09-14T23:55:37+00:00 | 登録済み（規約確認済みを意味しません） |
-| all_ja0_7 | ALL JA0 7MHzコンテスト | 2026 | ALL JA0 7MHzコンテスト | all_ja0_7_2026.txt | https://jarl-nn.asama-net.com/index.php?html_id=00000510 | 2026-09-14T23:55:37+00:00 | 登録済み（規約確認済みを意味しません） |
-| all_ja5 | ALL JA5コンテスト | 2026 | ALL JA5コンテスト | all_ja5_2026.txt | https://www.jarl.com/shikoku/oa-08/index.html | 2026-09-14T22:07:19+00:00 | 登録済み（規約確認済みを意味しません） |
-| cq-160-cw | CQ World Wide 160 Meter CW | 2026 | CQ 160 | cq-160-cw_2026.txt | https://cq160.com/rules.htm | 2026-09-15T04:28:27+00:00 | 登録済み（規約確認済みを意味しません） |
-| cq-160-ssb | CQ World Wide 160 Meter SSB | 2026 | CQ 160 | cq-160-ssb_2026.txt | https://cq160.com/rules.htm | 2026-09-15T04:28:27+00:00 | 登録済み（規約確認済みを意味しません） |
-| cq-vhf-digi | CQ World Wide VHF Digital | 2026 | CQ VHF | cq-vhf-digi_2026.txt | https://cqww-vhf.com/rules.htm | 2026-09-15T06:13:04+00:00 | 登録済み（規約確認済みを意味しません） |
-| cq-vhf-ssbcw | CQ World Wide VHF SSB/CW/FM | 2026 | CQ VHF | cq-vhf-ssbcw_2026.txt | https://cqww-vhf.com/rules.htm | 2026-09-15T04:28:27+00:00 | 登録済み（規約確認済みを意味しません） |
-| cq-wpx-cw | CQ World Wide WPX CW | 2026 | CQ WPX | cq-wpx-cw_2026.txt | https://cqwpx.com/rules.htm | 2026-09-15T04:28:27+00:00 | 登録済み（規約確認済みを意味しません） |
-| cq-wpx-rtty | CQ World Wide WPX RTTY | 2026 | CQ WPX | cq-wpx-rtty_2026.txt | https://cqwpxrtty.com/rules.htm | 2026-09-15T04:28:27+00:00 | 登録済み（規約確認済みを意味しません） |
-| cq-wpx-ssb | CQ World Wide WPX SSB | 2026 | CQ WPX | cq-wpx-ssb_2026.txt | https://cqwpx.com/rules.htm | 2026-09-15T04:28:27+00:00 | 登録済み（規約確認済みを意味しません） |
-| cq-ww-rtty | CQ World Wide RTTY | 2026 | CQ WW | cq-ww-rtty_2026.txt | https://cqwwrtty.com/rules.htm | 2026-09-15T04:28:27+00:00 | 登録済み（規約確認済みを意味しません） |
-| cq-ww-cw | CQ World Wide CW | 2025 | CQ WW | cq-ww-cw_2025.txt | https://cqww.com/rules.htm | 2026-09-15T04:28:27+00:00 | 登録済み（規約確認済みを意味しません） |
-| cq-ww-ssb | CQ World Wide SSB | 2025 | CQ WW | cq-ww-ssb_2025.txt | https://cqww.com/rules.htm | 2026-09-15T04:28:27+00:00 | 登録済み（規約確認済みを意味しません） |
-| ja9_hf_cw | JA9コンテストHF 電信 | 2026 | JA9コンテストHF 電信 | ja9_hf_cw_2026.txt | https://www.jarl.com/hokuriku/CONTEST/規約/2026/JA9コンテストHF2026規約.pdf | 2026-09-14T22:07:19+00:00 | 登録済み（規約確認済みを意味しません） |
-| ja9_hf_phone | JA9コンテストHF 電話 | 2026 | JA9コンテストHF 電話 | ja9_hf_phone_2026.txt | https://www.jarl.com/hokuriku/CONTEST/規約/2026/JA9コンテストHF2026規約.pdf | 2026-09-14T22:07:19+00:00 | 登録済み（規約確認済みを意味しません） |
-| ja9_vu | JA9コンテストVU | 2026 | JA9コンテストVU | ja9_vu_2026.txt | https://www.jarl.com/hokuriku/CONTEST/規約/2026/JA9コンテストVU2026規約.pdf | 2026-09-15T06:14:41+00:00 | 登録済み（規約確認済みを意味しません） |
-| jarl_world_wide_rtty | JARL World Wide RTTY | 2026 | JARL World Wide RTTY | jarl_world_wide_rtty_2026.txt | https://www.jarl.org/Japanese/1_Tanoshimo/1-1_Contest/rtty_rules.html | 2026-09-15T06:13:04+00:00 | 登録済み（規約確認済みを意味しません） |
-| ww-digi | World Wide Digi DX | 2026 | World Wide Digi DX | ww-digi_2026.txt | https://ww-digi.com/rules/ | 2026-09-15T04:28:27+00:00 | 登録済み（規約確認済みを意味しません） |
-| ai_chikyu | 愛・地球博記念コンテスト | 2026 | あいちきゅうはくきねん | ai_chikyu_2026.txt | https://www.tokai-jarl.jp/tkitest/regulation/21st-ai.html | 2026-09-14T21:15:14+00:00 | 登録済み（規約確認済みを意味しません） |
-| xpo | XPO記念コンテスト | 2026 | えっくすぴーおーきねん | xpo_2026.txt | https://www.eonet.ne.jp/~ja3-test/kiyaku/xpokinen_2026kiyaku.htm | 2026-09-14T21:15:14+00:00 | 登録済み（規約確認済みを意味しません） |
-| all_osaka | オール大阪コンテスト | 2026 | おーるおおさか | all_osaka_2026.txt | https://ja3ujr.sakura.ne.jp/jarlosaka/contest/kiyaku2026.html | 2026-09-14T21:15:14+00:00 | 登録済み（規約確認済みを意味しません） |
-| all_okayama | オール岡山コンテスト | 2026 | おーるおかやま | all_okayama_2026.txt | https://www.jarl.com/okayama/oy-test-rule-2026.html | 2026-09-14T21:15:14+00:00 | 登録済み（規約確認済みを意味しません） |
-| all_saga | オール佐賀コンテスト | 2026 | おーるさが | all_saga_2026.txt | https://www4.hp-ez.com/hp/jarlsaga/page10 | 2026-09-14T21:15:14+00:00 | 登録済み（規約確認済みを意味しません） |
-| all_ja | ALL JAコンテスト | 2026 | おーるじゃぱん | all_ja_2026.txt | https://www.jarl.org/Japanese/1_Tanoshimo/1-1_Contest/allja_rules.html | 2026-09-14T21:15:14+00:00 | 登録済み（規約確認済みを意味しません） |
-| all_chiba | オール千葉コンテスト | 2026 | おーるちば | all_chiba_2026.txt | http://jarl-chiba.info/2026test/2026info.pdf | 2026-09-14T21:15:14+00:00 | 登録済み（規約確認済みを意味しません） |
-| all_tottori | オール鳥取コンテスト | 2026 | おーるとっとり | all_tottori_2026.txt | https://www.jarl.com/tottori/files/2026tttest_rules.pdf | 2026-09-14T21:27:08+00:00 | 登録済み（規約確認済みを意味しません） |
-| all_hyogo | オール兵庫コンテスト | 2026 | オール兵庫コンテスト | all_hyogo_2026.txt | https://www.jarl.com/hyogo/contest/contest2026/2026-ALL-HG_rule.pdf | 2026-09-15T04:52:29+00:00 | 登録済み（規約確認済みを意味しません） |
-| all_saitama | オール埼玉コンテスト | 2026 | オール埼玉コンテスト | all_saitama_2026.txt | https://www.jarl.com/allst/rule/44st.pdf | 2026-09-15T04:28:27+00:00 | 登録済み（規約確認済みを意味しません） |
-| all_okayama_ft | オール岡山FT8/FT4 | 2026 | オール岡山FT8/FT4 | all_okayama_ft_2026.txt | https://www.jarl.com/okayama/oy-ft8-test-rule-2026.html | 2026-09-15T04:28:27+00:00 | 登録済み（規約確認済みを意味しません） |
-| gigahertz | ギガヘルツコンテスト | 2026 | ぎがへるつ | gigahertz_2026.txt | https://www.jarl.com/08test/contest/2026/ghz/rule.html | 2026-09-14T21:27:08+00:00 | 登録済み（規約確認済みを意味しません） |
-| six_meter_and_down | 6m AND DOWNコンテスト | 2026 | しっくすめーたーあんどだうん | six_meter_and_down_2026.txt | https://www.jarl.org/Japanese/1_Tanoshimo/1-1_Contest/6d_rules.html | 2026-09-14T21:15:14+00:00 | 登録済み（規約確認済みを意味しません） |
-| all_ja_cg | 全市全郡コンテスト | 2026 | ぜんしぜんぐん | all_ja_cg_2026.txt | https://www.jarl.org/Japanese/1_Tanoshimo/1-1_Contest/acag_rules.html | 2026-09-14T21:15:14+00:00 | 登録済み（規約確認済みを意味しません） |
-| tokyo | 東京コンテスト | 2026 | とうきょう | tokyo_2026.txt | https://jarltokyo.com/_media/contest/contest_rules_ver20240331.pdf | 2026-09-14T21:15:14+00:00 | 登録済み（規約確認済みを意味しません） |
-| tokyo_cw | 東京CWコンテスト | 2026 | とうきょうしーだぶりゅー | tokyo_cw_2026.txt | https://jarltokyo.com/_media/contest/contest_rules_cw_ver20260826.pdf | 2026-09-14T21:15:14+00:00 | 登録済み（規約確認済みを意味しません） |
-| tokyo_uhf | 東京UHFコンテスト | 2026 | とうきょうゆーえいちえふ | tokyo_uhf_2026.txt | https://jarltokyo.com/_media/contest/contest_rules_uhf_ver20260826.pdf | 2026-09-14T21:15:14+00:00 | 登録済み（規約確認済みを意味しません） |
-| field_day | フィールドデーコンテスト | 2026 | ふぃーるどでー | field_day_2026.txt | https://www.jarl.org/Japanese/1_Tanoshimo/1-1_Contest/fd_rules.html | 2026-09-14T21:15:14+00:00 | 登録済み（規約確認済みを意味しません） |
-| fukuoka | 福岡コンテスト | 2026 | ふくおか | fukuoka_2026.txt |  | 2026-09-14T21:15:14+00:00 | 登録済み（規約確認済みを意味しません） |
-| hiroshima_was | 広島WASコンテスト | 2026 | 広島WASコンテスト | hiroshima_was_2026.txt | https://hs-contest.org/was-2026-rule/ | 2026-09-15T04:41:15+00:00 | 登録済み（規約確認済みを意味しません） |
-| kamikawa_souya | 第10回上川宗谷支部コンテスト | 2026 | 第10回上川宗谷支部コンテスト | kamikawa_souya_2026.txt | https://www.jarl.com/kamikawa/contest/2026KSContest.pdf | 2026-09-14T22:07:19+00:00 | 登録済み（規約確認済みを意味しません） |
-| all_aomori | 第20回オール青森コンテスト | 2026 | 第20回オール青森コンテスト | all_aomori_2026.txt | https://jarl-aomori.sakura.ne.jp/contest/all-aomori/ | 2026-09-14T22:07:19+00:00 | 登録済み（規約確認済みを意味しません） |
-| yamanashi | 第21回山梨コンテスト | 2026 | 第21回山梨コンテスト | yamanashi_2026.txt | http://www.jarl17.org/wp/wp-content/uploads/2026/03/%E7%AC%AC21%E5%9B%9E%E5%B1%B1%E6%A2%A8%E3%82%B3%E3%83%B3%E3%83%86%E3%82%B9%E3%83%88%E8%A6%8F%E7%B4%84.pdf | 2026-09-14T23:55:36+00:00 | 登録済み（規約確認済みを意味しません） |
-| oita | 第24回大分コンテスト | 2026 | 第24回大分コンテスト | oita_2026.txt | https://jarl-oita.blogspot.com/2026/05/blog-post.html | 2026-09-15T06:12:54+00:00 | 登録済み（規約確認済みを意味しません） |
-| tsugaru_kaikyo | 第24回津軽海峡コンテスト | 2026 | 第24回津軽海峡コンテスト | tsugaru_kaikyo_2026.txt | https://jarl-aomori.sakura.ne.jp/contest/tsugarukaikyou/ | 2026-09-14T23:55:37+00:00 | 登録済み（規約確認済みを意味しません） |
-| oidemase_yamaguchi | 第25回おいでませオール山口コンテスト | 2026 | 第25回おいでませオール山口コンテスト | oidemase_yamaguchi_2026.txt | https://jarl33yamaguchi.jimdofree.com/お知らせのコーナー/令和８年度の行事/第25回おいでませオール山口コンテスト規約/ | 2026-09-14T23:55:37+00:00 | 登録済み（規約確認済みを意味しません） |
-| niigata_branch | 第26回新潟コンテスト（7MHz・ハイバンド） | 2026 | 第26回新潟コンテスト（7MHz・ハイバンド） | niigata_branch_2026.txt | https://www.jarl.com/08test/contest/2026/niigata/rule.html | 2026-09-15T06:12:54+00:00 | 登録済み（規約確認済みを意味しません） |
-| niigata_low_band | 第26回新潟コンテスト（ローバンド1.9/3.5MHz） | 2026 | 第26回新潟コンテスト（ローバンド1.9/3.5MHz） | niigata_low_band_2026.txt | https://www.jarl.com/08test/contest/2026/niigata/rule.html | 2026-09-15T06:12:54+00:00 | 登録済み（規約確認済みを意味しません） |
-| tochigi | 第28回栃木コンテスト | 2026 | 第28回栃木コンテスト | tochigi_2026.txt | https://www.jarl.com/tochigi/contest/28tochicon_1.pdf | 2026-09-14T22:07:19+00:00 | 登録済み（規約確認済みを意味しません） |
-| all_gifu | 第29回オール岐阜コンテスト | 2026 | 第29回オール岐阜コンテスト | all_gifu_2026.txt | https://jarl-gifu.up.seesaa.net/image/E7ACAC29E59B9EE382AAE383BCE383ABE5B290E9989CE382B3E383B3E38386E382B9E38388E383BBE8A68FE7B484.pdf | 2026-09-15T06:12:54+00:00 | 登録済み（規約確認済みを意味しません） |
-| shiga | 第30回ALL滋賀コンテスト | 2026 | 第30回ALL滋賀コンテスト | shiga_2026.txt | https://www.jarl.com/shiga/shiga_con.html | 2026-09-14T23:55:37+00:00 | 登録済み（規約確認済みを意味しません） |
-| oshima_hiyama | 第34回JARL渡島檜山支部コンテスト | 2026 | 第34回JARL渡島檜山支部コンテスト | oshima_hiyama_2026.txt | https://ohs.hokkaido.jp/wp-content/uploads/2026/07/第34回-JARL-渡島檜山支部コンテスト規約.pdf | 2026-09-14T22:07:19+00:00 | 登録済み（規約確認済みを意味しません） |
-| shizuoka | 第35回静岡コンテスト | 2026 | 第35回静岡コンテスト | shizuoka_2026.txt | https://www.jarl.com/shizuoka/35kiyaku.pdf | 2026-09-15T04:41:15+00:00 | 登録済み（規約確認済みを意味しません） |
-| kagoshima | 第36回鹿児島コンテスト | 2026 | 第36回鹿児島コンテスト | kagoshima_2026.txt | https://www.jarl.com/kagoshima/contest/26/kiyaku.pdf | 2026-09-14T22:07:19+00:00 | 登録済み（規約確認済みを意味しません） |
-| wakayama | 第38回和歌山コンテスト | 2026 | 第38回和歌山コンテスト | wakayama_2026.txt | https://www.jarl.com/wakayama/pdf/wk-test/contest38kiyaku.pdf | 2026-09-14T22:07:19+00:00 | 登録済み（規約確認済みを意味しません） |
-| scalg-6m-cw | 第39回エスカルゴ6m CWコンテスト | 2026 | 第39回エスカルゴ6m CWコンテスト | scalg-6m-cw_2026.txt | https://scalg6mcw.web.fc2.com/2026_sc_kiyaku_01a.html | 2026-09-14T23:55:37+00:00 | 登録済み（規約確認済みを意味しません） |
-| all_akita | 第40回オール秋田コンテスト | 2026 | 第40回オール秋田コンテスト | all_akita_2026.txt |  | 2026-09-14T23:55:37+00:00 | 登録済み（規約確認済みを意味しません） |
-| kcj-topband | 第42回KCJトップバンドコンテスト | 2026 | 第42回KCJトップバンドコンテスト | kcj-topband_2026.txt | https://kcj-cw.com/contest/rule/2026_42_top_ja_t.pdf | 2026-09-14T23:55:37+00:00 | 登録済み（規約確認済みを意味しません） |
-| kcwa_cw | 第42回KCWA CWコンテスト | 2025 | 第42回KCWA CWコンテスト | kcwa_cw_2025.txt | https://kcwa.sakura.ne.jp/2025/contest42/20251207CONTEST.html | 2026-09-15T04:41:15+00:00 | 登録済み（規約確認済みを意味しません） |
-| kanagawa_emergency | 第44回非常通信訓練コンテスト | 2026 | 第44回非常通信訓練コンテスト | kanagawa_emergency_2026.txt | https://www.jarlkn.info/application/files/6917/7020/6189/44.pdf | 2026-09-14T23:55:37+00:00 | 登録済み（規約確認済みを意味しません） |
-| all_kushiro | 第45回オール釧根コンテスト | 2026 | 第45回オール釧根コンテスト | all_kushiro_2026.txt | https://www.jarl.com/senkon/kn_pdf/45con_%E8%A6%8F%E4%BF%AE%E6%AD%A33_1.pdf | 2026-09-14T22:07:19+00:00 | 登録済み（規約確認済みを意味しません） |
-| shimane | 第46回島根対全日本コンテスト | 2026 | 第46回島根対全日本コンテスト | shimane_2026.txt |  | 2026-09-15T04:52:29+00:00 | 登録済み（規約確認済みを意味しません） |
-| kcj | 第47回KCJコンテスト | 2026 | 第47回KCJコンテスト | kcj_2026.txt | https://kcj-cw.com/contest/rule/2026_47_kcj_ja_t.pdf | 2026-09-14T23:55:37+00:00 | 登録済み（規約確認済みを意味しません） |
-| all_kyushu | 第47回オール九州コンテスト | 2026 | 第47回オール九州コンテスト | all_kyushu_2026.txt | https://www.jarl.com/kyushu/contest/４７規約.pdf | 2026-09-14T22:07:19+00:00 | 登録済み（規約確認済みを意味しません） |
-| all_miyagi | 第47回オール宮城コンテスト | 2026 | 第47回オール宮城コンテスト | all_miyagi_2026.txt | https://ja7rl.sakura.ne.jp/2026MG.pdf | 2026-09-14T23:55:37+00:00 | 登録済み（規約確認済みを意味しません） |
-| all_mie_33 | 第49回オール三重33コンテスト | 2026 | 第49回オール三重33コンテスト | all_mie_33_2026.txt | https://www.ztv.ne.jp/isoda/33/annual/49/49rule.pdf | 2026-09-14T23:55:37+00:00 | 登録済み（規約確認済みを意味しません） |
-| toyama_emergency | 第49回富山県非常無線通信訓練コンテスト | 2026 | 第49回富山県非常無線通信訓練コンテスト | toyama_emergency_2026.txt | https://shiroi-match.jp/commu-chika/1420/events/4720 | 2026-09-15T05:01:05+00:00 | 登録済み（規約確認済みを意味しません） |
-| iwate_winter | 第4回いわてWINTERコンテスト | 2026 | 第4回いわてWINTERコンテスト | iwate_winter_2026.txt | https://jarl-iwate.com/wp-content/uploads/51ea8f1a1ed0bc896ab5d5812937aeb2.pdf | 2026-09-14T22:07:19+00:00 | 登録済み（規約確認済みを意味しません） |
-| all_ja4 | 第4回オールJA4コンテスト | 2026 | 第4回オールJA4コンテスト | all_ja4_2026.txt | http://ja4test.mydns.jp/ja4test_04.html | 2026-09-14T22:07:19+00:00 | 登録済み（規約確認済みを意味しません） |
-| okhotsk | 第50回オホーツクコンテスト（最終回・2026） | 2026 | 第50回オホーツクコンテスト（最終回・2026） | okhotsk_2026.txt | https://www.jarl.com/okhotsk/conte2026.pdf | 2026-09-14T23:55:37+00:00 | 登録済み（規約確認済みを意味しません） |
-| miyazaki | 第50回宮崎コンテスト | 2026 | 第50回宮崎コンテスト | miyazaki_2026.txt | https://www.jarl.com/mztest/contest2026kiyaku.html | 2026-09-15T04:28:27+00:00 | 登録済み（規約確認済みを意味しません） |
-| nara_vuhf | 第52回JARL奈良県支部V・UHFコンテスト | 2026 | 第52回JARL奈良県支部V・UHFコンテスト | nara_vuhf_2026.txt | https://jarl-nara.com/cont_26.htm | 2026-09-15T04:28:27+00:00 | 登録済み（規約確認済みを意味しません） |
-| all_gunma | 第54回オール群馬コンテスト | 2026 | 第54回オール群馬コンテスト | all_gunma_2026.txt | https://agc.akagi76.com/wp-content/uploads/2026agcrule.pdf | 2026-09-14T23:55:37+00:00 | 登録済み（規約確認済みを意味しません） |
-| all_kanagawa | 第55回オール神奈川コンテスト | 2026 | 第55回オール神奈川コンテスト | all_kanagawa_2026.txt | https://www.jarlkn.info/application/files/9917/7020/6189/55.pdf | 2026-09-14T22:07:19+00:00 | 登録済み（規約確認済みを意味しません） |
-| ja0_vhf | 第63回JA0-VHFコンテスト | 2026 | 第63回JA0-VHFコンテスト | ja0_vhf_2026.txt | https://www.jarl.com/zerocontest/rule2026/ja0vhf2026.pdf | 2026-09-14T22:07:19+00:00 | 登録済み（規約確認済みを意味しません） |
-| tokai_qso | 第66回東海QSOコンテスト | 2026 | 第66回東海QSOコンテスト | tokai_qso_2026.txt | https://www.tokai-jarl.jp/tkitest/regulation/66th-tkiqso.html | 2026-09-14T23:55:37+00:00 | 登録済み（規約確認済みを意味しません） |
-| kyoto | 第70回京都コンテスト | 2026 | 第70回京都コンテスト | kyoto_2026.txt | https://je3zpz.ampr.org/kt_test/kt70-kiyaku.pdf | 2026-09-15T04:28:27+00:00 | 登録済み（規約確認済みを意味しません） |
-| all_tohoku | 第75回オール東北コンテスト | 2026 | 第75回オール東北コンテスト | all_tohoku_2026.txt | https://www.jarl.com/tohoku/7contest/2026JA7TEST.pdf | 2026-09-14T22:07:19+00:00 | 登録済み（規約確認済みを意味しません） |
-| qso_party | 第79回QSOパーティ | 2026 | 第79回QSOパーティ | qso_party_2026.txt |  | 2026-09-15T04:52:29+00:00 | 登録済み（規約確認済みを意味しません） |
-| yamagata_sakuranbo | 第8回山形さくらんぼQSOコンテスト | 2026 | 第8回山形さくらんぼQSOコンテスト | yamagata_sakuranbo_2026.txt | https://jarlyamagata.ham-yamagata.com/wp-content/uploads/2026/02/n8-sakuranbo-annai.pdf | 2026-09-14T23:55:36+00:00 | 登録済み（規約確認済みを意味しません） |
-| iburi_hidaka | 胆振日高コンテスト | 2026 | 胆振日高コンテスト | iburi_hidaka_2026.txt | http://lake-toya.jp/iburihidaka/wp-content/uploads/2026/06/%E7%AC%AC51%E5%9B%9E%E8%83%86%E6%8C%AF%E6%97%A5%E9%AB%98%E6%94%AF%E9%83%A8%E3%82%B3%E3%83%B3%E3%83%86%E3%82%B9%E3%83%88%E8%A6%8F%E7%B4%84.pdf | 2026-09-15T04:56:20+00:00 | 登録済み（規約確認済みを意味しません） |
-| kansai_vus | 関西V・U・Sコンテスト（旧・関西VHF） | 2026 | 関西V・U・Sコンテスト（旧・関西VHF） | kansai_vus_2026.txt | https://www.eonet.ne.jp/~ja3-test/kiyaku/ja3test_2026kiyaku.files/sheet001.htm | 2026-09-14T23:55:37+00:00 | 登録済み（規約確認済みを意味しません） |
+| ai_chikyu | 愛・地球博記念コンテスト | 2026 | あいちきゅうはくきねん | ai_chikyu_2026.txt | https://www.tokai-jarl.jp/tkitest/regulation/21st-ai.html | 2026-11-12T03:34:22+00:00 | 登録済み（規約確認済みを意味しません） |
+| all_akita | 第40回オール秋田コンテスト | 2026 | 第40回オール秋田コンテスト | all_akita_2026.txt |  | 2026-11-12T03:34:22+00:00 | 登録済み（規約確認済みを意味しません） |
+| all_aomori | 第20回オール青森コンテスト | 2026 | 第20回オール青森コンテスト | all_aomori_2026.txt | https://jarl-aomori.sakura.ne.jp/contest/all-aomori/ | 2026-11-12T03:34:22+00:00 | 登録済み（規約確認済みを意味しません） |
+| all_asian_dx_cw | ALL ASIAN DX CW | 2026 | ALL ASIAN DX CW | all_asian_dx_cw_2026.txt | https://www.jarl.org/Japanese/1_Tanoshimo/1-1_Contest/aadx_rules.html | 2026-11-12T03:34:22+00:00 | 登録済み（規約確認済みを意味しません） |
+| all_asian_dx_phone | ALL ASIAN DX Phone | 2026 | ALL ASIAN DX Phone | all_asian_dx_phone_2026.txt | https://www.jarl.org/Japanese/1_Tanoshimo/1-1_Contest/aadx_rules.html | 2026-11-12T03:34:22+00:00 | 登録済み（規約確認済みを意味しません） |
+| all_chiba | オール千葉コンテスト | 2026 | おーるちば | all_chiba_2026.txt | http://jarl-chiba.info/2026test/2026info.pdf | 2026-11-12T03:34:22+00:00 | 登録済み（規約確認済みを意味しません） |
+| all_gifu | 第29回オール岐阜コンテスト | 2026 | 第29回オール岐阜コンテスト | all_gifu_2026.txt | https://jarl-gifu.up.seesaa.net/image/E7ACAC29E59B9EE382AAE383BCE383ABE5B290E9989CE382B3E383B3E38386E382B9E38388E383BBE8A68FE7B484.pdf | 2026-11-12T03:34:22+00:00 | 登録済み（規約確認済みを意味しません） |
+| all_gunma | 第54回オール群馬コンテスト | 2026 | 第54回オール群馬コンテスト | all_gunma_2026.txt | https://agc.akagi76.com/wp-content/uploads/2026agcrule.pdf | 2026-11-12T03:34:22+00:00 | 登録済み（規約確認済みを意味しません） |
+| all_hyogo | オール兵庫コンテスト | 2026 | オール兵庫コンテスト | all_hyogo_2026.txt | https://www.jarl.com/hyogo/contest/contest2026/2026-ALL-HG_rule.pdf | 2026-11-12T03:34:22+00:00 | 登録済み（規約確認済みを意味しません） |
+| all_ja0_160m | ALL JA0 1.8MHzコンテスト | 2025 | ALL JA0 1.8MHzコンテスト | all_ja0_160m_2025.txt | https://jarl-nn.asama-net.com/index.php?html_id=00000503 | 2026-11-12T03:34:22+00:00 | 登録済み（規約確認済みを意味しません） |
+| all_ja0_160m | ALL JA0 1.8MHzコンテスト | 2026 | ALL JA0 1.8MHzコンテスト | all_ja0_160m_2026.txt | https://jarl-nn.asama-net.com/index.php?html_id=00000528 | 2026-11-12T03:34:22+00:00 | 登録済み（規約確認済みを意味しません） |
+| all_ja0_35 | ALL JA0 3.5MHzコンテスト | 2026 | ALL JA0 3.5MHzコンテスト | all_ja0_35_2026.txt | https://jarl-nn.asama-net.com/index.php?html_id=00000510 | 2026-11-12T03:34:22+00:00 | 登録済み（規約確認済みを意味しません） |
+| all_ja0_7 | ALL JA0 7MHzコンテスト | 2026 | ALL JA0 7MHzコンテスト | all_ja0_7_2026.txt | https://jarl-nn.asama-net.com/index.php?html_id=00000510 | 2026-11-12T03:34:22+00:00 | 登録済み（規約確認済みを意味しません） |
+| all_ja4 | 第4回オールJA4コンテスト | 2026 | 第4回オールJA4コンテスト | all_ja4_2026.txt | https://www.jarl.com/chugoku2/pdf/2025ALLJA4CONTEST.pdf | 2026-11-12T03:34:22+00:00 | 登録済み（規約確認済みを意味しません） |
+| all_ja5 | ALL JA5コンテスト | 2026 | ALL JA5コンテスト | all_ja5_2026.txt | https://www.jarl.com/shikoku/oa-08/index.html | 2026-11-12T03:34:22+00:00 | 登録済み（規約確認済みを意味しません） |
+| all_ja8 | 2026 ALL JA8コンテスト | 2026 | 2026 ALL JA8コンテスト | all_ja8_2026.txt | https://jarl.hokkaido.jp/wp-content/uploads/2026/04/6983fec72be466a5b0f356b6234f10b2.pdf | 2026-11-12T03:34:22+00:00 | 登録済み（規約確認済みを意味しません） |
+| all_ja | ALL JAコンテスト | 2026 | おーるじゃぱん | all_ja_2026.txt | https://www.jarl.org/Japanese/1_Tanoshimo/1-1_Contest/allja_rules.html | 2026-11-12T03:34:22+00:00 | 登録済み（規約確認済みを意味しません） |
+| all_ja_cg | 全市全郡コンテスト | 2026 | ぜんしぜんぐん | all_ja_cg_2026.txt | https://www.jarl.org/Japanese/1_Tanoshimo/1-1_Contest/acag_rules.html | 2026-11-12T03:34:22+00:00 | 登録済み（規約確認済みを意味しません） |
+| all_kanagawa | 第55回オール神奈川コンテスト | 2026 | 第55回オール神奈川コンテスト | all_kanagawa_2026.txt | https://www.jarlkn.info/application/files/9917/7020/6189/55.pdf | 2026-11-12T03:34:22+00:00 | 登録済み（規約確認済みを意味しません） |
+| all_kumamoto | 2026オール熊本コンテスト | 2026 | 2026オール熊本コンテスト | all_kumamoto_2026.txt | https://www.jarl.com/kmtest/2026allkumamotoreg.pdf | 2026-11-12T03:34:22+00:00 | 登録済み（規約確認済みを意味しません） |
+| all_kushiro | 第45回オール釧根コンテスト | 2026 | 第45回オール釧根コンテスト | all_kushiro_2026.txt | https://www.jarl.com/senkon/kn_pdf/45con_%E8%A6%8F%E4%BF%AE%E6%AD%A33_1.pdf | 2026-11-12T03:34:22+00:00 | 登録済み（規約確認済みを意味しません） |
+| all_kyushu | 第47回オール九州コンテスト | 2026 | 第47回オール九州コンテスト | all_kyushu_2026.txt | https://www.jarl.com/kyushu/contest/４７規約.pdf | 2026-11-12T03:34:22+00:00 | 登録済み（規約確認済みを意味しません） |
+| all_mie_33 | 第49回オール三重33コンテスト | 2026 | 第49回オール三重33コンテスト | all_mie_33_2026.txt | https://www.ztv.ne.jp/isoda/33/annual/49/49rule.pdf | 2026-11-12T03:34:22+00:00 | 登録済み（規約確認済みを意味しません） |
+| all_miyagi | 第47回オール宮城コンテスト | 2026 | 第47回オール宮城コンテスト | all_miyagi_2026.txt | https://ja7rl.sakura.ne.jp/2026MG.pdf | 2026-11-12T03:34:22+00:00 | 登録済み（規約確認済みを意味しません） |
+| all_okayama | オール岡山コンテスト | 2026 | おーるおかやま | all_okayama_2026.txt | https://www.jarl.com/okayama/oy-test-rule-2026.html | 2026-11-12T03:34:22+00:00 | 登録済み（規約確認済みを意味しません） |
+| all_okayama_ft | オール岡山FT8/FT4 | 2026 | オール岡山FT8/FT4 | all_okayama_ft_2026.txt | https://www.jarl.com/okayama/oy-ft8-test-rule-2026.html | 2026-11-12T03:34:22+00:00 | 登録済み（規約確認済みを意味しません） |
+| all_osaka | オール大阪コンテスト | 2026 | おーるおおさか | all_osaka_2026.txt | https://ja3ujr.sakura.ne.jp/jarlosaka/contest/kiyaku2026.html | 2026-11-12T03:34:22+00:00 | 登録済み（規約確認済みを意味しません） |
+| all_saga | オール佐賀コンテスト | 2026 | おーるさが | all_saga_2026.txt | https://www4.hp-ez.com/hp/jarlsaga/page10 | 2026-11-12T03:34:22+00:00 | 登録済み（規約確認済みを意味しません） |
+| all_saitama | オール埼玉コンテスト | 2026 | オール埼玉コンテスト | all_saitama_2026.txt | https://www.jarl.com/allst/rule/44st.pdf | 2026-11-12T03:34:22+00:00 | 登録済み（規約確認済みを意味しません） |
+| all_tohoku | 第75回オール東北コンテスト | 2026 | 第75回オール東北コンテスト | all_tohoku_2026.txt | https://www.jarl.com/tohoku/7contest/2026JA7TEST.pdf | 2026-11-12T03:34:22+00:00 | 登録済み（規約確認済みを意味しません） |
+| all_tottori | オール鳥取コンテスト | 2026 | おーるとっとり | all_tottori_2026.txt | https://www.jarl.com/tottori/files/2026tttest_rules.pdf | 2026-11-12T03:34:22+00:00 | 登録済み（規約確認済みを意味しません） |
+| cq-160-cw | CQ World Wide 160 Meter CW | 2026 | CQ 160 | cq-160-cw_2026.txt | https://cq160.com/rules.htm | 2026-11-12T03:34:22+00:00 | 登録済み（規約確認済みを意味しません） |
+| cq-160-ssb | CQ World Wide 160 Meter SSB | 2026 | CQ 160 | cq-160-ssb_2026.txt | https://cq160.com/rules.htm | 2026-11-12T03:34:22+00:00 | 登録済み（規約確認済みを意味しません） |
+| cq-vhf-digi | CQ World Wide VHF Digital | 2026 | CQ VHF | cq-vhf-digi_2026.txt | https://cqww-vhf.com/rules.htm | 2026-11-12T03:34:22+00:00 | 登録済み（規約確認済みを意味しません） |
+| cq-vhf-ssbcw | CQ World Wide VHF SSB/CW/FM | 2026 | CQ VHF | cq-vhf-ssbcw_2026.txt | https://cqww-vhf.com/rules.htm | 2026-11-12T03:34:22+00:00 | 登録済み（規約確認済みを意味しません） |
+| cq-wpx-cw | CQ World Wide WPX CW | 2026 | CQ WPX | cq-wpx-cw_2026.txt | https://cqwpx.com/rules.htm | 2026-11-12T03:34:22+00:00 | 登録済み（規約確認済みを意味しません） |
+| cq-wpx-rtty | CQ World Wide WPX RTTY | 2026 | CQ WPX | cq-wpx-rtty_2026.txt | https://cqwpxrtty.com/rules.htm | 2026-11-12T03:34:22+00:00 | 登録済み（規約確認済みを意味しません） |
+| cq-wpx-ssb | CQ World Wide WPX SSB | 2026 | CQ WPX | cq-wpx-ssb_2026.txt | https://cqwpx.com/rules.htm | 2026-11-12T03:34:22+00:00 | 登録済み（規約確認済みを意味しません） |
+| cq-ww-cw | CQ World Wide CW | 2025 | CQ WW | cq-ww-cw_2025.txt | https://cqww.com/rules.htm | 2026-11-12T03:34:22+00:00 | 登録済み（規約確認済みを意味しません） |
+| cq-ww-cw | CQ World Wide CW | 2026 | CQ WW | cq-ww-cw_2026.txt | https://cqww.com/rules/ | 2026-11-12T03:34:22+00:00 | 登録済み（規約確認済みを意味しません） |
+| cq-ww-rtty | CQ World Wide RTTY | 2026 | CQ WW | cq-ww-rtty_2026.txt | https://cqwwrtty.com/rules.htm | 2026-11-12T03:34:22+00:00 | 登録済み（規約確認済みを意味しません） |
+| cq-ww-ssb | CQ World Wide SSB | 2025 | CQ WW | cq-ww-ssb_2025.txt | https://cqww.com/rules.htm | 2026-11-12T03:34:22+00:00 | 登録済み（規約確認済みを意味しません） |
+| cq-ww-ssb | CQ World Wide SSB | 2026 | CQ WW | cq-ww-ssb_2026.txt | https://cqww.com/rules/ | 2026-11-12T03:34:22+00:00 | 登録済み（規約確認済みを意味しません） |
+| field_day | フィールドデーコンテスト | 2026 | ふぃーるどでー | field_day_2026.txt | https://www.jarl.org/Japanese/1_Tanoshimo/1-1_Contest/fd_rules.html | 2026-11-12T03:34:22+00:00 | 登録済み（規約確認済みを意味しません） |
+| fukuoka | 福岡コンテスト | 2026 | ふくおか | fukuoka_2026.txt |  | 2026-11-12T03:34:22+00:00 | 登録済み（規約確認済みを意味しません） |
+| gigahertz | ギガヘルツコンテスト | 2026 | ぎがへるつ | gigahertz_2026.txt | https://www.jarl.com/08test/contest/2026/ghz/rule.html | 2026-11-12T03:34:22+00:00 | 登録済み（規約確認済みを意味しません） |
+| hiroshima_was | 広島WASコンテスト | 2026 | 広島WASコンテスト | hiroshima_was_2026.txt | https://hs-contest.org/was-2026-rule/ | 2026-11-12T03:34:22+00:00 | 登録済み（規約確認済みを意味しません） |
+| iburi_hidaka | 胆振日高コンテスト | 2026 | 胆振日高コンテスト | iburi_hidaka_2026.txt | http://lake-toya.jp/iburihidaka/wp-content/uploads/2026/06/%E7%AC%AC51%E5%9B%9E%E8%83%86%E6%8C%AF%E6%97%A5%E9%AB%98%E6%94%AF%E9%83%A8%E3%82%B3%E3%83%B3%E3%83%86%E3%82%B9%E3%83%88%E8%A6%8F%E7%B4%84.pdf | 2026-11-12T03:34:22+00:00 | 登録済み（規約確認済みを意味しません） |
+| ishikari | 2026石狩後志支部コンテスト | 2026 | 2026石狩後志支部コンテスト | ishikari_2026.txt | https://isb.jarl.pro/2026/05/12/post-1624/ | 2026-11-12T03:34:22+00:00 | 登録済み（規約確認済みを意味しません） |
+| iwate_winter | 第4回いわてWINTERコンテスト | 2026 | 第4回いわてWINTERコンテスト | iwate_winter_2026.txt | https://jarl-iwate.com/wp-content/uploads/51ea8f1a1ed0bc896ab5d5812937aeb2.pdf | 2026-11-12T03:34:22+00:00 | 登録済み（規約確認済みを意味しません） |
+| ja0_vhf | 第63回JA0-VHFコンテスト | 2026 | 第63回JA0-VHFコンテスト | ja0_vhf_2026.txt | https://www.jarl.com/zerocontest/rule2026/ja0vhf2026.pdf | 2026-11-12T03:34:22+00:00 | 登録済み（規約確認済みを意味しません） |
+| ja9_hf_cw | JA9コンテストHF 電信 | 2026 | JA9コンテストHF 電信 | ja9_hf_cw_2026.txt | https://www.jarl.com/hokuriku/CONTEST/規約/2026/JA9コンテストHF2026規約.pdf | 2026-11-12T03:34:22+00:00 | 登録済み（規約確認済みを意味しません） |
+| ja9_hf_phone | JA9コンテストHF 電話 | 2026 | JA9コンテストHF 電話 | ja9_hf_phone_2026.txt | https://www.jarl.com/hokuriku/CONTEST/規約/2026/JA9コンテストHF2026規約.pdf | 2026-11-12T03:34:22+00:00 | 登録済み（規約確認済みを意味しません） |
+| ja9_vu | JA9コンテストVU | 2026 | JA9コンテストVU | ja9_vu_2026.txt | https://www.jarl.com/hokuriku/CONTEST/規約/2026/JA9コンテストVU2026規約.pdf | 2026-11-12T03:34:22+00:00 | 登録済み（規約確認済みを意味しません） |
+| jarl_qrp_club | JARL QRP CLUB 2026年 QRP コンテスト | 2026 | じゃーるきゅーあーるぴーくらぶ | jarl_qrp_club_2026.txt | https://www.jaqrp.org/modules/Contents/data/24/2026_QRP-Contest.pdf | 2026-11-12T03:37:05+00:00 | 登録済み（規約確認済みを意味しません） |
+| jarl_world_wide_rtty | JARL World Wide RTTY | 2026 | JARL World Wide RTTY | jarl_world_wide_rtty_2026.txt | https://www.jarl.org/Japanese/1_Tanoshimo/1-1_Contest/rtty_rules.html | 2026-11-12T03:34:22+00:00 | 登録済み（規約確認済みを意味しません） |
+| kagoshima | 第36回鹿児島コンテスト | 2026 | 第36回鹿児島コンテスト | kagoshima_2026.txt | https://www.jarl.com/kagoshima/contest/26/kiyaku.pdf | 2026-11-12T03:34:22+00:00 | 登録済み（規約確認済みを意味しません） |
+| kamikawa_souya | 第10回上川宗谷支部コンテスト | 2026 | 第10回上川宗谷支部コンテスト | kamikawa_souya_2026.txt | https://www.jarl.com/kamikawa/contest/2026KSContest.pdf | 2026-11-12T03:34:22+00:00 | 登録済み（規約確認済みを意味しません） |
+| kanagawa_emergency | 第44回非常通信訓練コンテスト | 2026 | 第44回非常通信訓練コンテスト | kanagawa_emergency_2026.txt | https://www.jarlkn.info/application/files/6917/7020/6189/44.pdf | 2026-11-12T03:34:22+00:00 | 登録済み（規約確認済みを意味しません） |
+| kansai_vus | 関西V・U・Sコンテスト（旧・関西VHF） | 2026 | 関西V・U・Sコンテスト（旧・関西VHF） | kansai_vus_2026.txt | https://www.eonet.ne.jp/~ja3-test/kiyaku/ja3test_2026kiyaku.files/sheet001.htm | 2026-11-12T03:34:22+00:00 | 登録済み（規約確認済みを意味しません） |
+| kcj-topband | 第42回KCJトップバンドコンテスト | 2026 | 第42回KCJトップバンドコンテスト | kcj-topband_2026.txt | https://kcj-cw.com/contest/rule/2026_42_top_ja_t.pdf | 2026-11-12T03:34:22+00:00 | 登録済み（規約確認済みを意味しません） |
+| kcj | 第47回KCJコンテスト | 2026 | 第47回KCJコンテスト | kcj_2026.txt | https://kcj-cw.com/contest/rule/2026_47_kcj_ja_t.pdf | 2026-11-12T03:34:22+00:00 | 登録済み（規約確認済みを意味しません） |
+| kcwa_cw | 第42回KCWA CWコンテスト | 2025 | 第42回KCWA CWコンテスト | kcwa_cw_2025.txt | https://kcwa.sakura.ne.jp/2025/contest42/20251207CONTEST.html | 2026-11-12T03:34:22+00:00 | 登録済み（規約確認済みを意味しません） |
+| kcwa_cw | 第43回KCWA CWコンテスト | 2026 | 第43回KCWA CWコンテスト | kcwa_cw_2026.txt | https://kcwa.sakura.ne.jp/2026/contest43/20261206CONTEST.html | 2026-11-12T03:34:22+00:00 | 登録済み（規約確認済みを意味しません） |
+| kyoto | 第70回京都コンテスト | 2026 | 第70回京都コンテスト | kyoto_2026.txt | https://je3zpz.ampr.org/kt_test/kt70-kiyaku.pdf | 2026-11-12T03:34:22+00:00 | 登録済み（規約確認済みを意味しません） |
+| miyazaki | 第50回宮崎コンテスト | 2026 | 第50回宮崎コンテスト | miyazaki_2026.txt | https://www.jarl.com/mztest/contest2026kiyaku.html | 2026-11-12T03:34:22+00:00 | 登録済み（規約確認済みを意味しません） |
+| nagasaki | 2026長崎県コンテスト | 2026 | 2026長崎県コンテスト | nagasaki_2026.txt | https://www.jarl.com/nagasaki/nstest/2026ntst.pdf | 2026-11-12T03:34:22+00:00 | 登録済み（規約確認済みを意味しません） |
+| nara_vuhf | 第52回JARL奈良県支部V・UHFコンテスト | 2026 | 第52回JARL奈良県支部V・UHFコンテスト | nara_vuhf_2026.txt | https://jarl-nara.com/cont_26.htm | 2026-11-12T03:34:22+00:00 | 登録済み（規約確認済みを意味しません） |
+| niigata_branch | 第26回新潟コンテスト（7MHz・ハイバンド） | 2026 | 第26回新潟コンテスト（7MHz・ハイバンド） | niigata_branch_2026.txt | https://www.jarl.com/08test/contest/2026/niigata/rule.html | 2026-11-12T03:34:22+00:00 | 登録済み（規約確認済みを意味しません） |
+| niigata_low_band | 第26回新潟コンテスト（ローバンド1.9/3.5MHz） | 2026 | 第26回新潟コンテスト（ローバンド1.9/3.5MHz） | niigata_low_band_2026.txt | https://www.jarl.com/08test/contest/2026/niigata/rule.html | 2026-11-12T03:34:22+00:00 | 登録済み（規約確認済みを意味しません） |
+| oidemase_yamaguchi | 第25回おいでませオール山口コンテスト | 2026 | 第25回おいでませオール山口コンテスト | oidemase_yamaguchi_2026.txt | https://jarl33yamaguchi.jimdofree.com/お知らせのコーナー/令和８年度の行事/第25回おいでませオール山口コンテスト規約/ | 2026-11-12T03:34:22+00:00 | 登録済み（規約確認済みを意味しません） |
+| oita | 第24回大分コンテスト | 2026 | 第24回大分コンテスト | oita_2026.txt | https://jarl-oita.blogspot.com/2026/05/blog-post.html | 2026-11-12T03:34:22+00:00 | 登録済み（規約確認済みを意味しません） |
+| okhotsk | 第50回オホーツクコンテスト（最終回・2026） | 2026 | 第50回オホーツクコンテスト（最終回・2026） | okhotsk_2026.txt | https://www.jarl.com/okhotsk/conte2026.pdf | 2026-11-12T03:34:22+00:00 | 登録済み（規約確認済みを意味しません） |
+| oshima_hiyama | 第34回JARL渡島檜山支部コンテスト | 2026 | 第34回JARL渡島檜山支部コンテスト | oshima_hiyama_2026.txt | https://ohs.hokkaido.jp/wp-content/uploads/2026/07/第34回-JARL-渡島檜山支部コンテスト規約.pdf | 2026-11-12T03:34:22+00:00 | 登録済み（規約確認済みを意味しません） |
+| qso_party | 第79回QSOパーティ | 2026 | 第79回QSOパーティ | qso_party_2026.txt | https://www.jarl.org/Japanese/1_Tanoshimo/1-1_Contest/qso_party_rule.html | 2026-11-12T03:34:22+00:00 | 登録済み（規約確認済みを意味しません） |
+| scalg-6m-cw | 第39回エスカルゴ6m CWコンテスト | 2026 | 第39回エスカルゴ6m CWコンテスト | scalg-6m-cw_2026.txt | https://scalg6mcw.web.fc2.com/2026_sc_kiyaku_01a.html | 2026-11-12T03:34:22+00:00 | 登録済み（規約確認済みを意味しません） |
+| shiga | 第30回ALL滋賀コンテスト | 2026 | 第30回ALL滋賀コンテスト | shiga_2026.txt | https://www.jarl.com/shiga/shiga_con.html | 2026-11-12T03:34:22+00:00 | 登録済み（規約確認済みを意味しません） |
+| shimane | 第46回島根対全日本コンテスト | 2026 | 第46回島根対全日本コンテスト | shimane_2026.txt | https://jarl-shimane.jimdofree.com/事業計画/ | 2026-11-12T03:34:22+00:00 | 登録済み（規約確認済みを意味しません） |
+| shizuoka | 第35回静岡コンテスト | 2026 | 第35回静岡コンテスト | shizuoka_2026.txt | https://www.jarl.com/shizuoka/35kiyaku.pdf | 2026-11-12T03:34:22+00:00 | 登録済み（規約確認済みを意味しません） |
+| six_meter_and_down | 6m AND DOWNコンテスト | 2026 | しっくすめーたーあんどだうん | six_meter_and_down_2026.txt | https://www.jarl.org/Japanese/1_Tanoshimo/1-1_Contest/6d_rules.html | 2026-11-12T03:34:22+00:00 | 登録済み（規約確認済みを意味しません） |
+| tochigi | 第28回栃木コンテスト | 2026 | 第28回栃木コンテスト | tochigi_2026.txt | https://www.jarl.com/tochigi/contest/28tochicon_1.pdf | 2026-11-12T03:34:22+00:00 | 登録済み（規約確認済みを意味しません） |
+| tokai_qso | 第66回東海QSOコンテスト | 2026 | 第66回東海QSOコンテスト | tokai_qso_2026.txt | https://www.tokai-jarl.jp/tkitest/regulation/66th-tkiqso.html | 2026-11-12T03:34:22+00:00 | 登録済み（規約確認済みを意味しません） |
+| tokyo | 東京コンテスト | 2026 | とうきょう | tokyo_2026.txt | https://jarltokyo.com/_media/contest/contest_rules_ver20240331.pdf | 2026-11-12T03:34:22+00:00 | 登録済み（規約確認済みを意味しません） |
+| tokyo_cw | 東京CWコンテスト | 2026 | とうきょうしーだぶりゅー | tokyo_cw_2026.txt | https://jarltokyo.com/_media/contest/contest_rules_cw_ver20261003.pdf | 2026-11-12T03:34:22+00:00 | 登録済み（規約確認済みを意味しません） |
+| tokyo_uhf | 東京UHFコンテスト | 2026 | とうきょうゆーえいちえふ | tokyo_uhf_2026.txt | https://jarltokyo.com/_media/contest/contest_rules_uhf_ver20260826.pdf | 2026-11-12T03:34:22+00:00 | 登録済み（規約確認済みを意味しません） |
+| toyama_emergency | 第49回富山県非常無線通信訓練コンテスト | 2026 | 第49回富山県非常無線通信訓練コンテスト | toyama_emergency_2026.txt | https://www.jarl.com/toyama/25ham/49OSO.pdf | 2026-11-12T03:34:22+00:00 | 登録済み（規約確認済みを意味しません） |
+| tsugaru_kaikyo | 第24回津軽海峡コンテスト | 2026 | 第24回津軽海峡コンテスト | tsugaru_kaikyo_2026.txt | https://jarl-aomori.sakura.ne.jp/contest/tsugarukaikyou/ | 2026-11-12T03:34:22+00:00 | 登録済み（規約確認済みを意味しません） |
+| wakayama | 第38回和歌山コンテスト | 2026 | 第38回和歌山コンテスト | wakayama_2026.txt | https://www.jarl.com/wakayama/pdf/wk-test/contest38kiyaku.pdf | 2026-11-12T03:34:22+00:00 | 登録済み（規約確認済みを意味しません） |
+| ww-digi | World Wide Digi DX | 2026 | World Wide Digi DX | ww-digi_2026.txt | https://ww-digi.com/rules/ | 2026-11-12T03:34:22+00:00 | 登録済み（規約確認済みを意味しません） |
+| xpo | XPO記念コンテスト | 2026 | えっくすぴーおーきねん | xpo_2026.txt | https://www.eonet.ne.jp/~ja3-test/kiyaku/xpokinen_2026kiyaku.htm | 2026-11-12T03:34:22+00:00 | 登録済み（規約確認済みを意味しません） |
+| yamagata_sakuranbo | 第8回山形さくらんぼQSOコンテスト | 2026 | 第8回山形さくらんぼQSOコンテスト | yamagata_sakuranbo_2026.txt | https://jarlyamagata.ham-yamagata.com/wp-content/uploads/2026/02/n8-sakuranbo-annai.pdf | 2026-11-12T03:34:22+00:00 | 登録済み（規約確認済みを意味しません） |
+| yamanashi | 第21回山梨コンテスト | 2026 | 第21回山梨コンテスト | yamanashi_2026.txt | http://www.jarl17.org/wp/wp-content/uploads/2026/03/%E7%AC%AC21%E5%9B%9E%E5%B1%B1%E6%A2%A8%E3%82%B3%E3%83%B3%E3%83%86%E3%82%B9%E3%83%88%E8%A6%8F%E7%B4%84.pdf | 2026-11-12T03:34:22+00:00 | 登録済み（規約確認済みを意味しません） |
 
-有効なルールファイル: 87件。
+有効なルールファイル: 92件。
 <!-- PSLOG GENERATED RULES END -->
 
 ## 規約調査の進捗（2026-09-13）

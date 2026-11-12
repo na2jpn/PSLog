@@ -338,6 +338,9 @@ class Window(QMainWindow):
         for key in ('band','mode'):
             self.fields[key].lineEdit().editingFinished.connect(lambda key=key:self._normalize_standard_field(key))
         self.sub_mode.lineEdit().editingFinished.connect(lambda:self._normalize_sub_mode())
+        self._historical_date=False
+        self.fields['date'].setPlaceholderText('例：2023/05/10（交信日の年のログへ保存）')
+        self.fields['date'].textEdited.connect(self._date_manually_edited)
         self.fields['date'].textChanged.connect(lambda: self.update_path() if self.station else None)
         self.entry.setEnabled(False)
         history=QGroupBox('LogSearch'); self.standard_history=history; split.addWidget(history,6); hl=QVBoxLayout(history)
@@ -1136,6 +1139,7 @@ class Window(QMainWindow):
         try:
             self.station=None;self.free_station=None;self.sessions={};self.rows=[];self.blacklist_ack=None
             if session.get('type')=='standard':
+                self._historical_date=False
                 self.page_stack.setCurrentWidget(self.standard_scroll)
                 self.own.setText(session.get('call',''));self.suffix.setText(session.get('suffix',''))
                 self.set_text('band',session.get('band','430'));self.set_text('mode',session.get('mode','FM'));self.set_text('my_qth',session.get('my_qth',''))
@@ -1558,9 +1562,9 @@ class Window(QMainWindow):
             return 'normal'
         dialog=QDialog(self);dialog.setWindowTitle('記録時刻確認')
         layout=QVBoxLayout(dialog)
-        message=QLabel('現在の時刻と3分以上ズレています。\n記録しますか？');message.setWordWrap(True);layout.addWidget(message)
+        message=QLabel('入力日時：'+qso.date+' '+qso.time+' JST\n保存先は交信日の '+qso.date[:4]+' 年のログです。\n現在の時刻と3分以上ズレています。入力日時のまま記録しますか？');message.setWordWrap(True);layout.addWidget(message)
         row=QHBoxLayout();row.addStretch()
-        no=QPushButton('いいえ');current=QPushButton('現時刻で記録');yes=QPushButton('はい')
+        no=QPushButton('いいえ');current=QPushButton('現時刻で記録');yes=QPushButton('入力日時で記録' if qso.date[:4]<str(now.year) else 'はい')
         no.setDefault(True);no.setAutoDefault(True);current.setAutoDefault(False);yes.setAutoDefault(False)
         choice={'value':'cancel'}
         def finish(value):
@@ -1634,7 +1638,7 @@ class Window(QMainWindow):
           ('ログ',['ログ検索・編集','ログ一括処理','ログファイル統合']),
           ('入出力',['インポート','エクスポート','特殊なエクスポート']),
           ('提出ログファイル作成',['コンテスト','アワード','QSOパーティ']),
-          ('ツール',['QSL受領一括処理','総務省DB参照','ターゲットアラート','バンドサイト']),
+          ('ツール',['QSL受領一括処理','No QSLリスト','総務省DB参照','ターゲットアラート','バンドサイト']),
           ('バックアップ',['今すぐバックアップ','全体バックアップから復元','ログバックアップから復元','バックアップ保存先を開く']),
           ('設定',['設定','無線機設定','ブラックリスト管理']),('フリラ',['フリラタブを呼び出す…','フリラログ検索・編集']),('ヘルプ',['使い方','PSLogフォーマットについて','起動コマンドフラグについて','PSLogをバージョンアップ','PSLogの更新履歴','PSLogについて'])]
         for name,items in groups:
@@ -1673,6 +1677,7 @@ class Window(QMainWindow):
                 elif item=='フリラタブを呼び出す…':action.triggered.connect(self.recall_free_workspace)
                 elif item=='フリラログ検索・編集':action.triggered.connect(self.open_free_search)
                 elif item=='QSL受領一括処理':action.triggered.connect(self.open_qsl)
+                elif item=='No QSLリスト':action.triggered.connect(self.open_no_qsl)
                 elif item=='総務省DB参照':action.triggered.connect(self.open_mic_lookup)
                 elif item=='ターゲットアラート':action.triggered.connect(self.open_cluster_monitor)
                 elif item=='バンドサイト':action.triggered.connect(self.open_band_site)
@@ -1890,7 +1895,7 @@ class Window(QMainWindow):
             kind=self._active_workspace().get('type')
             if kind not in ('standard','easy') or not self.station or not self._active_own_text().strip():return None
             date=(self._easy_qso_date or now_jst().strftime('%Y-%m-%d')) if kind=='easy' else (self.text('date') or now_jst().strftime('%Y-%m-%d'))
-        try:return self.station[0],self.repo.path_for(*self.station,date)
+        try:return self.station[0],self.repo.path_for(*self.station,date_text(date))
         except (ValueError,StorageError,OSError):return None
     def _update_current_log_buttons(self):
         if hasattr(self,'show_current_log_button'):self.show_current_log_button.setEnabled(self._current_log_target(False) is not None)
@@ -1976,6 +1981,10 @@ class Window(QMainWindow):
         dialog=JccJcgBatchDialog(self.repo,self.station[0] if self.station else '',self)
         dialog.exec()
         if dialog.saved:self.reload_logs()
+
+    def open_no_qsl(self):
+        from no_qsl_ui import NoQSLDialog
+        dialog=NoQSLDialog(self.repo,self);dialog.logs_changed.connect(self.reload_logs);dialog.exec()
 
     def open_qsl(self):
         from qsl_ui import QSLDialog
@@ -2228,9 +2237,13 @@ class Window(QMainWindow):
             except (ValueError,StorageError,OSError) as e:
                 QMessageBox.warning(self,'自局設定の保存',str(e))
         self.reload_logs(); self.call.setFocus();return True
+    def _date_manually_edited(self,text):
+        try:self._historical_date=date_text(text)[:4]<str(now_jst().year)
+        except ValueError:self._historical_date=False
+
     def update_path(self):
         try:
-            date=self.text('date') or now_jst().strftime('%Y-%m-%d')
+            date=date_text(self.text('date')) if self.text('date').strip() else now_jst().strftime('%Y-%m-%d')
             p=self.repo.path_for(*self.station,date)
             if p not in self.sessions:self.sessions[p]=self.repo.open(p)
             self.path.setText(str(p))
@@ -2241,7 +2254,8 @@ class Window(QMainWindow):
         self.blacklist_ack=None
         self.call.setText(normalize_callsign(self.call.text())); n=now_jst()
         self.warn_blacklist(self.call.text())
-        self.set_text('date',n.strftime('%Y-%m-%d'));self.set_text('time',n.strftime('%H:%M'))
+        if not self._historical_date:
+            self.set_text('date',n.strftime('%Y-%m-%d'));self.set_text('time',n.strftime('%H:%M'))
         for key in ('his_qth','code','remarks'):self.set_text(key,'')
         self.rmks2.clear()
         if not self.keep_band.isChecked():self.set_text('band','')
@@ -2345,6 +2359,7 @@ class Window(QMainWindow):
             self.status.setText('現在時刻との差を確認するため記録を中止しました。')
             self.fields['time'].setFocus();self.fields['time'].selectAll();return
         if time_choice=='current':
+            self._historical_date=False
             self.set_text('date',q.date);self.set_text('time',q.time);self.update_path()
         if time_choice=='normal' and self.settings['confirm_record'] and QMessageBox.question(self,'記録確認',q.date+' '+q.time+' JST　'+q.call+'\nTXTログへ記録しますか？',QMessageBox.StandardButton.Yes|QMessageBox.StandardButton.No,QMessageBox.StandardButton.Yes)!=QMessageBox.StandardButton.Yes:return
         try:
@@ -2356,6 +2371,7 @@ class Window(QMainWindow):
         try:self.persist_settings()
         except (StorageError,OSError,ValueError) as e:
             settings_error=' ／ 交信は保存済みですが、最新入力値の保存に失敗しました: '+str(e)
+        self.update_path()
         self.rows=session_rows(self.sessions,self.station[0])
         self.status.setText(q.call+' を保存しました：'+str(path)+settings_error)
         self.search();self.call.clear();self.set_text('his_qth','');self.set_text('code','');self.call.setFocus()

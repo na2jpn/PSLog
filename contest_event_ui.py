@@ -1,4 +1,5 @@
 from copy import deepcopy
+from wrapping_widgets import WrappedCheckBox
 from PySide6.QtWidgets import (QVBoxLayout,QFormLayout,QComboBox,QDoubleSpinBox,
     QLineEdit,QCheckBox,QHBoxLayout,QLabel,QTabWidget,QWidget,QPlainTextEdit,QScrollArea,
     QGridLayout,QListWidget,QListWidgetItem,QDialogButtonBox,QPushButton,QAbstractItemView,QGroupBox)
@@ -67,14 +68,14 @@ class EventDialog(SafeDialog):
         self.event_spec=event;self.context=deepcopy(context)
         self.setWindowTitle('参加部門と運用条件');self.resize(820,620)
         box=QVBoxLayout(self);self.tabs=QTabWidget();box.addWidget(self.tabs,1)
-        basic=QWidget();form=QFormLayout(basic);scroll=QScrollArea();scroll.setWidgetResizable(True);scroll.setWidget(basic);self.tabs.addTab(scroll,'部門・運用条件')
+        basic=QWidget();form=QFormLayout(basic);scroll=QScrollArea();scroll.setWidgetResizable(True);form.setFieldGrowthPolicy(QFormLayout.AllNonFixedFieldsGrow);form.setRowWrapPolicy(QFormLayout.WrapLongRows);scroll.setWidget(basic);self.tabs.addTab(scroll,'部門・運用条件')
         self.purpose=QComboBox();self.purpose.addItem('種目へエントリー','entry');self.purpose.addItem('全体をチェックログとして提出','checklog');self.purpose.setCurrentIndex(1 if context.get('submission_mode')=='checklog' else 0);form.addRow('提出目的',self.purpose)
         self.station_type=QComboBox();self.station_type.addItem('選択してください','')
         for label,value in [('個人局','individual'),('社団局','club'),('特別局・特別記念局','special')]:self.station_type.addItem(label,value)
         self.station_type.setCurrentIndex(max(0,self.station_type.findData(context.get('station_type',''))))
         if event.get('entrant',{}).get('station_types'):form.addRow('自局の局種（免許による）',self.station_type)
         self.fd_class=QComboBox();self.fd_class.addItem('選択してください','');self.fd_class.addItem('A：移動・第二マルチ2','A');self.fd_class.addItem('B：その他の移動・第二マルチ1','B');self.fd_class.addItem('ホーム：第二マルチ1','HOME');self.fd_class.setCurrentIndex(max(0,self.fd_class.findData(context.get('fd_class'))))
-        self.fd_confirm=QCheckBox('移動目的・既設設備/電源の条件・移動表記を確認し、途中で局種を切り替えていない');self.fd_confirm.setChecked(context.get('fd_confirmed',False))
+        self.fd_confirm=WrappedCheckBox('移動目的・既設設備/電源の条件・移動表記を確認し、途中で局種を切り替えていない');self.fd_confirm.setChecked(context.get('fd_confirmed',False))
         if event.get('station_factor')=='jarl_fd':
             form.addRow('FD局種',self.fd_class);form.addRow(self.fd_confirm)
             note=QLabel('Aはコンテスト目的の移動で、既設無線設備・利用できる既設電源がない場所。施設で電池を使うだけではAになりません。ホームで電池を使っても係数1です。');note.setWordWrap(True);form.addRow(note)
@@ -97,9 +98,9 @@ class EventDialog(SafeDialog):
             w=QLineEdit(context.get('operating_locations',{}).get(ident,''));w.setPlaceholderText('任意。移動運用の運用地は提出画面で必ず確認');form.addRow(label+'の運用地',w);self.locations[ident]=w
         if self.locations:
             note=QLabel('部門別の運用地は任意入力です。移動運用の場合は提出画面の運用地が必須です。同一部門内の場所変更など、参照年の規約を確認してください。'+(' デジタルは電信・電話のいずれかの運用地と同じにしてください。' if event.get('operating_locations',{}).get('matches') else ''));note.setWordWrap(True);form.addRow(note)
-        self.newcomer_requested=QCheckBox('ニューカマー記念品の対象として申告する（任意）');self.newcomer_requested.setChecked(context.get('newcomer_requested',False))
+        self.newcomer_requested=WrappedCheckBox('ニューカマー記念品の対象として申告する（任意）');self.newcomer_requested.setChecked(context.get('newcomer_requested',False))
         self.newcomer_date=QLineEdit(context.get('newcomer_licensedate',''));self.newcomer_date.setPlaceholderText('YYYY-MM-DD（実運用者の初開局日）')
-        self.newcomer_first=QCheckBox('初開局であり、再開局ではない');self.newcomer_first.setChecked(context.get('newcomer_first_license',False))
+        self.newcomer_first=WrappedCheckBox('初開局であり、再開局ではない');self.newcomer_first.setChecked(context.get('newcomer_first_license',False))
         if event.get('newcomer_claim'):
             claim=event['newcomer_claim'];form.addRow(self.newcomer_requested);form.addRow('初開局日',self.newcomer_date);form.addRow(self.newcomer_first)
             note=QLabel(f'対象期間 {claim["license_since"]}～{claim["license_until"]}。SOの個人局・社団局が対象です。部門コードや得点は変わりません。');note.setWordWrap(True);form.addRow(note)
@@ -114,7 +115,7 @@ class EventDialog(SafeDialog):
         if event.get('regional',{}).get('entry_set'):
             policy=event['regional']['entry_set'];note=QLabel(f'今回提出する全種目（最大{policy["max"]}件）を選択してください。出力は現在の種目ごとに独立して作成します。');note.setWordWrap(True);form.addRow(note)
             for c in event['categories']:
-                w=QCheckBox(c['name']+' ['+c.get('submission_code',c['id'])+']');w.setChecked(c['id'] in context.get('entry_categories',[]));form.addRow(w);self.entry_categories[c['id']]=w
+                w=WrappedCheckBox(c['name']+' ['+c.get('submission_code',c['id'])+']');w.setChecked(c['id'] in context.get('entry_categories',[]));form.addRow(w);self.entry_categories[c['id']]=w
         self.flags={}
         self.confirm_group=QGroupBox('確認事項（全て確認して要チェック）');self.confirm_group.setStyleSheet('QGroupBox::title { color:#c62828; font-weight:700; }');self.confirm_layout=QVBoxLayout(self.confirm_group);form.addRow(self.confirm_group)
         names=event['required_flags']+[f for c in event['categories'] for f in c['required_flags']]+list(event.get('mode_confirmations',{}).values())
@@ -122,7 +123,7 @@ class EventDialog(SafeDialog):
         from contest_participation import HISTORY as PARTICIPATION_HISTORY
         if any('participation' in c for c in event['categories']):names.append(PARTICIPATION_HISTORY)
         for text in filtered_flags(names):
-            w=QCheckBox(text);w.setChecked(context.get('flags',{}).get(text,False));self.confirm_layout.addWidget(w);self.flags[text]=w
+            w=WrappedCheckBox(text);w.setChecked(context.get('flags',{}).get(text,False));self.confirm_layout.addWidget(w);self.flags[text]=w
         self.summary=QLabel();self.summary.setWordWrap(True);form.addRow(self.summary)
         from contest_qualification_ui import QualificationPane
         self.qualification=QualificationPane(context);self.tabs.addTab(self.qualification,'参加資格・バンド別電力')

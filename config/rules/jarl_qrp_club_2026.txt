@@ -1,0 +1,590 @@
+{
+  "schema": 2,
+  "id": "jarl_qrp_club",
+  "name": "JARL QRP CLUB 2026年 QRP コンテスト",
+  "year": 2026,
+  "url": "https://www.jaqrp.org/modules/Contents/data/24/2026_QRP-Contest.pdf",
+  "points": {
+    "phone": 1,
+    "cw": 1,
+    "digital": 1
+  },
+  "conditions": [],
+  "duplicate": {
+    "enabled": true,
+    "by_mode": false
+  },
+  "multi1": {
+    "kind": "off",
+    "start": 0,
+    "length": 2,
+    "per_band": true
+  },
+  "multi2": {
+    "kind": "off",
+    "value": 1,
+    "condition": {
+      "all": []
+    }
+  },
+  "formula": "total",
+  "organizer": "JARL QRP CLUB（東京都支部登録クラブ10-4-151）",
+  "sort_name": "じゃーるきゅーあーるぴーくらぶ",
+  "scoring": {
+    "eligible": {
+      "all": []
+    },
+    "multipliers": [
+      {
+        "id": "region",
+        "source": "area",
+        "kind": "whole",
+        "start": 0,
+        "length": 2,
+        "per_band": true,
+        "when": {
+          "all": []
+        }
+      }
+    ],
+    "bonus": 0
+  },
+  "event": {
+    "timezone": "JST",
+    "windows": [
+      {
+        "start": "2026-11-03 13:00",
+        "end": "2026-11-03 21:00",
+        "bands": [
+          "1.9",
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28",
+          "50"
+        ]
+      }
+    ],
+    "categories": [
+      {
+        "id": "H19",
+        "name": "1.9MHzバンド 自作機",
+        "bands": [
+          "1.9"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "USB",
+          "LSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": 5,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "operator": "SO",
+        "required_flags": [
+          "参加種目の全交信で送信部又は受信部の少なくとも一方が規約の自作機条件を満たし、内部写真等の補助資料を別途提出する"
+        ]
+      },
+      {
+        "id": "G19",
+        "name": "1.9MHzバンド 一般",
+        "bands": [
+          "1.9"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "USB",
+          "LSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": 5,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "operator": "SO",
+        "required_flags": []
+      },
+      {
+        "id": "H35",
+        "name": "3.5MHzバンド 自作機",
+        "bands": [
+          "3.5"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "USB",
+          "LSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": 5,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "operator": "SO",
+        "required_flags": [
+          "参加種目の全交信で送信部又は受信部の少なくとも一方が規約の自作機条件を満たし、内部写真等の補助資料を別途提出する"
+        ]
+      },
+      {
+        "id": "G35",
+        "name": "3.5MHzバンド 一般",
+        "bands": [
+          "3.5"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "USB",
+          "LSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": 5,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "operator": "SO",
+        "required_flags": []
+      },
+      {
+        "id": "H7",
+        "name": "7MHzバンド 自作機",
+        "bands": [
+          "7"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "USB",
+          "LSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": 5,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "operator": "SO",
+        "required_flags": [
+          "参加種目の全交信で送信部又は受信部の少なくとも一方が規約の自作機条件を満たし、内部写真等の補助資料を別途提出する"
+        ]
+      },
+      {
+        "id": "G7",
+        "name": "7MHzバンド 一般",
+        "bands": [
+          "7"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "USB",
+          "LSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": 5,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "operator": "SO",
+        "required_flags": []
+      },
+      {
+        "id": "H14",
+        "name": "14MHzバンド 自作機",
+        "bands": [
+          "14"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "USB",
+          "LSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": 5,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "operator": "SO",
+        "required_flags": [
+          "参加種目の全交信で送信部又は受信部の少なくとも一方が規約の自作機条件を満たし、内部写真等の補助資料を別途提出する"
+        ]
+      },
+      {
+        "id": "G14",
+        "name": "14MHzバンド 一般",
+        "bands": [
+          "14"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "USB",
+          "LSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": 5,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "operator": "SO",
+        "required_flags": []
+      },
+      {
+        "id": "H21",
+        "name": "21MHzバンド 自作機",
+        "bands": [
+          "21"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "USB",
+          "LSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": 5,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "operator": "SO",
+        "required_flags": [
+          "参加種目の全交信で送信部又は受信部の少なくとも一方が規約の自作機条件を満たし、内部写真等の補助資料を別途提出する"
+        ]
+      },
+      {
+        "id": "G21",
+        "name": "21MHzバンド 一般",
+        "bands": [
+          "21"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "USB",
+          "LSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": 5,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "operator": "SO",
+        "required_flags": []
+      },
+      {
+        "id": "H28",
+        "name": "28MHzバンド 自作機",
+        "bands": [
+          "28"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "USB",
+          "LSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": 5,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "operator": "SO",
+        "required_flags": [
+          "参加種目の全交信で送信部又は受信部の少なくとも一方が規約の自作機条件を満たし、内部写真等の補助資料を別途提出する"
+        ]
+      },
+      {
+        "id": "G28",
+        "name": "28MHzバンド 一般",
+        "bands": [
+          "28"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "USB",
+          "LSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": 5,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "operator": "SO",
+        "required_flags": []
+      },
+      {
+        "id": "H50",
+        "name": "50MHzバンド 自作機",
+        "bands": [
+          "50"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "USB",
+          "LSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": 5,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "operator": "SO",
+        "required_flags": [
+          "参加種目の全交信で送信部又は受信部の少なくとも一方が規約の自作機条件を満たし、内部写真等の補助資料を別途提出する"
+        ]
+      },
+      {
+        "id": "G50",
+        "name": "50MHzバンド 一般",
+        "bands": [
+          "50"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "USB",
+          "LSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": 5,
+        "min_bands": 1,
+        "max_bands": 1,
+        "min_calls": 1,
+        "operator": "SO",
+        "required_flags": []
+      },
+      {
+        "id": "HA",
+        "name": "オールバンド 自作機",
+        "bands": [
+          "1.9",
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28",
+          "50"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "USB",
+          "LSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": 5,
+        "min_bands": 1,
+        "max_bands": 7,
+        "min_calls": 1,
+        "operator": "SO",
+        "required_flags": [
+          "参加種目の全交信で送信部又は受信部の少なくとも一方が規約の自作機条件を満たし、内部写真等の補助資料を別途提出する"
+        ]
+      },
+      {
+        "id": "GA",
+        "name": "オールバンド 一般",
+        "bands": [
+          "1.9",
+          "3.5",
+          "7",
+          "14",
+          "21",
+          "28",
+          "50"
+        ],
+        "modes": [
+          "CW",
+          "SSB",
+          "USB",
+          "LSB",
+          "AM",
+          "FM"
+        ],
+        "max_power": 5,
+        "min_bands": 1,
+        "max_bands": 7,
+        "min_calls": 1,
+        "operator": "SO",
+        "required_flags": []
+      }
+    ],
+    "required_flags": [
+      "日本国内で5W以下・免許範囲・JARLコンテスト周波数を守り、国内局とのRS(T)と番号の交換が完全である",
+      "運用に関わる全作業を一人で行い、同時に複数波を送信していない",
+      "運用場所を変更していない、又は常置場所を離れた移動運用で開始時のマルチプライヤー内だけで変更した",
+      "連絡先住所は郵便番号7桁と都道府県から町域までを記載し、運用地が異なる場合は運用地にも同じ範囲の住所と郵便番号を記載する（クラブ局は氏名欄にクラブ名と運用者氏名を記載する）"
+    ],
+    "duplicate_fields": [
+      "call",
+      "band",
+      "mode_family"
+    ],
+    "prefer": "first",
+    "special": "none",
+    "entrant": {
+      "station_types": [
+        "individual",
+        "club",
+        "special"
+      ],
+      "guest_policy": "allowed",
+      "checklog_only_types": [
+        "special"
+      ]
+    },
+    "exchange": {
+      "kind": "jarl_band_power",
+      "same_sent_region": true,
+      "profiles": [
+        {
+          "id": "qrp_region",
+          "bands": [
+            "1.9",
+            "3.5",
+            "7",
+            "14",
+            "21",
+            "28",
+            "50"
+          ],
+          "codes": [
+            "101",
+            "102",
+            "103",
+            "104",
+            "105",
+            "106",
+            "107",
+            "108",
+            "109",
+            "110",
+            "111",
+            "112",
+            "113",
+            "114",
+            "02",
+            "03",
+            "04",
+            "05",
+            "06",
+            "07",
+            "08",
+            "09",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34",
+            "35",
+            "36",
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42",
+            "43",
+            "44",
+            "45",
+            "46",
+            "47",
+            "48"
+          ],
+          "code_lengths": [
+            2,
+            3
+          ],
+          "m_threshold": 10,
+          "points": 1,
+          "power_letters": [
+            "P"
+          ]
+        }
+      ]
+    },
+    "regional": {
+      "checklog_prefixes": [
+        "8J",
+        "8N"
+      ],
+      "entry_set": {
+        "max": 1,
+        "kind": "disjoint"
+      }
+    },
+    "submission": {
+      "formats": [
+        "JARL R1.0",
+        "JARL R2.1"
+      ],
+      "zone": "JST",
+      "allowed_zones": [
+        "JST"
+      ],
+      "contest": "JARL QRP CLUB 2026年 QRP コンテスト",
+      "required_fields": [
+        "email"
+      ],
+      "instructions": "2026年11月3日13:00～20:59 JST、5W以下、国内局、1種目のみ。締切2026-11-17（日本時間）。qrp_log@jaqrp.net へJARL推奨ログ書式の全文をメール本文で提出し、添付不可。件名は/運用エリアを含む自局コール。住所は郵便番号7桁と都道府県から町域まで、運用地が連絡先と異なる場合はOPPLACEにも同じ範囲を記載。クラブ局はNAMEにクラブ名と運用者氏名。自作機は内部写真等の補助資料を contest2@jaqrp.net へ別送（件名も自局コール）。補助資料未提出なら主催者が一般扱い。8J/8N等の記念局や5W超過等は提出目的を全体チェックログにしコードCHECKLOGで出力。複数提出は期限内の最終到着分を採用。JARL R1.0/R2.1の出力をPSLogで検証、主催者による受領審査は未確認。自動送信しません。"
+    },
+    "rule_view": {
+      "participants": "日本国内で5W以下のQRP運用をするアマチュア局。個人局・クラブ局とも運用の全作業を一人で行う。JARL開設の8J・8N等の記念局はチェックログ。",
+      "power": "最大空中線電力5W以下。ATT・Power Control等で5W以下に下げた運用も可。5W超過またはPOWER未記載は主催者がチェックログ扱い。",
+      "movement": "運用場所の変更は禁止。ただしコンテスト参加のため常置場所を離れた移動局は、開始時のマルチプライヤー内で変更可。",
+      "call_method": "電話：CQ QRP コンテスト／電信：CQ QRP TEST。コールへの/QRP・/QRPP追加は推奨しない。",
+      "counterparts": "日本国内のアマチュア局。完全なRS(T)・番号交換を確認する。",
+      "frequency": "1.9・3.5・7・14・21・28・50MHz帯のJARL主催コンテスト周波数。電信・電話。WARC・144MHz以上・データモードは対象外。周波数範囲と免許の条件は運用者が確認する。",
+      "restrictions": "クロスバンド・電信電話間のクロスモード・レピータ・同時複数波は禁止。クラスター等の利用可、セルフスポットや他手段での自局運用情報伝達・依頼は禁止。リモートの全送受信設備は一つの所在地、外部受信機禁止。事後訂正は誤入力修正や形式変更等のみ。別コールでの重複提出禁止。一般はメーカー製以外も可。自作機は全交信で送信部又は受信部の一方以上がメーカー製以外。参加者以外が完成したもの、実装が無い又は限定的、調整済基板が大部分等はメーカー製扱い。機材適格性は自動判定せず運用者が確認する。",
+      "exchange": "RS(T)＋都府県・地域等ナンバー＋P。例：599106P／5911P。PSLogの送受信番号欄はRSTと分け、106P／11P等を入力する。",
+      "repeat": "同一局・同一バンドはCWと電話でそれぞれ1交信まで得点。SSB・AM・FM等は同じ電話区分。",
+      "points_display": "完全な番号交換をした交信1点。総得点は得点合計×バンド別の都府県・地域等マルチ合計。",
+      "multipliers_display": "バンドごとの異なる相手都府県・地域等ナンバー。CW／電話で同じ地域と交信しても、そのバンドの地域マルチは1つ。",
+      "submission_deadline": "2026年11月17日（日本時間）",
+      "submission_notes": "一般G19/G35/G7/G14/G21/G28/G50/GA、自作機H19/H35/H7/H14/H21/H28/H50/HAの16種目から1種目。qrp_log@jaqrp.net 宛、件名は自局コール（/運用エリア込み）、JARL形式・JST・推奨ログ書式をメール本文に貼付し添付不可。必須：CATEGORYCODE・CALLSIGN・ADDRESS・NAME・EMAIL・POWER。運用地が連絡先と異なる場合OPPLACE必須。住所と運用地の記載は郵便番号7桁と町域まで。自作機は contest2@jaqrp.net へ内部写真・機種名等を別送し、未提出なら一般扱い。補助資料は原則公開されるため秘匿希望は連絡する。"
+    }
+  }
+}

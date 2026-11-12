@@ -57,11 +57,12 @@ class Fix3GuiTests(unittest.TestCase):
   from main import Window
   save_settings(self.repo.root,{'own':'JH1HST'});w=Window(self.repo.root)
   titles=[a.text() for a in w.menuBar().actions()];self.assertIn('ログ',titles);self.assertNotIn('編集',titles);self.assertEqual(titles.index('ツール')+1,titles.index('バックアップ'))
-  tools=next(m for m in w.menu_refs if m.title()=='ツール');self.assertEqual([a.text() for a in tools.actions()],['QSL受領一括処理','総務省DB参照','ターゲットアラート','バンドサイト'])
+  tools=next(m for m in w.menu_refs if m.title()=='ツール');self.assertEqual([a.text() for a in tools.actions()],['QSL受領一括処理','No QSLリスト','総務省DB参照','ターゲットアラート','バンドサイト'])
   log=next(m for m in w.menu_refs if m.title()=='ログ');self.assertNotIn('QSL受領一括処理',[a.text() for a in log.actions()]);self.assertTrue(any(a.menu() and a.text()=='ログ一括処理' for a in log.actions()))
-  with patch('internet_tools_ui.MicLookupDialog') as dialog:tools.actions()[1].trigger();dialog.return_value.exec.assert_called_once()
-  with patch('cluster_monitor_ui.ClusterMonitorDialog') as dialog:tools.actions()[2].trigger();dialog.return_value.show.assert_called_once()
-  with patch('band_site_ui.BandSiteDialog') as dialog:tools.actions()[3].trigger();dialog.return_value.show.assert_called_once()
+  with patch('no_qsl_ui.NoQSLDialog') as dialog:next(a for a in tools.actions() if a.text()=='No QSLリスト').trigger();dialog.return_value.exec.assert_called_once()
+  with patch('internet_tools_ui.MicLookupDialog') as dialog:next(a for a in tools.actions() if a.text()=='総務省DB参照').trigger();dialog.return_value.exec.assert_called_once()
+  with patch('cluster_monitor_ui.ClusterMonitorDialog') as dialog:next(a for a in tools.actions() if a.text()=='ターゲットアラート').trigger();dialog.return_value.show.assert_called_once()
+  with patch('band_site_ui.BandSiteDialog') as dialog:next(a for a in tools.actions() if a.text()=='バンドサイト').trigger();dialog.return_value.show.assert_called_once()
   w._target_alert_dialog=None;w._band_site_dialog=None
   w.close()
 if __name__=='__main__':unittest.main()

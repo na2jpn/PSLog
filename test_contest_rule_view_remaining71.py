@@ -23,9 +23,9 @@ class Remaining71ViewTests(unittest.TestCase):
                    sorted((loads(p.read_text(encoding='utf-8-sig')) for p in RULES.glob('*.txt')),key=lambda r:r['year'])}
 
     def test_all_rules_render_with_core_on_air_facts(self):
-        self.assertEqual(len(self.rules),87)
+        self.assertEqual(len(self.rules),88)
         self.assertEqual(len(self.items),71)
-        self.assertEqual(sum(is_contest_rule(r) for r in self.rules.values()),86)
+        self.assertEqual(sum(is_contest_rule(r) for r in self.rules.values()),87)
         for ident,rule in self.rules.items():
             if not is_contest_rule(rule):continue
             with self.subTest(ident=ident):

@@ -18,7 +18,7 @@ import unicodedata
 import uuid
 from model import QSO, validate_station
 
-VERSION = '1.22'
+VERSION = '1.23'
 TERMINATOR = '\\' * 2
 
 class StorageError(Exception): pass
