@@ -1,4 +1,5 @@
 # -*- mode: python ; coding: utf-8 -*-
+from tools.windows_version_info import write_version_info
 
 
 a = Analysis(
@@ -22,6 +23,7 @@ exe = EXE(
     [],
     exclude_binaries=True,
     name='pslog',
+    version=write_version_info('build/version-pslog.txt'),
     debug=False,
     bootloader_ignore_signals=False,
     strip=False,

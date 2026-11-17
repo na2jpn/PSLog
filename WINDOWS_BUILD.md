@@ -1,3 +1,56 @@
+# Windows配布準備 — PSLog 1.24
+
+Python 64bit / PySide6 6.8.3 / PyInstaller 6.16.0。必要な依存関係は事前に `pip install -r requirements.txt` で揃えてください。ビルドスクリプトは自動インストールしません。
+
+## 署名なしでビルドする場合
+
+証明書を設定していない環境では、従来どおりビルドできます。
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\build-windows.ps1
+```
+
+環境変数に証明書が設定されている場合も、次の指定で署名を省略できます。
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\build-windows.ps1 -NoSign
+```
+
+この場合は未署名の開発用ビルドであることを画面に表示します。公開版の署名は次の方法で行ってください。
+
+## 証明書で署名する場合
+
+PSRTTYと同じWindows証明書ストア方式です。コードサイニング証明書と秘密鍵にアクセスできるWindows環境（Certum等のトークンや署名サービスを含む）およびWindows SDKのSignToolが必要です。秘密鍵やPIN・パスワードはソースに保存しません。証明書側でPIN等が求められる場合は、その署名サービスの画面で入力してください。
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\build-windows.ps1 -Sign -CertificateThumbprint "証明書の40桁の拇印"
+```
+
+- `-CertificateThumbprint` または環境変数 `PSLOG_SIGN_CERT_THUMBPRINT` に40桁の拇印を指定すると署名します。設定なしでは署名を省略します。
+- `-Sign` を明示して拇印が未指定なら、未署名へ切り替えずエラーで停止します。証明書・秘密鍵へのアクセスや署名検証で失敗した場合も停止します。
+- `-NoSign` は環境変数より優先します。`-Sign` と `-NoSign` の同時指定はエラーです。
+- `-SignToolPath` / `PSLOG_SIGNTOOL` でSignToolのフルパスを指定できます。省略時はPATH、次いでWindows SDKの新しいx64版から検索します。
+- `-TimestampUrl` / `PSLOG_TIMESTAMP_URL` でRFC 3161サーバーを指定できます。初期値は `https://timestamp.digicert.com`。
+- ローカルコンピューターの証明書ストアを使う場合は `-MachineCertificateStore` を指定します（通常は現在のユーザー）。
+
+署名対象は配布する `pslog.exe` と `exec/PSLogUpdater.exe`。SHA-256で署名し、SHA-256タイムスタンプを付け、`signtool verify /pa /all /tw /v` で検証します。失敗・警告があればZIP作成を止めます。署名した後にハッシュと更新マニフェストを生成するため、作成済みZIPの中のEXEだけを差し替えないでください。
+
+本体と更新用EXEには共通のバージョン・著作権表示をWindowsファイル情報として付与します。著作権表示は `Copyright (c) 2026 Hiroshi Tanaka (JH1HST)` です。ライセンス文書は従来の配布用docsと内部リソースへ同梱します。
+
+## 出力と確認
+
+スクリプトは依存関係確認、全テスト、EXE生成、実EXEの自己確認、署名（指定時）・検証、配布ZIP作成の順で実行します。
+
+出力: `release/PSLog_1.24_Windows_<timestamp>.zip`
+
+既存のreleaseや個人データは消去しません。Windowsのファイルプロパティで本体・更新用EXEのデジタル署名と詳細情報を確認してください。署名なしの開発ビルドと、証明書を使う公開ビルドの両方をWindowsで確認する必要があります。
+
+SignToolの仕様: https://learn.microsoft.com/en-us/windows/win32/seccrypto/signtool
+
+---
+
+以下は旧版から継承する実機確認項目です。
+
 # Windows配布準備 — PSLog 1.17
 
 ## ビルド前

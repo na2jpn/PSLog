@@ -1,4 +1,4 @@
-# PSLog 1.23
+# PSLog 1.24
 
 ## 作者・保守担当 / Author and maintainer
 
@@ -23,6 +23,12 @@ PSLog本体は **GNU GPL v3以降（GPL-3.0-or-later）** で提供します。�
 PSLog is free software licensed under **GPL-3.0-or-later**. Third-party components and reference materials retain their respective licenses and notices. The common license does not relicense third-party works.
 
 Windows配布ZIPにもライセンスを同梱します。Python、PySide6/Qt、PyInstaller、xlrd、pyserial、CTY等の第三者コンポーネント・参照資料の条件は個別に適用されます。
+
+## Ver1.24 の変更
+
+Windows版の実行ファイルに、コードサイニング証明書によるデジタル署名を追加しました。
+
+Windowsビルドと署名指定については `WINDOWS_BUILD.md` を参照してください。
 
 ## Ver1.23 の変更
 
@@ -134,3 +140,4 @@ RBNは任意です。両ツールの「RBN設定」で共通のA〜E接続先と
 既存ログ・設定は従来どおり利用します。ターゲット条件は従来の `config/cluster_monitor.json` を引き継ぎ、バンド表示設定は `config/band_site.json` に保存します。個人ログ、個人設定、生成済みEXEはこのZIPに含みません。既存の1.19のアワード管理、総務省照会、通知音、HIS QTHの開始日時・件数・待機・複数所在地処理を継承しています。
 
 検証の詳細：`docs/VALIDATION_1.21.md`。Windows実機・EXEビルド・RBN実接続は別途確認が必要です。
+

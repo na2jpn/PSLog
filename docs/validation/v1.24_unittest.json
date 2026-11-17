@@ -1,0 +1,1132 @@
+{
+  "date": "2026-11-18",
+  "platform": "Linux / Python 3.12 / PySide6 6.8.3 / offscreen",
+  "modules": 184,
+  "tests": 1169,
+  "all_unittest_assertions_passed": true,
+  "ordinary_process_exit_all_zero": false,
+  "targeted_tests": 34,
+  "targeted_exit_code": 0,
+  "qt_cleanup_recheck": {
+    "tests": 56,
+    "exit_code": 0,
+    "method": "close and delete top-level widgets; send DeferredDelete and process events after unittest"
+  },
+  "windows_powershell_and_authenticode_executed": false,
+  "modules_results": [
+    {
+      "module": "test_activity_stage8",
+      "exit_code": 0,
+      "tests": 15,
+      "seconds": 1.48
+    },
+    {
+      "module": "test_adif_band_consistency",
+      "exit_code": 0,
+      "tests": 4,
+      "seconds": 0.19
+    },
+    {
+      "module": "test_adif_bureau_import",
+      "exit_code": 0,
+      "tests": 4,
+      "seconds": 0.19
+    },
+    {
+      "module": "test_adif_countries",
+      "exit_code": 0,
+      "tests": 3,
+      "seconds": 0.31
+    },
+    {
+      "module": "test_adif_gui",
+      "exit_code": 0,
+      "tests": 1,
+      "seconds": 0.59
+    },
+    {
+      "module": "test_adif_import",
+      "exit_code": 0,
+      "tests": 7,
+      "seconds": 0.38
+    },
+    {
+      "module": "test_adif_locations",
+      "exit_code": 0,
+      "tests": 3,
+      "seconds": 0.58
+    },
+    {
+      "module": "test_adif_modes",
+      "exit_code": 0,
+      "tests": 4,
+      "seconds": 0.26
+    },
+    {
+      "module": "test_adif_names",
+      "exit_code": 0,
+      "tests": 4,
+      "seconds": 0.17
+    },
+    {
+      "module": "test_adif_paper_qsl",
+      "exit_code": 0,
+      "tests": 4,
+      "seconds": 0.22
+    },
+    {
+      "module": "test_adif_qsl",
+      "exit_code": 0,
+      "tests": 4,
+      "seconds": 0.22
+    },
+    {
+      "module": "test_ai_chikyu_2026",
+      "exit_code": 0,
+      "tests": 14,
+      "seconds": 1.74
+    },
+    {
+      "module": "test_aja_stage9",
+      "exit_code": 0,
+      "tests": 9,
+      "seconds": 7.19
+    },
+    {
+      "module": "test_all_chiba_2026",
+      "exit_code": 0,
+      "tests": 10,
+      "seconds": 1.09
+    },
+    {
+      "module": "test_all_ja_2tx",
+      "exit_code": 0,
+      "tests": 11,
+      "seconds": 0.9
+    },
+    {
+      "module": "test_all_ja_categories",
+      "exit_code": 0,
+      "tests": 13,
+      "seconds": 1.7
+    },
+    {
+      "module": "test_all_okayama_2026",
+      "exit_code": 0,
+      "tests": 10,
+      "seconds": 2.64
+    },
+    {
+      "module": "test_all_osaka_2026",
+      "exit_code": 0,
+      "tests": 10,
+      "seconds": 2.78
+    },
+    {
+      "module": "test_app_paths",
+      "exit_code": 0,
+      "tests": 3,
+      "seconds": 0.32
+    },
+    {
+      "module": "test_batch_recovery",
+      "exit_code": 0,
+      "tests": 3,
+      "seconds": 0.34
+    },
+    {
+      "module": "test_blacklist",
+      "exit_code": 0,
+      "tests": 3,
+      "seconds": 0.2
+    },
+    {
+      "module": "test_blacklist_gui",
+      "exit_code": 0,
+      "tests": 3,
+      "seconds": 0.91
+    },
+    {
+      "module": "test_contest",
+      "exit_code": 0,
+      "tests": 13,
+      "seconds": 1.69
+    },
+    {
+      "module": "test_contest_areas",
+      "exit_code": 0,
+      "tests": 3,
+      "seconds": 0.46
+    },
+    {
+      "module": "test_contest_band_exchange",
+      "exit_code": 0,
+      "tests": 10,
+      "seconds": 0.67
+    },
+    {
+      "module": "test_contest_batch10",
+      "exit_code": 0,
+      "tests": 20,
+      "seconds": 3.11
+    },
+    {
+      "module": "test_contest_countries",
+      "exit_code": 0,
+      "tests": 2,
+      "seconds": 0.48
+    },
+    {
+      "module": "test_contest_event",
+      "exit_code": 0,
+      "tests": 7,
+      "seconds": 0.23
+    },
+    {
+      "module": "test_contest_export",
+      "exit_code": 0,
+      "tests": 17,
+      "seconds": 1.34
+    },
+    {
+      "module": "test_contest_rule_view_audit_87",
+      "exit_code": 0,
+      "tests": 4,
+      "seconds": 1.25
+    },
+    {
+      "module": "test_contest_rule_view_remaining71",
+      "exit_code": 0,
+      "tests": 4,
+      "seconds": 0.71
+    },
+    {
+      "module": "test_contest_rule_view_verified_15",
+      "exit_code": 0,
+      "tests": 5,
+      "seconds": 1.71
+    },
+    {
+      "module": "test_contest_score_ui",
+      "exit_code": 0,
+      "tests": 3,
+      "seconds": 0.28
+    },
+    {
+      "module": "test_contest_submission_import",
+      "exit_code": 0,
+      "tests": 4,
+      "seconds": 0.21
+    },
+    {
+      "module": "test_contest_tasks",
+      "exit_code": 0,
+      "tests": 2,
+      "seconds": 0.31
+    },
+    {
+      "module": "test_contest_timing",
+      "exit_code": 0,
+      "tests": 21,
+      "seconds": 1.0
+    },
+    {
+      "module": "test_contest_workflow",
+      "exit_code": 0,
+      "tests": 3,
+      "seconds": 1.47
+    },
+    {
+      "module": "test_countries",
+      "exit_code": 0,
+      "tests": 4,
+      "seconds": 0.19
+    },
+    {
+      "module": "test_dialog_access",
+      "exit_code": 0,
+      "tests": 1,
+      "seconds": 1.18
+    },
+    {
+      "module": "test_export_gui",
+      "exit_code": 0,
+      "tests": 1,
+      "seconds": 0.35
+    },
+    {
+      "module": "test_export_search_handoff",
+      "exit_code": 0,
+      "tests": 1,
+      "seconds": 0.15
+    },
+    {
+      "module": "test_exporting",
+      "exit_code": 0,
+      "tests": 8,
+      "seconds": 0.26
+    },
+    {
+      "module": "test_field_day_categories",
+      "exit_code": 0,
+      "tests": 13,
+      "seconds": 1.59
+    },
+    {
+      "module": "test_final9",
+      "exit_code": -7,
+      "tests": 6,
+      "seconds": 2.12,
+      "serial_rerun": true
+    },
+    {
+      "module": "test_final9_completion",
+      "exit_code": -11,
+      "tests": 8,
+      "seconds": 6.14,
+      "serial_rerun": true
+    },
+    {
+      "module": "test_free_radio_111",
+      "exit_code": 0,
+      "tests": 8,
+      "seconds": 0.21
+    },
+    {
+      "module": "test_fukuoka_2026",
+      "exit_code": 0,
+      "tests": 10,
+      "seconds": 1.04
+    },
+    {
+      "module": "test_full_restore",
+      "exit_code": 0,
+      "tests": 6,
+      "seconds": 0.41
+    },
+    {
+      "module": "test_gui",
+      "exit_code": 0,
+      "tests": 1,
+      "seconds": 1.06
+    },
+    {
+      "module": "test_hamlog_export_fields",
+      "exit_code": 0,
+      "tests": 3,
+      "seconds": 0.14
+    },
+    {
+      "module": "test_hamlog_gui",
+      "exit_code": 0,
+      "tests": 1,
+      "seconds": 0.54
+    },
+    {
+      "module": "test_hamlog_import",
+      "exit_code": 0,
+      "tests": 7,
+      "seconds": 0.25
+    },
+    {
+      "module": "test_import_gui",
+      "exit_code": 0,
+      "tests": 1,
+      "seconds": 0.36
+    },
+    {
+      "module": "test_importing",
+      "exit_code": 0,
+      "tests": 10,
+      "seconds": 0.25
+    },
+    {
+      "module": "test_initial_start_114",
+      "exit_code": 0,
+      "tests": 5,
+      "seconds": 0.13
+    },
+    {
+      "module": "test_input_feedback",
+      "exit_code": 0,
+      "tests": 2,
+      "seconds": 0.28
+    },
+    {
+      "module": "test_input_normalization",
+      "exit_code": 0,
+      "tests": 6,
+      "seconds": 0.1
+    },
+    {
+      "module": "test_jarl_station_fd",
+      "exit_code": 0,
+      "tests": 11,
+      "seconds": 0.88
+    },
+    {
+      "module": "test_jarl_summary_required",
+      "exit_code": 0,
+      "tests": 4,
+      "seconds": 0.26
+    },
+    {
+      "module": "test_last6",
+      "exit_code": 0,
+      "tests": 8,
+      "seconds": 3.41
+    },
+    {
+      "module": "test_locations",
+      "exit_code": 0,
+      "tests": 5,
+      "seconds": 1.2
+    },
+    {
+      "module": "test_log_merge",
+      "exit_code": 0,
+      "tests": 6,
+      "seconds": 0.17
+    },
+    {
+      "module": "test_log_merge_gui",
+      "exit_code": 0,
+      "tests": 2,
+      "seconds": 0.8
+    },
+    {
+      "module": "test_mode_text",
+      "exit_code": 0,
+      "tests": 3,
+      "seconds": 0.12
+    },
+    {
+      "module": "test_multi_extract",
+      "exit_code": 0,
+      "tests": 3,
+      "seconds": 0.39
+    },
+    {
+      "module": "test_patch01_1061",
+      "exit_code": 0,
+      "tests": 11,
+      "seconds": 0.58
+    },
+    {
+      "module": "test_patch01_1071",
+      "exit_code": 0,
+      "tests": 5,
+      "seconds": 0.25
+    },
+    {
+      "module": "test_patch02_1061",
+      "exit_code": 0,
+      "tests": 9,
+      "seconds": 0.39
+    },
+    {
+      "module": "test_patch02_1072",
+      "exit_code": 0,
+      "tests": 9,
+      "seconds": 0.24
+    },
+    {
+      "module": "test_patch03",
+      "exit_code": 0,
+      "tests": 4,
+      "seconds": 0.17
+    },
+    {
+      "module": "test_patch03_1063",
+      "exit_code": 0,
+      "tests": 6,
+      "seconds": 0.21
+    },
+    {
+      "module": "test_patch03_1073",
+      "exit_code": 0,
+      "tests": 6,
+      "seconds": 0.4
+    },
+    {
+      "module": "test_patch04",
+      "exit_code": 0,
+      "tests": 5,
+      "seconds": 0.22
+    },
+    {
+      "module": "test_patch04_1064",
+      "exit_code": 0,
+      "tests": 7,
+      "seconds": 0.58
+    },
+    {
+      "module": "test_patch04_1074",
+      "exit_code": 0,
+      "tests": 8,
+      "seconds": 1.16,
+      "serial_rerun": true
+    },
+    {
+      "module": "test_patch05",
+      "exit_code": 0,
+      "tests": 9,
+      "seconds": 0.17
+    },
+    {
+      "module": "test_patch05_1065",
+      "exit_code": 0,
+      "tests": 7,
+      "seconds": 0.2
+    },
+    {
+      "module": "test_patch05_1075",
+      "exit_code": 0,
+      "tests": 6,
+      "seconds": 0.77
+    },
+    {
+      "module": "test_patch06",
+      "exit_code": 0,
+      "tests": 5,
+      "seconds": 0.68
+    },
+    {
+      "module": "test_patch06_1066",
+      "exit_code": 0,
+      "tests": 5,
+      "seconds": 0.17
+    },
+    {
+      "module": "test_patch06_1076",
+      "exit_code": 0,
+      "tests": 6,
+      "seconds": 1.14
+    },
+    {
+      "module": "test_patch06_fix1",
+      "exit_code": 0,
+      "tests": 2,
+      "seconds": 0.17
+    },
+    {
+      "module": "test_patch07",
+      "exit_code": 0,
+      "tests": 6,
+      "seconds": 0.27
+    },
+    {
+      "module": "test_patch07_1057",
+      "exit_code": 0,
+      "tests": 3,
+      "seconds": 0.2
+    },
+    {
+      "module": "test_patch07_1067",
+      "exit_code": 0,
+      "tests": 4,
+      "seconds": 0.32
+    },
+    {
+      "module": "test_patch07_1077",
+      "exit_code": 0,
+      "tests": 7,
+      "seconds": 1.25
+    },
+    {
+      "module": "test_patch07_embedded_logsearch",
+      "exit_code": 0,
+      "tests": 1,
+      "seconds": 0.16
+    },
+    {
+      "module": "test_patch07_fix2",
+      "exit_code": 0,
+      "tests": 1,
+      "seconds": 0.1
+    },
+    {
+      "module": "test_patch08",
+      "exit_code": 0,
+      "tests": 8,
+      "seconds": 0.19
+    },
+    {
+      "module": "test_patch08_1058",
+      "exit_code": 0,
+      "tests": 5,
+      "seconds": 0.12
+    },
+    {
+      "module": "test_patch08_1068",
+      "exit_code": 0,
+      "tests": 3,
+      "seconds": 0.16
+    },
+    {
+      "module": "test_patch08_1078",
+      "exit_code": 0,
+      "tests": 3,
+      "seconds": 0.97
+    },
+    {
+      "module": "test_patch08_fix1_1068",
+      "exit_code": 0,
+      "tests": 4,
+      "seconds": 0.23
+    },
+    {
+      "module": "test_patch09",
+      "exit_code": 0,
+      "tests": 5,
+      "seconds": 0.15
+    },
+    {
+      "module": "test_patch09_1059",
+      "exit_code": 0,
+      "tests": 8,
+      "seconds": 0.3
+    },
+    {
+      "module": "test_patch09_1069",
+      "exit_code": 0,
+      "tests": 2,
+      "seconds": 0.13
+    },
+    {
+      "module": "test_patch09_fix1",
+      "exit_code": 0,
+      "tests": 5,
+      "seconds": 0.23
+    },
+    {
+      "module": "test_patch09_gui",
+      "exit_code": 0,
+      "tests": 2,
+      "seconds": 0.5
+    },
+    {
+      "module": "test_patch10",
+      "exit_code": 0,
+      "tests": 5,
+      "seconds": 0.22
+    },
+    {
+      "module": "test_patch10_1070",
+      "exit_code": 0,
+      "tests": 3,
+      "seconds": 0.72
+    },
+    {
+      "module": "test_patch10_1070_core",
+      "exit_code": 0,
+      "tests": 4,
+      "seconds": 0.17
+    },
+    {
+      "module": "test_postal_locations",
+      "exit_code": 0,
+      "tests": 4,
+      "seconds": 0.71
+    },
+    {
+      "module": "test_pota",
+      "exit_code": 0,
+      "tests": 7,
+      "seconds": 0.31
+    },
+    {
+      "module": "test_pota_gui",
+      "exit_code": 0,
+      "tests": 2,
+      "seconds": 0.87,
+      "serial_rerun": true
+    },
+    {
+      "module": "test_pslog115",
+      "exit_code": 0,
+      "tests": 3,
+      "seconds": 0.12
+    },
+    {
+      "module": "test_qsl_batch",
+      "exit_code": 0,
+      "tests": 11,
+      "seconds": 0.3
+    },
+    {
+      "module": "test_qsl_gui",
+      "exit_code": 0,
+      "tests": 4,
+      "seconds": 1.35
+    },
+    {
+      "module": "test_radio_control_116",
+      "exit_code": 0,
+      "tests": 4,
+      "seconds": 0.11
+    },
+    {
+      "module": "test_radio_fix3",
+      "exit_code": 0,
+      "tests": 3,
+      "seconds": 0.2
+    },
+    {
+      "module": "test_radio_fix4",
+      "exit_code": 0,
+      "tests": 3,
+      "seconds": 0.25
+    },
+    {
+      "module": "test_radio_fix5",
+      "exit_code": 0,
+      "tests": 4,
+      "seconds": 0.21
+    },
+    {
+      "module": "test_radio_fix7",
+      "exit_code": 0,
+      "tests": 5,
+      "seconds": 0.18
+    },
+    {
+      "module": "test_radio_fix9",
+      "exit_code": 0,
+      "tests": 2,
+      "seconds": 0.09
+    },
+    {
+      "module": "test_radio_safety_fix2",
+      "exit_code": 0,
+      "tests": 2,
+      "seconds": 0.11
+    },
+    {
+      "module": "test_radio_settings_fix1",
+      "exit_code": 0,
+      "tests": 5,
+      "seconds": 0.17
+    },
+    {
+      "module": "test_reference_db",
+      "exit_code": 0,
+      "tests": 10,
+      "seconds": 1.23
+    },
+    {
+      "module": "test_regional_2026",
+      "exit_code": 0,
+      "tests": 27,
+      "seconds": 6.14,
+      "serial_rerun": true
+    },
+    {
+      "module": "test_release_106",
+      "exit_code": 0,
+      "tests": 5,
+      "seconds": 0.35
+    },
+    {
+      "module": "test_remaining28",
+      "exit_code": -6,
+      "tests": 24,
+      "seconds": 16.23,
+      "serial_rerun": true
+    },
+    {
+      "module": "test_remaining9",
+      "exit_code": -11,
+      "tests": 16,
+      "seconds": 4.79,
+      "serial_rerun": true
+    },
+    {
+      "module": "test_restore_gui",
+      "exit_code": 0,
+      "tests": 7,
+      "seconds": 0.39
+    },
+    {
+      "module": "test_rule_catalog",
+      "exit_code": 0,
+      "tests": 3,
+      "seconds": 0.22
+    },
+    {
+      "module": "test_rule_pack",
+      "exit_code": 0,
+      "tests": 12,
+      "seconds": 0.32
+    },
+    {
+      "module": "test_rule_pack_ui",
+      "exit_code": 0,
+      "tests": 2,
+      "seconds": 0.47
+    },
+    {
+      "module": "test_saga_rule",
+      "exit_code": 0,
+      "tests": 6,
+      "seconds": 0.85
+    },
+    {
+      "module": "test_scoring_progress",
+      "exit_code": 0,
+      "tests": 3,
+      "seconds": 0.62
+    },
+    {
+      "module": "test_search",
+      "exit_code": 0,
+      "tests": 10,
+      "seconds": 0.31
+    },
+    {
+      "module": "test_search_gui",
+      "exit_code": 0,
+      "tests": 10,
+      "seconds": 1.61
+    },
+    {
+      "module": "test_search_special_handoff_gui",
+      "exit_code": -11,
+      "tests": 2,
+      "seconds": 0.4,
+      "serial_rerun": true
+    },
+    {
+      "module": "test_session_state",
+      "exit_code": 0,
+      "tests": 8,
+      "seconds": 0.14
+    },
+    {
+      "module": "test_session_tabs_gui",
+      "exit_code": 0,
+      "tests": 4,
+      "seconds": 1.87
+    },
+    {
+      "module": "test_settings",
+      "exit_code": 0,
+      "tests": 7,
+      "seconds": 1.52
+    },
+    {
+      "module": "test_six_meter_2026",
+      "exit_code": 0,
+      "tests": 12,
+      "seconds": 1.02
+    },
+    {
+      "module": "test_sota",
+      "exit_code": 0,
+      "tests": 6,
+      "seconds": 2.09
+    },
+    {
+      "module": "test_special_awards_stage1011",
+      "exit_code": 0,
+      "tests": 11,
+      "seconds": 0.64
+    },
+    {
+      "module": "test_storage",
+      "exit_code": 0,
+      "tests": 17,
+      "seconds": 0.43
+    },
+    {
+      "module": "test_storage_replace_retry_fix6",
+      "exit_code": 0,
+      "tests": 3,
+      "seconds": 0.18
+    },
+    {
+      "module": "test_tokyo_uhf_spring_2026",
+      "exit_code": 0,
+      "tests": 14,
+      "seconds": 2.05
+    },
+    {
+      "module": "test_tottori_gigahertz_2026",
+      "exit_code": 0,
+      "tests": 22,
+      "seconds": 1.88
+    },
+    {
+      "module": "test_update_package",
+      "exit_code": 0,
+      "tests": 7,
+      "seconds": 0.18
+    },
+    {
+      "module": "test_updater",
+      "exit_code": 0,
+      "tests": 9,
+      "seconds": 0.19
+    },
+    {
+      "module": "test_user_policy",
+      "exit_code": 0,
+      "tests": 6,
+      "seconds": 0.68
+    },
+    {
+      "module": "test_v101",
+      "exit_code": 0,
+      "tests": 3,
+      "seconds": 1.43
+    },
+    {
+      "module": "test_v102",
+      "exit_code": 0,
+      "tests": 6,
+      "seconds": 0.5
+    },
+    {
+      "module": "test_v103_initial",
+      "exit_code": 0,
+      "tests": 3,
+      "seconds": 0.38
+    },
+    {
+      "module": "test_v116_core",
+      "exit_code": 0,
+      "tests": 3,
+      "seconds": 0.24
+    },
+    {
+      "module": "test_v117_gui",
+      "exit_code": 0,
+      "tests": 10,
+      "seconds": 4.09
+    },
+    {
+      "module": "test_v117_storage",
+      "exit_code": 0,
+      "tests": 10,
+      "seconds": 0.24
+    },
+    {
+      "module": "test_v118",
+      "exit_code": 0,
+      "tests": 18,
+      "seconds": 0.99
+    },
+    {
+      "module": "test_v118_gui",
+      "exit_code": 0,
+      "tests": 3,
+      "seconds": 0.94
+    },
+    {
+      "module": "test_v119",
+      "exit_code": 0,
+      "tests": 7,
+      "seconds": 0.58
+    },
+    {
+      "module": "test_v119_fix2",
+      "exit_code": 0,
+      "tests": 6,
+      "seconds": 0.38
+    },
+    {
+      "module": "test_v119_fix3",
+      "exit_code": 0,
+      "tests": 12,
+      "seconds": 1.33
+    },
+    {
+      "module": "test_v119_fix3_gui",
+      "exit_code": 0,
+      "tests": 7,
+      "seconds": 1.38
+    },
+    {
+      "module": "test_v119_fix4",
+      "exit_code": 0,
+      "tests": 6,
+      "seconds": 0.55
+    },
+    {
+      "module": "test_v119_fix5",
+      "exit_code": 0,
+      "tests": 6,
+      "seconds": 0.54
+    },
+    {
+      "module": "test_v119_fix6",
+      "exit_code": 0,
+      "tests": 6,
+      "seconds": 0.51
+    },
+    {
+      "module": "test_v119_fix7",
+      "exit_code": 0,
+      "tests": 7,
+      "seconds": 0.71
+    },
+    {
+      "module": "test_v119_gui",
+      "exit_code": 0,
+      "tests": 2,
+      "seconds": 1.08
+    },
+    {
+      "module": "test_v120",
+      "exit_code": 0,
+      "tests": 9,
+      "seconds": 0.99
+    },
+    {
+      "module": "test_v120_fix1",
+      "exit_code": 0,
+      "tests": 14,
+      "seconds": 0.73
+    },
+    {
+      "module": "test_v120_fix2",
+      "exit_code": 0,
+      "tests": 13,
+      "seconds": 0.76
+    },
+    {
+      "module": "test_v120_fix3",
+      "exit_code": 0,
+      "tests": 2,
+      "seconds": 0.14
+    },
+    {
+      "module": "test_v121",
+      "exit_code": 0,
+      "tests": 17,
+      "seconds": 0.41
+    },
+    {
+      "module": "test_v121_fix1",
+      "exit_code": 0,
+      "tests": 7,
+      "seconds": 1.28
+    },
+    {
+      "module": "test_v121_rbn",
+      "exit_code": 0,
+      "tests": 4,
+      "seconds": 0.27
+    },
+    {
+      "module": "test_v122_fix1",
+      "exit_code": 0,
+      "tests": 9,
+      "seconds": 0.82
+    },
+    {
+      "module": "test_v123",
+      "exit_code": 0,
+      "tests": 11,
+      "seconds": 1.33
+    },
+    {
+      "module": "test_v123_qrp",
+      "exit_code": 0,
+      "tests": 1,
+      "seconds": 0.51
+    },
+    {
+      "module": "test_v123_record",
+      "exit_code": 0,
+      "tests": 5,
+      "seconds": 1.68
+    },
+    {
+      "module": "test_v124_about",
+      "exit_code": 0,
+      "tests": 4,
+      "seconds": 0.7,
+      "serial_rerun": true
+    },
+    {
+      "module": "test_v124_signing",
+      "exit_code": 0,
+      "tests": 6,
+      "seconds": 0.69
+    },
+    {
+      "module": "test_v22",
+      "exit_code": 0,
+      "tests": 2,
+      "seconds": 0.78
+    },
+    {
+      "module": "test_v23",
+      "exit_code": 0,
+      "tests": 2,
+      "seconds": 0.49
+    },
+    {
+      "module": "test_v25",
+      "exit_code": 0,
+      "tests": 2,
+      "seconds": 0.41
+    },
+    {
+      "module": "test_v29",
+      "exit_code": 0,
+      "tests": 1,
+      "seconds": 0.6
+    },
+    {
+      "module": "test_v33",
+      "exit_code": 0,
+      "tests": 1,
+      "seconds": 0.45
+    },
+    {
+      "module": "test_v36",
+      "exit_code": 0,
+      "tests": 1,
+      "seconds": 0.52
+    },
+    {
+      "module": "test_v39",
+      "exit_code": 0,
+      "tests": 1,
+      "seconds": 0.14
+    },
+    {
+      "module": "test_v40",
+      "exit_code": 0,
+      "tests": 1,
+      "seconds": 0.39
+    },
+    {
+      "module": "test_v42",
+      "exit_code": 0,
+      "tests": 1,
+      "seconds": 0.47
+    },
+    {
+      "module": "test_window_geometry",
+      "exit_code": 0,
+      "tests": 5,
+      "seconds": 1.37
+    },
+    {
+      "module": "test_windows_package",
+      "exit_code": 0,
+      "tests": 12,
+      "seconds": 3.12
+    },
+    {
+      "module": "test_year_move",
+      "exit_code": 0,
+      "tests": 8,
+      "seconds": 0.39
+    }
+  ],
+  "note": "Five existing GUI modules printed OK but terminated abnormally during native Qt teardown after serial reruns. They were rechecked together with explicit Qt widget cleanup; all 56 tests passed and the process exited 0. The delivered Windows test launcher was not changed."
+}

@@ -2,11 +2,12 @@ import sys
 from pathlib import Path
 from PySide6.QtCore import Qt
 from PySide6.QtGui import QPixmap
-from PySide6.QtWidgets import QVBoxLayout,QPlainTextEdit,QWidget,QLabel,QScrollArea,QGroupBox,QFrame
+from PySide6.QtWidgets import QVBoxLayout,QPlainTextEdit,QWidget,QLabel,QScrollArea,QGroupBox,QFrame,QTabWidget
 from window_geometry import SafeDialog
 from search_ui import button
 from storage import VERSION
 from app_paths import data_directory
+from product_info import COPYRIGHT, ORGANIZATION
 
 TEXTS={
 '使い方':f'''PSLog {VERSION} — 基本操作
@@ -126,9 +127,9 @@ TEXTS['PSLogについて'] += (
     'PSLogは、Hiroshi Tanakaが自身のアマチュア無線交信ログを管理するために開発したソフトウェアです。\n'
     '第三者の要望への対応、サポート、不具合修正や継続提供を約束するものではありません。\n'
     '記録内容や提出ファイルの確認、必要なバックアップは利用者自身で行ってください。\n\n'
-    'Copyright (c) 2026 Hiroshi Tanaka (JH1HST)\n'
+    f'{COPYRIGHT}\n'
     'Originally developed by Hiroshi Tanaka (JH1HST)\n'
-    'PS Ham-ware / AKIHABARA-GIKEN\n'
+    f'{ORGANIZATION}\n'
     'Based on PSLog Format — established in 2013\n\n'
     + LICENSE_NOTICE
 )
@@ -151,6 +152,37 @@ TEXTS['PSLogの更新履歴']=_history_text()
 def _section(title,text,parent):
     box=QGroupBox(title,parent);layout=QVBoxLayout(box);label=QLabel(text,box);label.setWordWrap(True);label.setTextInteractionFlags(Qt.TextInteractionFlag.TextSelectableByMouse)
     label.setStyleSheet('font-size:14px; line-height:1.3;');layout.addWidget(label);return box
+
+
+LICENSE_TABS = (
+    ('LICENSE.md', 'ライセンス全文（GPL v3）'),
+    ('LICENSING.md', '共通方針・日英説明'),
+    ('AUTHOR_NOTICE.txt', '作者・著作権表示'),
+)
+
+
+def _license_text(name):
+    if name not in {item[0] for item in LICENSE_TABS}:
+        raise ValueError('Unknown license document: ' + name)
+    candidates=(data_directory()/'docs'/name,_resource('licenses/'+name),Path(__file__).resolve().parent/name)
+    for path in candidates:
+        try:
+            if path.is_file():
+                return path.read_text(encoding='utf-8-sig')
+        except (OSError,UnicodeError):
+            pass
+    return 'ライセンス文書を読み込めません。PSLogの配布ファイルを確認してください。\n文書: '+name
+
+
+class LicenseDialog(SafeDialog):
+    def __init__(self,parent=None,name='LICENSE.md'):
+        super().__init__(parent);self.setWindowTitle(f'ライセンス — PSLog {VERSION}');self.resize(800,650)
+        layout=QVBoxLayout(self);self.tabs=QTabWidget(self)
+        for filename,title in LICENSE_TABS:
+            view=QPlainTextEdit(self);view.setReadOnly(True);view.setPlainText(_license_text(filename))
+            self.tabs.addTab(view,title)
+            if filename==name:self.tabs.setCurrentWidget(view)
+        layout.addWidget(self.tabs,1);layout.addWidget(button('閉じる',self.accept))
 
 
 class HelpDialog(SafeDialog):
@@ -183,22 +215,12 @@ class HelpDialog(SafeDialog):
             '更新日時点の参照情報であり、過去の運用やアワードの有効性は別途確認が必要です。',body))
         author='Hiroshi Tanakaが自身のアマチュア無線交信ログを管理するために開発したソフトウェアです。\n'
         author+='記録内容や提出ファイルの確認、必要なバックアップは利用者自身で行ってください。\n\n'
-        author+='Copyright (c) 2026 Hiroshi Tanaka (JH1HST)\nPS Ham-ware / AKIHABARA-GIKEN\nBased on PSLog Format — established in 2013'
+        author+=COPYRIGHT+'\n'+ORGANIZATION+'\nBased on PSLog Format — established in 2013'
         v.addWidget(_section('作者からの案内',author,body))
         v.addWidget(_section('ライセンス',LICENSE_NOTICE,body))
-        v.addWidget(button('ライセンス全文（GPL v3）',lambda:self._show_license('LICENSE.md')))
-        v.addWidget(button('共通方針・日英説明',lambda:self._show_license('LICENSING.md')))
-        v.addStretch(1);scroll.setWidget(body);outer.addWidget(scroll,1);outer.addWidget(button('閉じる',self.accept))
+        v.addStretch(1);scroll.setWidget(body);outer.addWidget(scroll,1)
+        outer.addWidget(button('ライセンスを表示',lambda:self._show_license('LICENSE.md')))
+        outer.addWidget(button('閉じる',self.accept))
 
     def _show_license(self,name):
-        candidates=(data_directory()/'docs'/name,_resource('licenses/'+name),Path(__file__).resolve().parent/name)
-        text='ライセンス文書を読み込めません。PSLogの配布ファイルを確認してください。'
-        for path in candidates:
-            try:
-                if path.is_file():
-                    text=path.read_text(encoding='utf-8-sig');break
-            except (OSError,UnicodeError):
-                pass
-        dialog=SafeDialog(self);dialog.setWindowTitle(name+' — PSLog');dialog.resize(800,650)
-        layout=QVBoxLayout(dialog);view=QPlainTextEdit(dialog);view.setReadOnly(True);view.setPlainText(text)
-        layout.addWidget(view,1);layout.addWidget(button('閉じる',dialog.accept));dialog.exec()
+        LicenseDialog(self,name).exec()
