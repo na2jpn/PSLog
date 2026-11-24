@@ -1,4 +1,4 @@
-# PSLog 1.24
+# PSLog 1.25
 
 ## 作者・保守担当 / Author and maintainer
 
@@ -23,6 +23,14 @@ PSLog本体は **GNU GPL v3以降（GPL-3.0-or-later）** で提供します。�
 PSLog is free software licensed under **GPL-3.0-or-later**. Third-party components and reference materials retain their respective licenses and notices. The common license does not relicense third-party works.
 
 Windows配布ZIPにもライセンスを同梱します。Python、PySide6/Qt、PyInstaller、xlrd、pyserial、CTY等の第三者コンポーネント・参照資料の条件は個別に適用されます。
+
+## Ver1.25 の変更
+
+- コンテスト入力に「RECでナンバー値＋」を追加。記録成功後、末尾の数字を1増やして次の番号を表示します。文字の接頭辞、ゼロ埋め、桁増加に対応します。
+- 「バンドごと」を追加。各バンドの次の番号を個別に保持し、初めて使うバンドは設定した初期値から開始します。設定と番号はコンテストタブごとに保存し、再起動後も引き継ぎます。
+- コンテスト画面の説明を整理し、実機検証などに関する注意書きを削除しました。年度・公式規約を確認する赤字の案内は維持します。
+- 「現在のログファイル」に、Dateで指定した年のファイルになることを小さな文字で追記しました。
+- Windows用ビルドスクリプトの名前を `windows.ps1` に変更しました。署名あり／なしの指定と、署名・検証後に配布ZIPを作成する処理は継承します。
 
 ## Ver1.24 の変更
 
@@ -135,7 +143,7 @@ RBNは任意です。両ツールの「RBN設定」で共通のA〜E接続先と
 
 ## 起動・ビルド
 
-ソース実行：`python main.py`。WindowsのEXE作成は `WINDOWS_BUILD.md` と `build-windows.ps1` に従ってください。依存関係は `requirements.txt` に記載しています。Windowsビルドではテストを通過してからPyInstallerを実行します。
+ソース実行：`python main.py`。WindowsのEXE作成は `WINDOWS_BUILD.md` と `windows.ps1` に従ってください。依存関係は `requirements.txt` に記載しています。Windowsビルドではテストを通過してからPyInstallerを実行します。
 
 既存ログ・設定は従来どおり利用します。ターゲット条件は従来の `config/cluster_monitor.json` を引き継ぎ、バンド表示設定は `config/band_site.json` に保存します。個人ログ、個人設定、生成済みEXEはこのZIPに含みません。既存の1.19のアワード管理、総務省照会、通知音、HIS QTHの開始日時・件数・待機・複数所在地処理を継承しています。
 

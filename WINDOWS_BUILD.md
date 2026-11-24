@@ -1,4 +1,4 @@
-# Windows配布準備 — PSLog 1.24
+# Windows配布準備 — PSLog 1.25
 
 Python 64bit / PySide6 6.8.3 / PyInstaller 6.16.0。必要な依存関係は事前に `pip install -r requirements.txt` で揃えてください。ビルドスクリプトは自動インストールしません。
 
@@ -7,13 +7,13 @@ Python 64bit / PySide6 6.8.3 / PyInstaller 6.16.0。必要な依存関係は事�
 証明書を設定していない環境では、従来どおりビルドできます。
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File .\build-windows.ps1
+powershell -ExecutionPolicy Bypass -File .\windows.ps1
 ```
 
 環境変数に証明書が設定されている場合も、次の指定で署名を省略できます。
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File .\build-windows.ps1 -NoSign
+powershell -ExecutionPolicy Bypass -File .\windows.ps1 -NoSign
 ```
 
 この場合は未署名の開発用ビルドであることを画面に表示します。公開版の署名は次の方法で行ってください。
@@ -23,8 +23,16 @@ powershell -ExecutionPolicy Bypass -File .\build-windows.ps1 -NoSign
 PSRTTYと同じWindows証明書ストア方式です。コードサイニング証明書と秘密鍵にアクセスできるWindows環境（Certum等のトークンや署名サービスを含む）およびWindows SDKのSignToolが必要です。秘密鍵やPIN・パスワードはソースに保存しません。証明書側でPIN等が求められる場合は、その署名サービスの画面で入力してください。
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File .\build-windows.ps1 -Sign -CertificateThumbprint "証明書の40桁の拇印"
+powershell -ExecutionPolicy Bypass -File .\windows.ps1 -Sign -CertificateThumbprint "証明書の40桁の拇印"
 ```
+
+Certumのタイムスタンプサーバーを指定する場合：
+
+```powershell
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\windows.ps1 -Sign -CertificateThumbprint "証明書の40桁の拇印" -TimestampUrl "http://time.certum.pl"
+```
+
+署名アプリを起動し、証明書が利用できる状態で実行してください。
 
 - `-CertificateThumbprint` または環境変数 `PSLOG_SIGN_CERT_THUMBPRINT` に40桁の拇印を指定すると署名します。設定なしでは署名を省略します。
 - `-Sign` を明示して拇印が未指定なら、未署名へ切り替えずエラーで停止します。証明書・秘密鍵へのアクセスや署名検証で失敗した場合も停止します。
@@ -41,7 +49,7 @@ powershell -ExecutionPolicy Bypass -File .\build-windows.ps1 -Sign -CertificateT
 
 スクリプトは依存関係確認、全テスト、EXE生成、実EXEの自己確認、署名（指定時）・検証、配布ZIP作成の順で実行します。
 
-出力: `release/PSLog_1.24_Windows_<timestamp>.zip`
+出力: `release/PSLog_1.25_Windows_<timestamp>.zip`
 
 既存のreleaseや個人データは消去しません。Windowsのファイルプロパティで本体・更新用EXEのデジタル署名と詳細情報を確認してください。署名なしの開発ビルドと、証明書を使う公開ビルドの両方をWindowsで確認する必要があります。
 
@@ -59,7 +67,7 @@ SignToolの仕様: https://learn.microsoft.com/en-us/windows/win32/seccrypto/sig
 2. `storage.VERSION` が `1.17` であることを確認。
 3. `meta/UPDATE_HISTORY.txt` の先頭がVer1.17であることを確認。
 4. `python -m unittest discover` を実行し、Windows GUIテストを含め確認。
-5. `powershell -ExecutionPolicy Bypass -File .\build-windows.ps1` でビルド。
+5. `powershell -ExecutionPolicy Bypass -File .\windows.ps1` でビルド。
 
 配布ZIP名は `storage.VERSION` から自動取得し、`PSLog_1.17_Windows_<timestamp>.zip` となります。
 

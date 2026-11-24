@@ -1,0 +1,35 @@
+{
+  "version": "1.25",
+  "date": "2026-11-24",
+  "base_commit": "51a5ecbc2d81c5e5c3b3ddcb12a3383dad809719",
+  "python": "3.12.14",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "pyside": "6.8.3",
+  "qt_platform": "offscreen",
+  "full_suite": {
+    "tests": 1184,
+    "seconds": 50.111,
+    "result": "OK",
+    "exit_code": 0
+  },
+  "targeted_final": {
+    "tests": 38,
+    "result": "OK",
+    "exit_code": 0
+  },
+  "final_layout_recheck": {
+    "tests": 15,
+    "result": "OK",
+    "exit_code": 0
+  },
+  "python_syntax_files": 393,
+  "reference_db_hashes_verified": true,
+  "license_documents_unchanged": true,
+  "windows_ps1_utf8_bom": true,
+  "screens_reviewed": [
+    "contest mode at 1145x810",
+    "contest overview",
+    "small screen wrapping"
+  ],
+  "windows_executable_build_performed": false
+}

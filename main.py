@@ -1,4 +1,4 @@
-"""PSLog 1.22 application entry point and main/session UI."""
+"""PSLog 1.25 application entry point and main/session UI."""
 import sys
 import ctypes
 import subprocess
@@ -15,6 +15,7 @@ from PySide6.QtWidgets import (QApplication,QMainWindow,QWidget,QVBoxLayout,QHBo
     QTabBar,QStackedWidget,QMenu,QStylePainter,QStyleOptionTab,QStyle)
 from app_paths import data_directory,open_folder
 from path_label import PathLabel
+import contest_number
 from model import QSO, now_jst, default_rst, validate_station, LOCATIONS, preserve_grid
 from input_normalization import callsign as normalize_callsign, amateur_callsign_entry, date_text, machine_text, time_text
 from mode_text import split_mode_value, combine_mode_value
@@ -248,7 +249,7 @@ class Window(QMainWindow):
         stationbox=QGroupBox('自局・ログファイル'); self.standard_stationbox=stationbox; sl=QGridLayout(stationbox); sl.setContentsMargins(8,8,8,8); sl.setHorizontalSpacing(8); sl.setVerticalSpacing(4)
         self.own=QLineEdit(self.settings.get('own','')); self.suffix=QLineEdit(self.settings.get('suffix','')); self.suffix.setPlaceholderText('任意：JP1220 など')
         sl.addWidget(QLabel('自局コールサイン（/ 含む）'),0,0); sl.addWidget(QLabel('ログファイル付与文字'),0,1,1,2)
-        path_head=QWidget();path_head_row=QHBoxLayout(path_head);path_head_row.setContentsMargins(0,0,0,0);path_head_row.setSpacing(6);path_head_row.addWidget(QLabel('現在のログファイル'));path_head_row.addStretch()
+        path_head=QWidget();path_head_row=QHBoxLayout(path_head);path_head_row.setContentsMargins(0,0,0,0);path_head_row.setSpacing(6);path_head_row.addWidget(self._log_path_heading(),1)
         self.show_current_log_button=QPushButton('全件表示');self.show_current_log_button.setObjectName('compactBlue');self.show_current_log_button.setFixedHeight(21);self.show_current_log_button.setToolTip('現在の自局コールとログファイルを「ログ検索・編集」へ渡し、全件を表示します。');self.show_current_log_button.clicked.connect(lambda:self.open_current_log_search(False));path_head_row.addWidget(self.show_current_log_button,0,Qt.AlignmentFlag.AlignVCenter);sl.addWidget(path_head,0,3)
         sl.addWidget(self.own,1,0); sl.addWidget(self.suffix,1,1)
         setbutton=self.button('SET',self.set_station,True); sl.addWidget(setbutton,1,2)
@@ -919,7 +920,7 @@ class Window(QMainWindow):
         self.c_own=QLineEdit();self.c_name=QLineEdit();self.c_name.setPlaceholderText('例：AADX')
         grid.addWidget(QLabel('自局コールサイン（/ 含む）'),0,0)
         grid.addWidget(QLabel('コンテスト英名'),0,1,1,2)
-        c_path_head=QWidget();c_path_head_row=QHBoxLayout(c_path_head);c_path_head_row.setContentsMargins(0,0,0,0);c_path_head_row.setSpacing(6);c_path_head_row.addWidget(QLabel('現在のログファイル'));c_path_head_row.addStretch()
+        c_path_head=QWidget();c_path_head_row=QHBoxLayout(c_path_head);c_path_head_row.setContentsMargins(0,0,0,0);c_path_head_row.setSpacing(6);c_path_head_row.addWidget(self._log_path_heading(),1)
         self.c_show_current_log_button=QPushButton('全件表示');self.c_show_current_log_button.setObjectName('compactBlue');self.c_show_current_log_button.setFixedHeight(21);self.c_show_current_log_button.setToolTip('現在の自局コールとコンテストログを「ログ検索・編集」へ渡し、全件を表示します。');self.c_show_current_log_button.clicked.connect(lambda:self.open_current_log_search(True));c_path_head_row.addWidget(self.c_show_current_log_button,0,Qt.AlignmentFlag.AlignVCenter);grid.addWidget(c_path_head,0,3)
         grid.addWidget(self.c_own,1,0);grid.addWidget(self.c_name,1,1)
         grid.addWidget(self.button('SET',self.set_contest_station,True),1,2)
@@ -943,11 +944,18 @@ class Window(QMainWindow):
         callrow=QHBoxLayout();self.c_call=QLineEdit();self.c_call.setPlaceholderText('JX1XXX')
         c_call_font=self.c_call.font();c_call_font.setBold(True);self.c_call.setFont(c_call_font);callrow.addWidget(self.c_call)
         callrow.addWidget(self.button('RETURN',self.contest_start_qso,True));form.addLayout(callrow)
+        number_options=QHBoxLayout()
+        self.c_number_increment=QCheckBox('RECでナンバー値＋')
+        self.c_number_increment.setToolTip('記録に成功すると、末尾の数字を1増やして次の送信番号を表示します。例：ST001 → ST002。')
+        self.c_number_per_band=QCheckBox('バンドごと');self.c_number_per_band.setEnabled(False)
+        self.c_number_per_band.setToolTip('各バンドの次の番号を保持します。初めて使うバンドは、最初に入力した初期値から始めます。')
+        number_options.addWidget(self.c_number_increment);number_options.addWidget(self.c_number_per_band);number_options.addStretch()
+        form.addLayout(number_options)
         exchanges=QGridLayout()
         for col,text in enumerate(('自分のコンテストナンバー（RMKS2）','相手のコンテストナンバー（RMKS）')):
             label=QLabel(text);label.setWordWrap(True);exchanges.addWidget(label,0,col)
-        self.c_own_exchange=QLineEdit();self.c_own_exchange.setPlaceholderText('送信するコンテストナンバー（記録後も保持）')
-        self.c_own_exchange.setToolTip('このコンテストタブ専用です。記録後・タブ切替・再起動後も保持します。周波数のRMKS2自動セットがONの場合、保存時に周波数を末尾へ追記します。')
+        self.c_own_exchange=QLineEdit();self.c_own_exchange.setPlaceholderText('送信するコンテストナンバー')
+        self.c_own_exchange.setToolTip('このコンテストタブ専用です。「RECでナンバー値＋」がONなら記録後に次の番号へ進みます。番号と設定はタブ切替・再起動後も保持します。周波数のRMKS2自動セットがONの場合、保存時に周波数を末尾へ追記します。')
         self.c_exchange=QLineEdit();self.c_exchange.setPlaceholderText('受信したコンテストナンバー')
         exchanges.addWidget(self.c_own_exchange,1,0);exchanges.addWidget(self.c_exchange,1,1)
         exchanges.setColumnStretch(0,1);exchanges.setColumnStretch(1,1);form.addLayout(exchanges)
@@ -984,12 +992,15 @@ class Window(QMainWindow):
         self.c_exchange.returnPressed.connect(self.contest_record);self.c_mode.currentTextChanged.connect(self.contest_mode_changed)
         self.c_exchange.editingFinished.connect(lambda:self.c_exchange.setText(machine_text(self.c_exchange.text(),upper=True)))
         self.c_own_exchange.editingFinished.connect(self._save_contest_own_exchange)
+        self.c_number_increment.toggled.connect(self._contest_number_options_changed)
+        self.c_number_per_band.toggled.connect(self._contest_number_options_changed)
         self.c_own_exchange.returnPressed.connect(lambda:self.c_exchange.setFocus())
         for widget,kind in ((self.c_date,'date'),(self.c_time,'time'),(self.c_sent,'machine'),(self.c_received,'machine')):
             widget.editingFinished.connect(lambda widget=widget,kind=kind:self._normalize_contest_line(widget,kind))
         self.c_band.lineEdit().editingFinished.connect(lambda:self.c_band.setCurrentText(machine_text(self.c_band.currentText())))
         self.c_mode.lineEdit().editingFinished.connect(lambda:self.c_mode.setCurrentText(machine_text(self.c_mode.currentText(),upper=True)))
         self.c_band.currentTextChanged.connect(self.update_contest_band_counts)
+        self.c_band.currentTextChanged.connect(self._contest_number_band_changed)
         self.c_limited.toggled.connect(self.contest_scope_changed)
         self.c_date.textChanged.connect(lambda:self.update_contest_path() if self._active_workspace().get('type')=='contest' else None)
         self.setTabOrder(self.c_call,self.c_exchange)
@@ -1017,8 +1028,28 @@ class Window(QMainWindow):
     def _save_contest_own_exchange(self):
         if self._workspace_loading or self._active_workspace().get('type')!='contest':return
         self.c_own_exchange.setText(machine_text(self.c_own_exchange.text(),upper=True))
-        self._active_workspace()['own_exchange']=self.c_own_exchange.text()
+        contest_number.remember(self._active_workspace(),self.c_band.currentText(),self.c_own_exchange.text())
         self._persist_workspace_quiet()
+
+    def _contest_number_options_changed(self,*_args):
+        self.c_number_per_band.setEnabled(self.c_number_increment.isChecked())
+        if self._workspace_loading or self._active_workspace().get('type')!='contest':return
+        contest_number.configure(self._active_workspace(),self.c_band.currentText(),self.c_own_exchange.text(),
+                                 self.c_number_increment.isChecked(),self.c_number_per_band.isChecked())
+        self._persist_workspace_quiet()
+
+    def _contest_number_band_changed(self,band):
+        if self._workspace_loading or self._active_workspace().get('type')!='contest':return
+        value=contest_number.change_band(self._active_workspace(),self._contest_number_band,band,self.c_own_exchange.text())
+        self._contest_number_band=band
+        self.c_own_exchange.setText(value)
+        self._persist_workspace_quiet()
+
+    @staticmethod
+    def _log_path_heading():
+        label=QLabel('現在のログファイル <span style="font-size:11px;">（Dateで指定した年のファイルになります）</span>')
+        label.setTextFormat(Qt.TextFormat.RichText);label.setWordWrap(True)
+        return label
 
     def _refresh_amateur_history(self):
         """Read history from disk without rebasing a pending writer snapshot.
@@ -1127,6 +1158,7 @@ class Window(QMainWindow):
             try:name=clean_contest_name(self.c_name.text())
             except ValueError:name=session.get('contest_name','')
             if name:session['contest_name']=name
+            contest_number.remember(session,self.c_band.currentText(),self.c_own_exchange.text())
             session.update(call=self.c_own.text().strip().upper(),band=self.c_band.currentText().strip(),
                 mode=self.c_mode.currentText().strip(),my_qth=self.c_my_qth.text(),limited=self.c_limited.isChecked(),
                 own_exchange=machine_text(self.c_own_exchange.text(),upper=True))
@@ -1173,6 +1205,10 @@ class Window(QMainWindow):
                 self.c_own.setText(session.get('call',''));self.c_name.setText(session.get('contest_name',''))
                 self.c_band.setCurrentText(session.get('band','7'));self.c_mode.setCurrentText(session.get('mode','SSB'));self.c_my_qth.setText(session.get('my_qth',''))
                 self.c_own_exchange.setText(session.get('own_exchange',''));self._contest_radio_rmks2=''
+                self._contest_number_band=self.c_band.currentText()
+                self.c_number_increment.setChecked(bool(session.get('number_increment',False)))
+                self.c_number_per_band.setChecked(bool(session.get('number_per_band',False)))
+                self.c_number_per_band.setEnabled(self.c_number_increment.isChecked())
                 self.c_call.clear();self.c_exchange.clear();self.c_date.clear();self.c_time.clear();self.c_entry_country='';self._contest_prepared_call=''
                 self.c_limited.setChecked(bool(session.get('limited',True)));self.contest_mode_changed(self.c_mode.currentText())
                 if self.c_own.text().strip() and self.c_name.text().strip():self._activate_contest_station(False)
@@ -1621,6 +1657,7 @@ class Window(QMainWindow):
             if not self._append_record_safely(path,q):return
         except (StorageError,OSError) as e:
             QMessageBox.warning(self,'保存できません',str(e));return
+        self.c_own_exchange.setText(contest_number.recorded(self._active_workspace(),q.band,own_number))
         self.rows=session_rows(self.sessions,self.station[0]);self._save_active_workspace_state()
         settings_error=''
         try:self.persist_settings()

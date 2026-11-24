@@ -211,7 +211,8 @@ def _exchange(event, instructions):
 def overview_rows(rule):
     """Return ``[(label, text, important), ...]`` for the selected rule."""
     if not rule:return []
-    event=rule.get('event',{}) or {};submission=event.get('submission',{}) or {};instructions=str(submission.get('instructions','') or '')
+    from contest_guidance import instructions as display_instructions
+    event=rule.get('event',{}) or {};submission=event.get('submission',{}) or {};instructions=display_instructions(submission.get('instructions',''))
     zone=str(event.get('timezone','JST'))
     windows=event.get('windows',[]) or []
     window_text=' ／ '.join(_format_stamp(w.get('start'),zone)+' ～ '+_format_stamp(w.get('end'),zone) for w in windows) if windows else '登録なし'

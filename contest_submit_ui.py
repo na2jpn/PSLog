@@ -1,4 +1,5 @@
 from copy import deepcopy
+from contest_guidance import instructions as display_instructions
 from contest_task_ui import run_task
 from pathlib import Path
 from rule_source_ui import source_label,source_text
@@ -198,7 +199,7 @@ class SubmissionPane(QWidget):
             submit=self.wizard.rule['event'].get('submission')
             if submit:
                 self.fields['contest'].setText(submit['contest']);self.fields['zone'].setCurrentText(submit['zone'])
-                self.overview.setText(self.overview.text()+'\n'+submit['instructions'])
+                self.overview.setText(self.overview.text()+'\n'+display_instructions(submit['instructions']))
                 if submit.get('row_scope')=='category':self.overview.setText(self.overview.text()+'\n出力は選択した部門の日時・バンド・モードに絞ります。部門内の重複・0点交信は残します。')
                 if len(submit.get('allowed_zones',[]))>1:self.overview.setText(self.overview.text()+'\nJST/UTCを選べます。受付画面でも同じ時刻基準を選んでください。')
                 required=submit.get('required_fields',[])

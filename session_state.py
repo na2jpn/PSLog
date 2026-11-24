@@ -9,6 +9,7 @@ from copy import deepcopy
 from datetime import datetime
 import re
 from input_normalization import machine_text
+from contest_number import normal_state as normal_number_state, STATE_KEYS as NUMBER_STATE_KEYS
 import uuid
 
 MAX_STANDARD = 5
@@ -137,6 +138,7 @@ def contest_session(name, event_ym, call='', band='7', mode='SSB', my_qth=''):
         'event_ym':clean_event_ym(event_ym),
         'band':machine_text(band or '7'), 'mode':machine_text(mode or 'SSB',upper=True),
         'my_qth':str(my_qth or ''), 'limited':True, 'own_exchange':'',
+        **normal_number_state({}),
     }
 
 
@@ -245,6 +247,7 @@ def _normal_contest(raw, fallback, now_ym):
     s['id']=_text(raw.get('id')) or _id()
     s['limited']=bool(raw.get('limited',True))
     s['own_exchange']=machine_text(_text(raw.get('own_exchange')),upper=True)
+    s.update(normal_number_state(raw))
     return s
 
 
@@ -326,7 +329,7 @@ def restore(settings, now=None):
 
 
 def serializable(session):
-    allowed=('id','type','slot','call','suffix','band','mode','my_qth','limited','rmks2_visible','contest_name','event_ym','free_type','model','own_exchange')
+    allowed=('id','type','slot','call','suffix','band','mode','my_qth','limited','rmks2_visible','contest_name','event_ym','free_type','model','own_exchange') + NUMBER_STATE_KEYS
     return {k:deepcopy(session[k]) for k in allowed if k in session}
 
 

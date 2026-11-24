@@ -8,6 +8,7 @@ from __future__ import annotations
 import re
 from datetime import datetime
 from contest_overview import overview_rows
+from contest_guidance import instructions as display_instructions
 from party import PARTIES
 from award_registry import AWARDS,target_count
 
@@ -24,7 +25,7 @@ def _sentences(values):
 def _event_texts(rule):
     event=rule.get('event',{}) or {}
     submission=event.get('submission',{}) or {}
-    return _sentences(list(event.get('required_flags',[]) or [])+[submission.get('instructions','')])
+    return _sentences(list(event.get('required_flags',[]) or [])+[display_instructions(submission.get('instructions',''))])
 
 
 def _view(rule,key):
